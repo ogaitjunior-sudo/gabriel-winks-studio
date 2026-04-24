@@ -314,7 +314,7 @@ function ApngFallbackCard({
     [apngFile?.sizeLabel, apngReady, fps, frameCount, wink.durationMs]
   );
   const message = apngPreviewFailed
-    ? "APNG preview failed to load"
+    ? "APNG preview failed"
     : apngErrorMessage || appearance.previewMessage;
 
   return (
@@ -388,7 +388,7 @@ function ApngFallbackCard({
               onLoad={() => setApngPreviewFailed(false)}
             />
           ) : apngReady ? (
-            <PreviewPlaceholder message="APNG preview failed to load" />
+            <PreviewPlaceholder message="APNG preview failed" />
           ) : (
             <PreviewPlaceholder message="Generate APNG first" />
           )}

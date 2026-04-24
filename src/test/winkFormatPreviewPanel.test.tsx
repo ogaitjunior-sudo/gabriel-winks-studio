@@ -132,7 +132,7 @@ describe("WinkFormatPreviewPanel", () => {
 
     fireEvent.error(screen.getByAltText("Fireworks Grand Finale APNG Fallback"));
 
-    expect(screen.getAllByText("APNG preview failed to load").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("APNG preview failed").length).toBeGreaterThan(0);
     expect(screen.queryByAltText("Fireworks Grand Finale APNG Fallback")).not.toBeInTheDocument();
   });
 });

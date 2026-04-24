@@ -39,7 +39,7 @@ function renderAssetBlock(kind, item, format) {
   const filePath = getPreviewAssetPath(kind, item, format, asset);
   const fileName = getPreviewAssetFileName(item, format, asset);
   const downloadLabel = format === "svg" ? "Download SVG" : "Download APNG";
-  const previewErrorMessage = format === "apng" ? "APNG preview failed to load" : "";
+  const previewErrorMessage = format === "apng" ? "APNG preview failed" : "";
 
   if (!asset) {
     return `
@@ -419,7 +419,7 @@ function renderHtml(manifest) {
 
         const placeholder = document.createElement("div");
         placeholder.className = "placeholder";
-        placeholder.textContent = preview.dataset.previewError || "APNG preview failed to load";
+        placeholder.textContent = preview.dataset.previewError || "APNG preview failed";
         frame.appendChild(placeholder);
       }, { once: true });
     }
