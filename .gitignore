@@ -1,10 +1,8 @@
 node_modules
 dist
 exports
-
-# Generated wink files
-public/winks/**/apng
-public/winks/**/frames
-
-# Logs
 *.log
+.env
+.vscode
+
+public/winks/**/frames
