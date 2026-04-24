@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080"><style>@keyframes wink-burst {
+  0% { transform: scale(0); opacity: 0; }
+  20% { opacity: 1; }
+  60% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.15); opacity: 0; }
+}
+@keyframes wink-fade-loop {
+  0%, 100% { opacity: 0; }
+  10%, 70% { opacity: 1; }
+}
+@keyframes wink-spark-fall {
+  0% { transform: translateY(-40px); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translateY(220px); opacity: 0; }
+}
+@keyframes wink-comet {
+  0% { transform: translate(0,0) scale(0.6); opacity: 0; }
+  30% { opacity: 1; }
+  70% { transform: translate(var(--tx,0), var(--ty,-200px)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,0), var(--ty,-200px)) scale(1.2); opacity: 0; }
+}
+@keyframes wink-ring-expand {
+  0% { transform: scale(0.1); opacity: 0; stroke-width: 8; }
+  20% { opacity: 1; }
+  100% { transform: scale(1); opacity: 0; stroke-width: 1; }
+}
+@keyframes wink-twinkle {
+  0%, 100% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1); opacity: 1; }
+}
+@keyframes wink-pop {
+  0% { transform: scale(0) rotate(-20deg); opacity: 0; }
+  60% { transform: scale(1.15) rotate(5deg); opacity: 1; }
+  80% { transform: scale(1) rotate(0); opacity: 1; }
+  100% { transform: scale(1) rotate(0); opacity: 0; }
+}
+@keyframes wink-swirl {
+  0% { transform: rotate(0deg) translateX(180px) scale(0); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: rotate(360deg) translateX(40px) scale(1); opacity: 0; }
+}
+@keyframes wink-shower {
+  0% { transform: translateY(-60px) rotate(0); opacity: 0; }
+  15% { opacity: 1; }
+  100% { transform: translateY(260px) rotate(180deg); opacity: 0; }
+}
+@keyframes wink-trail {
+  0% { offset-distance: 0%; opacity: 0; transform: scale(0.4); }
+  10% { opacity: 1; transform: scale(1); }
+  90% { opacity: 1; }
+  100% { offset-distance: 100%; opacity: 0; transform: scale(0.6); }
+}
+@keyframes wink-bounce-in {
+  0% { transform: translateY(-300px) scale(0.6); opacity: 0; }
+  50% { transform: translateY(20px) scale(1.05); opacity: 1; }
+  70% { transform: translateY(-10px) scale(0.98); }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+@keyframes wink-bounce-loop {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes wink-pop-up {
+  0% { transform: translateY(300px); opacity: 0; }
+  60% { transform: translateY(-15px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes wink-orbit {
+  from { transform: rotate(0deg) translateX(var(--orbit-r,160px)) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(var(--orbit-r,160px)) rotate(-360deg); }
+}
+@keyframes wink-scatter {
+  0%, 100% { transform: translate(var(--sx,0), var(--sy,0)) scale(0.9); opacity: 0.6; }
+  50% { transform: translate(calc(var(--sx,0) * 1.2), calc(var(--sy,0) * 1.2)) scale(1.05); opacity: 1; }
+}
+@keyframes wink-sparkle {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+@keyframes wink-glow-pulse {
+  0%, 100% { opacity: 0.4; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+@keyframes wink-confetti-launch {
+  0% { transform: translate(0,0) rotate(var(--r0,0deg)) scale(0.28); opacity: 0; }
+  14% { opacity: 1; }
+  72% { transform: translate(var(--tx,0px), var(--ty,0px)) rotate(var(--r1,180deg)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,0px), var(--ty,0px)) rotate(var(--r2,320deg)) scale(0.82); opacity: 0; }
+}
+@keyframes wink-confetti-fall {
+  0% { transform: translate(0,-90px) rotate(var(--r0,0deg)) scale(0.7); opacity: 0; }
+  14% { opacity: 1; }
+  82% { opacity: 1; }
+  100% { transform: translate(var(--tx,0px), var(--ty,720px)) rotate(var(--r1,260deg)) scale(1); opacity: 0; }
+}
+@keyframes wink-confetti-shimmer {
+  0%, 100% { transform: rotate(var(--r0,0deg)) scale(0.92); }
+  50% { transform: rotate(var(--r1,180deg)) scale(1.08); }
+}
+@keyframes wink-confetti-wave {
+  0% { transform: translate(var(--sx,-180px), var(--sy,0px)) rotate(var(--r0,0deg)) scale(0.5); opacity: 0; }
+  18% { opacity: 1; }
+  58% { transform: translate(0,0) rotate(var(--r1,180deg)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,180px), var(--ty,0px)) rotate(var(--r2,360deg)) scale(0.78); opacity: 0; }
+}
+@keyframes wink-bingo-arrive {
+  0% { transform: translate(var(--from-x,0), var(--from-y,0)) scale(0.34); opacity: 0; }
+  18% { opacity: 1; }
+  38% { transform: translate(var(--overshoot-x,0), var(--overshoot-y,0)) scale(1.09); opacity: 1; }
+  46%, 100% { transform: translate(0,0) scale(1); opacity: 1; }
+}
+@keyframes wink-bingo-countdown {
+  0%, 100% { opacity: 0; transform: scale(0.36); }
+  5% { opacity: 1; transform: scale(0.92); }
+  10% { opacity: 1; transform: scale(1.06); }
+  16% { opacity: 0; transform: scale(1.22); }
+}
+@keyframes wink-bingo-spiral-letter {
+  0% { transform: rotate(var(--spin-start,-220deg)) translateX(var(--orbit-r,320px)) scale(0.3); opacity: 0; }
+  22% { opacity: 1; }
+  42% { transform: rotate(var(--spin-mid,24deg)) translateX(18px) scale(1.1); opacity: 1; }
+  52%, 100% { transform: rotate(0deg) translateX(0) scale(1); opacity: 1; }
+}
+@keyframes wink-bingo-final-bounce {
+  0%, 54%, 100% { transform: translateY(0) scale(1); }
+  64% { transform: translateY(-22px) scale(1.06); }
+  76% { transform: translateY(0) scale(0.98); }
+  88% { transform: translateY(-10px) scale(1.02); }
+}
+@keyframes wink-bingo-impact {
+  0%, 56%, 100% { opacity: 0; transform: scale(0.52); }
+  66% { opacity: 0.95; transform: scale(1.04); }
+  78% { opacity: 0.38; transform: scale(1.34); }
+}</style><defs><radialGradient id="fwwillow-canopy-glow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="white" stop-opacity="0.86"/><stop offset="24%" stop-color="hsl(50 100% 82%)" stop-opacity="0.44"/><stop offset="58%" stop-color="hsl(45 95% 62%)" stop-opacity="0.12"/><stop offset="100%" stop-color="hsl(45 95% 62%)" stop-opacity="0"/></radialGradient></defs><g style="animation:wink-glow-pulse 3.2s ease-in-out infinite;animation-delay:0.24s"><ellipse cx="960" cy="430" rx="291.4" ry="223.2" fill="url(#fwwillow-canopy-glow)" opacity="0.26039999999999996"/><ellipse cx="960" cy="414.5" rx="173.60000000000002" ry="124" fill="url(#fwwillow-canopy-glow)" opacity="0.1736"/><circle cx="960" cy="430" r="55.8" fill="white" opacity="0.0744"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.14s"><circle cx="960" cy="430" r="14" fill="white" opacity="0.82"/><g><line x1="960" y1="430" x2="1180" y2="430" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="1180" cy="430" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="1166.7323765728997" y2="505.24443153164714" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="1166.7323765728997" cy="505.24443153164714" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="1128.5297774861751" y2="571.4132741310386" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="1128.5297774861751" cy="571.4132741310386" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="1070" y2="620.5255888325764" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="1070" cy="620.5255888325764" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="998.2025990867247" y2="646.6577056626858" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="998.2025990867247" cy="646.6577056626858" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="921.7974009132753" y2="646.6577056626858" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="921.7974009132753" cy="646.6577056626858" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="850" y2="620.5255888325765" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="850" cy="620.5255888325765" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="791.4702225138249" y2="571.4132741310386" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="791.4702225138249" cy="571.4132741310386" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="753.2676234271001" y2="505.24443153164714" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="753.2676234271001" cy="505.24443153164714" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="740" y2="430" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="740" cy="430" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="753.2676234271001" y2="354.75556846835286" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="753.2676234271001" cy="354.75556846835286" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="791.4702225138248" y2="288.5867258689615" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="791.4702225138248" cy="288.5867258689615" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="849.9999999999999" y2="239.47441116742354" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="849.9999999999999" cy="239.47441116742354" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="921.7974009132753" y2="213.34229433731423" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="921.7974009132753" cy="213.34229433731423" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="998.2025990867246" y2="213.3422943373142" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="998.2025990867246" cy="213.3422943373142" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="1069.9999999999998" y2="239.4744111674234" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="1069.9999999999998" cy="239.4744111674234" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="1128.5297774861751" y2="288.58672586896125" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="1128.5297774861751" cy="288.58672586896125" r="5" fill="hsl(50 100% 82%)"/></g><g><line x1="960" y1="430" x2="1166.7323765728997" y2="354.7555684683529" stroke="hsl(45 95% 62%)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="1166.7323765728997" cy="354.7555684683529" r="5" fill="hsl(50 100% 82%)"/></g></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.08s"><path d="M 960 430 C 1082.1516520829127 334.2675351525071, 1204.3033041658252 394.2675351525071, 1204.3033041658252 514.2675351525071" fill="none" stroke="hsl(50 100% 82%)" stroke-width="1.7" stroke-linecap="round" opacity="0.86"/><circle cx="1204.3033041658252" cy="514.2675351525071" r="4" fill="hsl(50 100% 82%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.125s"><path d="M 960 430 C 1092.9416623810548 390.20241358074134, 1225.8833247621096 450.20241358074134, 1225.8833247621096 570.2024135807413" fill="none" stroke="hsl(45 95% 65%)" stroke-width="2.25" stroke-linecap="round" opacity="0.86"/><circle cx="1225.8833247621096" cy="570.2024135807413" r="5" fill="hsl(45 95% 62%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.16999999999999998s"><path d="M 960 430 C 1101.5348186848282 449.37930061022644, 1243.0696373696564 509.37930061022644, 1243.0696373696564 629.3793006102264" fill="none" stroke="hsl(45 95% 65%)" stroke-width="2.8" stroke-linecap="round" opacity="0.86"/><circle cx="1243.0696373696564" cy="629.3793006102264" r="6" fill="hsl(18 94% 60%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.21500000000000002s"><path d="M 960 430 C 1107.6931752907208 433.4068762370032, 1255.3863505814415 493.4068762370032, 1255.3863505814415 613.4068762370032" fill="none" stroke="hsl(45 95% 65%)" stroke-width="1.7" stroke-linecap="round" opacity="0.86"/><circle cx="1255.3863505814415" cy="613.4068762370032" r="4" fill="hsl(195 88% 62%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.26s"><path d="M 960 430 C 1111.2031636093106 497.8533335425135, 1262.4063272186215 557.8533335425135, 1262.4063272186215 677.8533335425135" fill="none" stroke="hsl(50 100% 82%)" stroke-width="2.25" stroke-linecap="round" opacity="0.86"/><circle cx="1262.4063272186215" cy="677.8533335425135" r="5" fill="hsl(282 82% 70%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.305s"><path d="M 960 430 C 1051.126777037305 455.35017875432925, 1142.2535540746098 515.3501787543292, 1142.2535540746098 635.3501787543292" fill="none" stroke="hsl(45 95% 65%)" stroke-width="2.8" stroke-linecap="round" opacity="0.86"/><circle cx="1142.2535540746098" cy="635.3501787543292" r="6" fill="hsl(150 70% 56%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.35000000000000003s"><path d="M 960 430 C 1054.1671786166423 437.7648417465232, 1148.3343572332847 497.7648417465232, 1148.3343572332847 617.7648417465232" fill="none" stroke="hsl(45 95% 65%)" stroke-width="1.7" stroke-linecap="round" opacity="0.86"/><circle cx="1148.3343572332847" cy="617.7648417465232" r="4" fill="hsl(50 100% 82%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.395s"><path d="M 960 430 C 1054.4241295781912 499.80835156843125, 1148.8482591563825 559.8083515684312, 1148.8482591563825 679.8083515684312" fill="none" stroke="hsl(45 95% 65%)" stroke-width="2.25" stroke-linecap="round" opacity="0.86"/><circle cx="1148.8482591563825" cy="679.8083515684312" r="5" fill="hsl(45 95% 62%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.44s"><path d="M 960 430 C 1051.7682655920926 562.9704134644915, 1143.5365311841854 622.9704134644915, 1143.5365311841854 742.9704134644915" fill="none" stroke="hsl(50 100% 82%)" stroke-width="2.8" stroke-linecap="round" opacity="0.86"/><circle cx="1143.5365311841854" cy="742.9704134644915" r="6" fill="hsl(18 94% 60%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.485s"><path d="M 960 430 C 1046.1021545833137 548.7184848339155, 1132.2043091666276 608.7184848339155, 1132.2043091666276 728.7184848339155" fill="none" stroke="hsl(45 95% 65%)" stroke-width="1.7" stroke-linecap="round" opacity="0.86"/><circle cx="1132.2043091666276" cy="728.7184848339155" r="4" fill="hsl(195 88% 62%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.08s"><path d="M 960 430 C 1006.416947895869 473.90172655230003, 1052.833895791738 533.9017265523, 1052.833895791738 653.9017265523" fill="none" stroke="hsl(45 95% 65%)" stroke-width="2.25" stroke-linecap="round" opacity="0.86"/><circle cx="1052.833895791738" cy="653.9017265523" r="5" fill="hsl(282 82% 70%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.125s"><path d="M 960 430 C 1001.2511487710507 533.6279557363854, 1042.5022975421014 593.6279557363854, 1042.5022975421014 713.6279557363854" fill="none" stroke="hsl(45 95% 65%)" stroke-width="2.8" stroke-linecap="round" opacity="0.86"/><circle cx="1042.5022975421014" cy="713.6279557363854" r="6" fill="hsl(150 70% 56%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.16999999999999998s"><path d="M 960 430 C 993.1333068069226 515.1252580784089, 1026.2666136138453 575.1252580784089, 1026.2666136138453 695.1252580784089" fill="none" stroke="hsl(50 100% 82%)" stroke-width="1.7" stroke-linecap="round" opacity="0.86"/><circle cx="1026.2666136138453" cy="695.1252580784089" r="4" fill="hsl(50 100% 82%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.21500000000000002s"><path d="M 960 430 C 982.0620663218225 573.8409975321076, 1004.124132643645 633.8409975321076, 1004.124132643645 753.8409975321076" fill="none" stroke="hsl(45 95% 65%)" stroke-width="2.25" stroke-linecap="round" opacity="0.86"/><circle cx="1004.124132643645" cy="753.8409975321076" r="5" fill="hsl(45 95% 62%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.26s"><path d="M 960 430 C 968.0707636066616 631.2218703431672, 976.1415272133232 691.2218703431672, 976.1415272133232 811.2218703431672" fill="none" stroke="hsl(45 95% 65%)" stroke-width="2.8" stroke-linecap="round" opacity="0.86"/><circle cx="976.1415272133232" cy="811.2218703431672" r="6" fill="hsl(18 94% 60%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.305s"><path d="M 960 430 C 954.7364585173946 461.23165457163077, 949.4729170347892 521.2316545716308, 949.4729170347892 641.2316545716308" fill="none" stroke="hsl(45 95% 65%)" stroke-width="1.7" stroke-linecap="round" opacity="0.86"/><circle cx="949.4729170347892" cy="641.2316545716308" r="4" fill="hsl(195 88% 62%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.35000000000000003s"><path d="M 960 430 C 942.1402320251914 515.2046170498014, 924.2804640503826 575.2046170498014, 924.2804640503826 695.2046170498014" fill="none" stroke="hsl(50 100% 82%)" stroke-width="2.25" stroke-linecap="round" opacity="0.86"/><circle cx="924.2804640503826" cy="695.2046170498014" r="5" fill="hsl(282 82% 70%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.395s"><path d="M 960 430 C 926.8666931930775 567.1252580784089, 893.733386386155 627.1252580784089, 893.733386386155 747.1252580784089" fill="none" stroke="hsl(45 95% 65%)" stroke-width="2.8" stroke-linecap="round" opacity="0.86"/><circle cx="893.733386386155" cy="747.1252580784089" r="6" fill="hsl(150 70% 56%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.44s"><path d="M 960 430 C 909.0426985769375 538.4815923802408, 858.0853971538749 598.4815923802408, 858.0853971538749 718.4815923802408" fill="none" stroke="hsl(45 95% 65%)" stroke-width="1.7" stroke-linecap="round" opacity="0.86"/><circle cx="858.0853971538749" cy="718.4815923802408" r="4" fill="hsl(50 100% 82%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.485s"><path d="M 960 430 C 888.8273465596675 584.7826473801933, 817.654693119335 644.7826473801933, 817.654693119335 764.7826473801933" fill="none" stroke="hsl(45 95% 65%)" stroke-width="2.25" stroke-linecap="round" opacity="0.86"/><circle cx="817.654693119335" cy="764.7826473801933" r="5" fill="hsl(45 95% 62%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.08s"><path d="M 960 430 C 903.8464209239257 493.3381422829883, 847.6928418478516 553.3381422829883, 847.6928418478516 673.3381422829883" fill="none" stroke="hsl(50 100% 82%)" stroke-width="2.8" stroke-linecap="round" opacity="0.86"/><circle cx="847.6928418478516" cy="673.3381422829883" r="6" fill="hsl(18 94% 60%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.125s"><path d="M 960 430 C 885.7114040444965 459.3570013760168, 811.4228080889928 519.3570013760168, 811.4228080889928 639.3570013760168" fill="none" stroke="hsl(45 95% 65%)" stroke-width="1.7" stroke-linecap="round" opacity="0.86"/><circle cx="811.4228080889928" cy="639.3570013760168" r="4" fill="hsl(195 88% 62%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.16999999999999998s"><path d="M 960 430 C 865.5758704218088 499.80835156843136, 771.1517408436174 559.8083515684314, 771.1517408436174 679.8083515684314" fill="none" stroke="hsl(45 95% 65%)" stroke-width="2.25" stroke-linecap="round" opacity="0.86"/><circle cx="771.1517408436174" cy="679.8083515684314" r="5" fill="hsl(282 82% 70%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.21500000000000002s"><path d="M 960 430 C 843.6758381794418 536.2977456868816, 727.3516763588837 596.2977456868816, 727.3516763588837 716.2977456868816" fill="none" stroke="hsl(45 95% 65%)" stroke-width="2.8" stroke-linecap="round" opacity="0.86"/><circle cx="727.3516763588837" cy="716.2977456868816" r="6" fill="hsl(150 70% 56%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.26s"><path d="M 960 430 C 820.2722752094659 490.47027408997155, 680.5445504189317 550.4702740899716, 680.5445504189317 670.4702740899716" fill="none" stroke="hsl(50 100% 82%)" stroke-width="1.7" stroke-linecap="round" opacity="0.86"/><circle cx="680.5445504189317" cy="670.4702740899716" r="4" fill="hsl(50 100% 82%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.305s"><path d="M 960 430 C 861.3892411243626 417.20869578859583, 762.7784822487251 477.20869578859583, 762.7784822487251 597.2086957885958" fill="none" stroke="hsl(45 95% 65%)" stroke-width="2.25" stroke-linecap="round" opacity="0.86"/><circle cx="762.7784822487251" cy="597.2086957885958" r="5" fill="hsl(45 95% 62%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.35000000000000003s"><path d="M 960 430 C 840.4388580979879 448.56747123947866, 720.8777161959758 508.56747123947866, 720.8777161959758 628.5674712394787" fill="none" stroke="hsl(45 95% 65%)" stroke-width="2.8" stroke-linecap="round" opacity="0.86"/><circle cx="720.8777161959758" cy="628.5674712394787" r="6" fill="hsl(18 94% 60%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.395s"><path d="M 960 430 C 818.4651813151718 397.37930061022655, 676.9303626303434 457.37930061022655, 676.9303626303434 577.3793006102266" fill="none" stroke="hsl(45 95% 65%)" stroke-width="1.7" stroke-linecap="round" opacity="0.86"/><circle cx="676.9303626303434" cy="577.3793006102266" r="4" fill="hsl(195 88% 62%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.44s"><path d="M 960 430 C 795.7779464704618 419.42651089385697, 631.5558929409236 479.42651089385697, 631.5558929409236 599.426510893857" fill="none" stroke="hsl(50 100% 82%)" stroke-width="2.25" stroke-linecap="round" opacity="0.86"/><circle cx="631.5558929409236" cy="599.426510893857" r="5" fill="hsl(282 82% 70%)"/></g><g style="transform-origin:960px 430px;animation:wink-burst 3.2s ease-out infinite;animation-delay:0.485s"><path d="M 960 430 C 772.700800139534 436.5435539005109, 585.4016002790679 496.5435539005109, 585.4016002790679 616.5435539005109" fill="none" stroke="hsl(45 95% 65%)" stroke-width="2.8" stroke-linecap="round" opacity="0.86"/><circle cx="585.4016002790679" cy="616.5435539005109" r="6" fill="hsl(150 70% 56%)"/></g><circle cx="620" cy="580" r="4" fill="hsl(45 95% 62%)" opacity="0.74" style="transform-origin:620px 580px;animation:wink-twinkle 3.2s ease-in-out infinite;animation-delay:0.72s"/><circle cx="682" cy="628" r="5" fill="hsl(18 94% 60%)" opacity="0.74" style="transform-origin:682px 628px;animation:wink-twinkle 3.2s ease-in-out infinite;animation-delay:0.77s"/><circle cx="744" cy="676" r="4" fill="hsl(195 88% 62%)" opacity="0.74" style="transform-origin:744px 676px;animation:wink-twinkle 3.2s ease-in-out infinite;animation-delay:0.82s"/><circle cx="806" cy="724" r="5" fill="hsl(282 82% 70%)" opacity="0.74" style="transform-origin:806px 724px;animation:wink-twinkle 3.2s ease-in-out infinite;animation-delay:0.87s"/><circle cx="868" cy="580" r="4" fill="hsl(150 70% 56%)" opacity="0.74" style="transform-origin:868px 580px;animation:wink-twinkle 3.2s ease-in-out infinite;animation-delay:0.9199999999999999s"/><circle cx="930" cy="628" r="5" fill="hsl(50 100% 82%)" opacity="0.74" style="transform-origin:930px 628px;animation:wink-twinkle 3.2s ease-in-out infinite;animation-delay:0.97s"/><circle cx="992" cy="676" r="4" fill="hsl(45 95% 62%)" opacity="0.74" style="transform-origin:992px 676px;animation:wink-twinkle 3.2s ease-in-out infinite;animation-delay:1.02s"/><circle cx="1054" cy="724" r="5" fill="hsl(18 94% 60%)" opacity="0.74" style="transform-origin:1054px 724px;animation:wink-twinkle 3.2s ease-in-out infinite;animation-delay:1.07s"/><circle cx="1116" cy="580" r="4" fill="hsl(195 88% 62%)" opacity="0.74" style="transform-origin:1116px 580px;animation:wink-twinkle 3.2s ease-in-out infinite;animation-delay:1.12s"/><circle cx="1178" cy="628" r="5" fill="hsl(282 82% 70%)" opacity="0.74" style="transform-origin:1178px 628px;animation:wink-twinkle 3.2s ease-in-out infinite;animation-delay:1.17s"/><circle cx="1240" cy="676" r="4" fill="hsl(150 70% 56%)" opacity="0.74" style="transform-origin:1240px 676px;animation:wink-twinkle 3.2s ease-in-out infinite;animation-delay:1.22s"/><circle cx="1302" cy="724" r="5" fill="hsl(50 100% 82%)" opacity="0.74" style="transform-origin:1302px 724px;animation:wink-twinkle 3.2s ease-in-out infinite;animation-delay:1.27s"/></svg>

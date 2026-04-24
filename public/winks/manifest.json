@@ -1,0 +1,3879 @@
+{
+  "generatedAt": "2026-04-24T18:46:26.293Z",
+  "groups": {
+    "effect": {
+      "edgeGuidance": null,
+      "height": 1080,
+      "items": [
+        {
+          "apng": {
+            "bytes": 7618885,
+            "fileName": "bb-bouncein.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/effect/apng/bb-bouncein.apng",
+            "sizeLabel": "7.27 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 2800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-bouncein",
+          "kind": "effect",
+          "name": "Bingo Balls Bounce In",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 18525,
+            "fileName": "bb-bouncein.svg",
+            "path": "/winks/effect/svg/bb-bouncein.svg",
+            "sizeLabel": "18.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 10437314,
+            "fileName": "bb-celebr.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/bb-celebr.apng",
+            "sizeLabel": "9.95 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-celebr",
+          "kind": "effect",
+          "name": "Bingo Balls Celebration",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 17749,
+            "fileName": "bb-celebr.svg",
+            "path": "/winks/effect/svg/bb-celebr.svg",
+            "sizeLabel": "17.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 8025362,
+            "fileName": "bb-classic.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/bb-classic.apng",
+            "sizeLabel": "7.65 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-classic",
+          "kind": "effect",
+          "name": "Bouncing Bingo Balls Classic",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 15852,
+            "fileName": "bb-classic.svg",
+            "path": "/winks/effect/svg/bb-classic.svg",
+            "sizeLabel": "15.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 6696527,
+            "fileName": "bb-collision.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/bb-collision.apng",
+            "sizeLabel": "6.39 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-collision",
+          "kind": "effect",
+          "name": "Bingo Balls Collision Burst",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 23398,
+            "fileName": "bb-collision.svg",
+            "path": "/winks/effect/svg/bb-collision.svg",
+            "sizeLabel": "22.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2458638,
+            "fileName": "bb-confetti.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/bb-confetti.apng",
+            "sizeLabel": "2.34 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-confetti",
+          "kind": "effect",
+          "name": "Bingo Balls Confetti",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 19823,
+            "fileName": "bb-confetti.svg",
+            "path": "/winks/effect/svg/bb-confetti.svg",
+            "sizeLabel": "19.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 8699253,
+            "fileName": "bb-crown.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/bb-crown.apng",
+            "sizeLabel": "8.30 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-crown",
+          "kind": "effect",
+          "name": "Bingo Balls Crown Arc",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 17288,
+            "fileName": "bb-crown.svg",
+            "path": "/winks/effect/svg/bb-crown.svg",
+            "sizeLabel": "16.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 10004908,
+            "fileName": "bb-drumroll.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/bb-drumroll.apng",
+            "sizeLabel": "9.54 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-drumroll",
+          "kind": "effect",
+          "name": "Bingo Balls Drumroll",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 20815,
+            "fileName": "bb-drumroll.svg",
+            "path": "/winks/effect/svg/bb-drumroll.svg",
+            "sizeLabel": "20.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 8972882,
+            "fileName": "bb-explodeform.apng",
+            "fps": 15,
+            "frameCount": 50,
+            "path": "/winks/effect/apng/bb-explodeform.apng",
+            "sizeLabel": "8.56 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3300,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-explodeform",
+          "kind": "effect",
+          "name": "Bingo Balls Explosion to Formation",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 28801,
+            "fileName": "bb-explodeform.svg",
+            "path": "/winks/effect/svg/bb-explodeform.svg",
+            "sizeLabel": "28.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 12943239,
+            "fileName": "bb-grand.apng",
+            "fps": 15,
+            "frameCount": 57,
+            "path": "/winks/effect/apng/bb-grand.apng",
+            "sizeLabel": "12.34 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-grand",
+          "kind": "effect",
+          "name": "Bingo Balls Grand Celebration",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 36110,
+            "fileName": "bb-grand.svg",
+            "path": "/winks/effect/svg/bb-grand.svg",
+            "sizeLabel": "35.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 7599705,
+            "fileName": "bb-impact.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/bb-impact.apng",
+            "sizeLabel": "7.25 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-impact",
+          "kind": "effect",
+          "name": "Bingo Balls Orbit Impact",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 24283,
+            "fileName": "bb-impact.svg",
+            "path": "/winks/effect/svg/bb-impact.svg",
+            "sizeLabel": "23.7 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 7010342,
+            "fileName": "bb-jackpot.apng",
+            "fps": 15,
+            "frameCount": 36,
+            "path": "/winks/effect/apng/bb-jackpot.apng",
+            "sizeLabel": "6.69 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 2400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-jackpot",
+          "kind": "effect",
+          "name": "Bingo Balls Jackpot",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 17985,
+            "fileName": "bb-jackpot.svg",
+            "path": "/winks/effect/svg/bb-jackpot.svg",
+            "sizeLabel": "17.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4045906,
+            "fileName": "bb-orbit.apng",
+            "fps": 15,
+            "frameCount": 54,
+            "path": "/winks/effect/apng/bb-orbit.apng",
+            "sizeLabel": "3.86 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-orbit",
+          "kind": "effect",
+          "name": "Bingo Balls Orbit",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 12834,
+            "fileName": "bb-orbit.svg",
+            "path": "/winks/effect/svg/bb-orbit.svg",
+            "sizeLabel": "12.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 8357706,
+            "fileName": "bb-parade.apng",
+            "fps": 15,
+            "frameCount": 36,
+            "path": "/winks/effect/apng/bb-parade.apng",
+            "sizeLabel": "7.97 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 2400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-parade",
+          "kind": "effect",
+          "name": "Bingo Balls Parade",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 18491,
+            "fileName": "bb-parade.svg",
+            "path": "/winks/effect/svg/bb-parade.svg",
+            "sizeLabel": "18.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 8261026,
+            "fileName": "bb-pinball.apng",
+            "fps": 15,
+            "frameCount": 50,
+            "path": "/winks/effect/apng/bb-pinball.apng",
+            "sizeLabel": "7.88 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3300,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-pinball",
+          "kind": "effect",
+          "name": "Bingo Balls Pinball Chaos",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 18719,
+            "fileName": "bb-pinball.svg",
+            "path": "/winks/effect/svg/bb-pinball.svg",
+            "sizeLabel": "18.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 7668352,
+            "fileName": "bb-popchain.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/bb-popchain.apng",
+            "sizeLabel": "7.31 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-popchain",
+          "kind": "effect",
+          "name": "Bingo Balls Pop Chain",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 19095,
+            "fileName": "bb-popchain.svg",
+            "path": "/winks/effect/svg/bb-popchain.svg",
+            "sizeLabel": "18.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 6548790,
+            "fileName": "bb-popup.apng",
+            "fps": 15,
+            "frameCount": 39,
+            "path": "/winks/effect/apng/bb-popup.apng",
+            "sizeLabel": "6.25 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 2600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-popup",
+          "kind": "effect",
+          "name": "Bingo Balls Pop Up",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 17045,
+            "fileName": "bb-popup.svg",
+            "path": "/winks/effect/svg/bb-popup.svg",
+            "sizeLabel": "16.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2554997,
+            "fileName": "bb-rain.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/bb-rain.apng",
+            "sizeLabel": "2.44 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-rain",
+          "kind": "effect",
+          "name": "Bingo Balls Rain",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 18703,
+            "fileName": "bb-rain.svg",
+            "path": "/winks/effect/svg/bb-rain.svg",
+            "sizeLabel": "18.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 9539702,
+            "fileName": "bb-ring.apng",
+            "fps": 15,
+            "frameCount": 53,
+            "path": "/winks/effect/apng/bb-ring.apng",
+            "sizeLabel": "9.10 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3500,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-ring",
+          "kind": "effect",
+          "name": "Bingo Balls Scatter Ring",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 32206,
+            "fileName": "bb-ring.svg",
+            "path": "/winks/effect/svg/bb-ring.svg",
+            "sizeLabel": "31.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 11032418,
+            "fileName": "bb-rocket.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/bb-rocket.apng",
+            "sizeLabel": "10.52 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-rocket",
+          "kind": "effect",
+          "name": "Bingo Balls Rocket Drop",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 23952,
+            "fileName": "bb-rocket.svg",
+            "path": "/winks/effect/svg/bb-rocket.svg",
+            "sizeLabel": "23.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1787354,
+            "fileName": "bb-roulette.apng",
+            "fps": 15,
+            "frameCount": 105,
+            "path": "/winks/effect/apng/bb-roulette.apng",
+            "sizeLabel": "1.70 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 7000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-roulette",
+          "kind": "effect",
+          "name": "Bingo Balls Roulette",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 15694,
+            "fileName": "bb-roulette.svg",
+            "path": "/winks/effect/svg/bb-roulette.svg",
+            "sizeLabel": "15.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 9260464,
+            "fileName": "bb-scatter.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/bb-scatter.apng",
+            "sizeLabel": "8.83 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-scatter",
+          "kind": "effect",
+          "name": "Bingo Balls Scatter",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 14749,
+            "fileName": "bb-scatter.svg",
+            "path": "/winks/effect/svg/bb-scatter.svg",
+            "sizeLabel": "14.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 6648300,
+            "fileName": "bb-slot.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/effect/apng/bb-slot.apng",
+            "sizeLabel": "6.34 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 2800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-slot",
+          "kind": "effect",
+          "name": "Bingo Balls Slot",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 19566,
+            "fileName": "bb-slot.svg",
+            "path": "/winks/effect/svg/bb-slot.svg",
+            "sizeLabel": "19.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 8356049,
+            "fileName": "bb-spin.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/bb-spin.apng",
+            "sizeLabel": "7.97 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-spin",
+          "kind": "effect",
+          "name": "Bingo Balls Spin",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 16712,
+            "fileName": "bb-spin.svg",
+            "path": "/winks/effect/svg/bb-spin.svg",
+            "sizeLabel": "16.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4834214,
+            "fileName": "bb-spiral.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/bb-spiral.apng",
+            "sizeLabel": "4.61 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-spiral",
+          "kind": "effect",
+          "name": "Bingo Balls Spiral Collapse",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 24325,
+            "fileName": "bb-spiral.svg",
+            "path": "/winks/effect/svg/bb-spiral.svg",
+            "sizeLabel": "23.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 9586089,
+            "fileName": "bb-spot.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/bb-spot.apng",
+            "sizeLabel": "9.14 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-spot",
+          "kind": "effect",
+          "name": "Bingo Balls Spotlight",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 16022,
+            "fileName": "bb-spot.svg",
+            "path": "/winks/effect/svg/bb-spot.svg",
+            "sizeLabel": "15.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 9296919,
+            "fileName": "bb-storm.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/bb-storm.apng",
+            "sizeLabel": "8.87 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-storm",
+          "kind": "effect",
+          "name": "Bingo Balls Bounce Storm",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 21752,
+            "fileName": "bb-storm.svg",
+            "path": "/winks/effect/svg/bb-storm.svg",
+            "sizeLabel": "21.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 5263805,
+            "fileName": "bb-tilt.apng",
+            "fps": 15,
+            "frameCount": 30,
+            "path": "/winks/effect/apng/bb-tilt.apng",
+            "sizeLabel": "5.02 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 2000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-tilt",
+          "kind": "effect",
+          "name": "Bingo Balls Tilt",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 16167,
+            "fileName": "bb-tilt.svg",
+            "path": "/winks/effect/svg/bb-tilt.svg",
+            "sizeLabel": "15.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2878112,
+            "fileName": "bb-wave.apng",
+            "fps": 15,
+            "frameCount": 21,
+            "path": "/winks/effect/apng/bb-wave.apng",
+            "sizeLabel": "2.74 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 1400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bb-wave",
+          "kind": "effect",
+          "name": "Bingo Balls Wave",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 13159,
+            "fileName": "bb-wave.svg",
+            "path": "/winks/effect/svg/bb-wave.svg",
+            "sizeLabel": "12.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": null,
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3300,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bouncing-bingo-collision",
+          "kind": "effect",
+          "name": "Collision Explosion Bingo",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 31098,
+            "fileName": "bouncing-bingo-collision.svg",
+            "path": "/winks/effect/svg/bouncing-bingo-collision.svg",
+            "sizeLabel": "30.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": null,
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bouncing-bingo-countdown",
+          "kind": "effect",
+          "name": "Countdown Bounce Bingo",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 26159,
+            "fileName": "bouncing-bingo-countdown.svg",
+            "path": "/winks/effect/svg/bouncing-bingo-countdown.svg",
+            "sizeLabel": "25.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": null,
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bouncing-bingo-jackpot",
+          "kind": "effect",
+          "name": "Jackpot Bingo Balls",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 28634,
+            "fileName": "bouncing-bingo-jackpot.svg",
+            "path": "/winks/effect/svg/bouncing-bingo-jackpot.svg",
+            "sizeLabel": "28.0 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": null,
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bouncing-bingo-spiral",
+          "kind": "effect",
+          "name": "Spiral Bingo Balls",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 26834,
+            "fileName": "bouncing-bingo-spiral.svg",
+            "path": "/winks/effect/svg/bouncing-bingo-spiral.svg",
+            "sizeLabel": "26.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": null,
+          "aspectRatio": "16:9",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "bouncing-bingo-wave",
+          "kind": "effect",
+          "name": "Wave Bounce Bingo",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 21685,
+            "fileName": "bouncing-bingo-wave.svg",
+            "path": "/winks/effect/svg/bouncing-bingo-wave.svg",
+            "sizeLabel": "21.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4780800,
+            "fileName": "cf-bloom.apng",
+            "fps": 15,
+            "frameCount": 54,
+            "path": "/winks/effect/apng/cf-bloom.apng",
+            "sizeLabel": "4.56 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-bloom",
+          "kind": "effect",
+          "name": "Confetti Color Bloom",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 32045,
+            "fileName": "cf-bloom.svg",
+            "path": "/winks/effect/svg/cf-bloom.svg",
+            "sizeLabel": "31.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3679007,
+            "fileName": "cf-cannon.apng",
+            "fps": 15,
+            "frameCount": 54,
+            "path": "/winks/effect/apng/cf-cannon.apng",
+            "sizeLabel": "3.51 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-cannon",
+          "kind": "effect",
+          "name": "Confetti Cannon Left Right",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 30611,
+            "fileName": "cf-cannon.svg",
+            "path": "/winks/effect/svg/cf-cannon.svg",
+            "sizeLabel": "29.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 5642162,
+            "fileName": "cf-carnival.apng",
+            "fps": 15,
+            "frameCount": 60,
+            "path": "/winks/effect/apng/cf-carnival.apng",
+            "sizeLabel": "5.38 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 4000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-carnival",
+          "kind": "effect",
+          "name": "Confetti Carnival Blast",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 41661,
+            "fileName": "cf-carnival.svg",
+            "path": "/winks/effect/svg/cf-carnival.svg",
+            "sizeLabel": "40.7 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4316248,
+            "fileName": "cf-double.apng",
+            "fps": 15,
+            "frameCount": 57,
+            "path": "/winks/effect/apng/cf-double.apng",
+            "sizeLabel": "4.12 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-double",
+          "kind": "effect",
+          "name": "Confetti Double Cannon Blast",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 39055,
+            "fileName": "cf-double.svg",
+            "path": "/winks/effect/svg/cf-double.svg",
+            "sizeLabel": "38.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3704076,
+            "fileName": "cf-explosion.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/cf-explosion.apng",
+            "sizeLabel": "3.53 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-explosion",
+          "kind": "effect",
+          "name": "Confetti Explosion Burst",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 25889,
+            "fileName": "cf-explosion.svg",
+            "path": "/winks/effect/svg/cf-explosion.svg",
+            "sizeLabel": "25.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 8425115,
+            "fileName": "cf-finale.apng",
+            "fps": 15,
+            "frameCount": 66,
+            "path": "/winks/effect/apng/cf-finale.apng",
+            "sizeLabel": "8.03 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 4400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-finale",
+          "kind": "effect",
+          "name": "Confetti Grand Finale",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 39945,
+            "fileName": "cf-finale.svg",
+            "path": "/winks/effect/svg/cf-finale.svg",
+            "sizeLabel": "39.0 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4087158,
+            "fileName": "cf-firechain.apng",
+            "fps": 15,
+            "frameCount": 60,
+            "path": "/winks/effect/apng/cf-firechain.apng",
+            "sizeLabel": "3.90 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 4000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-firechain",
+          "kind": "effect",
+          "name": "Confetti Firecracker Chain",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 36872,
+            "fileName": "cf-firechain.svg",
+            "path": "/winks/effect/svg/cf-firechain.svg",
+            "sizeLabel": "36.0 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4035437,
+            "fileName": "cf-firework.apng",
+            "fps": 15,
+            "frameCount": 54,
+            "path": "/winks/effect/apng/cf-firework.apng",
+            "sizeLabel": "3.85 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-firework",
+          "kind": "effect",
+          "name": "Confetti Firework Burst",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 30281,
+            "fileName": "cf-firework.svg",
+            "path": "/winks/effect/svg/cf-firework.svg",
+            "sizeLabel": "29.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4243177,
+            "fileName": "cf-galaxy.apng",
+            "fps": 15,
+            "frameCount": 60,
+            "path": "/winks/effect/apng/cf-galaxy.apng",
+            "sizeLabel": "4.05 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 4000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-galaxy",
+          "kind": "effect",
+          "name": "Confetti Galaxy Swirl",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 33148,
+            "fileName": "cf-galaxy.svg",
+            "path": "/winks/effect/svg/cf-galaxy.svg",
+            "sizeLabel": "32.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3391960,
+            "fileName": "cf-heart.apng",
+            "fps": 15,
+            "frameCount": 54,
+            "path": "/winks/effect/apng/cf-heart.apng",
+            "sizeLabel": "3.23 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-heart",
+          "kind": "effect",
+          "name": "Confetti Heart Burst",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 26937,
+            "fileName": "cf-heart.svg",
+            "path": "/winks/effect/svg/cf-heart.svg",
+            "sizeLabel": "26.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3682767,
+            "fileName": "cf-heartfest.apng",
+            "fps": 15,
+            "frameCount": 57,
+            "path": "/winks/effect/apng/cf-heartfest.apng",
+            "sizeLabel": "3.51 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-heartfest",
+          "kind": "effect",
+          "name": "Confetti Heart Festival",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 32483,
+            "fileName": "cf-heartfest.svg",
+            "path": "/winks/effect/svg/cf-heartfest.svg",
+            "sizeLabel": "31.7 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 7235077,
+            "fileName": "cf-mega.apng",
+            "fps": 15,
+            "frameCount": 60,
+            "path": "/winks/effect/apng/cf-mega.apng",
+            "sizeLabel": "6.90 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 4000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-mega",
+          "kind": "effect",
+          "name": "Confetti Mega Explosion",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 38236,
+            "fileName": "cf-mega.svg",
+            "path": "/winks/effect/svg/cf-mega.svg",
+            "sizeLabel": "37.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3420651,
+            "fileName": "cf-pop.apng",
+            "fps": 15,
+            "frameCount": 57,
+            "path": "/winks/effect/apng/cf-pop.apng",
+            "sizeLabel": "3.26 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-pop",
+          "kind": "effect",
+          "name": "Confetti Pop Party",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 31233,
+            "fileName": "cf-pop.svg",
+            "path": "/winks/effect/svg/cf-pop.svg",
+            "sizeLabel": "30.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4442203,
+            "fileName": "cf-rain.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/cf-rain.apng",
+            "sizeLabel": "4.24 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-rain",
+          "kind": "effect",
+          "name": "Confetti Rain Celebration",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 38079,
+            "fileName": "cf-rain.svg",
+            "path": "/winks/effect/svg/cf-rain.svg",
+            "sizeLabel": "37.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4281586,
+            "fileName": "cf-rainx.apng",
+            "fps": 15,
+            "frameCount": 60,
+            "path": "/winks/effect/apng/cf-rainx.apng",
+            "sizeLabel": "4.08 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 4000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-rainx",
+          "kind": "effect",
+          "name": "Confetti Rain Explosion",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 33916,
+            "fileName": "cf-rainx.svg",
+            "path": "/winks/effect/svg/cf-rainx.svg",
+            "sizeLabel": "33.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4296216,
+            "fileName": "cf-ribbon.apng",
+            "fps": 15,
+            "frameCount": 57,
+            "path": "/winks/effect/apng/cf-ribbon.apng",
+            "sizeLabel": "4.10 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-ribbon",
+          "kind": "effect",
+          "name": "Confetti Ribbon Storm",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 26699,
+            "fileName": "cf-ribbon.svg",
+            "path": "/winks/effect/svg/cf-ribbon.svg",
+            "sizeLabel": "26.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 5722060,
+            "fileName": "cf-shockring.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/cf-shockring.apng",
+            "sizeLabel": "5.46 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-shockring",
+          "kind": "effect",
+          "name": "Confetti Shockwave Ring",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 25185,
+            "fileName": "cf-shockring.svg",
+            "path": "/winks/effect/svg/cf-shockring.svg",
+            "sizeLabel": "24.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3253819,
+            "fileName": "cf-spiral.apng",
+            "fps": 15,
+            "frameCount": 54,
+            "path": "/winks/effect/apng/cf-spiral.apng",
+            "sizeLabel": "3.10 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-spiral",
+          "kind": "effect",
+          "name": "Confetti Spiral Blast",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 20510,
+            "fileName": "cf-spiral.svg",
+            "path": "/winks/effect/svg/cf-spiral.svg",
+            "sizeLabel": "20.0 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3405968,
+            "fileName": "cf-spiralfw.apng",
+            "fps": 15,
+            "frameCount": 57,
+            "path": "/winks/effect/apng/cf-spiralfw.apng",
+            "sizeLabel": "3.25 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-spiralfw",
+          "kind": "effect",
+          "name": "Confetti Spiral Firework",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 21967,
+            "fileName": "cf-spiralfw.svg",
+            "path": "/winks/effect/svg/cf-spiralfw.svg",
+            "sizeLabel": "21.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3834884,
+            "fileName": "cf-star.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/cf-star.apng",
+            "sizeLabel": "3.66 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-star",
+          "kind": "effect",
+          "name": "Confetti Star Mix",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 28815,
+            "fileName": "cf-star.svg",
+            "path": "/winks/effect/svg/cf-star.svg",
+            "sizeLabel": "28.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3679847,
+            "fileName": "cf-starcel.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/cf-starcel.apng",
+            "sizeLabel": "3.51 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-starcel",
+          "kind": "effect",
+          "name": "Confetti Star Celebration",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 25865,
+            "fileName": "cf-starcel.svg",
+            "path": "/winks/effect/svg/cf-starcel.svg",
+            "sizeLabel": "25.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 8172319,
+            "fileName": "cf-storm.apng",
+            "fps": 15,
+            "frameCount": 69,
+            "path": "/winks/effect/apng/cf-storm.apng",
+            "sizeLabel": "7.79 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 4600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-storm",
+          "kind": "effect",
+          "name": "Confetti Grand Finale Storm",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 47498,
+            "fileName": "cf-storm.svg",
+            "path": "/winks/effect/svg/cf-storm.svg",
+            "sizeLabel": "46.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4240490,
+            "fileName": "cf-triple.apng",
+            "fps": 15,
+            "frameCount": 54,
+            "path": "/winks/effect/apng/cf-triple.apng",
+            "sizeLabel": "4.04 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-triple",
+          "kind": "effect",
+          "name": "Confetti Triple Pop Celebration",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 32498,
+            "fileName": "cf-triple.svg",
+            "path": "/winks/effect/svg/cf-triple.svg",
+            "sizeLabel": "31.7 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 7665768,
+            "fileName": "cf-tunnel.apng",
+            "fps": 15,
+            "frameCount": 57,
+            "path": "/winks/effect/apng/cf-tunnel.apng",
+            "sizeLabel": "7.31 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-tunnel",
+          "kind": "effect",
+          "name": "Confetti Celebration Tunnel",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 31446,
+            "fileName": "cf-tunnel.svg",
+            "path": "/winks/effect/svg/cf-tunnel.svg",
+            "sizeLabel": "30.7 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 7891902,
+            "fileName": "cf-ultimatep.apng",
+            "fps": 15,
+            "frameCount": 72,
+            "path": "/winks/effect/apng/cf-ultimatep.apng",
+            "sizeLabel": "7.53 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 4800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-ultimatep",
+          "kind": "effect",
+          "name": "Confetti Ultimate Party Finale",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 62240,
+            "fileName": "cf-ultimatep.svg",
+            "path": "/winks/effect/svg/cf-ultimatep.svg",
+            "sizeLabel": "60.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4749921,
+            "fileName": "cf-victory.apng",
+            "fps": 15,
+            "frameCount": 60,
+            "path": "/winks/effect/apng/cf-victory.apng",
+            "sizeLabel": "4.53 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 4000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-victory",
+          "kind": "effect",
+          "name": "Confetti Victory Shower",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 32558,
+            "fileName": "cf-victory.svg",
+            "path": "/winks/effect/svg/cf-victory.svg",
+            "sizeLabel": "31.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 5888393,
+            "fileName": "cf-victoryb.apng",
+            "fps": 15,
+            "frameCount": 60,
+            "path": "/winks/effect/apng/cf-victoryb.apng",
+            "sizeLabel": "5.62 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 4000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-victoryb",
+          "kind": "effect",
+          "name": "Confetti Victory Blast",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 34955,
+            "fileName": "cf-victoryb.svg",
+            "path": "/winks/effect/svg/cf-victoryb.svg",
+            "sizeLabel": "34.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2889372,
+            "fileName": "cf-volcano.apng",
+            "fps": 15,
+            "frameCount": 57,
+            "path": "/winks/effect/apng/cf-volcano.apng",
+            "sizeLabel": "2.76 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-volcano",
+          "kind": "effect",
+          "name": "Confetti Volcano Burst",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 26495,
+            "fileName": "cf-volcano.svg",
+            "path": "/winks/effect/svg/cf-volcano.svg",
+            "sizeLabel": "25.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3620288,
+            "fileName": "cf-wave.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/cf-wave.apng",
+            "sizeLabel": "3.45 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-wave",
+          "kind": "effect",
+          "name": "Confetti Wave Sweep",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 24493,
+            "fileName": "cf-wave.svg",
+            "path": "/winks/effect/svg/cf-wave.svg",
+            "sizeLabel": "23.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4743514,
+            "fileName": "cf-waveblast.apng",
+            "fps": 15,
+            "frameCount": 57,
+            "path": "/winks/effect/apng/cf-waveblast.apng",
+            "sizeLabel": "4.52 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Confetti",
+          "durationMs": 3800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "cf-waveblast",
+          "kind": "effect",
+          "name": "Confetti Wave Blast",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 29866,
+            "fileName": "cf-waveblast.svg",
+            "path": "/winks/effect/svg/cf-waveblast.svg",
+            "sizeLabel": "29.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2242511,
+            "fileName": "fw-burst.apng",
+            "fps": 15,
+            "frameCount": 36,
+            "path": "/winks/effect/apng/fw-burst.apng",
+            "sizeLabel": "2.14 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 2400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-burst",
+          "kind": "effect",
+          "name": "Fireworks Burst",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 11389,
+            "fileName": "fw-burst.svg",
+            "path": "/winks/effect/svg/fw-burst.svg",
+            "sizeLabel": "11.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4991031,
+            "fileName": "fw-cascade.apng",
+            "fps": 15,
+            "frameCount": 39,
+            "path": "/winks/effect/apng/fw-cascade.apng",
+            "sizeLabel": "4.76 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 2600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-cascade",
+          "kind": "effect",
+          "name": "Fireworks Cascade",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 22806,
+            "fileName": "fw-cascade.svg",
+            "path": "/winks/effect/svg/fw-cascade.svg",
+            "sizeLabel": "22.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 7494415,
+            "fileName": "fw-cascadef.apng",
+            "fps": 15,
+            "frameCount": 66,
+            "path": "/winks/effect/apng/fw-cascadef.apng",
+            "sizeLabel": "7.15 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 4400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-cascadef",
+          "kind": "effect",
+          "name": "Fireworks Cascade Finale",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 26427,
+            "fileName": "fw-cascadef.svg",
+            "path": "/winks/effect/svg/fw-cascadef.svg",
+            "sizeLabel": "25.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 5828421,
+            "fileName": "fw-center.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/effect/apng/fw-center.apng",
+            "sizeLabel": "5.56 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 2800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-center",
+          "kind": "effect",
+          "name": "Fireworks Center Blast",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 14191,
+            "fileName": "fw-center.svg",
+            "path": "/winks/effect/svg/fw-center.svg",
+            "sizeLabel": "13.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2806216,
+            "fileName": "fw-chrys.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/fw-chrys.apng",
+            "sizeLabel": "2.68 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-chrys",
+          "kind": "effect",
+          "name": "Fireworks Chrysanthemum",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 11851,
+            "fileName": "fw-chrys.svg",
+            "path": "/winks/effect/svg/fw-chrys.svg",
+            "sizeLabel": "11.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4126449,
+            "fileName": "fw-comets.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/fw-comets.apng",
+            "sizeLabel": "3.94 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-comets",
+          "kind": "effect",
+          "name": "Fireworks Comets",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 30924,
+            "fileName": "fw-comets.svg",
+            "path": "/winks/effect/svg/fw-comets.svg",
+            "sizeLabel": "30.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 6474219,
+            "fileName": "fw-crownf.apng",
+            "fps": 15,
+            "frameCount": 63,
+            "path": "/winks/effect/apng/fw-crownf.apng",
+            "sizeLabel": "6.17 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 4200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-crownf",
+          "kind": "effect",
+          "name": "Fireworks Golden Crown Finale",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 18638,
+            "fileName": "fw-crownf.svg",
+            "path": "/winks/effect/svg/fw-crownf.svg",
+            "sizeLabel": "18.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 353863,
+            "fileName": "fw-diamond.apng",
+            "fps": 15,
+            "frameCount": 39,
+            "path": "/winks/effect/apng/fw-diamond.apng",
+            "sizeLabel": "345.6 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 2600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-diamond",
+          "kind": "effect",
+          "name": "Fireworks Diamond",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 11650,
+            "fileName": "fw-diamond.svg",
+            "path": "/winks/effect/svg/fw-diamond.svg",
+            "sizeLabel": "11.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2850671,
+            "fileName": "fw-double.apng",
+            "fps": 15,
+            "frameCount": 39,
+            "path": "/winks/effect/apng/fw-double.apng",
+            "sizeLabel": "2.72 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 2600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-double",
+          "kind": "effect",
+          "name": "Fireworks Double Bloom",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 14741,
+            "fileName": "fw-double.svg",
+            "path": "/winks/effect/svg/fw-double.svg",
+            "sizeLabel": "14.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 5847478,
+            "fileName": "fw-dring.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/effect/apng/fw-dring.apng",
+            "sizeLabel": "5.58 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 2800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-dring",
+          "kind": "effect",
+          "name": "Fireworks Double Ring",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 18393,
+            "fileName": "fw-dring.svg",
+            "path": "/winks/effect/svg/fw-dring.svg",
+            "sizeLabel": "18.0 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4986323,
+            "fileName": "fw-epic.apng",
+            "fps": 15,
+            "frameCount": 63,
+            "path": "/winks/effect/apng/fw-epic.apng",
+            "sizeLabel": "4.76 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 4200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-epic",
+          "kind": "effect",
+          "name": "Fireworks Epic Grand Finale",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 17368,
+            "fileName": "fw-epic.svg",
+            "path": "/winks/effect/svg/fw-epic.svg",
+            "sizeLabel": "17.0 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 8930447,
+            "fileName": "fw-fansweep.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/fw-fansweep.apng",
+            "sizeLabel": "8.52 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-fansweep",
+          "kind": "effect",
+          "name": "Fireworks Fan Sweep",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 27402,
+            "fileName": "fw-fansweep.svg",
+            "path": "/winks/effect/svg/fw-fansweep.svg",
+            "sizeLabel": "26.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4583739,
+            "fileName": "fw-finale.apng",
+            "fps": 15,
+            "frameCount": 54,
+            "path": "/winks/effect/apng/fw-finale.apng",
+            "sizeLabel": "4.37 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-finale",
+          "kind": "effect",
+          "name": "Fireworks Grand Finale",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 15273,
+            "fileName": "fw-finale.svg",
+            "path": "/winks/effect/svg/fw-finale.svg",
+            "sizeLabel": "14.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2922772,
+            "fileName": "fw-halo.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/fw-halo.apng",
+            "sizeLabel": "2.79 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-halo",
+          "kind": "effect",
+          "name": "Fireworks Halo Pulse",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 12454,
+            "fileName": "fw-halo.svg",
+            "path": "/winks/effect/svg/fw-halo.svg",
+            "sizeLabel": "12.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2960358,
+            "fileName": "fw-heart.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/effect/apng/fw-heart.apng",
+            "sizeLabel": "2.82 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 2800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-heart",
+          "kind": "effect",
+          "name": "Fireworks Heart",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 21021,
+            "fileName": "fw-heart.svg",
+            "path": "/winks/effect/svg/fw-heart.svg",
+            "sizeLabel": "20.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 5282839,
+            "fileName": "fw-meteor.apng",
+            "fps": 15,
+            "frameCount": 60,
+            "path": "/winks/effect/apng/fw-meteor.apng",
+            "sizeLabel": "5.04 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 4000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-meteor",
+          "kind": "effect",
+          "name": "Fireworks Meteor Impact",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 17741,
+            "fileName": "fw-meteor.svg",
+            "path": "/winks/effect/svg/fw-meteor.svg",
+            "sizeLabel": "17.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3355605,
+            "fileName": "fw-palm.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/fw-palm.apng",
+            "sizeLabel": "3.20 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-palm",
+          "kind": "effect",
+          "name": "Fireworks Palm Tree",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 14961,
+            "fileName": "fw-palm.svg",
+            "path": "/winks/effect/svg/fw-palm.svg",
+            "sizeLabel": "14.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2519997,
+            "fileName": "fw-prism.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/fw-prism.apng",
+            "sizeLabel": "2.40 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-prism",
+          "kind": "effect",
+          "name": "Fireworks Prism Burst",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 24115,
+            "fileName": "fw-prism.svg",
+            "path": "/winks/effect/svg/fw-prism.svg",
+            "sizeLabel": "23.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2021432,
+            "fileName": "fw-ring.apng",
+            "fps": 15,
+            "frameCount": 39,
+            "path": "/winks/effect/apng/fw-ring.apng",
+            "sizeLabel": "1.93 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 2600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-ring",
+          "kind": "effect",
+          "name": "Fireworks Ring",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 10168,
+            "fileName": "fw-ring.svg",
+            "path": "/winks/effect/svg/fw-ring.svg",
+            "sizeLabel": "9.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4778747,
+            "fileName": "fw-risingc.apng",
+            "fps": 15,
+            "frameCount": 60,
+            "path": "/winks/effect/apng/fw-risingc.apng",
+            "sizeLabel": "4.56 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 4000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-risingc",
+          "kind": "effect",
+          "name": "Fireworks Rising Comet Finale",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 16697,
+            "fileName": "fw-risingc.svg",
+            "path": "/winks/effect/svg/fw-risingc.svg",
+            "sizeLabel": "16.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4426660,
+            "fileName": "fw-shock.apng",
+            "fps": 15,
+            "frameCount": 59,
+            "path": "/winks/effect/apng/fw-shock.apng",
+            "sizeLabel": "4.22 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3900,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-shock",
+          "kind": "effect",
+          "name": "Fireworks Ring Shockwave",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 15854,
+            "fileName": "fw-shock.svg",
+            "path": "/winks/effect/svg/fw-shock.svg",
+            "sizeLabel": "15.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 554490,
+            "fileName": "fw-sky.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/fw-sky.apng",
+            "sizeLabel": "541.5 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-sky",
+          "kind": "effect",
+          "name": "Fireworks Sky Show",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 12899,
+            "fileName": "fw-sky.svg",
+            "path": "/winks/effect/svg/fw-sky.svg",
+            "sizeLabel": "12.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 825898,
+            "fileName": "fw-sparkle.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/fw-sparkle.apng",
+            "sizeLabel": "806.5 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-sparkle",
+          "kind": "effect",
+          "name": "Fireworks Sparkle Rain",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 13930,
+            "fileName": "fw-sparkle.svg",
+            "path": "/winks/effect/svg/fw-sparkle.svg",
+            "sizeLabel": "13.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4678539,
+            "fileName": "fw-spiralc.apng",
+            "fps": 15,
+            "frameCount": 57,
+            "path": "/winks/effect/apng/fw-spiralc.apng",
+            "sizeLabel": "4.46 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-spiralc",
+          "kind": "effect",
+          "name": "Fireworks Spiral Charge Explosion",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 18643,
+            "fileName": "fw-spiralc.svg",
+            "path": "/winks/effect/svg/fw-spiralc.svg",
+            "sizeLabel": "18.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4160101,
+            "fileName": "fw-starover.apng",
+            "fps": 15,
+            "frameCount": 57,
+            "path": "/winks/effect/apng/fw-starover.apng",
+            "sizeLabel": "3.97 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-starover",
+          "kind": "effect",
+          "name": "Fireworks Starburst Overload",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 17832,
+            "fileName": "fw-starover.svg",
+            "path": "/winks/effect/svg/fw-starover.svg",
+            "sizeLabel": "17.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 6812073,
+            "fileName": "fw-triple.apng",
+            "fps": 15,
+            "frameCount": 60,
+            "path": "/winks/effect/apng/fw-triple.apng",
+            "sizeLabel": "6.50 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 4000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-triple",
+          "kind": "effect",
+          "name": "Fireworks Triple Build-Up Blast",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 19062,
+            "fileName": "fw-triple.svg",
+            "path": "/winks/effect/svg/fw-triple.svg",
+            "sizeLabel": "18.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 7296914,
+            "fileName": "fw-ultimate.apng",
+            "fps": 15,
+            "frameCount": 72,
+            "path": "/winks/effect/apng/fw-ultimate.apng",
+            "sizeLabel": "6.96 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 4800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-ultimate",
+          "kind": "effect",
+          "name": "Fireworks Ultimate Celebration Blast",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 23710,
+            "fileName": "fw-ultimate.svg",
+            "path": "/winks/effect/svg/fw-ultimate.svg",
+            "sizeLabel": "23.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 8498876,
+            "fileName": "fw-willow.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/fw-willow.apng",
+            "sizeLabel": "8.11 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fw-willow",
+          "kind": "effect",
+          "name": "Fireworks Willow",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 25984,
+            "fileName": "fw-willow.svg",
+            "path": "/winks/effect/svg/fw-willow.svg",
+            "sizeLabel": "25.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1454892,
+            "fileName": "gs-aurora.apng",
+            "fps": 15,
+            "frameCount": 57,
+            "path": "/winks/effect/apng/gs-aurora.apng",
+            "sizeLabel": "1.39 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-aurora",
+          "kind": "effect",
+          "name": "Gold Stars Aurora",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 25845,
+            "fileName": "gs-aurora.svg",
+            "path": "/winks/effect/svg/gs-aurora.svg",
+            "sizeLabel": "25.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1248490,
+            "fileName": "gs-big.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/effect/apng/gs-big.apng",
+            "sizeLabel": "1.19 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 2800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-big",
+          "kind": "effect",
+          "name": "Gold Stars Big Star",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 11404,
+            "fileName": "gs-big.svg",
+            "path": "/winks/effect/svg/gs-big.svg",
+            "sizeLabel": "11.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1296851,
+            "fileName": "gs-bloom.apng",
+            "fps": 15,
+            "frameCount": 47,
+            "path": "/winks/effect/apng/gs-bloom.apng",
+            "sizeLabel": "1.24 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3100,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-bloom",
+          "kind": "effect",
+          "name": "Gold Stars Explosion Bloom",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 12536,
+            "fileName": "gs-bloom.svg",
+            "path": "/winks/effect/svg/gs-bloom.svg",
+            "sizeLabel": "12.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 819437,
+            "fileName": "gs-burst.apng",
+            "fps": 15,
+            "frameCount": 39,
+            "path": "/winks/effect/apng/gs-burst.apng",
+            "sizeLabel": "800.2 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 2600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-burst",
+          "kind": "effect",
+          "name": "Gold Stars Burst",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 12469,
+            "fileName": "gs-burst.svg",
+            "path": "/winks/effect/svg/gs-burst.svg",
+            "sizeLabel": "12.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1329223,
+            "fileName": "gs-cascade.apng",
+            "fps": 15,
+            "frameCount": 53,
+            "path": "/winks/effect/apng/gs-cascade.apng",
+            "sizeLabel": "1.27 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3500,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-cascade",
+          "kind": "effect",
+          "name": "Gold Stars Celebration Cascade",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 23085,
+            "fileName": "gs-cascade.svg",
+            "path": "/winks/effect/svg/gs-cascade.svg",
+            "sizeLabel": "22.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 549542,
+            "fileName": "gs-cometarc.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/gs-cometarc.apng",
+            "sizeLabel": "536.7 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-cometarc",
+          "kind": "effect",
+          "name": "Gold Stars Comet Arc",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 11572,
+            "fileName": "gs-cometarc.svg",
+            "path": "/winks/effect/svg/gs-cometarc.svg",
+            "sizeLabel": "11.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 558308,
+            "fileName": "gs-const.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/gs-const.apng",
+            "sizeLabel": "545.2 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-const",
+          "kind": "effect",
+          "name": "Gold Stars Constellation",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 10580,
+            "fileName": "gs-const.svg",
+            "path": "/winks/effect/svg/gs-const.svg",
+            "sizeLabel": "10.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 327808,
+            "fileName": "gs-crossspark.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/gs-crossspark.apng",
+            "sizeLabel": "320.1 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-crossspark",
+          "kind": "effect",
+          "name": "Gold Stars Magic Cross Spark",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 15652,
+            "fileName": "gs-crossspark.svg",
+            "path": "/winks/effect/svg/gs-crossspark.svg",
+            "sizeLabel": "15.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 597179,
+            "fileName": "gs-crown.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/effect/apng/gs-crown.apng",
+            "sizeLabel": "583.2 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 2800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-crown",
+          "kind": "effect",
+          "name": "Gold Stars Crown",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 9720,
+            "fileName": "gs-crown.svg",
+            "path": "/winks/effect/svg/gs-crown.svg",
+            "sizeLabel": "9.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 532507,
+            "fileName": "gs-dust.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/gs-dust.apng",
+            "sizeLabel": "520.0 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-dust",
+          "kind": "effect",
+          "name": "Gold Stars Floating Dust",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 16413,
+            "fileName": "gs-dust.svg",
+            "path": "/winks/effect/svg/gs-dust.svg",
+            "sizeLabel": "16.0 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2008487,
+            "fileName": "gs-eternal.apng",
+            "fps": 15,
+            "frameCount": 54,
+            "path": "/winks/effect/apng/gs-eternal.apng",
+            "sizeLabel": "1.92 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-eternal",
+          "kind": "effect",
+          "name": "Gold Stars Eternal Glow",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 15554,
+            "fileName": "gs-eternal.svg",
+            "path": "/winks/effect/svg/gs-eternal.svg",
+            "sizeLabel": "15.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1166896,
+            "fileName": "gs-explode.apng",
+            "fps": 15,
+            "frameCount": 39,
+            "path": "/winks/effect/apng/gs-explode.apng",
+            "sizeLabel": "1.11 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 2600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-explode",
+          "kind": "effect",
+          "name": "Gold Stars Explode",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 13116,
+            "fileName": "gs-explode.svg",
+            "path": "/winks/effect/svg/gs-explode.svg",
+            "sizeLabel": "12.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 599194,
+            "fileName": "gs-field.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/effect/apng/gs-field.apng",
+            "sizeLabel": "585.2 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 2800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-field",
+          "kind": "effect",
+          "name": "Gold Stars Twinkle Field",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 20440,
+            "fileName": "gs-field.svg",
+            "path": "/winks/effect/svg/gs-field.svg",
+            "sizeLabel": "20.0 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 690476,
+            "fileName": "gs-fountain.apng",
+            "fps": 15,
+            "frameCount": 36,
+            "path": "/winks/effect/apng/gs-fountain.apng",
+            "sizeLabel": "674.3 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 2400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-fountain",
+          "kind": "effect",
+          "name": "Gold Stars Fountain",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 12313,
+            "fileName": "gs-fountain.svg",
+            "path": "/winks/effect/svg/gs-fountain.svg",
+            "sizeLabel": "12.0 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 5715974,
+            "fileName": "gs-galaxy.apng",
+            "fps": 15,
+            "frameCount": 90,
+            "path": "/winks/effect/apng/gs-galaxy.apng",
+            "sizeLabel": "5.45 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 6000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-galaxy",
+          "kind": "effect",
+          "name": "Gold Stars Galaxy",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 19304,
+            "fileName": "gs-galaxy.svg",
+            "path": "/winks/effect/svg/gs-galaxy.svg",
+            "sizeLabel": "18.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3118131,
+            "fileName": "gs-grandfinale.apng",
+            "fps": 15,
+            "frameCount": 57,
+            "path": "/winks/effect/apng/gs-grandfinale.apng",
+            "sizeLabel": "2.97 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-grandfinale",
+          "kind": "effect",
+          "name": "Gold Stars Grand Finale",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 22906,
+            "fileName": "gs-grandfinale.svg",
+            "path": "/winks/effect/svg/gs-grandfinale.svg",
+            "sizeLabel": "22.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2226563,
+            "fileName": "gs-halo.apng",
+            "fps": 15,
+            "frameCount": 36,
+            "path": "/winks/effect/apng/gs-halo.apng",
+            "sizeLabel": "2.12 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 2400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-halo",
+          "kind": "effect",
+          "name": "Gold Stars Halo",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 16502,
+            "fileName": "gs-halo.svg",
+            "path": "/winks/effect/svg/gs-halo.svg",
+            "sizeLabel": "16.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1193258,
+            "fileName": "gs-halo-ring.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/gs-halo-ring.apng",
+            "sizeLabel": "1.14 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-halo-ring",
+          "kind": "effect",
+          "name": "Gold Stars Halo Ring",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 14228,
+            "fileName": "gs-halo-ring.svg",
+            "path": "/winks/effect/svg/gs-halo-ring.svg",
+            "sizeLabel": "13.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 927499,
+            "fileName": "gs-heartlight.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/gs-heartlight.apng",
+            "sizeLabel": "905.8 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-heartlight",
+          "kind": "effect",
+          "name": "Gold Stars Heart of Light",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 16512,
+            "fileName": "gs-heartlight.svg",
+            "path": "/winks/effect/svg/gs-heartlight.svg",
+            "sizeLabel": "16.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1753949,
+            "fileName": "gs-mirror.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/gs-mirror.apng",
+            "sizeLabel": "1.67 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-mirror",
+          "kind": "effect",
+          "name": "Gold Stars Mirror Burst",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 15161,
+            "fileName": "gs-mirror.svg",
+            "path": "/winks/effect/svg/gs-mirror.svg",
+            "sizeLabel": "14.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1169330,
+            "fileName": "gs-orbitshine.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/gs-orbitshine.apng",
+            "sizeLabel": "1.12 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-orbitshine",
+          "kind": "effect",
+          "name": "Gold Stars Orbit Shine",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 9247,
+            "fileName": "gs-orbitshine.svg",
+            "path": "/winks/effect/svg/gs-orbitshine.svg",
+            "sizeLabel": "9.0 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 555131,
+            "fileName": "gs-pinwheel.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/gs-pinwheel.apng",
+            "sizeLabel": "542.1 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-pinwheel",
+          "kind": "effect",
+          "name": "Gold Stars Pinwheel",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 13190,
+            "fileName": "gs-pinwheel.svg",
+            "path": "/winks/effect/svg/gs-pinwheel.svg",
+            "sizeLabel": "12.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1723327,
+            "fileName": "gs-pop.apng",
+            "fps": 15,
+            "frameCount": 36,
+            "path": "/winks/effect/apng/gs-pop.apng",
+            "sizeLabel": "1.64 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 2400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-pop",
+          "kind": "effect",
+          "name": "Gold Stars Pop",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 18154,
+            "fileName": "gs-pop.svg",
+            "path": "/winks/effect/svg/gs-pop.svg",
+            "sizeLabel": "17.7 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2512737,
+            "fileName": "gs-popdeluxe.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/gs-popdeluxe.apng",
+            "sizeLabel": "2.40 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-popdeluxe",
+          "kind": "effect",
+          "name": "Gold Stars Pop Deluxe",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 19515,
+            "fileName": "gs-popdeluxe.svg",
+            "path": "/winks/effect/svg/gs-popdeluxe.svg",
+            "sizeLabel": "19.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2668000,
+            "fileName": "gs-radiant.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/gs-radiant.apng",
+            "sizeLabel": "2.54 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-radiant",
+          "kind": "effect",
+          "name": "Gold Stars Radiant Burst",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 16683,
+            "fileName": "gs-radiant.svg",
+            "path": "/winks/effect/svg/gs-radiant.svg",
+            "sizeLabel": "16.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 722043,
+            "fileName": "gs-rain.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/gs-rain.apng",
+            "sizeLabel": "705.1 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-rain",
+          "kind": "effect",
+          "name": "Gold Stars Rain",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 15175,
+            "fileName": "gs-rain.svg",
+            "path": "/winks/effect/svg/gs-rain.svg",
+            "sizeLabel": "14.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 868881,
+            "fileName": "gs-ribbon.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/gs-ribbon.apng",
+            "sizeLabel": "848.5 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-ribbon",
+          "kind": "effect",
+          "name": "Gold Stars Ribbon",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 12559,
+            "fileName": "gs-ribbon.svg",
+            "path": "/winks/effect/svg/gs-ribbon.svg",
+            "sizeLabel": "12.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1179474,
+            "fileName": "gs-ribbontrail.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/gs-ribbontrail.apng",
+            "sizeLabel": "1.12 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-ribbontrail",
+          "kind": "effect",
+          "name": "Gold Stars Ribbon Trail",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 14796,
+            "fileName": "gs-ribbontrail.svg",
+            "path": "/winks/effect/svg/gs-ribbontrail.svg",
+            "sizeLabel": "14.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 548395,
+            "fileName": "gs-scrown.apng",
+            "fps": 15,
+            "frameCount": 50,
+            "path": "/winks/effect/apng/gs-scrown.apng",
+            "sizeLabel": "535.5 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3300,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-scrown",
+          "kind": "effect",
+          "name": "Gold Stars Swirl Crown",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 19974,
+            "fileName": "gs-scrown.svg",
+            "path": "/winks/effect/svg/gs-scrown.svg",
+            "sizeLabel": "19.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 722611,
+            "fileName": "gs-shower.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/gs-shower.apng",
+            "sizeLabel": "705.7 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-shower",
+          "kind": "effect",
+          "name": "Gold Stars Shower",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 14059,
+            "fileName": "gs-shower.svg",
+            "path": "/winks/effect/svg/gs-shower.svg",
+            "sizeLabel": "13.7 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 911338,
+            "fileName": "gs-showerp.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/gs-showerp.apng",
+            "sizeLabel": "890.0 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-showerp",
+          "kind": "effect",
+          "name": "Gold Stars Shower Premium",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 16518,
+            "fileName": "gs-showerp.svg",
+            "path": "/winks/effect/svg/gs-showerp.svg",
+            "sizeLabel": "16.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 685637,
+            "fileName": "gs-spiralrain.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/gs-spiralrain.apng",
+            "sizeLabel": "669.6 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-spiralrain",
+          "kind": "effect",
+          "name": "Gold Stars Spiral Rain",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 15471,
+            "fileName": "gs-spiralrain.svg",
+            "path": "/winks/effect/svg/gs-spiralrain.svg",
+            "sizeLabel": "15.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4445649,
+            "fileName": "gs-sunflare.apng",
+            "fps": 15,
+            "frameCount": 47,
+            "path": "/winks/effect/apng/gs-sunflare.apng",
+            "sizeLabel": "4.24 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3100,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-sunflare",
+          "kind": "effect",
+          "name": "Gold Stars Sunflare Pulse",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 19700,
+            "fileName": "gs-sunflare.svg",
+            "path": "/winks/effect/svg/gs-sunflare.svg",
+            "sizeLabel": "19.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 833737,
+            "fileName": "gs-swirl.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/gs-swirl.apng",
+            "sizeLabel": "814.2 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-swirl",
+          "kind": "effect",
+          "name": "Gold Stars Swirl",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 12850,
+            "fileName": "gs-swirl.svg",
+            "path": "/winks/effect/svg/gs-swirl.svg",
+            "sizeLabel": "12.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 909849,
+            "fileName": "gs-trail.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/gs-trail.apng",
+            "sizeLabel": "888.5 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-trail",
+          "kind": "effect",
+          "name": "Gold Stars Trail",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 11519,
+            "fileName": "gs-trail.svg",
+            "path": "/winks/effect/svg/gs-trail.svg",
+            "sizeLabel": "11.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1351793,
+            "fileName": "gs-trailarc.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/gs-trailarc.apng",
+            "sizeLabel": "1.29 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-trailarc",
+          "kind": "effect",
+          "name": "Gold Stars Trail Arc",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 14630,
+            "fileName": "gs-trailarc.svg",
+            "path": "/winks/effect/svg/gs-trailarc.svg",
+            "sizeLabel": "14.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 538171,
+            "fileName": "gs-twinkle.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/effect/apng/gs-twinkle.apng",
+            "sizeLabel": "525.6 KB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 2800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-twinkle",
+          "kind": "effect",
+          "name": "Gold Stars Twinkle",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 20335,
+            "fileName": "gs-twinkle.svg",
+            "path": "/winks/effect/svg/gs-twinkle.svg",
+            "sizeLabel": "19.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1265850,
+            "fileName": "gs-wavesweep.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/gs-wavesweep.apng",
+            "sizeLabel": "1.21 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Gold Stars",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "gs-wavesweep",
+          "kind": "effect",
+          "name": "Gold Stars Wave Sweep",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 15196,
+            "fileName": "gs-wavesweep.svg",
+            "path": "/winks/effect/svg/gs-wavesweep.svg",
+            "sizeLabel": "14.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        }
+      ],
+      "kind": "effect",
+      "label": "Gabriel Winks Effects",
+      "safeArea": "centered",
+      "safeAreaGuidance": "Keep key action inside a centered safe area.",
+      "width": 1920
+    },
+    "chat": {
+      "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+      "height": 1024,
+      "items": [],
+      "kind": "chat",
+      "label": "Gabriel Winks Chat",
+      "safeArea": "centered",
+      "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+      "width": 768
+    }
+  },
+  "recommendations": {
+    "cc213": true,
+    "fallbackFormat": "apng",
+    "loop": "infinite",
+    "primaryFormat": "svg-animation",
+    "recommendedApngFps": 15,
+    "recommendedDurationMs": {
+      "max": 4000,
+      "min": 2000
+    },
+    "transparencyRequired": true
+  },
+  "schemaVersion": 1,
+  "tooling": {
+    "encoder": "ffmpeg-static",
+    "fallbackFormat": "apng",
+    "optionalOptimizers": {
+      "oxipng": false,
+      "pngquant": false
+    },
+    "primaryFormat": "svg-animation",
+    "renderer": "puppeteer-core + system Chrome"
+  }
+}

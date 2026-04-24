@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080"><style>@keyframes wink-burst {
+  0% { transform: scale(0); opacity: 0; }
+  20% { opacity: 1; }
+  60% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.15); opacity: 0; }
+}
+@keyframes wink-fade-loop {
+  0%, 100% { opacity: 0; }
+  10%, 70% { opacity: 1; }
+}
+@keyframes wink-spark-fall {
+  0% { transform: translateY(-40px); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translateY(220px); opacity: 0; }
+}
+@keyframes wink-comet {
+  0% { transform: translate(0,0) scale(0.6); opacity: 0; }
+  30% { opacity: 1; }
+  70% { transform: translate(var(--tx,0), var(--ty,-200px)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,0), var(--ty,-200px)) scale(1.2); opacity: 0; }
+}
+@keyframes wink-ring-expand {
+  0% { transform: scale(0.1); opacity: 0; stroke-width: 8; }
+  20% { opacity: 1; }
+  100% { transform: scale(1); opacity: 0; stroke-width: 1; }
+}
+@keyframes wink-twinkle {
+  0%, 100% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1); opacity: 1; }
+}
+@keyframes wink-pop {
+  0% { transform: scale(0) rotate(-20deg); opacity: 0; }
+  60% { transform: scale(1.15) rotate(5deg); opacity: 1; }
+  80% { transform: scale(1) rotate(0); opacity: 1; }
+  100% { transform: scale(1) rotate(0); opacity: 0; }
+}
+@keyframes wink-swirl {
+  0% { transform: rotate(0deg) translateX(180px) scale(0); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: rotate(360deg) translateX(40px) scale(1); opacity: 0; }
+}
+@keyframes wink-shower {
+  0% { transform: translateY(-60px) rotate(0); opacity: 0; }
+  15% { opacity: 1; }
+  100% { transform: translateY(260px) rotate(180deg); opacity: 0; }
+}
+@keyframes wink-trail {
+  0% { offset-distance: 0%; opacity: 0; transform: scale(0.4); }
+  10% { opacity: 1; transform: scale(1); }
+  90% { opacity: 1; }
+  100% { offset-distance: 100%; opacity: 0; transform: scale(0.6); }
+}
+@keyframes wink-bounce-in {
+  0% { transform: translateY(-300px) scale(0.6); opacity: 0; }
+  50% { transform: translateY(20px) scale(1.05); opacity: 1; }
+  70% { transform: translateY(-10px) scale(0.98); }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+@keyframes wink-bounce-loop {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes wink-pop-up {
+  0% { transform: translateY(300px); opacity: 0; }
+  60% { transform: translateY(-15px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes wink-orbit {
+  from { transform: rotate(0deg) translateX(var(--orbit-r,160px)) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(var(--orbit-r,160px)) rotate(-360deg); }
+}
+@keyframes wink-scatter {
+  0%, 100% { transform: translate(var(--sx,0), var(--sy,0)) scale(0.9); opacity: 0.6; }
+  50% { transform: translate(calc(var(--sx,0) * 1.2), calc(var(--sy,0) * 1.2)) scale(1.05); opacity: 1; }
+}
+@keyframes wink-sparkle {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+@keyframes wink-glow-pulse {
+  0%, 100% { opacity: 0.4; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+@keyframes wink-confetti-launch {
+  0% { transform: translate(0,0) rotate(var(--r0,0deg)) scale(0.28); opacity: 0; }
+  14% { opacity: 1; }
+  72% { transform: translate(var(--tx,0px), var(--ty,0px)) rotate(var(--r1,180deg)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,0px), var(--ty,0px)) rotate(var(--r2,320deg)) scale(0.82); opacity: 0; }
+}
+@keyframes wink-confetti-fall {
+  0% { transform: translate(0,-90px) rotate(var(--r0,0deg)) scale(0.7); opacity: 0; }
+  14% { opacity: 1; }
+  82% { opacity: 1; }
+  100% { transform: translate(var(--tx,0px), var(--ty,720px)) rotate(var(--r1,260deg)) scale(1); opacity: 0; }
+}
+@keyframes wink-confetti-shimmer {
+  0%, 100% { transform: rotate(var(--r0,0deg)) scale(0.92); }
+  50% { transform: rotate(var(--r1,180deg)) scale(1.08); }
+}
+@keyframes wink-confetti-wave {
+  0% { transform: translate(var(--sx,-180px), var(--sy,0px)) rotate(var(--r0,0deg)) scale(0.5); opacity: 0; }
+  18% { opacity: 1; }
+  58% { transform: translate(0,0) rotate(var(--r1,180deg)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,180px), var(--ty,0px)) rotate(var(--r2,360deg)) scale(0.78); opacity: 0; }
+}
+@keyframes wink-bingo-arrive {
+  0% { transform: translate(var(--from-x,0), var(--from-y,0)) scale(0.34); opacity: 0; }
+  18% { opacity: 1; }
+  38% { transform: translate(var(--overshoot-x,0), var(--overshoot-y,0)) scale(1.09); opacity: 1; }
+  46%, 100% { transform: translate(0,0) scale(1); opacity: 1; }
+}
+@keyframes wink-bingo-countdown {
+  0%, 100% { opacity: 0; transform: scale(0.36); }
+  5% { opacity: 1; transform: scale(0.92); }
+  10% { opacity: 1; transform: scale(1.06); }
+  16% { opacity: 0; transform: scale(1.22); }
+}
+@keyframes wink-bingo-spiral-letter {
+  0% { transform: rotate(var(--spin-start,-220deg)) translateX(var(--orbit-r,320px)) scale(0.3); opacity: 0; }
+  22% { opacity: 1; }
+  42% { transform: rotate(var(--spin-mid,24deg)) translateX(18px) scale(1.1); opacity: 1; }
+  52%, 100% { transform: rotate(0deg) translateX(0) scale(1); opacity: 1; }
+}
+@keyframes wink-bingo-final-bounce {
+  0%, 54%, 100% { transform: translateY(0) scale(1); }
+  64% { transform: translateY(-22px) scale(1.06); }
+  76% { transform: translateY(0) scale(0.98); }
+  88% { transform: translateY(-10px) scale(1.02); }
+}
+@keyframes wink-bingo-impact {
+  0%, 56%, 100% { opacity: 0; transform: scale(0.52); }
+  66% { opacity: 0.95; transform: scale(1.04); }
+  78% { opacity: 0.38; transform: scale(1.34); }
+}</style><path d="M 180 540 Q 420 360 660 540 T 1140 540 T 1740 540" stroke="hsl(43 94% 60%)" stroke-width="2" fill="none" opacity="0.14"/><path d="M 180 540 Q 420 360 660 540 T 1140 540 T 1740 540" stroke="hsl(48 100% 84%)" stroke-width="10" fill="none" opacity="0.06"/><g style="offset-path:path('M 180 540 Q 420 360 660 540 T 1140 540 T 1740 540');animation:wink-trail 3.2s linear infinite, wink-glow-pulse 1.6s ease-in-out infinite;animation-delay:0s, 0s"><path d="M9.797174393178826e-16,-16 L3.761825614671828,-5.177708763999664 L15.216904260722456,-4.944271909999158 L6.086761704288983,1.9777087639996633 L9.40456403667957,12.94427190999916 L3.9188697572715305e-16,6.4 L-9.404564036679568,12.94427190999916 L-6.086761704288983,1.9777087639996642 L-15.216904260722458,-4.9442719099991566 L-3.761825614671829,-5.1777087639996635 Z" fill="hsl(43 94% 60%)" stroke="hsl(48 100% 84%)" stroke-width="1"/></g><g style="offset-path:path('M 180 540 Q 420 360 660 540 T 1140 540 T 1740 540');animation:wink-trail 3.2s linear infinite, wink-glow-pulse 1.6s ease-in-out infinite;animation-delay:0.14s, 0.08s"><path d="M1.2246467991473533e-15,-20 L4.702282018339785,-6.47213595499958 L19.02113032590307,-6.180339887498948 L7.608452130361228,2.472135954999579 L11.755705045849464,16.18033988749895 L4.898587196589413e-16,8 L-11.75570504584946,16.18033988749895 L-7.608452130361228,2.47213595499958 L-19.021130325903073,-6.1803398874989455 L-4.702282018339786,-6.472135954999579 Z" fill="hsl(42 100% 70%)" stroke="hsl(48 100% 84%)" stroke-width="1"/></g><g style="offset-path:path('M 180 540 Q 420 360 660 540 T 1140 540 T 1740 540');animation:wink-trail 3.2s linear infinite, wink-glow-pulse 1.6s ease-in-out infinite;animation-delay:0.28s, 0.16s"><path d="M1.4695761589768238e-15,-24 L5.642738422007743,-7.766563145999497 L22.825356391083684,-7.416407864998737 L9.130142556433475,2.9665631459994954 L14.106846055019355,19.41640786499874 L5.878304635907296e-16,9.600000000000001 L-14.106846055019354,19.41640786499874 L-9.130142556433475,2.9665631459994963 L-22.825356391083687,-7.416407864998735 L-5.642738422007744,-7.766563145999496 Z" fill="hsl(48 100% 84%)" stroke="hsl(48 100% 84%)" stroke-width="1"/></g><g style="offset-path:path('M 180 540 Q 420 360 660 540 T 1140 540 T 1740 540');animation:wink-trail 3.2s linear infinite, wink-glow-pulse 1.6s ease-in-out infinite;animation-delay:0.42000000000000004s, 0.24s"><path d="M1.7145055188062944e-15,-28 L6.5831948256757,-9.060990336999412 L26.6295824562643,-8.652475842498527 L10.65183298250572,3.4609903369994113 L16.457987064189247,22.65247584249853 L6.858022075225179e-16,11.200000000000001 L-16.457987064189243,22.65247584249853 L-10.65183298250572,3.4609903369994126 L-26.629582456264302,-8.652475842498523 L-6.583194825675701,-9.060990336999412 Z" fill="hsl(39 84% 52%)" stroke="hsl(48 100% 84%)" stroke-width="1"/></g><g style="offset-path:path('M 180 540 Q 420 360 660 540 T 1140 540 T 1740 540');animation:wink-trail 3.2s linear infinite, wink-glow-pulse 1.6s ease-in-out infinite;animation-delay:0.56s, 0.32s"><path d="M9.797174393178826e-16,-16 L3.761825614671828,-5.177708763999664 L15.216904260722456,-4.944271909999158 L6.086761704288983,1.9777087639996633 L9.40456403667957,12.94427190999916 L3.9188697572715305e-16,6.4 L-9.404564036679568,12.94427190999916 L-6.086761704288983,1.9777087639996642 L-15.216904260722458,-4.9442719099991566 L-3.761825614671829,-5.1777087639996635 Z" fill="hsl(50 100% 92%)" stroke="hsl(48 100% 84%)" stroke-width="1"/></g><g style="offset-path:path('M 180 540 Q 420 360 660 540 T 1140 540 T 1740 540');animation:wink-trail 3.2s linear infinite, wink-glow-pulse 1.6s ease-in-out infinite;animation-delay:0.7000000000000001s, 0.4s"><path d="M1.2246467991473533e-15,-20 L4.702282018339785,-6.47213595499958 L19.02113032590307,-6.180339887498948 L7.608452130361228,2.472135954999579 L11.755705045849464,16.18033988749895 L4.898587196589413e-16,8 L-11.75570504584946,16.18033988749895 L-7.608452130361228,2.47213595499958 L-19.021130325903073,-6.1803398874989455 L-4.702282018339786,-6.472135954999579 Z" fill="hsl(43 94% 60%)" stroke="hsl(48 100% 84%)" stroke-width="1"/></g><g style="offset-path:path('M 180 540 Q 420 360 660 540 T 1140 540 T 1740 540');animation:wink-trail 3.2s linear infinite, wink-glow-pulse 1.6s ease-in-out infinite;animation-delay:0.8400000000000001s, 0.48s"><path d="M1.4695761589768238e-15,-24 L5.642738422007743,-7.766563145999497 L22.825356391083684,-7.416407864998737 L9.130142556433475,2.9665631459994954 L14.106846055019355,19.41640786499874 L5.878304635907296e-16,9.600000000000001 L-14.106846055019354,19.41640786499874 L-9.130142556433475,2.9665631459994963 L-22.825356391083687,-7.416407864998735 L-5.642738422007744,-7.766563145999496 Z" fill="hsl(42 100% 70%)" stroke="hsl(48 100% 84%)" stroke-width="1"/></g><g style="offset-path:path('M 180 540 Q 420 360 660 540 T 1140 540 T 1740 540');animation:wink-trail 3.2s linear infinite, wink-glow-pulse 1.6s ease-in-out infinite;animation-delay:0.9800000000000001s, 0.56s"><path d="M1.7145055188062944e-15,-28 L6.5831948256757,-9.060990336999412 L26.6295824562643,-8.652475842498527 L10.65183298250572,3.4609903369994113 L16.457987064189247,22.65247584249853 L6.858022075225179e-16,11.200000000000001 L-16.457987064189243,22.65247584249853 L-10.65183298250572,3.4609903369994126 L-26.629582456264302,-8.652475842498523 L-6.583194825675701,-9.060990336999412 Z" fill="hsl(48 100% 84%)" stroke="hsl(48 100% 84%)" stroke-width="1"/></g><g style="offset-path:path('M 180 540 Q 420 360 660 540 T 1140 540 T 1740 540');animation:wink-trail 3.2s linear infinite, wink-glow-pulse 1.6s ease-in-out infinite;animation-delay:1.12s, 0.64s"><path d="M9.797174393178826e-16,-16 L3.761825614671828,-5.177708763999664 L15.216904260722456,-4.944271909999158 L6.086761704288983,1.9777087639996633 L9.40456403667957,12.94427190999916 L3.9188697572715305e-16,6.4 L-9.404564036679568,12.94427190999916 L-6.086761704288983,1.9777087639996642 L-15.216904260722458,-4.9442719099991566 L-3.761825614671829,-5.1777087639996635 Z" fill="hsl(39 84% 52%)" stroke="hsl(48 100% 84%)" stroke-width="1"/></g><g style="offset-path:path('M 180 540 Q 420 360 660 540 T 1140 540 T 1740 540');animation:wink-trail 3.2s linear infinite, wink-glow-pulse 1.6s ease-in-out infinite;animation-delay:1.2600000000000002s, 0.72s"><path d="M1.2246467991473533e-15,-20 L4.702282018339785,-6.47213595499958 L19.02113032590307,-6.180339887498948 L7.608452130361228,2.472135954999579 L11.755705045849464,16.18033988749895 L4.898587196589413e-16,8 L-11.75570504584946,16.18033988749895 L-7.608452130361228,2.47213595499958 L-19.021130325903073,-6.1803398874989455 L-4.702282018339786,-6.472135954999579 Z" fill="hsl(50 100% 92%)" stroke="hsl(48 100% 84%)" stroke-width="1"/></g><g style="offset-path:path('M 180 540 Q 420 360 660 540 T 1140 540 T 1740 540');animation:wink-trail 3.2s linear infinite, wink-glow-pulse 1.6s ease-in-out infinite;animation-delay:1.4000000000000001s, 0.8s"><path d="M1.4695761589768238e-15,-24 L5.642738422007743,-7.766563145999497 L22.825356391083684,-7.416407864998737 L9.130142556433475,2.9665631459994954 L14.106846055019355,19.41640786499874 L5.878304635907296e-16,9.600000000000001 L-14.106846055019354,19.41640786499874 L-9.130142556433475,2.9665631459994963 L-22.825356391083687,-7.416407864998735 L-5.642738422007744,-7.766563145999496 Z" fill="hsl(43 94% 60%)" stroke="hsl(48 100% 84%)" stroke-width="1"/></g><g style="offset-path:path('M 180 540 Q 420 360 660 540 T 1140 540 T 1740 540');animation:wink-trail 3.2s linear infinite, wink-glow-pulse 1.6s ease-in-out infinite;animation-delay:1.54s, 0.88s"><path d="M1.7145055188062944e-15,-28 L6.5831948256757,-9.060990336999412 L26.6295824562643,-8.652475842498527 L10.65183298250572,3.4609903369994113 L16.457987064189247,22.65247584249853 L6.858022075225179e-16,11.200000000000001 L-16.457987064189243,22.65247584249853 L-10.65183298250572,3.4609903369994126 L-26.629582456264302,-8.652475842498523 L-6.583194825675701,-9.060990336999412 Z" fill="hsl(42 100% 70%)" stroke="hsl(48 100% 84%)" stroke-width="1"/></g><g style="offset-path:path('M 180 540 Q 420 360 660 540 T 1140 540 T 1740 540');animation:wink-trail 3.2s linear infinite, wink-glow-pulse 1.6s ease-in-out infinite;animation-delay:1.6800000000000002s, 0.96s"><path d="M9.797174393178826e-16,-16 L3.761825614671828,-5.177708763999664 L15.216904260722456,-4.944271909999158 L6.086761704288983,1.9777087639996633 L9.40456403667957,12.94427190999916 L3.9188697572715305e-16,6.4 L-9.404564036679568,12.94427190999916 L-6.086761704288983,1.9777087639996642 L-15.216904260722458,-4.9442719099991566 L-3.761825614671829,-5.1777087639996635 Z" fill="hsl(48 100% 84%)" stroke="hsl(48 100% 84%)" stroke-width="1"/></g><g style="offset-path:path('M 180 540 Q 420 360 660 540 T 1140 540 T 1740 540');animation:wink-trail 3.2s linear infinite, wink-glow-pulse 1.6s ease-in-out infinite;animation-delay:1.8200000000000003s, 1.04s"><path d="M1.2246467991473533e-15,-20 L4.702282018339785,-6.47213595499958 L19.02113032590307,-6.180339887498948 L7.608452130361228,2.472135954999579 L11.755705045849464,16.18033988749895 L4.898587196589413e-16,8 L-11.75570504584946,16.18033988749895 L-7.608452130361228,2.47213595499958 L-19.021130325903073,-6.1803398874989455 L-4.702282018339786,-6.472135954999579 Z" fill="hsl(39 84% 52%)" stroke="hsl(48 100% 84%)" stroke-width="1"/></g></svg>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080"><style>@keyframes wink-burst {
+  0% { transform: scale(0); opacity: 0; }
+  20% { opacity: 1; }
+  60% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.15); opacity: 0; }
+}
+@keyframes wink-fade-loop {
+  0%, 100% { opacity: 0; }
+  10%, 70% { opacity: 1; }
+}
+@keyframes wink-spark-fall {
+  0% { transform: translateY(-40px); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translateY(220px); opacity: 0; }
+}
+@keyframes wink-comet {
+  0% { transform: translate(0,0) scale(0.6); opacity: 0; }
+  30% { opacity: 1; }
+  70% { transform: translate(var(--tx,0), var(--ty,-200px)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,0), var(--ty,-200px)) scale(1.2); opacity: 0; }
+}
+@keyframes wink-ring-expand {
+  0% { transform: scale(0.1); opacity: 0; stroke-width: 8; }
+  20% { opacity: 1; }
+  100% { transform: scale(1); opacity: 0; stroke-width: 1; }
+}
+@keyframes wink-twinkle {
+  0%, 100% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1); opacity: 1; }
+}
+@keyframes wink-pop {
+  0% { transform: scale(0) rotate(-20deg); opacity: 0; }
+  60% { transform: scale(1.15) rotate(5deg); opacity: 1; }
+  80% { transform: scale(1) rotate(0); opacity: 1; }
+  100% { transform: scale(1) rotate(0); opacity: 0; }
+}
+@keyframes wink-swirl {
+  0% { transform: rotate(0deg) translateX(180px) scale(0); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: rotate(360deg) translateX(40px) scale(1); opacity: 0; }
+}
+@keyframes wink-shower {
+  0% { transform: translateY(-60px) rotate(0); opacity: 0; }
+  15% { opacity: 1; }
+  100% { transform: translateY(260px) rotate(180deg); opacity: 0; }
+}
+@keyframes wink-trail {
+  0% { offset-distance: 0%; opacity: 0; transform: scale(0.4); }
+  10% { opacity: 1; transform: scale(1); }
+  90% { opacity: 1; }
+  100% { offset-distance: 100%; opacity: 0; transform: scale(0.6); }
+}
+@keyframes wink-bounce-in {
+  0% { transform: translateY(-300px) scale(0.6); opacity: 0; }
+  50% { transform: translateY(20px) scale(1.05); opacity: 1; }
+  70% { transform: translateY(-10px) scale(0.98); }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+@keyframes wink-bounce-loop {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes wink-pop-up {
+  0% { transform: translateY(300px); opacity: 0; }
+  60% { transform: translateY(-15px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes wink-orbit {
+  from { transform: rotate(0deg) translateX(var(--orbit-r,160px)) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(var(--orbit-r,160px)) rotate(-360deg); }
+}
+@keyframes wink-scatter {
+  0%, 100% { transform: translate(var(--sx,0), var(--sy,0)) scale(0.9); opacity: 0.6; }
+  50% { transform: translate(calc(var(--sx,0) * 1.2), calc(var(--sy,0) * 1.2)) scale(1.05); opacity: 1; }
+}
+@keyframes wink-sparkle {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+@keyframes wink-glow-pulse {
+  0%, 100% { opacity: 0.4; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+@keyframes wink-confetti-launch {
+  0% { transform: translate(0,0) rotate(var(--r0,0deg)) scale(0.28); opacity: 0; }
+  14% { opacity: 1; }
+  72% { transform: translate(var(--tx,0px), var(--ty,0px)) rotate(var(--r1,180deg)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,0px), var(--ty,0px)) rotate(var(--r2,320deg)) scale(0.82); opacity: 0; }
+}
+@keyframes wink-confetti-fall {
+  0% { transform: translate(0,-90px) rotate(var(--r0,0deg)) scale(0.7); opacity: 0; }
+  14% { opacity: 1; }
+  82% { opacity: 1; }
+  100% { transform: translate(var(--tx,0px), var(--ty,720px)) rotate(var(--r1,260deg)) scale(1); opacity: 0; }
+}
+@keyframes wink-confetti-shimmer {
+  0%, 100% { transform: rotate(var(--r0,0deg)) scale(0.92); }
+  50% { transform: rotate(var(--r1,180deg)) scale(1.08); }
+}
+@keyframes wink-confetti-wave {
+  0% { transform: translate(var(--sx,-180px), var(--sy,0px)) rotate(var(--r0,0deg)) scale(0.5); opacity: 0; }
+  18% { opacity: 1; }
+  58% { transform: translate(0,0) rotate(var(--r1,180deg)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,180px), var(--ty,0px)) rotate(var(--r2,360deg)) scale(0.78); opacity: 0; }
+}
+@keyframes wink-bingo-arrive {
+  0% { transform: translate(var(--from-x,0), var(--from-y,0)) scale(0.34); opacity: 0; }
+  18% { opacity: 1; }
+  38% { transform: translate(var(--overshoot-x,0), var(--overshoot-y,0)) scale(1.09); opacity: 1; }
+  46%, 100% { transform: translate(0,0) scale(1); opacity: 1; }
+}
+@keyframes wink-bingo-countdown {
+  0%, 100% { opacity: 0; transform: scale(0.36); }
+  5% { opacity: 1; transform: scale(0.92); }
+  10% { opacity: 1; transform: scale(1.06); }
+  16% { opacity: 0; transform: scale(1.22); }
+}
+@keyframes wink-bingo-spiral-letter {
+  0% { transform: rotate(var(--spin-start,-220deg)) translateX(var(--orbit-r,320px)) scale(0.3); opacity: 0; }
+  22% { opacity: 1; }
+  42% { transform: rotate(var(--spin-mid,24deg)) translateX(18px) scale(1.1); opacity: 1; }
+  52%, 100% { transform: rotate(0deg) translateX(0) scale(1); opacity: 1; }
+}
+@keyframes wink-bingo-final-bounce {
+  0%, 54%, 100% { transform: translateY(0) scale(1); }
+  64% { transform: translateY(-22px) scale(1.06); }
+  76% { transform: translateY(0) scale(0.98); }
+  88% { transform: translateY(-10px) scale(1.02); }
+}
+@keyframes wink-bingo-impact {
+  0%, 56%, 100% { opacity: 0; transform: scale(0.52); }
+  66% { opacity: 0.95; transform: scale(1.04); }
+  78% { opacity: 0.38; transform: scale(1.34); }
+}</style><path d="M 250 560 C 470 350, 690 730, 920 560 S 1370 350, 1670 560" fill="none" stroke="hsl(48 100% 84%)" stroke-width="4" stroke-linecap="round" opacity="0.22"/><path d="M 250 620 C 470 450, 690 790, 920 620 S 1370 450, 1670 620" fill="none" stroke="hsl(43 94% 60%)" stroke-width="2.5" stroke-linecap="round" opacity="0.16"/><g style="transform-origin:300px 410px;animation:wink-bounce-loop 1.2s ease-in-out infinite;animation-delay:0s"><defs><radialGradient id="sb-300-410-18-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(35 95% 55%)"/><stop offset="100%" stop-color="hsl(28 85% 40%)"/></radialGradient></defs><circle cx="300" cy="410" r="18" fill="url(#sb-300-410-18-g)" stroke="hsl(28 85% 40%)" stroke-width="1.5"/><ellipse cx="293.7" cy="401" rx="5.3999999999999995" ry="2.5200000000000005" fill="white" opacity="0.5"/></g><g style="transform-origin:420px 464.0906217110164px;animation:wink-bounce-loop 1.2s ease-in-out infinite;animation-delay:0.08s"><defs><radialGradient id="sb-420-464.0906217110164-22-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(50 95% 55%)"/><stop offset="100%" stop-color="hsl(42 80% 40%)"/></radialGradient></defs><circle cx="420" cy="464.0906217110164" r="22" fill="url(#sb-420-464.0906217110164-22-g)" stroke="hsl(42 80% 40%)" stroke-width="1.5"/><ellipse cx="412.3" cy="453.0906217110164" rx="6.6" ry="3.08" fill="white" opacity="0.5"/></g><g style="transform-origin:540px 504.1983933276748px;animation:wink-bounce-loop 1.2s ease-in-out infinite;animation-delay:0.16s"><defs><radialGradient id="sb-540-504.1983933276748-18-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(140 60% 48%)"/><stop offset="100%" stop-color="hsl(140 55% 32%)"/></radialGradient></defs><circle cx="540" cy="504.1983933276748" r="18" fill="url(#sb-540-504.1983933276748-18-g)" stroke="hsl(140 55% 32%)" stroke-width="1.5"/><ellipse cx="533.7" cy="495.1983933276748" rx="5.3999999999999995" ry="2.5200000000000005" fill="white" opacity="0.5"/></g><g style="transform-origin:660px 519.9551412111008px;animation:wink-bounce-loop 1.2s ease-in-out infinite;animation-delay:0.24s"><defs><radialGradient id="sb-660-519.9551412111008-22-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(210 80% 55%)"/><stop offset="100%" stop-color="hsl(212 70% 38%)"/></radialGradient></defs><circle cx="660" cy="519.9551412111008" r="22" fill="url(#sb-660-519.9551412111008-22-g)" stroke="hsl(212 70% 38%)" stroke-width="1.5"/><ellipse cx="652.3" cy="508.9551412111008" rx="6.6" ry="3.08" fill="white" opacity="0.5"/></g><g style="transform-origin:780px 507.2876224097596px;animation:wink-bounce-loop 1.2s ease-in-out infinite;animation-delay:0.32s"><defs><radialGradient id="sb-780-507.2876224097596-18-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(0 80% 58%)"/><stop offset="100%" stop-color="hsl(0 70% 40%)"/></radialGradient></defs><circle cx="780" cy="507.2876224097596" r="18" fill="url(#sb-780-507.2876224097596-18-g)" stroke="hsl(0 70% 40%)" stroke-width="1.5"/><ellipse cx="773.7" cy="498.2876224097596" rx="5.3999999999999995" ry="2.5200000000000005" fill="white" opacity="0.5"/></g><g style="transform-origin:900px 469.47048992011577px;animation:wink-bounce-loop 1.2s ease-in-out infinite;animation-delay:0.4s"><defs><radialGradient id="sb-900-469.47048992011577-22-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(35 95% 55%)"/><stop offset="100%" stop-color="hsl(28 85% 40%)"/></radialGradient></defs><circle cx="900" cy="469.47048992011577" r="22" fill="url(#sb-900-469.47048992011577-22-g)" stroke="hsl(28 85% 40%)" stroke-width="1.5"/><ellipse cx="892.3" cy="458.47048992011577" rx="6.6" ry="3.08" fill="white" opacity="0.5"/></g><g style="transform-origin:1020px 416.2797691949045px;animation:wink-bounce-loop 1.2s ease-in-out infinite;animation-delay:0.48s"><defs><radialGradient id="sb-1020-416.2797691949045-18-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(50 95% 55%)"/><stop offset="100%" stop-color="hsl(42 80% 40%)"/></radialGradient></defs><circle cx="1020" cy="416.2797691949045" r="18" fill="url(#sb-1020-416.2797691949045-18-g)" stroke="hsl(42 80% 40%)" stroke-width="1.5"/><ellipse cx="1013.7" cy="407.2797691949045" rx="5.3999999999999995" ry="2.5200000000000005" fill="white" opacity="0.5"/></g><g style="transform-origin:1140px 361.46567886324567px;animation:wink-bounce-loop 1.2s ease-in-out infinite;animation-delay:0.56s"><defs><radialGradient id="sb-1140-361.46567886324567-22-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(140 60% 48%)"/><stop offset="100%" stop-color="hsl(140 55% 32%)"/></radialGradient></defs><circle cx="1140" cy="361.46567886324567" r="22" fill="url(#sb-1140-361.46567886324567-22-g)" stroke="hsl(140 55% 32%)" stroke-width="1.5"/><ellipse cx="1132.3" cy="350.46567886324567" rx="6.6" ry="3.08" fill="white" opacity="0.5"/></g><g style="transform-origin:1260px 319.1980913340949px;animation:wink-bounce-loop 1.2s ease-in-out infinite;animation-delay:0.64s"><defs><radialGradient id="sb-1260-319.1980913340949-18-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(210 80% 55%)"/><stop offset="100%" stop-color="hsl(212 70% 38%)"/></radialGradient></defs><circle cx="1260" cy="319.1980913340949" r="18" fill="url(#sb-1260-319.1980913340949-18-g)" stroke="hsl(212 70% 38%)" stroke-width="1.5"/><ellipse cx="1253.7" cy="310.1980913340949" rx="5.3999999999999995" ry="2.5200000000000005" fill="white" opacity="0.5"/></g><g style="transform-origin:1380px 300.4035096051039px;animation:wink-bounce-loop 1.2s ease-in-out infinite;animation-delay:0.72s"><defs><radialGradient id="sb-1380-300.4035096051039-22-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(0 80% 58%)"/><stop offset="100%" stop-color="hsl(0 70% 40%)"/></radialGradient></defs><circle cx="1380" cy="300.4035096051039" r="22" fill="url(#sb-1380-300.4035096051039-22-g)" stroke="hsl(0 70% 40%)" stroke-width="1.5"/><ellipse cx="1372.3" cy="289.4035096051039" rx="6.6" ry="3.08" fill="white" opacity="0.5"/></g><g style="transform-origin:1500px 309.940480511003px;animation:wink-bounce-loop 1.2s ease-in-out infinite;animation-delay:0.8s"><defs><radialGradient id="sb-1500-309.940480511003-18-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(35 95% 55%)"/><stop offset="100%" stop-color="hsl(28 85% 40%)"/></radialGradient></defs><circle cx="1500" cy="309.940480511003" r="18" fill="url(#sb-1500-309.940480511003-18-g)" stroke="hsl(28 85% 40%)" stroke-width="1.5"/><ellipse cx="1493.7" cy="300.940480511003" rx="5.3999999999999995" ry="2.5200000000000005" fill="white" opacity="0.5"/></g><g style="transform-origin:1620px 345.34362224782797px;animation:wink-bounce-loop 1.2s ease-in-out infinite;animation-delay:0.88s"><defs><radialGradient id="sb-1620-345.34362224782797-22-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(50 95% 55%)"/><stop offset="100%" stop-color="hsl(42 80% 40%)"/></radialGradient></defs><circle cx="1620" cy="345.34362224782797" r="22" fill="url(#sb-1620-345.34362224782797-22-g)" stroke="hsl(42 80% 40%)" stroke-width="1.5"/><ellipse cx="1612.3" cy="334.34362224782797" rx="6.6" ry="3.08" fill="white" opacity="0.5"/></g><g style="transform-origin:960px 540px;animation:wink-bingo-impact 3s ease-out infinite"><ellipse cx="960" cy="540" rx="640" ry="175" fill="hsl(43 94% 60%)" opacity="0.18"/></g><g transform="translate(440 540)"><g style="--from-x:-620px;--from-y:-110px;--overshoot-x:16px;--overshoot-y:18px;animation:wink-bingo-arrive undefineds cubic-bezier(.22,1,.36,1) infinite;animation-delay:0s;transform-origin:0 0"><g style="animation:wink-bingo-final-bounce 3s ease-out infinite"><g><defs><radialGradient id="bb-0-grad" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(0 80% 58%)"/><stop offset="100%" stop-color="hsl(0 70% 40%)"/></radialGradient></defs><ellipse cx="0" cy="124" rx="82.5" ry="10" fill="black" opacity="0.18"/><circle cx="0" cy="0" r="110" fill="url(#bb-0-grad)" stroke="hsl(0 70% 40%)" stroke-width="2.5"/><circle cx="0" cy="0" r="68.2" fill="white" stroke="hsl(0 70% 40%)" stroke-width="2"/><text x="0" y="0" text-anchor="middle" dominant-baseline="central" font-family="Inter, system-ui, sans-serif" font-weight="900" font-size="99" fill="hsl(0 70% 40%)">B</text><ellipse cx="-44" cy="-60.50000000000001" rx="38.5" ry="19.8" fill="white" opacity="0.45"/></g></g></g></g><g transform="translate(700 540)"><g style="--from-x:-710px;--from-y:125px;--overshoot-x:16px;--overshoot-y:-18px;animation:wink-bingo-arrive undefineds cubic-bezier(.22,1,.36,1) infinite;animation-delay:0.14s;transform-origin:0 0"><g style="animation:wink-bingo-final-bounce 3s ease-out infinite"><g><defs><radialGradient id="bb-1-grad" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(35 95% 55%)"/><stop offset="100%" stop-color="hsl(28 85% 40%)"/></radialGradient></defs><ellipse cx="0" cy="124" rx="82.5" ry="10" fill="black" opacity="0.18"/><circle cx="0" cy="0" r="110" fill="url(#bb-1-grad)" stroke="hsl(28 85% 40%)" stroke-width="2.5"/><circle cx="0" cy="0" r="68.2" fill="white" stroke="hsl(28 85% 40%)" stroke-width="2"/><text x="0" y="0" text-anchor="middle" dominant-baseline="central" font-family="Inter, system-ui, sans-serif" font-weight="900" font-size="99" fill="hsl(28 85% 40%)">I</text><ellipse cx="-44" cy="-60.50000000000001" rx="38.5" ry="19.8" fill="white" opacity="0.45"/></g></g></g></g><g transform="translate(960 540)"><g style="--from-x:-800px;--from-y:-110px;--overshoot-x:16px;--overshoot-y:18px;animation:wink-bingo-arrive undefineds cubic-bezier(.22,1,.36,1) infinite;animation-delay:0.28s;transform-origin:0 0"><g style="animation:wink-bingo-final-bounce 3s ease-out infinite"><g><defs><radialGradient id="bb-2-grad" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(50 95% 55%)"/><stop offset="100%" stop-color="hsl(42 80% 40%)"/></radialGradient></defs><ellipse cx="0" cy="124" rx="82.5" ry="10" fill="black" opacity="0.18"/><circle cx="0" cy="0" r="110" fill="url(#bb-2-grad)" stroke="hsl(42 80% 40%)" stroke-width="2.5"/><circle cx="0" cy="0" r="68.2" fill="white" stroke="hsl(42 80% 40%)" stroke-width="2"/><text x="0" y="0" text-anchor="middle" dominant-baseline="central" font-family="Inter, system-ui, sans-serif" font-weight="900" font-size="99" fill="hsl(42 80% 40%)">N</text><ellipse cx="-44" cy="-60.50000000000001" rx="38.5" ry="19.8" fill="white" opacity="0.45"/></g></g></g></g><g transform="translate(1220 540)"><g style="--from-x:-890px;--from-y:125px;--overshoot-x:16px;--overshoot-y:-18px;animation:wink-bingo-arrive undefineds cubic-bezier(.22,1,.36,1) infinite;animation-delay:0.42000000000000004s;transform-origin:0 0"><g style="animation:wink-bingo-final-bounce 3s ease-out infinite"><g><defs><radialGradient id="bb-3-grad" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(140 60% 48%)"/><stop offset="100%" stop-color="hsl(140 55% 32%)"/></radialGradient></defs><ellipse cx="0" cy="124" rx="82.5" ry="10" fill="black" opacity="0.18"/><circle cx="0" cy="0" r="110" fill="url(#bb-3-grad)" stroke="hsl(140 55% 32%)" stroke-width="2.5"/><circle cx="0" cy="0" r="68.2" fill="white" stroke="hsl(140 55% 32%)" stroke-width="2"/><text x="0" y="0" text-anchor="middle" dominant-baseline="central" font-family="Inter, system-ui, sans-serif" font-weight="900" font-size="99" fill="hsl(140 55% 32%)">G</text><ellipse cx="-44" cy="-60.50000000000001" rx="38.5" ry="19.8" fill="white" opacity="0.45"/></g></g></g></g><g transform="translate(1480 540)"><g style="--from-x:-980px;--from-y:-110px;--overshoot-x:16px;--overshoot-y:18px;animation:wink-bingo-arrive undefineds cubic-bezier(.22,1,.36,1) infinite;animation-delay:0.56s;transform-origin:0 0"><g style="animation:wink-bingo-final-bounce 3s ease-out infinite"><g><defs><radialGradient id="bb-4-grad" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(210 80% 55%)"/><stop offset="100%" stop-color="hsl(212 70% 38%)"/></radialGradient></defs><ellipse cx="0" cy="124" rx="82.5" ry="10" fill="black" opacity="0.18"/><circle cx="0" cy="0" r="110" fill="url(#bb-4-grad)" stroke="hsl(212 70% 38%)" stroke-width="2.5"/><circle cx="0" cy="0" r="68.2" fill="white" stroke="hsl(212 70% 38%)" stroke-width="2"/><text x="0" y="0" text-anchor="middle" dominant-baseline="central" font-family="Inter, system-ui, sans-serif" font-weight="900" font-size="99" fill="hsl(212 70% 38%)">O</text><ellipse cx="-44" cy="-60.50000000000001" rx="38.5" ry="19.8" fill="white" opacity="0.45"/></g></g></g></g><g style="transform-origin:440px 365px;animation:wink-sparkle 3s ease-in-out infinite;animation-delay:1.72s"><path d="M440,348 L443.99693971558884,359.49868443825034 L456.1679607770176,359.74671109562587 L446.46718431080706,367.10131556174963 L449.99234928897204,378.75328890437413 L440,371.8 L430.00765071102796,378.75328890437413 L433.53281568919294,367.10131556174963 L423.8320392229824,359.74671109562587 L436.00306028441116,359.49868443825034 Z" fill="hsl(43 94% 60%)"/></g><g style="transform-origin:700px 365px;animation:wink-sparkle 3s ease-in-out infinite;animation-delay:1.77s"><path d="M700,348 L703.9969397155888,359.49868443825034 L716.1679607770176,359.74671109562587 L706.467184310807,367.10131556174963 L709.992349288972,378.75328890437413 L700,371.8 L690.007650711028,378.75328890437413 L693.532815689193,367.10131556174963 L683.8320392229824,359.74671109562587 L696.0030602844112,359.49868443825034 Z" fill="hsl(48 100% 84%)"/></g><g style="transform-origin:960px 365px;animation:wink-sparkle 3s ease-in-out infinite;animation-delay:1.82s"><path d="M960,348 L963.9969397155888,359.49868443825034 L976.1679607770176,359.74671109562587 L966.467184310807,367.10131556174963 L969.992349288972,378.75328890437413 L960,371.8 L950.007650711028,378.75328890437413 L953.532815689193,367.10131556174963 L943.8320392229824,359.74671109562587 L956.0030602844112,359.49868443825034 Z" fill="hsl(43 94% 60%)"/></g><g style="transform-origin:1220px 365px;animation:wink-sparkle 3s ease-in-out infinite;animation-delay:1.87s"><path d="M1220,348 L1223.9969397155887,359.49868443825034 L1236.1679607770177,359.74671109562587 L1226.467184310807,367.10131556174963 L1229.992349288972,378.75328890437413 L1220,371.8 L1210.007650711028,378.75328890437413 L1213.532815689193,367.10131556174963 L1203.8320392229823,359.74671109562587 L1216.0030602844113,359.49868443825034 Z" fill="hsl(48 100% 84%)"/></g><g style="transform-origin:1480px 365px;animation:wink-sparkle 3s ease-in-out infinite;animation-delay:1.92s"><path d="M1480,348 L1483.9969397155887,359.49868443825034 L1496.1679607770177,359.74671109562587 L1486.467184310807,367.10131556174963 L1489.992349288972,378.75328890437413 L1480,371.8 L1470.007650711028,378.75328890437413 L1473.532815689193,367.10131556174963 L1463.8320392229823,359.74671109562587 L1476.0030602844113,359.49868443825034 Z" fill="hsl(43 94% 60%)"/></g></svg>

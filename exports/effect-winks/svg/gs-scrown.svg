@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080"><style>@keyframes wink-burst {
+  0% { transform: scale(0); opacity: 0; }
+  20% { opacity: 1; }
+  60% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.15); opacity: 0; }
+}
+@keyframes wink-fade-loop {
+  0%, 100% { opacity: 0; }
+  10%, 70% { opacity: 1; }
+}
+@keyframes wink-spark-fall {
+  0% { transform: translateY(-40px); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translateY(220px); opacity: 0; }
+}
+@keyframes wink-comet {
+  0% { transform: translate(0,0) scale(0.6); opacity: 0; }
+  30% { opacity: 1; }
+  70% { transform: translate(var(--tx,0), var(--ty,-200px)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,0), var(--ty,-200px)) scale(1.2); opacity: 0; }
+}
+@keyframes wink-ring-expand {
+  0% { transform: scale(0.1); opacity: 0; stroke-width: 8; }
+  20% { opacity: 1; }
+  100% { transform: scale(1); opacity: 0; stroke-width: 1; }
+}
+@keyframes wink-twinkle {
+  0%, 100% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1); opacity: 1; }
+}
+@keyframes wink-pop {
+  0% { transform: scale(0) rotate(-20deg); opacity: 0; }
+  60% { transform: scale(1.15) rotate(5deg); opacity: 1; }
+  80% { transform: scale(1) rotate(0); opacity: 1; }
+  100% { transform: scale(1) rotate(0); opacity: 0; }
+}
+@keyframes wink-swirl {
+  0% { transform: rotate(0deg) translateX(180px) scale(0); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: rotate(360deg) translateX(40px) scale(1); opacity: 0; }
+}
+@keyframes wink-shower {
+  0% { transform: translateY(-60px) rotate(0); opacity: 0; }
+  15% { opacity: 1; }
+  100% { transform: translateY(260px) rotate(180deg); opacity: 0; }
+}
+@keyframes wink-trail {
+  0% { offset-distance: 0%; opacity: 0; transform: scale(0.4); }
+  10% { opacity: 1; transform: scale(1); }
+  90% { opacity: 1; }
+  100% { offset-distance: 100%; opacity: 0; transform: scale(0.6); }
+}
+@keyframes wink-bounce-in {
+  0% { transform: translateY(-300px) scale(0.6); opacity: 0; }
+  50% { transform: translateY(20px) scale(1.05); opacity: 1; }
+  70% { transform: translateY(-10px) scale(0.98); }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+@keyframes wink-bounce-loop {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes wink-pop-up {
+  0% { transform: translateY(300px); opacity: 0; }
+  60% { transform: translateY(-15px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes wink-orbit {
+  from { transform: rotate(0deg) translateX(var(--orbit-r,160px)) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(var(--orbit-r,160px)) rotate(-360deg); }
+}
+@keyframes wink-scatter {
+  0%, 100% { transform: translate(var(--sx,0), var(--sy,0)) scale(0.9); opacity: 0.6; }
+  50% { transform: translate(calc(var(--sx,0) * 1.2), calc(var(--sy,0) * 1.2)) scale(1.05); opacity: 1; }
+}
+@keyframes wink-sparkle {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+@keyframes wink-glow-pulse {
+  0%, 100% { opacity: 0.4; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+@keyframes wink-confetti-launch {
+  0% { transform: translate(0,0) rotate(var(--r0,0deg)) scale(0.28); opacity: 0; }
+  14% { opacity: 1; }
+  72% { transform: translate(var(--tx,0px), var(--ty,0px)) rotate(var(--r1,180deg)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,0px), var(--ty,0px)) rotate(var(--r2,320deg)) scale(0.82); opacity: 0; }
+}
+@keyframes wink-confetti-fall {
+  0% { transform: translate(0,-90px) rotate(var(--r0,0deg)) scale(0.7); opacity: 0; }
+  14% { opacity: 1; }
+  82% { opacity: 1; }
+  100% { transform: translate(var(--tx,0px), var(--ty,720px)) rotate(var(--r1,260deg)) scale(1); opacity: 0; }
+}
+@keyframes wink-confetti-shimmer {
+  0%, 100% { transform: rotate(var(--r0,0deg)) scale(0.92); }
+  50% { transform: rotate(var(--r1,180deg)) scale(1.08); }
+}
+@keyframes wink-confetti-wave {
+  0% { transform: translate(var(--sx,-180px), var(--sy,0px)) rotate(var(--r0,0deg)) scale(0.5); opacity: 0; }
+  18% { opacity: 1; }
+  58% { transform: translate(0,0) rotate(var(--r1,180deg)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,180px), var(--ty,0px)) rotate(var(--r2,360deg)) scale(0.78); opacity: 0; }
+}</style><g style="transform-origin:960px 340px;transform:rotate(0deg)"><g style="transform-origin:960px 340px;animation:wink-swirl 3.3s ease-in-out infinite;animation-delay:0s"><path d="M960,324 L963.7618256146718,334.82229123600035 L975.2169042607225,335.05572809000085 L966.086761704289,341.97770876399966 L969.4045640366795,352.94427190999915 L960,346.4 L950.5954359633205,352.94427190999915 L953.913238295711,341.97770876399966 L944.7830957392775,335.05572809000085 L956.2381743853282,334.82229123600035 Z" fill="hsl(43 94% 60%)" stroke="hsl(48 100% 84%)" stroke-width="1.1"/></g></g><g style="transform-origin:960px 340px;transform:rotate(32.72727272727273deg)"><g style="transform-origin:960px 340px;animation:wink-swirl 3.3s ease-in-out infinite;animation-delay:0.12s"><path d="M960,320 L964.7022820183398,333.5278640450004 L979.0211303259031,333.819660112501 L967.6084521303612,342.4721359549996 L971.7557050458495,356.180339887499 L960,348 L948.2442949541505,356.180339887499 L952.3915478696388,342.4721359549996 L940.9788696740969,333.8196601125011 L955.2977179816602,333.5278640450004 Z" fill="hsl(42 100% 70%)" stroke="hsl(48 100% 84%)" stroke-width="1.1"/></g></g><g style="transform-origin:960px 340px;transform:rotate(65.45454545454545deg)"><g style="transform-origin:960px 340px;animation:wink-swirl 3.3s ease-in-out infinite;animation-delay:0.24s"><path d="M960,316 L965.6427384220077,332.2334368540005 L982.8253563910837,332.58359213500125 L969.1301425564335,342.9665631459995 L974.1068460550193,359.41640786499875 L960,349.6 L945.8931539449807,359.41640786499875 L950.8698574435665,342.9665631459995 L937.1746436089163,332.58359213500125 L954.3572615779923,332.2334368540005 Z" fill="hsl(48 100% 84%)" stroke="hsl(48 100% 84%)" stroke-width="1.1"/></g></g><g style="transform-origin:960px 340px;transform:rotate(98.18181818181819deg)"><g style="transform-origin:960px 340px;animation:wink-swirl 3.3s ease-in-out infinite;animation-delay:0.36s"><path d="M960,324 L963.7618256146718,334.82229123600035 L975.2169042607225,335.05572809000085 L966.086761704289,341.97770876399966 L969.4045640366795,352.94427190999915 L960,346.4 L950.5954359633205,352.94427190999915 L953.913238295711,341.97770876399966 L944.7830957392775,335.05572809000085 L956.2381743853282,334.82229123600035 Z" fill="hsl(39 84% 52%)" stroke="hsl(48 100% 84%)" stroke-width="1.1"/></g></g><g style="transform-origin:960px 340px;transform:rotate(130.9090909090909deg)"><g style="transform-origin:960px 340px;animation:wink-swirl 3.3s ease-in-out infinite;animation-delay:0.48s"><path d="M960,320 L964.7022820183398,333.5278640450004 L979.0211303259031,333.819660112501 L967.6084521303612,342.4721359549996 L971.7557050458495,356.180339887499 L960,348 L948.2442949541505,356.180339887499 L952.3915478696388,342.4721359549996 L940.9788696740969,333.8196601125011 L955.2977179816602,333.5278640450004 Z" fill="hsl(50 100% 92%)" stroke="hsl(48 100% 84%)" stroke-width="1.1"/></g></g><g style="transform-origin:960px 340px;transform:rotate(163.63636363636363deg)"><g style="transform-origin:960px 340px;animation:wink-swirl 3.3s ease-in-out infinite;animation-delay:0.6s"><path d="M960,316 L965.6427384220077,332.2334368540005 L982.8253563910837,332.58359213500125 L969.1301425564335,342.9665631459995 L974.1068460550193,359.41640786499875 L960,349.6 L945.8931539449807,359.41640786499875 L950.8698574435665,342.9665631459995 L937.1746436089163,332.58359213500125 L954.3572615779923,332.2334368540005 Z" fill="hsl(43 94% 60%)" stroke="hsl(48 100% 84%)" stroke-width="1.1"/></g></g><g style="transform-origin:960px 340px;transform:rotate(196.36363636363637deg)"><g style="transform-origin:960px 340px;animation:wink-swirl 3.3s ease-in-out infinite;animation-delay:0.72s"><path d="M960,324 L963.7618256146718,334.82229123600035 L975.2169042607225,335.05572809000085 L966.086761704289,341.97770876399966 L969.4045640366795,352.94427190999915 L960,346.4 L950.5954359633205,352.94427190999915 L953.913238295711,341.97770876399966 L944.7830957392775,335.05572809000085 L956.2381743853282,334.82229123600035 Z" fill="hsl(42 100% 70%)" stroke="hsl(48 100% 84%)" stroke-width="1.1"/></g></g><g style="transform-origin:960px 340px;transform:rotate(229.0909090909091deg)"><g style="transform-origin:960px 340px;animation:wink-swirl 3.3s ease-in-out infinite;animation-delay:0.84s"><path d="M960,320 L964.7022820183398,333.5278640450004 L979.0211303259031,333.819660112501 L967.6084521303612,342.4721359549996 L971.7557050458495,356.180339887499 L960,348 L948.2442949541505,356.180339887499 L952.3915478696388,342.4721359549996 L940.9788696740969,333.8196601125011 L955.2977179816602,333.5278640450004 Z" fill="hsl(48 100% 84%)" stroke="hsl(48 100% 84%)" stroke-width="1.1"/></g></g><g style="transform-origin:960px 340px;transform:rotate(261.8181818181818deg)"><g style="transform-origin:960px 340px;animation:wink-swirl 3.3s ease-in-out infinite;animation-delay:0.96s"><path d="M960,316 L965.6427384220077,332.2334368540005 L982.8253563910837,332.58359213500125 L969.1301425564335,342.9665631459995 L974.1068460550193,359.41640786499875 L960,349.6 L945.8931539449807,359.41640786499875 L950.8698574435665,342.9665631459995 L937.1746436089163,332.58359213500125 L954.3572615779923,332.2334368540005 Z" fill="hsl(39 84% 52%)" stroke="hsl(48 100% 84%)" stroke-width="1.1"/></g></g><g style="transform-origin:960px 340px;transform:rotate(294.54545454545456deg)"><g style="transform-origin:960px 340px;animation:wink-swirl 3.3s ease-in-out infinite;animation-delay:1.08s"><path d="M960,324 L963.7618256146718,334.82229123600035 L975.2169042607225,335.05572809000085 L966.086761704289,341.97770876399966 L969.4045640366795,352.94427190999915 L960,346.4 L950.5954359633205,352.94427190999915 L953.913238295711,341.97770876399966 L944.7830957392775,335.05572809000085 L956.2381743853282,334.82229123600035 Z" fill="hsl(50 100% 92%)" stroke="hsl(48 100% 84%)" stroke-width="1.1"/></g></g><g style="transform-origin:960px 340px;transform:rotate(327.27272727272725deg)"><g style="transform-origin:960px 340px;animation:wink-swirl 3.3s ease-in-out infinite;animation-delay:1.2s"><path d="M960,320 L964.7022820183398,333.5278640450004 L979.0211303259031,333.819660112501 L967.6084521303612,342.4721359549996 L971.7557050458495,356.180339887499 L960,348 L948.2442949541505,356.180339887499 L952.3915478696388,342.4721359549996 L940.9788696740969,333.8196601125011 L955.2977179816602,333.5278640450004 Z" fill="hsl(43 94% 60%)" stroke="hsl(48 100% 84%)" stroke-width="1.1"/></g></g><g style="transform-origin:760px 320px;animation:wink-pop 3.3s ease-out infinite;animation-delay:1.1s"><path d="M760,302 L764.2320538165058,314.1750776405004 L777.1190172933127,314.43769410125094 L766.8476069173252,322.2249223594996 L770.5801345412646,334.56230589874906 L760,327.2 L749.4198654587354,334.56230589874906 L753.1523930826748,322.2249223594996 L742.8809827066873,314.43769410125094 L755.7679461834942,314.1750776405004 Z" fill="hsl(43 94% 60%)" stroke="hsl(48 100% 84%)" stroke-width="1.4"/></g><g style="transform-origin:880px 250px;animation:wink-pop 3.3s ease-out infinite;animation-delay:1.22s"><path d="M880,228 L885.1725102201738,242.88065044950045 L900.9232433584933,243.20162612375117 L888.3692973433973,252.71934955049954 L892.9312755504344,267.79837387624883 L880,258.8 L867.0687244495656,267.79837387624883 L871.6307026566027,252.71934955049954 L859.0767566415066,243.20162612375117 L874.8274897798262,242.88065044950045 Z" fill="hsl(43 94% 60%)" stroke="hsl(48 100% 84%)" stroke-width="1.4"/></g><g style="transform-origin:960px 220px;animation:wink-pop 3.3s ease-out infinite;animation-delay:1.34s"><path d="M960,192 L966.5831948256757,210.93900966300058 L986.6295824562643,211.34752415750148 L970.6518329825058,223.4609903369994 L976.4579870641893,242.65247584249852 L960,231.2 L943.5420129358107,242.65247584249852 L949.3481670174942,223.4609903369994 L933.3704175437357,211.34752415750148 L953.4168051743243,210.93900966300058 Z" fill="hsl(43 94% 60%)" stroke="hsl(48 100% 84%)" stroke-width="1.4"/></g><g style="transform-origin:1040px 250px;animation:wink-pop 3.3s ease-out infinite;animation-delay:1.46s"><path d="M1040,228 L1045.1725102201738,242.88065044950045 L1060.9232433584934,243.20162612375117 L1048.3692973433974,252.71934955049954 L1052.9312755504345,267.79837387624883 L1040,258.8 L1027.0687244495657,267.79837387624883 L1031.6307026566026,252.71934955049954 L1019.0767566415066,243.20162612375117 L1034.8274897798262,242.88065044950045 Z" fill="hsl(43 94% 60%)" stroke="hsl(48 100% 84%)" stroke-width="1.4"/></g><g style="transform-origin:1160px 320px;animation:wink-pop 3.3s ease-out infinite;animation-delay:1.58s"><path d="M1160,302 L1164.2320538165059,314.1750776405004 L1177.1190172933127,314.43769410125094 L1166.847606917325,322.2249223594996 L1170.5801345412644,334.56230589874906 L1160,327.2 L1149.4198654587356,334.56230589874906 L1153.152393082675,322.2249223594996 L1142.8809827066873,314.43769410125094 L1155.7679461834941,314.1750776405004 Z" fill="hsl(43 94% 60%)" stroke="hsl(48 100% 84%)" stroke-width="1.4"/></g><g style="transform-origin:760px 260px;animation:wink-sparkle 3.3s ease-in-out infinite;animation-delay:1.72s"><g opacity="0.88"><line x1="744" y1="260" x2="776" y2="260" stroke="hsl(48 100% 84%)" stroke-width="1.9" stroke-linecap="round"/><line x1="760" y1="244" x2="760" y2="276" stroke="hsl(48 100% 84%)" stroke-width="1.9" stroke-linecap="round"/><line x1="748.48" y1="248.48" x2="771.52" y2="271.52" stroke="hsl(48 100% 84%)" stroke-width="1.1" stroke-linecap="round" opacity="0.66"/><line x1="748.48" y1="271.52" x2="771.52" y2="248.48" stroke="hsl(48 100% 84%)" stroke-width="1.1" stroke-linecap="round" opacity="0.66"/><path d="M760,257.12 L760.710985041173,259.02141304360407 L762.7390427669301,259.11003105620017 L761.1503979621107,260.3737869563959 L761.6928215266023,262.3299689437998 L760,261.2096 L758.3071784733977,262.3299689437998 L758.8496020378893,260.3737869563959 L757.2609572330699,259.11003105620017 L759.289014958827,259.02141304360407 Z" fill="hsl(48 100% 84%)" opacity="0.72"/></g></g><g style="transform-origin:880px 190px;animation:wink-sparkle 3.3s ease-in-out infinite;animation-delay:1.8s"><g opacity="0.88"><line x1="864" y1="190" x2="896" y2="190" stroke="hsl(48 100% 84%)" stroke-width="1.9" stroke-linecap="round"/><line x1="880" y1="174" x2="880" y2="206" stroke="hsl(48 100% 84%)" stroke-width="1.9" stroke-linecap="round"/><line x1="868.48" y1="178.48" x2="891.52" y2="201.52" stroke="hsl(48 100% 84%)" stroke-width="1.1" stroke-linecap="round" opacity="0.66"/><line x1="868.48" y1="201.52" x2="891.52" y2="178.48" stroke="hsl(48 100% 84%)" stroke-width="1.1" stroke-linecap="round" opacity="0.66"/><path d="M880,187.12 L880.710985041173,189.02141304360407 L882.7390427669301,189.11003105620014 L881.1503979621107,190.37378695639595 L881.6928215266023,192.32996894379986 L880,191.2096 L878.3071784733977,192.32996894379986 L878.8496020378893,190.37378695639595 L877.2609572330699,189.11003105620014 L879.289014958827,189.02141304360407 Z" fill="hsl(48 100% 84%)" opacity="0.72"/></g></g><g style="transform-origin:960px 160px;animation:wink-sparkle 3.3s ease-in-out infinite;animation-delay:1.88s"><g opacity="0.88"><line x1="944" y1="160" x2="976" y2="160" stroke="hsl(48 100% 84%)" stroke-width="1.9" stroke-linecap="round"/><line x1="960" y1="144" x2="960" y2="176" stroke="hsl(48 100% 84%)" stroke-width="1.9" stroke-linecap="round"/><line x1="948.48" y1="148.48" x2="971.52" y2="171.52" stroke="hsl(48 100% 84%)" stroke-width="1.1" stroke-linecap="round" opacity="0.66"/><line x1="948.48" y1="171.52" x2="971.52" y2="148.48" stroke="hsl(48 100% 84%)" stroke-width="1.1" stroke-linecap="round" opacity="0.66"/><path d="M960,157.12 L960.710985041173,159.02141304360407 L962.7390427669301,159.11003105620014 L961.1503979621107,160.37378695639595 L961.6928215266023,162.32996894379986 L960,161.2096 L958.3071784733977,162.32996894379986 L958.8496020378893,160.37378695639595 L957.2609572330699,159.11003105620014 L959.289014958827,159.02141304360407 Z" fill="hsl(48 100% 84%)" opacity="0.72"/></g></g><g style="transform-origin:1040px 190px;animation:wink-sparkle 3.3s ease-in-out infinite;animation-delay:1.96s"><g opacity="0.88"><line x1="1024" y1="190" x2="1056" y2="190" stroke="hsl(48 100% 84%)" stroke-width="1.9" stroke-linecap="round"/><line x1="1040" y1="174" x2="1040" y2="206" stroke="hsl(48 100% 84%)" stroke-width="1.9" stroke-linecap="round"/><line x1="1028.48" y1="178.48" x2="1051.52" y2="201.52" stroke="hsl(48 100% 84%)" stroke-width="1.1" stroke-linecap="round" opacity="0.66"/><line x1="1028.48" y1="201.52" x2="1051.52" y2="178.48" stroke="hsl(48 100% 84%)" stroke-width="1.1" stroke-linecap="round" opacity="0.66"/><path d="M1040,187.12 L1040.710985041173,189.02141304360407 L1042.73904276693,189.11003105620014 L1041.1503979621107,190.37378695639595 L1041.6928215266023,192.32996894379986 L1040,191.2096 L1038.3071784733977,192.32996894379986 L1038.8496020378893,190.37378695639595 L1037.26095723307,189.11003105620014 L1039.289014958827,189.02141304360407 Z" fill="hsl(48 100% 84%)" opacity="0.72"/></g></g><g style="transform-origin:1160px 260px;animation:wink-sparkle 3.3s ease-in-out infinite;animation-delay:2.04s"><g opacity="0.88"><line x1="1144" y1="260" x2="1176" y2="260" stroke="hsl(48 100% 84%)" stroke-width="1.9" stroke-linecap="round"/><line x1="1160" y1="244" x2="1160" y2="276" stroke="hsl(48 100% 84%)" stroke-width="1.9" stroke-linecap="round"/><line x1="1148.48" y1="248.48" x2="1171.52" y2="271.52" stroke="hsl(48 100% 84%)" stroke-width="1.1" stroke-linecap="round" opacity="0.66"/><line x1="1148.48" y1="271.52" x2="1171.52" y2="248.48" stroke="hsl(48 100% 84%)" stroke-width="1.1" stroke-linecap="round" opacity="0.66"/><path d="M1160,257.12 L1160.710985041173,259.02141304360407 L1162.73904276693,259.11003105620017 L1161.1503979621107,260.3737869563959 L1161.6928215266023,262.3299689437998 L1160,261.2096 L1158.3071784733977,262.3299689437998 L1158.8496020378893,260.3737869563959 L1157.26095723307,259.11003105620017 L1159.289014958827,259.02141304360407 Z" fill="hsl(48 100% 84%)" opacity="0.72"/></g></g></svg>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080"><style>@keyframes wink-burst {
+  0% { transform: scale(0); opacity: 0; }
+  20% { opacity: 1; }
+  60% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.15); opacity: 0; }
+}
+@keyframes wink-fade-loop {
+  0%, 100% { opacity: 0; }
+  10%, 70% { opacity: 1; }
+}
+@keyframes wink-spark-fall {
+  0% { transform: translateY(-40px); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translateY(220px); opacity: 0; }
+}
+@keyframes wink-comet {
+  0% { transform: translate(0,0) scale(0.6); opacity: 0; }
+  30% { opacity: 1; }
+  70% { transform: translate(var(--tx,0), var(--ty,-200px)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,0), var(--ty,-200px)) scale(1.2); opacity: 0; }
+}
+@keyframes wink-ring-expand {
+  0% { transform: scale(0.1); opacity: 0; stroke-width: 8; }
+  20% { opacity: 1; }
+  100% { transform: scale(1); opacity: 0; stroke-width: 1; }
+}
+@keyframes wink-twinkle {
+  0%, 100% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1); opacity: 1; }
+}
+@keyframes wink-pop {
+  0% { transform: scale(0) rotate(-20deg); opacity: 0; }
+  60% { transform: scale(1.15) rotate(5deg); opacity: 1; }
+  80% { transform: scale(1) rotate(0); opacity: 1; }
+  100% { transform: scale(1) rotate(0); opacity: 0; }
+}
+@keyframes wink-swirl {
+  0% { transform: rotate(0deg) translateX(180px) scale(0); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: rotate(360deg) translateX(40px) scale(1); opacity: 0; }
+}
+@keyframes wink-shower {
+  0% { transform: translateY(-60px) rotate(0); opacity: 0; }
+  15% { opacity: 1; }
+  100% { transform: translateY(260px) rotate(180deg); opacity: 0; }
+}
+@keyframes wink-trail {
+  0% { offset-distance: 0%; opacity: 0; transform: scale(0.4); }
+  10% { opacity: 1; transform: scale(1); }
+  90% { opacity: 1; }
+  100% { offset-distance: 100%; opacity: 0; transform: scale(0.6); }
+}
+@keyframes wink-bounce-in {
+  0% { transform: translateY(-300px) scale(0.6); opacity: 0; }
+  50% { transform: translateY(20px) scale(1.05); opacity: 1; }
+  70% { transform: translateY(-10px) scale(0.98); }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+@keyframes wink-bounce-loop {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes wink-pop-up {
+  0% { transform: translateY(300px); opacity: 0; }
+  60% { transform: translateY(-15px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes wink-orbit {
+  from { transform: rotate(0deg) translateX(var(--orbit-r,160px)) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(var(--orbit-r,160px)) rotate(-360deg); }
+}
+@keyframes wink-scatter {
+  0%, 100% { transform: translate(var(--sx,0), var(--sy,0)) scale(0.9); opacity: 0.6; }
+  50% { transform: translate(calc(var(--sx,0) * 1.2), calc(var(--sy,0) * 1.2)) scale(1.05); opacity: 1; }
+}
+@keyframes wink-sparkle {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+@keyframes wink-glow-pulse {
+  0%, 100% { opacity: 0.4; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+@keyframes wink-confetti-launch {
+  0% { transform: translate(0,0) rotate(var(--r0,0deg)) scale(0.28); opacity: 0; }
+  14% { opacity: 1; }
+  72% { transform: translate(var(--tx,0px), var(--ty,0px)) rotate(var(--r1,180deg)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,0px), var(--ty,0px)) rotate(var(--r2,320deg)) scale(0.82); opacity: 0; }
+}
+@keyframes wink-confetti-fall {
+  0% { transform: translate(0,-90px) rotate(var(--r0,0deg)) scale(0.7); opacity: 0; }
+  14% { opacity: 1; }
+  82% { opacity: 1; }
+  100% { transform: translate(var(--tx,0px), var(--ty,720px)) rotate(var(--r1,260deg)) scale(1); opacity: 0; }
+}
+@keyframes wink-confetti-shimmer {
+  0%, 100% { transform: rotate(var(--r0,0deg)) scale(0.92); }
+  50% { transform: rotate(var(--r1,180deg)) scale(1.08); }
+}
+@keyframes wink-confetti-wave {
+  0% { transform: translate(var(--sx,-180px), var(--sy,0px)) rotate(var(--r0,0deg)) scale(0.5); opacity: 0; }
+  18% { opacity: 1; }
+  58% { transform: translate(0,0) rotate(var(--r1,180deg)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,180px), var(--ty,0px)) rotate(var(--r2,360deg)) scale(0.78); opacity: 0; }
+}
+@keyframes wink-bingo-arrive {
+  0% { transform: translate(var(--from-x,0), var(--from-y,0)) scale(0.34); opacity: 0; }
+  18% { opacity: 1; }
+  38% { transform: translate(var(--overshoot-x,0), var(--overshoot-y,0)) scale(1.09); opacity: 1; }
+  46%, 100% { transform: translate(0,0) scale(1); opacity: 1; }
+}
+@keyframes wink-bingo-countdown {
+  0%, 100% { opacity: 0; transform: scale(0.36); }
+  5% { opacity: 1; transform: scale(0.92); }
+  10% { opacity: 1; transform: scale(1.06); }
+  16% { opacity: 0; transform: scale(1.22); }
+}
+@keyframes wink-bingo-spiral-letter {
+  0% { transform: rotate(var(--spin-start,-220deg)) translateX(var(--orbit-r,320px)) scale(0.3); opacity: 0; }
+  22% { opacity: 1; }
+  42% { transform: rotate(var(--spin-mid,24deg)) translateX(18px) scale(1.1); opacity: 1; }
+  52%, 100% { transform: rotate(0deg) translateX(0) scale(1); opacity: 1; }
+}
+@keyframes wink-bingo-final-bounce {
+  0%, 54%, 100% { transform: translateY(0) scale(1); }
+  64% { transform: translateY(-22px) scale(1.06); }
+  76% { transform: translateY(0) scale(0.98); }
+  88% { transform: translateY(-10px) scale(1.02); }
+}
+@keyframes wink-bingo-impact {
+  0%, 56%, 100% { opacity: 0; transform: scale(0.52); }
+  66% { opacity: 0.95; transform: scale(1.04); }
+  78% { opacity: 0.38; transform: scale(1.34); }
+}</style><path d="M 380 690 C 600 470, 790 720, 960 590 C 1130 460, 1320 720, 1540 690" fill="none" stroke="hsl(48 100% 84%)" stroke-width="3" stroke-linecap="round" opacity="0.18"/><g style="transform-origin:400px 230px;animation:wink-twinkle 2.8s ease-in-out infinite;animation-delay:0.1s"><defs><radialGradient id="sb-400-230-18-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(0 80% 58%)"/><stop offset="100%" stop-color="hsl(0 70% 40%)"/></radialGradient></defs><circle cx="400" cy="230" r="18" fill="url(#sb-400-230-18-g)" stroke="hsl(0 70% 40%)" stroke-width="1.5"/><ellipse cx="393.7" cy="221" rx="5.3999999999999995" ry="2.5200000000000005" fill="white" opacity="0.5"/></g><g style="transform-origin:505px 300px;animation:wink-twinkle 2.8s ease-in-out infinite;animation-delay:0.18s"><defs><radialGradient id="sb-505-300-21-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(35 95% 55%)"/><stop offset="100%" stop-color="hsl(28 85% 40%)"/></radialGradient></defs><circle cx="505" cy="300" r="21" fill="url(#sb-505-300-21-g)" stroke="hsl(28 85% 40%)" stroke-width="1.5"/><ellipse cx="497.65" cy="289.5" rx="6.3" ry="2.9400000000000004" fill="white" opacity="0.5"/></g><g style="transform-origin:610px 370px;animation:wink-twinkle 2.8s ease-in-out infinite;animation-delay:0.26s"><defs><radialGradient id="sb-610-370-24-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(50 95% 55%)"/><stop offset="100%" stop-color="hsl(42 80% 40%)"/></radialGradient></defs><circle cx="610" cy="370" r="24" fill="url(#sb-610-370-24-g)" stroke="hsl(42 80% 40%)" stroke-width="1.5"/><ellipse cx="601.6" cy="358" rx="7.199999999999999" ry="3.3600000000000003" fill="white" opacity="0.5"/></g><g style="transform-origin:715px 230px;animation:wink-twinkle 2.8s ease-in-out infinite;animation-delay:0.33999999999999997s"><defs><radialGradient id="sb-715-230-18-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(140 60% 48%)"/><stop offset="100%" stop-color="hsl(140 55% 32%)"/></radialGradient></defs><circle cx="715" cy="230" r="18" fill="url(#sb-715-230-18-g)" stroke="hsl(140 55% 32%)" stroke-width="1.5"/><ellipse cx="708.7" cy="221" rx="5.3999999999999995" ry="2.5200000000000005" fill="white" opacity="0.5"/></g><g style="transform-origin:820px 300px;animation:wink-twinkle 2.8s ease-in-out infinite;animation-delay:0.42000000000000004s"><defs><radialGradient id="sb-820-300-21-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(210 80% 55%)"/><stop offset="100%" stop-color="hsl(212 70% 38%)"/></radialGradient></defs><circle cx="820" cy="300" r="21" fill="url(#sb-820-300-21-g)" stroke="hsl(212 70% 38%)" stroke-width="1.5"/><ellipse cx="812.65" cy="289.5" rx="6.3" ry="2.9400000000000004" fill="white" opacity="0.5"/></g><g style="transform-origin:925px 370px;animation:wink-twinkle 2.8s ease-in-out infinite;animation-delay:0.5s"><defs><radialGradient id="sb-925-370-24-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(0 80% 58%)"/><stop offset="100%" stop-color="hsl(0 70% 40%)"/></radialGradient></defs><circle cx="925" cy="370" r="24" fill="url(#sb-925-370-24-g)" stroke="hsl(0 70% 40%)" stroke-width="1.5"/><ellipse cx="916.6" cy="358" rx="7.199999999999999" ry="3.3600000000000003" fill="white" opacity="0.5"/></g><g style="transform-origin:1030px 230px;animation:wink-twinkle 2.8s ease-in-out infinite;animation-delay:0.58s"><defs><radialGradient id="sb-1030-230-18-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(35 95% 55%)"/><stop offset="100%" stop-color="hsl(28 85% 40%)"/></radialGradient></defs><circle cx="1030" cy="230" r="18" fill="url(#sb-1030-230-18-g)" stroke="hsl(28 85% 40%)" stroke-width="1.5"/><ellipse cx="1023.7" cy="221" rx="5.3999999999999995" ry="2.5200000000000005" fill="white" opacity="0.5"/></g><g style="transform-origin:1135px 300px;animation:wink-twinkle 2.8s ease-in-out infinite;animation-delay:0.66s"><defs><radialGradient id="sb-1135-300-21-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(50 95% 55%)"/><stop offset="100%" stop-color="hsl(42 80% 40%)"/></radialGradient></defs><circle cx="1135" cy="300" r="21" fill="url(#sb-1135-300-21-g)" stroke="hsl(42 80% 40%)" stroke-width="1.5"/><ellipse cx="1127.65" cy="289.5" rx="6.3" ry="2.9400000000000004" fill="white" opacity="0.5"/></g><g style="transform-origin:1240px 370px;animation:wink-twinkle 2.8s ease-in-out infinite;animation-delay:0.74s"><defs><radialGradient id="sb-1240-370-24-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(140 60% 48%)"/><stop offset="100%" stop-color="hsl(140 55% 32%)"/></radialGradient></defs><circle cx="1240" cy="370" r="24" fill="url(#sb-1240-370-24-g)" stroke="hsl(140 55% 32%)" stroke-width="1.5"/><ellipse cx="1231.6" cy="358" rx="7.199999999999999" ry="3.3600000000000003" fill="white" opacity="0.5"/></g><g style="transform-origin:1345px 230px;animation:wink-twinkle 2.8s ease-in-out infinite;animation-delay:0.82s"><defs><radialGradient id="sb-1345-230-18-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(210 80% 55%)"/><stop offset="100%" stop-color="hsl(212 70% 38%)"/></radialGradient></defs><circle cx="1345" cy="230" r="18" fill="url(#sb-1345-230-18-g)" stroke="hsl(212 70% 38%)" stroke-width="1.5"/><ellipse cx="1338.7" cy="221" rx="5.3999999999999995" ry="2.5200000000000005" fill="white" opacity="0.5"/></g><g style="transform-origin:1450px 300px;animation:wink-twinkle 2.8s ease-in-out infinite;animation-delay:0.9s"><defs><radialGradient id="sb-1450-300-21-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(0 80% 58%)"/><stop offset="100%" stop-color="hsl(0 70% 40%)"/></radialGradient></defs><circle cx="1450" cy="300" r="21" fill="url(#sb-1450-300-21-g)" stroke="hsl(0 70% 40%)" stroke-width="1.5"/><ellipse cx="1442.65" cy="289.5" rx="6.3" ry="2.9400000000000004" fill="white" opacity="0.5"/></g><g style="transform-origin:1555px 370px;animation:wink-twinkle 2.8s ease-in-out infinite;animation-delay:0.98s"><defs><radialGradient id="sb-1555-370-24-g" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(35 95% 55%)"/><stop offset="100%" stop-color="hsl(28 85% 40%)"/></radialGradient></defs><circle cx="1555" cy="370" r="24" fill="url(#sb-1555-370-24-g)" stroke="hsl(28 85% 40%)" stroke-width="1.5"/><ellipse cx="1546.6" cy="358" rx="7.199999999999999" ry="3.3600000000000003" fill="white" opacity="0.5"/></g><g><circle cx="440" cy="754" r="88" fill="none" stroke="hsl(0 80% 58%)" stroke-width="4" opacity="0.32" style="transform-origin:440px 754px;animation:wink-ring-expand 2.8s ease-out infinite;animation-delay:0.3s"/><g style="transform-origin:440px 630px;animation:wink-bounce-in 2.8s cubic-bezier(.34,1.56,.64,1) infinite;animation-delay:0s"><defs><radialGradient id="bb-0-grad" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(0 80% 58%)"/><stop offset="100%" stop-color="hsl(0 70% 40%)"/></radialGradient></defs><ellipse cx="440" cy="754" rx="82.5" ry="10" fill="black" opacity="0.18"/><circle cx="440" cy="630" r="110" fill="url(#bb-0-grad)" stroke="hsl(0 70% 40%)" stroke-width="2.5"/><circle cx="440" cy="630" r="68.2" fill="white" stroke="hsl(0 70% 40%)" stroke-width="2"/><text x="440" y="630" text-anchor="middle" dominant-baseline="central" font-family="Inter, system-ui, sans-serif" font-weight="900" font-size="99" fill="hsl(0 70% 40%)">B</text><ellipse cx="396" cy="569.5" rx="38.5" ry="19.8" fill="white" opacity="0.45"/></g></g><g><circle cx="700" cy="629" r="88" fill="none" stroke="hsl(35 95% 55%)" stroke-width="4" opacity="0.32" style="transform-origin:700px 629px;animation:wink-ring-expand 2.8s ease-out infinite;animation-delay:0.44s"/><g style="transform-origin:700px 505px;animation:wink-bounce-in 2.8s cubic-bezier(.34,1.56,.64,1) infinite;animation-delay:0.14s"><defs><radialGradient id="bb-1-grad" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(35 95% 55%)"/><stop offset="100%" stop-color="hsl(28 85% 40%)"/></radialGradient></defs><ellipse cx="700" cy="629" rx="82.5" ry="10" fill="black" opacity="0.18"/><circle cx="700" cy="505" r="110" fill="url(#bb-1-grad)" stroke="hsl(28 85% 40%)" stroke-width="2.5"/><circle cx="700" cy="505" r="68.2" fill="white" stroke="hsl(28 85% 40%)" stroke-width="2"/><text x="700" y="505" text-anchor="middle" dominant-baseline="central" font-family="Inter, system-ui, sans-serif" font-weight="900" font-size="99" fill="hsl(28 85% 40%)">I</text><ellipse cx="656" cy="444.5" rx="38.5" ry="19.8" fill="white" opacity="0.45"/></g></g><g><circle cx="960" cy="739" r="88" fill="none" stroke="hsl(50 95% 55%)" stroke-width="4" opacity="0.32" style="transform-origin:960px 739px;animation:wink-ring-expand 2.8s ease-out infinite;animation-delay:0.5800000000000001s"/><g style="transform-origin:960px 615px;animation:wink-bounce-in 2.8s cubic-bezier(.34,1.56,.64,1) infinite;animation-delay:0.28s"><defs><radialGradient id="bb-2-grad" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(50 95% 55%)"/><stop offset="100%" stop-color="hsl(42 80% 40%)"/></radialGradient></defs><ellipse cx="960" cy="739" rx="82.5" ry="10" fill="black" opacity="0.18"/><circle cx="960" cy="615" r="110" fill="url(#bb-2-grad)" stroke="hsl(42 80% 40%)" stroke-width="2.5"/><circle cx="960" cy="615" r="68.2" fill="white" stroke="hsl(42 80% 40%)" stroke-width="2"/><text x="960" y="615" text-anchor="middle" dominant-baseline="central" font-family="Inter, system-ui, sans-serif" font-weight="900" font-size="99" fill="hsl(42 80% 40%)">N</text><ellipse cx="916" cy="554.5" rx="38.5" ry="19.8" fill="white" opacity="0.45"/></g></g><g><circle cx="1220" cy="629" r="88" fill="none" stroke="hsl(140 60% 48%)" stroke-width="4" opacity="0.32" style="transform-origin:1220px 629px;animation:wink-ring-expand 2.8s ease-out infinite;animation-delay:0.72s"/><g style="transform-origin:1220px 505px;animation:wink-bounce-in 2.8s cubic-bezier(.34,1.56,.64,1) infinite;animation-delay:0.42000000000000004s"><defs><radialGradient id="bb-3-grad" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(140 60% 48%)"/><stop offset="100%" stop-color="hsl(140 55% 32%)"/></radialGradient></defs><ellipse cx="1220" cy="629" rx="82.5" ry="10" fill="black" opacity="0.18"/><circle cx="1220" cy="505" r="110" fill="url(#bb-3-grad)" stroke="hsl(140 55% 32%)" stroke-width="2.5"/><circle cx="1220" cy="505" r="68.2" fill="white" stroke="hsl(140 55% 32%)" stroke-width="2"/><text x="1220" y="505" text-anchor="middle" dominant-baseline="central" font-family="Inter, system-ui, sans-serif" font-weight="900" font-size="99" fill="hsl(140 55% 32%)">G</text><ellipse cx="1176" cy="444.5" rx="38.5" ry="19.8" fill="white" opacity="0.45"/></g></g><g><circle cx="1480" cy="754" r="88" fill="none" stroke="hsl(210 80% 55%)" stroke-width="4" opacity="0.32" style="transform-origin:1480px 754px;animation:wink-ring-expand 2.8s ease-out infinite;animation-delay:0.8600000000000001s"/><g style="transform-origin:1480px 630px;animation:wink-bounce-in 2.8s cubic-bezier(.34,1.56,.64,1) infinite;animation-delay:0.56s"><defs><radialGradient id="bb-4-grad" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="35%" stop-color="hsl(210 80% 55%)"/><stop offset="100%" stop-color="hsl(212 70% 38%)"/></radialGradient></defs><ellipse cx="1480" cy="754" rx="82.5" ry="10" fill="black" opacity="0.18"/><circle cx="1480" cy="630" r="110" fill="url(#bb-4-grad)" stroke="hsl(212 70% 38%)" stroke-width="2.5"/><circle cx="1480" cy="630" r="68.2" fill="white" stroke="hsl(212 70% 38%)" stroke-width="2"/><text x="1480" y="630" text-anchor="middle" dominant-baseline="central" font-family="Inter, system-ui, sans-serif" font-weight="900" font-size="99" fill="hsl(212 70% 38%)">O</text><ellipse cx="1436" cy="569.5" rx="38.5" ry="19.8" fill="white" opacity="0.45"/></g></g></svg>

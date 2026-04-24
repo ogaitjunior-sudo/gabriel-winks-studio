@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080"><style>@keyframes wink-burst {
+  0% { transform: scale(0); opacity: 0; }
+  20% { opacity: 1; }
+  60% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.15); opacity: 0; }
+}
+@keyframes wink-fade-loop {
+  0%, 100% { opacity: 0; }
+  10%, 70% { opacity: 1; }
+}
+@keyframes wink-spark-fall {
+  0% { transform: translateY(-40px); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translateY(220px); opacity: 0; }
+}
+@keyframes wink-comet {
+  0% { transform: translate(0,0) scale(0.6); opacity: 0; }
+  30% { opacity: 1; }
+  70% { transform: translate(var(--tx,0), var(--ty,-200px)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,0), var(--ty,-200px)) scale(1.2); opacity: 0; }
+}
+@keyframes wink-ring-expand {
+  0% { transform: scale(0.1); opacity: 0; stroke-width: 8; }
+  20% { opacity: 1; }
+  100% { transform: scale(1); opacity: 0; stroke-width: 1; }
+}
+@keyframes wink-twinkle {
+  0%, 100% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1); opacity: 1; }
+}
+@keyframes wink-pop {
+  0% { transform: scale(0) rotate(-20deg); opacity: 0; }
+  60% { transform: scale(1.15) rotate(5deg); opacity: 1; }
+  80% { transform: scale(1) rotate(0); opacity: 1; }
+  100% { transform: scale(1) rotate(0); opacity: 0; }
+}
+@keyframes wink-swirl {
+  0% { transform: rotate(0deg) translateX(180px) scale(0); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: rotate(360deg) translateX(40px) scale(1); opacity: 0; }
+}
+@keyframes wink-shower {
+  0% { transform: translateY(-60px) rotate(0); opacity: 0; }
+  15% { opacity: 1; }
+  100% { transform: translateY(260px) rotate(180deg); opacity: 0; }
+}
+@keyframes wink-trail {
+  0% { offset-distance: 0%; opacity: 0; transform: scale(0.4); }
+  10% { opacity: 1; transform: scale(1); }
+  90% { opacity: 1; }
+  100% { offset-distance: 100%; opacity: 0; transform: scale(0.6); }
+}
+@keyframes wink-bounce-in {
+  0% { transform: translateY(-300px) scale(0.6); opacity: 0; }
+  50% { transform: translateY(20px) scale(1.05); opacity: 1; }
+  70% { transform: translateY(-10px) scale(0.98); }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+@keyframes wink-bounce-loop {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes wink-pop-up {
+  0% { transform: translateY(300px); opacity: 0; }
+  60% { transform: translateY(-15px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes wink-orbit {
+  from { transform: rotate(0deg) translateX(var(--orbit-r,160px)) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(var(--orbit-r,160px)) rotate(-360deg); }
+}
+@keyframes wink-scatter {
+  0%, 100% { transform: translate(var(--sx,0), var(--sy,0)) scale(0.9); opacity: 0.6; }
+  50% { transform: translate(calc(var(--sx,0) * 1.2), calc(var(--sy,0) * 1.2)) scale(1.05); opacity: 1; }
+}
+@keyframes wink-sparkle {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+@keyframes wink-glow-pulse {
+  0%, 100% { opacity: 0.4; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+@keyframes wink-confetti-launch {
+  0% { transform: translate(0,0) rotate(var(--r0,0deg)) scale(0.28); opacity: 0; }
+  14% { opacity: 1; }
+  72% { transform: translate(var(--tx,0px), var(--ty,0px)) rotate(var(--r1,180deg)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,0px), var(--ty,0px)) rotate(var(--r2,320deg)) scale(0.82); opacity: 0; }
+}
+@keyframes wink-confetti-fall {
+  0% { transform: translate(0,-90px) rotate(var(--r0,0deg)) scale(0.7); opacity: 0; }
+  14% { opacity: 1; }
+  82% { opacity: 1; }
+  100% { transform: translate(var(--tx,0px), var(--ty,720px)) rotate(var(--r1,260deg)) scale(1); opacity: 0; }
+}
+@keyframes wink-confetti-shimmer {
+  0%, 100% { transform: rotate(var(--r0,0deg)) scale(0.92); }
+  50% { transform: rotate(var(--r1,180deg)) scale(1.08); }
+}
+@keyframes wink-confetti-wave {
+  0% { transform: translate(var(--sx,-180px), var(--sy,0px)) rotate(var(--r0,0deg)) scale(0.5); opacity: 0; }
+  18% { opacity: 1; }
+  58% { transform: translate(0,0) rotate(var(--r1,180deg)) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx,180px), var(--ty,0px)) rotate(var(--r2,360deg)) scale(0.78); opacity: 0; }
+}</style><defs><radialGradient id="fwcb-glow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="hsl(50 100% 90%)" stop-opacity="1"/><stop offset="40%" stop-color="hsl(40 100% 65%)" stop-opacity="0.7"/><stop offset="100%" stop-color="hsl(20 90% 50%)" stop-opacity="0"/></radialGradient></defs><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite"><circle cx="960" cy="540" r="220" fill="url(#fwcb-glow)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0s"><line x1="960" y1="540" x2="1280" y2="540" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="1280" cy="540" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.04s"><line x1="960" y1="540" x2="1269.0962644125018" y2="622.8220944328066" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="1269.0962644125018" cy="622.8220944328066" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.08s"><line x1="960" y1="540" x2="1237.1281292110205" y2="700" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="1237.1281292110205" cy="700" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.12s"><line x1="960" y1="540" x2="1186.2741699796952" y2="766.2741699796952" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="1186.2741699796952" cy="766.2741699796952" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0s"><line x1="960" y1="540" x2="1120" y2="817.1281292110203" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="1120" cy="817.1281292110203" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.04s"><line x1="960" y1="540" x2="1042.8220944328066" y2="849.0962644125018" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="1042.8220944328066" cy="849.0962644125018" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.08s"><line x1="960" y1="540" x2="960" y2="860" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="960" cy="860" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.12s"><line x1="960" y1="540" x2="877.1779055671934" y2="849.0962644125018" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="877.1779055671934" cy="849.0962644125018" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0s"><line x1="960" y1="540" x2="800" y2="817.1281292110205" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="800" cy="817.1281292110205" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.04s"><line x1="960" y1="540" x2="733.7258300203048" y2="766.2741699796952" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="733.7258300203048" cy="766.2741699796952" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.08s"><line x1="960" y1="540" x2="682.8718707889795" y2="700" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="682.8718707889795" cy="700" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.12s"><line x1="960" y1="540" x2="650.9037355874982" y2="622.8220944328067" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="650.9037355874982" cy="622.8220944328067" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0s"><line x1="960" y1="540" x2="640" y2="540" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="640" cy="540" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.04s"><line x1="960" y1="540" x2="650.9037355874982" y2="457.17790556719336" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="650.9037355874982" cy="457.17790556719336" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.08s"><line x1="960" y1="540" x2="682.8718707889795" y2="380.0000000000001" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="682.8718707889795" cy="380.0000000000001" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.12s"><line x1="960" y1="540" x2="733.7258300203047" y2="313.7258300203049" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="733.7258300203047" cy="313.7258300203049" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0s"><line x1="960" y1="540" x2="799.9999999999999" y2="262.87187078897966" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="799.9999999999999" cy="262.87187078897966" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.04s"><line x1="960" y1="540" x2="877.1779055671934" y2="230.90373558749815" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="877.1779055671934" cy="230.90373558749815" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.08s"><line x1="960" y1="540" x2="959.9999999999999" y2="220" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="959.9999999999999" cy="220" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.12s"><line x1="960" y1="540" x2="1042.8220944328066" y2="230.9037355874981" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="1042.8220944328066" cy="230.9037355874981" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0s"><line x1="960" y1="540" x2="1120" y2="262.87187078897966" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="1120" cy="262.87187078897966" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.04s"><line x1="960" y1="540" x2="1186.2741699796952" y2="313.7258300203047" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="1186.2741699796952" cy="313.7258300203047" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.08s"><line x1="960" y1="540" x2="1237.1281292110202" y2="379.9999999999999" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="1237.1281292110202" cy="379.9999999999999" r="4" fill="hsl(50 100% 80%)"/></g><g style="transform-origin:960px 540px;animation:wink-burst 2.8s ease-out infinite;animation-delay:0.12s"><line x1="960" y1="540" x2="1269.0962644125018" y2="457.1779055671931" stroke="hsl(45 95% 65%)" stroke-width="2" stroke-linecap="round" opacity="0.85"/><circle cx="1269.0962644125018" cy="457.1779055671931" r="4" fill="hsl(50 100% 80%)"/></g></svg>

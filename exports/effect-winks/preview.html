@@ -1,0 +1,3124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Effect Winks SVG Preview</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #11131a;
+      --panel: #181b24;
+      --panel-2: #10131b;
+      --text: #f6f0df;
+      --muted: #a9afc0;
+      --border: #303545;
+      --gold: #f7c948;
+      --ok: #75d78b;
+      --warn: #ffcc66;
+      --critical: #ff7676;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font: 14px/1.45 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      border-bottom: 1px solid var(--border);
+      background: rgba(17, 19, 26, 0.94);
+      backdrop-filter: blur(14px);
+    }
+
+    .wrap {
+      width: min(1480px, calc(100vw - 32px));
+      margin: 0 auto;
+    }
+
+    .header-inner {
+      display: grid;
+      gap: 16px;
+      padding: 18px 0;
+    }
+
+    h1, h2, p { margin: 0; }
+    h1 {
+      font-size: clamp(22px, 3vw, 34px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .summary {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      color: var(--muted);
+    }
+
+    .pill {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--panel);
+      padding: 5px 9px;
+      white-space: nowrap;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .controls span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    button {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--text);
+      cursor: pointer;
+      font: inherit;
+      padding: 7px 10px;
+    }
+
+    button[aria-pressed="true"] {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    main {
+      padding: 22px 0 40px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--panel);
+      overflow: hidden;
+    }
+
+    .preview-frame {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border);
+      background-color: #171a22;
+    }
+
+    body[data-bg="checker"] .preview-frame {
+      background-color: #1b1f29;
+      background-image:
+        linear-gradient(45deg, rgba(255,255,255,0.18) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255,255,255,0.18) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.18) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.18) 75%);
+      background-size: 24px 24px;
+      background-position: 0 0, 0 12px, 12px -12px, -12px 0;
+    }
+
+    body[data-bg="black"] .preview-frame { background: #000; }
+    body[data-bg="white"] .preview-frame { background: #fff; }
+
+    .preview-frame::after {
+      content: "";
+      position: absolute;
+      inset: 10%;
+      border: 1px dashed rgba(94, 211, 255, 0.55);
+      pointer-events: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .meta {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px;
+    }
+
+    h2 {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    .meta p {
+      margin-top: 3px;
+      color: var(--muted);
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .size {
+      flex: 0 0 auto;
+      border-radius: 999px;
+      padding: 3px 7px;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 12px;
+    }
+
+    .size.ok { color: var(--ok); background: rgba(117, 215, 139, 0.12); }
+    .size.warning { color: var(--warn); background: rgba(255, 204, 102, 0.14); }
+    .size.critical { color: var(--critical); background: rgba(255, 118, 118, 0.14); }
+
+    dl {
+      display: grid;
+      gap: 6px;
+      margin: 0;
+      padding: 0 12px 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    dl div {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 6px;
+    }
+
+    dt { color: var(--muted); }
+    dd { margin: 0; color: var(--text); text-align: right; }
+
+    .notes {
+      margin-top: 22px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--panel-2);
+      padding: 14px;
+      color: var(--muted);
+    }
+
+    .notes ul {
+      margin: 8px 0 0;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body data-bg="checker">
+  <header>
+    <div class="wrap header-inner">
+      <div>
+        <h1>Effect Winks SVG Preview</h1>
+        <div class="summary">
+          <span class="pill">124 SVGs</span>
+          <span class="pill">2.37 MB total</span>
+          <span class="pill">19.5 KB average</span>
+          <span class="pill">Largest cf-ultimatep.svg 59.5 KB</span>
+          <span class="pill">Generated 2026-04-24T04:51:57.402Z</span>
+        </div>
+      </div>
+      <div class="controls" aria-label="Preview background">
+        <span>Background</span>
+        <button type="button" data-bg-choice="checker" aria-pressed="true">Checkerboard</button>
+        <button type="button" data-bg-choice="black" aria-pressed="false">Black</button>
+        <button type="button" data-bg-choice="white" aria-pressed="false">White</button>
+      </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="grid" aria-label="Exported Effect Winks">
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Burst preview">
+            <img
+              src="svg/fw-burst.svg"
+              alt="Fireworks Burst"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Burst</h2>
+              <p>fw-burst.svg</p>
+            </div>
+            <div class="size ok">9.8 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>2400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Grand Finale preview">
+            <img
+              src="svg/fw-finale.svg"
+              alt="Fireworks Grand Finale"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Grand Finale</h2>
+              <p>fw-finale.svg</p>
+            </div>
+            <div class="size ok">13.6 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>3600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Center Blast preview">
+            <img
+              src="svg/fw-center.svg"
+              alt="Fireworks Center Blast"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Center Blast</h2>
+              <p>fw-center.svg</p>
+            </div>
+            <div class="size ok">12.6 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>2800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Sparkle Rain preview">
+            <img
+              src="svg/fw-sparkle.svg"
+              alt="Fireworks Sparkle Rain"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Sparkle Rain</h2>
+              <p>fw-sparkle.svg</p>
+            </div>
+            <div class="size ok">12.3 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Ring preview">
+            <img
+              src="svg/fw-ring.svg"
+              alt="Fireworks Ring"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Ring</h2>
+              <p>fw-ring.svg</p>
+            </div>
+            <div class="size ok">8.7 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>2600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Comets preview">
+            <img
+              src="svg/fw-comets.svg"
+              alt="Fireworks Comets"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Comets</h2>
+              <p>fw-comets.svg</p>
+            </div>
+            <div class="size ok">28.9 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>3000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Double Bloom preview">
+            <img
+              src="svg/fw-double.svg"
+              alt="Fireworks Double Bloom"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Double Bloom</h2>
+              <p>fw-double.svg</p>
+            </div>
+            <div class="size ok">13.1 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>2600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Sky Show preview">
+            <img
+              src="svg/fw-sky.svg"
+              alt="Fireworks Sky Show"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Sky Show</h2>
+              <p>fw-sky.svg</p>
+            </div>
+            <div class="size ok">11.3 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>3000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Willow preview">
+            <img
+              src="svg/fw-willow.svg"
+              alt="Fireworks Willow"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Willow</h2>
+              <p>fw-willow.svg</p>
+            </div>
+            <div class="size ok">24.1 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Heart preview">
+            <img
+              src="svg/fw-heart.svg"
+              alt="Fireworks Heart"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Heart</h2>
+              <p>fw-heart.svg</p>
+            </div>
+            <div class="size ok">19.3 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>2800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Chrysanthemum preview">
+            <img
+              src="svg/fw-chrys.svg"
+              alt="Fireworks Chrysanthemum"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Chrysanthemum</h2>
+              <p>fw-chrys.svg</p>
+            </div>
+            <div class="size ok">10.3 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>3000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Cascade preview">
+            <img
+              src="svg/fw-cascade.svg"
+              alt="Fireworks Cascade"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Cascade</h2>
+              <p>fw-cascade.svg</p>
+            </div>
+            <div class="size ok">21.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>2600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Double Ring preview">
+            <img
+              src="svg/fw-dring.svg"
+              alt="Fireworks Double Ring"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Double Ring</h2>
+              <p>fw-dring.svg</p>
+            </div>
+            <div class="size ok">16.7 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>2800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Palm Tree preview">
+            <img
+              src="svg/fw-palm.svg"
+              alt="Fireworks Palm Tree"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Palm Tree</h2>
+              <p>fw-palm.svg</p>
+            </div>
+            <div class="size ok">13.3 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>3000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Diamond preview">
+            <img
+              src="svg/fw-diamond.svg"
+              alt="Fireworks Diamond"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Diamond</h2>
+              <p>fw-diamond.svg</p>
+            </div>
+            <div class="size ok">10.1 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>2600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Fan Sweep preview">
+            <img
+              src="svg/fw-fansweep.svg"
+              alt="Fireworks Fan Sweep"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Fan Sweep</h2>
+              <p>fw-fansweep.svg</p>
+            </div>
+            <div class="size ok">25.5 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Halo Pulse preview">
+            <img
+              src="svg/fw-halo.svg"
+              alt="Fireworks Halo Pulse"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Halo Pulse</h2>
+              <p>fw-halo.svg</p>
+            </div>
+            <div class="size ok">10.9 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Prism Burst preview">
+            <img
+              src="svg/fw-prism.svg"
+              alt="Fireworks Prism Burst"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Prism Burst</h2>
+              <p>fw-prism.svg</p>
+            </div>
+            <div class="size ok">22.3 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>3000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Epic Grand Finale preview">
+            <img
+              src="svg/fw-epic.svg"
+              alt="Fireworks Epic Grand Finale"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Epic Grand Finale</h2>
+              <p>fw-epic.svg</p>
+            </div>
+            <div class="size ok">15.7 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>4200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Triple Build-Up Blast preview">
+            <img
+              src="svg/fw-triple.svg"
+              alt="Fireworks Triple Build-Up Blast"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Triple Build-Up Blast</h2>
+              <p>fw-triple.svg</p>
+            </div>
+            <div class="size ok">17.3 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>4000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Golden Crown Finale preview">
+            <img
+              src="svg/fw-crownf.svg"
+              alt="Fireworks Golden Crown Finale"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Golden Crown Finale</h2>
+              <p>fw-crownf.svg</p>
+            </div>
+            <div class="size ok">16.9 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>4200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Spiral Charge Explosion preview">
+            <img
+              src="svg/fw-spiralc.svg"
+              alt="Fireworks Spiral Charge Explosion"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Spiral Charge Explosion</h2>
+              <p>fw-spiralc.svg</p>
+            </div>
+            <div class="size ok">16.9 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>3800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Rising Comet Finale preview">
+            <img
+              src="svg/fw-risingc.svg"
+              alt="Fireworks Rising Comet Finale"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Rising Comet Finale</h2>
+              <p>fw-risingc.svg</p>
+            </div>
+            <div class="size ok">15.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>4000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Starburst Overload preview">
+            <img
+              src="svg/fw-starover.svg"
+              alt="Fireworks Starburst Overload"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Starburst Overload</h2>
+              <p>fw-starover.svg</p>
+            </div>
+            <div class="size ok">16.1 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>3800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Ring Shockwave preview">
+            <img
+              src="svg/fw-shock.svg"
+              alt="Fireworks Ring Shockwave"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Ring Shockwave</h2>
+              <p>fw-shock.svg</p>
+            </div>
+            <div class="size ok">14.2 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>3900 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Cascade Finale preview">
+            <img
+              src="svg/fw-cascadef.svg"
+              alt="Fireworks Cascade Finale"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Cascade Finale</h2>
+              <p>fw-cascadef.svg</p>
+            </div>
+            <div class="size ok">24.5 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>4400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Meteor Impact preview">
+            <img
+              src="svg/fw-meteor.svg"
+              alt="Fireworks Meteor Impact"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Meteor Impact</h2>
+              <p>fw-meteor.svg</p>
+            </div>
+            <div class="size ok">16.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>4000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Fireworks">
+          <div class="preview-frame" aria-label="Fireworks Ultimate Celebration Blast preview">
+            <img
+              src="svg/fw-ultimate.svg"
+              alt="Fireworks Ultimate Celebration Blast"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Fireworks Ultimate Celebration Blast</h2>
+              <p>fw-ultimate.svg</p>
+            </div>
+            <div class="size ok">21.9 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Fireworks</dd></div>
+            <div><dt>Duration</dt><dd>4800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Pop preview">
+            <img
+              src="svg/gs-pop.svg"
+              alt="Gold Stars Pop"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Pop</h2>
+              <p>gs-pop.svg</p>
+            </div>
+            <div class="size ok">16.5 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>2400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Trail preview">
+            <img
+              src="svg/gs-trail.svg"
+              alt="Gold Stars Trail"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Trail</h2>
+              <p>gs-trail.svg</p>
+            </div>
+            <div class="size ok">10.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Twinkle preview">
+            <img
+              src="svg/gs-twinkle.svg"
+              alt="Gold Stars Twinkle"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Twinkle</h2>
+              <p>gs-twinkle.svg</p>
+            </div>
+            <div class="size ok">18.6 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>2800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Swirl preview">
+            <img
+              src="svg/gs-swirl.svg"
+              alt="Gold Stars Swirl"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Swirl</h2>
+              <p>gs-swirl.svg</p>
+            </div>
+            <div class="size ok">11.3 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Shower preview">
+            <img
+              src="svg/gs-shower.svg"
+              alt="Gold Stars Shower"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Shower</h2>
+              <p>gs-shower.svg</p>
+            </div>
+            <div class="size ok">12.5 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Burst preview">
+            <img
+              src="svg/gs-burst.svg"
+              alt="Gold Stars Burst"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Burst</h2>
+              <p>gs-burst.svg</p>
+            </div>
+            <div class="size ok">10.9 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>2600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Constellation preview">
+            <img
+              src="svg/gs-const.svg"
+              alt="Gold Stars Constellation"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Constellation</h2>
+              <p>gs-const.svg</p>
+            </div>
+            <div class="size ok">9.1 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Rain preview">
+            <img
+              src="svg/gs-rain.svg"
+              alt="Gold Stars Rain"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Rain</h2>
+              <p>gs-rain.svg</p>
+            </div>
+            <div class="size ok">13.5 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Halo preview">
+            <img
+              src="svg/gs-halo.svg"
+              alt="Gold Stars Halo"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Halo</h2>
+              <p>gs-halo.svg</p>
+            </div>
+            <div class="size ok">14.8 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>2400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Big Star preview">
+            <img
+              src="svg/gs-big.svg"
+              alt="Gold Stars Big Star"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Big Star</h2>
+              <p>gs-big.svg</p>
+            </div>
+            <div class="size ok">9.9 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>2800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Fountain preview">
+            <img
+              src="svg/gs-fountain.svg"
+              alt="Gold Stars Fountain"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Fountain</h2>
+              <p>gs-fountain.svg</p>
+            </div>
+            <div class="size ok">10.7 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>2400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Ribbon preview">
+            <img
+              src="svg/gs-ribbon.svg"
+              alt="Gold Stars Ribbon"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Ribbon</h2>
+              <p>gs-ribbon.svg</p>
+            </div>
+            <div class="size ok">11.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Explode preview">
+            <img
+              src="svg/gs-explode.svg"
+              alt="Gold Stars Explode"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Explode</h2>
+              <p>gs-explode.svg</p>
+            </div>
+            <div class="size ok">11.5 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>2600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Galaxy preview">
+            <img
+              src="svg/gs-galaxy.svg"
+              alt="Gold Stars Galaxy"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Galaxy</h2>
+              <p>gs-galaxy.svg</p>
+            </div>
+            <div class="size ok">17.6 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>6000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Crown preview">
+            <img
+              src="svg/gs-crown.svg"
+              alt="Gold Stars Crown"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Crown</h2>
+              <p>gs-crown.svg</p>
+            </div>
+            <div class="size ok">8.2 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>2800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Aurora preview">
+            <img
+              src="svg/gs-aurora.svg"
+              alt="Gold Stars Aurora"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Aurora</h2>
+              <p>gs-aurora.svg</p>
+            </div>
+            <div class="size ok">24.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Pinwheel preview">
+            <img
+              src="svg/gs-pinwheel.svg"
+              alt="Gold Stars Pinwheel"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Pinwheel</h2>
+              <p>gs-pinwheel.svg</p>
+            </div>
+            <div class="size ok">11.6 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Comet Arc preview">
+            <img
+              src="svg/gs-cometarc.svg"
+              alt="Gold Stars Comet Arc"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Comet Arc</h2>
+              <p>gs-cometarc.svg</p>
+            </div>
+            <div class="size ok">10.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Pop Deluxe preview">
+            <img
+              src="svg/gs-popdeluxe.svg"
+              alt="Gold Stars Pop Deluxe"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Pop Deluxe</h2>
+              <p>gs-popdeluxe.svg</p>
+            </div>
+            <div class="size ok">17.8 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Radiant Burst preview">
+            <img
+              src="svg/gs-radiant.svg"
+              alt="Gold Stars Radiant Burst"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Radiant Burst</h2>
+              <p>gs-radiant.svg</p>
+            </div>
+            <div class="size ok">15.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Twinkle Field preview">
+            <img
+              src="svg/gs-field.svg"
+              alt="Gold Stars Twinkle Field"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Twinkle Field</h2>
+              <p>gs-field.svg</p>
+            </div>
+            <div class="size ok">18.7 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>2800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Trail Arc preview">
+            <img
+              src="svg/gs-trailarc.svg"
+              alt="Gold Stars Trail Arc"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Trail Arc</h2>
+              <p>gs-trailarc.svg</p>
+            </div>
+            <div class="size ok">13.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Swirl Crown preview">
+            <img
+              src="svg/gs-scrown.svg"
+              alt="Gold Stars Swirl Crown"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Swirl Crown</h2>
+              <p>gs-scrown.svg</p>
+            </div>
+            <div class="size ok">18.2 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3300 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Shower Premium preview">
+            <img
+              src="svg/gs-showerp.svg"
+              alt="Gold Stars Shower Premium"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Shower Premium</h2>
+              <p>gs-showerp.svg</p>
+            </div>
+            <div class="size ok">14.9 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Halo Ring preview">
+            <img
+              src="svg/gs-halo-ring.svg"
+              alt="Gold Stars Halo Ring"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Halo Ring</h2>
+              <p>gs-halo-ring.svg</p>
+            </div>
+            <div class="size ok">12.6 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Orbit Shine preview">
+            <img
+              src="svg/gs-orbitshine.svg"
+              alt="Gold Stars Orbit Shine"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Orbit Shine</h2>
+              <p>gs-orbitshine.svg</p>
+            </div>
+            <div class="size ok">7.8 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Explosion Bloom preview">
+            <img
+              src="svg/gs-bloom.svg"
+              alt="Gold Stars Explosion Bloom"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Explosion Bloom</h2>
+              <p>gs-bloom.svg</p>
+            </div>
+            <div class="size ok">11.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3100 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Spiral Rain preview">
+            <img
+              src="svg/gs-spiralrain.svg"
+              alt="Gold Stars Spiral Rain"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Spiral Rain</h2>
+              <p>gs-spiralrain.svg</p>
+            </div>
+            <div class="size ok">13.8 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Magic Cross Spark preview">
+            <img
+              src="svg/gs-crossspark.svg"
+              alt="Gold Stars Magic Cross Spark"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Magic Cross Spark</h2>
+              <p>gs-crossspark.svg</p>
+            </div>
+            <div class="size ok">14.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Wave Sweep preview">
+            <img
+              src="svg/gs-wavesweep.svg"
+              alt="Gold Stars Wave Sweep"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Wave Sweep</h2>
+              <p>gs-wavesweep.svg</p>
+            </div>
+            <div class="size ok">13.6 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Heart of Light preview">
+            <img
+              src="svg/gs-heartlight.svg"
+              alt="Gold Stars Heart of Light"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Heart of Light</h2>
+              <p>gs-heartlight.svg</p>
+            </div>
+            <div class="size ok">14.8 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Grand Finale preview">
+            <img
+              src="svg/gs-grandfinale.svg"
+              alt="Gold Stars Grand Finale"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Grand Finale</h2>
+              <p>gs-grandfinale.svg</p>
+            </div>
+            <div class="size ok">21.1 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Ribbon Trail preview">
+            <img
+              src="svg/gs-ribbontrail.svg"
+              alt="Gold Stars Ribbon Trail"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Ribbon Trail</h2>
+              <p>gs-ribbontrail.svg</p>
+            </div>
+            <div class="size ok">13.2 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Mirror Burst preview">
+            <img
+              src="svg/gs-mirror.svg"
+              alt="Gold Stars Mirror Burst"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Mirror Burst</h2>
+              <p>gs-mirror.svg</p>
+            </div>
+            <div class="size ok">13.5 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Floating Dust preview">
+            <img
+              src="svg/gs-dust.svg"
+              alt="Gold Stars Floating Dust"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Floating Dust</h2>
+              <p>gs-dust.svg</p>
+            </div>
+            <div class="size ok">14.8 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Sunflare Pulse preview">
+            <img
+              src="svg/gs-sunflare.svg"
+              alt="Gold Stars Sunflare Pulse"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Sunflare Pulse</h2>
+              <p>gs-sunflare.svg</p>
+            </div>
+            <div class="size ok">18.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3100 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Celebration Cascade preview">
+            <img
+              src="svg/gs-cascade.svg"
+              alt="Gold Stars Celebration Cascade"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Celebration Cascade</h2>
+              <p>gs-cascade.svg</p>
+            </div>
+            <div class="size ok">21.3 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3500 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Gold Stars">
+          <div class="preview-frame" aria-label="Gold Stars Eternal Glow preview">
+            <img
+              src="svg/gs-eternal.svg"
+              alt="Gold Stars Eternal Glow"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Gold Stars Eternal Glow</h2>
+              <p>gs-eternal.svg</p>
+            </div>
+            <div class="size ok">13.9 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Gold Stars</dd></div>
+            <div><dt>Duration</dt><dd>3600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bouncing Bingo Balls Classic preview">
+            <img
+              src="svg/bb-classic.svg"
+              alt="Bouncing Bingo Balls Classic"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bouncing Bingo Balls Classic</h2>
+              <p>bb-classic.svg</p>
+            </div>
+            <div class="size ok">14.2 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Bounce In preview">
+            <img
+              src="svg/bb-bouncein.svg"
+              alt="Bingo Balls Bounce In"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Bounce In</h2>
+              <p>bb-bouncein.svg</p>
+            </div>
+            <div class="size ok">16.8 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>2800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Scatter preview">
+            <img
+              src="svg/bb-scatter.svg"
+              alt="Bingo Balls Scatter"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Scatter</h2>
+              <p>bb-scatter.svg</p>
+            </div>
+            <div class="size ok">13.1 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Pop Up preview">
+            <img
+              src="svg/bb-popup.svg"
+              alt="Bingo Balls Pop Up"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Pop Up</h2>
+              <p>bb-popup.svg</p>
+            </div>
+            <div class="size ok">15.4 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>2600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Orbit preview">
+            <img
+              src="svg/bb-orbit.svg"
+              alt="Bingo Balls Orbit"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Orbit</h2>
+              <p>bb-orbit.svg</p>
+            </div>
+            <div class="size ok">11.3 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Celebration preview">
+            <img
+              src="svg/bb-celebr.svg"
+              alt="Bingo Balls Celebration"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Celebration</h2>
+              <p>bb-celebr.svg</p>
+            </div>
+            <div class="size ok">16.1 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Wave preview">
+            <img
+              src="svg/bb-wave.svg"
+              alt="Bingo Balls Wave"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Wave</h2>
+              <p>bb-wave.svg</p>
+            </div>
+            <div class="size ok">11.6 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>1400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Spin preview">
+            <img
+              src="svg/bb-spin.svg"
+              alt="Bingo Balls Spin"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Spin</h2>
+              <p>bb-spin.svg</p>
+            </div>
+            <div class="size ok">15.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Confetti preview">
+            <img
+              src="svg/bb-confetti.svg"
+              alt="Bingo Balls Confetti"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Confetti</h2>
+              <p>bb-confetti.svg</p>
+            </div>
+            <div class="size ok">18.1 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Drumroll preview">
+            <img
+              src="svg/bb-drumroll.svg"
+              alt="Bingo Balls Drumroll"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Drumroll</h2>
+              <p>bb-drumroll.svg</p>
+            </div>
+            <div class="size ok">19.1 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Jackpot preview">
+            <img
+              src="svg/bb-jackpot.svg"
+              alt="Bingo Balls Jackpot"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Jackpot</h2>
+              <p>bb-jackpot.svg</p>
+            </div>
+            <div class="size ok">16.3 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>2400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Roulette preview">
+            <img
+              src="svg/bb-roulette.svg"
+              alt="Bingo Balls Roulette"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Roulette</h2>
+              <p>bb-roulette.svg</p>
+            </div>
+            <div class="size ok">14.1 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>7000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Slot preview">
+            <img
+              src="svg/bb-slot.svg"
+              alt="Bingo Balls Slot"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Slot</h2>
+              <p>bb-slot.svg</p>
+            </div>
+            <div class="size ok">17.8 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>2800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Rain preview">
+            <img
+              src="svg/bb-rain.svg"
+              alt="Bingo Balls Rain"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Rain</h2>
+              <p>bb-rain.svg</p>
+            </div>
+            <div class="size ok">17.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Tilt preview">
+            <img
+              src="svg/bb-tilt.svg"
+              alt="Bingo Balls Tilt"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Tilt</h2>
+              <p>bb-tilt.svg</p>
+            </div>
+            <div class="size ok">14.5 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>2000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Parade preview">
+            <img
+              src="svg/bb-parade.svg"
+              alt="Bingo Balls Parade"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Parade</h2>
+              <p>bb-parade.svg</p>
+            </div>
+            <div class="size ok">16.8 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>2400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Spotlight preview">
+            <img
+              src="svg/bb-spot.svg"
+              alt="Bingo Balls Spotlight"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Spotlight</h2>
+              <p>bb-spot.svg</p>
+            </div>
+            <div class="size ok">14.4 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Crown Arc preview">
+            <img
+              src="svg/bb-crown.svg"
+              alt="Bingo Balls Crown Arc"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Crown Arc</h2>
+              <p>bb-crown.svg</p>
+            </div>
+            <div class="size ok">15.6 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Collision Burst preview">
+            <img
+              src="svg/bb-collision.svg"
+              alt="Bingo Balls Collision Burst"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Collision Burst</h2>
+              <p>bb-collision.svg</p>
+            </div>
+            <div class="size ok">21.6 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Bounce Storm preview">
+            <img
+              src="svg/bb-storm.svg"
+              alt="Bingo Balls Bounce Storm"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Bounce Storm</h2>
+              <p>bb-storm.svg</p>
+            </div>
+            <div class="size ok">20.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Spiral Collapse preview">
+            <img
+              src="svg/bb-spiral.svg"
+              alt="Bingo Balls Spiral Collapse"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Spiral Collapse</h2>
+              <p>bb-spiral.svg</p>
+            </div>
+            <div class="size ok">22.5 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Explosion to Formation preview">
+            <img
+              src="svg/bb-explodeform.svg"
+              alt="Bingo Balls Explosion to Formation"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Explosion to Formation</h2>
+              <p>bb-explodeform.svg</p>
+            </div>
+            <div class="size ok">26.9 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3300 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Orbit Impact preview">
+            <img
+              src="svg/bb-impact.svg"
+              alt="Bingo Balls Orbit Impact"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Orbit Impact</h2>
+              <p>bb-impact.svg</p>
+            </div>
+            <div class="size ok">22.4 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Pop Chain preview">
+            <img
+              src="svg/bb-popchain.svg"
+              alt="Bingo Balls Pop Chain"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Pop Chain</h2>
+              <p>bb-popchain.svg</p>
+            </div>
+            <div class="size ok">17.4 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Rocket Drop preview">
+            <img
+              src="svg/bb-rocket.svg"
+              alt="Bingo Balls Rocket Drop"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Rocket Drop</h2>
+              <p>bb-rocket.svg</p>
+            </div>
+            <div class="size ok">22.1 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Scatter Ring preview">
+            <img
+              src="svg/bb-ring.svg"
+              alt="Bingo Balls Scatter Ring"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Scatter Ring</h2>
+              <p>bb-ring.svg</p>
+            </div>
+            <div class="size ok">30.2 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3500 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Pinball Chaos preview">
+            <img
+              src="svg/bb-pinball.svg"
+              alt="Bingo Balls Pinball Chaos"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Pinball Chaos</h2>
+              <p>bb-pinball.svg</p>
+            </div>
+            <div class="size ok">17.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3300 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Bouncing Bingo Balls">
+          <div class="preview-frame" aria-label="Bingo Balls Grand Celebration preview">
+            <img
+              src="svg/bb-grand.svg"
+              alt="Bingo Balls Grand Celebration"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Bingo Balls Grand Celebration</h2>
+              <p>bb-grand.svg</p>
+            </div>
+            <div class="size ok">34.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Bouncing Bingo Balls</dd></div>
+            <div><dt>Duration</dt><dd>3800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Explosion Burst preview">
+            <img
+              src="svg/cf-explosion.svg"
+              alt="Confetti Explosion Burst"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Explosion Burst</h2>
+              <p>cf-explosion.svg</p>
+            </div>
+            <div class="size ok">24.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Cannon Left Right preview">
+            <img
+              src="svg/cf-cannon.svg"
+              alt="Confetti Cannon Left Right"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Cannon Left Right</h2>
+              <p>cf-cannon.svg</p>
+            </div>
+            <div class="size ok">28.6 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Rain Celebration preview">
+            <img
+              src="svg/cf-rain.svg"
+              alt="Confetti Rain Celebration"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Rain Celebration</h2>
+              <p>cf-rain.svg</p>
+            </div>
+            <div class="size ok">35.9 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Spiral Blast preview">
+            <img
+              src="svg/cf-spiral.svg"
+              alt="Confetti Spiral Blast"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Spiral Blast</h2>
+              <p>cf-spiral.svg</p>
+            </div>
+            <div class="size ok">18.8 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Pop Party preview">
+            <img
+              src="svg/cf-pop.svg"
+              alt="Confetti Pop Party"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Pop Party</h2>
+              <p>cf-pop.svg</p>
+            </div>
+            <div class="size ok">29.2 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Grand Finale preview">
+            <img
+              src="svg/cf-finale.svg"
+              alt="Confetti Grand Finale"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Grand Finale</h2>
+              <p>cf-finale.svg</p>
+            </div>
+            <div class="size ok">37.7 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>4400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Wave Sweep preview">
+            <img
+              src="svg/cf-wave.svg"
+              alt="Confetti Wave Sweep"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Wave Sweep</h2>
+              <p>cf-wave.svg</p>
+            </div>
+            <div class="size ok">22.6 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Heart Burst preview">
+            <img
+              src="svg/cf-heart.svg"
+              alt="Confetti Heart Burst"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Heart Burst</h2>
+              <p>cf-heart.svg</p>
+            </div>
+            <div class="size ok">25.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Star Mix preview">
+            <img
+              src="svg/cf-star.svg"
+              alt="Confetti Star Mix"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Star Mix</h2>
+              <p>cf-star.svg</p>
+            </div>
+            <div class="size ok">26.9 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3200 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Victory Shower preview">
+            <img
+              src="svg/cf-victory.svg"
+              alt="Confetti Victory Shower"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Victory Shower</h2>
+              <p>cf-victory.svg</p>
+            </div>
+            <div class="size ok">30.5 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>4000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Firework Burst preview">
+            <img
+              src="svg/cf-firework.svg"
+              alt="Confetti Firework Burst"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Firework Burst</h2>
+              <p>cf-firework.svg</p>
+            </div>
+            <div class="size ok">28.3 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Mega Explosion preview">
+            <img
+              src="svg/cf-mega.svg"
+              alt="Confetti Mega Explosion"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Mega Explosion</h2>
+              <p>cf-mega.svg</p>
+            </div>
+            <div class="size ok">36.1 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>4000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Double Cannon Blast preview">
+            <img
+              src="svg/cf-double.svg"
+              alt="Confetti Double Cannon Blast"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Double Cannon Blast</h2>
+              <p>cf-double.svg</p>
+            </div>
+            <div class="size ok">36.9 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Triple Pop Celebration preview">
+            <img
+              src="svg/cf-triple.svg"
+              alt="Confetti Triple Pop Celebration"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Triple Pop Celebration</h2>
+              <p>cf-triple.svg</p>
+            </div>
+            <div class="size ok">30.5 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Grand Finale Storm preview">
+            <img
+              src="svg/cf-storm.svg"
+              alt="Confetti Grand Finale Storm"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Grand Finale Storm</h2>
+              <p>cf-storm.svg</p>
+            </div>
+            <div class="size ok">45.1 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>4600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Spiral Firework preview">
+            <img
+              src="svg/cf-spiralfw.svg"
+              alt="Confetti Spiral Firework"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Spiral Firework</h2>
+              <p>cf-spiralfw.svg</p>
+            </div>
+            <div class="size ok">20.2 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Rain Explosion preview">
+            <img
+              src="svg/cf-rainx.svg"
+              alt="Confetti Rain Explosion"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Rain Explosion</h2>
+              <p>cf-rainx.svg</p>
+            </div>
+            <div class="size ok">31.8 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>4000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Wave Blast preview">
+            <img
+              src="svg/cf-waveblast.svg"
+              alt="Confetti Wave Blast"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Wave Blast</h2>
+              <p>cf-waveblast.svg</p>
+            </div>
+            <div class="size ok">27.9 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Volcano Burst preview">
+            <img
+              src="svg/cf-volcano.svg"
+              alt="Confetti Volcano Burst"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Volcano Burst</h2>
+              <p>cf-volcano.svg</p>
+            </div>
+            <div class="size ok">24.6 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Star Celebration preview">
+            <img
+              src="svg/cf-starcel.svg"
+              alt="Confetti Star Celebration"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Star Celebration</h2>
+              <p>cf-starcel.svg</p>
+            </div>
+            <div class="size ok">24.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Ribbon Storm preview">
+            <img
+              src="svg/cf-ribbon.svg"
+              alt="Confetti Ribbon Storm"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Ribbon Storm</h2>
+              <p>cf-ribbon.svg</p>
+            </div>
+            <div class="size ok">24.8 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Galaxy Swirl preview">
+            <img
+              src="svg/cf-galaxy.svg"
+              alt="Confetti Galaxy Swirl"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Galaxy Swirl</h2>
+              <p>cf-galaxy.svg</p>
+            </div>
+            <div class="size ok">31.1 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>4000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Heart Festival preview">
+            <img
+              src="svg/cf-heartfest.svg"
+              alt="Confetti Heart Festival"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Heart Festival</h2>
+              <p>cf-heartfest.svg</p>
+            </div>
+            <div class="size ok">30.4 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Victory Blast preview">
+            <img
+              src="svg/cf-victoryb.svg"
+              alt="Confetti Victory Blast"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Victory Blast</h2>
+              <p>cf-victoryb.svg</p>
+            </div>
+            <div class="size ok">32.9 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>4000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Celebration Tunnel preview">
+            <img
+              src="svg/cf-tunnel.svg"
+              alt="Confetti Celebration Tunnel"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Celebration Tunnel</h2>
+              <p>cf-tunnel.svg</p>
+            </div>
+            <div class="size ok">29.4 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Shockwave Ring preview">
+            <img
+              src="svg/cf-shockring.svg"
+              alt="Confetti Shockwave Ring"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Shockwave Ring</h2>
+              <p>cf-shockring.svg</p>
+            </div>
+            <div class="size ok">23.3 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3400 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Firecracker Chain preview">
+            <img
+              src="svg/cf-firechain.svg"
+              alt="Confetti Firecracker Chain"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Firecracker Chain</h2>
+              <p>cf-firechain.svg</p>
+            </div>
+            <div class="size ok">34.7 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>4000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Color Bloom preview">
+            <img
+              src="svg/cf-bloom.svg"
+              alt="Confetti Color Bloom"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Color Bloom</h2>
+              <p>cf-bloom.svg</p>
+            </div>
+            <div class="size ok">30.0 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>3600 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Carnival Blast preview">
+            <img
+              src="svg/cf-carnival.svg"
+              alt="Confetti Carnival Blast"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Carnival Blast</h2>
+              <p>cf-carnival.svg</p>
+            </div>
+            <div class="size ok">39.4 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>4000 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+
+        <article class="card" data-status="ok" data-category="Confetti">
+          <div class="preview-frame" aria-label="Confetti Ultimate Party Finale preview">
+            <img
+              src="svg/cf-ultimatep.svg"
+              alt="Confetti Ultimate Party Finale"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="meta">
+            <div>
+              <h2>Confetti Ultimate Party Finale</h2>
+              <p>cf-ultimatep.svg</p>
+            </div>
+            <div class="size ok">59.5 KB</div>
+          </div>
+          <dl>
+            <div><dt>Category</dt><dd>Confetti</dd></div>
+            <div><dt>Duration</dt><dd>4800 ms</dd></div>
+            <div><dt>Status</dt><dd>ok</dd></div>
+          </dl>
+        </article>
+    </section>
+    <section class="notes">
+      <strong>Manual sanity checklist:</strong>
+      <ul>
+        <li>SVG loads in the card without a broken-image icon.</li>
+        <li>Animation visibly plays after the card enters view.</li>
+        <li>Checkerboard, black, and white backgrounds show no full-canvas opaque fill.</li>
+        <li>Main action stays inside or near the dashed centered safe area.</li>
+        <li>No obvious clipping occurs at the 16:9 artboard edges.</li>
+      </ul>
+    </section>
+  </main>
+  <script>
+    const buttons = Array.from(document.querySelectorAll("[data-bg-choice]"));
+    for (const button of buttons) {
+      button.addEventListener("click", () => {
+        document.body.dataset.bg = button.dataset.bgChoice;
+        for (const next of buttons) {
+          next.setAttribute("aria-pressed", String(next === button));
+        }
+      });
+    }
+  </script>
+</body>
+</html>
