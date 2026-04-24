@@ -6,16 +6,40 @@ import { writeWinksManifest } from "./wink-manifest.mjs";
 
 const previewPath = path.join(WINKS_ROOT, "preview.html");
 
+function normalizePreviewAssetPath(assetPath) {
+  if (assetPath.startsWith("/")) {
+    return assetPath;
+  }
+
+  const normalizedPath = assetPath.replace(/^(\.\/)+/, "").replace(/^\/+/, "");
+  return `/${normalizedPath}`;
+}
+
+function getPreviewAssetPath(kind, item, format, asset) {
+  const expectedPath = `/winks/${kind}/${format}/${item.id}.${format}`;
+
+  if (!asset?.path) {
+    return expectedPath;
+  }
+
+  const normalizedPath = normalizePreviewAssetPath(asset.path);
+  return normalizedPath === expectedPath ? normalizedPath : expectedPath;
+}
+
+function getPreviewAssetFileName(item, format, asset) {
+  const expectedFileName = `${item.id}.${format}`;
+  return asset?.fileName === expectedFileName ? asset.fileName : expectedFileName;
+}
+
 function renderAssetBlock(kind, item, format) {
   const asset = format === "svg" ? item.svg : item.apng;
   const label = format === "svg" ? "SVG Animation" : "APNG Fallback";
   const badge = format === "svg" ? "Primary" : "Fallback";
   const aspectRatio = `${item.width} / ${item.height}`;
-  const filePath =
-    format === "svg"
-      ? `${kind}/svg/${encodeURIComponent(item.svg?.fileName ?? "")}`
-      : `${kind}/apng/${encodeURIComponent(item.apng?.fileName ?? "")}`;
+  const filePath = getPreviewAssetPath(kind, item, format, asset);
+  const fileName = getPreviewAssetFileName(item, format, asset);
   const downloadLabel = format === "svg" ? "Download SVG" : "Download APNG";
+  const previewErrorMessage = format === "apng" ? "APNG preview failed to load" : "";
 
   if (!asset) {
     return `
@@ -45,11 +69,17 @@ function renderAssetBlock(kind, item, format) {
       <div class="preview-frame" style="aspect-ratio: ${aspectRatio};" aria-label="${escapeHtml(
         item.name
       )} ${label} preview">
-        <img src="${filePath}" alt="${escapeHtml(item.name)} ${label}" loading="lazy" decoding="async" />
+        <img
+          src="${escapeHtml(filePath)}"
+          alt="${escapeHtml(item.name)} ${label}"
+          loading="lazy"
+          decoding="async"
+          ${format === "apng" ? `data-preview-error="${previewErrorMessage}"` : ""}
+        />
       </div>
       <div class="format-meta">
-        <span>${escapeHtml(asset.fileName)}</span>
-        <a href="${filePath}" download="${escapeHtml(asset.fileName)}">${downloadLabel}</a>
+        <span>${escapeHtml(fileName)}</span>
+        <a href="${escapeHtml(filePath)}" download="${escapeHtml(fileName)}">${downloadLabel}</a>
       </div>
     </section>`;
 }
@@ -376,6 +406,22 @@ function renderHtml(manifest) {
           next.setAttribute("aria-pressed", String(next === button));
         }
       });
+    }
+
+    const apngPreviews = Array.from(document.querySelectorAll("img[data-preview-error]"));
+    for (const preview of apngPreviews) {
+      preview.addEventListener("error", () => {
+        preview.style.display = "none";
+        const frame = preview.closest(".preview-frame");
+        if (!frame || frame.querySelector(".placeholder")) {
+          return;
+        }
+
+        const placeholder = document.createElement("div");
+        placeholder.className = "placeholder";
+        placeholder.textContent = preview.dataset.previewError || "APNG preview failed to load";
+        frame.appendChild(placeholder);
+      }, { once: true });
     }
   </script>
 </body>

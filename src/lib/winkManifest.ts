@@ -113,6 +113,40 @@ export function getExpectedWinkAssetPath(kind: WinkKind, format: "apng" | "svg",
   return `/winks/${kind}/${format}/${getExpectedWinkFileName(id, format)}`;
 }
 
+function normalizeManifestAssetPath(assetPath: string) {
+  if (assetPath.startsWith("/")) {
+    return assetPath;
+  }
+
+  const normalizedPath = assetPath.replace(/^(\.\/)+/, "").replace(/^\/+/, "");
+  return `/${normalizedPath}`;
+}
+
+export function resolveWinkAssetFileName(
+  id: string,
+  format: "apng" | "svg",
+  fileName?: string | null
+) {
+  const expectedFileName = getExpectedWinkFileName(id, format);
+  return fileName === expectedFileName ? fileName : expectedFileName;
+}
+
+export function resolveWinkAssetPath(
+  kind: WinkKind,
+  format: "apng" | "svg",
+  id: string,
+  assetPath?: string | null
+) {
+  const expectedPath = getExpectedWinkAssetPath(kind, format, id);
+
+  if (!assetPath) {
+    return expectedPath;
+  }
+
+  const normalizedPath = normalizeManifestAssetPath(assetPath);
+  return normalizedPath === expectedPath ? normalizedPath : expectedPath;
+}
+
 export function resolveApngFallbackState(options: {
   asset?: WinkManifestItem;
   errorMessage?: string | null;

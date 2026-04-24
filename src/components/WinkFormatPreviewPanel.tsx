@@ -23,9 +23,9 @@ import {
   formatAssetSize,
   getApngStatusLabels,
   getApngTechnicalInfo,
-  getExpectedWinkAssetPath,
-  getExpectedWinkFileName,
   resolveApngFallbackState,
+  resolveWinkAssetFileName,
+  resolveWinkAssetPath,
 } from "@/lib/winkManifest";
 import { cn } from "@/lib/utils";
 
@@ -194,8 +194,8 @@ function PrimarySvgCard({
   wink,
 }: Pick<WinkFormatPreviewPanelProps, "asset" | "bg" | "isLoading" | "svgPreview" | "wink">) {
   const svgFile = asset?.svg;
-  const svgPath = svgFile?.path ?? getExpectedWinkAssetPath(wink.kind, "svg", wink.id);
-  const svgFileName = svgFile?.fileName ?? getExpectedWinkFileName(wink.id, "svg");
+  const svgPath = resolveWinkAssetPath(wink.kind, "svg", wink.id, svgFile?.path);
+  const svgFileName = resolveWinkAssetFileName(wink.id, "svg", svgFile?.fileName);
   const info = useMemo(() => [`${wink.durationMs} ms`], [wink.durationMs]);
 
   return (
@@ -281,11 +281,12 @@ function ApngFallbackCard({
   const appearance = apngStatusAppearance[state];
   const StatusIcon = appearance.icon;
   const apngFile = asset?.apng;
-  const apngPath = apngFile?.path ?? getExpectedWinkAssetPath(wink.kind, "apng", wink.id);
-  const apngFileName = apngFile?.fileName ?? getExpectedWinkFileName(wink.id, "apng");
+  const apngPath = resolveWinkAssetPath(wink.kind, "apng", wink.id, apngFile?.path);
+  const apngFileName = resolveWinkAssetFileName(wink.id, "apng", apngFile?.fileName);
   const fps = apngFile?.fps ?? DEFAULT_APNG_FPS;
   const frameCount = apngFile?.frameCount ?? calculateApngFrameCount(wink.durationMs, fps);
   const [previewMode, setPreviewMode] = useState<"apng" | "svg">("svg");
+  const [apngPreviewFailed, setApngPreviewFailed] = useState(false);
   const apngReady = state === "ready" && !!apngFile;
 
   useEffect(() => {
@@ -298,6 +299,10 @@ function ApngFallbackCard({
     }
   }, [apngReady, previewMode]);
 
+  useEffect(() => {
+    setApngPreviewFailed(false);
+  }, [apngPath, previewMode, wink.id]);
+
   const technicalInfo = useMemo(
     () =>
       getApngTechnicalInfo({
@@ -308,7 +313,9 @@ function ApngFallbackCard({
       }),
     [apngFile?.sizeLabel, apngReady, fps, frameCount, wink.durationMs]
   );
-  const message = apngErrorMessage || appearance.previewMessage;
+  const message = apngPreviewFailed
+    ? "APNG preview failed to load"
+    : apngErrorMessage || appearance.previewMessage;
 
   return (
     <article className="group space-y-4 rounded-2xl border border-border/70 bg-background/55 p-4 shadow-card transition-colors hover:border-primary/25">
@@ -370,14 +377,18 @@ function ApngFallbackCard({
                 }
               />
             )
-          ) : apngReady ? (
+          ) : apngReady && !apngPreviewFailed ? (
             <img
               src={apngPath}
               alt={`${wink.name} APNG Fallback`}
               className="block h-full w-full object-contain"
               loading="eager"
               decoding="async"
+              onError={() => setApngPreviewFailed(true)}
+              onLoad={() => setApngPreviewFailed(false)}
             />
+          ) : apngReady ? (
+            <PreviewPlaceholder message="APNG preview failed to load" />
           ) : (
             <PreviewPlaceholder message="Generate APNG first" />
           )}

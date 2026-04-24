@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T18:46:26.293Z",
+  "generatedAt": "2026-04-24T19:41:04.069Z",
   "groups": {
     "effect": {
       "edgeGuidance": null,
@@ -727,7 +727,7 @@
         },
         {
           "apng": {
-            "bytes": 9586089,
+            "bytes": 9586094,
             "fileName": "bb-spot.apng",
             "fps": 15,
             "frameCount": 51,
@@ -787,12 +787,12 @@
         },
         {
           "apng": {
-            "bytes": 5263805,
+            "bytes": 5395135,
             "fileName": "bb-tilt.apng",
             "fps": 15,
             "frameCount": 30,
             "path": "/winks/effect/apng/bb-tilt.apng",
-            "sizeLabel": "5.02 MB",
+            "sizeLabel": "5.15 MB",
             "transparent": true
           },
           "aspectRatio": "16:9",
@@ -846,7 +846,15 @@
           "width": 1920
         },
         {
-          "apng": null,
+          "apng": {
+            "bytes": 8675515,
+            "fileName": "bouncing-bingo-collision.apng",
+            "fps": 15,
+            "frameCount": 50,
+            "path": "/winks/effect/apng/bouncing-bingo-collision.apng",
+            "sizeLabel": "8.27 MB",
+            "transparent": true
+          },
           "aspectRatio": "16:9",
           "category": "Bouncing Bingo Balls",
           "durationMs": 3300,
@@ -868,7 +876,15 @@
           "width": 1920
         },
         {
-          "apng": null,
+          "apng": {
+            "bytes": 7393283,
+            "fileName": "bouncing-bingo-countdown.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/bouncing-bingo-countdown.apng",
+            "sizeLabel": "7.05 MB",
+            "transparent": true
+          },
           "aspectRatio": "16:9",
           "category": "Bouncing Bingo Balls",
           "durationMs": 3400,
@@ -890,7 +906,15 @@
           "width": 1920
         },
         {
-          "apng": null,
+          "apng": {
+            "bytes": 7359965,
+            "fileName": "bouncing-bingo-jackpot.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/bouncing-bingo-jackpot.apng",
+            "sizeLabel": "7.02 MB",
+            "transparent": true
+          },
           "aspectRatio": "16:9",
           "category": "Bouncing Bingo Balls",
           "durationMs": 3400,
@@ -912,7 +936,15 @@
           "width": 1920
         },
         {
-          "apng": null,
+          "apng": {
+            "bytes": 8535169,
+            "fileName": "bouncing-bingo-spiral.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/bouncing-bingo-spiral.apng",
+            "sizeLabel": "8.14 MB",
+            "transparent": true
+          },
           "aspectRatio": "16:9",
           "category": "Bouncing Bingo Balls",
           "durationMs": 3400,
@@ -934,7 +966,15 @@
           "width": 1920
         },
         {
-          "apng": null,
+          "apng": {
+            "bytes": 6428780,
+            "fileName": "bouncing-bingo-wave.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/bouncing-bingo-wave.apng",
+            "sizeLabel": "6.13 MB",
+            "transparent": true
+          },
           "aspectRatio": "16:9",
           "category": "Bouncing Bingo Balls",
           "durationMs": 3000,
@@ -987,12 +1027,12 @@
         },
         {
           "apng": {
-            "bytes": 3679007,
+            "bytes": 3753560,
             "fileName": "cf-cannon.apng",
             "fps": 15,
             "frameCount": 54,
             "path": "/winks/effect/apng/cf-cannon.apng",
-            "sizeLabel": "3.51 MB",
+            "sizeLabel": "3.58 MB",
             "transparent": true
           },
           "aspectRatio": "16:9",
@@ -1227,12 +1267,12 @@
         },
         {
           "apng": {
-            "bytes": 3391960,
+            "bytes": 3452158,
             "fileName": "cf-heart.apng",
             "fps": 15,
             "frameCount": 54,
             "path": "/winks/effect/apng/cf-heart.apng",
-            "sizeLabel": "3.23 MB",
+            "sizeLabel": "3.29 MB",
             "transparent": true
           },
           "aspectRatio": "16:9",
@@ -1257,12 +1297,12 @@
         },
         {
           "apng": {
-            "bytes": 3682767,
+            "bytes": 3737799,
             "fileName": "cf-heartfest.apng",
             "fps": 15,
             "frameCount": 57,
             "path": "/winks/effect/apng/cf-heartfest.apng",
-            "sizeLabel": "3.51 MB",
+            "sizeLabel": "3.56 MB",
             "transparent": true
           },
           "aspectRatio": "16:9",
@@ -1287,7 +1327,7 @@
         },
         {
           "apng": {
-            "bytes": 7235077,
+            "bytes": 7234846,
             "fileName": "cf-mega.apng",
             "fps": 15,
             "frameCount": 60,
@@ -1347,12 +1387,12 @@
         },
         {
           "apng": {
-            "bytes": 4442203,
+            "bytes": 4457421,
             "fileName": "cf-rain.apng",
             "fps": 15,
             "frameCount": 51,
             "path": "/winks/effect/apng/cf-rain.apng",
-            "sizeLabel": "4.24 MB",
+            "sizeLabel": "4.25 MB",
             "transparent": true
           },
           "aspectRatio": "16:9",
@@ -1377,12 +1417,12 @@
         },
         {
           "apng": {
-            "bytes": 4281586,
+            "bytes": 4285309,
             "fileName": "cf-rainx.apng",
             "fps": 15,
             "frameCount": 60,
             "path": "/winks/effect/apng/cf-rainx.apng",
-            "sizeLabel": "4.08 MB",
+            "sizeLabel": "4.09 MB",
             "transparent": true
           },
           "aspectRatio": "16:9",
@@ -1437,12 +1477,12 @@
         },
         {
           "apng": {
-            "bytes": 5722060,
+            "bytes": 5713998,
             "fileName": "cf-shockring.apng",
             "fps": 15,
             "frameCount": 51,
             "path": "/winks/effect/apng/cf-shockring.apng",
-            "sizeLabel": "5.46 MB",
+            "sizeLabel": "5.45 MB",
             "transparent": true
           },
           "aspectRatio": "16:9",
@@ -1557,12 +1597,12 @@
         },
         {
           "apng": {
-            "bytes": 3679847,
+            "bytes": 3670092,
             "fileName": "cf-starcel.apng",
             "fps": 15,
             "frameCount": 51,
             "path": "/winks/effect/apng/cf-starcel.apng",
-            "sizeLabel": "3.51 MB",
+            "sizeLabel": "3.50 MB",
             "transparent": true
           },
           "aspectRatio": "16:9",
@@ -1587,12 +1627,12 @@
         },
         {
           "apng": {
-            "bytes": 8172319,
+            "bytes": 8342944,
             "fileName": "cf-storm.apng",
             "fps": 15,
             "frameCount": 69,
             "path": "/winks/effect/apng/cf-storm.apng",
-            "sizeLabel": "7.79 MB",
+            "sizeLabel": "7.96 MB",
             "transparent": true
           },
           "aspectRatio": "16:9",
@@ -1617,12 +1657,12 @@
         },
         {
           "apng": {
-            "bytes": 4240490,
+            "bytes": 4161065,
             "fileName": "cf-triple.apng",
             "fps": 15,
             "frameCount": 54,
             "path": "/winks/effect/apng/cf-triple.apng",
-            "sizeLabel": "4.04 MB",
+            "sizeLabel": "3.97 MB",
             "transparent": true
           },
           "aspectRatio": "16:9",
@@ -1647,12 +1687,12 @@
         },
         {
           "apng": {
-            "bytes": 7665768,
+            "bytes": 7294596,
             "fileName": "cf-tunnel.apng",
             "fps": 15,
             "frameCount": 57,
             "path": "/winks/effect/apng/cf-tunnel.apng",
-            "sizeLabel": "7.31 MB",
+            "sizeLabel": "6.96 MB",
             "transparent": true
           },
           "aspectRatio": "16:9",
@@ -2997,7 +3037,7 @@
         },
         {
           "apng": {
-            "bytes": 2008487,
+            "bytes": 2008482,
             "fileName": "gs-eternal.apng",
             "fps": 15,
             "frameCount": 54,

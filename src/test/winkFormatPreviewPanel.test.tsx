@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
 import { WinkFormatPreviewPanel } from "@/components/WinkFormatPreviewPanel";
@@ -86,9 +86,53 @@ describe("WinkFormatPreviewPanel", () => {
       )
     ).toBeInTheDocument();
     expect(screen.getByText("54 frames")).toBeInTheDocument();
+    expect(screen.getByAltText("Fireworks Grand Finale APNG Fallback")).toHaveAttribute(
+      "src",
+      "/winks/effect/apng/fw-grand-finale.apng"
+    );
     expect(screen.getByRole("link", { name: "Download APNG" })).toHaveAttribute(
       "href",
       "/winks/effect/apng/fw-grand-finale.apng"
     );
+  });
+
+  it("shows a clean message instead of a broken image when the APNG preview fails", () => {
+    const asset: WinkManifestItem = {
+      apng: {
+        bytes: 420_000,
+        fileName: "fw-grand-finale.apng",
+        fps: 15,
+        frameCount: 54,
+        path: "/winks/effect/apng/fw-grand-finale.apng",
+        sizeLabel: "420 KB",
+        transparent: true,
+      },
+      aspectRatio: "16:9",
+      category: "Fireworks",
+      durationMs: 3600,
+      edgeGuidance: null,
+      height: 1080,
+      id: "fw-grand-finale",
+      kind: "effect",
+      name: "Fireworks Grand Finale",
+      safeArea: "centered",
+      safeAreaGuidance: "Keep key action centered.",
+      svg: {
+        bytes: 12000,
+        fileName: "fw-grand-finale.svg",
+        path: "/winks/effect/svg/fw-grand-finale.svg",
+        sizeLabel: "12 KB",
+      },
+      typeLabel: "Overlay / Full Screen",
+      viewBox: "0 0 1920 1080",
+      width: 1920,
+    };
+
+    renderPanel({ asset });
+
+    fireEvent.error(screen.getByAltText("Fireworks Grand Finale APNG Fallback"));
+
+    expect(screen.getAllByText("APNG preview failed to load").length).toBeGreaterThan(0);
+    expect(screen.queryByAltText("Fireworks Grand Finale APNG Fallback")).not.toBeInTheDocument();
   });
 });

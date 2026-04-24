@@ -8,6 +8,8 @@ import {
   getApngTechnicalInfo,
   getExpectedWinkAssetPath,
   getExpectedWinkFileName,
+  resolveWinkAssetFileName,
+  resolveWinkAssetPath,
   resolveApngFallbackState,
   type WinksManifest,
 } from "@/lib/winkManifest";
@@ -116,5 +118,18 @@ describe("wink manifest helpers", () => {
     );
     expect(resolveApngFallbackState({ asset: item })).toBe("pending");
     expect(getApngStatusLabels("ready")).toContain("Ready");
+  });
+
+  it("normalizes mismatched asset filenames and paths back to the public wink location", () => {
+    expect(resolveWinkAssetFileName("fw-burst", "apng", "fw-burst.apng")).toBe("fw-burst.apng");
+    expect(resolveWinkAssetFileName("fw-burst", "apng", "burst-preview.apng")).toBe(
+      "fw-burst.apng"
+    );
+    expect(resolveWinkAssetPath("effect", "apng", "fw-burst", "./winks/effect/apng/fw-burst.apng")).toBe(
+      "/winks/effect/apng/fw-burst.apng"
+    );
+    expect(resolveWinkAssetPath("effect", "apng", "fw-burst", "effect/apng/fw-burst.apng")).toBe(
+      "/winks/effect/apng/fw-burst.apng"
+    );
   });
 });
