@@ -1,0 +1,1290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" data-wink-name="Countdown Bingo Mega Reveal" data-wink-category="Countdown" data-wink-duration="4000ms" aria-label="Countdown Bingo Mega Reveal">
+  <style>
+  text {
+    font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+    paint-order: stroke fill;
+  }
+
+  @keyframes wink-enter-pop {
+    0%, 100% {
+      opacity: 0;
+      transform: translate(var(--from-x, 0px), var(--from-y, 32px)) scale(0.32) rotate(var(--from-r, -14deg));
+    }
+    14% { opacity: 1; }
+    32% { opacity: 1; transform: translate(0px, 0px) scale(1.08) rotate(0deg); }
+    64% { opacity: 1; transform: translate(0px, 0px) scale(1) rotate(0deg); }
+    88% { opacity: 1; }
+  }
+
+  @keyframes wink-enter-rise {
+    0%, 100% { opacity: 0; transform: translate(0px, 120px) scale(0.4); }
+    18% { opacity: 1; }
+    34% { opacity: 1; transform: translate(0px, -10px) scale(1.05); }
+    50%, 84% { opacity: 1; transform: translate(0px, 0px) scale(1); }
+  }
+
+  @keyframes wink-enter-spin {
+    0%, 100% { opacity: 0; transform: rotate(-220deg) scale(0.2); }
+    18% { opacity: 1; }
+    36% { opacity: 1; transform: rotate(12deg) scale(1.08); }
+    54%, 86% { opacity: 1; transform: rotate(0deg) scale(1); }
+  }
+
+  @keyframes wink-hover-bob {
+    0%, 100% { transform: translateY(0px) rotate(-1deg); }
+    50% { transform: translateY(-14px) rotate(1.4deg); }
+  }
+
+  @keyframes wink-hover-sway {
+    0%, 100% { transform: rotate(-3deg) translateY(0px); }
+    50% { transform: rotate(3deg) translateY(-8px); }
+  }
+
+  @keyframes wink-pulse {
+    0%, 100% { transform: scale(0.96); opacity: 0.65; }
+    50% { transform: scale(1.08); opacity: 1; }
+  }
+
+  @keyframes wink-impact-ring {
+    0%, 46%, 100% { opacity: 0; transform: scale(0.24); }
+    58% { opacity: 0.95; transform: scale(1); }
+    82% { opacity: 0; transform: scale(1.38); }
+  }
+
+  @keyframes wink-burst-sprite {
+    0%, 100% {
+      opacity: 0;
+      transform: translate(0px, 0px) scale(0.18) rotate(var(--r0, 0deg));
+    }
+    18% { opacity: 1; }
+    60% {
+      opacity: 1;
+      transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(1) rotate(var(--r1, 180deg));
+    }
+    82% {
+      opacity: 1;
+      transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(0.92) rotate(var(--r2, 320deg));
+    }
+  }
+
+  @keyframes wink-fall {
+    0%, 100% {
+      opacity: 0;
+      transform: translate(0px, -120px) rotate(var(--r0, 0deg)) scale(0.55);
+    }
+    14% { opacity: 1; }
+    84% { opacity: 1; }
+    100% {
+      opacity: 0;
+      transform: translate(var(--tx, 0px), var(--ty, 620px)) rotate(var(--r1, 220deg)) scale(1);
+    }
+  }
+
+  @keyframes wink-twinkle {
+    0%, 100% { opacity: 0; transform: scale(0.2) rotate(0deg); }
+    50% { opacity: 1; transform: scale(1) rotate(12deg); }
+  }
+
+  @keyframes wink-finale {
+    0%, 54%, 100% { opacity: 0; transform: scale(0.4); }
+    64% { opacity: 1; transform: scale(1.1); }
+    84% { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes wink-flame {
+    0%, 100% { transform: scaleY(0.82) rotate(-3deg); opacity: 0.78; }
+    50% { transform: scaleY(1.12) rotate(3deg); opacity: 1; }
+  }
+
+  @keyframes wink-draw-path {
+    0%, 100% {
+      opacity: 0;
+      stroke-dashoffset: var(--dash, 900);
+    }
+    16% { opacity: 1; }
+    42%, 82% {
+      opacity: 1;
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes wink-count-step {
+    0%, 100% { opacity: 0; transform: scale(0.28); }
+    9% { opacity: 1; transform: scale(1.08); }
+    18% { opacity: 1; transform: scale(1); }
+    26% { opacity: 0; transform: scale(1.18); }
+  }
+
+  @keyframes fw-ambient-twinkle {
+    0%, 100% {
+      opacity: 0;
+      transform: scale(0.24) rotate(0deg);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1) rotate(16deg);
+    }
+  }
+
+  .fw-outline {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: var(--dash-len, 1800);
+    stroke-dashoffset: var(--dash-len, 1800);
+    vector-effect: non-scaling-stroke;
+  }
+
+  .fw-dot-outline {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1 20;
+    vector-effect: non-scaling-stroke;
+  }
+
+  
+    @keyframes fw-trail-a {
+      0%, 8%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--trail-len, 900);
+      }
+      12% { opacity: 0.12; }
+      29% {
+        opacity: 0.94;
+        stroke-dashoffset: 0;
+      }
+      33% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-head-a {
+      0%, 9%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.18);
+      }
+      12% { opacity: 1; }
+      29% {
+        opacity: 1;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(1);
+      }
+      32% {
+        opacity: 0;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(0.42);
+      }
+    }
+
+    @keyframes fw-pause-a {
+      0%, 24%,
+      100% {
+        opacity: 0;
+        transform: scale(0.18);
+      }
+      28% {
+        opacity: 1;
+        transform: scale(0.34);
+      }
+      33% {
+        opacity: 0;
+        transform: scale(0.62);
+      }
+    }
+
+    @keyframes fw-window-a {
+      0%, 22%,
+      100% { opacity: 0; }
+      30%,
+      42% { opacity: 1; }
+      47% { opacity: 0; }
+    }
+
+    @keyframes fw-particle-a {
+      0%, 22%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.14);
+      }
+      30% {
+        opacity: 1;
+        transform: translate(calc(var(--tx, 0px) * 0.24), calc(var(--ty, 0px) * 0.24)) scale(0.5);
+      }
+      38%,
+      42% {
+        opacity: 1;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(1);
+      }
+      47% {
+        opacity: 0;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(0.72);
+      }
+    }
+
+    @keyframes fw-outline-a {
+      0%, 22%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--dash-len, 1800);
+      }
+      38%,
+      42% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+      }
+      47% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-burst-a {
+      0%, 25%,
+      100% {
+        opacity: 0;
+        transform: scale(0.16);
+      }
+      26% {
+        opacity: 1;
+        transform: scale(0.26);
+      }
+      38% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      38% {
+        opacity: 0.22;
+        transform: scale(1.08);
+      }
+      47% {
+        opacity: 0;
+        transform: scale(1.18);
+      }
+    }
+
+    @keyframes fw-core-a {
+      0%, 29%,
+      100% {
+        opacity: 0;
+        transform: scale(0.22);
+      }
+      38%,
+      42% {
+        opacity: 0.94;
+        transform: scale(1);
+      }
+      47% {
+        opacity: 0;
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes fw-sparkle-a {
+      0%, 34%,
+      100% {
+        opacity: 0;
+        transform: scale(0.24);
+      }
+      42%,
+      42% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      47% {
+        opacity: 0;
+        transform: scale(1.26);
+      }
+    }
+  
+
+    @keyframes fw-trail-b {
+      0%, 24%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--trail-len, 900);
+      }
+      28% { opacity: 0.12; }
+      45% {
+        opacity: 0.94;
+        stroke-dashoffset: 0;
+      }
+      49% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-head-b {
+      0%, 25%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.18);
+      }
+      28% { opacity: 1; }
+      45% {
+        opacity: 1;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(1);
+      }
+      48% {
+        opacity: 0;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(0.42);
+      }
+    }
+
+    @keyframes fw-pause-b {
+      0%, 40%,
+      100% {
+        opacity: 0;
+        transform: scale(0.18);
+      }
+      44% {
+        opacity: 1;
+        transform: scale(0.34);
+      }
+      49% {
+        opacity: 0;
+        transform: scale(0.62);
+      }
+    }
+
+    @keyframes fw-window-b {
+      0%, 38%,
+      100% { opacity: 0; }
+      46%,
+      58% { opacity: 1; }
+      63% { opacity: 0; }
+    }
+
+    @keyframes fw-particle-b {
+      0%, 38%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.14);
+      }
+      46% {
+        opacity: 1;
+        transform: translate(calc(var(--tx, 0px) * 0.24), calc(var(--ty, 0px) * 0.24)) scale(0.5);
+      }
+      54%,
+      58% {
+        opacity: 1;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(1);
+      }
+      63% {
+        opacity: 0;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(0.72);
+      }
+    }
+
+    @keyframes fw-outline-b {
+      0%, 38%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--dash-len, 1800);
+      }
+      54%,
+      58% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+      }
+      63% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-burst-b {
+      0%, 41%,
+      100% {
+        opacity: 0;
+        transform: scale(0.16);
+      }
+      42% {
+        opacity: 1;
+        transform: scale(0.26);
+      }
+      54% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      54% {
+        opacity: 0.22;
+        transform: scale(1.08);
+      }
+      63% {
+        opacity: 0;
+        transform: scale(1.18);
+      }
+    }
+
+    @keyframes fw-core-b {
+      0%, 45%,
+      100% {
+        opacity: 0;
+        transform: scale(0.22);
+      }
+      54%,
+      58% {
+        opacity: 0.94;
+        transform: scale(1);
+      }
+      63% {
+        opacity: 0;
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes fw-sparkle-b {
+      0%, 50%,
+      100% {
+        opacity: 0;
+        transform: scale(0.24);
+      }
+      58%,
+      58% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      63% {
+        opacity: 0;
+        transform: scale(1.26);
+      }
+    }
+  
+
+    @keyframes fw-trail-c {
+      0%, 40%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--trail-len, 900);
+      }
+      44% { opacity: 0.12; }
+      61% {
+        opacity: 0.94;
+        stroke-dashoffset: 0;
+      }
+      65% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-head-c {
+      0%, 41%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.18);
+      }
+      44% { opacity: 1; }
+      61% {
+        opacity: 1;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(1);
+      }
+      64% {
+        opacity: 0;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(0.42);
+      }
+    }
+
+    @keyframes fw-pause-c {
+      0%, 56%,
+      100% {
+        opacity: 0;
+        transform: scale(0.18);
+      }
+      60% {
+        opacity: 1;
+        transform: scale(0.34);
+      }
+      65% {
+        opacity: 0;
+        transform: scale(0.62);
+      }
+    }
+
+    @keyframes fw-window-c {
+      0%, 54%,
+      100% { opacity: 0; }
+      62%,
+      74% { opacity: 1; }
+      79% { opacity: 0; }
+    }
+
+    @keyframes fw-particle-c {
+      0%, 54%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.14);
+      }
+      62% {
+        opacity: 1;
+        transform: translate(calc(var(--tx, 0px) * 0.24), calc(var(--ty, 0px) * 0.24)) scale(0.5);
+      }
+      70%,
+      74% {
+        opacity: 1;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(1);
+      }
+      79% {
+        opacity: 0;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(0.72);
+      }
+    }
+
+    @keyframes fw-outline-c {
+      0%, 54%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--dash-len, 1800);
+      }
+      70%,
+      74% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+      }
+      79% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-burst-c {
+      0%, 57%,
+      100% {
+        opacity: 0;
+        transform: scale(0.16);
+      }
+      58% {
+        opacity: 1;
+        transform: scale(0.26);
+      }
+      70% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      70% {
+        opacity: 0.22;
+        transform: scale(1.08);
+      }
+      79% {
+        opacity: 0;
+        transform: scale(1.18);
+      }
+    }
+
+    @keyframes fw-core-c {
+      0%, 61%,
+      100% {
+        opacity: 0;
+        transform: scale(0.22);
+      }
+      70%,
+      74% {
+        opacity: 0.94;
+        transform: scale(1);
+      }
+      79% {
+        opacity: 0;
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes fw-sparkle-c {
+      0%, 66%,
+      100% {
+        opacity: 0;
+        transform: scale(0.24);
+      }
+      74%,
+      74% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      79% {
+        opacity: 0;
+        transform: scale(1.26);
+      }
+    }
+  
+
+    @keyframes fw-trail-d {
+      0%, 56%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--trail-len, 900);
+      }
+      60% { opacity: 0.12; }
+      77% {
+        opacity: 0.94;
+        stroke-dashoffset: 0;
+      }
+      81% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-head-d {
+      0%, 57%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.18);
+      }
+      60% { opacity: 1; }
+      77% {
+        opacity: 1;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(1);
+      }
+      80% {
+        opacity: 0;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(0.42);
+      }
+    }
+
+    @keyframes fw-pause-d {
+      0%, 72%,
+      100% {
+        opacity: 0;
+        transform: scale(0.18);
+      }
+      76% {
+        opacity: 1;
+        transform: scale(0.34);
+      }
+      81% {
+        opacity: 0;
+        transform: scale(0.62);
+      }
+    }
+
+    @keyframes fw-window-d {
+      0%, 70%,
+      100% { opacity: 0; }
+      78%,
+      90% { opacity: 1; }
+      95% { opacity: 0; }
+    }
+
+    @keyframes fw-particle-d {
+      0%, 70%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.14);
+      }
+      78% {
+        opacity: 1;
+        transform: translate(calc(var(--tx, 0px) * 0.24), calc(var(--ty, 0px) * 0.24)) scale(0.5);
+      }
+      86%,
+      90% {
+        opacity: 1;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(1);
+      }
+      95% {
+        opacity: 0;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(0.72);
+      }
+    }
+
+    @keyframes fw-outline-d {
+      0%, 70%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--dash-len, 1800);
+      }
+      86%,
+      90% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+      }
+      95% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-burst-d {
+      0%, 73%,
+      100% {
+        opacity: 0;
+        transform: scale(0.16);
+      }
+      74% {
+        opacity: 1;
+        transform: scale(0.26);
+      }
+      86% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      86% {
+        opacity: 0.22;
+        transform: scale(1.08);
+      }
+      95% {
+        opacity: 0;
+        transform: scale(1.18);
+      }
+    }
+
+    @keyframes fw-core-d {
+      0%, 77%,
+      100% {
+        opacity: 0;
+        transform: scale(0.22);
+      }
+      86%,
+      90% {
+        opacity: 0.94;
+        transform: scale(1);
+      }
+      95% {
+        opacity: 0;
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes fw-sparkle-d {
+      0%, 82%,
+      100% {
+        opacity: 0;
+        transform: scale(0.24);
+      }
+      90%,
+      90% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      95% {
+        opacity: 0;
+        transform: scale(1.26);
+      }
+    }
+  
+
+    @keyframes fw-trail-single {
+      0%, 14%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--trail-len, 900);
+      }
+      18% { opacity: 0.12; }
+      35% {
+        opacity: 0.94;
+        stroke-dashoffset: 0;
+      }
+      39% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-head-single {
+      0%, 15%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.18);
+      }
+      18% { opacity: 1; }
+      35% {
+        opacity: 1;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(1);
+      }
+      38% {
+        opacity: 0;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(0.42);
+      }
+    }
+
+    @keyframes fw-pause-single {
+      0%, 30%,
+      100% {
+        opacity: 0;
+        transform: scale(0.18);
+      }
+      34% {
+        opacity: 1;
+        transform: scale(0.34);
+      }
+      39% {
+        opacity: 0;
+        transform: scale(0.62);
+      }
+    }
+
+    @keyframes fw-window-single {
+      0%, 28%,
+      100% { opacity: 0; }
+      36%,
+      72% { opacity: 1; }
+      88% { opacity: 0; }
+    }
+
+    @keyframes fw-particle-single {
+      0%, 28%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.14);
+      }
+      36% {
+        opacity: 1;
+        transform: translate(calc(var(--tx, 0px) * 0.24), calc(var(--ty, 0px) * 0.24)) scale(0.5);
+      }
+      48%,
+      72% {
+        opacity: 1;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(1);
+      }
+      88% {
+        opacity: 0;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(0.72);
+      }
+    }
+
+    @keyframes fw-outline-single {
+      0%, 28%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--dash-len, 1800);
+      }
+      48%,
+      72% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+      }
+      88% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-burst-single {
+      0%, 31%,
+      100% {
+        opacity: 0;
+        transform: scale(0.16);
+      }
+      32% {
+        opacity: 1;
+        transform: scale(0.26);
+      }
+      48% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      68% {
+        opacity: 0.22;
+        transform: scale(1.08);
+      }
+      88% {
+        opacity: 0;
+        transform: scale(1.18);
+      }
+    }
+
+    @keyframes fw-core-single {
+      0%, 35%,
+      100% {
+        opacity: 0;
+        transform: scale(0.22);
+      }
+      48%,
+      72% {
+        opacity: 0.94;
+        transform: scale(1);
+      }
+      88% {
+        opacity: 0;
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes fw-sparkle-single {
+      0%, 44%,
+      100% {
+        opacity: 0;
+        transform: scale(0.24);
+      }
+      52%,
+      72% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      88% {
+        opacity: 0;
+        transform: scale(1.26);
+      }
+    }
+  
+</style>
+  
+    <style>
+      
+      @keyframes cdcountdownbingomegarevealeffectwinkdigit0 {
+        0%, 2%,
+        100% {
+          opacity: 0;
+          transform: translate(-20.3px, 44.67px) scale(0.28) rotate(0deg);
+        }
+        6% {
+          opacity: 1;
+          transform: translate(-7.11px, 15.63px) scale(0.72) rotate(0deg);
+        }
+        10% {
+          opacity: 1;
+          transform: translate(0px, -8px) scale(1.14) rotate(0deg);
+        }
+        12%,
+        16% {
+          opacity: 1;
+          transform: translate(0px, 0px) scale(1) rotate(0deg);
+        }
+        20% {
+          opacity: 0;
+          transform: translate(0px, -12px) scale(1.12) rotate(0deg);
+        }
+      }
+    
+
+      @keyframes cdcountdownbingomegarevealeffectwinkdigit1 {
+        0%, 14%,
+        100% {
+          opacity: 0;
+          transform: translate(0px, 44.67px) scale(0.28) rotate(0deg);
+        }
+        18% {
+          opacity: 1;
+          transform: translate(0px, 15.63px) scale(0.72) rotate(0deg);
+        }
+        22% {
+          opacity: 1;
+          transform: translate(0px, -8px) scale(1.14) rotate(0deg);
+        }
+        24%,
+        28% {
+          opacity: 1;
+          transform: translate(0px, 0px) scale(1) rotate(0deg);
+        }
+        32% {
+          opacity: 0;
+          transform: translate(0px, -12px) scale(1.12) rotate(0deg);
+        }
+      }
+    
+
+      @keyframes cdcountdownbingomegarevealeffectwinkdigit2 {
+        0%, 26%,
+        100% {
+          opacity: 0;
+          transform: translate(20.3px, 44.67px) scale(0.28) rotate(0deg);
+        }
+        30% {
+          opacity: 1;
+          transform: translate(7.11px, 15.63px) scale(0.72) rotate(0deg);
+        }
+        34% {
+          opacity: 1;
+          transform: translate(0px, -8px) scale(1.14) rotate(0deg);
+        }
+        36%,
+        40% {
+          opacity: 1;
+          transform: translate(0px, 0px) scale(1) rotate(0deg);
+        }
+        44% {
+          opacity: 0;
+          transform: translate(0px, -12px) scale(1.12) rotate(0deg);
+        }
+      }
+    
+
+      @keyframes cdcountdownbingomegarevealeffectwinkband {
+        0%, 42%,
+        100% {
+          opacity: 0;
+          transform: translate(0px, 32.49px) scale(0.28) rotate(0deg);
+        }
+        46% {
+          opacity: 1;
+          transform: translate(0px, 11.37px) scale(0.72) rotate(0deg);
+        }
+        54% {
+          opacity: 1;
+          transform: translate(0px, -8px) scale(1.08) rotate(0deg);
+        }
+        90%,
+        94% {
+          opacity: 1;
+          transform: translate(0px, 0px) scale(1) rotate(0deg);
+        }
+        98% {
+          opacity: 0;
+          transform: translate(0px, -12px) scale(1.12) rotate(0deg);
+        }
+      }
+    
+
+      @keyframes cdcountdownbingomegarevealeffectwinkletter0 {
+        0%, 40%,
+        100% {
+          opacity: 0;
+          transform: translate(-36px, 56.85px) scale(0.28) rotate(0deg);
+        }
+        44% {
+          opacity: 1;
+          transform: translate(-12.6px, 19.9px) scale(0.72) rotate(0deg);
+        }
+        48% {
+          opacity: 1;
+          transform: translate(0px, -8px) scale(1.14) rotate(0deg);
+        }
+        88%,
+        92% {
+          opacity: 1;
+          transform: translate(0px, 0px) scale(1) rotate(0deg);
+        }
+        96% {
+          opacity: 0;
+          transform: translate(0px, -12px) scale(1.12) rotate(0deg);
+        }
+      }
+    
+
+      @keyframes cdcountdownbingomegarevealeffectwinkletter1 {
+        0%, 48%,
+        100% {
+          opacity: 0;
+          transform: translate(-18px, 56.85px) scale(0.28) rotate(0deg);
+        }
+        52% {
+          opacity: 1;
+          transform: translate(-6.3px, 19.9px) scale(0.72) rotate(0deg);
+        }
+        56% {
+          opacity: 1;
+          transform: translate(0px, -8px) scale(1.14) rotate(0deg);
+        }
+        88%,
+        92% {
+          opacity: 1;
+          transform: translate(0px, 0px) scale(1) rotate(0deg);
+        }
+        96% {
+          opacity: 0;
+          transform: translate(0px, -12px) scale(1.12) rotate(0deg);
+        }
+      }
+    
+
+      @keyframes cdcountdownbingomegarevealeffectwinkletter2 {
+        0%, 56%,
+        100% {
+          opacity: 0;
+          transform: translate(0px, 56.85px) scale(0.28) rotate(0deg);
+        }
+        60% {
+          opacity: 1;
+          transform: translate(0px, 19.9px) scale(0.72) rotate(0deg);
+        }
+        64% {
+          opacity: 1;
+          transform: translate(0px, -8px) scale(1.14) rotate(0deg);
+        }
+        88%,
+        92% {
+          opacity: 1;
+          transform: translate(0px, 0px) scale(1) rotate(0deg);
+        }
+        96% {
+          opacity: 0;
+          transform: translate(0px, -12px) scale(1.12) rotate(0deg);
+        }
+      }
+    
+
+      @keyframes cdcountdownbingomegarevealeffectwinkletter3 {
+        0%, 64%,
+        100% {
+          opacity: 0;
+          transform: translate(18px, 56.85px) scale(0.28) rotate(0deg);
+        }
+        68% {
+          opacity: 1;
+          transform: translate(6.3px, 19.9px) scale(0.72) rotate(0deg);
+        }
+        72% {
+          opacity: 1;
+          transform: translate(0px, -8px) scale(1.14) rotate(0deg);
+        }
+        88%,
+        92% {
+          opacity: 1;
+          transform: translate(0px, 0px) scale(1) rotate(0deg);
+        }
+        96% {
+          opacity: 0;
+          transform: translate(0px, -12px) scale(1.12) rotate(0deg);
+        }
+      }
+    
+
+      @keyframes cdcountdownbingomegarevealeffectwinkletter4 {
+        0%, 72%,
+        100% {
+          opacity: 0;
+          transform: translate(36px, 56.85px) scale(0.28) rotate(0deg);
+        }
+        76% {
+          opacity: 1;
+          transform: translate(12.6px, 19.9px) scale(0.72) rotate(0deg);
+        }
+        80% {
+          opacity: 1;
+          transform: translate(0px, -8px) scale(1.14) rotate(0deg);
+        }
+        88%,
+        92% {
+          opacity: 1;
+          transform: translate(0px, 0px) scale(1) rotate(0deg);
+        }
+        96% {
+          opacity: 0;
+          transform: translate(0px, -12px) scale(1.12) rotate(0deg);
+        }
+      }
+    
+
+    @keyframes cdcountdownbingomegarevealeffectwinkfinalburst {
+      0%, 80%,
+      100% {
+        opacity: 0;
+        transform: scale(0.22);
+      }
+      84% {
+        opacity: 1;
+        transform: scale(0.36);
+      }
+      96% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(1.18);
+      }
+    }
+  
+
+      @keyframes cdcountdownbingomegarevealeffectwinkfinalword {
+        0%, 84%,
+        100% {
+          opacity: 0;
+          transform: translate(0px, 47.95px) scale(0.5) rotate(0deg);
+        }
+        88% {
+          opacity: 1;
+          transform: translate(0px, 16.78px) scale(0.72) rotate(0deg);
+        }
+        92% {
+          opacity: 1;
+          transform: translate(0px, -8px) scale(1.14) rotate(0deg);
+        }
+        97%,
+        100% {
+          opacity: 1;
+          transform: translate(0px, 0px) scale(1) rotate(0deg);
+        }
+        100% {
+          opacity: 0;
+          transform: translate(0px, -12px) scale(1.04) rotate(0deg);
+        }
+      }
+    
+    </style>
+    <circle cx="960" cy="542.16" r="231.46559999999997" fill="#ffd857" opacity="0.08" />
+    <g style="transform-origin:422.4px 216px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0s;"><polygon points="422.4,196.52 428.19,210.21 441.88,216 428.19,221.79 422.4,235.48 416.61,221.79 402.92,216 416.61,210.21" fill="#fff4d9" stroke="rgba(255,255,255,0.75)" stroke-width="1.558656" /></g><g style="transform-origin:691.2px 151.2px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.17s;"><polygon points="691.2,131.72 696.99,145.41 710.68,151.2 696.99,156.99 691.2,170.68 685.41,156.99 671.72,151.2 685.41,145.41" fill="#ffd857" stroke="rgba(255,255,255,0.75)" stroke-width="1.558656" /></g><g style="transform-origin:1228.8px 162px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.34s;"><polygon points="1228.8,142.52 1234.59,156.21 1248.28,162 1234.59,167.79 1228.8,181.48 1223.01,167.79 1209.32,162 1223.01,156.21" fill="#ff9d4b" stroke="rgba(255,255,255,0.75)" stroke-width="1.558656" /></g><g style="transform-origin:1497.6px 237.6px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.51s;"><polygon points="1497.6,218.12 1503.39,231.81 1517.08,237.6 1503.39,243.39 1497.6,257.08 1491.81,243.39 1478.12,237.6 1491.81,231.81" fill="#fff4d9" stroke="rgba(255,255,255,0.75)" stroke-width="1.558656" /></g><g style="transform-origin:422.4px 842.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.68s;"><polygon points="422.4,822.92 428.19,836.61 441.88,842.4 428.19,848.19 422.4,861.88 416.61,848.19 402.92,842.4 416.61,836.61" fill="#ffd857" stroke="rgba(255,255,255,0.75)" stroke-width="1.558656" /></g><g style="transform-origin:1497.6px 842.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.85s;"><polygon points="1497.6,822.92 1503.39,836.61 1517.08,842.4 1503.39,848.19 1497.6,861.88 1491.81,848.19 1478.12,842.4 1491.81,836.61" fill="#ff9d4b" stroke="rgba(255,255,255,0.75)" stroke-width="1.558656" /></g>
+    
+          <g style="transform-origin:960px 542.16px; animation:cdcountdownbingomegarevealeffectwinkdigit0 4s linear infinite;">
+            <rect x="830.0544" y="440.64" width="259.89119999999997" height="203.04" rx="36.5472" fill="#3f0c14" stroke="#ffd857" stroke-width="11.1672" />
+            <rect x="858.48" y="473.1264" width="203.04" height="138.0672" rx="24.3648" fill="rgba(255,255,255,0.08)" />
+            <circle cx="853.4" cy="424.4" r="10.152000000000001" fill="#ff465f" /><circle cx="896.04" cy="424.4" r="10.152000000000001" fill="#ff9d4b" /><circle cx="938.68" cy="424.4" r="10.152000000000001" fill="#ff465f" /><circle cx="981.32" cy="424.4" r="10.152000000000001" fill="#ff9d4b" /><circle cx="1023.96" cy="424.4" r="10.152000000000001" fill="#ff465f" /><circle cx="1066.6" cy="424.4" r="10.152000000000001" fill="#ff9d4b" />
+            <text x="960" y="542.16" text-anchor="middle" dominant-baseline="central" font-size="117.76319999999998" font-weight="900" fill="#fff4d9" stroke="#3f0c14" stroke-width="4.710527999999999" letter-spacing="3.5328959999999996" >3</text>
+          </g>
+        
+          <g style="transform-origin:960px 542.16px; animation:cdcountdownbingomegarevealeffectwinkdigit1 4s linear infinite;">
+            <rect x="830.0544" y="440.64" width="259.89119999999997" height="203.04" rx="36.5472" fill="#3f0c14" stroke="#ffd857" stroke-width="11.1672" />
+            <rect x="858.48" y="473.1264" width="203.04" height="138.0672" rx="24.3648" fill="rgba(255,255,255,0.08)" />
+            <circle cx="853.4" cy="424.4" r="10.152000000000001" fill="#ff465f" /><circle cx="896.04" cy="424.4" r="10.152000000000001" fill="#ff9d4b" /><circle cx="938.68" cy="424.4" r="10.152000000000001" fill="#ff465f" /><circle cx="981.32" cy="424.4" r="10.152000000000001" fill="#ff9d4b" /><circle cx="1023.96" cy="424.4" r="10.152000000000001" fill="#ff465f" /><circle cx="1066.6" cy="424.4" r="10.152000000000001" fill="#ff9d4b" />
+            <text x="960" y="542.16" text-anchor="middle" dominant-baseline="central" font-size="117.76319999999998" font-weight="900" fill="#fff4d9" stroke="#3f0c14" stroke-width="4.710527999999999" letter-spacing="3.5328959999999996" >2</text>
+          </g>
+        
+          <g style="transform-origin:960px 542.16px; animation:cdcountdownbingomegarevealeffectwinkdigit2 4s linear infinite;">
+            <rect x="830.0544" y="440.64" width="259.89119999999997" height="203.04" rx="36.5472" fill="#3f0c14" stroke="#ffd857" stroke-width="11.1672" />
+            <rect x="858.48" y="473.1264" width="203.04" height="138.0672" rx="24.3648" fill="rgba(255,255,255,0.08)" />
+            <circle cx="853.4" cy="424.4" r="10.152000000000001" fill="#ff465f" /><circle cx="896.04" cy="424.4" r="10.152000000000001" fill="#ff9d4b" /><circle cx="938.68" cy="424.4" r="10.152000000000001" fill="#ff465f" /><circle cx="981.32" cy="424.4" r="10.152000000000001" fill="#ff9d4b" /><circle cx="1023.96" cy="424.4" r="10.152000000000001" fill="#ff465f" /><circle cx="1066.6" cy="424.4" r="10.152000000000001" fill="#ff9d4b" />
+            <text x="960" y="542.16" text-anchor="middle" dominant-baseline="central" font-size="117.76319999999998" font-weight="900" fill="#fff4d9" stroke="#3f0c14" stroke-width="4.710527999999999" letter-spacing="3.5328959999999996" >1</text>
+          </g>
+        
+    
+      
+          <g style="transform-origin:960px 562.46px; animation:cdcountdownbingomegarevealeffectwinkband 4s linear infinite;">
+            <rect x="441.32" y="463.36" width="1037.36" height="198.2" rx="47.57" fill="#3f0c14" stroke="#ffd857" stroke-width="15.856" opacity="0.72" />
+            <circle cx="524.31" cy="487.14" r="11.892" fill="#ff465f" /><circle cx="621.13" cy="487.14" r="11.892" fill="#ff9d4b" /><circle cx="717.95" cy="487.14" r="11.892" fill="#ff465f" /><circle cx="814.77" cy="487.14" r="11.892" fill="#ff9d4b" /><circle cx="911.59" cy="487.14" r="11.892" fill="#ff465f" /><circle cx="1008.41" cy="487.14" r="11.892" fill="#ff9d4b" /><circle cx="1105.23" cy="487.14" r="11.892" fill="#ff465f" /><circle cx="1202.05" cy="487.14" r="11.892" fill="#ff9d4b" /><circle cx="1298.87" cy="487.14" r="11.892" fill="#ff465f" /><circle cx="1395.69" cy="487.14" r="11.892" fill="#ff9d4b" />
+          </g>
+        
+      
+          <g style="transform-origin:582.78px 562.46px; animation:cdcountdownbingomegarevealeffectwinkletter0 4s linear infinite;">
+            <rect x="480.4824" y="482.54" width="204.5952" height="159.84" rx="28.7712" fill="#3f0c14" stroke="#ffd857" stroke-width="8.7912" />
+            <rect x="502.85999999999996" y="508.11440000000005" width="159.84" height="108.69120000000001" rx="19.1808" fill="rgba(255,255,255,0.08)" />
+            <circle cx="498.86" cy="469.75" r="7.992000000000001" fill="#ff465f" /><circle cx="532.43" cy="469.75" r="7.992000000000001" fill="#ff9d4b" /><circle cx="566" cy="469.75" r="7.992000000000001" fill="#ff465f" /><circle cx="599.56" cy="469.75" r="7.992000000000001" fill="#ff9d4b" /><circle cx="633.13" cy="469.75" r="7.992000000000001" fill="#ff465f" /><circle cx="666.7" cy="469.75" r="7.992000000000001" fill="#ff9d4b" />
+            <text x="582.78" y="562.46" text-anchor="middle" dominant-baseline="central" font-size="92.7072" font-weight="900" fill="#fff4d9" stroke="#3f0c14" stroke-width="3.708288" letter-spacing="2.7812159999999997" >B</text>
+          </g>
+        
+          <g style="transform-origin:771.39px 562.46px; animation:cdcountdownbingomegarevealeffectwinkletter1 4s linear infinite;">
+            <rect x="669.0924" y="482.54" width="204.5952" height="159.84" rx="28.7712" fill="#3f0c14" stroke="#ff9d4b" stroke-width="8.7912" />
+            <rect x="691.47" y="508.11440000000005" width="159.84" height="108.69120000000001" rx="19.1808" fill="rgba(255,255,255,0.08)" />
+            <circle cx="687.47" cy="469.75" r="7.992000000000001" fill="#ff465f" /><circle cx="721.04" cy="469.75" r="7.992000000000001" fill="#ff9d4b" /><circle cx="754.61" cy="469.75" r="7.992000000000001" fill="#ff465f" /><circle cx="788.17" cy="469.75" r="7.992000000000001" fill="#ff9d4b" /><circle cx="821.74" cy="469.75" r="7.992000000000001" fill="#ff465f" /><circle cx="855.31" cy="469.75" r="7.992000000000001" fill="#ff9d4b" />
+            <text x="771.39" y="562.46" text-anchor="middle" dominant-baseline="central" font-size="92.7072" font-weight="900" fill="#fff4d9" stroke="#3f0c14" stroke-width="3.708288" letter-spacing="2.7812159999999997" >I</text>
+          </g>
+        
+          <g style="transform-origin:960px 562.46px; animation:cdcountdownbingomegarevealeffectwinkletter2 4s linear infinite;">
+            <rect x="857.7024" y="482.54" width="204.5952" height="159.84" rx="28.7712" fill="#3f0c14" stroke="#ff465f" stroke-width="8.7912" />
+            <rect x="880.08" y="508.11440000000005" width="159.84" height="108.69120000000001" rx="19.1808" fill="rgba(255,255,255,0.08)" />
+            <circle cx="876.08" cy="469.75" r="7.992000000000001" fill="#ff465f" /><circle cx="909.65" cy="469.75" r="7.992000000000001" fill="#ff9d4b" /><circle cx="943.22" cy="469.75" r="7.992000000000001" fill="#ff465f" /><circle cx="976.78" cy="469.75" r="7.992000000000001" fill="#ff9d4b" /><circle cx="1010.35" cy="469.75" r="7.992000000000001" fill="#ff465f" /><circle cx="1043.92" cy="469.75" r="7.992000000000001" fill="#ff9d4b" />
+            <text x="960" y="562.46" text-anchor="middle" dominant-baseline="central" font-size="92.7072" font-weight="900" fill="#fff4d9" stroke="#3f0c14" stroke-width="3.708288" letter-spacing="2.7812159999999997" >N</text>
+          </g>
+        
+          <g style="transform-origin:1148.61px 562.46px; animation:cdcountdownbingomegarevealeffectwinkletter3 4s linear infinite;">
+            <rect x="1046.3123999999998" y="482.54" width="204.5952" height="159.84" rx="28.7712" fill="#3f0c14" stroke="#7ef0d2" stroke-width="8.7912" />
+            <rect x="1068.6899999999998" y="508.11440000000005" width="159.84" height="108.69120000000001" rx="19.1808" fill="rgba(255,255,255,0.08)" />
+            <circle cx="1064.69" cy="469.75" r="7.992000000000001" fill="#ff465f" /><circle cx="1098.26" cy="469.75" r="7.992000000000001" fill="#ff9d4b" /><circle cx="1131.83" cy="469.75" r="7.992000000000001" fill="#ff465f" /><circle cx="1165.39" cy="469.75" r="7.992000000000001" fill="#ff9d4b" /><circle cx="1198.96" cy="469.75" r="7.992000000000001" fill="#ff465f" /><circle cx="1232.53" cy="469.75" r="7.992000000000001" fill="#ff9d4b" />
+            <text x="1148.61" y="562.46" text-anchor="middle" dominant-baseline="central" font-size="92.7072" font-weight="900" fill="#fff4d9" stroke="#3f0c14" stroke-width="3.708288" letter-spacing="2.7812159999999997" >G</text>
+          </g>
+        
+          <g style="transform-origin:1337.22px 562.46px; animation:cdcountdownbingomegarevealeffectwinkletter4 4s linear infinite;">
+            <rect x="1234.9224" y="482.54" width="204.5952" height="159.84" rx="28.7712" fill="#3f0c14" stroke="#ffd86e" stroke-width="8.7912" />
+            <rect x="1257.3" y="508.11440000000005" width="159.84" height="108.69120000000001" rx="19.1808" fill="rgba(255,255,255,0.08)" />
+            <circle cx="1253.3" cy="469.75" r="7.992000000000001" fill="#ff465f" /><circle cx="1286.87" cy="469.75" r="7.992000000000001" fill="#ff9d4b" /><circle cx="1320.44" cy="469.75" r="7.992000000000001" fill="#ff465f" /><circle cx="1354" cy="469.75" r="7.992000000000001" fill="#ff9d4b" /><circle cx="1387.57" cy="469.75" r="7.992000000000001" fill="#ff465f" /><circle cx="1421.14" cy="469.75" r="7.992000000000001" fill="#ff9d4b" />
+            <text x="1337.22" y="562.46" text-anchor="middle" dominant-baseline="central" font-size="92.7072" font-weight="900" fill="#fff4d9" stroke="#3f0c14" stroke-width="3.708288" letter-spacing="2.7812159999999997" >O</text>
+          </g>
+        
+      
+          <g style="transform-origin:960px 542.16px; animation:cdcountdownbingomegarevealeffectwinkfinalburst 4s linear infinite;">
+            <circle cx="960" cy="542.16" r="176.31" fill="#ff465f" opacity="0.12" />
+            <rect x="919.025" y="357.49" width="25.99" height="51.98" rx="4.6781999999999995" fill="#ffd857" transform="rotate(0 932.02 383.48)" opacity="0.92" /><rect x="975.215" y="315.43" width="25.99" height="51.98" rx="4.6781999999999995" fill="#ff465f" transform="rotate(26 988.21 341.42)" opacity="0.92" /><rect x="1054.095" y="296.59999999999997" width="25.99" height="51.98" rx="4.6781999999999995" fill="#ff9d4b" transform="rotate(52 1067.09 322.59)" opacity="0.92" /><rect x="1058.9350000000002" y="400.26" width="25.99" height="51.98" rx="4.6781999999999995" fill="#fff4d9" transform="rotate(78 1071.93 426.25)" opacity="0.92" /><rect x="1125.9950000000001" y="421" width="25.99" height="51.98" rx="4.6781999999999995" fill="#ffd857" transform="rotate(104 1138.99 446.99)" opacity="0.92" /><rect x="1187.595" y="473.75" width="25.99" height="51.98" rx="4.6781999999999995" fill="#ff465f" transform="rotate(130 1200.59 499.74)" opacity="0.92" /><rect x="1106.565" y="538.6" width="25.99" height="51.98" rx="4.6781999999999995" fill="#ff9d4b" transform="rotate(156 1119.56 564.59)" opacity="0.92" /><rect x="1129.2050000000002" y="605.03" width="25.99" height="51.98" rx="4.6781999999999995" fill="#fff4d9" transform="rotate(182 1142.2 631.02)" opacity="0.92" /><rect x="1122.7350000000001" y="685.87" width="25.99" height="51.98" rx="4.6781999999999995" fill="#ffd857" transform="rotate(208 1135.73 711.86)" opacity="0.92" /><rect x="1022.6550000000001" y="658.4399999999999" width="25.99" height="51.98" rx="4.6781999999999995" fill="#ff465f" transform="rotate(234 1035.65 684.43)" opacity="0.92" /><rect x="982.205" y="715.81" width="25.99" height="51.98" rx="4.6781999999999995" fill="#ff9d4b" transform="rotate(260 995.2 741.8)" opacity="0.92" /><rect x="913.005" y="758.09" width="25.99" height="51.98" rx="4.6781999999999995" fill="#fff4d9" transform="rotate(286 926 784.08)" opacity="0.92" /><rect x="876.365" y="660.99" width="25.99" height="51.98" rx="4.6781999999999995" fill="#ffd857" transform="rotate(312 889.36 686.98)" opacity="0.92" /><rect x="806.185" y="661.99" width="25.99" height="51.98" rx="4.6781999999999995" fill="#ff465f" transform="rotate(338 819.18 687.98)" opacity="0.92" />
+            <g style="transform-origin:960px 288.72px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0s;"><polygon points="960,264.96 967.06,281.66 983.76,288.72 967.06,295.78 960,312.48 952.94,295.78 936.24,288.72 952.94,281.66" fill="#fff4d9" stroke="#ffd857" stroke-width="1.9008000000000003" /></g><g style="transform-origin:1179.49px 415.44px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.08s;"><polygon points="1179.49,395.96 1185.28,409.65 1198.97,415.44 1185.28,421.23 1179.49,434.92 1173.7,421.23 1160.01,415.44 1173.7,409.65" fill="#fff4d9" stroke="#ffd857" stroke-width="1.558656" /></g><g style="transform-origin:1179.49px 668.88px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.16s;"><polygon points="1179.49,645.12 1186.55,661.82 1203.25,668.88 1186.55,675.94 1179.49,692.64 1172.43,675.94 1155.73,668.88 1172.43,661.82" fill="#fff4d9" stroke="#ffd857" stroke-width="1.9008000000000003" /></g><g style="transform-origin:960px 795.6px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.24s;"><polygon points="960,776.12 965.79,789.81 979.48,795.6 965.79,801.39 960,815.08 954.21,801.39 940.52,795.6 954.21,789.81" fill="#fff4d9" stroke="#ffd857" stroke-width="1.558656" /></g><g style="transform-origin:740.51px 668.88px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.32s;"><polygon points="740.51,645.12 747.57,661.82 764.27,668.88 747.57,675.94 740.51,692.64 733.45,675.94 716.75,668.88 733.45,661.82" fill="#fff4d9" stroke="#ffd857" stroke-width="1.9008000000000003" /></g><g style="transform-origin:740.51px 415.44px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.4s;"><polygon points="740.51,395.96 746.3,409.65 759.99,415.44 746.3,421.23 740.51,434.92 734.72,421.23 721.03,415.44 734.72,409.65" fill="#fff4d9" stroke="#ffd857" stroke-width="1.558656" /></g>
+          </g>
+        
+      
+          <g style="transform-origin:960px 703.12px; animation:cdcountdownbingomegarevealeffectwinkfinalword 4s linear infinite;">
+            <rect x="384.74" y="597.625" width="1150.52" height="210.99" rx="50.64" fill="#3f0c14" stroke="#ffd857" stroke-width="16.8792" />
+            <circle cx="476.78" cy="635.6" r="10.549500000000002" fill="#ff465f" /><circle cx="564.64" cy="635.6" r="10.549500000000002" fill="#ff9d4b" /><circle cx="652.5" cy="635.6" r="10.549500000000002" fill="#ff465f" /><circle cx="740.36" cy="635.6" r="10.549500000000002" fill="#ff9d4b" /><circle cx="828.21" cy="635.6" r="10.549500000000002" fill="#ff465f" /><circle cx="916.07" cy="635.6" r="10.549500000000002" fill="#ff9d4b" /><circle cx="1003.93" cy="635.6" r="10.549500000000002" fill="#ff465f" /><circle cx="1091.79" cy="635.6" r="10.549500000000002" fill="#ff9d4b" /><circle cx="1179.64" cy="635.6" r="10.549500000000002" fill="#ff465f" /><circle cx="1267.5" cy="635.6" r="10.549500000000002" fill="#ff9d4b" /><circle cx="1355.36" cy="635.6" r="10.549500000000002" fill="#ff465f" /><circle cx="1443.22" cy="635.6" r="10.549500000000002" fill="#ff9d4b" />
+            <text x="960" y="707.3398" text-anchor="middle" dominant-baseline="central" font-size="124.68" font-weight="900" fill="#fff4d9" stroke="#3f0c14" stroke-width="4.9872000000000005" letter-spacing="3.7404" >BINGO</text>
+          </g>
+        
+    
+  
+</svg>

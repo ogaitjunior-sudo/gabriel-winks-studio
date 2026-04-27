@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" data-wink-name="Happy Birthday Party Popper" data-wink-category="Happy Birthday" data-wink-duration="3400ms" aria-label="Happy Birthday Party Popper">
+  <style>
+  text {
+    font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+    paint-order: stroke fill;
+  }
+
+  @keyframes wink-enter-pop {
+    0%, 100% {
+      opacity: 0;
+      transform: translate(var(--from-x, 0px), var(--from-y, 32px)) scale(0.32) rotate(var(--from-r, -14deg));
+    }
+    14% { opacity: 1; }
+    32% { opacity: 1; transform: translate(0px, 0px) scale(1.08) rotate(0deg); }
+    64% { opacity: 1; transform: translate(0px, 0px) scale(1) rotate(0deg); }
+    88% { opacity: 1; }
+  }
+
+  @keyframes wink-enter-rise {
+    0%, 100% { opacity: 0; transform: translate(0px, 120px) scale(0.4); }
+    18% { opacity: 1; }
+    34% { opacity: 1; transform: translate(0px, -10px) scale(1.05); }
+    50%, 84% { opacity: 1; transform: translate(0px, 0px) scale(1); }
+  }
+
+  @keyframes wink-enter-spin {
+    0%, 100% { opacity: 0; transform: rotate(-220deg) scale(0.2); }
+    18% { opacity: 1; }
+    36% { opacity: 1; transform: rotate(12deg) scale(1.08); }
+    54%, 86% { opacity: 1; transform: rotate(0deg) scale(1); }
+  }
+
+  @keyframes wink-hover-bob {
+    0%, 100% { transform: translateY(0px) rotate(-1deg); }
+    50% { transform: translateY(-14px) rotate(1.4deg); }
+  }
+
+  @keyframes wink-hover-sway {
+    0%, 100% { transform: rotate(-3deg) translateY(0px); }
+    50% { transform: rotate(3deg) translateY(-8px); }
+  }
+
+  @keyframes wink-pulse {
+    0%, 100% { transform: scale(0.96); opacity: 0.65; }
+    50% { transform: scale(1.08); opacity: 1; }
+  }
+
+  @keyframes wink-impact-ring {
+    0%, 46%, 100% { opacity: 0; transform: scale(0.24); }
+    58% { opacity: 0.95; transform: scale(1); }
+    82% { opacity: 0; transform: scale(1.38); }
+  }
+
+  @keyframes wink-burst-sprite {
+    0%, 100% {
+      opacity: 0;
+      transform: translate(0px, 0px) scale(0.18) rotate(var(--r0, 0deg));
+    }
+    18% { opacity: 1; }
+    60% {
+      opacity: 1;
+      transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(1) rotate(var(--r1, 180deg));
+    }
+    82% {
+      opacity: 1;
+      transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(0.92) rotate(var(--r2, 320deg));
+    }
+  }
+
+  @keyframes wink-fall {
+    0%, 100% {
+      opacity: 0;
+      transform: translate(0px, -120px) rotate(var(--r0, 0deg)) scale(0.55);
+    }
+    14% { opacity: 1; }
+    84% { opacity: 1; }
+    100% {
+      opacity: 0;
+      transform: translate(var(--tx, 0px), var(--ty, 620px)) rotate(var(--r1, 220deg)) scale(1);
+    }
+  }
+
+  @keyframes wink-twinkle {
+    0%, 100% { opacity: 0; transform: scale(0.2) rotate(0deg); }
+    50% { opacity: 1; transform: scale(1) rotate(12deg); }
+  }
+
+  @keyframes wink-finale {
+    0%, 54%, 100% { opacity: 0; transform: scale(0.4); }
+    64% { opacity: 1; transform: scale(1.1); }
+    84% { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes wink-flame {
+    0%, 100% { transform: scaleY(0.82) rotate(-3deg); opacity: 0.78; }
+    50% { transform: scaleY(1.12) rotate(3deg); opacity: 1; }
+  }
+
+  @keyframes wink-draw-path {
+    0%, 100% {
+      opacity: 0;
+      stroke-dashoffset: var(--dash, 900);
+    }
+    16% { opacity: 1; }
+    42%, 82% {
+      opacity: 1;
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes wink-count-step {
+    0%, 100% { opacity: 0; transform: scale(0.28); }
+    9% { opacity: 1; transform: scale(1.08); }
+    18% { opacity: 1; transform: scale(1); }
+    26% { opacity: 0; transform: scale(1.18); }
+  }
+
+  @keyframes fw-ambient-twinkle {
+    0%, 100% {
+      opacity: 0;
+      transform: scale(0.24) rotate(0deg);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1) rotate(16deg);
+    }
+  }
+
+  .fw-outline {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: var(--dash-len, 1800);
+    stroke-dashoffset: var(--dash-len, 1800);
+    vector-effect: non-scaling-stroke;
+  }
+
+  .fw-dot-outline {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1 20;
+    vector-effect: non-scaling-stroke;
+  }
+
+  
+    @keyframes fw-trail-a {
+      0%, 8%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--trail-len, 900);
+      }
+      12% { opacity: 0.12; }
+      29% {
+        opacity: 0.94;
+        stroke-dashoffset: 0;
+      }
+      33% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-head-a {
+      0%, 9%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.18);
+      }
+      12% { opacity: 1; }
+      29% {
+        opacity: 1;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(1);
+      }
+      32% {
+        opacity: 0;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(0.42);
+      }
+    }
+
+    @keyframes fw-pause-a {
+      0%, 24%,
+      100% {
+        opacity: 0;
+        transform: scale(0.18);
+      }
+      28% {
+        opacity: 1;
+        transform: scale(0.34);
+      }
+      33% {
+        opacity: 0;
+        transform: scale(0.62);
+      }
+    }
+
+    @keyframes fw-window-a {
+      0%, 22%,
+      100% { opacity: 0; }
+      30%,
+      42% { opacity: 1; }
+      47% { opacity: 0; }
+    }
+
+    @keyframes fw-particle-a {
+      0%, 22%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.14);
+      }
+      30% {
+        opacity: 1;
+        transform: translate(calc(var(--tx, 0px) * 0.24), calc(var(--ty, 0px) * 0.24)) scale(0.5);
+      }
+      38%,
+      42% {
+        opacity: 1;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(1);
+      }
+      47% {
+        opacity: 0;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(0.72);
+      }
+    }
+
+    @keyframes fw-outline-a {
+      0%, 22%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--dash-len, 1800);
+      }
+      38%,
+      42% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+      }
+      47% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-burst-a {
+      0%, 25%,
+      100% {
+        opacity: 0;
+        transform: scale(0.16);
+      }
+      26% {
+        opacity: 1;
+        transform: scale(0.26);
+      }
+      38% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      38% {
+        opacity: 0.22;
+        transform: scale(1.08);
+      }
+      47% {
+        opacity: 0;
+        transform: scale(1.18);
+      }
+    }
+
+    @keyframes fw-core-a {
+      0%, 29%,
+      100% {
+        opacity: 0;
+        transform: scale(0.22);
+      }
+      38%,
+      42% {
+        opacity: 0.94;
+        transform: scale(1);
+      }
+      47% {
+        opacity: 0;
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes fw-sparkle-a {
+      0%, 34%,
+      100% {
+        opacity: 0;
+        transform: scale(0.24);
+      }
+      42%,
+      42% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      47% {
+        opacity: 0;
+        transform: scale(1.26);
+      }
+    }
+  
+
+    @keyframes fw-trail-b {
+      0%, 24%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--trail-len, 900);
+      }
+      28% { opacity: 0.12; }
+      45% {
+        opacity: 0.94;
+        stroke-dashoffset: 0;
+      }
+      49% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-head-b {
+      0%, 25%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.18);
+      }
+      28% { opacity: 1; }
+      45% {
+        opacity: 1;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(1);
+      }
+      48% {
+        opacity: 0;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(0.42);
+      }
+    }
+
+    @keyframes fw-pause-b {
+      0%, 40%,
+      100% {
+        opacity: 0;
+        transform: scale(0.18);
+      }
+      44% {
+        opacity: 1;
+        transform: scale(0.34);
+      }
+      49% {
+        opacity: 0;
+        transform: scale(0.62);
+      }
+    }
+
+    @keyframes fw-window-b {
+      0%, 38%,
+      100% { opacity: 0; }
+      46%,
+      58% { opacity: 1; }
+      63% { opacity: 0; }
+    }
+
+    @keyframes fw-particle-b {
+      0%, 38%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.14);
+      }
+      46% {
+        opacity: 1;
+        transform: translate(calc(var(--tx, 0px) * 0.24), calc(var(--ty, 0px) * 0.24)) scale(0.5);
+      }
+      54%,
+      58% {
+        opacity: 1;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(1);
+      }
+      63% {
+        opacity: 0;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(0.72);
+      }
+    }
+
+    @keyframes fw-outline-b {
+      0%, 38%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--dash-len, 1800);
+      }
+      54%,
+      58% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+      }
+      63% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-burst-b {
+      0%, 41%,
+      100% {
+        opacity: 0;
+        transform: scale(0.16);
+      }
+      42% {
+        opacity: 1;
+        transform: scale(0.26);
+      }
+      54% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      54% {
+        opacity: 0.22;
+        transform: scale(1.08);
+      }
+      63% {
+        opacity: 0;
+        transform: scale(1.18);
+      }
+    }
+
+    @keyframes fw-core-b {
+      0%, 45%,
+      100% {
+        opacity: 0;
+        transform: scale(0.22);
+      }
+      54%,
+      58% {
+        opacity: 0.94;
+        transform: scale(1);
+      }
+      63% {
+        opacity: 0;
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes fw-sparkle-b {
+      0%, 50%,
+      100% {
+        opacity: 0;
+        transform: scale(0.24);
+      }
+      58%,
+      58% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      63% {
+        opacity: 0;
+        transform: scale(1.26);
+      }
+    }
+  
+
+    @keyframes fw-trail-c {
+      0%, 40%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--trail-len, 900);
+      }
+      44% { opacity: 0.12; }
+      61% {
+        opacity: 0.94;
+        stroke-dashoffset: 0;
+      }
+      65% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-head-c {
+      0%, 41%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.18);
+      }
+      44% { opacity: 1; }
+      61% {
+        opacity: 1;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(1);
+      }
+      64% {
+        opacity: 0;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(0.42);
+      }
+    }
+
+    @keyframes fw-pause-c {
+      0%, 56%,
+      100% {
+        opacity: 0;
+        transform: scale(0.18);
+      }
+      60% {
+        opacity: 1;
+        transform: scale(0.34);
+      }
+      65% {
+        opacity: 0;
+        transform: scale(0.62);
+      }
+    }
+
+    @keyframes fw-window-c {
+      0%, 54%,
+      100% { opacity: 0; }
+      62%,
+      74% { opacity: 1; }
+      79% { opacity: 0; }
+    }
+
+    @keyframes fw-particle-c {
+      0%, 54%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.14);
+      }
+      62% {
+        opacity: 1;
+        transform: translate(calc(var(--tx, 0px) * 0.24), calc(var(--ty, 0px) * 0.24)) scale(0.5);
+      }
+      70%,
+      74% {
+        opacity: 1;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(1);
+      }
+      79% {
+        opacity: 0;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(0.72);
+      }
+    }
+
+    @keyframes fw-outline-c {
+      0%, 54%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--dash-len, 1800);
+      }
+      70%,
+      74% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+      }
+      79% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-burst-c {
+      0%, 57%,
+      100% {
+        opacity: 0;
+        transform: scale(0.16);
+      }
+      58% {
+        opacity: 1;
+        transform: scale(0.26);
+      }
+      70% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      70% {
+        opacity: 0.22;
+        transform: scale(1.08);
+      }
+      79% {
+        opacity: 0;
+        transform: scale(1.18);
+      }
+    }
+
+    @keyframes fw-core-c {
+      0%, 61%,
+      100% {
+        opacity: 0;
+        transform: scale(0.22);
+      }
+      70%,
+      74% {
+        opacity: 0.94;
+        transform: scale(1);
+      }
+      79% {
+        opacity: 0;
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes fw-sparkle-c {
+      0%, 66%,
+      100% {
+        opacity: 0;
+        transform: scale(0.24);
+      }
+      74%,
+      74% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      79% {
+        opacity: 0;
+        transform: scale(1.26);
+      }
+    }
+  
+
+    @keyframes fw-trail-d {
+      0%, 56%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--trail-len, 900);
+      }
+      60% { opacity: 0.12; }
+      77% {
+        opacity: 0.94;
+        stroke-dashoffset: 0;
+      }
+      81% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-head-d {
+      0%, 57%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.18);
+      }
+      60% { opacity: 1; }
+      77% {
+        opacity: 1;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(1);
+      }
+      80% {
+        opacity: 0;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(0.42);
+      }
+    }
+
+    @keyframes fw-pause-d {
+      0%, 72%,
+      100% {
+        opacity: 0;
+        transform: scale(0.18);
+      }
+      76% {
+        opacity: 1;
+        transform: scale(0.34);
+      }
+      81% {
+        opacity: 0;
+        transform: scale(0.62);
+      }
+    }
+
+    @keyframes fw-window-d {
+      0%, 70%,
+      100% { opacity: 0; }
+      78%,
+      90% { opacity: 1; }
+      95% { opacity: 0; }
+    }
+
+    @keyframes fw-particle-d {
+      0%, 70%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.14);
+      }
+      78% {
+        opacity: 1;
+        transform: translate(calc(var(--tx, 0px) * 0.24), calc(var(--ty, 0px) * 0.24)) scale(0.5);
+      }
+      86%,
+      90% {
+        opacity: 1;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(1);
+      }
+      95% {
+        opacity: 0;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(0.72);
+      }
+    }
+
+    @keyframes fw-outline-d {
+      0%, 70%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--dash-len, 1800);
+      }
+      86%,
+      90% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+      }
+      95% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-burst-d {
+      0%, 73%,
+      100% {
+        opacity: 0;
+        transform: scale(0.16);
+      }
+      74% {
+        opacity: 1;
+        transform: scale(0.26);
+      }
+      86% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      86% {
+        opacity: 0.22;
+        transform: scale(1.08);
+      }
+      95% {
+        opacity: 0;
+        transform: scale(1.18);
+      }
+    }
+
+    @keyframes fw-core-d {
+      0%, 77%,
+      100% {
+        opacity: 0;
+        transform: scale(0.22);
+      }
+      86%,
+      90% {
+        opacity: 0.94;
+        transform: scale(1);
+      }
+      95% {
+        opacity: 0;
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes fw-sparkle-d {
+      0%, 82%,
+      100% {
+        opacity: 0;
+        transform: scale(0.24);
+      }
+      90%,
+      90% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      95% {
+        opacity: 0;
+        transform: scale(1.26);
+      }
+    }
+  
+
+    @keyframes fw-trail-single {
+      0%, 14%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--trail-len, 900);
+      }
+      18% { opacity: 0.12; }
+      35% {
+        opacity: 0.94;
+        stroke-dashoffset: 0;
+      }
+      39% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-head-single {
+      0%, 15%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.18);
+      }
+      18% { opacity: 1; }
+      35% {
+        opacity: 1;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(1);
+      }
+      38% {
+        opacity: 0;
+        transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(0.42);
+      }
+    }
+
+    @keyframes fw-pause-single {
+      0%, 30%,
+      100% {
+        opacity: 0;
+        transform: scale(0.18);
+      }
+      34% {
+        opacity: 1;
+        transform: scale(0.34);
+      }
+      39% {
+        opacity: 0;
+        transform: scale(0.62);
+      }
+    }
+
+    @keyframes fw-window-single {
+      0%, 28%,
+      100% { opacity: 0; }
+      36%,
+      72% { opacity: 1; }
+      88% { opacity: 0; }
+    }
+
+    @keyframes fw-particle-single {
+      0%, 28%,
+      100% {
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.14);
+      }
+      36% {
+        opacity: 1;
+        transform: translate(calc(var(--tx, 0px) * 0.24), calc(var(--ty, 0px) * 0.24)) scale(0.5);
+      }
+      48%,
+      72% {
+        opacity: 1;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(1);
+      }
+      88% {
+        opacity: 0;
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(0.72);
+      }
+    }
+
+    @keyframes fw-outline-single {
+      0%, 28%,
+      100% {
+        opacity: 0;
+        stroke-dashoffset: var(--dash-len, 1800);
+      }
+      48%,
+      72% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+      }
+      88% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fw-burst-single {
+      0%, 31%,
+      100% {
+        opacity: 0;
+        transform: scale(0.16);
+      }
+      32% {
+        opacity: 1;
+        transform: scale(0.26);
+      }
+      48% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      68% {
+        opacity: 0.22;
+        transform: scale(1.08);
+      }
+      88% {
+        opacity: 0;
+        transform: scale(1.18);
+      }
+    }
+
+    @keyframes fw-core-single {
+      0%, 35%,
+      100% {
+        opacity: 0;
+        transform: scale(0.22);
+      }
+      48%,
+      72% {
+        opacity: 0.94;
+        transform: scale(1);
+      }
+      88% {
+        opacity: 0;
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes fw-sparkle-single {
+      0%, 44%,
+      100% {
+        opacity: 0;
+        transform: scale(0.24);
+      }
+      52%,
+      72% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      88% {
+        opacity: 0;
+        transform: scale(1.26);
+      }
+    }
+  
+</style>
+  
+    
+    <g>
+      <circle cx="960" cy="244.296" r="216" fill="#ff7a8c" opacity="0.12" />
+      <rect x="690" y="106.48800000000001" width="540" height="237.6" rx="85.536" fill="#27315d" opacity="0.12" stroke="#fff8e7" stroke-width="7.127999999999999" />
+      <g style="transform-origin:876.84px 182.52px; --from-x:-16.63px; --from-y:28px; --from-r:-10deg; animation:wink-enter-spin 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0s;"><text x="876.84" y="182.52" text-anchor="middle" dominant-baseline="central" font-size="59.4" font-weight="900" fill="#fff8e7" stroke="#27315d" stroke-width="2.376" letter-spacing="1.7819999999999998" >H</text></g><g style="transform-origin:918.42px 182.52px; --from-x:-8.32px; --from-y:28px; --from-r:10deg; animation:wink-enter-spin 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.06s;"><text x="918.42" y="182.52" text-anchor="middle" dominant-baseline="central" font-size="59.4" font-weight="900" fill="#ffd55d" stroke="#27315d" stroke-width="2.376" letter-spacing="1.7819999999999998" >a</text></g><g style="transform-origin:960px 182.52px; --from-x:0px; --from-y:28px; --from-r:-10deg; animation:wink-enter-spin 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.12s;"><text x="960" y="182.52" text-anchor="middle" dominant-baseline="central" font-size="59.4" font-weight="900" fill="#74e9ff" stroke="#27315d" stroke-width="2.376" letter-spacing="1.7819999999999998" >p</text></g><g style="transform-origin:1001.58px 182.52px; --from-x:8.32px; --from-y:28px; --from-r:10deg; animation:wink-enter-spin 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.18s;"><text x="1001.58" y="182.52" text-anchor="middle" dominant-baseline="central" font-size="59.4" font-weight="900" fill="#ff7a8c" stroke="#27315d" stroke-width="2.376" letter-spacing="1.7819999999999998" >p</text></g><g style="transform-origin:1043.16px 182.52px; --from-x:16.63px; --from-y:28px; --from-r:-10deg; animation:wink-enter-spin 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.24s;"><text x="1043.16" y="182.52" text-anchor="middle" dominant-baseline="central" font-size="59.4" font-weight="900" fill="#fff8e7" stroke="#27315d" stroke-width="2.376" letter-spacing="1.7819999999999998" >y</text></g>
+      <g style="transform-origin:820.29px 296.568px; --from-x:-27.94px; --from-y:34px; --from-r:-10deg; animation:wink-enter-pop 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.18s;"><text x="820.29" y="296.568" text-anchor="middle" dominant-baseline="central" font-size="57.023999999999994" font-weight="900" fill="#fff8e7" stroke="#27315d" stroke-width="2.28096" letter-spacing="1.7107199999999998" >B</text></g><g style="transform-origin:860.21px 296.568px; --from-x:-19.96px; --from-y:34px; --from-r:10deg; animation:wink-enter-pop 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.23s;"><text x="860.21" y="296.568" text-anchor="middle" dominant-baseline="central" font-size="57.023999999999994" font-weight="900" fill="#fff8e7" stroke="#27315d" stroke-width="2.28096" letter-spacing="1.7107199999999998" >i</text></g><g style="transform-origin:900.12px 296.568px; --from-x:-11.98px; --from-y:34px; --from-r:-10deg; animation:wink-enter-pop 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.28s;"><text x="900.12" y="296.568" text-anchor="middle" dominant-baseline="central" font-size="57.023999999999994" font-weight="900" fill="#fff8e7" stroke="#27315d" stroke-width="2.28096" letter-spacing="1.7107199999999998" >r</text></g><g style="transform-origin:940.04px 296.568px; --from-x:-3.99px; --from-y:34px; --from-r:10deg; animation:wink-enter-pop 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.33s;"><text x="940.04" y="296.568" text-anchor="middle" dominant-baseline="central" font-size="57.023999999999994" font-weight="900" fill="#fff8e7" stroke="#27315d" stroke-width="2.28096" letter-spacing="1.7107199999999998" >t</text></g><g style="transform-origin:979.96px 296.568px; --from-x:3.99px; --from-y:34px; --from-r:-10deg; animation:wink-enter-pop 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.38s;"><text x="979.96" y="296.568" text-anchor="middle" dominant-baseline="central" font-size="57.023999999999994" font-weight="900" fill="#fff8e7" stroke="#27315d" stroke-width="2.28096" letter-spacing="1.7107199999999998" >h</text></g><g style="transform-origin:1019.88px 296.568px; --from-x:11.98px; --from-y:34px; --from-r:10deg; animation:wink-enter-pop 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.43s;"><text x="1019.88" y="296.568" text-anchor="middle" dominant-baseline="central" font-size="57.023999999999994" font-weight="900" fill="#fff8e7" stroke="#27315d" stroke-width="2.28096" letter-spacing="1.7107199999999998" >d</text></g><g style="transform-origin:1059.79px 296.568px; --from-x:19.96px; --from-y:34px; --from-r:-10deg; animation:wink-enter-pop 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.48s;"><text x="1059.79" y="296.568" text-anchor="middle" dominant-baseline="central" font-size="57.023999999999994" font-weight="900" fill="#fff8e7" stroke="#27315d" stroke-width="2.28096" letter-spacing="1.7107199999999998" >a</text></g><g style="transform-origin:1099.71px 296.568px; --from-x:27.94px; --from-y:34px; --from-r:10deg; animation:wink-enter-pop 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.53s;"><text x="1099.71" y="296.568" text-anchor="middle" dominant-baseline="central" font-size="57.023999999999994" font-weight="900" fill="#fff8e7" stroke="#27315d" stroke-width="2.28096" letter-spacing="1.7107199999999998" >y</text></g>
+    </g>
+  
+    
+        
+      <g style="transform-origin:403.2px 712.8px; animation:wink-enter-pop 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite, wink-hover-sway 1.4s ease-in-out infinite 0.72s;">
+        <g transform="rotate(-26 403.2 712.8)">
+          <path d="M 360.27648 739.4112 L 442.39104 695.8656 L 419.99616 766.0224 Z" fill="#ff7a8c" stroke="#27315d" stroke-width="13.824000000000002" />
+          <path d="M 382.67136 724.896 L 406.93248 749.088" stroke="#fff8e7" stroke-width="12.096000000000002" stroke-linecap="round" />
+        </g>
+      </g>
+      <g style="transform-origin:454.5216px 645.0623999999999px; --tx:180.78px; --ty:-58.74px; --r0:-18deg; --r1:102deg; --r2:202deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0s;"><polygon points="454.52,626.05 459.55,638.14 472.6,639.19 462.66,647.71 465.69,660.44 454.52,653.62 443.35,660.44 446.39,647.71 436.44,639.19 449.49,638.14" fill="#ff7a8c" stroke="rgba(255,255,255,0.75)" stroke-width="1.5206400000000002" /></g><g style="transform-origin:454.5216px 645.0623999999999px; --tx:183.84px; --ty:48.32px; --r0:14.727272727272727deg; --r1:134.72727272727272deg; --r2:234.72727272727272deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.03s;"><polygon points="454.52,626.05 459.55,638.14 472.6,639.19 462.66,647.71 465.69,660.44 454.52,653.62 443.35,660.44 446.39,647.71 436.44,639.19 449.49,638.14" fill="#ffd55d" stroke="rgba(255,255,255,0.75)" stroke-width="1.5206400000000002" /></g><g style="transform-origin:454.5216px 645.0623999999999px; --tx:128.53px; --ty:140.04px; --r0:47.45454545454545deg; --r1:167.45454545454544deg; --r2:267.45454545454544deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.06s;"><polygon points="454.52,626.05 459.55,638.14 472.6,639.19 462.66,647.71 465.69,660.44 454.52,653.62 443.35,660.44 446.39,647.71 436.44,639.19 449.49,638.14" fill="#fff8e7" stroke="rgba(255,255,255,0.75)" stroke-width="1.5206400000000002" /></g><g style="transform-origin:454.5216px 645.0623999999999px; --tx:32.41px; --ty:187.3px; --r0:80.18181818181819deg; --r1:200.1818181818182deg; --r2:300.1818181818182deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.09s;"><polygon points="454.52,626.05 459.55,638.14 472.6,639.19 462.66,647.71 465.69,660.44 454.52,653.62 443.35,660.44 446.39,647.71 436.44,639.19 449.49,638.14" fill="#74e9ff" stroke="rgba(255,255,255,0.75)" stroke-width="1.5206400000000002" /></g><g style="transform-origin:454.5216px 645.0623999999999px; --tx:-73.99px; --ty:175.09px; --r0:112.9090909090909deg; --r1:232.9090909090909deg; --r2:332.9090909090909deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.12s;"><polygon points="454.52,626.05 459.55,638.14 472.6,639.19 462.66,647.71 465.69,660.44 454.52,653.62 443.35,660.44 446.39,647.71 436.44,639.19 449.49,638.14" fill="#ff7a8c" stroke="rgba(255,255,255,0.75)" stroke-width="1.5206400000000002" /></g><g style="transform-origin:454.5216px 645.0623999999999px; --tx:-156.91px; --ty:107.29px; --r0:145.63636363636363deg; --r1:265.6363636363636deg; --r2:365.6363636363636deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.15s;"><polygon points="454.52,626.05 459.55,638.14 472.6,639.19 462.66,647.71 465.69,660.44 454.52,653.62 443.35,660.44 446.39,647.71 436.44,639.19 449.49,638.14" fill="#ffd55d" stroke="rgba(255,255,255,0.75)" stroke-width="1.5206400000000002" /></g><g style="transform-origin:454.5216px 645.0623999999999px; --tx:-190px; --ty:5.43px; --r0:178.36363636363637deg; --r1:298.3636363636364deg; --r2:398.3636363636364deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.18s;"><polygon points="454.52,626.05 459.55,638.14 472.6,639.19 462.66,647.71 465.69,660.44 454.52,653.62 443.35,660.44 446.39,647.71 436.44,639.19 449.49,638.14" fill="#fff8e7" stroke="rgba(255,255,255,0.75)" stroke-width="1.5206400000000002" /></g><g style="transform-origin:454.5216px 645.0623999999999px; --tx:-162.77px; --ty:-98.16px; --r0:211.0909090909091deg; --r1:331.0909090909091deg; --r2:431.0909090909091deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.21s;"><polygon points="454.52,626.05 459.55,638.14 472.6,639.19 462.66,647.71 465.69,660.44 454.52,653.62 443.35,660.44 446.39,647.71 436.44,639.19 449.49,638.14" fill="#74e9ff" stroke="rgba(255,255,255,0.75)" stroke-width="1.5206400000000002" /></g><g style="transform-origin:454.5216px 645.0623999999999px; --tx:-83.87px; --ty:-170.58px; --r0:243.8181818181818deg; --r1:363.8181818181818deg; --r2:463.8181818181818deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.24s;"><polygon points="454.52,626.05 459.55,638.14 472.6,639.19 462.66,647.71 465.69,660.44 454.52,653.62 443.35,660.44 446.39,647.71 436.44,639.19 449.49,638.14" fill="#ff7a8c" stroke="rgba(255,255,255,0.75)" stroke-width="1.5206400000000002" /></g><g style="transform-origin:454.5216px 645.0623999999999px; --tx:21.67px; --ty:-188.84px; --r0:276.54545454545456deg; --r1:396.54545454545456deg; --r2:496.54545454545456deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.27s;"><polygon points="454.52,626.05 459.55,638.14 472.6,639.19 462.66,647.71 465.69,660.44 454.52,653.62 443.35,660.44 446.39,647.71 436.44,639.19 449.49,638.14" fill="#ffd55d" stroke="rgba(255,255,255,0.75)" stroke-width="1.5206400000000002" /></g><g style="transform-origin:454.5216px 645.0623999999999px; --tx:120.32px; --ty:-147.15px; --r0:309.27272727272725deg; --r1:429.27272727272725deg; --r2:529.2727272727273deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.3s;"><polygon points="454.52,626.05 459.55,638.14 472.6,639.19 462.66,647.71 465.69,660.44 454.52,653.62 443.35,660.44 446.39,647.71 436.44,639.19 449.49,638.14" fill="#fff8e7" stroke="rgba(255,255,255,0.75)" stroke-width="1.5206400000000002" /></g>
+    
+        
+      <g style="transform-origin:1516.8px 712.8px; animation:wink-enter-pop 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite, wink-hover-sway 1.4s ease-in-out infinite 0.72s;">
+        <g transform="rotate(26 1516.8 712.8)">
+          <path d="M 1473.87648 739.4112 L 1555.9910399999999 695.8656 L 1533.59616 766.0224 Z" fill="#ff7a8c" stroke="#27315d" stroke-width="13.824000000000002" />
+          <path d="M 1496.27136 724.896 L 1520.5324799999999 749.088" stroke="#fff8e7" stroke-width="12.096000000000002" stroke-linecap="round" />
+        </g>
+      </g>
+      <g style="transform-origin:1465.4784px 645.0623999999999px; --tx:-180.78px; --ty:-58.74px; --r0:198deg; --r1:318deg; --r2:418deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0s;"><rect x="1455.024" y="634.608" width="20.908800000000003" height="20.908800000000003" rx="3.8016000000000005" fill="#ff7a8c" /></g><g style="transform-origin:1465.4784px 645.0623999999999px; --tx:-120.32px; --ty:-147.15px; --r0:230.72727272727272deg; --r1:350.72727272727275deg; --r2:450.72727272727275deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.03s;"><rect x="1455.024" y="634.608" width="20.908800000000003" height="20.908800000000003" rx="3.8016000000000005" fill="#ffd55d" /></g><g style="transform-origin:1465.4784px 645.0623999999999px; --tx:-21.67px; --ty:-188.84px; --r0:263.45454545454544deg; --r1:383.45454545454544deg; --r2:483.45454545454544deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.06s;"><rect x="1455.024" y="634.608" width="20.908800000000003" height="20.908800000000003" rx="3.8016000000000005" fill="#fff8e7" /></g><g style="transform-origin:1465.4784px 645.0623999999999px; --tx:83.87px; --ty:-170.58px; --r0:296.1818181818182deg; --r1:416.1818181818182deg; --r2:516.1818181818182deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.09s;"><rect x="1455.024" y="634.608" width="20.908800000000003" height="20.908800000000003" rx="3.8016000000000005" fill="#74e9ff" /></g><g style="transform-origin:1465.4784px 645.0623999999999px; --tx:162.77px; --ty:-98.16px; --r0:328.9090909090909deg; --r1:448.9090909090909deg; --r2:548.9090909090909deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.12s;"><rect x="1455.024" y="634.608" width="20.908800000000003" height="20.908800000000003" rx="3.8016000000000005" fill="#ff7a8c" /></g><g style="transform-origin:1465.4784px 645.0623999999999px; --tx:190px; --ty:5.43px; --r0:361.6363636363636deg; --r1:481.6363636363636deg; --r2:581.6363636363636deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.15s;"><rect x="1455.024" y="634.608" width="20.908800000000003" height="20.908800000000003" rx="3.8016000000000005" fill="#ffd55d" /></g><g style="transform-origin:1465.4784px 645.0623999999999px; --tx:156.91px; --ty:107.29px; --r0:394.3636363636364deg; --r1:514.3636363636364deg; --r2:614.3636363636364deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.18s;"><rect x="1455.024" y="634.608" width="20.908800000000003" height="20.908800000000003" rx="3.8016000000000005" fill="#fff8e7" /></g><g style="transform-origin:1465.4784px 645.0623999999999px; --tx:73.99px; --ty:175.09px; --r0:427.0909090909091deg; --r1:547.0909090909091deg; --r2:647.0909090909091deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.21s;"><rect x="1455.024" y="634.608" width="20.908800000000003" height="20.908800000000003" rx="3.8016000000000005" fill="#74e9ff" /></g><g style="transform-origin:1465.4784px 645.0623999999999px; --tx:-32.41px; --ty:187.3px; --r0:459.8181818181818deg; --r1:579.8181818181818deg; --r2:679.8181818181818deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.24s;"><rect x="1455.024" y="634.608" width="20.908800000000003" height="20.908800000000003" rx="3.8016000000000005" fill="#ff7a8c" /></g><g style="transform-origin:1465.4784px 645.0623999999999px; --tx:-128.53px; --ty:140.04px; --r0:492.54545454545456deg; --r1:612.5454545454545deg; --r2:712.5454545454545deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.27s;"><rect x="1455.024" y="634.608" width="20.908800000000003" height="20.908800000000003" rx="3.8016000000000005" fill="#ffd55d" /></g><g style="transform-origin:1465.4784px 645.0623999999999px; --tx:-183.84px; --ty:48.32px; --r0:525.2727272727273deg; --r1:645.2727272727273deg; --r2:745.2727272727273deg; animation:wink-burst-sprite 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.3s;"><rect x="1455.024" y="634.608" width="20.908800000000003" height="20.908800000000003" rx="3.8016000000000005" fill="#fff8e7" /></g>
+    
+      
+    <g style="transform-origin:960px 626.4px; animation:wink-enter-pop 3.4s cubic-bezier(0.2,0.9,0.24,1) infinite, wink-hover-bob 1.45s ease-in-out infinite 0.72s;">
+    <g>
+      <ellipse cx="960" cy="812.81664" rx="128.07936000000004" ry="36.08064" fill="#000" opacity="0.16" />
+      <rect x="831.9206399999999" y="614.37312" width="256.1587200000001" height="84.18816000000001" rx="30.136320000000005" fill="#ff7a8c" stroke="#27315d" stroke-width="11.301120000000001" />
+      <rect x="869.59104" y="542.2118399999999" width="180.81792000000002" height="66.14784" rx="30.136320000000005" fill="#ffd55d" stroke="#27315d" stroke-width="11.301120000000001" />
+      <path d="M 831.9206399999999 632.4134399999999 Q 862.05696 662.48064, 892.19328 632.4134399999999 T 952.46592 632.4134399999999 T 1012.73856 632.4134399999999 T 1073.0112 632.4134399999999" fill="none" stroke="#fff7ef" stroke-width="12.054528000000003" stroke-linecap="round" />
+      
+          <g style="transform-origin:911.02848px 524.17152px; animation:wink-flame 0.9s ease-in-out infinite; animation-delay:0s;">
+            <rect x="903.4943999999999" y="500.11776" width="15.068160000000002" height="48.10752000000001" rx="3.7670400000000006" fill="#ffd66b" />
+            <path d="M 911.02848 470.05055999999996 C 926.09664 485.08416, 918.56256 506.1312, 911.02848 524.17152 C 903.4943999999999 506.1312, 895.9603199999999 485.08416, 911.02848 470.05055999999996 Z" fill="#ffb33b" />
+          </g>
+        
+          <g style="transform-origin:960px 524.17152px; animation:wink-flame 0.9s ease-in-out infinite; animation-delay:0.12s;">
+            <rect x="952.46592" y="500.11776" width="15.068160000000002" height="48.10752000000001" rx="3.7670400000000006" fill="#8be9ff" />
+            <path d="M 960 470.05055999999996 C 975.06816 485.08416, 967.53408 506.1312, 960 524.17152 C 952.46592 506.1312, 944.93184 485.08416, 960 470.05055999999996 Z" fill="#ffb33b" />
+          </g>
+        
+          <g style="transform-origin:1008.97152px 524.17152px; animation:wink-flame 0.9s ease-in-out infinite; animation-delay:0.24s;">
+            <rect x="1001.43744" y="500.11776" width="15.068160000000002" height="48.10752000000001" rx="3.7670400000000006" fill="#ffd66b" />
+            <path d="M 1008.97152 470.05055999999996 C 1024.03968 485.08416, 1016.5056000000001 506.1312, 1008.97152 524.17152 C 1001.43744 506.1312, 993.90336 485.08416, 1008.97152 470.05055999999996 Z" fill="#ffb33b" />
+          </g>
+        
+      <rect x="801.78432" y="704.57472" width="316.43136000000004" height="24.053760000000004" rx="15.068160000000002" fill="#fff8e7" />
+    </g>
+  </g>
+    <circle cx="960" cy="561.6" r="207.36" fill="none" stroke="#ffd55d" stroke-width="15.12" opacity="0.88" style="transform-origin:960px 561.6px; animation:wink-impact-ring 3.4s ease-out infinite;" />
+    <g style="transform-origin:499.2px 259.2px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0s;"><polygon points="499.2,239.76 504.97,253.43 518.64,259.2 504.97,264.97 499.2,278.64 493.43,264.97 479.76,259.2 493.43,253.43" fill="#fff8e7" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g><g style="transform-origin:729.6px 194.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.17s;"><polygon points="729.6,174.96 735.37,188.63 749.04,194.4 735.37,200.17 729.6,213.84 723.83,200.17 710.16,194.4 723.83,188.63" fill="#ff7a8c" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g><g style="transform-origin:1190.4px 205.2px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.34s;"><polygon points="1190.4,185.76 1196.17,199.43 1209.84,205.2 1196.17,210.97 1190.4,224.64 1184.63,210.97 1170.96,205.2 1184.63,199.43" fill="#ffd55d" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g><g style="transform-origin:1420.8px 302.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.51s;"><polygon points="1420.8,282.96 1426.57,296.63 1440.24,302.4 1426.57,308.17 1420.8,321.84 1415.03,308.17 1401.36,302.4 1415.03,296.63" fill="#74e9ff" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g><g style="transform-origin:460.8px 799.2px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.68s;"><polygon points="460.8,779.76 466.57,793.43 480.24,799.2 466.57,804.97 460.8,818.64 455.03,804.97 441.36,799.2 455.03,793.43" fill="#fff8e7" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g><g style="transform-origin:1459.2px 820.8px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.85s;"><polygon points="1459.2,801.36 1464.97,815.03 1478.64,820.8 1464.97,826.57 1459.2,840.24 1453.43,826.57 1439.76,820.8 1453.43,815.03" fill="#ff7a8c" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g>
+    <g style="transform-origin:307.2px 172.8px; --tx:-37.8px; --ty:583.2px; --r0:0deg; --r1:120deg; animation:wink-fall 3.4s linear infinite; animation-delay:0s;"><rect x="295.32" y="160.92000000000002" width="23.760000000000005" height="23.760000000000005" rx="4.32" fill="#ff7a8c" /></g><g style="transform-origin:425.89px 172.8px; --tx:37.8px; --ty:626.4px; --r0:22deg; --r1:137deg; animation:wink-fall 3.4s linear infinite; animation-delay:0.05s;"><rect x="414.01" y="160.92000000000002" width="23.760000000000005" height="23.760000000000005" rx="4.32" fill="#ffd55d" /></g><g style="transform-origin:544.58px 172.8px; --tx:-37.8px; --ty:669.6px; --r0:44deg; --r1:154deg; animation:wink-fall 3.4s linear infinite; animation-delay:0.1s;"><rect x="532.7" y="160.92000000000002" width="23.760000000000005" height="23.760000000000005" rx="4.32" fill="#fff8e7" /></g><g style="transform-origin:663.27px 172.8px; --tx:37.8px; --ty:583.2px; --r0:66deg; --r1:171deg; animation:wink-fall 3.4s linear infinite; animation-delay:0.15s;"><rect x="651.39" y="160.92000000000002" width="23.760000000000005" height="23.760000000000005" rx="4.32" fill="#74e9ff" /></g><g style="transform-origin:781.96px 172.8px; --tx:-37.8px; --ty:626.4px; --r0:88deg; --r1:188deg; animation:wink-fall 3.4s linear infinite; animation-delay:0.2s;"><rect x="770.08" y="160.92000000000002" width="23.760000000000005" height="23.760000000000005" rx="4.32" fill="#ff7a8c" /></g><g style="transform-origin:900.65px 172.8px; --tx:37.8px; --ty:669.6px; --r0:110deg; --r1:205deg; animation:wink-fall 3.4s linear infinite; animation-delay:0.25s;"><rect x="888.77" y="160.92000000000002" width="23.760000000000005" height="23.760000000000005" rx="4.32" fill="#ffd55d" /></g><g style="transform-origin:1019.35px 172.8px; --tx:-37.8px; --ty:583.2px; --r0:132deg; --r1:222deg; animation:wink-fall 3.4s linear infinite; animation-delay:0.3s;"><rect x="1007.47" y="160.92000000000002" width="23.760000000000005" height="23.760000000000005" rx="4.32" fill="#fff8e7" /></g><g style="transform-origin:1138.04px 172.8px; --tx:37.8px; --ty:626.4px; --r0:154deg; --r1:239deg; animation:wink-fall 3.4s linear infinite; animation-delay:0.35s;"><rect x="1126.1599999999999" y="160.92000000000002" width="23.760000000000005" height="23.760000000000005" rx="4.32" fill="#74e9ff" /></g><g style="transform-origin:1256.73px 172.8px; --tx:-37.8px; --ty:669.6px; --r0:176deg; --r1:256deg; animation:wink-fall 3.4s linear infinite; animation-delay:0.4s;"><rect x="1244.85" y="160.92000000000002" width="23.760000000000005" height="23.760000000000005" rx="4.32" fill="#ff7a8c" /></g><g style="transform-origin:1375.42px 172.8px; --tx:37.8px; --ty:583.2px; --r0:198deg; --r1:273deg; animation:wink-fall 3.4s linear infinite; animation-delay:0.45s;"><rect x="1363.54" y="160.92000000000002" width="23.760000000000005" height="23.760000000000005" rx="4.32" fill="#ffd55d" /></g><g style="transform-origin:1494.11px 172.8px; --tx:-37.8px; --ty:626.4px; --r0:220deg; --r1:290deg; animation:wink-fall 3.4s linear infinite; animation-delay:0.5s;"><rect x="1482.2299999999998" y="160.92000000000002" width="23.760000000000005" height="23.760000000000005" rx="4.32" fill="#fff8e7" /></g><g style="transform-origin:1612.8px 172.8px; --tx:37.8px; --ty:669.6px; --r0:242deg; --r1:307deg; animation:wink-fall 3.4s linear infinite; animation-delay:0.55s;"><rect x="1600.9199999999998" y="160.92000000000002" width="23.760000000000005" height="23.760000000000005" rx="4.32" fill="#74e9ff" /></g>
+  
+</svg>

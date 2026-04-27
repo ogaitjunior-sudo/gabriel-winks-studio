@@ -16,6 +16,7 @@ import { EffectBrowser } from "@/components/EffectBrowser";
 import { SafeAreaOverlay } from "@/components/SafeAreaOverlay";
 import { SelectedEffectPanel } from "@/components/SelectedEffectPanel";
 import { Stage16x9, type StageBg } from "@/components/Stage16x9";
+import { WinkLibrarySection } from "@/components/WinkLibrarySection";
 import { WinkFormatPreviewPanel } from "@/components/WinkFormatPreviewPanel";
 import { EFFECTS, type EffectMeta } from "@/data/effects";
 import {
@@ -201,69 +202,73 @@ const Index = () => {
         </div>
       </header>
 
-      <main className="container grid gap-6 py-6 lg:grid-cols-[1fr_360px]">
-        <section className="space-y-5">
-          <Stage16x9 bg={bg}>
-            <div
-              key={stageKey}
-              ref={effectRef}
-              className={`effect-stage absolute inset-0 ${loop ? "" : "effect-single-run"}`}
-            >
-              <SelectedComp playing={playing} />
-            </div>
-            <SafeAreaOverlay visible={safeArea} />
-          </Stage16x9>
+      <main className="container space-y-8 py-6">
+        <div className="grid gap-6 lg:grid-cols-[1fr_360px]">
+          <section className="space-y-5">
+            <Stage16x9 bg={bg}>
+              <div
+                key={stageKey}
+                ref={effectRef}
+                className={`effect-stage absolute inset-0 ${loop ? "" : "effect-single-run"}`}
+              >
+                <SelectedComp playing={playing} />
+              </div>
+              <SafeAreaOverlay visible={safeArea} />
+            </Stage16x9>
 
-          <ControlsPanel
-            playing={playing}
-            loop={loop}
-            safeArea={safeArea}
-            bg={bg}
-            exportBg={exportBg}
-            speed={speed}
-            onPlay={handlePlay}
-            onPause={handlePause}
-            onReplay={handleReplay}
-            onToggleLoop={handleToggleLoop}
-            onToggleSafeArea={setSafeArea}
-            onChangeBg={setBg}
-            onChangeExportBg={setExportBg}
-            onChangeSpeed={setSpeed}
-            onExportSvg={handleExport}
-          />
+            <ControlsPanel
+              playing={playing}
+              loop={loop}
+              safeArea={safeArea}
+              bg={bg}
+              exportBg={exportBg}
+              speed={speed}
+              onPlay={handlePlay}
+              onPause={handlePause}
+              onReplay={handleReplay}
+              onToggleLoop={handleToggleLoop}
+              onToggleSafeArea={setSafeArea}
+              onChangeBg={setBg}
+              onChangeExportBg={setExportBg}
+              onChangeSpeed={setSpeed}
+              onExportSvg={handleExport}
+            />
 
-          <WinkFormatPreviewPanel
-            asset={selectedWinkAsset}
-            bg={bg}
-            isLoading={isWinksManifestLoading}
-            svgPreview={<SelectedComp playing={playing} />}
-            wink={selectedWinkPreview}
-          />
+            <WinkFormatPreviewPanel
+              asset={selectedWinkAsset}
+              bg={bg}
+              isLoading={isWinksManifestLoading}
+              svgPreview={<SelectedComp playing={playing} />}
+              wink={selectedWinkPreview}
+            />
 
-          {!loop && singleRunComplete ? (
-            <div className="rounded-xl border border-primary/30 bg-primary/10 px-4 py-3 text-sm text-primary">
-              Single-run mode completed. Use Replay or Play to launch the effect again.
-            </div>
-          ) : null}
+            {!loop && singleRunComplete ? (
+              <div className="rounded-xl border border-primary/30 bg-primary/10 px-4 py-3 text-sm text-primary">
+                Single-run mode completed. Use Replay or Play to launch the effect again.
+              </div>
+            ) : null}
 
-          <EffectBrowser
-            categoryCounts={EFFECT_COUNTS_BY_CATEGORY}
-            filter={filter}
-            filteredCount={filtered.length}
-            groups={groupedEffects}
-            query={query}
-            selectedId={selectedId}
-            totalCount={EFFECTS.length}
-            onChangeFilter={handleChangeFilter}
-            onChangeQuery={handleChangeQuery}
-            onDownloadEffect={handleDownloadEffect}
-            onSelectEffect={handleSelectEffect}
-          />
-        </section>
+            <EffectBrowser
+              categoryCounts={EFFECT_COUNTS_BY_CATEGORY}
+              filter={filter}
+              filteredCount={filtered.length}
+              groups={groupedEffects}
+              query={query}
+              selectedId={selectedId}
+              totalCount={EFFECTS.length}
+              onChangeFilter={handleChangeFilter}
+              onChangeQuery={handleChangeQuery}
+              onDownloadEffect={handleDownloadEffect}
+              onSelectEffect={handleSelectEffect}
+            />
+          </section>
 
-        <aside className="lg:sticky lg:top-6 lg:self-start">
-          <SelectedEffectPanel effect={selected} exportBg={exportBg} loop={loop} speed={speed} />
-        </aside>
+          <aside className="lg:sticky lg:top-6 lg:self-start">
+            <SelectedEffectPanel effect={selected} exportBg={exportBg} loop={loop} speed={speed} />
+          </aside>
+        </div>
+
+        <WinkLibrarySection isLoading={isWinksManifestLoading} manifest={winksManifest} />
       </main>
 
       <footer className="container py-8 text-center text-xs text-muted-foreground">

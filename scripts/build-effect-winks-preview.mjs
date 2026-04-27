@@ -5,6 +5,10 @@ import { WINKS_ROOT, escapeHtml, formatBytes } from "./wink-config.mjs";
 import { writeWinksManifest } from "./wink-manifest.mjs";
 
 const previewPath = path.join(WINKS_ROOT, "preview.html");
+const fullPackPath = "/winks/downloads/gabriel-winks-full-pack.zip";
+const overviewFilterLabel = "Bingo Wink Effects Library";
+const allFilterLabel = "All";
+const chatFilterLabel = "Chat Winks";
 
 function normalizePreviewAssetPath(assetPath) {
   if (assetPath.startsWith("/")) {
@@ -91,11 +95,16 @@ function renderGroup(group) {
       : group.items
           .map(
             (item) => `
-              <article class="wink-card">
+              <article class="wink-card" data-category="${escapeHtml(
+                item.category ?? "Uncategorized"
+              )}" data-kind="${escapeHtml(item.kind)}" data-name="${escapeHtml(
+                `${item.name} ${item.kind} ${item.id}`
+              )}">
                 <header class="wink-card-head">
                   <div>
                     <p class="wink-kind">${escapeHtml(group.label)}</p>
                     <h2>${escapeHtml(item.name)}</h2>
+                    <p class="wink-category">${escapeHtml(item.category ?? "Uncategorized")}</p>
                   </div>
                   <div class="wink-meta">
                     <span>${escapeHtml(item.aspectRatio)}</span>
@@ -127,10 +136,21 @@ function renderGroup(group) {
 }
 
 function renderHtml(manifest) {
+  const categories = [
+    ...new Set(
+      Object.values(manifest.groups)
+        .flatMap((group) => group.items)
+        .map((item) => item.category)
+        .filter(Boolean)
+    ),
+  ].sort((left, right) => left.localeCompare(right, undefined, { sensitivity: "base" }));
   const totalAssets = Object.values(manifest.groups).reduce(
     (sum, group) => sum + group.items.length,
     0
   );
+  const chatCount = Object.values(manifest.groups)
+    .flatMap((group) => group.items)
+    .filter((item) => item.kind === "chat").length;
   const totalSvgBytes = Object.values(manifest.groups)
     .flatMap((group) => group.items)
     .reduce((sum, item) => sum + (item.svg?.bytes ?? 0), 0);
@@ -216,6 +236,42 @@ function renderHtml(manifest) {
       align-items: center;
     }
 
+    .library-toolbar {
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .library-toolbar input {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--panel);
+      color: var(--text);
+      font: inherit;
+      padding: 10px 12px;
+      width: min(420px, 100%);
+    }
+
+    .library-toolbar input::placeholder {
+      color: var(--muted);
+    }
+
+    .toolbar-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .toolbar-actions a {
+      color: var(--bg);
+      background: var(--accent);
+      border-radius: 10px;
+      font-weight: 700;
+      padding: 9px 12px;
+      text-decoration: none;
+    }
+
     button {
       border: 1px solid var(--border);
       border-radius: 8px;
@@ -264,6 +320,12 @@ function renderHtml(manifest) {
       font-size: 11px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
+    }
+
+    .wink-category {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 12px;
     }
 
     .wink-meta {
@@ -392,6 +454,23 @@ function renderHtml(manifest) {
         <button type="button" data-bg-choice="black" aria-pressed="false">Black</button>
         <button type="button" data-bg-choice="white" aria-pressed="false">White</button>
       </div>
+        <div class="library-toolbar">
+          <input type="search" id="wink-search" placeholder="Search by name, category, or id" />
+          <div class="toolbar-actions">
+          <button type="button" data-category-filter="${overviewFilterLabel}" aria-pressed="true">${overviewFilterLabel}</button>
+          <button type="button" data-category-filter="${allFilterLabel}" aria-pressed="false">${allFilterLabel}</button>
+          <button type="button" data-category-filter="${chatFilterLabel}" aria-pressed="false">${chatFilterLabel} (${chatCount})</button>
+            ${categories
+              .map(
+                (category) =>
+                `<button type="button" data-category-filter="${escapeHtml(
+                  category
+                )}" aria-pressed="false">${escapeHtml(category)}</button>`
+            )
+            .join("")}
+          <a href="${fullPackPath}" download="gabriel-winks-full-pack.zip">Download Full Pack</a>
+        </div>
+      </div>
     </div>
   </header>
   <main class="wrap">
@@ -422,6 +501,42 @@ function renderHtml(manifest) {
         placeholder.textContent = preview.dataset.previewError || "APNG preview failed";
         frame.appendChild(placeholder);
       }, { once: true });
+    }
+
+    const searchInput = document.getElementById("wink-search");
+    const categoryButtons = Array.from(document.querySelectorAll("[data-category-filter]"));
+    const cards = Array.from(document.querySelectorAll(".wink-card"));
+    let activeCategory = ${JSON.stringify(overviewFilterLabel)};
+
+    const applyFilters = () => {
+      const query = (searchInput?.value || "").trim().toLowerCase();
+
+      for (const card of cards) {
+        const category = (card.dataset.category || "").toLowerCase();
+        const kind = (card.dataset.kind || "").toLowerCase();
+        const haystack = (card.dataset.name || "").toLowerCase();
+        const matchesCategory =
+          activeCategory === ${JSON.stringify(overviewFilterLabel)} ||
+          activeCategory === ${JSON.stringify(allFilterLabel)} ||
+          (activeCategory === ${JSON.stringify(chatFilterLabel)} && kind === "chat") ||
+          category === activeCategory.toLowerCase();
+        const matchesQuery = !query || haystack.includes(query) || category.includes(query);
+        card.style.display = matchesCategory && matchesQuery ? "" : "none";
+      }
+    };
+
+    if (searchInput) {
+      searchInput.addEventListener("input", applyFilters);
+    }
+
+    for (const button of categoryButtons) {
+      button.addEventListener("click", () => {
+        activeCategory = button.dataset.categoryFilter || ${JSON.stringify(overviewFilterLabel)};
+        for (const next of categoryButtons) {
+          next.setAttribute("aria-pressed", String(next === button));
+        }
+        applyFilters();
+      });
     }
   </script>
 </body>

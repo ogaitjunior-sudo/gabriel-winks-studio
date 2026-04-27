@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T19:49:25.368Z",
+  "generatedAt": "2026-04-27T02:51:11.405Z",
   "groups": {
     "effect": {
       "edgeGuidance": null,
@@ -1890,6 +1890,1056 @@
             "fileName": "cf-waveblast.svg",
             "path": "/winks/effect/svg/cf-waveblast.svg",
             "sizeLabel": "29.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2543841,
+            "fileName": "countdown-bingo-ball-letters-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 60,
+            "path": "/winks/effect/apng/countdown-bingo-ball-letters-effect-wink.apng",
+            "sizeLabel": "2.43 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Countdown",
+          "durationMs": 4000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "countdown-bingo-ball-letters-effect-wink",
+          "kind": "effect",
+          "name": "Countdown Bingo Ball Letters",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 39787,
+            "fileName": "countdown-bingo-ball-letters-effect-wink.svg",
+            "path": "/winks/effect/svg/countdown-bingo-ball-letters-effect-wink.svg",
+            "sizeLabel": "38.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1431504,
+            "fileName": "countdown-bingo-confetti-reveal-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 59,
+            "path": "/winks/effect/apng/countdown-bingo-confetti-reveal-effect-wink.apng",
+            "sizeLabel": "1.37 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Countdown",
+          "durationMs": 3900,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "countdown-bingo-confetti-reveal-effect-wink",
+          "kind": "effect",
+          "name": "Countdown Bingo Confetti Reveal",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 38855,
+            "fileName": "countdown-bingo-confetti-reveal-effect-wink.svg",
+            "path": "/winks/effect/svg/countdown-bingo-confetti-reveal-effect-wink.svg",
+            "sizeLabel": "37.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2846834,
+            "fileName": "countdown-bingo-firework-reveal-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 59,
+            "path": "/winks/effect/apng/countdown-bingo-firework-reveal-effect-wink.apng",
+            "sizeLabel": "2.71 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Countdown",
+          "durationMs": 3900,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "countdown-bingo-firework-reveal-effect-wink",
+          "kind": "effect",
+          "name": "Countdown Bingo Firework Reveal",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 47200,
+            "fileName": "countdown-bingo-firework-reveal-effect-wink.svg",
+            "path": "/winks/effect/svg/countdown-bingo-firework-reveal-effect-wink.svg",
+            "sizeLabel": "46.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2632917,
+            "fileName": "countdown-bingo-letter-pop-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 57,
+            "path": "/winks/effect/apng/countdown-bingo-letter-pop-effect-wink.apng",
+            "sizeLabel": "2.51 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Countdown",
+          "durationMs": 3800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "countdown-bingo-letter-pop-effect-wink",
+          "kind": "effect",
+          "name": "Countdown Bingo Letter Pop",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 38785,
+            "fileName": "countdown-bingo-letter-pop-effect-wink.svg",
+            "path": "/winks/effect/svg/countdown-bingo-letter-pop-effect-wink.svg",
+            "sizeLabel": "37.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1950650,
+            "fileName": "countdown-bingo-mega-reveal-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 60,
+            "path": "/winks/effect/apng/countdown-bingo-mega-reveal-effect-wink.apng",
+            "sizeLabel": "1.86 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Countdown",
+          "durationMs": 4000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "countdown-bingo-mega-reveal-effect-wink",
+          "kind": "effect",
+          "name": "Countdown Bingo Mega Reveal",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 43735,
+            "fileName": "countdown-bingo-mega-reveal-effect-wink.svg",
+            "path": "/winks/effect/svg/countdown-bingo-mega-reveal-effect-wink.svg",
+            "sizeLabel": "42.7 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1131683,
+            "fileName": "countdown-simple-confetti-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/countdown-simple-confetti-effect-wink.apng",
+            "sizeLabel": "1.08 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Countdown",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "countdown-simple-confetti-effect-wink",
+          "kind": "effect",
+          "name": "Countdown Simple Confetti",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 29541,
+            "fileName": "countdown-simple-confetti-effect-wink.svg",
+            "path": "/winks/effect/svg/countdown-simple-confetti-effect-wink.svg",
+            "sizeLabel": "28.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1895912,
+            "fileName": "countdown-simple-firework-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 50,
+            "path": "/winks/effect/apng/countdown-simple-firework-effect-wink.apng",
+            "sizeLabel": "1.81 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Countdown",
+          "durationMs": 3300,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "countdown-simple-firework-effect-wink",
+          "kind": "effect",
+          "name": "Countdown Simple Firework",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 32598,
+            "fileName": "countdown-simple-firework-effect-wink.svg",
+            "path": "/winks/effect/svg/countdown-simple-firework-effect-wink.svg",
+            "sizeLabel": "31.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1675887,
+            "fileName": "countdown-simple-gold-burst-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/countdown-simple-gold-burst-effect-wink.apng",
+            "sizeLabel": "1.60 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Countdown",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "countdown-simple-gold-burst-effect-wink",
+          "kind": "effect",
+          "name": "Countdown Simple Gold Burst",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 27787,
+            "fileName": "countdown-simple-gold-burst-effect-wink.svg",
+            "path": "/winks/effect/svg/countdown-simple-gold-burst-effect-wink.svg",
+            "sizeLabel": "27.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1420632,
+            "fileName": "countdown-simple-party-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/countdown-simple-party-effect-wink.apng",
+            "sizeLabel": "1.35 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Countdown",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "countdown-simple-party-effect-wink",
+          "kind": "effect",
+          "name": "Countdown Simple Party",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 29760,
+            "fileName": "countdown-simple-party-effect-wink.svg",
+            "path": "/winks/effect/svg/countdown-simple-party-effect-wink.svg",
+            "sizeLabel": "29.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1404187,
+            "fileName": "countdown-simple-pop-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/countdown-simple-pop-effect-wink.apng",
+            "sizeLabel": "1.34 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Countdown",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "countdown-simple-pop-effect-wink",
+          "kind": "effect",
+          "name": "Countdown Simple Pop",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 29504,
+            "fileName": "countdown-simple-pop-effect-wink.svg",
+            "path": "/winks/effect/svg/countdown-simple-pop-effect-wink.svg",
+            "sizeLabel": "28.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2921690,
+            "fileName": "fireworks-bingo-text-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/fireworks-bingo-text-effect-wink.apng",
+            "sizeLabel": "2.79 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-bingo-text-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Bingo Text Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 50367,
+            "fileName": "fireworks-bingo-text-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-bingo-text-effect-wink.svg",
+            "sizeLabel": "49.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2298543,
+            "fileName": "fireworks-cake-shape-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/fireworks-cake-shape-effect-wink.apng",
+            "sizeLabel": "2.19 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-cake-shape-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Cake Shape Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 45947,
+            "fileName": "fireworks-cake-shape-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-cake-shape-effect-wink.svg",
+            "sizeLabel": "44.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2335578,
+            "fileName": "fireworks-clover-shape-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/fireworks-clover-shape-effect-wink.apng",
+            "sizeLabel": "2.23 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-clover-shape-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Clover Shape Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 35930,
+            "fileName": "fireworks-clover-shape-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-clover-shape-effect-wink.svg",
+            "sizeLabel": "35.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2534837,
+            "fileName": "fireworks-crown-shape-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/fireworks-crown-shape-effect-wink.apng",
+            "sizeLabel": "2.42 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-crown-shape-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Crown Shape Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 40195,
+            "fileName": "fireworks-crown-shape-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-crown-shape-effect-wink.svg",
+            "sizeLabel": "39.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3182054,
+            "fileName": "fireworks-final-bingo-countdown-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 59,
+            "path": "/winks/effect/apng/fireworks-final-bingo-countdown-effect-wink.apng",
+            "sizeLabel": "3.03 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3900,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-final-bingo-countdown-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Final Bingo Countdown Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 81737,
+            "fileName": "fireworks-final-bingo-countdown-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-final-bingo-countdown-effect-wink.svg",
+            "sizeLabel": "79.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2420034,
+            "fileName": "fireworks-flower-shape-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/fireworks-flower-shape-effect-wink.apng",
+            "sizeLabel": "2.31 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-flower-shape-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Flower Shape Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 52258,
+            "fileName": "fireworks-flower-shape-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-flower-shape-effect-wink.svg",
+            "sizeLabel": "51.0 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2165036,
+            "fileName": "fireworks-gift-shape-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/fireworks-gift-shape-effect-wink.apng",
+            "sizeLabel": "2.06 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-gift-shape-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Gift Shape Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 46637,
+            "fileName": "fireworks-gift-shape-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-gift-shape-effect-wink.svg",
+            "sizeLabel": "45.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4028975,
+            "fileName": "fireworks-gold-burst-frame-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/fireworks-gold-burst-frame-effect-wink.apng",
+            "sizeLabel": "3.84 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-gold-burst-frame-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Gold Burst Frame Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 94939,
+            "fileName": "fireworks-gold-burst-frame-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-gold-burst-frame-effect-wink.svg",
+            "sizeLabel": "92.7 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1826650,
+            "fileName": "fireworks-heart-shape-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/fireworks-heart-shape-effect-wink.apng",
+            "sizeLabel": "1.74 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-heart-shape-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Heart Shape Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 43646,
+            "fileName": "fireworks-heart-shape-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-heart-shape-effect-wink.svg",
+            "sizeLabel": "42.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3800888,
+            "fileName": "fireworks-jackpot-text-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 54,
+            "path": "/winks/effect/apng/fireworks-jackpot-text-effect-wink.apng",
+            "sizeLabel": "3.62 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3600,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-jackpot-text-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Jackpot Text Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 46622,
+            "fileName": "fireworks-jackpot-text-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-jackpot-text-effect-wink.svg",
+            "sizeLabel": "45.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3310466,
+            "fileName": "fireworks-mega-finale-symbols-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 60,
+            "path": "/winks/effect/apng/fireworks-mega-finale-symbols-effect-wink.apng",
+            "sizeLabel": "3.16 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 4000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-mega-finale-symbols-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Mega Finale Symbols Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 82606,
+            "fileName": "fireworks-mega-finale-symbols-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-mega-finale-symbols-effect-wink.svg",
+            "sizeLabel": "80.7 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1325106,
+            "fileName": "fireworks-number-1-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/effect/apng/fireworks-number-1-effect-wink.apng",
+            "sizeLabel": "1.26 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 2800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-number-1-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Number One Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 33335,
+            "fileName": "fireworks-number-1-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-number-1-effect-wink.svg",
+            "sizeLabel": "32.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1443160,
+            "fileName": "fireworks-number-2-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/effect/apng/fireworks-number-2-effect-wink.apng",
+            "sizeLabel": "1.38 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 2800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-number-2-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Number Two Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 35380,
+            "fileName": "fireworks-number-2-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-number-2-effect-wink.svg",
+            "sizeLabel": "34.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1519520,
+            "fileName": "fireworks-number-3-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/effect/apng/fireworks-number-3-effect-wink.apng",
+            "sizeLabel": "1.45 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 2800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-number-3-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Number Three Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 35384,
+            "fileName": "fireworks-number-3-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-number-3-effect-wink.svg",
+            "sizeLabel": "34.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2964912,
+            "fileName": "fireworks-rainbow-arc-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/fireworks-rainbow-arc-effect-wink.apng",
+            "sizeLabel": "2.83 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-rainbow-arc-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Rainbow Arc Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 52119,
+            "fileName": "fireworks-rainbow-arc-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-rainbow-arc-effect-wink.svg",
+            "sizeLabel": "50.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2352207,
+            "fileName": "fireworks-smiley-shape-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/fireworks-smiley-shape-effect-wink.apng",
+            "sizeLabel": "2.24 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-smiley-shape-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Smiley Shape Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 45006,
+            "fileName": "fireworks-smiley-shape-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-smiley-shape-effect-wink.svg",
+            "sizeLabel": "44.0 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2241299,
+            "fileName": "fireworks-star-shape-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/fireworks-star-shape-effect-wink.apng",
+            "sizeLabel": "2.14 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-star-shape-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Star Shape Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 45944,
+            "fileName": "fireworks-star-shape-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-star-shape-effect-wink.svg",
+            "sizeLabel": "44.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1786751,
+            "fileName": "fireworks-thumbs-up-shape-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/fireworks-thumbs-up-shape-effect-wink.apng",
+            "sizeLabel": "1.70 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-thumbs-up-shape-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Thumbs Up Shape Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 42764,
+            "fileName": "fireworks-thumbs-up-shape-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-thumbs-up-shape-effect-wink.svg",
+            "sizeLabel": "41.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2730553,
+            "fileName": "fireworks-trophy-shape-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/fireworks-trophy-shape-effect-wink.apng",
+            "sizeLabel": "2.60 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-trophy-shape-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Trophy Shape Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 48767,
+            "fileName": "fireworks-trophy-shape-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-trophy-shape-effect-wink.svg",
+            "sizeLabel": "47.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1652866,
+            "fileName": "fireworks-win-text-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 44,
+            "path": "/winks/effect/apng/fireworks-win-text-effect-wink.apng",
+            "sizeLabel": "1.58 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Fireworks",
+          "durationMs": 2900,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "fireworks-win-text-effect-wink",
+          "kind": "effect",
+          "name": "Fireworks Win Text Showcase",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 42934,
+            "fileName": "fireworks-win-text-effect-wink.svg",
+            "path": "/winks/effect/svg/fireworks-win-text-effect-wink.svg",
+            "sizeLabel": "41.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2970434,
+            "fileName": "flowers-bloom-pop.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/flowers-bloom-pop.apng",
+            "sizeLabel": "2.83 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Flowers",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "flowers-bloom-pop",
+          "kind": "effect",
+          "name": "Flowers Bloom Pop",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 29623,
+            "fileName": "flowers-bloom-pop.svg",
+            "path": "/winks/effect/svg/flowers-bloom-pop.svg",
+            "sizeLabel": "28.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4054178,
+            "fileName": "flowers-bouquet-burst.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/flowers-bouquet-burst.apng",
+            "sizeLabel": "3.87 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Flowers",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "flowers-bouquet-burst",
+          "kind": "effect",
+          "name": "Flowers Bouquet Burst",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 32167,
+            "fileName": "flowers-bouquet-burst.svg",
+            "path": "/winks/effect/svg/flowers-bouquet-burst.svg",
+            "sizeLabel": "31.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2502826,
+            "fileName": "flowers-petal-rain.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/flowers-petal-rain.apng",
+            "sizeLabel": "2.39 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Flowers",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "flowers-petal-rain",
+          "kind": "effect",
+          "name": "Flowers Petal Rain",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 26938,
+            "fileName": "flowers-petal-rain.svg",
+            "path": "/winks/effect/svg/flowers-petal-rain.svg",
+            "sizeLabel": "26.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2185156,
+            "fileName": "flowers-rose-spin.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/flowers-rose-spin.apng",
+            "sizeLabel": "2.08 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Flowers",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "flowers-rose-spin",
+          "kind": "effect",
+          "name": "Flowers Rose Spin",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 28824,
+            "fileName": "flowers-rose-spin.svg",
+            "path": "/winks/effect/svg/flowers-rose-spin.svg",
+            "sizeLabel": "28.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2957474,
+            "fileName": "flowers-spring-wave.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/flowers-spring-wave.apng",
+            "sizeLabel": "2.82 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Flowers",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "flowers-spring-wave",
+          "kind": "effect",
+          "name": "Flowers Spring Wave",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 31565,
+            "fileName": "flowers-spring-wave.svg",
+            "path": "/winks/effect/svg/flowers-spring-wave.svg",
+            "sizeLabel": "30.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3874,6 +4924,606 @@
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
           "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4541762,
+            "fileName": "happy-birthday-balloon-cake-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 53,
+            "path": "/winks/effect/apng/happy-birthday-balloon-cake-effect-wink.apng",
+            "sizeLabel": "4.33 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Happy Birthday",
+          "durationMs": 3500,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "happy-birthday-balloon-cake-effect-wink",
+          "kind": "effect",
+          "name": "Happy Birthday Balloon Cake",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 36311,
+            "fileName": "happy-birthday-balloon-cake-effect-wink.svg",
+            "path": "/winks/effect/svg/happy-birthday-balloon-cake-effect-wink.svg",
+            "sizeLabel": "35.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3006814,
+            "fileName": "happy-birthday-bounce-title-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 47,
+            "path": "/winks/effect/apng/happy-birthday-bounce-title-effect-wink.apng",
+            "sizeLabel": "2.87 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Happy Birthday",
+          "durationMs": 3100,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "happy-birthday-bounce-title-effect-wink",
+          "kind": "effect",
+          "name": "Happy Birthday Bounce Title",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 34886,
+            "fileName": "happy-birthday-bounce-title-effect-wink.svg",
+            "path": "/winks/effect/svg/happy-birthday-bounce-title-effect-wink.svg",
+            "sizeLabel": "34.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3030058,
+            "fileName": "happy-birthday-cake-pop-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/happy-birthday-cake-pop-effect-wink.apng",
+            "sizeLabel": "2.89 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Happy Birthday",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "happy-birthday-cake-pop-effect-wink",
+          "kind": "effect",
+          "name": "Happy Birthday Cake Pop",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 35818,
+            "fileName": "happy-birthday-cake-pop-effect-wink.svg",
+            "path": "/winks/effect/svg/happy-birthday-cake-pop-effect-wink.svg",
+            "sizeLabel": "35.0 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2802721,
+            "fileName": "happy-birthday-candle-light-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/happy-birthday-candle-light-effect-wink.apng",
+            "sizeLabel": "2.67 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Happy Birthday",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "happy-birthday-candle-light-effect-wink",
+          "kind": "effect",
+          "name": "Happy Birthday Candle Light",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 34084,
+            "fileName": "happy-birthday-candle-light-effect-wink.svg",
+            "path": "/winks/effect/svg/happy-birthday-candle-light-effect-wink.svg",
+            "sizeLabel": "33.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3718368,
+            "fileName": "happy-birthday-confetti-cake-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/happy-birthday-confetti-cake-effect-wink.apng",
+            "sizeLabel": "3.55 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Happy Birthday",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "happy-birthday-confetti-cake-effect-wink",
+          "kind": "effect",
+          "name": "Happy Birthday Confetti Cake",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 37312,
+            "fileName": "happy-birthday-confetti-cake-effect-wink.svg",
+            "path": "/winks/effect/svg/happy-birthday-confetti-cake-effect-wink.svg",
+            "sizeLabel": "36.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3298674,
+            "fileName": "happy-birthday-frosting-write-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 53,
+            "path": "/winks/effect/apng/happy-birthday-frosting-write-effect-wink.apng",
+            "sizeLabel": "3.15 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Happy Birthday",
+          "durationMs": 3500,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "happy-birthday-frosting-write-effect-wink",
+          "kind": "effect",
+          "name": "Happy Birthday Frosting Write",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 34249,
+            "fileName": "happy-birthday-frosting-write-effect-wink.svg",
+            "path": "/winks/effect/svg/happy-birthday-frosting-write-effect-wink.svg",
+            "sizeLabel": "33.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3782147,
+            "fileName": "happy-birthday-gift-cake-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 50,
+            "path": "/winks/effect/apng/happy-birthday-gift-cake-effect-wink.apng",
+            "sizeLabel": "3.61 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Happy Birthday",
+          "durationMs": 3300,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "happy-birthday-gift-cake-effect-wink",
+          "kind": "effect",
+          "name": "Happy Birthday Gift Cake",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 37697,
+            "fileName": "happy-birthday-gift-cake-effect-wink.svg",
+            "path": "/winks/effect/svg/happy-birthday-gift-cake-effect-wink.svg",
+            "sizeLabel": "36.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 9428824,
+            "fileName": "happy-birthday-mega-party-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 59,
+            "path": "/winks/effect/apng/happy-birthday-mega-party-effect-wink.apng",
+            "sizeLabel": "8.99 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Happy Birthday",
+          "durationMs": 3900,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "happy-birthday-mega-party-effect-wink",
+          "kind": "effect",
+          "name": "Happy Birthday Mega Party",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 56620,
+            "fileName": "happy-birthday-mega-party-effect-wink.svg",
+            "path": "/winks/effect/svg/happy-birthday-mega-party-effect-wink.svg",
+            "sizeLabel": "55.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4874572,
+            "fileName": "happy-birthday-party-popper-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/happy-birthday-party-popper-effect-wink.apng",
+            "sizeLabel": "4.65 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Happy Birthday",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "happy-birthday-party-popper-effect-wink",
+          "kind": "effect",
+          "name": "Happy Birthday Party Popper",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 43914,
+            "fileName": "happy-birthday-party-popper-effect-wink.svg",
+            "path": "/winks/effect/svg/happy-birthday-party-popper-effect-wink.svg",
+            "sizeLabel": "42.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3626312,
+            "fileName": "happy-birthday-sparkle-cake-effect-wink.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/happy-birthday-sparkle-cake-effect-wink.apng",
+            "sizeLabel": "3.46 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Happy Birthday",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "happy-birthday-sparkle-cake-effect-wink",
+          "kind": "effect",
+          "name": "Happy Birthday Sparkle Cake",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 37912,
+            "fileName": "happy-birthday-sparkle-cake-effect-wink.svg",
+            "path": "/winks/effect/svg/happy-birthday-sparkle-cake-effect-wink.svg",
+            "sizeLabel": "37.0 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2778579,
+            "fileName": "leprechaun-gold-coins.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/leprechaun-gold-coins.apng",
+            "sizeLabel": "2.65 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Leprechaun",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "leprechaun-gold-coins",
+          "kind": "effect",
+          "name": "Leprechaun Gold Coins",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 30129,
+            "fileName": "leprechaun-gold-coins.svg",
+            "path": "/winks/effect/svg/leprechaun-gold-coins.svg",
+            "sizeLabel": "29.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1929459,
+            "fileName": "leprechaun-hat-bounce.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/effect/apng/leprechaun-hat-bounce.apng",
+            "sizeLabel": "1.84 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Leprechaun",
+          "durationMs": 2800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "leprechaun-hat-bounce",
+          "kind": "effect",
+          "name": "Leprechaun Hat Bounce",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 29067,
+            "fileName": "leprechaun-hat-bounce.svg",
+            "path": "/winks/effect/svg/leprechaun-hat-bounce.svg",
+            "sizeLabel": "28.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3481447,
+            "fileName": "leprechaun-lucky-clover.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/leprechaun-lucky-clover.apng",
+            "sizeLabel": "3.32 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Leprechaun",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "leprechaun-lucky-clover",
+          "kind": "effect",
+          "name": "Leprechaun Lucky Clover",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 35329,
+            "fileName": "leprechaun-lucky-clover.svg",
+            "path": "/winks/effect/svg/leprechaun-lucky-clover.svg",
+            "sizeLabel": "34.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2966448,
+            "fileName": "leprechaun-pot-of-gold.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/leprechaun-pot-of-gold.apng",
+            "sizeLabel": "2.83 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Leprechaun",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "leprechaun-pot-of-gold",
+          "kind": "effect",
+          "name": "Leprechaun Pot Of Gold",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 30038,
+            "fileName": "leprechaun-pot-of-gold.svg",
+            "path": "/winks/effect/svg/leprechaun-pot-of-gold.svg",
+            "sizeLabel": "29.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3221435,
+            "fileName": "leprechaun-rainbow-pop.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/leprechaun-rainbow-pop.apng",
+            "sizeLabel": "3.07 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Leprechaun",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "leprechaun-rainbow-pop",
+          "kind": "effect",
+          "name": "Leprechaun Rainbow Pop",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 29875,
+            "fileName": "leprechaun-rainbow-pop.svg",
+            "path": "/winks/effect/svg/leprechaun-rainbow-pop.svg",
+            "sizeLabel": "29.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1299167,
+            "fileName": "thumbs-up-bounce.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/effect/apng/thumbs-up-bounce.apng",
+            "sizeLabel": "1.24 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Thumbs Up",
+          "durationMs": 2800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "thumbs-up-bounce",
+          "kind": "effect",
+          "name": "Thumbs Up Bounce",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 28066,
+            "fileName": "thumbs-up-bounce.svg",
+            "path": "/winks/effect/svg/thumbs-up-bounce.svg",
+            "sizeLabel": "27.4 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1613496,
+            "fileName": "thumbs-up-confetti.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/thumbs-up-confetti.apng",
+            "sizeLabel": "1.54 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Thumbs Up",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "thumbs-up-confetti",
+          "kind": "effect",
+          "name": "Thumbs Up Confetti",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 28570,
+            "fileName": "thumbs-up-confetti.svg",
+            "path": "/winks/effect/svg/thumbs-up-confetti.svg",
+            "sizeLabel": "27.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2281129,
+            "fileName": "thumbs-up-gold-burst.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/thumbs-up-gold-burst.apng",
+            "sizeLabel": "2.18 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Thumbs Up",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "thumbs-up-gold-burst",
+          "kind": "effect",
+          "name": "Thumbs Up Gold Burst",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 28149,
+            "fileName": "thumbs-up-gold-burst.svg",
+            "path": "/winks/effect/svg/thumbs-up-gold-burst.svg",
+            "sizeLabel": "27.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1295346,
+            "fileName": "thumbs-up-pop.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/effect/apng/thumbs-up-pop.apng",
+            "sizeLabel": "1.24 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Thumbs Up",
+          "durationMs": 2800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "thumbs-up-pop",
+          "kind": "effect",
+          "name": "Thumbs Up Pop",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 28139,
+            "fileName": "thumbs-up-pop.svg",
+            "path": "/winks/effect/svg/thumbs-up-pop.svg",
+            "sizeLabel": "27.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 1672569,
+            "fileName": "thumbs-up-sparkle.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/effect/apng/thumbs-up-sparkle.apng",
+            "sizeLabel": "1.60 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Thumbs Up",
+          "durationMs": 2800,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "thumbs-up-sparkle",
+          "kind": "effect",
+          "name": "Thumbs Up Sparkle",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 29398,
+            "fileName": "thumbs-up-sparkle.svg",
+            "path": "/winks/effect/svg/thumbs-up-sparkle.svg",
+            "sizeLabel": "28.7 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
         }
       ],
       "kind": "effect",
@@ -3885,7 +5535,1508 @@
     "chat": {
       "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
       "height": 1024,
-      "items": [],
+      "items": [
+        {
+          "apng": {
+            "bytes": 907394,
+            "fileName": "bb-chat-bullseye-drop.apng",
+            "fps": 15,
+            "frameCount": 47,
+            "path": "/winks/chat/apng/bb-chat-bullseye-drop.apng",
+            "sizeLabel": "886.1 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3100,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "bb-chat-bullseye-drop",
+          "kind": "chat",
+          "name": "Bingo Ball Bullseye Drop",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 5602,
+            "fileName": "bb-chat-bullseye-drop.svg",
+            "path": "/winks/chat/svg/bb-chat-bullseye-drop.svg",
+            "sizeLabel": "5.5 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 1878502,
+            "fileName": "bb-chat-orbit-juggle.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/chat/apng/bb-chat-orbit-juggle.apng",
+            "sizeLabel": "1.79 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3400,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "bb-chat-orbit-juggle",
+          "kind": "chat",
+          "name": "Bingo Ball Orbit Juggle",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 5881,
+            "fileName": "bb-chat-orbit-juggle.svg",
+            "path": "/winks/chat/svg/bb-chat-orbit-juggle.svg",
+            "sizeLabel": "5.7 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 844237,
+            "fileName": "bb-chat-pinball-pop.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/chat/apng/bb-chat-pinball-pop.apng",
+            "sizeLabel": "824.5 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3200,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "bb-chat-pinball-pop",
+          "kind": "chat",
+          "name": "Bingo Ball Pinball Pop",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 6346,
+            "fileName": "bb-chat-pinball-pop.svg",
+            "path": "/winks/chat/svg/bb-chat-pinball-pop.svg",
+            "sizeLabel": "6.2 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 846332,
+            "fileName": "bb-chat-zigzag-jackpot.apng",
+            "fps": 15,
+            "frameCount": 50,
+            "path": "/winks/chat/apng/bb-chat-zigzag-jackpot.apng",
+            "sizeLabel": "826.5 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Bouncing Bingo Balls",
+          "durationMs": 3300,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "bb-chat-zigzag-jackpot",
+          "kind": "chat",
+          "name": "Bingo Ball Zigzag Jackpot",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 6555,
+            "fileName": "bb-chat-zigzag-jackpot.svg",
+            "path": "/winks/chat/svg/bb-chat-zigzag-jackpot.svg",
+            "sizeLabel": "6.4 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 607764,
+            "fileName": "confetti-chat-burst-frame.apng",
+            "fps": 15,
+            "frameCount": 47,
+            "path": "/winks/chat/apng/confetti-chat-burst-frame.apng",
+            "sizeLabel": "593.5 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Confetti",
+          "durationMs": 3100,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "confetti-chat-burst-frame",
+          "kind": "chat",
+          "name": "Confetti Burst Frame",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 12866,
+            "fileName": "confetti-chat-burst-frame.svg",
+            "path": "/winks/chat/svg/confetti-chat-burst-frame.svg",
+            "sizeLabel": "12.6 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 787739,
+            "fileName": "confetti-chat-cannon-crossfire.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/chat/apng/confetti-chat-cannon-crossfire.apng",
+            "sizeLabel": "769.3 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Confetti",
+          "durationMs": 3000,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "confetti-chat-cannon-crossfire",
+          "kind": "chat",
+          "name": "Confetti Cannon Crossfire",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 13446,
+            "fileName": "confetti-chat-cannon-crossfire.svg",
+            "path": "/winks/chat/svg/confetti-chat-cannon-crossfire.svg",
+            "sizeLabel": "13.1 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 418315,
+            "fileName": "confetti-chat-ribbon-vortex.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/chat/apng/confetti-chat-ribbon-vortex.apng",
+            "sizeLabel": "408.5 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Confetti",
+          "durationMs": 3400,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "confetti-chat-ribbon-vortex",
+          "kind": "chat",
+          "name": "Confetti Ribbon Vortex",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 4025,
+            "fileName": "confetti-chat-ribbon-vortex.svg",
+            "path": "/winks/chat/svg/confetti-chat-ribbon-vortex.svg",
+            "sizeLabel": "3.9 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 598661,
+            "fileName": "confetti-chat-spiral-fall.apng",
+            "fps": 15,
+            "frameCount": 50,
+            "path": "/winks/chat/apng/confetti-chat-spiral-fall.apng",
+            "sizeLabel": "584.6 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Confetti",
+          "durationMs": 3300,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "confetti-chat-spiral-fall",
+          "kind": "chat",
+          "name": "Confetti Spiral Fall",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 8217,
+            "fileName": "confetti-chat-spiral-fall.svg",
+            "path": "/winks/chat/svg/confetti-chat-spiral-fall.svg",
+            "sizeLabel": "8.0 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 1539218,
+            "fileName": "countdown-bingo-ball-letters-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 59,
+            "path": "/winks/chat/apng/countdown-bingo-ball-letters-chat-wink.apng",
+            "sizeLabel": "1.47 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Countdown",
+          "durationMs": 3900,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "countdown-bingo-ball-letters-chat-wink",
+          "kind": "chat",
+          "name": "Countdown Bingo Ball Letters",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 39732,
+            "fileName": "countdown-bingo-ball-letters-chat-wink.svg",
+            "path": "/winks/chat/svg/countdown-bingo-ball-letters-chat-wink.svg",
+            "sizeLabel": "38.8 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 1389980,
+            "fileName": "countdown-bingo-bounce-letters-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 54,
+            "path": "/winks/chat/apng/countdown-bingo-bounce-letters-chat-wink.apng",
+            "sizeLabel": "1.33 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Countdown",
+          "durationMs": 3600,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "countdown-bingo-bounce-letters-chat-wink",
+          "kind": "chat",
+          "name": "Countdown Bingo Bounce Letters",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 39779,
+            "fileName": "countdown-bingo-bounce-letters-chat-wink.svg",
+            "path": "/winks/chat/svg/countdown-bingo-bounce-letters-chat-wink.svg",
+            "sizeLabel": "38.8 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 881771,
+            "fileName": "countdown-bingo-confetti-reveal-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 59,
+            "path": "/winks/chat/apng/countdown-bingo-confetti-reveal-chat-wink.apng",
+            "sizeLabel": "861.1 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Countdown",
+          "durationMs": 3900,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "countdown-bingo-confetti-reveal-chat-wink",
+          "kind": "chat",
+          "name": "Countdown Bingo Confetti Reveal",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 38458,
+            "fileName": "countdown-bingo-confetti-reveal-chat-wink.svg",
+            "path": "/winks/chat/svg/countdown-bingo-confetti-reveal-chat-wink.svg",
+            "sizeLabel": "37.6 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 1812777,
+            "fileName": "countdown-bingo-gold-flash-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 57,
+            "path": "/winks/chat/apng/countdown-bingo-gold-flash-chat-wink.apng",
+            "sizeLabel": "1.73 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Countdown",
+          "durationMs": 3800,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "countdown-bingo-gold-flash-chat-wink",
+          "kind": "chat",
+          "name": "Countdown Bingo Gold Flash",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 37073,
+            "fileName": "countdown-bingo-gold-flash-chat-wink.svg",
+            "path": "/winks/chat/svg/countdown-bingo-gold-flash-chat-wink.svg",
+            "sizeLabel": "36.2 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 1605852,
+            "fileName": "countdown-bingo-letter-pop-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 57,
+            "path": "/winks/chat/apng/countdown-bingo-letter-pop-chat-wink.apng",
+            "sizeLabel": "1.53 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Countdown",
+          "durationMs": 3800,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "countdown-bingo-letter-pop-chat-wink",
+          "kind": "chat",
+          "name": "Countdown Bingo Letter Pop",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 38472,
+            "fileName": "countdown-bingo-letter-pop-chat-wink.svg",
+            "path": "/winks/chat/svg/countdown-bingo-letter-pop-chat-wink.svg",
+            "sizeLabel": "37.6 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 642479,
+            "fileName": "countdown-simple-confetti-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/chat/apng/countdown-simple-confetti-chat-wink.apng",
+            "sizeLabel": "627.4 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Countdown",
+          "durationMs": 3000,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "countdown-simple-confetti-chat-wink",
+          "kind": "chat",
+          "name": "Countdown Simple Confetti",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 29444,
+            "fileName": "countdown-simple-confetti-chat-wink.svg",
+            "path": "/winks/chat/svg/countdown-simple-confetti-chat-wink.svg",
+            "sizeLabel": "28.8 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 1141071,
+            "fileName": "countdown-simple-firework-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/chat/apng/countdown-simple-firework-chat-wink.apng",
+            "sizeLabel": "1.09 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Countdown",
+          "durationMs": 3200,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "countdown-simple-firework-chat-wink",
+          "kind": "chat",
+          "name": "Countdown Simple Firework",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 32500,
+            "fileName": "countdown-simple-firework-chat-wink.svg",
+            "path": "/winks/chat/svg/countdown-simple-firework-chat-wink.svg",
+            "sizeLabel": "31.7 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 1028482,
+            "fileName": "countdown-simple-gold-burst-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/chat/apng/countdown-simple-gold-burst-chat-wink.apng",
+            "sizeLabel": "1004.4 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Countdown",
+          "durationMs": 3000,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "countdown-simple-gold-burst-chat-wink",
+          "kind": "chat",
+          "name": "Countdown Simple Gold Burst",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 27681,
+            "fileName": "countdown-simple-gold-burst-chat-wink.svg",
+            "path": "/winks/chat/svg/countdown-simple-gold-burst-chat-wink.svg",
+            "sizeLabel": "27.0 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 812596,
+            "fileName": "countdown-simple-party-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/chat/apng/countdown-simple-party-chat-wink.apng",
+            "sizeLabel": "793.6 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Countdown",
+          "durationMs": 3200,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "countdown-simple-party-chat-wink",
+          "kind": "chat",
+          "name": "Countdown Simple Party",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 29545,
+            "fileName": "countdown-simple-party-chat-wink.svg",
+            "path": "/winks/chat/svg/countdown-simple-party-chat-wink.svg",
+            "sizeLabel": "28.9 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 841470,
+            "fileName": "countdown-simple-pop-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 44,
+            "path": "/winks/chat/apng/countdown-simple-pop-chat-wink.apng",
+            "sizeLabel": "821.7 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Countdown",
+          "durationMs": 2900,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "countdown-simple-pop-chat-wink",
+          "kind": "chat",
+          "name": "Countdown Simple Pop",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 29378,
+            "fileName": "countdown-simple-pop-chat-wink.svg",
+            "path": "/winks/chat/svg/countdown-simple-pop-chat-wink.svg",
+            "sizeLabel": "28.7 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 193581,
+            "fileName": "fireworks-chat-bingo-script.apng",
+            "fps": 15,
+            "frameCount": 54,
+            "path": "/winks/chat/apng/fireworks-chat-bingo-script.apng",
+            "sizeLabel": "189.0 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Fireworks",
+          "durationMs": 3600,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "fireworks-chat-bingo-script",
+          "kind": "chat",
+          "name": "Fireworks Bingo Script",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 4137,
+            "fileName": "fireworks-chat-bingo-script.svg",
+            "path": "/winks/chat/svg/fireworks-chat-bingo-script.svg",
+            "sizeLabel": "4.0 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 256195,
+            "fileName": "fireworks-chat-heart-trace.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/chat/apng/fireworks-chat-heart-trace.apng",
+            "sizeLabel": "250.2 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Fireworks",
+          "durationMs": 3400,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "fireworks-chat-heart-trace",
+          "kind": "chat",
+          "name": "Fireworks Heart Trace",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 3926,
+            "fileName": "fireworks-chat-heart-trace.svg",
+            "path": "/winks/chat/svg/fireworks-chat-heart-trace.svg",
+            "sizeLabel": "3.8 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 320227,
+            "fileName": "fireworks-chat-smiley-pop.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/chat/apng/fireworks-chat-smiley-pop.apng",
+            "sizeLabel": "312.7 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Fireworks",
+          "durationMs": 3000,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "fireworks-chat-smiley-pop",
+          "kind": "chat",
+          "name": "Fireworks Smiley Pop",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 3557,
+            "fileName": "fireworks-chat-smiley-pop.svg",
+            "path": "/winks/chat/svg/fireworks-chat-smiley-pop.svg",
+            "sizeLabel": "3.5 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 622378,
+            "fileName": "fireworks-chat-star-crown.apng",
+            "fps": 15,
+            "frameCount": 53,
+            "path": "/winks/chat/apng/fireworks-chat-star-crown.apng",
+            "sizeLabel": "607.8 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Fireworks",
+          "durationMs": 3500,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "fireworks-chat-star-crown",
+          "kind": "chat",
+          "name": "Fireworks Star Crown",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 11264,
+            "fileName": "fireworks-chat-star-crown.svg",
+            "path": "/winks/chat/svg/fireworks-chat-star-crown.svg",
+            "sizeLabel": "11.0 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 1716932,
+            "fileName": "flowers-floral-confetti.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/chat/apng/flowers-floral-confetti.apng",
+            "sizeLabel": "1.64 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Flowers",
+          "durationMs": 3200,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "flowers-floral-confetti",
+          "kind": "chat",
+          "name": "Flowers Floral Confetti",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 29869,
+            "fileName": "flowers-floral-confetti.svg",
+            "path": "/winks/chat/svg/flowers-floral-confetti.svg",
+            "sizeLabel": "29.2 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 1796851,
+            "fileName": "flowers-garden-sparkle.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/chat/apng/flowers-garden-sparkle.apng",
+            "sizeLabel": "1.71 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Flowers",
+          "durationMs": 3000,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "flowers-garden-sparkle",
+          "kind": "chat",
+          "name": "Flowers Garden Sparkle",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 29536,
+            "fileName": "flowers-garden-sparkle.svg",
+            "path": "/winks/chat/svg/flowers-garden-sparkle.svg",
+            "sizeLabel": "28.8 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 1421868,
+            "fileName": "flowers-heart-petals.apng",
+            "fps": 15,
+            "frameCount": 44,
+            "path": "/winks/chat/apng/flowers-heart-petals.apng",
+            "sizeLabel": "1.36 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Flowers",
+          "durationMs": 2900,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "flowers-heart-petals",
+          "kind": "chat",
+          "name": "Flowers Heart Petals",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 29488,
+            "fileName": "flowers-heart-petals.svg",
+            "path": "/winks/chat/svg/flowers-heart-petals.svg",
+            "sizeLabel": "28.8 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 2178064,
+            "fileName": "flowers-mega-bloom.apng",
+            "fps": 15,
+            "frameCount": 54,
+            "path": "/winks/chat/apng/flowers-mega-bloom.apng",
+            "sizeLabel": "2.08 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Flowers",
+          "durationMs": 3600,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "flowers-mega-bloom",
+          "kind": "chat",
+          "name": "Flowers Mega Bloom",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 32016,
+            "fileName": "flowers-mega-bloom.svg",
+            "path": "/winks/chat/svg/flowers-mega-bloom.svg",
+            "sizeLabel": "31.3 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 2093168,
+            "fileName": "flowers-soft-bloom.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/chat/apng/flowers-soft-bloom.apng",
+            "sizeLabel": "2.00 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Flowers",
+          "durationMs": 3000,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "flowers-soft-bloom",
+          "kind": "chat",
+          "name": "Flowers Soft Bloom",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 29559,
+            "fileName": "flowers-soft-bloom.svg",
+            "path": "/winks/chat/svg/flowers-soft-bloom.svg",
+            "sizeLabel": "28.9 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 570194,
+            "fileName": "gold-stars-chat-constellation.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/chat/apng/gold-stars-chat-constellation.apng",
+            "sizeLabel": "556.8 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Gold Stars",
+          "durationMs": 3200,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "gold-stars-chat-constellation",
+          "kind": "chat",
+          "name": "Gold Star Constellation",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 5529,
+            "fileName": "gold-stars-chat-constellation.svg",
+            "path": "/winks/chat/svg/gold-stars-chat-constellation.svg",
+            "sizeLabel": "5.4 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 697669,
+            "fileName": "gold-stars-chat-shooting-ring.apng",
+            "fps": 15,
+            "frameCount": 50,
+            "path": "/winks/chat/apng/gold-stars-chat-shooting-ring.apng",
+            "sizeLabel": "681.3 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Gold Stars",
+          "durationMs": 3300,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "gold-stars-chat-shooting-ring",
+          "kind": "chat",
+          "name": "Gold Star Shooting Ring",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 5563,
+            "fileName": "gold-stars-chat-shooting-ring.svg",
+            "path": "/winks/chat/svg/gold-stars-chat-shooting-ring.svg",
+            "sizeLabel": "5.4 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 536591,
+            "fileName": "gold-stars-chat-trophy-rise.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/chat/apng/gold-stars-chat-trophy-rise.apng",
+            "sizeLabel": "524.0 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Gold Stars",
+          "durationMs": 3400,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "gold-stars-chat-trophy-rise",
+          "kind": "chat",
+          "name": "Gold Star Trophy Rise",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 5640,
+            "fileName": "gold-stars-chat-trophy-rise.svg",
+            "path": "/winks/chat/svg/gold-stars-chat-trophy-rise.svg",
+            "sizeLabel": "5.5 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 3228400,
+            "fileName": "happy-birthday-balloon-cake-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/chat/apng/happy-birthday-balloon-cake-chat-wink.apng",
+            "sizeLabel": "3.08 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Happy Birthday",
+          "durationMs": 3400,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "happy-birthday-balloon-cake-chat-wink",
+          "kind": "chat",
+          "name": "Happy Birthday Balloon Cake",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 35637,
+            "fileName": "happy-birthday-balloon-cake-chat-wink.svg",
+            "path": "/winks/chat/svg/happy-birthday-balloon-cake-chat-wink.svg",
+            "sizeLabel": "34.8 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 2013046,
+            "fileName": "happy-birthday-bounce-title-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/chat/apng/happy-birthday-bounce-title-chat-wink.apng",
+            "sizeLabel": "1.92 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Happy Birthday",
+          "durationMs": 3000,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "happy-birthday-bounce-title-chat-wink",
+          "kind": "chat",
+          "name": "Happy Birthday Bounce Title",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 34389,
+            "fileName": "happy-birthday-bounce-title-chat-wink.svg",
+            "path": "/winks/chat/svg/happy-birthday-bounce-title-chat-wink.svg",
+            "sizeLabel": "33.6 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 2146494,
+            "fileName": "happy-birthday-cake-pop-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/chat/apng/happy-birthday-cake-pop-chat-wink.apng",
+            "sizeLabel": "2.05 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Happy Birthday",
+          "durationMs": 3000,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "happy-birthday-cake-pop-chat-wink",
+          "kind": "chat",
+          "name": "Happy Birthday Cake Pop",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 35390,
+            "fileName": "happy-birthday-cake-pop-chat-wink.svg",
+            "path": "/winks/chat/svg/happy-birthday-cake-pop-chat-wink.svg",
+            "sizeLabel": "34.6 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 1963969,
+            "fileName": "happy-birthday-candle-light-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/chat/apng/happy-birthday-candle-light-chat-wink.apng",
+            "sizeLabel": "1.87 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Happy Birthday",
+          "durationMs": 3200,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "happy-birthday-candle-light-chat-wink",
+          "kind": "chat",
+          "name": "Happy Birthday Candle Light",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 33520,
+            "fileName": "happy-birthday-candle-light-chat-wink.svg",
+            "path": "/winks/chat/svg/happy-birthday-candle-light-chat-wink.svg",
+            "sizeLabel": "32.7 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 2553335,
+            "fileName": "happy-birthday-confetti-cake-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 50,
+            "path": "/winks/chat/apng/happy-birthday-confetti-cake-chat-wink.apng",
+            "sizeLabel": "2.44 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Happy Birthday",
+          "durationMs": 3300,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "happy-birthday-confetti-cake-chat-wink",
+          "kind": "chat",
+          "name": "Happy Birthday Confetti Cake",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 36451,
+            "fileName": "happy-birthday-confetti-cake-chat-wink.svg",
+            "path": "/winks/chat/svg/happy-birthday-confetti-cake-chat-wink.svg",
+            "sizeLabel": "35.6 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 2196539,
+            "fileName": "happy-birthday-frosting-write-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/chat/apng/happy-birthday-frosting-write-chat-wink.apng",
+            "sizeLabel": "2.09 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Happy Birthday",
+          "durationMs": 3400,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "happy-birthday-frosting-write-chat-wink",
+          "kind": "chat",
+          "name": "Happy Birthday Frosting Write",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 33862,
+            "fileName": "happy-birthday-frosting-write-chat-wink.svg",
+            "path": "/winks/chat/svg/happy-birthday-frosting-write-chat-wink.svg",
+            "sizeLabel": "33.1 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 2592748,
+            "fileName": "happy-birthday-gift-cake-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/chat/apng/happy-birthday-gift-cake-chat-wink.apng",
+            "sizeLabel": "2.47 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Happy Birthday",
+          "durationMs": 3200,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "happy-birthday-gift-cake-chat-wink",
+          "kind": "chat",
+          "name": "Happy Birthday Gift Cake",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 37169,
+            "fileName": "happy-birthday-gift-cake-chat-wink.svg",
+            "path": "/winks/chat/svg/happy-birthday-gift-cake-chat-wink.svg",
+            "sizeLabel": "36.3 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 6710090,
+            "fileName": "happy-birthday-mega-party-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 56,
+            "path": "/winks/chat/apng/happy-birthday-mega-party-chat-wink.apng",
+            "sizeLabel": "6.40 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Happy Birthday",
+          "durationMs": 3700,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "happy-birthday-mega-party-chat-wink",
+          "kind": "chat",
+          "name": "Happy Birthday Mega Party",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 54847,
+            "fileName": "happy-birthday-mega-party-chat-wink.svg",
+            "path": "/winks/chat/svg/happy-birthday-mega-party-chat-wink.svg",
+            "sizeLabel": "53.6 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 3316754,
+            "fileName": "happy-birthday-party-popper-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 50,
+            "path": "/winks/chat/apng/happy-birthday-party-popper-chat-wink.apng",
+            "sizeLabel": "3.16 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Happy Birthday",
+          "durationMs": 3300,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "happy-birthday-party-popper-chat-wink",
+          "kind": "chat",
+          "name": "Happy Birthday Party Popper",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 41877,
+            "fileName": "happy-birthday-party-popper-chat-wink.svg",
+            "path": "/winks/chat/svg/happy-birthday-party-popper-chat-wink.svg",
+            "sizeLabel": "40.9 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 2573877,
+            "fileName": "happy-birthday-sparkle-cake-chat-wink.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/chat/apng/happy-birthday-sparkle-cake-chat-wink.apng",
+            "sizeLabel": "2.45 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Happy Birthday",
+          "durationMs": 3200,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "happy-birthday-sparkle-cake-chat-wink",
+          "kind": "chat",
+          "name": "Happy Birthday Sparkle Cake",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 37439,
+            "fileName": "happy-birthday-sparkle-cake-chat-wink.svg",
+            "path": "/winks/chat/svg/happy-birthday-sparkle-cake-chat-wink.svg",
+            "sizeLabel": "36.6 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 2411260,
+            "fileName": "leprechaun-clover-burst.apng",
+            "fps": 15,
+            "frameCount": 44,
+            "path": "/winks/chat/apng/leprechaun-clover-burst.apng",
+            "sizeLabel": "2.30 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Leprechaun",
+          "durationMs": 2900,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "leprechaun-clover-burst",
+          "kind": "chat",
+          "name": "Leprechaun Clover Burst",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 34808,
+            "fileName": "leprechaun-clover-burst.svg",
+            "path": "/winks/chat/svg/leprechaun-clover-burst.svg",
+            "sizeLabel": "34.0 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 1845079,
+            "fileName": "leprechaun-gold-rain.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/chat/apng/leprechaun-gold-rain.apng",
+            "sizeLabel": "1.76 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Leprechaun",
+          "durationMs": 3200,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "leprechaun-gold-rain",
+          "kind": "chat",
+          "name": "Leprechaun Gold Rain",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 27226,
+            "fileName": "leprechaun-gold-rain.svg",
+            "path": "/winks/chat/svg/leprechaun-gold-rain.svg",
+            "sizeLabel": "26.6 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 2110124,
+            "fileName": "leprechaun-jackpot-luck.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/chat/apng/leprechaun-jackpot-luck.apng",
+            "sizeLabel": "2.01 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Leprechaun",
+          "durationMs": 3400,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "leprechaun-jackpot-luck",
+          "kind": "chat",
+          "name": "Leprechaun Jackpot Luck",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 29599,
+            "fileName": "leprechaun-jackpot-luck.svg",
+            "path": "/winks/chat/svg/leprechaun-jackpot-luck.svg",
+            "sizeLabel": "28.9 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 2308441,
+            "fileName": "leprechaun-lucky-spin.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/chat/apng/leprechaun-lucky-spin.apng",
+            "sizeLabel": "2.20 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Leprechaun",
+          "durationMs": 2800,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "leprechaun-lucky-spin",
+          "kind": "chat",
+          "name": "Leprechaun Lucky Spin",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 34909,
+            "fileName": "leprechaun-lucky-spin.svg",
+            "path": "/winks/chat/svg/leprechaun-lucky-spin.svg",
+            "sizeLabel": "34.1 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 1405903,
+            "fileName": "leprechaun-magic-spark.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/chat/apng/leprechaun-magic-spark.apng",
+            "sizeLabel": "1.34 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Leprechaun",
+          "durationMs": 2800,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "leprechaun-magic-spark",
+          "kind": "chat",
+          "name": "Leprechaun Magic Spark",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 28842,
+            "fileName": "leprechaun-magic-spark.svg",
+            "path": "/winks/chat/svg/leprechaun-magic-spark.svg",
+            "sizeLabel": "28.2 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 948893,
+            "fileName": "thumbs-up-chat-reaction.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/chat/apng/thumbs-up-chat-reaction.apng",
+            "sizeLabel": "926.7 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Thumbs Up",
+          "durationMs": 2800,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "thumbs-up-chat-reaction",
+          "kind": "chat",
+          "name": "Thumbs Up Chat Reaction",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 27906,
+            "fileName": "thumbs-up-chat-reaction.svg",
+            "path": "/winks/chat/svg/thumbs-up-chat-reaction.svg",
+            "sizeLabel": "27.3 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 954742,
+            "fileName": "thumbs-up-fast-reaction.apng",
+            "fps": 15,
+            "frameCount": 39,
+            "path": "/winks/chat/apng/thumbs-up-fast-reaction.apng",
+            "sizeLabel": "932.4 KB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Thumbs Up",
+          "durationMs": 2600,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "thumbs-up-fast-reaction",
+          "kind": "chat",
+          "name": "Thumbs Up Fast Reaction",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 28091,
+            "fileName": "thumbs-up-fast-reaction.svg",
+            "path": "/winks/chat/svg/thumbs-up-fast-reaction.svg",
+            "sizeLabel": "27.4 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 2036804,
+            "fileName": "thumbs-up-jackpot.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/chat/apng/thumbs-up-jackpot.apng",
+            "sizeLabel": "1.94 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Thumbs Up",
+          "durationMs": 3200,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "thumbs-up-jackpot",
+          "kind": "chat",
+          "name": "Thumbs Up Jackpot",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 30616,
+            "fileName": "thumbs-up-jackpot.svg",
+            "path": "/winks/chat/svg/thumbs-up-jackpot.svg",
+            "sizeLabel": "29.9 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 1431484,
+            "fileName": "thumbs-up-star-ring.apng",
+            "fps": 15,
+            "frameCount": 42,
+            "path": "/winks/chat/apng/thumbs-up-star-ring.apng",
+            "sizeLabel": "1.37 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Thumbs Up",
+          "durationMs": 2800,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "thumbs-up-star-ring",
+          "kind": "chat",
+          "name": "Thumbs Up Star Ring",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 30657,
+            "fileName": "thumbs-up-star-ring.svg",
+            "path": "/winks/chat/svg/thumbs-up-star-ring.svg",
+            "sizeLabel": "29.9 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        },
+        {
+          "apng": {
+            "bytes": 1402808,
+            "fileName": "thumbs-up-win-badge.apng",
+            "fps": 15,
+            "frameCount": 44,
+            "path": "/winks/chat/apng/thumbs-up-win-badge.apng",
+            "sizeLabel": "1.34 MB",
+            "transparent": true
+          },
+          "aspectRatio": "3:4",
+          "category": "Thumbs Up",
+          "durationMs": 2900,
+          "edgeGuidance": "Avoid placing important elements too close to the top and bottom edges.",
+          "height": 1024,
+          "id": "thumbs-up-win-badge",
+          "kind": "chat",
+          "name": "Thumbs Up Win Badge",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
+          "svg": {
+            "bytes": 27738,
+            "fileName": "thumbs-up-win-badge.svg",
+            "path": "/winks/chat/svg/thumbs-up-win-badge.svg",
+            "sizeLabel": "27.1 KB"
+          },
+          "typeLabel": "Portrait / Chat Overlay",
+          "viewBox": "0 0 768 1024",
+          "width": 768
+        }
+      ],
       "kind": "chat",
       "label": "Gabriel Winks Chat",
       "safeArea": "centered",

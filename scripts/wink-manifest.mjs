@@ -108,6 +108,7 @@ export function parseSvgMetrics(fileContents, spec) {
   const height = normalizeDimension(svg.getAttribute("height"));
 
   return {
+    category: svg.getAttribute("data-wink-category") ?? null,
     durationMs: estimateDurationMs(svg, fileContents),
     height: Number.isFinite(height) ? height : parsedViewBox?.height ?? spec.height,
     name:
@@ -177,7 +178,7 @@ async function buildItem(kind, id, spec, paths, metadataMap) {
         }
       : null,
     aspectRatio: spec.aspectRatio,
-    category: metadata?.category ?? null,
+    category: metadata?.category ?? svgMetrics?.category ?? null,
     durationMs,
     edgeGuidance: spec.edgeGuidance,
     height: svgMetrics?.height ?? metadata?.height ?? spec.height,
