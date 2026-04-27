@@ -116,16 +116,12 @@ const manifest: WinksManifest = {
 };
 
 describe("WinkLibrarySection", () => {
-  it("renders card downloads and the full pack link", () => {
+  it("renders card downloads and quick navigation", () => {
     render(<WinkLibrarySection manifest={manifest} />);
 
     expect(
       screen.getByRole("button", { name: "Bingo Wink Effects Library" })
     ).toHaveAttribute("type", "button");
-    expect(screen.getByRole("link", { name: "Download Full Pack" })).toHaveAttribute(
-      "href",
-      "/winks/downloads/gabriel-winks-full-pack.zip"
-    );
     expect(screen.getAllByRole("link", { name: "SVG" })[0]).toHaveAttribute(
       "href",
       "/winks/effect/svg/countdown-pop-bingo.svg"

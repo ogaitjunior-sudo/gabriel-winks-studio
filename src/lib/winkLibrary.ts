@@ -4,8 +4,6 @@ import { resolveWinkAssetPath } from "@/lib/winkManifest";
 export const WINK_LIBRARY_ALL_FILTER = "All";
 export const WINK_LIBRARY_CHAT_FILTER = "Chat Winks";
 export const WINK_LIBRARY_OVERVIEW_FILTER = "Bingo Wink Effects Library";
-export const WINK_LIBRARY_FULL_PACK_PATH = "/winks/downloads/gabriel-winks-full-pack.zip";
-export const WINK_LIBRARY_FULL_PACK_FILE_NAME = "gabriel-winks-full-pack.zip";
 
 export const WINK_LIBRARY_TAG_FILTERS = [
   { id: "all", label: "All" },

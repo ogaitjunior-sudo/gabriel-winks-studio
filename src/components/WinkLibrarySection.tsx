@@ -1,5 +1,5 @@
 import { useDeferredValue, useMemo, useState } from "react";
-import { Download, Package, Search, Sparkles } from "lucide-react";
+import { Download, Search, Sparkles } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -7,8 +7,6 @@ import { formatAssetSize } from "@/lib/winkManifest";
 import {
   WINK_LIBRARY_ALL_FILTER,
   WINK_LIBRARY_CHAT_FILTER,
-  WINK_LIBRARY_FULL_PACK_FILE_NAME,
-  WINK_LIBRARY_FULL_PACK_PATH,
   WINK_LIBRARY_OVERVIEW_FILTER,
   WINK_LIBRARY_TAG_FILTERS,
   filterWinkLibraryItems,
@@ -106,12 +104,6 @@ export function WinkLibrarySection({
           <div className="rounded-full border border-primary/25 bg-primary/10 px-3 py-1 text-xs text-primary">
             {allItems.length} total wink cards
           </div>
-          <Button asChild className="min-w-[200px] justify-center" size="sm">
-            <a href={WINK_LIBRARY_FULL_PACK_PATH} download={WINK_LIBRARY_FULL_PACK_FILE_NAME}>
-              <Package className="h-4 w-4" />
-              Download Full Pack
-            </a>
-          </Button>
         </div>
       </div>
 

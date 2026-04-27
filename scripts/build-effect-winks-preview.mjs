@@ -5,7 +5,6 @@ import { WINKS_ROOT, escapeHtml, formatBytes } from "./wink-config.mjs";
 import { writeWinksManifest } from "./wink-manifest.mjs";
 
 const previewPath = path.join(WINKS_ROOT, "preview.html");
-const fullPackPath = "/winks/downloads/gabriel-winks-full-pack.zip";
 const overviewFilterLabel = "Bingo Wink Effects Library";
 const allFilterLabel = "All";
 const chatFilterLabel = "Chat Winks";
@@ -263,15 +262,6 @@ function renderHtml(manifest) {
       align-items: center;
     }
 
-    .toolbar-actions a {
-      color: var(--bg);
-      background: var(--accent);
-      border-radius: 10px;
-      font-weight: 700;
-      padding: 9px 12px;
-      text-decoration: none;
-    }
-
     button {
       border: 1px solid var(--border);
       border-radius: 8px;
@@ -468,7 +458,6 @@ function renderHtml(manifest) {
                 )}" aria-pressed="false">${escapeHtml(category)}</button>`
             )
             .join("")}
-          <a href="${fullPackPath}" download="gabriel-winks-full-pack.zip">Download Full Pack</a>
         </div>
       </div>
     </div>
