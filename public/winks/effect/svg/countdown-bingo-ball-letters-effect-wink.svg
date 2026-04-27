@@ -1210,25 +1210,31 @@
     <g>
       <ellipse cx="960" cy="658.2988799999999" rx="82.353024" ry="18.11766528" fill="#000" opacity="0.16" />
       <circle cx="960" cy="542.16" r="105.5808" fill="#ffd454" stroke="#102a52" stroke-width="8.446464" />
-      <circle cx="960" cy="542.16" r="67.571712" fill="#fffdf6" stroke="#102a52" stroke-width="5.27904" />
-      <text x="960" y="544.271616" text-anchor="middle" dominant-baseline="central" font-size="99.24595199999999" font-weight="900" fill="#102a52" stroke="#fffdf6" stroke-width="3.9698380799999997" letter-spacing="2.9773785599999996" >3</text>
-      <ellipse cx="924.102528" cy="491.48121599999996" rx="35.897472" ry="17.948736" fill="#fff" opacity="0.42" />
+      <circle cx="960" cy="542.16" r="92.911104" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="4.223232" />
+      <circle cx="960" cy="542.16" r="67.571712" fill="#ffffff" stroke="#102a52" stroke-width="5.27904" />
+      <text x="960" y="544.271616" text-anchor="middle" dominant-baseline="central" font-size="99.24595199999999" font-weight="900" fill="#ffd454" stroke="#102a52" stroke-width="6.334847999999999" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">3</text>
+      <ellipse cx="921.990912" cy="491.48121599999996" rx="35.897472" ry="17.948736" fill="#fff" opacity="0.5" />
+      <path d="M 905.097984 531.60192 C 940.995456 516.820608, 968.446464 525.267072, 991.67424 546.383232" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="3.6953280000000004" />
     </g>
   </g><g style="transform-origin:960px 542.16px; animation:cdcountdownbingoballletterseffectwinkdigit1 4s linear infinite;">
     <g>
       <ellipse cx="960" cy="658.2988799999999" rx="82.353024" ry="18.11766528" fill="#000" opacity="0.16" />
       <circle cx="960" cy="542.16" r="105.5808" fill="#ffd454" stroke="#102a52" stroke-width="8.446464" />
-      <circle cx="960" cy="542.16" r="67.571712" fill="#fffdf6" stroke="#102a52" stroke-width="5.27904" />
-      <text x="960" y="544.271616" text-anchor="middle" dominant-baseline="central" font-size="99.24595199999999" font-weight="900" fill="#102a52" stroke="#fffdf6" stroke-width="3.9698380799999997" letter-spacing="2.9773785599999996" >2</text>
-      <ellipse cx="924.102528" cy="491.48121599999996" rx="35.897472" ry="17.948736" fill="#fff" opacity="0.42" />
+      <circle cx="960" cy="542.16" r="92.911104" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="4.223232" />
+      <circle cx="960" cy="542.16" r="67.571712" fill="#ffffff" stroke="#102a52" stroke-width="5.27904" />
+      <text x="960" y="544.271616" text-anchor="middle" dominant-baseline="central" font-size="99.24595199999999" font-weight="900" fill="#ffd454" stroke="#102a52" stroke-width="6.334847999999999" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">2</text>
+      <ellipse cx="921.990912" cy="491.48121599999996" rx="35.897472" ry="17.948736" fill="#fff" opacity="0.5" />
+      <path d="M 905.097984 531.60192 C 940.995456 516.820608, 968.446464 525.267072, 991.67424 546.383232" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="3.6953280000000004" />
     </g>
   </g><g style="transform-origin:960px 542.16px; animation:cdcountdownbingoballletterseffectwinkdigit2 4s linear infinite;">
     <g>
       <ellipse cx="960" cy="658.2988799999999" rx="82.353024" ry="18.11766528" fill="#000" opacity="0.16" />
       <circle cx="960" cy="542.16" r="105.5808" fill="#ffd454" stroke="#102a52" stroke-width="8.446464" />
-      <circle cx="960" cy="542.16" r="67.571712" fill="#fffdf6" stroke="#102a52" stroke-width="5.27904" />
-      <text x="960" y="544.271616" text-anchor="middle" dominant-baseline="central" font-size="99.24595199999999" font-weight="900" fill="#102a52" stroke="#fffdf6" stroke-width="3.9698380799999997" letter-spacing="2.9773785599999996" >1</text>
-      <ellipse cx="924.102528" cy="491.48121599999996" rx="35.897472" ry="17.948736" fill="#fff" opacity="0.42" />
+      <circle cx="960" cy="542.16" r="92.911104" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="4.223232" />
+      <circle cx="960" cy="542.16" r="67.571712" fill="#ffffff" stroke="#102a52" stroke-width="5.27904" />
+      <text x="960" y="544.271616" text-anchor="middle" dominant-baseline="central" font-size="99.24595199999999" font-weight="900" fill="#ffd454" stroke="#102a52" stroke-width="6.334847999999999" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">1</text>
+      <ellipse cx="921.990912" cy="491.48121599999996" rx="35.897472" ry="17.948736" fill="#fff" opacity="0.5" />
+      <path d="M 905.097984 531.60192 C 940.995456 516.820608, 968.446464 525.267072, 991.67424 546.383232" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="3.6953280000000004" />
     </g>
   </g>
     
@@ -1240,42 +1246,52 @@
       <g style="transform-origin:582.78px 562.46px; animation:cdcountdownbingoballletterseffectwinkletter0 4s linear infinite;">
     <g>
       <ellipse cx="582.78" cy="653.8884800000001" rx="64.831104" ry="14.26284288" fill="#000" opacity="0.16" />
-      <circle cx="582.78" cy="562.46" r="83.1168" fill="#ffd454" stroke="#102a52" stroke-width="6.649344" />
-      <circle cx="582.78" cy="562.46" r="53.194752" fill="#fffdf6" stroke="#102a52" stroke-width="4.15584" />
-      <text x="582.78" y="564.122336" text-anchor="middle" dominant-baseline="central" font-size="78.129792" font-weight="900" fill="#102a52" stroke="#fffdf6" stroke-width="3.12519168" letter-spacing="2.34389376" >B</text>
-      <ellipse cx="554.5202879999999" cy="522.563936" rx="28.259712" ry="14.129856" fill="#fff" opacity="0.42" />
+      <circle cx="582.78" cy="562.46" r="83.1168" fill="#0278df" stroke="#015cab" stroke-width="6.649344" />
+      <circle cx="582.78" cy="562.46" r="73.14278399999999" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="3.324672" />
+      <circle cx="582.78" cy="562.46" r="53.194752" fill="#ffffff" stroke="#015cab" stroke-width="4.15584" />
+      <text x="582.78" y="564.122336" text-anchor="middle" dominant-baseline="central" font-size="78.129792" font-weight="900" fill="#0278df" stroke="#015cab" stroke-width="4.987007999999999" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">B</text>
+      <ellipse cx="552.857952" cy="522.563936" rx="28.259712" ry="14.129856" fill="#fff" opacity="0.5" />
+      <path d="M 539.559264 554.14832 C 567.818976 542.511968, 589.429344 549.1613120000001, 607.7150399999999 565.784672" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="2.909088" />
     </g>
   </g><g style="transform-origin:771.39px 562.46px; animation:cdcountdownbingoballletterseffectwinkletter1 4s linear infinite;">
     <g>
       <ellipse cx="771.39" cy="653.8884800000001" rx="64.831104" ry="14.26284288" fill="#000" opacity="0.16" />
-      <circle cx="771.39" cy="562.46" r="83.1168" fill="#5ad8ff" stroke="#102a52" stroke-width="6.649344" />
-      <circle cx="771.39" cy="562.46" r="53.194752" fill="#fffdf6" stroke="#102a52" stroke-width="4.15584" />
-      <text x="771.39" y="564.122336" text-anchor="middle" dominant-baseline="central" font-size="78.129792" font-weight="900" fill="#102a52" stroke="#fffdf6" stroke-width="3.12519168" letter-spacing="2.34389376" >I</text>
-      <ellipse cx="743.130288" cy="522.563936" rx="28.259712" ry="14.129856" fill="#fff" opacity="0.42" />
+      <circle cx="771.39" cy="562.46" r="83.1168" fill="#f70900" stroke="#c10700" stroke-width="6.649344" />
+      <circle cx="771.39" cy="562.46" r="73.14278399999999" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="3.324672" />
+      <circle cx="771.39" cy="562.46" r="53.194752" fill="#ffffff" stroke="#c10700" stroke-width="4.15584" />
+      <text x="771.39" y="564.122336" text-anchor="middle" dominant-baseline="central" font-size="78.129792" font-weight="900" fill="#f70900" stroke="#c10700" stroke-width="4.987007999999999" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">I</text>
+      <ellipse cx="741.467952" cy="522.563936" rx="28.259712" ry="14.129856" fill="#fff" opacity="0.5" />
+      <path d="M 728.169264 554.14832 C 756.428976 542.511968, 778.039344 549.1613120000001, 796.32504 565.784672" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="2.909088" />
     </g>
   </g><g style="transform-origin:960px 562.46px; animation:cdcountdownbingoballletterseffectwinkletter2 4s linear infinite;">
     <g>
       <ellipse cx="960" cy="653.8884800000001" rx="64.831104" ry="14.26284288" fill="#000" opacity="0.16" />
-      <circle cx="960" cy="562.46" r="83.1168" fill="#ff9153" stroke="#102a52" stroke-width="6.649344" />
-      <circle cx="960" cy="562.46" r="53.194752" fill="#fffdf6" stroke="#102a52" stroke-width="4.15584" />
-      <text x="960" y="564.122336" text-anchor="middle" dominant-baseline="central" font-size="78.129792" font-weight="900" fill="#102a52" stroke="#fffdf6" stroke-width="3.12519168" letter-spacing="2.34389376" >N</text>
-      <ellipse cx="931.740288" cy="522.563936" rx="28.259712" ry="14.129856" fill="#fff" opacity="0.42" />
+      <circle cx="960" cy="562.46" r="83.1168" fill="#9610b8" stroke="#740c8f" stroke-width="6.649344" />
+      <circle cx="960" cy="562.46" r="73.14278399999999" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="3.324672" />
+      <circle cx="960" cy="562.46" r="53.194752" fill="#ffffff" stroke="#740c8f" stroke-width="4.15584" />
+      <text x="960" y="564.122336" text-anchor="middle" dominant-baseline="central" font-size="78.129792" font-weight="900" fill="#9610b8" stroke="#740c8f" stroke-width="4.987007999999999" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">N</text>
+      <ellipse cx="930.077952" cy="522.563936" rx="28.259712" ry="14.129856" fill="#fff" opacity="0.5" />
+      <path d="M 916.779264 554.14832 C 945.038976 542.511968, 966.649344 549.1613120000001, 984.93504 565.784672" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="2.909088" />
     </g>
   </g><g style="transform-origin:1148.61px 562.46px; animation:cdcountdownbingoballletterseffectwinkletter3 4s linear infinite;">
     <g>
       <ellipse cx="1148.61" cy="653.8884800000001" rx="64.831104" ry="14.26284288" fill="#000" opacity="0.16" />
-      <circle cx="1148.61" cy="562.46" r="83.1168" fill="#7ef0d2" stroke="#102a52" stroke-width="6.649344" />
-      <circle cx="1148.61" cy="562.46" r="53.194752" fill="#fffdf6" stroke="#102a52" stroke-width="4.15584" />
-      <text x="1148.61" y="564.122336" text-anchor="middle" dominant-baseline="central" font-size="78.129792" font-weight="900" fill="#102a52" stroke="#fffdf6" stroke-width="3.12519168" letter-spacing="2.34389376" >G</text>
-      <ellipse cx="1120.3502879999999" cy="522.563936" rx="28.259712" ry="14.129856" fill="#fff" opacity="0.42" />
+      <circle cx="1148.61" cy="562.46" r="83.1168" fill="#36af0a" stroke="#288407" stroke-width="6.649344" />
+      <circle cx="1148.61" cy="562.46" r="73.14278399999999" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="3.324672" />
+      <circle cx="1148.61" cy="562.46" r="53.194752" fill="#ffffff" stroke="#288407" stroke-width="4.15584" />
+      <text x="1148.61" y="564.122336" text-anchor="middle" dominant-baseline="central" font-size="78.129792" font-weight="900" fill="#36af0a" stroke="#288407" stroke-width="4.987007999999999" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">G</text>
+      <ellipse cx="1118.687952" cy="522.563936" rx="28.259712" ry="14.129856" fill="#fff" opacity="0.5" />
+      <path d="M 1105.389264 554.14832 C 1133.648976 542.511968, 1155.2593439999998 549.1613120000001, 1173.54504 565.784672" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="2.909088" />
     </g>
   </g><g style="transform-origin:1337.22px 562.46px; animation:cdcountdownbingoballletterseffectwinkletter4 4s linear infinite;">
     <g>
       <ellipse cx="1337.22" cy="653.8884800000001" rx="64.831104" ry="14.26284288" fill="#000" opacity="0.16" />
-      <circle cx="1337.22" cy="562.46" r="83.1168" fill="#ffd86e" stroke="#102a52" stroke-width="6.649344" />
-      <circle cx="1337.22" cy="562.46" r="53.194752" fill="#fffdf6" stroke="#102a52" stroke-width="4.15584" />
-      <text x="1337.22" y="564.122336" text-anchor="middle" dominant-baseline="central" font-size="78.129792" font-weight="900" fill="#102a52" stroke="#fffdf6" stroke-width="3.12519168" letter-spacing="2.34389376" >O</text>
-      <ellipse cx="1308.960288" cy="522.563936" rx="28.259712" ry="14.129856" fill="#fff" opacity="0.42" />
+      <circle cx="1337.22" cy="562.46" r="83.1168" fill="#f7c901" stroke="#c89d01" stroke-width="6.649344" />
+      <circle cx="1337.22" cy="562.46" r="73.14278399999999" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="3.324672" />
+      <circle cx="1337.22" cy="562.46" r="53.194752" fill="#ffffff" stroke="#c89d01" stroke-width="4.15584" />
+      <text x="1337.22" y="564.122336" text-anchor="middle" dominant-baseline="central" font-size="78.129792" font-weight="900" fill="#f7c901" stroke="#c89d01" stroke-width="4.987007999999999" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">O</text>
+      <ellipse cx="1307.2979520000001" cy="522.563936" rx="28.259712" ry="14.129856" fill="#fff" opacity="0.5" />
+      <path d="M 1293.999264 554.14832 C 1322.258976 542.511968, 1343.869344 549.1613120000001, 1362.15504 565.784672" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="2.909088" />
     </g>
   </g>
       

@@ -1236,36 +1236,36 @@
         
       
           <g style="transform-origin:582.78px 562.46px; animation:cdcountdownbingoletterpopeffectwinkletter0 3.8s linear infinite;">
-            <circle cx="582.78" cy="562.46" r="115.0848" fill="#ffd456" opacity="0.14" />
-            <circle cx="582.78" cy="562.46" r="86.31360000000001" fill="#ffd456" stroke="#0d2146" stroke-width="8.7912" />
+            <circle cx="582.78" cy="562.46" r="115.0848" fill="#0278df" opacity="0.14" />
+            <circle cx="582.78" cy="562.46" r="86.31360000000001" fill="#0278df" stroke="#0d2146" stroke-width="8.7912" />
             <circle cx="554.01" cy="527.3" r="22.3776" fill="#fff" opacity="0.22" />
             <text x="582.78" y="562.46" text-anchor="middle" dominant-baseline="central" font-size="92.7072" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="3.708288" letter-spacing="2.7812159999999997" >B</text>
           </g>
         
           <g style="transform-origin:771.39px 562.46px; animation:cdcountdownbingoletterpopeffectwinkletter1 3.8s linear infinite;">
-            <circle cx="771.39" cy="562.46" r="115.0848" fill="#69d6ff" opacity="0.14" />
-            <circle cx="771.39" cy="562.46" r="86.31360000000001" fill="#69d6ff" stroke="#0d2146" stroke-width="8.7912" />
+            <circle cx="771.39" cy="562.46" r="115.0848" fill="#f70900" opacity="0.14" />
+            <circle cx="771.39" cy="562.46" r="86.31360000000001" fill="#f70900" stroke="#0d2146" stroke-width="8.7912" />
             <circle cx="742.62" cy="527.3" r="22.3776" fill="#fff" opacity="0.22" />
             <text x="771.39" y="562.46" text-anchor="middle" dominant-baseline="central" font-size="92.7072" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="3.708288" letter-spacing="2.7812159999999997" >I</text>
           </g>
         
           <g style="transform-origin:960px 562.46px; animation:cdcountdownbingoletterpopeffectwinkletter2 3.8s linear infinite;">
-            <circle cx="960" cy="562.46" r="115.0848" fill="#ff864c" opacity="0.14" />
-            <circle cx="960" cy="562.46" r="86.31360000000001" fill="#ff864c" stroke="#0d2146" stroke-width="8.7912" />
+            <circle cx="960" cy="562.46" r="115.0848" fill="#9610b8" opacity="0.14" />
+            <circle cx="960" cy="562.46" r="86.31360000000001" fill="#9610b8" stroke="#0d2146" stroke-width="8.7912" />
             <circle cx="931.23" cy="527.3" r="22.3776" fill="#fff" opacity="0.22" />
             <text x="960" y="562.46" text-anchor="middle" dominant-baseline="central" font-size="92.7072" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="3.708288" letter-spacing="2.7812159999999997" >N</text>
           </g>
         
           <g style="transform-origin:1148.61px 562.46px; animation:cdcountdownbingoletterpopeffectwinkletter3 3.8s linear infinite;">
-            <circle cx="1148.61" cy="562.46" r="115.0848" fill="#7ef0d2" opacity="0.14" />
-            <circle cx="1148.61" cy="562.46" r="86.31360000000001" fill="#7ef0d2" stroke="#0d2146" stroke-width="8.7912" />
+            <circle cx="1148.61" cy="562.46" r="115.0848" fill="#36af0a" opacity="0.14" />
+            <circle cx="1148.61" cy="562.46" r="86.31360000000001" fill="#36af0a" stroke="#0d2146" stroke-width="8.7912" />
             <circle cx="1119.84" cy="527.3" r="22.3776" fill="#fff" opacity="0.22" />
             <text x="1148.61" y="562.46" text-anchor="middle" dominant-baseline="central" font-size="92.7072" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="3.708288" letter-spacing="2.7812159999999997" >G</text>
           </g>
         
           <g style="transform-origin:1337.22px 562.46px; animation:cdcountdownbingoletterpopeffectwinkletter4 3.8s linear infinite;">
-            <circle cx="1337.22" cy="562.46" r="115.0848" fill="#ffd86e" opacity="0.14" />
-            <circle cx="1337.22" cy="562.46" r="86.31360000000001" fill="#ffd86e" stroke="#0d2146" stroke-width="8.7912" />
+            <circle cx="1337.22" cy="562.46" r="115.0848" fill="#f7c901" opacity="0.14" />
+            <circle cx="1337.22" cy="562.46" r="86.31360000000001" fill="#f7c901" stroke="#0d2146" stroke-width="8.7912" />
             <circle cx="1308.45" cy="527.3" r="22.3776" fill="#fff" opacity="0.22" />
             <text x="1337.22" y="562.46" text-anchor="middle" dominant-baseline="central" font-size="92.7072" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="3.708288" letter-spacing="2.7812159999999997" >O</text>
           </g>

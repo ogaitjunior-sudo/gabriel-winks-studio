@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 import {
   WINK_LIBRARY_ALL_FILTER,
   WINK_LIBRARY_CHAT_FILTER,
+  WINK_LIBRARY_EFFECT_FILTER,
   WINK_LIBRARY_OVERVIEW_FILTER,
   filterWinkLibraryItems,
   flattenWinkLibraryItems,
@@ -148,6 +149,7 @@ describe("winkLibrary helpers", () => {
     expect(getWinkLibraryTagCounts(items)).toEqual({
       all: 2,
       calm: 0,
+      impact: 1,
       party: 1,
       premium: 1,
       reaction: 2,
@@ -164,6 +166,7 @@ describe("winkLibrary helpers", () => {
     expect(filterWinkLibraryItems(items, WINK_LIBRARY_OVERVIEW_FILTER, "")).toHaveLength(2);
     expect(filterWinkLibraryItems(items, WINK_LIBRARY_ALL_FILTER, "")).toHaveLength(2);
     expect(filterWinkLibraryItems(items, WINK_LIBRARY_CHAT_FILTER, "")).toHaveLength(1);
+    expect(filterWinkLibraryItems(items, WINK_LIBRARY_EFFECT_FILTER, "")).toHaveLength(1);
     expect(filterWinkLibraryItems(items, WINK_LIBRARY_CHAT_FILTER, "birthday")).toHaveLength(1);
     expect(filterWinkLibraryItems(items, WINK_LIBRARY_CHAT_FILTER, "countdown")).toHaveLength(0);
     expect(filterWinkLibraryItems(items, WINK_LIBRARY_OVERVIEW_FILTER, "", "party")).toHaveLength(

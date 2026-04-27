@@ -1,102 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="768" height="1024" viewBox="0 0 768 1024" preserveAspectRatio="xMidYMid meet" data-wink-name="Bingo Ball Zigzag Jackpot" data-wink-category="Bouncing Bingo Balls" data-wink-duration="3300ms" aria-label="Bingo Ball Zigzag Jackpot">
-  <!-- concept: Zigzag lane chase | motion: Balls travel in alternating diagonal lanes toward the center band | final: A BINGO row snaps into place across the middle -->
   <style>
-  text { font-family: 'Trebuchet MS', 'Segoe UI', sans-serif; paint-order: stroke fill; }
-  @keyframes popIn {
-    0%, 100% { opacity: 0; transform: translate(var(--fx, 0px), var(--fy, 40px)) scale(0.28) rotate(var(--fr, -16deg)); }
-    16% { opacity: 1; }
-    34% { opacity: 1; transform: translate(0px, 0px) scale(1.08) rotate(0deg); }
-    72% { opacity: 1; transform: translate(0px, 0px) scale(1) rotate(0deg); }
-    88% { opacity: 1; }
-  }
-  @keyframes riseIn {
-    0%, 100% { opacity: 0; transform: translate(0px, 140px) scale(0.42); }
-    18% { opacity: 1; }
-    34% { opacity: 1; transform: translate(0px, -10px) scale(1.05); }
-    82% { opacity: 1; transform: translate(0px, 0px) scale(1); }
-  }
-  @keyframes spinIn {
-    0%, 100% { opacity: 0; transform: rotate(-220deg) scale(0.2); }
-    18% { opacity: 1; }
-    36% { opacity: 1; transform: rotate(10deg) scale(1.06); }
-    82% { opacity: 1; transform: rotate(0deg) scale(1); }
-  }
-  @keyframes bob {
-    0%, 100% { transform: translateY(0px) rotate(-1deg); }
-    50% { transform: translateY(-14px) rotate(1.5deg); }
-  }
-  @keyframes sway {
-    0%, 100% { transform: rotate(-4deg) translateY(0px); }
-    50% { transform: rotate(4deg) translateY(-8px); }
-  }
-  @keyframes twinkle {
-    0%, 100% { opacity: 0; transform: scale(0.2) rotate(0deg); }
-    50% { opacity: 1; transform: scale(1) rotate(14deg); }
-  }
-  @keyframes burstOut {
-    0%, 100% { opacity: 0; transform: translate(0px,0px) scale(0.18); }
-    18% { opacity: 1; }
-    58% { opacity: 1; transform: translate(var(--tx,0px), var(--ty,0px)) scale(1); }
-    82% { opacity: 0; transform: translate(var(--tx,0px), var(--ty,0px)) scale(0.78); }
-  }
-  @keyframes fallDown {
-    0%, 100% { opacity: 0; transform: translate(0px, -120px) rotate(var(--r0, 0deg)) scale(0.52); }
-    16% { opacity: 1; }
-    84% { opacity: 1; }
-    100% { opacity: 0; transform: translate(var(--tx, 0px), var(--ty, 560px)) rotate(var(--r1, 200deg)) scale(1); }
-  }
-  @keyframes drawLine {
-    0%, 100% { opacity: 0; stroke-dashoffset: var(--dash, 1200); }
-    18% { opacity: 1; }
-    42%, 84% { opacity: 1; stroke-dashoffset: 0; }
-  }
-  @keyframes orbitSpin {
-    0%, 100% { transform: rotate(0deg); }
-    50% { transform: rotate(180deg); }
-  }
-  @keyframes revealFinal {
-    0%, 54%, 100% { opacity: 0; transform: scale(0.38); }
-    66% { opacity: 1; transform: scale(1.08); }
-    84% { opacity: 1; transform: scale(1); }
-  }
-</style>
-  
-        <g style="transform-origin:156px 458px; --fx:-128px; --fy:-220px; --fr:-18deg; animation:popIn 3.3s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0s;">
-  <g>
-    <ellipse cx="156" cy="497.1" rx="25.84" ry="8.16" fill="rgba(0,0,0,0.18)" />
-    <circle cx="156" cy="458" r="34" fill="#ffe36a" stroke="#173764" stroke-width="4.08" />
-    <circle cx="149.88" cy="450.52" r="6.12" fill="#fff" opacity="0.38" />
-    <text x="156" y="459.7" text-anchor="middle" dominant-baseline="central" font-size="30.6" font-weight="900" fill="#173764" stroke="rgba(255,255,255,0.55)" stroke-width="2" letter-spacing="0">B</text>
-  </g></g><g style="transform-origin:270px 554px; --fx:128px; --fy:220px; --fr:18deg; animation:popIn 3.3s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.05s;">
-  <g>
-    <ellipse cx="270" cy="593.1" rx="25.84" ry="8.16" fill="rgba(0,0,0,0.18)" />
-    <circle cx="270" cy="554" r="34" fill="#74d9ff" stroke="#173764" stroke-width="4.08" />
-    <circle cx="263.88" cy="546.52" r="6.12" fill="#fff" opacity="0.38" />
-    <text x="270" y="555.7" text-anchor="middle" dominant-baseline="central" font-size="30.6" font-weight="900" fill="#173764" stroke="rgba(255,255,255,0.55)" stroke-width="2" letter-spacing="0">I</text>
-  </g></g><g style="transform-origin:384px 458px; --fx:-128px; --fy:-220px; --fr:-18deg; animation:popIn 3.3s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.1s;">
-  <g>
-    <ellipse cx="384" cy="497.1" rx="25.84" ry="8.16" fill="rgba(0,0,0,0.18)" />
-    <circle cx="384" cy="458" r="34" fill="#ff8d86" stroke="#173764" stroke-width="4.08" />
-    <circle cx="377.88" cy="450.52" r="6.12" fill="#fff" opacity="0.38" />
-    <text x="384" y="459.7" text-anchor="middle" dominant-baseline="central" font-size="30.6" font-weight="900" fill="#173764" stroke="rgba(255,255,255,0.55)" stroke-width="2" letter-spacing="0">N</text>
-  </g></g><g style="transform-origin:498px 554px; --fx:128px; --fy:220px; --fr:18deg; animation:popIn 3.3s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.15s;">
-  <g>
-    <ellipse cx="498" cy="593.1" rx="25.84" ry="8.16" fill="rgba(0,0,0,0.18)" />
-    <circle cx="498" cy="554" r="34" fill="#8ef0c9" stroke="#173764" stroke-width="4.08" />
-    <circle cx="491.88" cy="546.52" r="6.12" fill="#fff" opacity="0.38" />
-    <text x="498" y="555.7" text-anchor="middle" dominant-baseline="central" font-size="30.6" font-weight="900" fill="#173764" stroke="rgba(255,255,255,0.55)" stroke-width="2" letter-spacing="0">G</text>
-  </g></g><g style="transform-origin:612px 458px; --fx:-128px; --fy:-220px; --fr:-18deg; animation:popIn 3.3s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.2s;">
-  <g>
-    <ellipse cx="612" cy="497.1" rx="25.84" ry="8.16" fill="rgba(0,0,0,0.18)" />
-    <circle cx="612" cy="458" r="34" fill="#fff1ad" stroke="#173764" stroke-width="4.08" />
-    <circle cx="605.88" cy="450.52" r="6.12" fill="#fff" opacity="0.38" />
-    <text x="612" y="459.7" text-anchor="middle" dominant-baseline="central" font-size="30.6" font-weight="900" fill="#173764" stroke="rgba(255,255,255,0.55)" stroke-width="2" letter-spacing="0">O</text>
-  </g></g>
-        <g style="transform-origin:384px 512px; animation:revealFinal 3.3s ease-out infinite;">
-  <g>
-    <rect x="232" y="636" width="304" height="60" rx="30" fill="#173764" stroke="#ff8d86" stroke-width="4.8" />
-    <text x="384" y="667.8" text-anchor="middle" dominant-baseline="central" font-size="26.4" font-weight="900" fill="#fff4d8" stroke="#ff8d86" stroke-width="2" letter-spacing="0.7919999999999999" >JACKPOT</text>
-  </g></g>
-      
+    text { font-family: 'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif; paint-order: stroke fill; }
+    @keyframes zigIn {
+      0%, 100% { opacity: 0; transform: translate(var(--fx, 0px), var(--fy, -220px)) scale(0.28) rotate(var(--fr, -14deg)); }
+      18% { opacity: 1; }
+      36% { opacity: 1; transform: translate(0px, -8px) scale(1.08) rotate(0deg); }
+      82% { opacity: 1; transform: translate(0px, 0px) scale(1); }
+    }
+    @keyframes railGlow {
+      0%, 100% { opacity: 0.14; }
+      50% { opacity: 0.28; }
+    }
+  </style>
+  <g style="animation:railGlow 3.3s ease-in-out infinite;">
+    <path d="M 108 412 L 660 412" fill="none" stroke="#0278df" stroke-width="6" stroke-linecap="round" opacity="0.14" />
+    <path d="M 108 588 L 660 588" fill="none" stroke="#9610b8" stroke-width="6" stroke-linecap="round" opacity="0.14" />
+    <path d="M 108 500 L 660 500" fill="none" stroke="#f7c901" stroke-width="4" stroke-linecap="round" opacity="0.12" />
+  </g>
+  <g style="transform-origin:144px 500px; --fx:-110px; --fy:-220px; --fr:-12deg; animation:zigIn 3.3s cubic-bezier(0.2,0.9,0.24,1) infinite;">
+    <g transform="translate(144 500)">
+      <ellipse cx="0" cy="42" rx="23" ry="7.2" fill="rgba(0,0,0,0.18)" />
+      <circle cx="0" cy="0" r="30" fill="#0278df" stroke="#015cab" stroke-width="3.6" />
+      <circle cx="0" cy="0" r="26.4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.3" />
+      <circle cx="0" cy="0" r="18.4" fill="#ffffff" stroke="#015cab" stroke-width="1.8" />
+      <text x="0" y="1.2" text-anchor="middle" dominant-baseline="central" font-size="28" font-weight="900" fill="#0278df" stroke="#015cab" stroke-width="1.7" letter-spacing="0">B</text>
+      <ellipse cx="-11" cy="-15" rx="10" ry="5" fill="#ffffff" opacity="0.5" />
+    </g>
+  </g>
+  <g style="transform-origin:264px 500px; --fx:-55px; --fy:220px; --fr:-6deg; animation:zigIn 3.3s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.06s;">
+    <g transform="translate(264 500)">
+      <ellipse cx="0" cy="42" rx="23" ry="7.2" fill="rgba(0,0,0,0.18)" />
+      <circle cx="0" cy="0" r="30" fill="#f70900" stroke="#c10700" stroke-width="3.6" />
+      <circle cx="0" cy="0" r="26.4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.3" />
+      <circle cx="0" cy="0" r="18.4" fill="#ffffff" stroke="#c10700" stroke-width="1.8" />
+      <text x="0" y="1.2" text-anchor="middle" dominant-baseline="central" font-size="28" font-weight="900" fill="#f70900" stroke="#c10700" stroke-width="1.7" letter-spacing="0">I</text>
+      <ellipse cx="-11" cy="-15" rx="10" ry="5" fill="#ffffff" opacity="0.5" />
+    </g>
+  </g>
+  <g style="transform-origin:384px 500px; --fx:0px; --fy:-260px; --fr:0deg; animation:zigIn 3.3s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.12s;">
+    <g transform="translate(384 500)">
+      <ellipse cx="0" cy="42" rx="23" ry="7.2" fill="rgba(0,0,0,0.18)" />
+      <circle cx="0" cy="0" r="30" fill="#9610b8" stroke="#740c8f" stroke-width="3.6" />
+      <circle cx="0" cy="0" r="26.4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.3" />
+      <circle cx="0" cy="0" r="18.4" fill="#ffffff" stroke="#740c8f" stroke-width="1.8" />
+      <text x="0" y="1.2" text-anchor="middle" dominant-baseline="central" font-size="28" font-weight="900" fill="#9610b8" stroke="#740c8f" stroke-width="1.7" letter-spacing="0">N</text>
+      <ellipse cx="-11" cy="-15" rx="10" ry="5" fill="#ffffff" opacity="0.5" />
+    </g>
+  </g>
+  <g style="transform-origin:504px 500px; --fx:55px; --fy:220px; --fr:6deg; animation:zigIn 3.3s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.18s;">
+    <g transform="translate(504 500)">
+      <ellipse cx="0" cy="42" rx="23" ry="7.2" fill="rgba(0,0,0,0.18)" />
+      <circle cx="0" cy="0" r="30" fill="#36af0a" stroke="#288407" stroke-width="3.6" />
+      <circle cx="0" cy="0" r="26.4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.3" />
+      <circle cx="0" cy="0" r="18.4" fill="#ffffff" stroke="#288407" stroke-width="1.8" />
+      <text x="0" y="1.2" text-anchor="middle" dominant-baseline="central" font-size="28" font-weight="900" fill="#36af0a" stroke="#288407" stroke-width="1.7" letter-spacing="0">G</text>
+      <ellipse cx="-11" cy="-15" rx="10" ry="5" fill="#ffffff" opacity="0.5" />
+    </g>
+  </g>
+  <g style="transform-origin:624px 500px; --fx:110px; --fy:-220px; --fr:12deg; animation:zigIn 3.3s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.24s;">
+    <g transform="translate(624 500)">
+      <ellipse cx="0" cy="42" rx="23" ry="7.2" fill="rgba(0,0,0,0.18)" />
+      <circle cx="0" cy="0" r="30" fill="#f7c901" stroke="#c89d01" stroke-width="3.6" />
+      <circle cx="0" cy="0" r="26.4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.3" />
+      <circle cx="0" cy="0" r="18.4" fill="#ffffff" stroke="#c89d01" stroke-width="1.8" />
+      <text x="0" y="1.2" text-anchor="middle" dominant-baseline="central" font-size="28" font-weight="900" fill="#f7c901" stroke="#c89d01" stroke-width="1.7" letter-spacing="0">O</text>
+      <ellipse cx="-11" cy="-15" rx="10" ry="5" fill="#ffffff" opacity="0.5" />
+    </g>
+  </g>
 </svg>

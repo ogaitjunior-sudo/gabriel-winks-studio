@@ -3,6 +3,7 @@ import { resolveWinkAssetPath } from "@/lib/winkManifest";
 
 export const WINK_LIBRARY_ALL_FILTER = "All";
 export const WINK_LIBRARY_CHAT_FILTER = "Chat Winks";
+export const WINK_LIBRARY_EFFECT_FILTER = "Effect Winks";
 export const WINK_LIBRARY_OVERVIEW_FILTER = "Bingo Wink Effects Library";
 
 export const WINK_LIBRARY_TAG_FILTERS = [
@@ -12,6 +13,7 @@ export const WINK_LIBRARY_TAG_FILTERS = [
   { id: "calm", label: "Calm" },
   { id: "reaction", label: "Reaction" },
   { id: "premium", label: "Premium" },
+  { id: "impact", label: "Impact" },
 ] as const;
 
 export type WinkLibraryTagFilter = (typeof WINK_LIBRARY_TAG_FILTERS)[number]["id"];
@@ -21,17 +23,29 @@ export type WinkLibraryTag =
   | "birthday"
   | "countdown"
   | "floral"
-  | "impact"
   | "lucky"
   | "sparkle";
 
-const FEATURED_CATEGORY_ORDER = [
+const BROWSE_CATEGORY_ORDER = [
   "Countdown",
+  "Bingo Balls",
+  "Fireworks",
+  "Confetti",
+  "Gold Stars",
   "Happy Birthday",
   "Thumbs Up",
   "Leprechaun",
   "Flowers",
 ];
+
+const FEATURED_PRIORITY_CATEGORIES = [
+  "Countdown",
+  "Happy Birthday",
+  "Thumbs Up",
+  "Leprechaun",
+  "Flowers",
+] as const;
+const FEATURED_PRIORITY_CATEGORY_SET = new Set<string>(FEATURED_PRIORITY_CATEGORIES);
 
 const SUBGROUP_ORDER = [
   "Bingo Reveal",
@@ -81,10 +95,11 @@ const PRIMARY_TAGS = new Set<WinkLibraryPrimaryTag>([
   "calm",
   "reaction",
   "premium",
+  "impact",
 ]);
 
 const CATEGORY_BASE_TAGS: Record<string, WinkLibraryTag[]> = {
-  "Bouncing Bingo Balls": ["win", "reaction", "impact"],
+  "Bingo Balls": ["win", "reaction", "impact"],
   Confetti: ["party", "impact"],
   Countdown: ["countdown", "win", "impact"],
   Fireworks: ["premium", "party", "impact", "sparkle"],
@@ -117,9 +132,17 @@ export interface WinkLibraryGroup {
   subgroups: WinkLibrarySubgroup[];
 }
 
+export function getWinkLibraryCategoryLabel(category?: string | null) {
+  if (!category) {
+    return "";
+  }
+
+  return category === "Bouncing Bingo Balls" ? "Bingo Balls" : category;
+}
+
 function compareCategory(left: string, right: string) {
-  const leftIndex = FEATURED_CATEGORY_ORDER.indexOf(left);
-  const rightIndex = FEATURED_CATEGORY_ORDER.indexOf(right);
+  const leftIndex = BROWSE_CATEGORY_ORDER.indexOf(left);
+  const rightIndex = BROWSE_CATEGORY_ORDER.indexOf(right);
 
   if (leftIndex >= 0 || rightIndex >= 0) {
     if (leftIndex < 0) return 1;
@@ -329,7 +352,7 @@ function deriveWinkSubgroup(
       if (containsAny(source, ["orbit", "shooting", "ring", "galaxy"])) return "Orbit";
       if (containsAny(source, ["constellation", "align", "line", "frame"])) return "Align";
       return "Premium Shine";
-    case "Bouncing Bingo Balls":
+    case "Bingo Balls":
       if (containsAny(source, ["orbit", "bullseye", "pinball", "zigzag"])) return "Jackpot Motion";
       if (containsAny(source, ["align", "line", "stack", "drop"])) return "Align";
       return "Burst";
@@ -362,7 +385,9 @@ function deriveFeaturedScore(item: WinkManifestItem, tags: WinkLibraryTag[], sub
   if (tags.includes("party")) score += 2;
   if (tags.includes("impact")) score += 2;
   if (tags.includes("sparkle")) score += 1;
-  if (FEATURED_CATEGORY_ORDER.includes(item.category ?? "")) score += 1;
+  if (FEATURED_PRIORITY_CATEGORY_SET.has(item.category ?? "")) {
+    score += 1;
+  }
   if (containsAny(source, ["mega", "jackpot", "finale", "crown", "bingo", "birthday"])) score += 2;
   if (subgroup === "Finale" || subgroup === "Party Burst" || subgroup === "Premium Shine") {
     score += 1;
@@ -384,9 +409,9 @@ export function getWinkTagLabel(tag: WinkLibraryTag) {
 export function getWinkLibrarySubgroupDescription(category: string, subgroup: string) {
   const key = `${category}:${subgroup}`;
   const descriptions: Record<string, string> = {
-    "Bouncing Bingo Balls:Align": "Tighter compositions where balls snap into readable center-safe formations.",
-    "Bouncing Bingo Balls:Burst": "Quick-hit impacts built around rebounds, pops, and lively bingo-room energy.",
-    "Bouncing Bingo Balls:Jackpot Motion": "More kinetic ball paths with ricochets, zigzags, and playful momentum.",
+    "Bingo Balls:Align": "Tighter compositions where balls snap into readable center-safe formations.",
+    "Bingo Balls:Burst": "Quick-hit impacts built around rebounds, pops, and lively bingo-room energy.",
+    "Bingo Balls:Jackpot Motion": "More kinetic ball paths with ricochets, zigzags, and playful momentum.",
     "Confetti:Burst": "Direct celebration reveals with obvious impact moments and bright payoff frames.",
     "Confetti:Chaos": "Messier cascades, spirals, and layered showers for high-energy party coverage.",
     "Confetti:Ribbon Sweep": "Streamers and ribbons that guide the eye before the final celebration lockup.",
@@ -427,19 +452,23 @@ export function flattenWinkLibraryItems(manifest?: WinksManifest) {
   return Object.values(manifest.groups)
     .flatMap((group) => group.items)
     .map((item) => {
-      const tags = deriveWinkTags(item);
-      const subgroup = deriveWinkSubgroup(item);
-      const featuredScore = deriveFeaturedScore(item, tags, subgroup);
+      const normalizedItem = {
+        ...item,
+        category: getWinkLibraryCategoryLabel(item.category),
+      };
+      const tags = deriveWinkTags(normalizedItem);
+      const subgroup = deriveWinkSubgroup(normalizedItem);
+      const featuredScore = deriveFeaturedScore(normalizedItem, tags, subgroup);
 
       return {
-        ...item,
+        ...normalizedItem,
         apngPath: item.apng
           ? resolveWinkAssetPath(item.kind, "apng", item.id, item.apng.path)
           : null,
         featured: featuredScore >= 7,
         featuredScore,
         kindLabel: item.kind === "effect" ? "Effect Wink" : "Chat Wink",
-        searchText: buildSearchText(item, tags, subgroup),
+        searchText: buildSearchText(normalizedItem, tags, subgroup),
         subgroup,
         svgPath: item.svg ? resolveWinkAssetPath(item.kind, "svg", item.id, item.svg.path) : null,
         tags,
@@ -461,7 +490,9 @@ export function flattenWinkLibraryItems(manifest?: WinksManifest) {
 }
 
 export function getWinkLibraryCategories(items: WinkLibraryItem[]) {
-  return [...new Set(items.map((item) => item.category).filter(Boolean) as string[])].sort(compareCategory);
+  return [...new Set(items.map((item) => item.category).filter(Boolean) as string[])].sort(
+    compareCategory
+  );
 }
 
 export function getWinkLibraryCategoryCounts(items: WinkLibraryItem[]) {
@@ -479,6 +510,7 @@ export function getWinkLibraryTagCounts(items: WinkLibraryItem[]) {
   const counts: Record<WinkLibraryTagFilter, number> = {
     all: items.length,
     calm: 0,
+    impact: 0,
     party: 0,
     premium: 0,
     reaction: 0,
@@ -506,9 +538,16 @@ export function filterWinkLibraryItems(
   const showFullLibrary =
     filter === WINK_LIBRARY_OVERVIEW_FILTER || filter === WINK_LIBRARY_ALL_FILTER;
   const showChatOnly = filter === WINK_LIBRARY_CHAT_FILTER;
+  const showEffectOnly = filter === WINK_LIBRARY_EFFECT_FILTER;
 
   return items.filter((item) => {
-    const matchesFilter = showFullLibrary || (showChatOnly ? item.kind === "chat" : item.category === filter);
+    const matchesFilter =
+      showFullLibrary ||
+      (showChatOnly
+        ? item.kind === "chat"
+        : showEffectOnly
+          ? item.kind === "effect"
+          : item.category === filter);
     const matchesTag = tagFilter === "all" || item.tags.includes(tagFilter);
     const matchesQuery =
       normalizedQuery.length === 0 || item.searchText.includes(normalizedQuery);

@@ -7,12 +7,12 @@ import { formatAssetSize } from "@/lib/winkManifest";
 import {
   WINK_LIBRARY_ALL_FILTER,
   WINK_LIBRARY_CHAT_FILTER,
+  WINK_LIBRARY_EFFECT_FILTER,
   WINK_LIBRARY_OVERVIEW_FILTER,
   WINK_LIBRARY_TAG_FILTERS,
   filterWinkLibraryItems,
   flattenWinkLibraryItems,
   getWinkLibraryCategories,
-  getWinkLibraryCategoryCounts,
   getWinkLibrarySubgroupDescription,
   getWinkLibraryTagCounts,
   getWinkTagLabel,
@@ -33,7 +33,7 @@ const CATEGORY_BADGES: Record<string, string> = {
   "Happy Birthday": "border-fuchsia-300/35 bg-fuchsia-500/12 text-fuchsia-100",
   Leprechaun: "border-emerald-300/35 bg-emerald-500/12 text-emerald-100",
   "Thumbs Up": "border-sky-300/35 bg-sky-500/12 text-sky-100",
-  "Bouncing Bingo Balls": "border-orange-300/35 bg-orange-500/12 text-orange-100",
+  "Bingo Balls": "border-orange-300/35 bg-orange-500/12 text-orange-100",
 };
 
 interface WinkLibrarySectionProps {
@@ -54,7 +54,7 @@ export function WinkLibrarySection({
   manifest,
 }: WinkLibrarySectionProps) {
   const [query, setQuery] = useState("");
-  const [category, setCategory] = useState(WINK_LIBRARY_OVERVIEW_FILTER);
+  const [category, setCategory] = useState(WINK_LIBRARY_ALL_FILTER);
   const [tagFilter, setTagFilter] = useState<WinkLibraryTagFilter>("all");
   const deferredQuery = useDeferredValue(query);
 
@@ -63,8 +63,11 @@ export function WinkLibrarySection({
     () => allItems.filter((item) => item.kind === "chat").length,
     [allItems]
   );
+  const effectCount = useMemo(
+    () => allItems.filter((item) => item.kind === "effect").length,
+    [allItems]
+  );
   const categories = useMemo(() => getWinkLibraryCategories(allItems), [allItems]);
-  const counts = useMemo(() => getWinkLibraryCategoryCounts(allItems), [allItems]);
   const tagCounts = useMemo(() => getWinkLibraryTagCounts(allItems), [allItems]);
   const filteredItems = useMemo(
     () => filterWinkLibraryItems(allItems, category, deferredQuery, tagFilter),
@@ -108,14 +111,23 @@ export function WinkLibrarySection({
       </div>
 
       <div className="grid gap-4 rounded-2xl border border-border/70 bg-background/35 p-4 lg:grid-cols-[minmax(0,1fr)_auto]">
-        <div className="relative">
-          <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-          <Input
-            className="border-border/80 bg-background/70 pl-9"
-            placeholder="Search by name, category, kind, wink id, tag, or subgroup"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-          />
+        <div>
+          <label
+            htmlFor="wink-library-search"
+            className="mb-2 block text-[11px] font-semibold uppercase tracking-[0.22em] text-primary"
+          >
+            Search
+          </label>
+          <div className="relative">
+            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+            <Input
+              id="wink-library-search"
+              className="border-border/80 bg-background/70 pl-9"
+              placeholder="Search by name, category, kind, wink id, tag, or subgroup"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+            />
+          </div>
         </div>
 
         <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
@@ -129,27 +141,34 @@ export function WinkLibrarySection({
         </div>
 
         <div className="space-y-2 lg:col-span-2">
+          <div>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-primary">
+              Browse by category:
+            </p>
+          </div>
           <div className="flex flex-wrap items-center gap-2">
             <FilterChip
-              active={category === WINK_LIBRARY_OVERVIEW_FILTER}
-              label={WINK_LIBRARY_OVERVIEW_FILTER}
-              onClick={() => setCategory(WINK_LIBRARY_OVERVIEW_FILTER)}
-            />
-            <FilterChip
-              active={category === WINK_LIBRARY_ALL_FILTER}
-              label={`${WINK_LIBRARY_ALL_FILTER} (${allItems.length})`}
+              active={
+                category === WINK_LIBRARY_ALL_FILTER || category === WINK_LIBRARY_OVERVIEW_FILTER
+              }
+              label={WINK_LIBRARY_ALL_FILTER}
               onClick={() => setCategory(WINK_LIBRARY_ALL_FILTER)}
             />
             <FilterChip
               active={category === WINK_LIBRARY_CHAT_FILTER}
-              label={`${WINK_LIBRARY_CHAT_FILTER} (${chatCount})`}
+              label={WINK_LIBRARY_CHAT_FILTER}
               onClick={() => setCategory(WINK_LIBRARY_CHAT_FILTER)}
+            />
+            <FilterChip
+              active={category === WINK_LIBRARY_EFFECT_FILTER}
+              label={WINK_LIBRARY_EFFECT_FILTER}
+              onClick={() => setCategory(WINK_LIBRARY_EFFECT_FILTER)}
             />
             {categories.map((nextCategory) => (
               <FilterChip
                 key={nextCategory}
                 active={category === nextCategory}
-                label={`${nextCategory} (${counts[nextCategory] ?? 0})`}
+                label={nextCategory}
                 onClick={() => setCategory(nextCategory)}
               />
             ))}
@@ -159,16 +178,17 @@ export function WinkLibrarySection({
             <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-primary">
-                  Tag Filters
+                  Filter by mood:
                 </p>
                 <p className="text-xs text-muted-foreground">
                   Refine by mood, use case, and visual intensity while keeping search active.
                 </p>
               </div>
               <div className="text-xs text-muted-foreground">
-                Win {tagCounts.win} &middot; Party {tagCounts.party} &middot; Calm{" "}
+                All {tagCounts.all} &middot; Chat {chatCount} &middot; Effect {effectCount}
+                &middot; Win {tagCounts.win} &middot; Party {tagCounts.party} &middot; Calm{" "}
                 {tagCounts.calm} &middot; Reaction {tagCounts.reaction} &middot; Premium{" "}
-                {tagCounts.premium}
+                {tagCounts.premium} &middot; Impact {tagCounts.impact}
               </div>
             </div>
 

@@ -1013,20 +1013,54 @@ function renderParticleShape(shape, { color, cx, cy, size }) {
   }
 }
 
+const OFFICIAL_BINGO_BALL_STYLES = {
+  B: { fill: "#0278df", stroke: "#015cab" },
+  I: { fill: "#f70900", stroke: "#c10700" },
+  N: { fill: "#9610b8", stroke: "#740c8f" },
+  G: { fill: "#36af0a", stroke: "#288407" },
+  O: { fill: "#f7c901", stroke: "#c89d01" },
+};
+
+const OFFICIAL_BINGO_LETTER_COLORS = ["#0278df", "#f70900", "#9610b8", "#36af0a", "#f7c901"];
+
+function officialBingoBallStyle(label, fallbackFill, fallbackStroke) {
+  const key = String(label ?? "")
+    .trim()
+    .toUpperCase();
+
+  return OFFICIAL_BINGO_BALL_STYLES[key] ?? { fill: fallbackFill, stroke: fallbackStroke };
+}
+
 function bingoBall(cx, cy, radius, fill, stroke, label, textColor = stroke) {
+  const official = officialBingoBallStyle(label, fill, stroke);
+  const outerFill = official.fill;
+  const outerStroke = official.stroke;
+  const letterFill = official.fill ?? textColor;
+
   return `
     <g>
       ${shadow(cx, cy + radius * 1.1, radius * 0.78)}
-      <circle cx="${cx}" cy="${cy}" r="${radius}" fill="${fill}" stroke="${stroke}" stroke-width="${Math.max(
+      <circle cx="${cx}" cy="${cy}" r="${radius}" fill="${outerFill}" stroke="${outerStroke}" stroke-width="${Math.max(
     2,
     radius * 0.08
   )}" />
-      <circle cx="${cx}" cy="${cy}" r="${radius * 0.64}" fill="#fffdf6" stroke="${stroke}" stroke-width="${Math.max(
+      <circle cx="${cx}" cy="${cy}" r="${radius * 0.88}" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="${Math.max(
+    1.2,
+    radius * 0.04
+  )}" />
+      <circle cx="${cx}" cy="${cy}" r="${radius * 0.64}" fill="#ffffff" stroke="${outerStroke}" stroke-width="${Math.max(
     1.6,
     radius * 0.05
   )}" />
-      ${outlineText(label, cx, cy + radius * 0.02, radius * 0.94, textColor, "#fffdf6")}
-      <ellipse cx="${cx - radius * 0.34}" cy="${cy - radius * 0.48}" rx="${radius * 0.34}" ry="${radius * 0.17}" fill="#fff" opacity="0.42" />
+      <text x="${cx}" y="${cy + radius * 0.02}" text-anchor="middle" dominant-baseline="central" font-size="${radius * 0.94}" font-weight="900" fill="${letterFill}" stroke="${outerStroke}" stroke-width="${Math.max(
+    1.2,
+    radius * 0.06
+  )}" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">${escapeXml(label)}</text>
+      <ellipse cx="${cx - radius * 0.36}" cy="${cy - radius * 0.48}" rx="${radius * 0.34}" ry="${radius * 0.17}" fill="#fff" opacity="0.5" />
+      <path d="M ${cx - radius * 0.52} ${cy - radius * 0.1} C ${cx - radius * 0.18} ${cy - radius * 0.24}, ${cx + radius * 0.08} ${cy - radius * 0.16}, ${cx + radius * 0.3} ${cy + radius * 0.04}" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="${Math.max(
+    1,
+    radius * 0.035
+  )}" />
     </g>
   `;
 }
@@ -2282,7 +2316,7 @@ function renderCountdownScene(ctx, definition) {
   const letterStep = round(letterSize * (ctx.kind === "effect" ? 1.18 : 1.1));
   const letterY = round(centerY + digitSize * 0.1);
   const finalWordY = round(letterY + letterSize * 0.88);
-  const letterColors = [palette.accent, palette.extra, palette.flash, "#7ef0d2", "#ffd86e"];
+  const letterColors = OFFICIAL_BINGO_LETTER_COLORS;
   const digitWindows = isBingoReveal
     ? [
         { label: "3", start: 6, end: 16 },

@@ -119,9 +119,9 @@ describe("WinkLibrarySection", () => {
   it("renders card downloads and quick navigation", () => {
     render(<WinkLibrarySection manifest={manifest} />);
 
-    expect(
-      screen.getByRole("button", { name: "Bingo Wink Effects Library" })
-    ).toHaveAttribute("type", "button");
+    expect(screen.getAllByRole("button", { name: "All" })[0]).toHaveAttribute("type", "button");
+    expect(screen.getByText("Browse by category:")).toBeInTheDocument();
+    expect(screen.getByText("Filter by mood:")).toBeInTheDocument();
     expect(screen.getAllByRole("link", { name: "SVG" })[0]).toHaveAttribute(
       "href",
       "/winks/effect/svg/countdown-pop-bingo.svg"
@@ -132,17 +132,14 @@ describe("WinkLibrarySection", () => {
   it("filters cards by search and category", () => {
     render(<WinkLibrarySection manifest={manifest} />);
 
-    fireEvent.click(screen.getByRole("button", { name: "Happy Birthday (1)" }));
+    fireEvent.click(screen.getByRole("button", { name: "Happy Birthday" }));
     expect(screen.getByText("Birthday Mega Party")).toBeInTheDocument();
     expect(screen.queryByText("Countdown Pop Bingo")).not.toBeInTheDocument();
 
-    fireEvent.click(screen.getByRole("button", { name: "Bingo Wink Effects Library" }));
-    fireEvent.change(
-      screen.getByPlaceholderText("Search by name, category, kind, wink id, tag, or subgroup"),
-      {
-        target: { value: "countdown" },
-      }
-    );
+    fireEvent.click(screen.getAllByRole("button", { name: "All" })[0]);
+    fireEvent.change(screen.getByLabelText("Search"), {
+      target: { value: "countdown" },
+    });
 
     expect(screen.getByText("Countdown Pop Bingo")).toBeInTheDocument();
     expect(screen.queryByText("Birthday Mega Party")).not.toBeInTheDocument();
@@ -151,20 +148,29 @@ describe("WinkLibrarySection", () => {
   it("filters cards by the Chat Winks type tab", () => {
     render(<WinkLibrarySection manifest={manifest} />);
 
-    fireEvent.click(screen.getByRole("button", { name: "Chat Winks (1)" }));
+    fireEvent.click(screen.getByRole("button", { name: "Chat Winks" }));
     expect(screen.getByText("Birthday Mega Party")).toBeInTheDocument();
     expect(screen.queryByText("Countdown Pop Bingo")).not.toBeInTheDocument();
 
-    fireEvent.change(
-      screen.getByPlaceholderText("Search by name, category, kind, wink id, tag, or subgroup"),
-      {
-        target: { value: "countdown" },
-      }
-    );
+    fireEvent.change(screen.getByLabelText("Search"), {
+      target: { value: "countdown" },
+    });
     expect(screen.queryByText("Birthday Mega Party")).not.toBeInTheDocument();
   });
 
-  it("filters cards by the secondary tag row and shows subgroups", () => {
+  it("filters cards by type and mood chips", () => {
+    render(<WinkLibrarySection manifest={manifest} />);
+
+    fireEvent.click(screen.getByRole("button", { name: "Effect Winks" }));
+    expect(screen.getByText("Countdown Pop Bingo")).toBeInTheDocument();
+    expect(screen.queryByText("Birthday Mega Party")).not.toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole("button", { name: "Impact" }));
+    expect(screen.getByText("Countdown Pop Bingo")).toBeInTheDocument();
+    expect(screen.queryByText("Birthday Mega Party")).not.toBeInTheDocument();
+  });
+
+  it("filters cards by the mood row and shows subgroups", () => {
     render(<WinkLibrarySection manifest={manifest} />);
 
     fireEvent.click(screen.getByRole("button", { name: "Party" }));
@@ -173,7 +179,7 @@ describe("WinkLibrarySection", () => {
     expect(screen.getAllByText("Party Burst").length).toBeGreaterThan(0);
   });
 
-  it("shows the overview tab before the All tab", () => {
+  it("shows the requested category browse order", () => {
     render(<WinkLibrarySection manifest={manifest} />);
 
     const buttons = screen
@@ -181,10 +187,10 @@ describe("WinkLibrarySection", () => {
       .map((button) => button.textContent)
       .filter((text): text is string => Boolean(text));
 
-    expect(buttons.indexOf("Bingo Wink Effects Library")).toBeLessThan(
-      buttons.indexOf("All (2)")
-    );
-    expect(buttons.indexOf("Chat Winks (1)")).toBeGreaterThan(buttons.indexOf("All (2)"));
+    expect(buttons.indexOf("All")).toBeLessThan(buttons.indexOf("Chat Winks"));
+    expect(buttons.indexOf("Chat Winks")).toBeLessThan(buttons.indexOf("Effect Winks"));
+    expect(buttons.indexOf("Effect Winks")).toBeLessThan(buttons.indexOf("Countdown"));
+    expect(buttons.indexOf("Countdown")).toBeLessThan(buttons.indexOf("Happy Birthday"));
     expect(screen.getAllByText("Bingo Reveal").length).toBeGreaterThan(0);
   });
 });

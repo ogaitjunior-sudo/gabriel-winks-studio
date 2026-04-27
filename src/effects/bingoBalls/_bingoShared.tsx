@@ -1,15 +1,21 @@
 import type { CSSProperties, ReactNode } from "react";
 
-/** The 5 main BINGO balls — large, centered, always legible. */
+/** The 5 main BINGO balls - large, centered, always legible. */
 export const BINGO_LETTERS = ["B", "I", "N", "G", "O"] as const;
 
+export interface BingoBallColor {
+  bg: string;
+  deep: string;
+  letter: (typeof BINGO_LETTERS)[number];
+}
+
 export const BALL_COLORS = [
-  { bg: "hsl(0 80% 58%)",    deep: "hsl(0 70% 40%)" },     // B - red
-  { bg: "hsl(35 95% 55%)",   deep: "hsl(28 85% 40%)" },    // I - orange
-  { bg: "hsl(50 95% 55%)",   deep: "hsl(42 80% 40%)" },    // N - yellow
-  { bg: "hsl(140 60% 48%)",  deep: "hsl(140 55% 32%)" },   // G - green
-  { bg: "hsl(210 80% 55%)",  deep: "hsl(212 70% 38%)" },   // O - blue
-] as const;
+  { bg: "#0278df", deep: "#015cab", letter: "B" },
+  { bg: "#f70900", deep: "#c10700", letter: "I" },
+  { bg: "#9610b8", deep: "#740c8f", letter: "N" },
+  { bg: "#36af0a", deep: "#288407", letter: "G" },
+  { bg: "#f7c901", deep: "#c89d01", letter: "O" },
+] as const satisfies readonly BingoBallColor[];
 
 export const MAIN_BALL_R = 110;
 export const MAIN_GAP = 260;
@@ -40,59 +46,148 @@ export interface MainBallProps {
   children?: ReactNode;
 }
 
+function renderBingoBallFace({
+  color,
+  cx,
+  cy,
+  fontSize,
+  innerRadius,
+  outerRadius,
+  shadowOpacity = 0.18,
+  shadowRx,
+  shadowRy,
+  strokeWidth,
+}: {
+  color: BingoBallColor;
+  cx: number;
+  cy: number;
+  fontSize: number;
+  innerRadius: number;
+  outerRadius: number;
+  shadowOpacity?: number;
+  shadowRx: number;
+  shadowRy: number;
+  strokeWidth: number;
+}) {
+  return (
+    <>
+      <ellipse
+        cx={cx}
+        cy={cy + outerRadius + 14}
+        rx={shadowRx}
+        ry={shadowRy}
+        fill="black"
+        opacity={shadowOpacity}
+      />
+      <circle
+        cx={cx}
+        cy={cy}
+        r={outerRadius}
+        fill={color.bg}
+        stroke={color.deep}
+        strokeWidth={strokeWidth}
+      />
+      <circle
+        cx={cx}
+        cy={cy}
+        r={outerRadius * 0.88}
+        fill="none"
+        stroke="rgba(255,255,255,0.2)"
+        strokeWidth={Math.max(1, strokeWidth * 0.55)}
+      />
+      <circle
+        cx={cx}
+        cy={cy}
+        r={innerRadius}
+        fill="white"
+        stroke={color.deep}
+        strokeWidth={Math.max(1.4, strokeWidth * 0.72)}
+      />
+      <text
+        x={cx}
+        y={cy}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily="Arial Black, Trebuchet MS, system-ui, sans-serif"
+        fontWeight={900}
+        fontSize={fontSize}
+        fill={color.bg}
+        stroke={color.deep}
+        strokeWidth={Math.max(0.8, fontSize * 0.026)}
+        paintOrder="stroke"
+      >
+        {color.letter}
+      </text>
+      <ellipse
+        cx={cx - outerRadius * 0.38}
+        cy={cy - outerRadius * 0.54}
+        rx={outerRadius * 0.33}
+        ry={outerRadius * 0.17}
+        fill="white"
+        opacity="0.5"
+      />
+      <path
+        d={`M ${cx - outerRadius * 0.52} ${cy - outerRadius * 0.1} C ${cx - outerRadius * 0.18} ${cy - outerRadius * 0.24}, ${cx + outerRadius * 0.08} ${cy - outerRadius * 0.16}, ${cx + outerRadius * 0.3} ${cy + outerRadius * 0.04}`}
+        fill="none"
+        stroke="rgba(255,255,255,0.22)"
+        strokeLinecap="round"
+        strokeWidth={Math.max(1, strokeWidth * 0.42)}
+      />
+    </>
+  );
+}
+
 export function MainBingoBall({ index, cx, cy, style, children }: MainBallProps) {
   const x = cx ?? MAIN_START_X + index * MAIN_GAP;
   const y = cy ?? MAIN_CY;
-  const c = BALL_COLORS[index];
-  const id = `bb-${index}`;
+  const color = BALL_COLORS[index];
+
   return (
     <g style={style}>
-      <defs>
-        <radialGradient id={`${id}-grad`} cx="35%" cy="32%" r="70%">
-          <stop offset="0%" stopColor="white" stopOpacity="0.9" />
-          <stop offset="35%" stopColor={c.bg} />
-          <stop offset="100%" stopColor={c.deep} />
-        </radialGradient>
-      </defs>
-      {/* shadow */}
-      <ellipse cx={x} cy={y + MAIN_BALL_R + 14} rx={MAIN_BALL_R * 0.75} ry={10} fill="black" opacity="0.18" />
-      {/* ball */}
-      <circle cx={x} cy={y} r={MAIN_BALL_R} fill={`url(#${id}-grad)`} stroke={c.deep} strokeWidth="2.5" />
-      {/* inner white circle for letter */}
-      <circle cx={x} cy={y} r={MAIN_BALL_R * 0.62} fill="white" stroke={c.deep} strokeWidth="2" />
-      <text
-        x={x}
-        y={y}
-        textAnchor="middle"
-        dominantBaseline="central"
-        fontFamily="Inter, system-ui, sans-serif"
-        fontWeight={900}
-        fontSize={MAIN_BALL_R * 0.9}
-        fill={c.deep}
-      >
-        {BINGO_LETTERS[index]}
-      </text>
-      {/* highlight */}
-      <ellipse cx={x - MAIN_BALL_R * 0.4} cy={y - MAIN_BALL_R * 0.55} rx={MAIN_BALL_R * 0.35} ry={MAIN_BALL_R * 0.18} fill="white" opacity="0.45" />
+      {renderBingoBallFace({
+        color,
+        cx: x,
+        cy: y,
+        fontSize: MAIN_BALL_R * 0.88,
+        innerRadius: MAIN_BALL_R * 0.62,
+        outerRadius: MAIN_BALL_R,
+        shadowRx: MAIN_BALL_R * 0.75,
+        shadowRy: 10,
+        strokeWidth: 3,
+      })}
       {children}
     </g>
   );
 }
 
-/** Small decorative ball (no letter) */
-export function SmallBingoBall({ cx, cy, r = 28, color, style }: { cx: number; cy: number; r?: number; color: { bg: string; deep: string }; style?: CSSProperties }) {
-  const id = `sb-${cx}-${cy}-${r}`;
+/** Small decorative bingo ball that still keeps the official B/I/N/G/O face styling. */
+export function SmallBingoBall({
+  cx,
+  cy,
+  r = 28,
+  color,
+  style,
+}: {
+  cx: number;
+  cy: number;
+  r?: number;
+  color: BingoBallColor;
+  style?: CSSProperties;
+}) {
   return (
     <g style={style}>
-      <defs>
-        <radialGradient id={`${id}-g`} cx="35%" cy="32%" r="70%">
-          <stop offset="0%" stopColor="white" stopOpacity="0.9" />
-          <stop offset="35%" stopColor={color.bg} />
-          <stop offset="100%" stopColor={color.deep} />
-        </radialGradient>
-      </defs>
-      <circle cx={cx} cy={cy} r={r} fill={`url(#${id}-g)`} stroke={color.deep} strokeWidth="1.5" />
-      <ellipse cx={cx - r * 0.35} cy={cy - r * 0.5} rx={r * 0.3} ry={r * 0.14} fill="white" opacity="0.5" />
+      {renderBingoBallFace({
+        color,
+        cx,
+        cy,
+        fontSize: Math.max(10, r * 0.84),
+        innerRadius: r * 0.58,
+        outerRadius: r,
+        shadowOpacity: 0.14,
+        shadowRx: r * 0.72,
+        shadowRy: Math.max(4, r * 0.18),
+        strokeWidth: Math.max(1.4, r * 0.08),
+      })}
     </g>
   );
 }
