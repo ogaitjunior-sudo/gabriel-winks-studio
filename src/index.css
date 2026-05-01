@@ -123,6 +123,48 @@
   .effect-stage { contain: layout paint; }
   .effect-card-shell { content-visibility: auto; contain: layout paint style; }
   .effect-card-preview { contain: layout paint; }
+
+  .featured-hero-shell {
+    background-size: 140% 140%;
+    isolation: isolate;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .featured-hero-shell::before,
+  .featured-hero-shell::after {
+    border-radius: 9999px;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    will-change: opacity, transform;
+    z-index: 0;
+  }
+
+  .featured-hero-shell::before {
+    background: radial-gradient(circle, hsl(var(--gold-glow) / 0.22) 0%, transparent 68%);
+    filter: blur(18px);
+    height: 20rem;
+    left: -5rem;
+    opacity: 0.5;
+    top: -5rem;
+    width: 20rem;
+  }
+
+  .featured-hero-shell::after {
+    background: radial-gradient(circle, hsl(195 90% 70% / 0.14) 0%, transparent 72%);
+    bottom: -5rem;
+    filter: blur(22px);
+    height: 18rem;
+    opacity: 0.42;
+    right: -4rem;
+    width: 18rem;
+  }
+
+  .featured-hero-content {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 /* ============ Effect animations (loops) ============ */
@@ -238,7 +280,49 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes featured-hero-glow {
+  0%, 100% {
+    opacity: 0.42;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.58;
+    transform: translate3d(20px, -12px, 0) scale(1.08);
+  }
+}
+
+@keyframes featured-hero-shift {
+  0%, 100% {
+    background-position: 48% 0%, 0% 0%;
+  }
+  50% {
+    background-position: 54% 4%, 100% 100%;
+  }
+}
+
 .animate-wink-fade-in { animation: wink-fade-in 0.4s ease-out both; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .featured-hero-shell {
+    animation: featured-hero-shift 24s ease-in-out infinite;
+  }
+
+  .featured-hero-shell::before {
+    animation: featured-hero-glow 20s ease-in-out infinite;
+  }
+
+  .featured-hero-shell::after {
+    animation: featured-hero-glow 26s ease-in-out infinite reverse;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .featured-hero-shell,
+  .featured-hero-shell::before,
+  .featured-hero-shell::after {
+    animation: none !important;
+  }
+}
 
 /* Pause helper */
 .effect-paused, .effect-paused * { animation-play-state: paused !important; }

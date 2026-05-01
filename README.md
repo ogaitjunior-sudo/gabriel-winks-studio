@@ -2,6 +2,8 @@
 
 This project produces transparent animated overlay assets with SVG Animation as the primary production format and APNG as the raster fallback.
 
+Lottie is optional. SVG Animation remains the primary production format.
+
 ## Gabriel Winks Standard
 
 The Gabriel Winks standard follows these rules:

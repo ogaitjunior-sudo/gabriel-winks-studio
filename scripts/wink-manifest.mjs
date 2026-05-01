@@ -22,8 +22,25 @@ import {
   sortIds,
   titleFromId,
 } from "./wink-config.mjs";
+import { PILOT_LOTTIE_REGISTRY } from "./lottie-pilot-pack.mjs";
+import { LOTTIE_FEATURED_REGISTRY } from "./lottie-featured-registry.mjs";
+import { LOTTIE_QUALITY_REGISTRY } from "./lottie-quality-registry.mjs";
+import { PILOT_SOUND_CUE_REGISTRY, PILOT_SOUND_REGISTRY } from "./sound-pilot-pack.mjs";
 
 export const WINKS_MANIFEST_PATH = path.join(WINKS_ROOT, "manifest.json");
+const LOTTIE_ROOT = path.join(PROJECT_ROOT, "public", "lottie");
+const LOTTIE_CATEGORY_DIRECTORIES = {
+  "Bingo Balls": "bingo",
+  "Bouncing Bingo Balls": "bingo",
+  Confetti: "confetti",
+  Countdown: "countdown",
+  Fireworks: "fireworks",
+  Flowers: "flowers",
+  "Gold Stars": "gold-stars",
+  "Happy Birthday": "happy-birthday",
+  Leprechaun: "leprechaun",
+  "Thumbs Up": "thumbs-up",
+};
 
 function normalizeDimension(value) {
   if (!value) return Number.NaN;
@@ -63,6 +80,136 @@ async function readJsonIfExists(filePath) {
     }
     throw error;
   }
+}
+
+async function resolveLottiePath(id, category) {
+  const registeredPath = PILOT_LOTTIE_REGISTRY[id];
+  if (registeredPath) {
+    const relativeRegisteredPath = registeredPath.replace(/^\/+/, "");
+    const lottiePath = path.join(PROJECT_ROOT, "public", relativeRegisteredPath);
+
+    try {
+      await fs.access(lottiePath);
+      return registeredPath;
+    } catch (error) {
+      if (error && typeof error === "object" && error.code === "ENOENT") {
+        return undefined;
+      }
+
+      throw error;
+    }
+  }
+
+  const effectBatchPath = path.join(LOTTIE_ROOT, "effect-winks", `${id}.json`);
+  try {
+    await fs.access(effectBatchPath);
+    return `/lottie/effect-winks/${path.basename(effectBatchPath)}`;
+  } catch (error) {
+    if (!(error && typeof error === "object" && error.code === "ENOENT")) {
+      throw error;
+    }
+  }
+
+  const categoryDirectory = LOTTIE_CATEGORY_DIRECTORIES[category ?? ""];
+  if (!categoryDirectory) {
+    return undefined;
+  }
+
+  const lottiePath = path.join(LOTTIE_ROOT, categoryDirectory, `${id}.json`);
+
+  try {
+    await fs.access(lottiePath);
+    return `/lottie/${categoryDirectory}/${path.basename(lottiePath)}`;
+  } catch (error) {
+    if (error && typeof error === "object" && error.code === "ENOENT") {
+      return undefined;
+    }
+
+    throw error;
+  }
+}
+
+function resolveLottieQuality(id, lottiePath) {
+  if (!lottiePath) {
+    return undefined;
+  }
+
+  const quality = LOTTIE_QUALITY_REGISTRY[id];
+  if (!quality) {
+    throw new Error(`Missing lottieQuality classification for "${id}".`);
+  }
+
+  return quality;
+}
+
+function resolveFeaturedFlag(id, lottieQuality) {
+  const isFeatured = LOTTIE_FEATURED_REGISTRY[id];
+
+  if (!isFeatured) {
+    return undefined;
+  }
+
+  if (lottieQuality !== "high") {
+    throw new Error(`Featured Lottie "${id}" must be classified as high quality.`);
+  }
+
+  return true;
+}
+
+function resolveLottieSupported(kind, lottiePath) {
+  if (kind !== "effect") {
+    return undefined;
+  }
+
+  return lottiePath ? undefined : false;
+}
+
+async function resolveSoundPath(id) {
+  const registeredPath = PILOT_SOUND_REGISTRY[id];
+  if (!registeredPath) {
+    return undefined;
+  }
+
+  const relativeRegisteredPath = registeredPath.replace(/^\/+/, "");
+  const soundPath = path.join(PROJECT_ROOT, "public", relativeRegisteredPath);
+
+  try {
+    await fs.access(soundPath);
+    return registeredPath;
+  } catch (error) {
+    if (error && typeof error === "object" && error.code === "ENOENT") {
+      return undefined;
+    }
+
+    throw error;
+  }
+}
+
+async function resolveSoundCues(id) {
+  const registeredCues = PILOT_SOUND_CUE_REGISTRY[id];
+  if (!registeredCues?.length) {
+    return undefined;
+  }
+
+  const resolvedCues = await Promise.all(
+    registeredCues.map(async (cue) => {
+      const relativeRegisteredPath = cue.sound.replace(/^\/+/, "");
+      const soundPath = path.join(PROJECT_ROOT, "public", relativeRegisteredPath);
+
+      try {
+        await fs.access(soundPath);
+        return cue;
+      } catch (error) {
+        if (error && typeof error === "object" && error.code === "ENOENT") {
+          return null;
+        }
+
+        throw error;
+      }
+    })
+  );
+
+  return resolvedCues.every(Boolean) ? resolvedCues : undefined;
 }
 
 function estimateDurationMs(svg, fileContents) {
@@ -161,9 +308,16 @@ async function buildItem(kind, id, spec, paths, metadataMap) {
 
   const metadata = metadataMap.get(id) ?? null;
   const durationMs = metadata?.durationMs ?? svgMetrics?.durationMs ?? null;
+  const category = metadata?.category ?? svgMetrics?.category ?? null;
   const calculatedFrameCount = durationMs
     ? durationToFrameCount(durationMs, spec.apngFrameRate)
     : null;
+  const lottiePath = await resolveLottiePath(id, category);
+  const lottieQuality = resolveLottieQuality(id, lottiePath);
+  const lottieSupported = resolveLottieSupported(kind, lottiePath);
+  const featured = resolveFeaturedFlag(id, lottieQuality);
+  const soundCues = await resolveSoundCues(id);
+  const soundPath = await resolveSoundPath(id);
 
   return {
     apng: apngStat
@@ -178,15 +332,21 @@ async function buildItem(kind, id, spec, paths, metadataMap) {
         }
       : null,
     aspectRatio: spec.aspectRatio,
-    category: metadata?.category ?? svgMetrics?.category ?? null,
+    category,
     durationMs,
     edgeGuidance: spec.edgeGuidance,
+    featured,
     height: svgMetrics?.height ?? metadata?.height ?? spec.height,
     id,
     kind,
+    lottiePath,
+    lottieQuality,
+    lottieSupported,
     name: metadata?.name ?? svgMetrics?.name ?? titleFromId(id),
     safeArea: spec.safeArea,
     safeAreaGuidance: spec.safeAreaGuidance,
+    soundCues,
+    soundPath,
     svg: svgStat
       ? {
           bytes: svgStat.size,

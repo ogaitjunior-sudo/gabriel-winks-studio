@@ -62,7 +62,7 @@
   }
 </style>
   
-      <path d="M 384 818 C 474 760, 564 678, 564 578 C 564 496, 508 430, 430 430 C 392 430, 360 450, 384 486 C 408 450, 376 430, 338 430 C 260 430, 204 496, 204 578 C 204 678, 294 760, 384 818 Z" fill="none" stroke="#ff8da8" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1380" style="--dash:1380; animation:drawLine 3.4s ease-in-out infinite;" />
-      <g style="transform-origin:384px 512px; animation:revealFinal 3.4s ease-out infinite;"><polygon points="384,508 394.69,533.31 420,544 394.69,554.69 384,580 373.31,554.69 348,544 373.31,533.31" fill="#ffe36a" stroke="rgba(255,255,255,0.72)" stroke-width="2.88" /><polygon points="268,458 273.94,472.06 288,478 273.94,483.94 268,498 262.06,483.94 248,478 262.06,472.06" fill="#74d9ff" stroke="rgba(255,255,255,0.72)" stroke-width="1.6" /><polygon points="500,458 505.94,472.06 520,478 505.94,483.94 500,498 494.06,483.94 480,478 494.06,472.06" fill="#8ef0c9" stroke="rgba(255,255,255,0.72)" stroke-width="1.6" /></g>
+      
+      
     
-</svg>
+<g id="content" transform="translate(384 512) scale(1.5786666666666664) translate(-384 -624)"><path d="M 384 818 C 474 760, 564 678, 564 578 C 564 496, 508 430, 430 430 C 392 430, 360 450, 384 486 C 408 450, 376 430, 338 430 C 260 430, 204 496, 204 578 C 204 678, 294 760, 384 818 Z" fill="none" stroke="#ff8da8" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1380" style="--dash:1380; animation:drawLine 3.4s ease-in-out infinite;"/><g style="transform-origin:384px 512px; animation:revealFinal 3.4s ease-out infinite;"><polygon points="384,508 394.69,533.31 420,544 394.69,554.69 384,580 373.31,554.69 348,544 373.31,533.31" fill="#ffe36a" stroke="rgba(255,255,255,0.72)" stroke-width="2.88"/><polygon points="268,458 273.94,472.06 288,478 273.94,483.94 268,498 262.06,483.94 248,478 262.06,472.06" fill="#74d9ff" stroke="rgba(255,255,255,0.72)" stroke-width="1.6"/><polygon points="500,458 505.94,472.06 520,478 505.94,483.94 500,498 494.06,483.94 480,478 494.06,472.06" fill="#8ef0c9" stroke="rgba(255,255,255,0.72)" stroke-width="1.6"/></g></g></svg>

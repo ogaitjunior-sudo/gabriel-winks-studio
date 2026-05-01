@@ -39,8 +39,10 @@ function EffectCardComponent({ effect, selected, onSelect, onDownload }: EffectC
           style={{ aspectRatio: "16 / 9" }}
         >
           {showPreview ? (
-            <div className="absolute inset-0">
-              <Comp playing={true} />
+            <div className="absolute inset-[12%] flex items-center justify-center">
+              <div className="h-full w-full">
+                <Comp playing={true} />
+              </div>
             </div>
           ) : (
             <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-background/20 via-background/5 to-primary/10">

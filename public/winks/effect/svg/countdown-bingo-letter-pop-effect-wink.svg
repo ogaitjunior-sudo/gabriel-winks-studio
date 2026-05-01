@@ -41,6 +41,21 @@
     50% { transform: rotate(3deg) translateY(-8px); }
   }
 
+  @keyframes wink-featured-pop {
+    0%, 100% { opacity: 1; transform: translateY(0px) scale(0.78) rotate(-6deg); }
+    12% { opacity: 1; transform: translateY(-26px) scale(1.3) rotate(4deg); }
+    22% { opacity: 1; transform: translateY(10px) scale(0.95) rotate(-2deg); }
+    34%, 76% { opacity: 1; transform: translateY(0px) scale(1) rotate(0deg); }
+    88% { opacity: 1; transform: translateY(-8px) scale(1.06) rotate(0deg); }
+  }
+
+  @keyframes wink-featured-burst {
+    0%, 40%, 100% { opacity: 0; transform: scale(0.38); }
+    48% { opacity: 0.95; transform: scale(0.92); }
+    60% { opacity: 0.42; transform: scale(1.18); }
+    72% { opacity: 0; transform: scale(1.34); }
+  }
+
   @keyframes wink-pulse {
     0%, 100% { transform: scale(0.96); opacity: 0.65; }
     50% { transform: scale(1.08); opacity: 1; }
@@ -924,25 +939,25 @@
     <style>
       
       @keyframes cdcountdownbingoletterpopeffectwinkdigit0 {
-        0%, 2%,
+        0%, 0%,
         100% {
           opacity: 0;
-          transform: translate(0px, 69.03px) scale(0.28) rotate(-8deg);
+          transform: translate(0px, 69.86px) scale(0.7) rotate(-6deg);
         }
-        6% {
+        0% {
           opacity: 1;
-          transform: translate(0px, 24.16px) scale(0.72) rotate(-2.8deg);
+          transform: translate(0px, 24.45px) scale(0.72) rotate(-2.1deg);
         }
-        10% {
+        5% {
           opacity: 1;
-          transform: translate(0px, -8px) scale(1.08) rotate(0deg);
+          transform: translate(0px, -8px) scale(1.22) rotate(0deg);
         }
-        12%,
-        16% {
+        14%,
+        18% {
           opacity: 1;
           transform: translate(0px, 0px) scale(1) rotate(0deg);
         }
-        20% {
+        22% {
           opacity: 0;
           transform: translate(0px, -12px) scale(1.12) rotate(0deg);
         }
@@ -950,25 +965,25 @@
     
 
       @keyframes cdcountdownbingoletterpopeffectwinkdigit1 {
-        0%, 14%,
+        0%, 16%,
         100% {
           opacity: 0;
-          transform: translate(0px, 69.03px) scale(0.28) rotate(-8deg);
+          transform: translate(0px, 69.86px) scale(0.7) rotate(-6deg);
         }
-        18% {
+        20% {
           opacity: 1;
-          transform: translate(0px, 24.16px) scale(0.72) rotate(-2.8deg);
+          transform: translate(0px, 24.45px) scale(0.72) rotate(-2.1deg);
         }
-        22% {
+        25% {
           opacity: 1;
-          transform: translate(0px, -8px) scale(1.08) rotate(0deg);
+          transform: translate(0px, -8px) scale(1.22) rotate(0deg);
         }
-        24%,
-        28% {
+        34%,
+        38% {
           opacity: 1;
           transform: translate(0px, 0px) scale(1) rotate(0deg);
         }
-        32% {
+        42% {
           opacity: 0;
           transform: translate(0px, -12px) scale(1.12) rotate(0deg);
         }
@@ -976,25 +991,25 @@
     
 
       @keyframes cdcountdownbingoletterpopeffectwinkdigit2 {
-        0%, 26%,
+        0%, 36%,
         100% {
           opacity: 0;
-          transform: translate(0px, 69.03px) scale(0.28) rotate(-8deg);
+          transform: translate(0px, 69.86px) scale(0.7) rotate(-6deg);
         }
-        30% {
-          opacity: 1;
-          transform: translate(0px, 24.16px) scale(0.72) rotate(-2.8deg);
-        }
-        34% {
-          opacity: 1;
-          transform: translate(0px, -8px) scale(1.08) rotate(0deg);
-        }
-        36%,
         40% {
+          opacity: 1;
+          transform: translate(0px, 24.45px) scale(0.72) rotate(-2.1deg);
+        }
+        45% {
+          opacity: 1;
+          transform: translate(0px, -8px) scale(1.22) rotate(0deg);
+        }
+        54%,
+        58% {
           opacity: 1;
           transform: translate(0px, 0px) scale(1) rotate(0deg);
         }
-        44% {
+        62% {
           opacity: 0;
           transform: translate(0px, -12px) scale(1.12) rotate(0deg);
         }
@@ -1002,20 +1017,20 @@
     
 
       @keyframes cdcountdownbingoletterpopeffectwinkband {
-        0%, 42%,
+        0%, 54%,
         100% {
           opacity: 0;
-          transform: translate(0px, 32.49px) scale(0.28) rotate(0deg);
+          transform: translate(0px, 20.04px) scale(0.56) rotate(0deg);
         }
-        46% {
+        58% {
           opacity: 1;
-          transform: translate(0px, 11.37px) scale(0.72) rotate(0deg);
+          transform: translate(0px, 7.02px) scale(0.72) rotate(0deg);
         }
-        54% {
+        62% {
           opacity: 1;
           transform: translate(0px, -8px) scale(1.08) rotate(0deg);
         }
-        90%,
+        92%,
         94% {
           opacity: 1;
           transform: translate(0px, 0px) scale(1) rotate(0deg);
@@ -1028,18 +1043,18 @@
     
 
       @keyframes cdcountdownbingoletterpopeffectwinkletter0 {
-        0%, 40%,
+        0%, 52%,
         100% {
           opacity: 0;
-          transform: translate(0px, 56.85px) scale(0.28) rotate(-8deg);
+          transform: translate(0px, -155.35px) scale(0.68) rotate(-6deg);
         }
-        44% {
+        56% {
           opacity: 1;
-          transform: translate(0px, 19.9px) scale(0.72) rotate(-2.8deg);
+          transform: translate(0px, -54.37px) scale(0.72) rotate(-2.1deg);
         }
-        48% {
+        60% {
           opacity: 1;
-          transform: translate(0px, -8px) scale(1.08) rotate(0deg);
+          transform: translate(0px, 8px) scale(1.2) rotate(0deg);
         }
         88%,
         92% {
@@ -1054,18 +1069,18 @@
     
 
       @keyframes cdcountdownbingoletterpopeffectwinkletter1 {
-        0%, 48%,
+        0%, 57%,
         100% {
           opacity: 0;
-          transform: translate(0px, 56.85px) scale(0.28) rotate(-4deg);
+          transform: translate(0px, -155.35px) scale(0.68) rotate(-3deg);
         }
-        52% {
+        61% {
           opacity: 1;
-          transform: translate(0px, 19.9px) scale(0.72) rotate(-1.4deg);
+          transform: translate(0px, -54.37px) scale(0.72) rotate(-1.05deg);
         }
-        56% {
+        65% {
           opacity: 1;
-          transform: translate(0px, -8px) scale(1.08) rotate(0deg);
+          transform: translate(0px, 8px) scale(1.2) rotate(0deg);
         }
         88%,
         92% {
@@ -1080,18 +1095,18 @@
     
 
       @keyframes cdcountdownbingoletterpopeffectwinkletter2 {
-        0%, 56%,
+        0%, 62%,
         100% {
           opacity: 0;
-          transform: translate(0px, 56.85px) scale(0.28) rotate(0deg);
+          transform: translate(0px, -155.35px) scale(0.68) rotate(0deg);
         }
-        60% {
+        66% {
           opacity: 1;
-          transform: translate(0px, 19.9px) scale(0.72) rotate(0deg);
+          transform: translate(0px, -54.37px) scale(0.72) rotate(0deg);
         }
-        64% {
+        70% {
           opacity: 1;
-          transform: translate(0px, -8px) scale(1.08) rotate(0deg);
+          transform: translate(0px, 8px) scale(1.2) rotate(0deg);
         }
         88%,
         92% {
@@ -1106,18 +1121,18 @@
     
 
       @keyframes cdcountdownbingoletterpopeffectwinkletter3 {
-        0%, 64%,
+        0%, 67%,
         100% {
           opacity: 0;
-          transform: translate(0px, 56.85px) scale(0.28) rotate(4deg);
+          transform: translate(0px, -155.35px) scale(0.68) rotate(3deg);
         }
-        68% {
+        71% {
           opacity: 1;
-          transform: translate(0px, 19.9px) scale(0.72) rotate(1.4deg);
+          transform: translate(0px, -54.37px) scale(0.72) rotate(1.05deg);
         }
-        72% {
+        75% {
           opacity: 1;
-          transform: translate(0px, -8px) scale(1.08) rotate(0deg);
+          transform: translate(0px, 8px) scale(1.2) rotate(0deg);
         }
         88%,
         92% {
@@ -1135,15 +1150,15 @@
         0%, 72%,
         100% {
           opacity: 0;
-          transform: translate(0px, 56.85px) scale(0.28) rotate(8deg);
+          transform: translate(0px, -155.35px) scale(0.68) rotate(6deg);
         }
         76% {
           opacity: 1;
-          transform: translate(0px, 19.9px) scale(0.72) rotate(2.8deg);
+          transform: translate(0px, -54.37px) scale(0.72) rotate(2.1deg);
         }
         80% {
           opacity: 1;
-          transform: translate(0px, -8px) scale(1.08) rotate(0deg);
+          transform: translate(0px, 8px) scale(1.2) rotate(0deg);
         }
         88%,
         92% {
@@ -1158,12 +1173,12 @@
     
 
     @keyframes cdcountdownbingoletterpopeffectwinkfinalburst {
-      0%, 80%,
+      0%, 78%,
       100% {
         opacity: 0;
         transform: scale(0.22);
       }
-      84% {
+      82% {
         opacity: 1;
         transform: scale(0.36);
       }
@@ -1179,18 +1194,18 @@
   
 
       @keyframes cdcountdownbingoletterpopeffectwinkfinalword {
-        0%, 84%,
+        0%, 82%,
         100% {
           opacity: 0;
-          transform: translate(0px, 47.95px) scale(0.5) rotate(0deg);
+          transform: translate(0px, 35.77px) scale(0.72) rotate(0deg);
         }
-        88% {
+        86% {
           opacity: 1;
-          transform: translate(0px, 16.78px) scale(0.72) rotate(0deg);
+          transform: translate(0px, 12.52px) scale(0.72) rotate(0deg);
         }
-        92% {
+        90% {
           opacity: 1;
-          transform: translate(0px, -8px) scale(1.08) rotate(0deg);
+          transform: translate(0px, -8px) scale(1.16) rotate(0deg);
         }
         97%,
         100% {
@@ -1204,89 +1219,89 @@
       }
     
     </style>
-    <circle cx="960" cy="542.16" r="231.46559999999997" fill="#ffd456" opacity="0.08" />
-    <g style="transform-origin:422.4px 216px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0s;"><polygon points="422.4,196.52 428.19,210.21 441.88,216 428.19,221.79 422.4,235.48 416.61,221.79 402.92,216 416.61,210.21" fill="#fff5dc" stroke="rgba(255,255,255,0.75)" stroke-width="1.558656" /></g><g style="transform-origin:691.2px 151.2px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.17s;"><polygon points="691.2,131.72 696.99,145.41 710.68,151.2 696.99,156.99 691.2,170.68 685.41,156.99 671.72,151.2 685.41,145.41" fill="#ffd456" stroke="rgba(255,255,255,0.75)" stroke-width="1.558656" /></g><g style="transform-origin:1228.8px 162px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.34s;"><polygon points="1228.8,142.52 1234.59,156.21 1248.28,162 1234.59,167.79 1228.8,181.48 1223.01,167.79 1209.32,162 1223.01,156.21" fill="#69d6ff" stroke="rgba(255,255,255,0.75)" stroke-width="1.558656" /></g><g style="transform-origin:1497.6px 237.6px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.51s;"><polygon points="1497.6,218.12 1503.39,231.81 1517.08,237.6 1503.39,243.39 1497.6,257.08 1491.81,243.39 1478.12,237.6 1491.81,231.81" fill="#fff5dc" stroke="rgba(255,255,255,0.75)" stroke-width="1.558656" /></g><g style="transform-origin:422.4px 842.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.68s;"><polygon points="422.4,822.92 428.19,836.61 441.88,842.4 428.19,848.19 422.4,861.88 416.61,848.19 402.92,842.4 416.61,836.61" fill="#ffd456" stroke="rgba(255,255,255,0.75)" stroke-width="1.558656" /></g><g style="transform-origin:1497.6px 842.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.85s;"><polygon points="1497.6,822.92 1503.39,836.61 1517.08,842.4 1503.39,848.19 1497.6,861.88 1491.81,848.19 1478.12,842.4 1491.81,836.61" fill="#69d6ff" stroke="rgba(255,255,255,0.75)" stroke-width="1.558656" /></g>
     
-          <g style="transform-origin:960px 542.16px; animation:cdcountdownbingoletterpopeffectwinkdigit0 3.8s linear infinite;">
-            <circle cx="960" cy="542.16" r="146.1888" fill="#ffd456" opacity="0.14" />
-            <circle cx="960" cy="542.16" r="109.6416" fill="#ffd456" stroke="#0d2146" stroke-width="11.1672" />
-            <circle cx="923.45" cy="497.49" r="28.425600000000003" fill="#fff" opacity="0.22" />
-            <text x="960" y="542.16" text-anchor="middle" dominant-baseline="central" font-size="117.76319999999998" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="4.710527999999999" letter-spacing="3.5328959999999996" >3</text>
-          </g>
+    
+    
+          
         
-          <g style="transform-origin:960px 542.16px; animation:cdcountdownbingoletterpopeffectwinkdigit1 3.8s linear infinite;">
-            <circle cx="960" cy="542.16" r="146.1888" fill="#ffd456" opacity="0.14" />
-            <circle cx="960" cy="542.16" r="109.6416" fill="#ffd456" stroke="#0d2146" stroke-width="11.1672" />
-            <circle cx="923.45" cy="497.49" r="28.425600000000003" fill="#fff" opacity="0.22" />
-            <text x="960" y="542.16" text-anchor="middle" dominant-baseline="central" font-size="117.76319999999998" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="4.710527999999999" letter-spacing="3.5328959999999996" >2</text>
-          </g>
+          
         
-          <g style="transform-origin:960px 542.16px; animation:cdcountdownbingoletterpopeffectwinkdigit2 3.8s linear infinite;">
-            <circle cx="960" cy="542.16" r="146.1888" fill="#ffd456" opacity="0.14" />
-            <circle cx="960" cy="542.16" r="109.6416" fill="#ffd456" stroke="#0d2146" stroke-width="11.1672" />
-            <circle cx="923.45" cy="497.49" r="28.425600000000003" fill="#fff" opacity="0.22" />
-            <text x="960" y="542.16" text-anchor="middle" dominant-baseline="central" font-size="117.76319999999998" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="4.710527999999999" letter-spacing="3.5328959999999996" >1</text>
-          </g>
+          
         
     
       
-          <g style="transform-origin:960px 562.46px; animation:cdcountdownbingoletterpopeffectwinkband 3.8s linear infinite;">
-            <rect x="441.32" y="463.36" width="1037.36" height="198.2" rx="47.57" fill="#0d2146" opacity="0.18" />
-          </g>
+          
         
       
-          <g style="transform-origin:582.78px 562.46px; animation:cdcountdownbingoletterpopeffectwinkletter0 3.8s linear infinite;">
-            <circle cx="582.78" cy="562.46" r="115.0848" fill="#0278df" opacity="0.14" />
-            <circle cx="582.78" cy="562.46" r="86.31360000000001" fill="#0278df" stroke="#0d2146" stroke-width="8.7912" />
-            <circle cx="554.01" cy="527.3" r="22.3776" fill="#fff" opacity="0.22" />
-            <text x="582.78" y="562.46" text-anchor="middle" dominant-baseline="central" font-size="92.7072" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="3.708288" letter-spacing="2.7812159999999997" >B</text>
-          </g>
+          
         
-          <g style="transform-origin:771.39px 562.46px; animation:cdcountdownbingoletterpopeffectwinkletter1 3.8s linear infinite;">
-            <circle cx="771.39" cy="562.46" r="115.0848" fill="#f70900" opacity="0.14" />
-            <circle cx="771.39" cy="562.46" r="86.31360000000001" fill="#f70900" stroke="#0d2146" stroke-width="8.7912" />
-            <circle cx="742.62" cy="527.3" r="22.3776" fill="#fff" opacity="0.22" />
-            <text x="771.39" y="562.46" text-anchor="middle" dominant-baseline="central" font-size="92.7072" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="3.708288" letter-spacing="2.7812159999999997" >I</text>
-          </g>
+          
         
-          <g style="transform-origin:960px 562.46px; animation:cdcountdownbingoletterpopeffectwinkletter2 3.8s linear infinite;">
-            <circle cx="960" cy="562.46" r="115.0848" fill="#9610b8" opacity="0.14" />
-            <circle cx="960" cy="562.46" r="86.31360000000001" fill="#9610b8" stroke="#0d2146" stroke-width="8.7912" />
-            <circle cx="931.23" cy="527.3" r="22.3776" fill="#fff" opacity="0.22" />
-            <text x="960" y="562.46" text-anchor="middle" dominant-baseline="central" font-size="92.7072" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="3.708288" letter-spacing="2.7812159999999997" >N</text>
-          </g>
+          
         
-          <g style="transform-origin:1148.61px 562.46px; animation:cdcountdownbingoletterpopeffectwinkletter3 3.8s linear infinite;">
-            <circle cx="1148.61" cy="562.46" r="115.0848" fill="#36af0a" opacity="0.14" />
-            <circle cx="1148.61" cy="562.46" r="86.31360000000001" fill="#36af0a" stroke="#0d2146" stroke-width="8.7912" />
-            <circle cx="1119.84" cy="527.3" r="22.3776" fill="#fff" opacity="0.22" />
-            <text x="1148.61" y="562.46" text-anchor="middle" dominant-baseline="central" font-size="92.7072" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="3.708288" letter-spacing="2.7812159999999997" >G</text>
-          </g>
+          
         
-          <g style="transform-origin:1337.22px 562.46px; animation:cdcountdownbingoletterpopeffectwinkletter4 3.8s linear infinite;">
-            <circle cx="1337.22" cy="562.46" r="115.0848" fill="#f7c901" opacity="0.14" />
-            <circle cx="1337.22" cy="562.46" r="86.31360000000001" fill="#f7c901" stroke="#0d2146" stroke-width="8.7912" />
-            <circle cx="1308.45" cy="527.3" r="22.3776" fill="#fff" opacity="0.22" />
-            <text x="1337.22" y="562.46" text-anchor="middle" dominant-baseline="central" font-size="92.7072" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="3.708288" letter-spacing="2.7812159999999997" >O</text>
-          </g>
+          
         
       
-          <g style="transform-origin:960px 542.16px; animation:cdcountdownbingoletterpopeffectwinkfinalburst 3.8s linear infinite;">
-            <circle cx="960" cy="542.16" r="146.01" fill="#ff864c" opacity="0.12" />
-            <rect x="926.07" y="389.23" width="21.52" height="43.04" rx="3.8735999999999997" fill="#ffd456" transform="rotate(0 936.83 410.75)" opacity="0.92" /><rect x="972.6" y="354.40000000000003" width="21.52" height="43.04" rx="3.8735999999999997" fill="#ff864c" transform="rotate(26 983.36 375.92)" opacity="0.92" /><rect x="1037.93" y="338.81" width="21.52" height="43.04" rx="3.8735999999999997" fill="#69d6ff" transform="rotate(52 1048.69 360.33)" opacity="0.92" /><rect x="1041.93" y="424.65000000000003" width="21.52" height="43.04" rx="3.8735999999999997" fill="#fff5dc" transform="rotate(78 1052.69 446.17)" opacity="0.92" /><rect x="1097.46" y="441.83000000000004" width="21.52" height="43.04" rx="3.8735999999999997" fill="#ffd456" transform="rotate(104 1108.22 463.35)" opacity="0.92" /><rect x="1148.48" y="485.51" width="21.52" height="43.04" rx="3.8735999999999997" fill="#ff864c" transform="rotate(130 1159.24 507.03)" opacity="0.92" /><rect x="1081.38" y="539.21" width="21.52" height="43.04" rx="3.8735999999999997" fill="#69d6ff" transform="rotate(156 1092.14 560.73)" opacity="0.92" /><rect x="1100.1200000000001" y="594.23" width="21.52" height="43.04" rx="3.8735999999999997" fill="#fff5dc" transform="rotate(182 1110.88 615.75)" opacity="0.92" /><rect x="1094.77" y="661.1800000000001" width="21.52" height="43.04" rx="3.8735999999999997" fill="#ffd456" transform="rotate(208 1105.53 682.7)" opacity="0.92" /><rect x="1011.89" y="638.46" width="21.52" height="43.04" rx="3.8735999999999997" fill="#ff864c" transform="rotate(234 1022.65 659.98)" opacity="0.92" /><rect x="978.39" y="685.96" width="21.52" height="43.04" rx="3.8735999999999997" fill="#69d6ff" transform="rotate(260 989.15 707.48)" opacity="0.92" /><rect x="921.08" y="720.98" width="21.52" height="43.04" rx="3.8735999999999997" fill="#fff5dc" transform="rotate(286 931.84 742.5)" opacity="0.92" /><rect x="890.74" y="640.57" width="21.52" height="43.04" rx="3.8735999999999997" fill="#ffd456" transform="rotate(312 901.5 662.09)" opacity="0.92" /><rect x="832.63" y="641.4" width="21.52" height="43.04" rx="3.8735999999999997" fill="#ff864c" transform="rotate(338 843.39 662.92)" opacity="0.92" />
-            <g style="transform-origin:960px 332.27px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0s;"><polygon points="960,308.51 967.06,325.21 983.76,332.27 967.06,339.33 960,356.03 952.94,339.33 936.24,332.27 952.94,325.21" fill="#fff5dc" stroke="#ffd456" stroke-width="1.9008000000000003" /></g><g style="transform-origin:1141.77px 437.22px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.08s;"><polygon points="1141.77,417.74 1147.56,431.43 1161.25,437.22 1147.56,443.01 1141.77,456.7 1135.98,443.01 1122.29,437.22 1135.98,431.43" fill="#fff5dc" stroke="#ffd456" stroke-width="1.558656" /></g><g style="transform-origin:1141.77px 647.1px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.16s;"><polygon points="1141.77,623.34 1148.83,640.04 1165.53,647.1 1148.83,654.16 1141.77,670.86 1134.71,654.16 1118.01,647.1 1134.71,640.04" fill="#fff5dc" stroke="#ffd456" stroke-width="1.9008000000000003" /></g><g style="transform-origin:960px 752.05px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.24s;"><polygon points="960,732.57 965.79,746.26 979.48,752.05 965.79,757.84 960,771.53 954.21,757.84 940.52,752.05 954.21,746.26" fill="#fff5dc" stroke="#ffd456" stroke-width="1.558656" /></g><g style="transform-origin:778.23px 647.1px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.32s;"><polygon points="778.23,623.34 785.29,640.04 801.99,647.1 785.29,654.16 778.23,670.86 771.17,654.16 754.47,647.1 771.17,640.04" fill="#fff5dc" stroke="#ffd456" stroke-width="1.9008000000000003" /></g><g style="transform-origin:778.23px 437.22px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.4s;"><polygon points="778.23,417.74 784.02,431.43 797.71,437.22 784.02,443.01 778.23,456.7 772.44,443.01 758.75,437.22 772.44,431.43" fill="#fff5dc" stroke="#ffd456" stroke-width="1.558656" /></g>
-          </g>
+          
         
       
-          <g style="transform-origin:960px 703.12px; animation:cdcountdownbingoletterpopeffectwinkfinalword 3.8s linear infinite;">
+          
+        
+    
+  
+<g id="content" transform="translate(960 540) scale(0.8228429887135317) translate(-960.0000305175781 -594.8030815124512)"><circle cx="960" cy="466.56" r="330.73920000000004" fill="#ffd456" opacity="0.12"/><g style="transform-origin:537.6px 194.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0s;"><polygon points="537.6,165.37 546.22,185.78 566.63,194.4 546.22,203.02 537.6,223.43 528.98,203.02 508.57,194.4 528.98,185.78" fill="#fff5dc" stroke="rgba(255,255,255,0.75)" stroke-width="2.3224319999999996"/></g><g style="transform-origin:768px 129.6px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.17s;"><polygon points="768,100.57 776.62,120.98 797.03,129.6 776.62,138.22 768,158.63 759.38,138.22 738.97,129.6 759.38,120.98" fill="#ffd456" stroke="rgba(255,255,255,0.75)" stroke-width="2.3224319999999996"/></g><g style="transform-origin:1152px 129.6px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.34s;"><polygon points="1152,100.57 1160.62,120.98 1181.03,129.6 1160.62,138.22 1152,158.63 1143.38,138.22 1122.97,129.6 1143.38,120.98" fill="#69d6ff" stroke="rgba(255,255,255,0.75)" stroke-width="2.3224319999999996"/></g><g style="transform-origin:1382.4px 194.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.51s;"><polygon points="1382.4,165.37 1391.02,185.78 1411.43,194.4 1391.02,203.02 1382.4,223.43 1373.78,203.02 1353.37,194.4 1373.78,185.78" fill="#fff5dc" stroke="rgba(255,255,255,0.75)" stroke-width="2.3224319999999996"/></g><g style="transform-origin:614.4px 777.6px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.68s;"><polygon points="614.4,748.57 623.02,768.98 643.43,777.6 623.02,786.22 614.4,806.63 605.78,786.22 585.37,777.6 605.78,768.98" fill="#ffd456" stroke="rgba(255,255,255,0.75)" stroke-width="2.3224319999999996"/></g><g style="transform-origin:1305.6px 777.6px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.85s;"><polygon points="1305.6,748.57 1314.22,768.98 1334.63,777.6 1314.22,786.22 1305.6,806.63 1296.98,786.22 1276.57,777.6 1296.98,768.98" fill="#69d6ff" stroke="rgba(255,255,255,0.75)" stroke-width="2.3224319999999996"/></g><g style="transform-origin:960px 466.56px; animation:cdcountdownbingoletterpopeffectwinkdigit0 3.8s linear infinite;">
+            <circle cx="960" cy="466.56" r="180.4032" fill="#ffd456" opacity="0.14"/>
+            <circle cx="960" cy="466.56" r="135.3024" fill="#ffd456" stroke="#0d2146" stroke-width="13.780800000000001"/>
+            <circle cx="914.9" cy="411.44" r="35.0784" fill="#fff" opacity="0.22"/>
+            <text x="960" y="466.56" text-anchor="middle" dominant-baseline="central" font-size="145.32479999999998" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="5.8129919999999995" letter-spacing="4.359743999999999">3</text>
+          </g><g style="transform-origin:960px 466.56px; animation:cdcountdownbingoletterpopeffectwinkdigit1 3.8s linear infinite;">
+            <circle cx="960" cy="466.56" r="180.4032" fill="#ffd456" opacity="0.14"/>
+            <circle cx="960" cy="466.56" r="135.3024" fill="#ffd456" stroke="#0d2146" stroke-width="13.780800000000001"/>
+            <circle cx="914.9" cy="411.44" r="35.0784" fill="#fff" opacity="0.22"/>
+            <text x="960" y="466.56" text-anchor="middle" dominant-baseline="central" font-size="145.32479999999998" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="5.8129919999999995" letter-spacing="4.359743999999999">2</text>
+          </g><g style="transform-origin:960px 466.56px; animation:cdcountdownbingoletterpopeffectwinkdigit2 3.8s linear infinite;">
+            <circle cx="960" cy="466.56" r="180.4032" fill="#ffd456" opacity="0.14"/>
+            <circle cx="960" cy="466.56" r="135.3024" fill="#ffd456" stroke="#0d2146" stroke-width="13.780800000000001"/>
+            <circle cx="914.9" cy="411.44" r="35.0784" fill="#fff" opacity="0.22"/>
+            <text x="960" y="466.56" text-anchor="middle" dominant-baseline="central" font-size="145.32479999999998" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="5.8129919999999995" letter-spacing="4.359743999999999">1</text>
+          </g><g style="transform-origin:960px 697.08px; animation:cdcountdownbingoletterpopeffectwinkband 3.8s linear infinite;">
+            <rect x="227.73" y="573.88" width="1464.54" height="246.41" rx="59.14" fill="#0d2146" opacity="0.18"/>
+          </g><g style="transform-origin:427.44px 697.08px; animation:cdcountdownbingoletterpopeffectwinkletter0 3.8s linear infinite;">
+            <circle cx="427.44" cy="697.08" r="143.0784" fill="#0278df" opacity="0.14"/>
+            <circle cx="427.44" cy="697.08" r="107.3088" fill="#0278df" stroke="#0d2146" stroke-width="10.9296"/>
+            <circle cx="391.67" cy="653.36" r="27.820800000000002" fill="#fff" opacity="0.22"/>
+            <text x="427.44" y="697.08" text-anchor="middle" dominant-baseline="central" font-size="115.2576" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="4.610304" letter-spacing="3.457728">B</text>
+          </g><g style="transform-origin:693.72px 697.08px; animation:cdcountdownbingoletterpopeffectwinkletter1 3.8s linear infinite;">
+            <circle cx="693.72" cy="697.08" r="143.0784" fill="#f70900" opacity="0.14"/>
+            <circle cx="693.72" cy="697.08" r="107.3088" fill="#f70900" stroke="#0d2146" stroke-width="10.9296"/>
+            <circle cx="657.95" cy="653.36" r="27.820800000000002" fill="#fff" opacity="0.22"/>
+            <text x="693.72" y="697.08" text-anchor="middle" dominant-baseline="central" font-size="115.2576" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="4.610304" letter-spacing="3.457728">I</text>
+          </g><g style="transform-origin:960px 697.08px; animation:cdcountdownbingoletterpopeffectwinkletter2 3.8s linear infinite;">
+            <circle cx="960" cy="697.08" r="143.0784" fill="#9610b8" opacity="0.14"/>
+            <circle cx="960" cy="697.08" r="107.3088" fill="#9610b8" stroke="#0d2146" stroke-width="10.9296"/>
+            <circle cx="924.23" cy="653.36" r="27.820800000000002" fill="#fff" opacity="0.22"/>
+            <text x="960" y="697.08" text-anchor="middle" dominant-baseline="central" font-size="115.2576" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="4.610304" letter-spacing="3.457728">N</text>
+          </g><g style="transform-origin:1226.28px 697.08px; animation:cdcountdownbingoletterpopeffectwinkletter3 3.8s linear infinite;">
+            <circle cx="1226.28" cy="697.08" r="143.0784" fill="#36af0a" opacity="0.14"/>
+            <circle cx="1226.28" cy="697.08" r="107.3088" fill="#36af0a" stroke="#0d2146" stroke-width="10.9296"/>
+            <circle cx="1190.51" cy="653.36" r="27.820800000000002" fill="#fff" opacity="0.22"/>
+            <text x="1226.28" y="697.08" text-anchor="middle" dominant-baseline="central" font-size="115.2576" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="4.610304" letter-spacing="3.457728">G</text>
+          </g><g style="transform-origin:1492.56px 697.08px; animation:cdcountdownbingoletterpopeffectwinkletter4 3.8s linear infinite;">
+            <circle cx="1492.56" cy="697.08" r="143.0784" fill="#f7c901" opacity="0.14"/>
+            <circle cx="1492.56" cy="697.08" r="107.3088" fill="#f7c901" stroke="#0d2146" stroke-width="10.9296"/>
+            <circle cx="1456.79" cy="653.36" r="27.820800000000002" fill="#fff" opacity="0.22"/>
+            <text x="1492.56" y="697.08" text-anchor="middle" dominant-baseline="central" font-size="115.2576" font-weight="900" fill="#fff5dc" stroke="#0d2146" stroke-width="4.610304" letter-spacing="3.457728">O</text>
+          </g><g style="transform-origin:960px 466.56px; animation:cdcountdownbingoletterpopeffectwinkfinalburst 3.8s linear infinite;">
+            <circle cx="960" cy="466.56" r="180.18" fill="#ff864c" opacity="0.12"/>
+            <rect x="918.13" y="277.83" width="26.56" height="53.12" rx="4.780799999999999" fill="#ffd456" transform="rotate(0 931.41 304.39)" opacity="0.92"/><rect x="975.5500000000001" y="234.85000000000002" width="26.56" height="53.12" rx="4.780799999999999" fill="#ff864c" transform="rotate(26 988.83 261.41)" opacity="0.92"/><rect x="1056.16" y="215.60999999999999" width="26.56" height="53.12" rx="4.780799999999999" fill="#69d6ff" transform="rotate(52 1069.44 242.17)" opacity="0.92"/><rect x="1061.1100000000001" y="321.55" width="26.56" height="53.12" rx="4.780799999999999" fill="#fff5dc" transform="rotate(78 1074.39 348.11)" opacity="0.92"/><rect x="1129.63" y="342.74" width="26.56" height="53.12" rx="4.780799999999999" fill="#ffd456" transform="rotate(104 1142.91 369.3)" opacity="0.92"/><rect x="1192.59" y="396.65" width="26.56" height="53.12" rx="4.780799999999999" fill="#ff864c" transform="rotate(130 1205.87 423.21)" opacity="0.92"/><rect x="1109.79" y="462.92" width="26.56" height="53.12" rx="4.780799999999999" fill="#69d6ff" transform="rotate(156 1123.07 489.48)" opacity="0.92"/><rect x="1132.92" y="530.8100000000001" width="26.56" height="53.12" rx="4.780799999999999" fill="#fff5dc" transform="rotate(182 1146.2 557.37)" opacity="0.92"/><rect x="1126.31" y="613.4300000000001" width="26.56" height="53.12" rx="4.780799999999999" fill="#ffd456" transform="rotate(208 1139.59 639.99)" opacity="0.92"/><rect x="1024.03" y="585.3900000000001" width="26.56" height="53.12" rx="4.780799999999999" fill="#ff864c" transform="rotate(234 1037.31 611.95)" opacity="0.92"/><rect x="982.69" y="644.0200000000001" width="26.56" height="53.12" rx="4.780799999999999" fill="#69d6ff" transform="rotate(260 995.97 670.58)" opacity="0.92"/><rect x="911.97" y="687.23" width="26.56" height="53.12" rx="4.780799999999999" fill="#fff5dc" transform="rotate(286 925.25 713.79)" opacity="0.92"/><rect x="874.53" y="588" width="26.56" height="53.12" rx="4.780799999999999" fill="#ffd456" transform="rotate(312 887.81 614.56)" opacity="0.92"/><rect x="802.8100000000001" y="589.0200000000001" width="26.56" height="53.12" rx="4.780799999999999" fill="#ff864c" transform="rotate(338 816.09 615.58)" opacity="0.92"/>
+            <g style="transform-origin:960px 207.55px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0s;"><polygon points="960,177.31 968.98,198.57 990.24,207.55 968.98,216.53 960,237.79 951.02,216.53 929.76,207.55 951.02,198.57" fill="#fff5dc" stroke="#ffd456" stroke-width="2.4192"/></g><g style="transform-origin:1184.31px 337.06px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.08s;"><polygon points="1184.31,312.26 1191.67,329.7 1209.11,337.06 1191.67,344.42 1184.31,361.86 1176.95,344.42 1159.51,337.06 1176.95,329.7" fill="#fff5dc" stroke="#ffd456" stroke-width="1.983744"/></g><g style="transform-origin:1184.31px 596.06px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.16s;"><polygon points="1184.31,565.82 1193.29,587.08 1214.55,596.06 1193.29,605.04 1184.31,626.3 1175.33,605.04 1154.07,596.06 1175.33,587.08" fill="#fff5dc" stroke="#ffd456" stroke-width="2.4192"/></g><g style="transform-origin:960px 725.57px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.24s;"><polygon points="960,700.77 967.36,718.21 984.8,725.57 967.36,732.93 960,750.37 952.64,732.93 935.2,725.57 952.64,718.21" fill="#fff5dc" stroke="#ffd456" stroke-width="1.983744"/></g><g style="transform-origin:735.69px 596.06px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.32s;"><polygon points="735.69,565.82 744.67,587.08 765.93,596.06 744.67,605.04 735.69,626.3 726.71,605.04 705.45,596.06 726.71,587.08" fill="#fff5dc" stroke="#ffd456" stroke-width="2.4192"/></g><g style="transform-origin:735.69px 337.06px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.4s;"><polygon points="735.69,312.26 743.05,329.7 760.49,337.06 743.05,344.42 735.69,361.86 728.33,344.42 710.89,337.06 728.33,329.7" fill="#fff5dc" stroke="#ffd456" stroke-width="1.983744"/></g>
+          </g><g style="transform-origin:960px 963.36px; animation:cdcountdownbingoletterpopeffectwinkfinalword 3.8s linear infinite;">
             
     <g>
-      <rect x="384.74" y="597.625" width="1150.52" height="210.99" rx="105.495" fill="#ffd456" stroke="#0d2146" stroke-width="14.769300000000001" />
-      <text x="960" y="709.4497" text-anchor="middle" dominant-baseline="central" font-size="88.61580000000001" font-weight="900" fill="#0d2146" stroke="#0d2146" stroke-width="3.5446320000000004" letter-spacing="2.658474" >BINGO</text>
+      <rect x="147.84500000000003" y="832.205" width="1624.31" height="262.31" rx="131.155" fill="#ffd456" stroke="#0d2146" stroke-width="18.361700000000003"/>
+      <text x="960" y="971.2293" text-anchor="middle" dominant-baseline="central" font-size="110.1702" font-weight="900" fill="#0d2146" stroke="#0d2146" stroke-width="4.406808" letter-spacing="3.305106">BINGO</text>
     </g>
   
-          </g>
-        
-    
-  
-</svg>
+          </g></g></svg>

@@ -14,18 +14,31 @@ export interface WinkApngAsset extends WinkFileAsset {
   transparent: true;
 }
 
+export interface WinkSoundCue {
+  sound: string;
+  time: number;
+}
+
+export type WinkLottieQuality = "high" | "medium" | "low";
+
 export interface WinkManifestItem {
   apng: WinkApngAsset | null;
   aspectRatio: string;
   category: string | null;
   durationMs: number | null;
   edgeGuidance: string | null;
+  featured?: true;
   height: number;
   id: string;
   kind: WinkKind;
+  lottiePath?: string;
+  lottieQuality?: WinkLottieQuality;
+  lottieSupported?: boolean;
   name: string;
   safeArea: string;
   safeAreaGuidance: string;
+  soundCues?: WinkSoundCue[];
+  soundPath?: string;
   svg: WinkFileAsset | null;
   typeLabel: string;
   viewBox: string;
@@ -113,7 +126,7 @@ export function getExpectedWinkAssetPath(kind: WinkKind, format: "apng" | "svg",
   return `/winks/${kind}/${format}/${getExpectedWinkFileName(id, format)}`;
 }
 
-function normalizeManifestAssetPath(assetPath: string) {
+export function normalizePublicAssetPath(assetPath: string) {
   if (assetPath.startsWith("/")) {
     return assetPath;
   }
@@ -143,7 +156,7 @@ export function resolveWinkAssetPath(
     return expectedPath;
   }
 
-  const normalizedPath = normalizeManifestAssetPath(assetPath);
+  const normalizedPath = normalizePublicAssetPath(assetPath);
   return normalizedPath === expectedPath ? normalizedPath : expectedPath;
 }
 

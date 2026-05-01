@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" data-wink-name="Flowers Spring Wave" data-wink-category="Flowers" data-wink-duration="3200ms" aria-label="Flowers Spring Wave">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" data-wink-name="Flowers Spring Garden Overture" data-wink-category="Flowers" data-wink-duration="3200ms" aria-label="Flowers Spring Garden Overture">
   <style>
   text {
     font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
@@ -39,6 +39,21 @@
   @keyframes wink-hover-sway {
     0%, 100% { transform: rotate(-3deg) translateY(0px); }
     50% { transform: rotate(3deg) translateY(-8px); }
+  }
+
+  @keyframes wink-featured-pop {
+    0%, 100% { opacity: 1; transform: translateY(0px) scale(0.78) rotate(-6deg); }
+    12% { opacity: 1; transform: translateY(-26px) scale(1.3) rotate(4deg); }
+    22% { opacity: 1; transform: translateY(10px) scale(0.95) rotate(-2deg); }
+    34%, 76% { opacity: 1; transform: translateY(0px) scale(1) rotate(0deg); }
+    88% { opacity: 1; transform: translateY(-8px) scale(1.06) rotate(0deg); }
+  }
+
+  @keyframes wink-featured-burst {
+    0%, 40%, 100% { opacity: 0; transform: scale(0.38); }
+    48% { opacity: 0.95; transform: scale(0.92); }
+    60% { opacity: 0.42; transform: scale(1.18); }
+    72% { opacity: 0; transform: scale(1.34); }
   }
 
   @keyframes wink-pulse {
@@ -921,85 +936,85 @@
   
 </style>
   
-    <text x="960" y="216" text-anchor="middle" dominant-baseline="central" font-size="69.984" font-weight="900" fill="#f4fff5" stroke="#36513f" stroke-width="2.7993599999999996" letter-spacing="2.0995199999999996" >SPRING</text>
     
-          <g style="transform-origin:960px 561.6px; animation:wink-enter-rise 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite;">
-            
-    <g>
-      <ellipse cx="906.58" cy="581.04" rx="30.404160000000005" ry="52.8768" fill="#8be49c" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(0 906.58 581.04)" /><ellipse cx="880.8" cy="625.69" rx="30.404160000000005" ry="52.8768" fill="#8be49c" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(60 880.8 625.69)" /><ellipse cx="829.25" cy="625.69" rx="30.404160000000005" ry="52.8768" fill="#8be49c" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(120 829.25 625.69)" /><ellipse cx="803.47" cy="581.04" rx="30.404160000000005" ry="52.8768" fill="#8be49c" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(180 803.47 581.04)" /><ellipse cx="829.25" cy="536.39" rx="30.404160000000005" ry="52.8768" fill="#8be49c" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(240 829.25 536.39)" /><ellipse cx="880.8" cy="536.39" rx="30.404160000000005" ry="52.8768" fill="#8be49c" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(300 880.8 536.39)" />
-      <circle cx="855.024" cy="581.0400000000001" r="27.76032" fill="#ffd964" stroke="#36513f" stroke-width="5.94864" />
-    </g>
-  
-            
-    <g>
-      <ellipse cx="1023.69" cy="534.38" rx="37.55808" ry="65.3184" fill="#ff92d5" stroke="#36513f" stroke-width="6.53184" transform="rotate(0 1023.69 534.38)" /><ellipse cx="991.84" cy="589.54" rx="37.55808" ry="65.3184" fill="#ff92d5" stroke="#36513f" stroke-width="6.53184" transform="rotate(60 991.84 589.54)" /><ellipse cx="928.16" cy="589.54" rx="37.55808" ry="65.3184" fill="#ff92d5" stroke="#36513f" stroke-width="6.53184" transform="rotate(120 928.16 589.54)" /><ellipse cx="896.31" cy="534.38" rx="37.55808" ry="65.3184" fill="#ff92d5" stroke="#36513f" stroke-width="6.53184" transform="rotate(180 896.31 534.38)" /><ellipse cx="928.16" cy="479.23" rx="37.55808" ry="65.3184" fill="#ff92d5" stroke="#36513f" stroke-width="6.53184" transform="rotate(240 928.16 479.23)" /><ellipse cx="991.84" cy="479.23" rx="37.55808" ry="65.3184" fill="#ff92d5" stroke="#36513f" stroke-width="6.53184" transform="rotate(300 991.84 479.23)" />
-      <circle cx="960" cy="534.384" r="34.292159999999996" fill="#ffd964" stroke="#36513f" stroke-width="7.348319999999999" />
-    </g>
-  
-            
-    <g>
-      <ellipse cx="1120.42" cy="577.15" rx="30.404160000000005" ry="52.8768" fill="#ffc4dd" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(0 1120.42 577.15)" /><ellipse cx="1094.64" cy="621.8" rx="30.404160000000005" ry="52.8768" fill="#ffc4dd" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(60 1094.64 621.8)" /><ellipse cx="1043.09" cy="621.8" rx="30.404160000000005" ry="52.8768" fill="#ffc4dd" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(120 1043.09 621.8)" /><ellipse cx="1017.31" cy="577.15" rx="30.404160000000005" ry="52.8768" fill="#ffc4dd" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(180 1017.31 577.15)" /><ellipse cx="1043.09" cy="532.5" rx="30.404160000000005" ry="52.8768" fill="#ffc4dd" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(240 1043.09 532.5)" /><ellipse cx="1094.64" cy="532.5" rx="30.404160000000005" ry="52.8768" fill="#ffc4dd" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(300 1094.64 532.5)" />
-      <circle cx="1068.864" cy="577.152" r="27.76032" fill="#ffd964" stroke="#36513f" stroke-width="5.94864" />
-    </g>
-  
-            <path d="M 812.256 654.912 Q 960 588.816, 1107.744 654.912" fill="none" stroke="#50b267" stroke-width="9.72" stroke-linecap="round" />
-          </g>
+    
+          
         
-    <circle cx="960" cy="561.6" r="209.95200000000003" fill="none" stroke="#ffd964" stroke-width="15.12" opacity="0.88" style="transform-origin:960px 561.6px; animation:wink-impact-ring 3.2s ease-out infinite;" />
-    <g style="transform-origin:499.2px 259.2px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0s;"><polygon points="499.2,239.76 504.97,253.43 518.64,259.2 504.97,264.97 499.2,278.64 493.43,264.97 479.76,259.2 493.43,253.43" fill="#f4fff5" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g><g style="transform-origin:729.6px 194.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.17s;"><polygon points="729.6,174.96 735.37,188.63 749.04,194.4 735.37,200.17 729.6,213.84 723.83,200.17 710.16,194.4 723.83,188.63" fill="#8be49c" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g><g style="transform-origin:1190.4px 205.2px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.34s;"><polygon points="1190.4,185.76 1196.17,199.43 1209.84,205.2 1196.17,210.97 1190.4,224.64 1184.63,210.97 1170.96,205.2 1184.63,199.43" fill="#ff92d5" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g><g style="transform-origin:1420.8px 302.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.51s;"><polygon points="1420.8,282.96 1426.57,296.63 1440.24,302.4 1426.57,308.17 1420.8,321.84 1415.03,308.17 1401.36,302.4 1415.03,296.63" fill="#f4fff5" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g><g style="transform-origin:460.8px 799.2px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.68s;"><polygon points="460.8,779.76 466.57,793.43 480.24,799.2 466.57,804.97 460.8,818.64 455.03,804.97 441.36,799.2 455.03,793.43" fill="#8be49c" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g><g style="transform-origin:1459.2px 820.8px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.85s;"><polygon points="1459.2,801.36 1464.97,815.03 1478.64,820.8 1464.97,826.57 1459.2,840.24 1453.43,826.57 1439.76,820.8 1453.43,815.03" fill="#ff92d5" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g>
-    <g style="transform-origin:960px 561.6px; --tx:0px; --ty:-291.6px; --r0:-90deg; --r1:30deg; --r2:130deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0s;">
-        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#8be49c" />
-        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)" />
+    
+    
+    
+    
+  
+<g id="content" transform="translate(960 540) scale(1.1765594282937615) translate(-960.0000152587891 -520.3136596679688)"><text x="960" y="216" text-anchor="middle" dominant-baseline="central" font-size="69.984" font-weight="900" fill="#f4fff5" stroke="#36513f" stroke-width="2.7993599999999996" letter-spacing="2.0995199999999996">SPRING</text><g style="transform-origin:960px 561.6px; animation:wink-enter-rise 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite;">
+            
+    <g>
+      <ellipse cx="906.58" cy="581.04" rx="30.404160000000005" ry="52.8768" fill="#8be49c" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(0 906.58 581.04)"/><ellipse cx="880.8" cy="625.69" rx="30.404160000000005" ry="52.8768" fill="#8be49c" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(60 880.8 625.69)"/><ellipse cx="829.25" cy="625.69" rx="30.404160000000005" ry="52.8768" fill="#8be49c" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(120 829.25 625.69)"/><ellipse cx="803.47" cy="581.04" rx="30.404160000000005" ry="52.8768" fill="#8be49c" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(180 803.47 581.04)"/><ellipse cx="829.25" cy="536.39" rx="30.404160000000005" ry="52.8768" fill="#8be49c" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(240 829.25 536.39)"/><ellipse cx="880.8" cy="536.39" rx="30.404160000000005" ry="52.8768" fill="#8be49c" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(300 880.8 536.39)"/>
+      <circle cx="855.024" cy="581.0400000000001" r="27.76032" fill="#ffd964" stroke="#36513f" stroke-width="5.94864"/>
+    </g>
+  
+            
+    <g>
+      <ellipse cx="1023.69" cy="534.38" rx="37.55808" ry="65.3184" fill="#ff92d5" stroke="#36513f" stroke-width="6.53184" transform="rotate(0 1023.69 534.38)"/><ellipse cx="991.84" cy="589.54" rx="37.55808" ry="65.3184" fill="#ff92d5" stroke="#36513f" stroke-width="6.53184" transform="rotate(60 991.84 589.54)"/><ellipse cx="928.16" cy="589.54" rx="37.55808" ry="65.3184" fill="#ff92d5" stroke="#36513f" stroke-width="6.53184" transform="rotate(120 928.16 589.54)"/><ellipse cx="896.31" cy="534.38" rx="37.55808" ry="65.3184" fill="#ff92d5" stroke="#36513f" stroke-width="6.53184" transform="rotate(180 896.31 534.38)"/><ellipse cx="928.16" cy="479.23" rx="37.55808" ry="65.3184" fill="#ff92d5" stroke="#36513f" stroke-width="6.53184" transform="rotate(240 928.16 479.23)"/><ellipse cx="991.84" cy="479.23" rx="37.55808" ry="65.3184" fill="#ff92d5" stroke="#36513f" stroke-width="6.53184" transform="rotate(300 991.84 479.23)"/>
+      <circle cx="960" cy="534.384" r="34.292159999999996" fill="#ffd964" stroke="#36513f" stroke-width="7.348319999999999"/>
+    </g>
+  
+            
+    <g>
+      <ellipse cx="1120.42" cy="577.15" rx="30.404160000000005" ry="52.8768" fill="#ffc4dd" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(0 1120.42 577.15)"/><ellipse cx="1094.64" cy="621.8" rx="30.404160000000005" ry="52.8768" fill="#ffc4dd" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(60 1094.64 621.8)"/><ellipse cx="1043.09" cy="621.8" rx="30.404160000000005" ry="52.8768" fill="#ffc4dd" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(120 1043.09 621.8)"/><ellipse cx="1017.31" cy="577.15" rx="30.404160000000005" ry="52.8768" fill="#ffc4dd" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(180 1017.31 577.15)"/><ellipse cx="1043.09" cy="532.5" rx="30.404160000000005" ry="52.8768" fill="#ffc4dd" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(240 1043.09 532.5)"/><ellipse cx="1094.64" cy="532.5" rx="30.404160000000005" ry="52.8768" fill="#ffc4dd" stroke="#36513f" stroke-width="5.287680000000001" transform="rotate(300 1094.64 532.5)"/>
+      <circle cx="1068.864" cy="577.152" r="27.76032" fill="#ffd964" stroke="#36513f" stroke-width="5.94864"/>
+    </g>
+  
+            <path d="M 812.256 654.912 Q 960 588.816, 1107.744 654.912" fill="none" stroke="#50b267" stroke-width="9.72" stroke-linecap="round"/>
+          </g><circle cx="960" cy="561.6" r="209.95200000000003" fill="none" stroke="#ffd964" stroke-width="15.12" opacity="0.88" style="transform-origin:960px 561.6px; animation:wink-impact-ring 3.2s ease-out infinite;"/><g style="transform-origin:499.2px 259.2px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0s;"><polygon points="499.2,239.76 504.97,253.43 518.64,259.2 504.97,264.97 499.2,278.64 493.43,264.97 479.76,259.2 493.43,253.43" fill="#f4fff5" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001"/></g><g style="transform-origin:729.6px 194.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.17s;"><polygon points="729.6,174.96 735.37,188.63 749.04,194.4 735.37,200.17 729.6,213.84 723.83,200.17 710.16,194.4 723.83,188.63" fill="#8be49c" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001"/></g><g style="transform-origin:1190.4px 205.2px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.34s;"><polygon points="1190.4,185.76 1196.17,199.43 1209.84,205.2 1196.17,210.97 1190.4,224.64 1184.63,210.97 1170.96,205.2 1184.63,199.43" fill="#ff92d5" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001"/></g><g style="transform-origin:1420.8px 302.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.51s;"><polygon points="1420.8,282.96 1426.57,296.63 1440.24,302.4 1426.57,308.17 1420.8,321.84 1415.03,308.17 1401.36,302.4 1415.03,296.63" fill="#f4fff5" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001"/></g><g style="transform-origin:460.8px 799.2px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.68s;"><polygon points="460.8,779.76 466.57,793.43 480.24,799.2 466.57,804.97 460.8,818.64 455.03,804.97 441.36,799.2 455.03,793.43" fill="#8be49c" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001"/></g><g style="transform-origin:1459.2px 820.8px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.85s;"><polygon points="1459.2,801.36 1464.97,815.03 1478.64,820.8 1464.97,826.57 1459.2,840.24 1453.43,826.57 1439.76,820.8 1453.43,815.03" fill="#ff92d5" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001"/></g><g style="transform-origin:960px 561.6px; --tx:0px; --ty:-291.6px; --r0:-90deg; --r1:30deg; --r2:130deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0s;">
+        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#8be49c"/>
+        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)"/>
       </g><g style="transform-origin:960px 561.6px; --tx:118.6px; --ty:-266.39px; --r0:-66deg; --r1:54deg; --r2:154deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.03s;">
-        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#ffd964" />
-        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)" />
+        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#ffd964"/>
+        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)"/>
       </g><g style="transform-origin:960px 561.6px; --tx:216.7px; --ty:-195.12px; --r0:-42deg; --r1:78deg; --r2:178deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.06s;">
-        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#ff92d5" />
-        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)" />
+        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#ff92d5"/>
+        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)"/>
       </g><g style="transform-origin:960px 561.6px; --tx:277.33px; --ty:-90.11px; --r0:-18deg; --r1:102deg; --r2:202deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.09s;">
-        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#f4fff5" />
-        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)" />
+        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#f4fff5"/>
+        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)"/>
       </g><g style="transform-origin:960px 561.6px; --tx:290px; --ty:30.48px; --r0:6deg; --r1:126deg; --r2:226deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.12s;">
-        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#8be49c" />
-        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)" />
+        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#8be49c"/>
+        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)"/>
       </g><g style="transform-origin:960px 561.6px; --tx:252.53px; --ty:145.8px; --r0:30deg; --r1:150deg; --r2:250deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.15s;">
-        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#ffd964" />
-        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)" />
+        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#ffd964"/>
+        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)"/>
       </g><g style="transform-origin:960px 561.6px; --tx:171.4px; --ty:235.91px; --r0:54deg; --r1:174deg; --r2:274deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.18s;">
-        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#ff92d5" />
-        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)" />
+        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#ff92d5"/>
+        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)"/>
       </g><g style="transform-origin:960px 561.6px; --tx:60.63px; --ty:285.23px; --r0:78deg; --r1:198deg; --r2:298deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.21s;">
-        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#f4fff5" />
-        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)" />
+        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#f4fff5"/>
+        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)"/>
       </g><g style="transform-origin:960px 561.6px; --tx:-60.63px; --ty:285.23px; --r0:102deg; --r1:222deg; --r2:322deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.24s;">
-        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#8be49c" />
-        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)" />
+        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#8be49c"/>
+        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)"/>
       </g><g style="transform-origin:960px 561.6px; --tx:-171.4px; --ty:235.91px; --r0:126deg; --r1:246deg; --r2:346deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.27s;">
-        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#ffd964" />
-        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)" />
+        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#ffd964"/>
+        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)"/>
       </g><g style="transform-origin:960px 561.6px; --tx:-252.53px; --ty:145.8px; --r0:150deg; --r1:270deg; --r2:370deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.3s;">
-        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#ff92d5" />
-        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)" />
+        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#ff92d5"/>
+        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)"/>
       </g><g style="transform-origin:960px 561.6px; --tx:-290px; --ty:30.48px; --r0:174deg; --r1:294deg; --r2:394deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.33s;">
-        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#f4fff5" />
-        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)" />
+        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#f4fff5"/>
+        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)"/>
       </g><g style="transform-origin:960px 561.6px; --tx:-277.33px; --ty:-90.11px; --r0:198deg; --r1:318deg; --r2:418deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.36s;">
-        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#8be49c" />
-        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)" />
+        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#8be49c"/>
+        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)"/>
       </g><g style="transform-origin:960px 561.6px; --tx:-216.7px; --ty:-195.12px; --r0:222deg; --r1:342deg; --r2:442deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.39s;">
-        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#ffd964" />
-        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)" />
+        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#ffd964"/>
+        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)"/>
       </g><g style="transform-origin:960px 561.6px; --tx:-118.6px; --ty:-266.39px; --r0:246deg; --r1:366deg; --r2:466deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.42s;">
-        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#ff92d5" />
-        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)" />
-      </g>
-    <g style="transform-origin:960px 820.8px; animation:wink-finale 3.2s ease-out infinite;">
+        <ellipse cx="960" cy="561.6" rx="12.441600000000001" ry="20.0448" fill="#ff92d5"/>
+        <ellipse cx="960" cy="561.6" rx="4.32" ry="16.416" fill="rgba(255,255,255,0.32)"/>
+      </g><g style="transform-origin:960px 820.8px; animation:wink-finale 3.2s ease-out infinite;">
       
     <g>
-      <rect x="761.712" y="787.752" width="396.576" height="66.096" rx="33.048" fill="#8be49c" stroke="#36513f" stroke-width="4.626720000000001" />
-      <text x="960" y="822.78288" text-anchor="middle" dominant-baseline="central" font-size="27.76032" font-weight="900" fill="#36513f" stroke="#36513f" stroke-width="2" letter-spacing="0.8328095999999999" >WAVE</text>
+      <rect x="761.712" y="787.752" width="396.576" height="66.096" rx="33.048" fill="#8be49c" stroke="#36513f" stroke-width="4.626720000000001"/>
+      <text x="960" y="822.78288" text-anchor="middle" dominant-baseline="central" font-size="27.76032" font-weight="900" fill="#36513f" stroke="#36513f" stroke-width="2" letter-spacing="0.8328095999999999">WAVE</text>
     </g>
   
-    </g>
-  
-</svg>
+    </g></g></svg>

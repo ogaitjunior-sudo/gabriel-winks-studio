@@ -41,6 +41,21 @@
     50% { transform: rotate(3deg) translateY(-8px); }
   }
 
+  @keyframes wink-featured-pop {
+    0%, 100% { opacity: 1; transform: translateY(0px) scale(0.78) rotate(-6deg); }
+    12% { opacity: 1; transform: translateY(-26px) scale(1.3) rotate(4deg); }
+    22% { opacity: 1; transform: translateY(10px) scale(0.95) rotate(-2deg); }
+    34%, 76% { opacity: 1; transform: translateY(0px) scale(1) rotate(0deg); }
+    88% { opacity: 1; transform: translateY(-8px) scale(1.06) rotate(0deg); }
+  }
+
+  @keyframes wink-featured-burst {
+    0%, 40%, 100% { opacity: 0; transform: scale(0.38); }
+    48% { opacity: 0.95; transform: scale(0.92); }
+    60% { opacity: 0.42; transform: scale(1.18); }
+    72% { opacity: 0; transform: scale(1.34); }
+  }
+
   @keyframes wink-pulse {
     0%, 100% { transform: scale(0.96); opacity: 0.65; }
     50% { transform: scale(1.08); opacity: 1; }
@@ -921,81 +936,81 @@
   
 </style>
   
-    <text x="384" y="184.32" text-anchor="middle" dominant-baseline="central" font-size="70.0416" font-weight="900" fill="#faf2ff" stroke="#37174d" stroke-width="2.801664" letter-spacing="2.101248" >JACKPOT</text>
     
-          <g style="transform-origin:384px 512px; animation:wink-enter-spin 3.2s cubic-bezier(0.2,0.88,0.24,1) infinite;">
-            
-    <g>
-      <path d="M 354.14016 587.644928 L 320.299008 587.644928 Q 304.37376 587.644928, 304.37376 571.71968 L 304.37376 515.981312 Q 304.37376 500.056064, 320.299008 500.056064 L 352.149504 500.056064 L 352.149504 448.299008 Q 352.149504 432.37376, 368.074752 432.37376 Q 384 432.37376, 384 448.299008 L 384 484.130816 L 435.75705600000003 484.130816 Q 463.62624 484.130816, 463.62624 512 Q 463.62624 535.887872, 443.71968000000004 539.869184 L 439.73836800000004 539.869184 Q 443.71968000000004 559.775744, 427.79443200000003 571.71968 Q 419.831808 583.663616, 399.925248 583.663616 L 354.14016 587.644928 Z" fill="#ffcc4d" stroke="#faf2ff" stroke-width="7.962624000000001" stroke-linejoin="round" />
-      <path d="M 380.018688 468.20556799999997 L 380.018688 500.056064" fill="none" stroke="rgba(255,255,255,0.38)" stroke-width="5.5738368000000005" stroke-linecap="round" />
-    </g>
-  
-            
-    <g>
-      <rect x="207.05280000000002" y="644.7104" width="353.89439999999996" height="66.3552" rx="33.1776" fill="#ff6680" stroke="#37174d" stroke-width="4.644864" />
-      <text x="384" y="679.878656" text-anchor="middle" dominant-baseline="central" font-size="27.869183999999997" font-weight="900" fill="#faf2ff" stroke="#37174d" stroke-width="2" letter-spacing="0.8360755199999998" >777</text>
-    </g>
-  
-          </g>
+    
+          
         
-    <circle cx="384" cy="512" r="195.3792" fill="none" stroke="#ff6680" stroke-width="10.75" opacity="0.88" style="transform-origin:384px 512px; animation:wink-impact-ring 3.2s ease-out infinite;" />
-    <g style="transform-origin:199.68px 245.76px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0s;"><polygon points="199.68,231.94 203.78,241.66 213.5,245.76 203.78,249.86 199.68,259.58 195.58,249.86 185.86,245.76 195.58,241.66" fill="#faf2ff" stroke="rgba(255,255,255,0.75)" stroke-width="1.2" /></g><g style="transform-origin:291.84px 184.32px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.17s;"><polygon points="291.84,170.5 295.94,180.22 305.66,184.32 295.94,188.42 291.84,198.14 287.74,188.42 278.02,184.32 287.74,180.22" fill="#ffcc4d" stroke="rgba(255,255,255,0.75)" stroke-width="1.2" /></g><g style="transform-origin:476.16px 194.56px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.34s;"><polygon points="476.16,180.74 480.26,190.46 489.98,194.56 480.26,198.66 476.16,208.38 472.06,198.66 462.34,194.56 472.06,190.46" fill="#ff6680" stroke="rgba(255,255,255,0.75)" stroke-width="1.2" /></g><g style="transform-origin:568.32px 286.72px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.51s;"><polygon points="568.32,272.9 572.42,282.62 582.14,286.72 572.42,290.82 568.32,300.54 564.22,290.82 554.5,286.72 564.22,282.62" fill="#faf2ff" stroke="rgba(255,255,255,0.75)" stroke-width="1.2" /></g><g style="transform-origin:184.32px 757.76px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.68s;"><polygon points="184.32,743.94 188.42,753.66 198.14,757.76 188.42,761.86 184.32,771.58 180.22,761.86 170.5,757.76 180.22,753.66" fill="#ffcc4d" stroke="rgba(255,255,255,0.75)" stroke-width="1.2" /></g><g style="transform-origin:583.68px 778.24px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.85s;"><polygon points="583.68,764.42 587.78,774.14 597.5,778.24 587.78,782.34 583.68,792.06 579.58,782.34 569.86,778.24 579.58,774.14" fill="#ff6680" stroke="rgba(255,255,255,0.75)" stroke-width="1.2" /></g>
-    <g style="transform-origin:384px 512px; --tx:0px; --ty:-215.04px; --r0:-90deg; --r1:30deg; --r2:130deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0s;">
-        <circle cx="384" cy="512" r="13.82" fill="#ff6680" stroke="#b27f00" stroke-width="1.6583999999999999" />
-        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001" />
+    
+    
+    
+    
+  
+<g id="content" transform="translate(384 512) scale(1.0539147666608903) translate(-384.0000457763672 -491.1408386230469)"><text x="384" y="184.32" text-anchor="middle" dominant-baseline="central" font-size="70.0416" font-weight="900" fill="#faf2ff" stroke="#37174d" stroke-width="2.801664" letter-spacing="2.101248">JACKPOT</text><g style="transform-origin:384px 512px; animation:wink-enter-spin 3.2s cubic-bezier(0.2,0.88,0.24,1) infinite;">
+            
+    <g>
+      <path d="M 354.14016 587.644928 L 320.299008 587.644928 Q 304.37376 587.644928, 304.37376 571.71968 L 304.37376 515.981312 Q 304.37376 500.056064, 320.299008 500.056064 L 352.149504 500.056064 L 352.149504 448.299008 Q 352.149504 432.37376, 368.074752 432.37376 Q 384 432.37376, 384 448.299008 L 384 484.130816 L 435.75705600000003 484.130816 Q 463.62624 484.130816, 463.62624 512 Q 463.62624 535.887872, 443.71968000000004 539.869184 L 439.73836800000004 539.869184 Q 443.71968000000004 559.775744, 427.79443200000003 571.71968 Q 419.831808 583.663616, 399.925248 583.663616 L 354.14016 587.644928 Z" fill="#ffcc4d" stroke="#faf2ff" stroke-width="7.962624000000001" stroke-linejoin="round"/>
+      <path d="M 380.018688 468.20556799999997 L 380.018688 500.056064" fill="none" stroke="rgba(255,255,255,0.38)" stroke-width="5.5738368000000005" stroke-linecap="round"/>
+    </g>
+  
+            
+    <g>
+      <rect x="207.05280000000002" y="644.7104" width="353.89439999999996" height="66.3552" rx="33.1776" fill="#ff6680" stroke="#37174d" stroke-width="4.644864"/>
+      <text x="384" y="679.878656" text-anchor="middle" dominant-baseline="central" font-size="27.869183999999997" font-weight="900" fill="#faf2ff" stroke="#37174d" stroke-width="2" letter-spacing="0.8360755199999998">777</text>
+    </g>
+  
+          </g><circle cx="384" cy="512" r="195.3792" fill="none" stroke="#ff6680" stroke-width="10.75" opacity="0.88" style="transform-origin:384px 512px; animation:wink-impact-ring 3.2s ease-out infinite;"/><g style="transform-origin:199.68px 245.76px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0s;"><polygon points="199.68,231.94 203.78,241.66 213.5,245.76 203.78,249.86 199.68,259.58 195.58,249.86 185.86,245.76 195.58,241.66" fill="#faf2ff" stroke="rgba(255,255,255,0.75)" stroke-width="1.2"/></g><g style="transform-origin:291.84px 184.32px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.17s;"><polygon points="291.84,170.5 295.94,180.22 305.66,184.32 295.94,188.42 291.84,198.14 287.74,188.42 278.02,184.32 287.74,180.22" fill="#ffcc4d" stroke="rgba(255,255,255,0.75)" stroke-width="1.2"/></g><g style="transform-origin:476.16px 194.56px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.34s;"><polygon points="476.16,180.74 480.26,190.46 489.98,194.56 480.26,198.66 476.16,208.38 472.06,198.66 462.34,194.56 472.06,190.46" fill="#ff6680" stroke="rgba(255,255,255,0.75)" stroke-width="1.2"/></g><g style="transform-origin:568.32px 286.72px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.51s;"><polygon points="568.32,272.9 572.42,282.62 582.14,286.72 572.42,290.82 568.32,300.54 564.22,290.82 554.5,286.72 564.22,282.62" fill="#faf2ff" stroke="rgba(255,255,255,0.75)" stroke-width="1.2"/></g><g style="transform-origin:184.32px 757.76px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.68s;"><polygon points="184.32,743.94 188.42,753.66 198.14,757.76 188.42,761.86 184.32,771.58 180.22,761.86 170.5,757.76 180.22,753.66" fill="#ffcc4d" stroke="rgba(255,255,255,0.75)" stroke-width="1.2"/></g><g style="transform-origin:583.68px 778.24px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.85s;"><polygon points="583.68,764.42 587.78,774.14 597.5,778.24 587.78,782.34 583.68,792.06 579.58,782.34 569.86,778.24 579.58,774.14" fill="#ff6680" stroke="rgba(255,255,255,0.75)" stroke-width="1.2"/></g><g style="transform-origin:384px 512px; --tx:0px; --ty:-215.04px; --r0:-90deg; --r1:30deg; --r2:130deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0s;">
+        <circle cx="384" cy="512" r="13.82" fill="#ff6680" stroke="#b27f00" stroke-width="1.6583999999999999"/>
+        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001"/>
       </g><g style="transform-origin:384px 512px; --tx:82.29px; --ty:-198.67px; --r0:-67.5deg; --r1:52.5deg; --r2:152.5deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.03s;">
-        <circle cx="384" cy="512" r="13.82" fill="#ffcc4d" stroke="#b27f00" stroke-width="1.6583999999999999" />
-        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001" />
+        <circle cx="384" cy="512" r="13.82" fill="#ffcc4d" stroke="#b27f00" stroke-width="1.6583999999999999"/>
+        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001"/>
       </g><g style="transform-origin:384px 512px; --tx:152.06px; --ty:-152.06px; --r0:-45deg; --r1:75deg; --r2:175deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.06s;">
-        <circle cx="384" cy="512" r="13.82" fill="#faf2ff" stroke="#b27f00" stroke-width="1.6583999999999999" />
-        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001" />
+        <circle cx="384" cy="512" r="13.82" fill="#faf2ff" stroke="#b27f00" stroke-width="1.6583999999999999"/>
+        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001"/>
       </g><g style="transform-origin:384px 512px; --tx:198.67px; --ty:-82.29px; --r0:-22.5deg; --r1:97.5deg; --r2:197.5deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.09s;">
-        <circle cx="384" cy="512" r="13.82" fill="#ff6680" stroke="#b27f00" stroke-width="1.6583999999999999" />
-        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001" />
+        <circle cx="384" cy="512" r="13.82" fill="#ff6680" stroke="#b27f00" stroke-width="1.6583999999999999"/>
+        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001"/>
       </g><g style="transform-origin:384px 512px; --tx:215.04px; --ty:0px; --r0:0deg; --r1:120deg; --r2:220deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.12s;">
-        <circle cx="384" cy="512" r="13.82" fill="#ffcc4d" stroke="#b27f00" stroke-width="1.6583999999999999" />
-        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001" />
+        <circle cx="384" cy="512" r="13.82" fill="#ffcc4d" stroke="#b27f00" stroke-width="1.6583999999999999"/>
+        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001"/>
       </g><g style="transform-origin:384px 512px; --tx:198.67px; --ty:82.29px; --r0:22.5deg; --r1:142.5deg; --r2:242.5deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.15s;">
-        <circle cx="384" cy="512" r="13.82" fill="#faf2ff" stroke="#b27f00" stroke-width="1.6583999999999999" />
-        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001" />
+        <circle cx="384" cy="512" r="13.82" fill="#faf2ff" stroke="#b27f00" stroke-width="1.6583999999999999"/>
+        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001"/>
       </g><g style="transform-origin:384px 512px; --tx:152.06px; --ty:152.06px; --r0:45deg; --r1:165deg; --r2:265deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.18s;">
-        <circle cx="384" cy="512" r="13.82" fill="#ff6680" stroke="#b27f00" stroke-width="1.6583999999999999" />
-        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001" />
+        <circle cx="384" cy="512" r="13.82" fill="#ff6680" stroke="#b27f00" stroke-width="1.6583999999999999"/>
+        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001"/>
       </g><g style="transform-origin:384px 512px; --tx:82.29px; --ty:198.67px; --r0:67.5deg; --r1:187.5deg; --r2:287.5deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.21s;">
-        <circle cx="384" cy="512" r="13.82" fill="#ffcc4d" stroke="#b27f00" stroke-width="1.6583999999999999" />
-        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001" />
+        <circle cx="384" cy="512" r="13.82" fill="#ffcc4d" stroke="#b27f00" stroke-width="1.6583999999999999"/>
+        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001"/>
       </g><g style="transform-origin:384px 512px; --tx:0px; --ty:215.04px; --r0:90deg; --r1:210deg; --r2:310deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.24s;">
-        <circle cx="384" cy="512" r="13.82" fill="#faf2ff" stroke="#b27f00" stroke-width="1.6583999999999999" />
-        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001" />
+        <circle cx="384" cy="512" r="13.82" fill="#faf2ff" stroke="#b27f00" stroke-width="1.6583999999999999"/>
+        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001"/>
       </g><g style="transform-origin:384px 512px; --tx:-82.29px; --ty:198.67px; --r0:112.5deg; --r1:232.5deg; --r2:332.5deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.27s;">
-        <circle cx="384" cy="512" r="13.82" fill="#ff6680" stroke="#b27f00" stroke-width="1.6583999999999999" />
-        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001" />
+        <circle cx="384" cy="512" r="13.82" fill="#ff6680" stroke="#b27f00" stroke-width="1.6583999999999999"/>
+        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001"/>
       </g><g style="transform-origin:384px 512px; --tx:-152.06px; --ty:152.06px; --r0:135deg; --r1:255deg; --r2:355deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.3s;">
-        <circle cx="384" cy="512" r="13.82" fill="#ffcc4d" stroke="#b27f00" stroke-width="1.6583999999999999" />
-        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001" />
+        <circle cx="384" cy="512" r="13.82" fill="#ffcc4d" stroke="#b27f00" stroke-width="1.6583999999999999"/>
+        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001"/>
       </g><g style="transform-origin:384px 512px; --tx:-198.67px; --ty:82.29px; --r0:157.5deg; --r1:277.5deg; --r2:377.5deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.33s;">
-        <circle cx="384" cy="512" r="13.82" fill="#faf2ff" stroke="#b27f00" stroke-width="1.6583999999999999" />
-        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001" />
+        <circle cx="384" cy="512" r="13.82" fill="#faf2ff" stroke="#b27f00" stroke-width="1.6583999999999999"/>
+        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001"/>
       </g><g style="transform-origin:384px 512px; --tx:-215.04px; --ty:0px; --r0:180deg; --r1:300deg; --r2:400deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.36s;">
-        <circle cx="384" cy="512" r="13.82" fill="#ff6680" stroke="#b27f00" stroke-width="1.6583999999999999" />
-        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001" />
+        <circle cx="384" cy="512" r="13.82" fill="#ff6680" stroke="#b27f00" stroke-width="1.6583999999999999"/>
+        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001"/>
       </g><g style="transform-origin:384px 512px; --tx:-198.67px; --ty:-82.29px; --r0:202.5deg; --r1:322.5deg; --r2:422.5deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.39s;">
-        <circle cx="384" cy="512" r="13.82" fill="#ffcc4d" stroke="#b27f00" stroke-width="1.6583999999999999" />
-        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001" />
+        <circle cx="384" cy="512" r="13.82" fill="#ffcc4d" stroke="#b27f00" stroke-width="1.6583999999999999"/>
+        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001"/>
       </g><g style="transform-origin:384px 512px; --tx:-152.06px; --ty:-152.06px; --r0:225deg; --r1:345deg; --r2:445deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.42s;">
-        <circle cx="384" cy="512" r="13.82" fill="#faf2ff" stroke="#b27f00" stroke-width="1.6583999999999999" />
-        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001" />
+        <circle cx="384" cy="512" r="13.82" fill="#faf2ff" stroke="#b27f00" stroke-width="1.6583999999999999"/>
+        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001"/>
       </g><g style="transform-origin:384px 512px; --tx:-82.29px; --ty:-198.67px; --r0:247.5deg; --r1:367.5deg; --r2:467.5deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.45s;">
-        <circle cx="384" cy="512" r="13.82" fill="#ff6680" stroke="#b27f00" stroke-width="1.6583999999999999" />
-        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001" />
-      </g>
-    <g style="transform-origin:384px 808.96px; animation:wink-finale 3.2s ease-out infinite;">
+        <circle cx="384" cy="512" r="13.82" fill="#ff6680" stroke="#b27f00" stroke-width="1.6583999999999999"/>
+        <circle cx="384" cy="512" r="7.739200000000001" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.3820000000000001"/>
+      </g><g style="transform-origin:384px 808.96px; animation:wink-finale 3.2s ease-out infinite;">
       
     <g>
-      <rect x="201.5232" y="777.6256000000001" width="364.9536" height="62.668800000000005" rx="31.334400000000002" fill="#ffcc4d" stroke="#37174d" stroke-width="4.3868160000000005" />
-      <text x="384" y="810.840064" text-anchor="middle" dominant-baseline="central" font-size="26.320896" font-weight="900" fill="#37174d" stroke="#37174d" stroke-width="2" letter-spacing="0.78962688" >LIKE</text>
+      <rect x="201.5232" y="777.6256000000001" width="364.9536" height="62.668800000000005" rx="31.334400000000002" fill="#ffcc4d" stroke="#37174d" stroke-width="4.3868160000000005"/>
+      <text x="384" y="810.840064" text-anchor="middle" dominant-baseline="central" font-size="26.320896" font-weight="900" fill="#37174d" stroke="#37174d" stroke-width="2" letter-spacing="0.78962688">LIKE</text>
     </g>
   
-    </g>
-  
-</svg>
+    </g></g></svg>

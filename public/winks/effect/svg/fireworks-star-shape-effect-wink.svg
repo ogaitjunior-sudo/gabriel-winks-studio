@@ -41,6 +41,21 @@
     50% { transform: rotate(3deg) translateY(-8px); }
   }
 
+  @keyframes wink-featured-pop {
+    0%, 100% { opacity: 1; transform: translateY(0px) scale(0.78) rotate(-6deg); }
+    12% { opacity: 1; transform: translateY(-26px) scale(1.3) rotate(4deg); }
+    22% { opacity: 1; transform: translateY(10px) scale(0.95) rotate(-2deg); }
+    34%, 76% { opacity: 1; transform: translateY(0px) scale(1) rotate(0deg); }
+    88% { opacity: 1; transform: translateY(-8px) scale(1.06) rotate(0deg); }
+  }
+
+  @keyframes wink-featured-burst {
+    0%, 40%, 100% { opacity: 0; transform: scale(0.38); }
+    48% { opacity: 0.95; transform: scale(0.92); }
+    60% { opacity: 0.42; transform: scale(1.18); }
+    72% { opacity: 0; transform: scale(1.34); }
+  }
+
   @keyframes wink-pulse {
     0%, 100% { transform: scale(0.96); opacity: 0.65; }
     50% { transform: scale(1.08); opacity: 1; }
@@ -921,268 +936,268 @@
   
 </style>
   
-    <g style="transform-origin:960px 561.6px; animation:wink-pulse 3s ease-in-out infinite;">
-      <ellipse cx="960" cy="561.6" rx="302.4" ry="172.8" fill="#fff8bf" opacity="0.08" />
-    </g>
-    <g style="transform-origin:326.4px 280.8px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0s;"><polygon points="326.4,265.68 330.89,276.31 341.52,280.8 330.89,285.29 326.4,295.92 321.91,285.29 311.28,280.8 321.91,276.31" fill="#fffef8" stroke="rgba(255,255,255,0.75)" stroke-width="1.2096" /></g><g style="transform-origin:1593.6px 280.8px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.17s;"><polygon points="1593.6,265.68 1598.09,276.31 1608.72,280.8 1598.09,285.29 1593.6,295.92 1589.11,285.29 1578.48,280.8 1589.11,276.31" fill="#ffe05d" stroke="rgba(255,255,255,0.75)" stroke-width="1.2096" /></g><g style="transform-origin:422.4px 756px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.34s;"><polygon points="422.4,740.88 426.89,751.51 437.52,756 426.89,760.49 422.4,771.12 417.91,760.49 407.28,756 417.91,751.51" fill="#89d8ff" stroke="rgba(255,255,255,0.75)" stroke-width="1.2096" /></g><g style="transform-origin:1497.6px 756px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.51s;"><polygon points="1497.6,740.88 1502.09,751.51 1512.72,756 1502.09,760.49 1497.6,771.12 1493.11,760.49 1482.48,756 1493.11,751.51" fill="#ff9e55" stroke="rgba(255,255,255,0.75)" stroke-width="1.2096" /></g>
     
     
-        <path d="M 800 950.4 C 800 763.78, 931.2 476.06, 960 561.6" fill="none" stroke="#ffd868" stroke-width="8" stroke-linecap="round" opacity="0.92" style="--trail-len:496.11; animation:fw-trail-single 3s ease-out infinite;" />
-        <g style="transform-origin:800px 950.4px; --dx:160px; --dy:-388.8px; animation:fw-head-single 3s ease-out infinite;">
-          <circle cx="800" cy="950.4" r="11" fill="#fffef8" opacity="0.98" />
-          <circle cx="800" cy="950.4" r="21" fill="#ffd868" opacity="0.42" />
-        </g>
-      
-        <path d="M 960 950.4 C 960 763.78, 960 476.06, 960 561.6" fill="none" stroke="#89d8ff" stroke-width="8" stroke-linecap="round" opacity="0.92" style="--trail-len:458.78; animation:fw-trail-single 3s ease-out infinite;" />
-        <g style="transform-origin:960px 950.4px; --dx:0px; --dy:-388.8px; animation:fw-head-single 3s ease-out infinite;">
-          <circle cx="960" cy="950.4" r="11" fill="#fffef8" opacity="0.98" />
-          <circle cx="960" cy="950.4" r="21" fill="#89d8ff" opacity="0.42" />
-        </g>
-      
-        <path d="M 1120 950.4 C 1120 763.78, 988.8 476.06, 960 561.6" fill="none" stroke="#ffd868" stroke-width="8" stroke-linecap="round" opacity="0.92" style="--trail-len:496.11; animation:fw-trail-single 3s ease-out infinite;" />
-        <g style="transform-origin:1120px 950.4px; --dx:-160px; --dy:-388.8px; animation:fw-head-single 3s ease-out infinite;">
-          <circle cx="1120" cy="950.4" r="11" fill="#fffef8" opacity="0.98" />
-          <circle cx="1120" cy="950.4" r="21" fill="#ffd868" opacity="0.42" />
-        </g>
-      
-    <g style="transform-origin:960px 561.6px; animation:fw-pause-single 3s ease-out infinite;">
-      <circle cx="960" cy="561.6" r="40" fill="#fffef8" opacity="0.16" />
-      <circle cx="960" cy="561.6" r="15" fill="#ff9e55" opacity="0.92" />
-    </g>
-    <g style="transform-origin:960px 561.6px; animation:fw-core-single 3s ease-out infinite;">
-      <circle cx="960" cy="561.6" r="80" fill="#fff8bf" opacity="0.36" />
-      <circle cx="960" cy="561.6" r="35" fill="#fffef8" opacity="0.98" />
-    </g>
     
-    <g style="transform-origin:960px 561.6px; animation:fw-burst-single 3s ease-out infinite;">
+    
+        
+        
       
-          <line x1="960" y1="524.4" x2="960" y2="319.8" stroke="#ffe05d" stroke-width="6" stroke-linecap="round" opacity="0.92" />
-          <circle cx="960" cy="319.8" r="5.5" fill="#ffe05d" opacity="0.94" />
         
-          <line x1="972.72" y1="526.64" x2="1055.42" y2="299.43" stroke="#ff9e55" stroke-width="4" stroke-linecap="round" opacity="0.92" />
-          <circle cx="1055.42" cy="299.43" r="4.2" fill="#ff9e55" opacity="0.94" />
         
-          <line x1="983.91" y1="533.1" x2="1163.25" y2="319.38" stroke="#89d8ff" stroke-width="6" stroke-linecap="round" opacity="0.92" />
-          <circle cx="1163.25" cy="319.38" r="5.5" fill="#89d8ff" opacity="0.94" />
+      
         
-          <line x1="992.22" y1="543" x2="1169.4" y2="440.7" stroke="#fffef8" stroke-width="4" stroke-linecap="round" opacity="0.92" />
-          <circle cx="1169.4" cy="440.7" r="4.2" fill="#fffef8" opacity="0.94" />
         
-          <line x1="996.63" y1="555.14" x2="1234.76" y2="513.15" stroke="#ffe05d" stroke-width="6" stroke-linecap="round" opacity="0.92" />
-          <circle cx="1234.76" cy="513.15" r="5.5" fill="#ffe05d" opacity="0.94" />
-        
-          <line x1="996.63" y1="568.06" x2="1271.4" y2="616.51" stroke="#ff9e55" stroke-width="4" stroke-linecap="round" opacity="0.92" />
-          <circle cx="1271.4" cy="616.51" r="4.2" fill="#ff9e55" opacity="0.94" />
-        
-          <line x1="992.22" y1="580.2" x2="1169.4" y2="682.5" stroke="#89d8ff" stroke-width="6" stroke-linecap="round" opacity="0.92" />
-          <circle cx="1169.4" cy="682.5" r="5.5" fill="#89d8ff" opacity="0.94" />
-        
-          <line x1="983.91" y1="590.1" x2="1139.34" y2="775.33" stroke="#fffef8" stroke-width="4" stroke-linecap="round" opacity="0.92" />
-          <circle cx="1139.34" cy="775.33" r="4.2" fill="#fffef8" opacity="0.94" />
-        
-          <line x1="972.72" y1="596.56" x2="1068.15" y2="858.73" stroke="#ffe05d" stroke-width="6" stroke-linecap="round" opacity="0.92" />
-          <circle cx="1068.15" cy="858.73" r="5.5" fill="#ffe05d" opacity="0.94" />
-        
-          <line x1="960" y1="598.8" x2="960" y2="803.4" stroke="#ff9e55" stroke-width="4" stroke-linecap="round" opacity="0.92" />
-          <circle cx="960" cy="803.4" r="4.2" fill="#ff9e55" opacity="0.94" />
-        
-          <line x1="947.28" y1="596.56" x2="864.58" y2="823.77" stroke="#89d8ff" stroke-width="6" stroke-linecap="round" opacity="0.92" />
-          <circle cx="864.58" cy="823.77" r="5.5" fill="#89d8ff" opacity="0.94" />
-        
-          <line x1="936.09" y1="590.1" x2="756.75" y2="803.82" stroke="#fffef8" stroke-width="4" stroke-linecap="round" opacity="0.92" />
-          <circle cx="756.75" cy="803.82" r="4.2" fill="#fffef8" opacity="0.94" />
-        
-          <line x1="927.78" y1="580.2" x2="750.6" y2="682.5" stroke="#ffe05d" stroke-width="6" stroke-linecap="round" opacity="0.92" />
-          <circle cx="750.6" cy="682.5" r="5.5" fill="#ffe05d" opacity="0.94" />
-        
-          <line x1="923.37" y1="568.06" x2="685.24" y2="610.05" stroke="#ff9e55" stroke-width="4" stroke-linecap="round" opacity="0.92" />
-          <circle cx="685.24" cy="610.05" r="4.2" fill="#ff9e55" opacity="0.94" />
-        
-          <line x1="923.37" y1="555.14" x2="648.6" y2="506.69" stroke="#89d8ff" stroke-width="6" stroke-linecap="round" opacity="0.92" />
-          <circle cx="648.6" cy="506.69" r="5.5" fill="#89d8ff" opacity="0.94" />
-        
-          <line x1="927.78" y1="543" x2="750.6" y2="440.7" stroke="#fffef8" stroke-width="4" stroke-linecap="round" opacity="0.92" />
-          <circle cx="750.6" cy="440.7" r="4.2" fill="#fffef8" opacity="0.94" />
-        
-          <line x1="936.09" y1="533.1" x2="780.66" y2="347.87" stroke="#ffe05d" stroke-width="6" stroke-linecap="round" opacity="0.92" />
-          <circle cx="780.66" cy="347.87" r="5.5" fill="#ffe05d" opacity="0.94" />
-        
-          <line x1="947.28" y1="526.64" x2="851.85" y2="264.47" stroke="#ff9e55" stroke-width="4" stroke-linecap="round" opacity="0.92" />
-          <circle cx="851.85" cy="264.47" r="4.2" fill="#ff9e55" opacity="0.94" />
-        
-    </g>
+      
+    
+    
+    
+    
   
     
     <defs>
       <clipPath id="fireworks-star-shape-effect-wink-single-0-clip" clipPathUnits="userSpaceOnUse">
-        <polygon points="960,311.6 1025.83,470.99 1197.76,484.35 1066.52,596.21 1106.95,763.85 960,673.6 813.05,763.85 853.48,596.21 722.24,484.35 894.17,470.99" />
+        <polygon points="960,311.6 1025.83,470.99 1197.76,484.35 1066.52,596.21 1106.95,763.85 960,673.6 813.05,763.85 853.48,596.21 722.24,484.35 894.17,470.99"/>
       </clipPath>
     </defs>
-    <g clip-path="url(#fireworks-star-shape-effect-wink-single-0-clip)">
-      <ellipse cx="960" cy="561.6" rx="220" ry="200" fill="#fff8bf" opacity="0.24" style="transform-origin:960px 561.6px; animation:fw-core-single 3s ease-out infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-236.4px; --ty:-242px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-156.4px; --ty:-235.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-76.4px; --ty:-238.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:3.6px; --ty:-242px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:83.6px; --ty:-235.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:163.6px; --ty:-238.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-182.8px; --ty:-198.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-102.8px; --ty:-202px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-22.8px; --ty:-195.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:57.2px; --ty:-198.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:137.2px; --ty:-202px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:217.2px; --ty:-195.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-236.4px; --ty:-162px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-156.4px; --ty:-155.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-76.4px; --ty:-158.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:3.6px; --ty:-162px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:83.6px; --ty:-155.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:163.6px; --ty:-158.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-182.8px; --ty:-118.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-102.8px; --ty:-122px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-22.8px; --ty:-115.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:57.2px; --ty:-118.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:137.2px; --ty:-122px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:217.2px; --ty:-115.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-236.4px; --ty:-82px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-156.4px; --ty:-75.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-76.4px; --ty:-78.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:3.6px; --ty:-82px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:83.6px; --ty:-75.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:163.6px; --ty:-78.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-182.8px; --ty:-38.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-102.8px; --ty:-42px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-22.8px; --ty:-35.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:57.2px; --ty:-38.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:137.2px; --ty:-42px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:217.2px; --ty:-35.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-236.4px; --ty:-2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-156.4px; --ty:4.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-76.4px; --ty:1.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:3.6px; --ty:-2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:83.6px; --ty:4.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:163.6px; --ty:1.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-182.8px; --ty:41.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-102.8px; --ty:38px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-22.8px; --ty:44.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:57.2px; --ty:41.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:137.2px; --ty:38px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:217.2px; --ty:44.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-236.4px; --ty:78px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-156.4px; --ty:84.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-76.4px; --ty:81.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:3.6px; --ty:78px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:83.6px; --ty:84.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:163.6px; --ty:81.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-182.8px; --ty:121.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-102.8px; --ty:118px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-22.8px; --ty:124.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:57.2px; --ty:121.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:137.2px; --ty:118px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:217.2px; --ty:124.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-236.4px; --ty:158px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-156.4px; --ty:164.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-76.4px; --ty:161.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:3.6px; --ty:158px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:83.6px; --ty:164.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:163.6px; --ty:161.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-182.8px; --ty:201.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-102.8px; --ty:198px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-22.8px; --ty:204.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:57.2px; --ty:201.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:137.2px; --ty:198px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:217.2px; --ty:204.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-236.4px; --ty:238px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-156.4px; --ty:244.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-76.4px; --ty:241.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:3.6px; --ty:238px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:83.6px; --ty:244.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:163.6px; --ty:241.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;" />
-      
-    </g>
+    
   
-    <g style="--dash-len:2050; animation:fw-outline-single 3s linear infinite;">
-      <polygon points="960,311.6 1025.83,470.99 1197.76,484.35 1066.52,596.21 1106.95,763.85 960,673.6 813.05,763.85 853.48,596.21 722.24,484.35 894.17,470.99" class="fw-outline" fill="none" stroke="#fff8d0" stroke-width="18" opacity="0.98" />
-    </g>
-    <g style="transform-origin:960px 271.6px; animation:fw-sparkle-single 3s ease-out infinite;"><polygon points="960,251.6 965.94,265.66 980,271.6 965.94,277.54 960,291.6 954.06,277.54 940,271.6 954.06,265.66" fill="#fffef8" stroke="#fff8d0" stroke-width="1.6" /></g><g style="transform-origin:745px 571.6px; animation:fw-sparkle-single 3s ease-out infinite;"><polygon points="745,556.6 749.45,567.15 760,571.6 749.45,576.05 745,586.6 740.55,576.05 730,571.6 740.55,567.15" fill="#ff9e55" stroke="#fff8d0" stroke-width="1.2" /></g><g style="transform-origin:1175px 571.6px; animation:fw-sparkle-single 3s ease-out infinite;"><polygon points="1175,556.6 1179.45,567.15 1190,571.6 1179.45,576.05 1175,586.6 1170.55,576.05 1160,571.6 1170.55,567.15" fill="#89d8ff" stroke="#fff8d0" stroke-width="1.2" /></g>
+    
+    
   
   
-</svg>
+<g id="content" transform="translate(960 540) scale(1.1028628433381962) translate(-959.7977142333984 -582.0575637817383)"><g style="transform-origin:960px 561.6px; animation:wink-pulse 3s ease-in-out infinite;">
+      <ellipse cx="960" cy="561.6" rx="302.4" ry="172.8" fill="#fff8bf" opacity="0.08"/>
+    </g><g style="transform-origin:326.4px 280.8px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0s;"><polygon points="326.4,265.68 330.89,276.31 341.52,280.8 330.89,285.29 326.4,295.92 321.91,285.29 311.28,280.8 321.91,276.31" fill="#fffef8" stroke="rgba(255,255,255,0.75)" stroke-width="1.2096"/></g><g style="transform-origin:1593.6px 280.8px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.17s;"><polygon points="1593.6,265.68 1598.09,276.31 1608.72,280.8 1598.09,285.29 1593.6,295.92 1589.11,285.29 1578.48,280.8 1589.11,276.31" fill="#ffe05d" stroke="rgba(255,255,255,0.75)" stroke-width="1.2096"/></g><g style="transform-origin:422.4px 756px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.34s;"><polygon points="422.4,740.88 426.89,751.51 437.52,756 426.89,760.49 422.4,771.12 417.91,760.49 407.28,756 417.91,751.51" fill="#89d8ff" stroke="rgba(255,255,255,0.75)" stroke-width="1.2096"/></g><g style="transform-origin:1497.6px 756px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.51s;"><polygon points="1497.6,740.88 1502.09,751.51 1512.72,756 1502.09,760.49 1497.6,771.12 1493.11,760.49 1482.48,756 1493.11,751.51" fill="#ff9e55" stroke="rgba(255,255,255,0.75)" stroke-width="1.2096"/></g><path d="M 800 950.4 C 800 763.78, 931.2 476.06, 960 561.6" fill="none" stroke="#ffd868" stroke-width="8" stroke-linecap="round" opacity="0.92" style="--trail-len:496.11; animation:fw-trail-single 3s ease-out infinite;"/><g style="transform-origin:800px 950.4px; --dx:160px; --dy:-388.8px; animation:fw-head-single 3s ease-out infinite;">
+          <circle cx="800" cy="950.4" r="11" fill="#fffef8" opacity="0.98"/>
+          <circle cx="800" cy="950.4" r="21" fill="#ffd868" opacity="0.42"/>
+        </g><path d="M 960 950.4 C 960 763.78, 960 476.06, 960 561.6" fill="none" stroke="#89d8ff" stroke-width="8" stroke-linecap="round" opacity="0.92" style="--trail-len:458.78; animation:fw-trail-single 3s ease-out infinite;"/><g style="transform-origin:960px 950.4px; --dx:0px; --dy:-388.8px; animation:fw-head-single 3s ease-out infinite;">
+          <circle cx="960" cy="950.4" r="11" fill="#fffef8" opacity="0.98"/>
+          <circle cx="960" cy="950.4" r="21" fill="#89d8ff" opacity="0.42"/>
+        </g><path d="M 1120 950.4 C 1120 763.78, 988.8 476.06, 960 561.6" fill="none" stroke="#ffd868" stroke-width="8" stroke-linecap="round" opacity="0.92" style="--trail-len:496.11; animation:fw-trail-single 3s ease-out infinite;"/><g style="transform-origin:1120px 950.4px; --dx:-160px; --dy:-388.8px; animation:fw-head-single 3s ease-out infinite;">
+          <circle cx="1120" cy="950.4" r="11" fill="#fffef8" opacity="0.98"/>
+          <circle cx="1120" cy="950.4" r="21" fill="#ffd868" opacity="0.42"/>
+        </g><g style="transform-origin:960px 561.6px; animation:fw-pause-single 3s ease-out infinite;">
+      <circle cx="960" cy="561.6" r="40" fill="#fffef8" opacity="0.16"/>
+      <circle cx="960" cy="561.6" r="15" fill="#ff9e55" opacity="0.92"/>
+    </g><g style="transform-origin:960px 561.6px; animation:fw-core-single 3s ease-out infinite;">
+      <circle cx="960" cy="561.6" r="80" fill="#fff8bf" opacity="0.36"/>
+      <circle cx="960" cy="561.6" r="35" fill="#fffef8" opacity="0.98"/>
+    </g><g style="transform-origin:960px 561.6px; animation:fw-burst-single 3s ease-out infinite;">
+      
+          <line x1="960" y1="524.4" x2="960" y2="319.8" stroke="#ffe05d" stroke-width="6" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="960" cy="319.8" r="5.5" fill="#ffe05d" opacity="0.94"/>
+        
+          <line x1="972.72" y1="526.64" x2="1055.42" y2="299.43" stroke="#ff9e55" stroke-width="4" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="1055.42" cy="299.43" r="4.2" fill="#ff9e55" opacity="0.94"/>
+        
+          <line x1="983.91" y1="533.1" x2="1163.25" y2="319.38" stroke="#89d8ff" stroke-width="6" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="1163.25" cy="319.38" r="5.5" fill="#89d8ff" opacity="0.94"/>
+        
+          <line x1="992.22" y1="543" x2="1169.4" y2="440.7" stroke="#fffef8" stroke-width="4" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="1169.4" cy="440.7" r="4.2" fill="#fffef8" opacity="0.94"/>
+        
+          <line x1="996.63" y1="555.14" x2="1234.76" y2="513.15" stroke="#ffe05d" stroke-width="6" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="1234.76" cy="513.15" r="5.5" fill="#ffe05d" opacity="0.94"/>
+        
+          <line x1="996.63" y1="568.06" x2="1271.4" y2="616.51" stroke="#ff9e55" stroke-width="4" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="1271.4" cy="616.51" r="4.2" fill="#ff9e55" opacity="0.94"/>
+        
+          <line x1="992.22" y1="580.2" x2="1169.4" y2="682.5" stroke="#89d8ff" stroke-width="6" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="1169.4" cy="682.5" r="5.5" fill="#89d8ff" opacity="0.94"/>
+        
+          <line x1="983.91" y1="590.1" x2="1139.34" y2="775.33" stroke="#fffef8" stroke-width="4" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="1139.34" cy="775.33" r="4.2" fill="#fffef8" opacity="0.94"/>
+        
+          <line x1="972.72" y1="596.56" x2="1068.15" y2="858.73" stroke="#ffe05d" stroke-width="6" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="1068.15" cy="858.73" r="5.5" fill="#ffe05d" opacity="0.94"/>
+        
+          <line x1="960" y1="598.8" x2="960" y2="803.4" stroke="#ff9e55" stroke-width="4" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="960" cy="803.4" r="4.2" fill="#ff9e55" opacity="0.94"/>
+        
+          <line x1="947.28" y1="596.56" x2="864.58" y2="823.77" stroke="#89d8ff" stroke-width="6" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="864.58" cy="823.77" r="5.5" fill="#89d8ff" opacity="0.94"/>
+        
+          <line x1="936.09" y1="590.1" x2="756.75" y2="803.82" stroke="#fffef8" stroke-width="4" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="756.75" cy="803.82" r="4.2" fill="#fffef8" opacity="0.94"/>
+        
+          <line x1="927.78" y1="580.2" x2="750.6" y2="682.5" stroke="#ffe05d" stroke-width="6" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="750.6" cy="682.5" r="5.5" fill="#ffe05d" opacity="0.94"/>
+        
+          <line x1="923.37" y1="568.06" x2="685.24" y2="610.05" stroke="#ff9e55" stroke-width="4" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="685.24" cy="610.05" r="4.2" fill="#ff9e55" opacity="0.94"/>
+        
+          <line x1="923.37" y1="555.14" x2="648.6" y2="506.69" stroke="#89d8ff" stroke-width="6" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="648.6" cy="506.69" r="5.5" fill="#89d8ff" opacity="0.94"/>
+        
+          <line x1="927.78" y1="543" x2="750.6" y2="440.7" stroke="#fffef8" stroke-width="4" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="750.6" cy="440.7" r="4.2" fill="#fffef8" opacity="0.94"/>
+        
+          <line x1="936.09" y1="533.1" x2="780.66" y2="347.87" stroke="#ffe05d" stroke-width="6" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="780.66" cy="347.87" r="5.5" fill="#ffe05d" opacity="0.94"/>
+        
+          <line x1="947.28" y1="526.64" x2="851.85" y2="264.47" stroke="#ff9e55" stroke-width="4" stroke-linecap="round" opacity="0.92"/>
+          <circle cx="851.85" cy="264.47" r="4.2" fill="#ff9e55" opacity="0.94"/>
+        
+    </g><g clip-path="url(#fireworks-star-shape-effect-wink-single-0-clip)">
+      <ellipse cx="960" cy="561.6" rx="220" ry="200" fill="#fff8bf" opacity="0.24" style="transform-origin:960px 561.6px; animation:fw-core-single 3s ease-out infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-236.4px; --ty:-242px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-156.4px; --ty:-235.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-76.4px; --ty:-238.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:3.6px; --ty:-242px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:83.6px; --ty:-235.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:163.6px; --ty:-238.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-182.8px; --ty:-198.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-102.8px; --ty:-202px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-22.8px; --ty:-195.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:57.2px; --ty:-198.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:137.2px; --ty:-202px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:217.2px; --ty:-195.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-236.4px; --ty:-162px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-156.4px; --ty:-155.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-76.4px; --ty:-158.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:3.6px; --ty:-162px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:83.6px; --ty:-155.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:163.6px; --ty:-158.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-182.8px; --ty:-118.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-102.8px; --ty:-122px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-22.8px; --ty:-115.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:57.2px; --ty:-118.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:137.2px; --ty:-122px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:217.2px; --ty:-115.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-236.4px; --ty:-82px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-156.4px; --ty:-75.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-76.4px; --ty:-78.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:3.6px; --ty:-82px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:83.6px; --ty:-75.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:163.6px; --ty:-78.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-182.8px; --ty:-38.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-102.8px; --ty:-42px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-22.8px; --ty:-35.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:57.2px; --ty:-38.8px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:137.2px; --ty:-42px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:217.2px; --ty:-35.6px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-236.4px; --ty:-2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-156.4px; --ty:4.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-76.4px; --ty:1.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:3.6px; --ty:-2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:83.6px; --ty:4.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:163.6px; --ty:1.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-182.8px; --ty:41.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-102.8px; --ty:38px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-22.8px; --ty:44.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:57.2px; --ty:41.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:137.2px; --ty:38px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:217.2px; --ty:44.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-236.4px; --ty:78px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-156.4px; --ty:84.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-76.4px; --ty:81.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:3.6px; --ty:78px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:83.6px; --ty:84.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:163.6px; --ty:81.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-182.8px; --ty:121.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-102.8px; --ty:118px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-22.8px; --ty:124.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:57.2px; --ty:121.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:137.2px; --ty:118px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:217.2px; --ty:124.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-236.4px; --ty:158px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-156.4px; --ty:164.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-76.4px; --ty:161.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:3.6px; --ty:158px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:83.6px; --ty:164.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:163.6px; --ty:161.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-182.8px; --ty:201.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-102.8px; --ty:198px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-22.8px; --ty:204.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:57.2px; --ty:201.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:137.2px; --ty:198px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:217.2px; --ty:204.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-236.4px; --ty:238px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-156.4px; --ty:244.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:-76.4px; --ty:241.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:3.6px; --ty:238px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="4.59" fill="#ffe05d" opacity="0.96" style="transform-origin:960px 561.6px; --tx:83.6px; --ty:244.4px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+        <circle cx="960" cy="561.6" r="5.95" fill="#89d8ff" opacity="0.96" style="transform-origin:960px 561.6px; --tx:163.6px; --ty:241.2px; animation:fw-particle-single 3s cubic-bezier(0.18,0.88,0.22,1) infinite;"/>
+      
+    </g><g style="--dash-len:2050; animation:fw-outline-single 3s linear infinite;">
+      <polygon points="960,311.6 1025.83,470.99 1197.76,484.35 1066.52,596.21 1106.95,763.85 960,673.6 813.05,763.85 853.48,596.21 722.24,484.35 894.17,470.99" class="fw-outline" fill="none" stroke="#fff8d0" stroke-width="18" opacity="0.98"/>
+    </g><g style="transform-origin:960px 271.6px; animation:fw-sparkle-single 3s ease-out infinite;"><polygon points="960,251.6 965.94,265.66 980,271.6 965.94,277.54 960,291.6 954.06,277.54 940,271.6 954.06,265.66" fill="#fffef8" stroke="#fff8d0" stroke-width="1.6"/></g><g style="transform-origin:745px 571.6px; animation:fw-sparkle-single 3s ease-out infinite;"><polygon points="745,556.6 749.45,567.15 760,571.6 749.45,576.05 745,586.6 740.55,576.05 730,571.6 740.55,567.15" fill="#ff9e55" stroke="#fff8d0" stroke-width="1.2"/></g><g style="transform-origin:1175px 571.6px; animation:fw-sparkle-single 3s ease-out infinite;"><polygon points="1175,556.6 1179.45,567.15 1190,571.6 1179.45,576.05 1175,586.6 1170.55,576.05 1160,571.6 1170.55,567.15" fill="#89d8ff" stroke="#fff8d0" stroke-width="1.2"/></g></g></svg>

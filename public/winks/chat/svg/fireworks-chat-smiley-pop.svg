@@ -62,12 +62,12 @@
   }
 </style>
   
-      <g style="transform-origin:384px 512px; animation:revealFinal 3s ease-out infinite;">
-        <circle cx="384" cy="512" r="156" fill="none" stroke="#ffe36a" stroke-width="12" opacity="0.3" />
-        <circle cx="332" cy="464" r="18" fill="#74d9ff" />
-        <circle cx="436" cy="464" r="18" fill="#ff8d86" />
-        <path d="M 304 560 C 338 628, 430 628, 464 560" fill="none" stroke="#8ef0c9" stroke-width="18" stroke-linecap="round" />
-        <polygon points="384,336 392.32,355.68 412,364 392.32,372.32 384,392 375.68,372.32 356,364 375.68,355.68" fill="#ffe36a" stroke="rgba(255,255,255,0.72)" stroke-width="2.24" />
-      </g>
+      
     
-</svg>
+<g id="content" transform="translate(384 512) scale(1.7090881405073508) translate(-383.99998474121094 -501.342041015625)"><g style="transform-origin:384px 512px; animation:revealFinal 3s ease-out infinite;">
+        <circle cx="384" cy="512" r="156" fill="none" stroke="#ffe36a" stroke-width="12" opacity="0.3"/>
+        <circle cx="332" cy="464" r="18" fill="#74d9ff"/>
+        <circle cx="436" cy="464" r="18" fill="#ff8d86"/>
+        <path d="M 304 560 C 338 628, 430 628, 464 560" fill="none" stroke="#8ef0c9" stroke-width="18" stroke-linecap="round"/>
+        <polygon points="384,336 392.32,355.68 412,364 392.32,372.32 384,392 375.68,372.32 356,364 375.68,355.68" fill="#ffe36a" stroke="rgba(255,255,255,0.72)" stroke-width="2.24"/>
+      </g></g></svg>

@@ -62,8 +62,8 @@
   }
 </style>
   
-      <path d="M 384 862 C 324 712, 264 602, 332 502 S 480 402, 504 292" fill="none" stroke="#ffd96a" stroke-width="16" stroke-linecap="round" stroke-dasharray="860" style="--dash:860; animation:drawLine 3.6s ease-in-out infinite;" />
-      <path d="M 206 472 H 280 V 550 H 206 Z M 320 472 H 394 V 550 H 320 Z M 434 472 H 508 V 550 H 434 Z M 548 472 H 622 V 550 H 548 Z" fill="none" stroke="#74d9ff" stroke-width="16" stroke-linejoin="round" stroke-dasharray="920" style="--dash:920; animation:drawLine 3.6s ease-in-out infinite 0.14s;" />
-      <g style="transform-origin:384px 512px; animation:revealFinal 3.6s ease-out infinite;"><text x="384" y="538" text-anchor="middle" dominant-baseline="central" font-size="96" font-weight="900" fill="#fff5cf" stroke="#173764" stroke-width="4.800000000000001" letter-spacing="2.88" >BINGO</text><polygon points="234,482 239.94,496.06 254,502 239.94,507.94 234,522 228.06,507.94 214,502 228.06,496.06" fill="#ff8d86" stroke="rgba(255,255,255,0.72)" stroke-width="1.6" /><polygon points="532,480 537.94,494.06 552,500 537.94,505.94 532,520 526.06,505.94 512,500 526.06,494.06" fill="#8ef0c9" stroke="rgba(255,255,255,0.72)" stroke-width="1.6" /></g>
+      
+      
+      
     
-</svg>
+<g id="content" transform="translate(384 512) scale(1.3294035087719298) translate(-412.4073715209961 -577)"><path d="M 384 862 C 324 712, 264 602, 332 502 S 480 402, 504 292" fill="none" stroke="#ffd96a" stroke-width="16" stroke-linecap="round" stroke-dasharray="860" style="--dash:860; animation:drawLine 3.6s ease-in-out infinite;"/><path d="M 206 472 H 280 V 550 H 206 Z M 320 472 H 394 V 550 H 320 Z M 434 472 H 508 V 550 H 434 Z M 548 472 H 622 V 550 H 548 Z" fill="none" stroke="#74d9ff" stroke-width="16" stroke-linejoin="round" stroke-dasharray="920" style="--dash:920; animation:drawLine 3.6s ease-in-out infinite 0.14s;"/><g style="transform-origin:384px 512px; animation:revealFinal 3.6s ease-out infinite;"><text x="384" y="538" text-anchor="middle" dominant-baseline="central" font-size="96" font-weight="900" fill="#fff5cf" stroke="#173764" stroke-width="4.800000000000001" letter-spacing="2.88">BINGO</text><polygon points="234,482 239.94,496.06 254,502 239.94,507.94 234,522 228.06,507.94 214,502 228.06,496.06" fill="#ff8d86" stroke="rgba(255,255,255,0.72)" stroke-width="1.6"/><polygon points="532,480 537.94,494.06 552,500 537.94,505.94 532,520 526.06,505.94 512,500 526.06,494.06" fill="#8ef0c9" stroke="rgba(255,255,255,0.72)" stroke-width="1.6"/></g></g></svg>

@@ -14,6 +14,7 @@ import {
   ensureWinkStructure,
   getWinkPaths,
 } from "./wink-config.mjs";
+import { normalizeWinkSvgFiles } from "./normalize-wink-svgs.mjs";
 import { writeWinksManifest } from "./wink-manifest.mjs";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
@@ -120,6 +121,8 @@ async function main() {
     "utf8"
   );
 
+  const writtenSvgPaths = EFFECTS.map((effect) => path.join(svgOutputDir, `${effect.id}.svg`));
+
   await Promise.all(
     EFFECTS.map(async (effect) => {
       const outputPath = path.join(svgOutputDir, `${effect.id}.svg`);
@@ -127,6 +130,8 @@ async function main() {
       await fs.writeFile(outputPath, serializeEffectSvg(effect, config), "utf8");
     })
   );
+
+  await normalizeWinkSvgFiles("effect", writtenSvgPaths);
 
   const manifest = await writeWinksManifest();
 

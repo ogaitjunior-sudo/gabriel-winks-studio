@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" data-wink-name="Leprechaun Gold Coins" data-wink-category="Leprechaun" data-wink-duration="3200ms" aria-label="Leprechaun Gold Coins">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" data-wink-name="Leprechaun Golden Coin Shower" data-wink-category="Leprechaun" data-wink-duration="3200ms" aria-label="Leprechaun Golden Coin Shower">
   <style>
   text {
     font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
@@ -39,6 +39,21 @@
   @keyframes wink-hover-sway {
     0%, 100% { transform: rotate(-3deg) translateY(0px); }
     50% { transform: rotate(3deg) translateY(-8px); }
+  }
+
+  @keyframes wink-featured-pop {
+    0%, 100% { opacity: 1; transform: translateY(0px) scale(0.78) rotate(-6deg); }
+    12% { opacity: 1; transform: translateY(-26px) scale(1.3) rotate(4deg); }
+    22% { opacity: 1; transform: translateY(10px) scale(0.95) rotate(-2deg); }
+    34%, 76% { opacity: 1; transform: translateY(0px) scale(1) rotate(0deg); }
+    88% { opacity: 1; transform: translateY(-8px) scale(1.06) rotate(0deg); }
+  }
+
+  @keyframes wink-featured-burst {
+    0%, 40%, 100% { opacity: 0; transform: scale(0.38); }
+    48% { opacity: 0.95; transform: scale(0.92); }
+    60% { opacity: 0.42; transform: scale(1.18); }
+    72% { opacity: 0; transform: scale(1.34); }
   }
 
   @keyframes wink-pulse {
@@ -921,82 +936,76 @@
   
 </style>
   
-    <text x="960" y="216" text-anchor="middle" dominant-baseline="central" font-size="69.984" font-weight="900" fill="#f7ffe6" stroke="#215222" stroke-width="2.7993599999999996" letter-spacing="2.0995199999999996" >GOLD</text>
     
-          <g style="transform-origin:960px 561.6px; animation:wink-enter-rise 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite;">
+    
             
-        <circle cx="827.808" cy="592.7040000000001" r="42.768" fill="#ffd14e" stroke="#b27f00" stroke-width="5.13216" />
-        <circle cx="827.808" cy="592.7040000000001" r="23.950080000000003" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="4.276800000000001" />
+          
+    
+    
+    
+    
+  
+<g id="content" transform="translate(960 540) scale(0.9340942304918257) translate(-959.8525085449219 -565.5888748168945)"><text x="960" y="216" text-anchor="middle" dominant-baseline="central" font-size="80.0928" font-weight="900" fill="#f7ffe6" stroke="#215222" stroke-width="3.203712" letter-spacing="2.402784">GOLD</text><g style="transform-origin:960px 606.096px; animation:wink-featured-pop 3.2s cubic-bezier(0.22,1,0.36,1) infinite;">
+              <circle cx="960" cy="592.7472" r="262.52639999999997" fill="#9cee61" opacity="0.14"/>
+              
+    <g>
+      <ellipse cx="960" cy="872.18208" rx="203.435712" ry="43.161120000000004" fill="#000" opacity="0.16"/>
+      <circle cx="832.85268" cy="634.79592" r="45.207936000000004" fill="#ffd14e" stroke="#b27f00" stroke-width="10.1717856"/><circle cx="883.7116080000001" cy="643.428144" r="45.207936000000004" fill="#ffd14e" stroke="#b27f00" stroke-width="10.1717856"/><circle cx="934.570536" cy="652.060368" r="45.207936000000004" fill="#ffd14e" stroke="#b27f00" stroke-width="10.1717856"/><circle cx="985.429464" cy="652.060368" r="45.207936000000004" fill="#ffd14e" stroke="#b27f00" stroke-width="10.1717856"/><circle cx="1036.288392" cy="643.428144" r="45.207936000000004" fill="#ffd14e" stroke="#b27f00" stroke-width="10.1717856"/><circle cx="1087.14732" cy="634.79592" r="45.207936000000004" fill="#ffd14e" stroke="#b27f00" stroke-width="10.1717856"/>
+      <path d="M 767.866272 682.273152 Q 960 613.21536, 1152.133728 682.273152 L 1106.925792 820.388736 Q 960 880.814304, 813.074208 820.388736 Z" fill="#215222" stroke="#f7ffe6" stroke-width="16.952976"/>
+      <path d="M 824.376192 621.847584 Q 960 552.789792, 1095.623808 621.847584" fill="none" stroke="#f7ffe6" stroke-width="13.5623808" stroke-linecap="round"/>
+    </g>
+  
+              
+                    <g style="transform-origin:835.4112px 566.0496px; animation:wink-featured-pop 3.2s cubic-bezier(0.22,1,0.36,1) infinite; animation-delay:0.1s;">
+                      
+        <circle cx="835.4112" cy="566.0496" r="66.744" fill="#ffd14e" stroke="#b27f00" stroke-width="8.00928"/>
+        <circle cx="835.4112" cy="566.0496" r="37.37664" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="6.6744"/>
       
-        <circle cx="893.904" cy="577.152" r="42.768" fill="#ffd14e" stroke="#b27f00" stroke-width="5.13216" />
-        <circle cx="893.904" cy="577.152" r="23.950080000000003" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="4.276800000000001" />
+                    </g>
+                  
+                    <g style="transform-origin:960px 499.3056px; animation:wink-featured-pop 3.2s cubic-bezier(0.22,1,0.36,1) infinite; animation-delay:0.18s;">
+                      
+        <circle cx="960" cy="499.3056" r="80.0928" fill="#ffd14e" stroke="#b27f00" stroke-width="9.611136"/>
+        <circle cx="960" cy="499.3056" r="44.851968" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="8.00928"/>
       
-        <circle cx="960" cy="561.6" r="42.768" fill="#ffd14e" stroke="#b27f00" stroke-width="5.13216" />
-        <circle cx="960" cy="561.6" r="23.950080000000003" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="4.276800000000001" />
+                    </g>
+                  
+                    <g style="transform-origin:1084.5888px 566.0496px; animation:wink-featured-pop 3.2s cubic-bezier(0.22,1,0.36,1) infinite; animation-delay:0.26s;">
+                      
+        <circle cx="1084.5888" cy="566.0496" r="66.744" fill="#ffd14e" stroke="#b27f00" stroke-width="8.00928"/>
+        <circle cx="1084.5888" cy="566.0496" r="37.37664" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="6.6744"/>
       
-        <circle cx="1026.096" cy="577.152" r="42.768" fill="#ffd14e" stroke="#b27f00" stroke-width="5.13216" />
-        <circle cx="1026.096" cy="577.152" r="23.950080000000003" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="4.276800000000001" />
-      
-        <circle cx="1092.192" cy="592.7040000000001" r="42.768" fill="#ffd14e" stroke="#b27f00" stroke-width="5.13216" />
-        <circle cx="1092.192" cy="592.7040000000001" r="23.950080000000003" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="4.276800000000001" />
-      
-          </g>
-        
-    <circle cx="960" cy="561.6" r="209.95200000000003" fill="none" stroke="#9cee61" stroke-width="15.12" opacity="0.88" style="transform-origin:960px 561.6px; animation:wink-impact-ring 3.2s ease-out infinite;" />
-    <g style="transform-origin:499.2px 259.2px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0s;"><polygon points="499.2,239.76 504.97,253.43 518.64,259.2 504.97,264.97 499.2,278.64 493.43,264.97 479.76,259.2 493.43,253.43" fill="#f7ffe6" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g><g style="transform-origin:729.6px 194.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.17s;"><polygon points="729.6,174.96 735.37,188.63 749.04,194.4 735.37,200.17 729.6,213.84 723.83,200.17 710.16,194.4 723.83,188.63" fill="#ffd14e" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g><g style="transform-origin:1190.4px 205.2px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.34s;"><polygon points="1190.4,185.76 1196.17,199.43 1209.84,205.2 1196.17,210.97 1190.4,224.64 1184.63,210.97 1170.96,205.2 1184.63,199.43" fill="#9cee61" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g><g style="transform-origin:1420.8px 302.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.51s;"><polygon points="1420.8,282.96 1426.57,296.63 1440.24,302.4 1426.57,308.17 1420.8,321.84 1415.03,308.17 1401.36,302.4 1415.03,296.63" fill="#f7ffe6" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g><g style="transform-origin:460.8px 799.2px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.68s;"><polygon points="460.8,779.76 466.57,793.43 480.24,799.2 466.57,804.97 460.8,818.64 455.03,804.97 441.36,799.2 455.03,793.43" fill="#ffd14e" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g><g style="transform-origin:1459.2px 820.8px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.85s;"><polygon points="1459.2,801.36 1464.97,815.03 1478.64,820.8 1464.97,826.57 1459.2,840.24 1453.43,826.57 1439.76,820.8 1453.43,815.03" fill="#9cee61" stroke="rgba(255,255,255,0.75)" stroke-width="1.5552000000000001" /></g>
-    <g style="transform-origin:960px 561.6px; --tx:0px; --ty:-291.6px; --r0:-90deg; --r1:30deg; --r2:130deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0s;">
-        <circle cx="960" cy="561.6" r="17.28" fill="#ffd14e" stroke="#b27f00" stroke-width="2.0736" />
-        <circle cx="960" cy="561.6" r="9.676800000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.7280000000000002" />
-      </g><g style="transform-origin:960px 561.6px; --tx:118.6px; --ty:-266.39px; --r0:-66deg; --r1:54deg; --r2:154deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.03s;">
-        <circle cx="960" cy="561.6" r="17.28" fill="#9cee61" stroke="#b27f00" stroke-width="2.0736" />
-        <circle cx="960" cy="561.6" r="9.676800000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.7280000000000002" />
-      </g><g style="transform-origin:960px 561.6px; --tx:216.7px; --ty:-195.12px; --r0:-42deg; --r1:78deg; --r2:178deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.06s;">
-        <circle cx="960" cy="561.6" r="17.28" fill="#f7ffe6" stroke="#b27f00" stroke-width="2.0736" />
-        <circle cx="960" cy="561.6" r="9.676800000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.7280000000000002" />
-      </g><g style="transform-origin:960px 561.6px; --tx:277.33px; --ty:-90.11px; --r0:-18deg; --r1:102deg; --r2:202deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.09s;">
-        <circle cx="960" cy="561.6" r="17.28" fill="#ffd889" stroke="#b27f00" stroke-width="2.0736" />
-        <circle cx="960" cy="561.6" r="9.676800000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.7280000000000002" />
-      </g><g style="transform-origin:960px 561.6px; --tx:290px; --ty:30.48px; --r0:6deg; --r1:126deg; --r2:226deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.12s;">
-        <circle cx="960" cy="561.6" r="17.28" fill="#ffd14e" stroke="#b27f00" stroke-width="2.0736" />
-        <circle cx="960" cy="561.6" r="9.676800000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.7280000000000002" />
-      </g><g style="transform-origin:960px 561.6px; --tx:252.53px; --ty:145.8px; --r0:30deg; --r1:150deg; --r2:250deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.15s;">
-        <circle cx="960" cy="561.6" r="17.28" fill="#9cee61" stroke="#b27f00" stroke-width="2.0736" />
-        <circle cx="960" cy="561.6" r="9.676800000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.7280000000000002" />
-      </g><g style="transform-origin:960px 561.6px; --tx:171.4px; --ty:235.91px; --r0:54deg; --r1:174deg; --r2:274deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.18s;">
-        <circle cx="960" cy="561.6" r="17.28" fill="#f7ffe6" stroke="#b27f00" stroke-width="2.0736" />
-        <circle cx="960" cy="561.6" r="9.676800000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.7280000000000002" />
-      </g><g style="transform-origin:960px 561.6px; --tx:60.63px; --ty:285.23px; --r0:78deg; --r1:198deg; --r2:298deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.21s;">
-        <circle cx="960" cy="561.6" r="17.28" fill="#ffd889" stroke="#b27f00" stroke-width="2.0736" />
-        <circle cx="960" cy="561.6" r="9.676800000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.7280000000000002" />
-      </g><g style="transform-origin:960px 561.6px; --tx:-60.63px; --ty:285.23px; --r0:102deg; --r1:222deg; --r2:322deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.24s;">
-        <circle cx="960" cy="561.6" r="17.28" fill="#ffd14e" stroke="#b27f00" stroke-width="2.0736" />
-        <circle cx="960" cy="561.6" r="9.676800000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.7280000000000002" />
-      </g><g style="transform-origin:960px 561.6px; --tx:-171.4px; --ty:235.91px; --r0:126deg; --r1:246deg; --r2:346deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.27s;">
-        <circle cx="960" cy="561.6" r="17.28" fill="#9cee61" stroke="#b27f00" stroke-width="2.0736" />
-        <circle cx="960" cy="561.6" r="9.676800000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.7280000000000002" />
-      </g><g style="transform-origin:960px 561.6px; --tx:-252.53px; --ty:145.8px; --r0:150deg; --r1:270deg; --r2:370deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.3s;">
-        <circle cx="960" cy="561.6" r="17.28" fill="#f7ffe6" stroke="#b27f00" stroke-width="2.0736" />
-        <circle cx="960" cy="561.6" r="9.676800000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.7280000000000002" />
-      </g><g style="transform-origin:960px 561.6px; --tx:-290px; --ty:30.48px; --r0:174deg; --r1:294deg; --r2:394deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.33s;">
-        <circle cx="960" cy="561.6" r="17.28" fill="#ffd889" stroke="#b27f00" stroke-width="2.0736" />
-        <circle cx="960" cy="561.6" r="9.676800000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.7280000000000002" />
-      </g><g style="transform-origin:960px 561.6px; --tx:-277.33px; --ty:-90.11px; --r0:198deg; --r1:318deg; --r2:418deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.36s;">
-        <circle cx="960" cy="561.6" r="17.28" fill="#ffd14e" stroke="#b27f00" stroke-width="2.0736" />
-        <circle cx="960" cy="561.6" r="9.676800000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.7280000000000002" />
-      </g><g style="transform-origin:960px 561.6px; --tx:-216.7px; --ty:-195.12px; --r0:222deg; --r1:342deg; --r2:442deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.39s;">
-        <circle cx="960" cy="561.6" r="17.28" fill="#9cee61" stroke="#b27f00" stroke-width="2.0736" />
-        <circle cx="960" cy="561.6" r="9.676800000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.7280000000000002" />
-      </g><g style="transform-origin:960px 561.6px; --tx:-118.6px; --ty:-266.39px; --r0:246deg; --r1:366deg; --r2:466deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.42s;">
-        <circle cx="960" cy="561.6" r="17.28" fill="#f7ffe6" stroke="#b27f00" stroke-width="2.0736" />
-        <circle cx="960" cy="561.6" r="9.676800000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.7280000000000002" />
-      </g>
-    <g style="transform-origin:960px 820.8px; animation:wink-finale 3.2s ease-out infinite;">
+                    </g>
+                  
+            </g><circle cx="960" cy="561.6" r="271.4256" fill="none" stroke="#9cee61" stroke-width="15.12" opacity="0.88" style="transform-origin:960px 561.6px; animation:wink-impact-ring 3.2s ease-out infinite;"/><g style="transform-origin:537.6px 194.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0s;"><polygon points="537.6,172.8 544.01,187.99 559.2,194.4 544.01,200.81 537.6,216 531.19,200.81 516,194.4 531.19,187.99" fill="#f7ffe6" stroke="rgba(255,255,255,0.75)" stroke-width="1.7280000000000002"/></g><g style="transform-origin:806.4px 151.2px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.17s;"><polygon points="806.4,129.6 812.81,144.79 828,151.2 812.81,157.61 806.4,172.8 799.99,157.61 784.8,151.2 799.99,144.79" fill="#ffd14e" stroke="rgba(255,255,255,0.75)" stroke-width="1.7280000000000002"/></g><g style="transform-origin:1113.6px 151.2px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.34s;"><polygon points="1113.6,129.6 1120.01,144.79 1135.2,151.2 1120.01,157.61 1113.6,172.8 1107.19,157.61 1092,151.2 1107.19,144.79" fill="#9cee61" stroke="rgba(255,255,255,0.75)" stroke-width="1.7280000000000002"/></g><g style="transform-origin:1382.4px 194.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.51s;"><polygon points="1382.4,172.8 1388.81,187.99 1404,194.4 1388.81,200.81 1382.4,216 1375.99,200.81 1360.8,194.4 1375.99,187.99" fill="#f7ffe6" stroke="rgba(255,255,255,0.75)" stroke-width="1.7280000000000002"/></g><g style="transform-origin:652.8px 734.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.68s;"><polygon points="652.8,712.8 659.21,727.99 674.4,734.4 659.21,740.81 652.8,756 646.39,740.81 631.2,734.4 646.39,727.99" fill="#ffd14e" stroke="rgba(255,255,255,0.75)" stroke-width="1.7280000000000002"/></g><g style="transform-origin:1267.2px 734.4px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.85s;"><polygon points="1267.2,712.8 1273.61,727.99 1288.8,734.4 1273.61,740.81 1267.2,756 1260.79,740.81 1245.6,734.4 1260.79,727.99" fill="#9cee61" stroke="rgba(255,255,255,0.75)" stroke-width="1.7280000000000002"/></g><g style="transform-origin:960px 561.6px; --tx:0px; --ty:-216px; --r0:-90deg; --r1:30deg; --r2:130deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0s;">
+        <circle cx="960" cy="561.6" r="23.76" fill="#ffd14e" stroke="#b27f00" stroke-width="2.8512"/>
+        <circle cx="960" cy="561.6" r="13.305600000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2.3760000000000003"/>
+      </g><g style="transform-origin:960px 561.6px; --tx:152.74px; --ty:-152.74px; --r0:-45deg; --r1:75deg; --r2:175deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.03s;">
+        <circle cx="960" cy="561.6" r="23.76" fill="#9cee61" stroke="#b27f00" stroke-width="2.8512"/>
+        <circle cx="960" cy="561.6" r="13.305600000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2.3760000000000003"/>
+      </g><g style="transform-origin:960px 561.6px; --tx:216px; --ty:0px; --r0:0deg; --r1:120deg; --r2:220deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.06s;">
+        <circle cx="960" cy="561.6" r="23.76" fill="#f7ffe6" stroke="#b27f00" stroke-width="2.8512"/>
+        <circle cx="960" cy="561.6" r="13.305600000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2.3760000000000003"/>
+      </g><g style="transform-origin:960px 561.6px; --tx:152.74px; --ty:152.74px; --r0:45deg; --r1:165deg; --r2:265deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.09s;">
+        <circle cx="960" cy="561.6" r="23.76" fill="#ffd889" stroke="#b27f00" stroke-width="2.8512"/>
+        <circle cx="960" cy="561.6" r="13.305600000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2.3760000000000003"/>
+      </g><g style="transform-origin:960px 561.6px; --tx:0px; --ty:216px; --r0:90deg; --r1:210deg; --r2:310deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.12s;">
+        <circle cx="960" cy="561.6" r="23.76" fill="#ffd14e" stroke="#b27f00" stroke-width="2.8512"/>
+        <circle cx="960" cy="561.6" r="13.305600000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2.3760000000000003"/>
+      </g><g style="transform-origin:960px 561.6px; --tx:-152.74px; --ty:152.74px; --r0:135deg; --r1:255deg; --r2:355deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.15s;">
+        <circle cx="960" cy="561.6" r="23.76" fill="#9cee61" stroke="#b27f00" stroke-width="2.8512"/>
+        <circle cx="960" cy="561.6" r="13.305600000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2.3760000000000003"/>
+      </g><g style="transform-origin:960px 561.6px; --tx:-216px; --ty:0px; --r0:180deg; --r1:300deg; --r2:400deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.18s;">
+        <circle cx="960" cy="561.6" r="23.76" fill="#f7ffe6" stroke="#b27f00" stroke-width="2.8512"/>
+        <circle cx="960" cy="561.6" r="13.305600000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2.3760000000000003"/>
+      </g><g style="transform-origin:960px 561.6px; --tx:-152.74px; --ty:-152.74px; --r0:225deg; --r1:345deg; --r2:445deg; animation:wink-burst-sprite 3.2s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.21s;">
+        <circle cx="960" cy="561.6" r="23.76" fill="#ffd889" stroke="#b27f00" stroke-width="2.8512"/>
+        <circle cx="960" cy="561.6" r="13.305600000000002" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2.3760000000000003"/>
+      </g><g style="transform-origin:960px 820.8px; animation:wink-finale 3.2s ease-out infinite;">
       
     <g>
-      <rect x="755.88" y="787.752" width="408.24" height="66.096" rx="33.048" fill="#ffd14e" stroke="#215222" stroke-width="4.626720000000001" />
-      <text x="960" y="822.78288" text-anchor="middle" dominant-baseline="central" font-size="27.76032" font-weight="900" fill="#215222" stroke="#215222" stroke-width="2" letter-spacing="0.8328095999999999" >COINS</text>
+      <rect x="726.396" y="782.9784" width="467.20799999999997" height="75.64320000000001" rx="37.821600000000004" fill="#ffd14e" stroke="#215222" stroke-width="5.295024000000001"/>
+      <text x="960" y="823.069296" text-anchor="middle" dominant-baseline="central" font-size="31.770144000000002" font-weight="900" fill="#215222" stroke="#215222" stroke-width="2" letter-spacing="0.95310432">COINS</text>
     </g>
   
-    </g>
-  
-</svg>
+    </g></g></svg>

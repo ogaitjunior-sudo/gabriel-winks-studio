@@ -8,6 +8,7 @@ import {
   sortIds,
   titleFromId,
 } from "./wink-config.mjs";
+import { normalizeWinkSvgFiles } from "./normalize-wink-svgs.mjs";
 
 const FONT_STACK = "'Trebuchet MS', 'Segoe UI', sans-serif";
 const STROKE_LIGHT = "rgba(255,255,255,0.75)";
@@ -50,6 +51,21 @@ const LOOP_STYLE = `
   @keyframes wink-hover-sway {
     0%, 100% { transform: rotate(-3deg) translateY(0px); }
     50% { transform: rotate(3deg) translateY(-8px); }
+  }
+
+  @keyframes wink-featured-pop {
+    0%, 100% { opacity: 1; transform: translateY(0px) scale(0.78) rotate(-6deg); }
+    12% { opacity: 1; transform: translateY(-26px) scale(1.3) rotate(4deg); }
+    22% { opacity: 1; transform: translateY(10px) scale(0.95) rotate(-2deg); }
+    34%, 76% { opacity: 1; transform: translateY(0px) scale(1) rotate(0deg); }
+    88% { opacity: 1; transform: translateY(-8px) scale(1.06) rotate(0deg); }
+  }
+
+  @keyframes wink-featured-burst {
+    0%, 40%, 100% { opacity: 0; transform: scale(0.38); }
+    48% { opacity: 0.95; transform: scale(0.92); }
+    60% { opacity: 0.42; transform: scale(1.18); }
+    72% { opacity: 0; transform: scale(1.34); }
   }
 
   @keyframes wink-pulse {
@@ -374,11 +390,16 @@ const VARIANTS = [
     ],
   ]),
   categoryEntries("Thumbs Up", [
-    ["thumbs-up-pop", "effect", 2800, { title: "LIKE!", accent: "POP", mood: "pop" }],
-    ["thumbs-up-gold-burst", "effect", 3000, { title: "NICE", accent: "WIN", mood: "gold" }],
-    ["thumbs-up-sparkle", "effect", 2800, { title: "APPROVED", accent: "SPARK", mood: "sparkle" }],
-    ["thumbs-up-bounce", "effect", 2800, { title: "YEAH", accent: "BOUNCE", mood: "bounce" }],
-    ["thumbs-up-confetti", "effect", 3200, { title: "CHEERS", accent: "CONFETTI", mood: "confetti" }],
+    ["thumbs-up-pop", "effect", 2800, { title: "LIKE!", accent: "POP", mood: "pop", name: "Thumbs Up Signature Pop" }],
+    ["thumbs-up-gold-burst", "effect", 3000, { title: "NICE", accent: "WIN", mood: "gold", name: "Thumbs Up Gilded Victory" }],
+    ["thumbs-up-sparkle", "effect", 2800, { title: "APPROVED", accent: "SPARK", mood: "sparkle", name: "Thumbs Up Starlight Approval" }],
+    ["thumbs-up-bounce", "effect", 2800, { title: "YEAH", accent: "BOUNCE", mood: "bounce", name: "Thumbs Up Bounce Royale" }],
+    ["thumbs-up-confetti", "effect", 3200, { title: "CHEERS", accent: "CONFETTI", mood: "confetti", name: "Thumbs Up Celebration Luxe" }],
+    ["thumbs-up-premium-pulse", "effect", 3000, { title: "PREMIUM", accent: "PULSE", mood: "pulse", name: "Thumbs Up Premium Pulse" }],
+    ["thumbs-up-spotlight-salute", "effect", 3200, { title: "SPOTLIGHT", accent: "SALUTE", mood: "spotlight", name: "Thumbs Up Spotlight Salute" }],
+    ["thumbs-up-victory-seal", "effect", 3000, { title: "VICTORY", accent: "SEAL", mood: "seal", name: "Thumbs Up Victory Seal" }],
+    ["thumbs-up-royal-ribbon", "effect", 3200, { title: "ROYAL", accent: "RIBBON", mood: "ribbon", name: "Thumbs Up Royal Ribbon" }],
+    ["thumbs-up-neon-flare", "effect", 3000, { title: "NEON", accent: "FLARE", mood: "flare", name: "Thumbs Up Neon Flare" }],
     ["thumbs-up-star-ring", "chat", 2800, { title: "TOP", accent: "PICK", mood: "ring" }],
     ["thumbs-up-fast-reaction", "chat", 2600, { title: "FAST", accent: "REACTION", mood: "fast" }],
     ["thumbs-up-win-badge", "chat", 2900, { title: "WIN", accent: "BADGE", mood: "badge" }],
@@ -386,11 +407,16 @@ const VARIANTS = [
     ["thumbs-up-chat-reaction", "chat", 2800, { title: "CHAT", accent: "REACTION", mood: "chat" }],
   ]),
   categoryEntries("Leprechaun", [
-    ["leprechaun-lucky-clover", "effect", 3000, { title: "LUCKY", accent: "CLOVER", mood: "clover" }],
-    ["leprechaun-gold-coins", "effect", 3200, { title: "GOLD", accent: "COINS", mood: "coins" }],
-    ["leprechaun-rainbow-pop", "effect", 3200, { title: "RAINBOW", accent: "POP", mood: "rainbow" }],
-    ["leprechaun-hat-bounce", "effect", 2800, { title: "LUCKY", accent: "HAT", mood: "hat" }],
-    ["leprechaun-pot-of-gold", "effect", 3200, { title: "POT O' GOLD", accent: "LUCK", mood: "pot" }],
+    ["leprechaun-lucky-clover", "effect", 3000, { title: "LUCKY", accent: "CLOVER", mood: "clover", name: "Leprechaun Clover Royale" }],
+    ["leprechaun-gold-coins", "effect", 3200, { title: "GOLD", accent: "COINS", mood: "coins", name: "Leprechaun Golden Coin Shower" }],
+    ["leprechaun-rainbow-pop", "effect", 3200, { title: "RAINBOW", accent: "POP", mood: "rainbow", name: "Leprechaun Rainbow Luxe" }],
+    ["leprechaun-hat-bounce", "effect", 2800, { title: "LUCKY", accent: "HAT", mood: "hat", name: "Leprechaun Emerald Hat Bounce" }],
+    ["leprechaun-pot-of-gold", "effect", 3200, { title: "POT O' GOLD", accent: "LUCK", mood: "pot", name: "Leprechaun Pot Of Gold Premiere" }],
+    ["leprechaun-emerald-crown", "effect", 3000, { title: "EMERALD", accent: "CROWN", mood: "crown", name: "Leprechaun Emerald Crown" }],
+    ["leprechaun-coin-fountain", "effect", 3200, { title: "COIN", accent: "FOUNTAIN", mood: "fountain", name: "Leprechaun Coin Fountain" }],
+    ["leprechaun-lucky-seal", "effect", 3000, { title: "LUCKY", accent: "SEAL", mood: "seal", name: "Leprechaun Lucky Seal" }],
+    ["leprechaun-rainbow-vault", "effect", 3400, { title: "RAINBOW", accent: "VAULT", mood: "vault", name: "Leprechaun Rainbow Vault" }],
+    ["leprechaun-treasure-burst", "effect", 3200, { title: "TREASURE", accent: "BURST", mood: "treasure", name: "Leprechaun Treasure Burst" }],
     ["leprechaun-lucky-spin", "chat", 2800, { title: "SPIN", accent: "LUCKY", mood: "spin" }],
     ["leprechaun-clover-burst", "chat", 2900, { title: "CLOVER", accent: "BURST", mood: "burst" }],
     ["leprechaun-gold-rain", "chat", 3200, { title: "GOLD", accent: "RAIN", mood: "rain" }],
@@ -398,11 +424,16 @@ const VARIANTS = [
     ["leprechaun-jackpot-luck", "chat", 3400, { title: "JACKPOT", accent: "LUCK", mood: "jackpot" }],
   ]),
   categoryEntries("Flowers", [
-    ["flowers-bloom-pop", "effect", 3000, { title: "BLOOM", accent: "POP", mood: "bloom" }],
-    ["flowers-petal-rain", "effect", 3200, { title: "PETALS", accent: "RAIN", mood: "petals" }],
-    ["flowers-bouquet-burst", "effect", 3200, { title: "BOUQUET", accent: "BURST", mood: "bouquet" }],
-    ["flowers-rose-spin", "effect", 3000, { title: "ROSE", accent: "SPIN", mood: "rose" }],
-    ["flowers-spring-wave", "effect", 3200, { title: "SPRING", accent: "WAVE", mood: "spring" }],
+    ["flowers-bloom-pop", "effect", 3000, { title: "BLOOM", accent: "POP", mood: "bloom", name: "Flowers Velvet Bloom" }],
+    ["flowers-petal-rain", "effect", 3200, { title: "PETALS", accent: "RAIN", mood: "petals", name: "Flowers Petal Rain Reverie" }],
+    ["flowers-bouquet-burst", "effect", 3200, { title: "BOUQUET", accent: "BURST", mood: "bouquet", name: "Flowers Bouquet Gala" }],
+    ["flowers-rose-spin", "effect", 3000, { title: "ROSE", accent: "SPIN", mood: "rose", name: "Flowers Rose Luxe Spin" }],
+    ["flowers-spring-wave", "effect", 3200, { title: "SPRING", accent: "WAVE", mood: "spring", name: "Flowers Spring Garden Overture" }],
+    ["flowers-orchid-glow", "effect", 3000, { title: "ORCHID", accent: "GLOW", mood: "orchid", name: "Flowers Orchid Glow Premiere" }],
+    ["flowers-peony-crown", "effect", 3200, { title: "PEONY", accent: "CROWN", mood: "crown", name: "Flowers Peony Crown" }],
+    ["flowers-blossom-halo", "effect", 3000, { title: "BLOSSOM", accent: "HALO", mood: "halo", name: "Flowers Blossom Halo" }],
+    ["flowers-garden-ribbon", "effect", 3200, { title: "GARDEN", accent: "RIBBON", mood: "ribbon", name: "Flowers Garden Ribbon Gala" }],
+    ["flowers-petal-fanfare", "effect", 3200, { title: "PETAL", accent: "FANFARE", mood: "fanfare", name: "Flowers Petal Fanfare" }],
     ["flowers-heart-petals", "chat", 2900, { title: "LOVE", accent: "PETALS", mood: "heart" }],
     ["flowers-garden-sparkle", "chat", 3000, { title: "GARDEN", accent: "SPARKLE", mood: "sparkle" }],
     ["flowers-floral-confetti", "chat", 3200, { title: "FLORAL", accent: "CONFETTI", mood: "confetti" }],
@@ -1444,17 +1475,24 @@ function scenePalette(category, mood) {
       bounce: { base: "#1a3162", accent: "#68afff", flash: "#ffd45c", soft: "#f7fbff", extra: "#7be8c8" },
       chat: { base: "#23366c", accent: "#64c8ff", flash: "#ffe36e", soft: "#f6f9ff", extra: "#8ef2cf" },
       confetti: { base: "#23315e", accent: "#68bcff", flash: "#ffd255", soft: "#f8fbff", extra: "#ff7f9d" },
+      flare: { base: "#1a285b", accent: "#7adaff", flash: "#ffe270", soft: "#f5fbff", extra: "#8f9dff" },
       gold: { base: "#503707", accent: "#ffcd4a", flash: "#fff2b3", soft: "#5ad0ff", extra: "#f7f7ea" },
       jackpot: { base: "#37174d", accent: "#ffcc4d", flash: "#ff6680", soft: "#faf2ff", extra: "#6ce7ff" },
       pop: { base: "#17325e", accent: "#76cfff", flash: "#ffd55d", soft: "#f5fbff", extra: "#7bf0d0" },
+      pulse: { base: "#132e56", accent: "#73d6ff", flash: "#ffe37a", soft: "#f7fcff", extra: "#82ffd4" },
+      ribbon: { base: "#2a2f6d", accent: "#6fcfff", flash: "#ffd460", soft: "#f7fbff", extra: "#ff8cae" },
       ring: { base: "#2b2c67", accent: "#77d4ff", flash: "#ffe16d", soft: "#f9fbff", extra: "#9bf9cf" },
+      seal: { base: "#1c315f", accent: "#76c8ff", flash: "#ffd96f", soft: "#f5fbff", extra: "#90f2cd" },
       sparkle: { base: "#173762", accent: "#7cd8ff", flash: "#ffe47a", soft: "#f6fbff", extra: "#9ef3cf" },
+      spotlight: { base: "#1a2a57", accent: "#72d1ff", flash: "#ffe485", soft: "#f9fcff", extra: "#88efff" },
       fast: { base: "#152d57", accent: "#60c2ff", flash: "#ffd455", soft: "#f8fbff", extra: "#7ce1ff" },
     },
     Leprechaun: {
       burst: { base: "#0f5d39", accent: "#7ddf5b", flash: "#ffd858", soft: "#ecffe7", extra: "#8ce9ff" },
       clover: { base: "#0d5933", accent: "#6ddb5e", flash: "#ffd85a", soft: "#efffe8", extra: "#8de9ff" },
       coins: { base: "#215222", accent: "#ffd14e", flash: "#9cee61", soft: "#f7ffe6", extra: "#ffd889" },
+      crown: { base: "#124d32", accent: "#7ee268", flash: "#ffd85d", soft: "#eeffe9", extra: "#9de6ff" },
+      fountain: { base: "#194a2a", accent: "#ffd553", flash: "#9af06a", soft: "#f8ffe8", extra: "#8edfff" },
       gold: { base: "#215127", accent: "#ffd455", flash: "#a9f26d", soft: "#f7ffe6", extra: "#ffb84d" },
       hat: { base: "#12573d", accent: "#7ce365", flash: "#ffd45f", soft: "#ecffe7", extra: "#7edcff" },
       jackpot: { base: "#2b184b", accent: "#ffd24a", flash: "#85e96d", soft: "#f7f1ff", extra: "#7de6ff" },
@@ -1462,15 +1500,23 @@ function scenePalette(category, mood) {
       pot: { base: "#1d4c2b", accent: "#8be05f", flash: "#ffd452", soft: "#efffe7", extra: "#8fd8ff" },
       rain: { base: "#215127", accent: "#ffd455", flash: "#a9f26d", soft: "#f7ffe6", extra: "#ffb84d" },
       rainbow: { base: "#23463f", accent: "#7ddf6a", flash: "#ffd95a", soft: "#f5ffe7", extra: "#ff7ea7" },
+      seal: { base: "#12473c", accent: "#77e0cf", flash: "#ffd85a", soft: "#ecfff8", extra: "#8fed67" },
       spin: { base: "#15513a", accent: "#7be46c", flash: "#ffd45b", soft: "#ecffe8", extra: "#7fe0ff" },
+      treasure: { base: "#21431f", accent: "#ffd454", flash: "#9def64", soft: "#f8ffe8", extra: "#ffcb78" },
+      vault: { base: "#203d44", accent: "#81e06e", flash: "#ffd95b", soft: "#f5ffe8", extra: "#ff91c8" },
     },
     Flowers: {
       bloom: { base: "#5c2450", accent: "#ff8cc8", flash: "#ffd968", soft: "#fff2f7", extra: "#7bd886" },
       bouquet: { base: "#3f2750", accent: "#ff92c5", flash: "#ffd96a", soft: "#fff4fa", extra: "#82dbff" },
       confetti: { base: "#402550", accent: "#ff9fc9", flash: "#ffd96b", soft: "#fff4fb", extra: "#75f0bc" },
+      crown: { base: "#4a2855", accent: "#ff98d4", flash: "#ffe071", soft: "#fff5fb", extra: "#8bdfff" },
+      fanfare: { base: "#47224f", accent: "#ff8fc4", flash: "#ffd86d", soft: "#fff4fa", extra: "#7ee6a7" },
+      halo: { base: "#542657", accent: "#ff9dd6", flash: "#ffe47a", soft: "#fff6fc", extra: "#8cebc7" },
       heart: { base: "#53264d", accent: "#ff7fb0", flash: "#ffd96d", soft: "#fff2f6", extra: "#8ce5b7" },
       mega: { base: "#4a1c50", accent: "#ff8bbd", flash: "#ffe26f", soft: "#fff1fb", extra: "#8bd6ff" },
+      orchid: { base: "#4d235d", accent: "#d89aff", flash: "#ffe06f", soft: "#fbf3ff", extra: "#8df0ca" },
       petals: { base: "#50234b", accent: "#ffa8cc", flash: "#ffd969", soft: "#fff4fb", extra: "#87edc2" },
+      ribbon: { base: "#472c5a", accent: "#ff97cb", flash: "#ffd86c", soft: "#fff5fb", extra: "#7fdcff" },
       rose: { base: "#5b1f41", accent: "#ff7085", flash: "#ffd66b", soft: "#fff2f5", extra: "#7be6a1" },
       soft: { base: "#684266", accent: "#ffd0e7", flash: "#fff1ad", soft: "#fffafc", extra: "#a4f0ce" },
       sparkle: { base: "#4d2d57", accent: "#ff9ece", flash: "#ffe178", soft: "#fff5fb", extra: "#8bf0b2" },
@@ -2153,10 +2199,11 @@ function fireworkStage(key, shape, overrides = {}) {
 function buildFireworkStages(ctx, definition) {
   const cx = ctx.centerX;
   const cy = ctx.centerY;
+  const mood = definition.mood;
   const tallText = 330;
   const wideText = 270;
 
-  switch (definition.mood) {
+  switch (mood) {
     case "bingo-text":
       return {
         ambientPoints: [[0.16, 0.22], [0.84, 0.24], [0.26, 0.72], [0.74, 0.7]],
@@ -2308,16 +2355,25 @@ function renderCountdownScene(ctx, definition) {
   const theme = mode.theme;
   const palette = scenePalette(definition.category, theme);
   const isBingoReveal = mode.type === "bingo";
+  const isFeaturedLetterPop = definition.id === "countdown-bingo-letter-pop-effect-wink";
   const prefix = `cd${definition.id.replace(/[^a-z0-9]/gi, "")}`;
-  const centerY = round(ctx.centerY - unit(ctx, ctx.kind === "effect" ? 0.018 : 0.012));
-  const digitSize = unit(ctx, ctx.kind === "effect" ? 0.188 : 0.184);
-  const letterSize = unit(ctx, ctx.kind === "effect" ? 0.148 : 0.128);
-  const sparkleRadius = unit(ctx, ctx.kind === "effect" ? 0.022 : 0.026);
-  const letterStep = round(letterSize * (ctx.kind === "effect" ? 1.18 : 1.1));
-  const letterY = round(centerY + digitSize * 0.1);
-  const finalWordY = round(letterY + letterSize * 0.88);
+  const centerY = round(
+    ctx.centerY - unit(ctx, isFeaturedLetterPop ? 0.088 : ctx.kind === "effect" ? 0.018 : 0.012)
+  );
+  const digitSize = unit(ctx, isFeaturedLetterPop ? 0.232 : ctx.kind === "effect" ? 0.188 : 0.184);
+  const letterSize = unit(ctx, isFeaturedLetterPop ? 0.184 : ctx.kind === "effect" ? 0.148 : 0.128);
+  const sparkleRadius = unit(ctx, isFeaturedLetterPop ? 0.028 : ctx.kind === "effect" ? 0.022 : 0.026);
+  const letterStep = round(letterSize * (isFeaturedLetterPop ? 1.34 : ctx.kind === "effect" ? 1.18 : 1.1));
+  const letterY = round(centerY + digitSize * (isFeaturedLetterPop ? 0.92 : 0.1));
+  const finalWordY = round(letterY + letterSize * (isFeaturedLetterPop ? 1.34 : 0.88));
   const letterColors = OFFICIAL_BINGO_LETTER_COLORS;
-  const digitWindows = isBingoReveal
+  const digitWindows = isFeaturedLetterPop
+    ? [
+        { label: "3", start: 0, end: 18 },
+        { label: "2", start: 20, end: 38 },
+        { label: "1", start: 40, end: 58 },
+      ]
+    : isBingoReveal
     ? [
         { label: "3", start: 6, end: 16 },
         { label: "2", start: 18, end: 28 },
@@ -2330,7 +2386,7 @@ function renderCountdownScene(ctx, definition) {
       ];
   const letterWindows = ["B", "I", "N", "G", "O"].map((label, index) => ({
     label,
-    start: 44 + index * 8,
+    start: isFeaturedLetterPop ? 56 + index * 5 : 44 + index * 8,
     x: round(ctx.centerX + (index - 2) * letterStep),
   }));
   const styles = [];
@@ -2776,11 +2832,12 @@ function renderCountdownScene(ctx, definition) {
       buildStageKeyframes(`${prefix}digit${index}`, {
         end: step.end,
         fromX,
-        fromY,
+        fromY: isFeaturedLetterPop ? fromY * 0.82 : fromY,
         hold: step.end - 4,
-        peak: step.start + 4,
-        peakScale: mode.bounceLetters ? 1.12 : mode.mega ? 1.14 : 1.08,
-        rotate: theme === "pop" ? -8 : theme === "party" ? -6 : 0,
+        peak: step.start + (isFeaturedLetterPop ? 5 : 4),
+        peakScale: isFeaturedLetterPop ? 1.22 : mode.bounceLetters ? 1.12 : mode.mega ? 1.14 : 1.08,
+        rotate: isFeaturedLetterPop ? -6 : theme === "pop" ? -8 : theme === "party" ? -6 : 0,
+        startScale: isFeaturedLetterPop ? 0.7 : 0.28,
         start: step.start,
       })
     );
@@ -2790,10 +2847,11 @@ function renderCountdownScene(ctx, definition) {
     styles.push(
       buildStageKeyframes(`${prefix}band`, {
         end: 94,
-        fromY: digitSize * 0.16,
-        hold: 90,
-        peak: 54,
-        start: 46,
+        fromY: isFeaturedLetterPop ? digitSize * 0.08 : digitSize * 0.16,
+        hold: isFeaturedLetterPop ? 92 : 90,
+        peak: isFeaturedLetterPop ? 62 : 54,
+        start: isFeaturedLetterPop ? 58 : 46,
+        startScale: isFeaturedLetterPop ? 0.56 : 0.22,
       })
     );
     letterWindows.forEach((letter, index) => {
@@ -2801,25 +2859,32 @@ function renderCountdownScene(ctx, definition) {
         buildStageKeyframes(`${prefix}letter${index}`, {
           end: 92,
           fromX: theme === "jackpot" ? (index - 2) * 18 : 0,
-          fromY: theme === "drop" ? -digitSize * 0.82 : theme === "balls" ? digitSize * 0.44 : digitSize * 0.28,
+          fromY: isFeaturedLetterPop
+            ? -digitSize * 0.62
+            : theme === "drop"
+              ? -digitSize * 0.82
+              : theme === "balls"
+                ? digitSize * 0.44
+                : digitSize * 0.28,
           hold: 88,
           peak: letter.start + 4,
-          peakScale: mode.bounceLetters ? 1.16 : mode.mega ? 1.14 : 1.08,
-          rotate: theme === "pop" ? (index - 2) * 4 : 0,
+          peakScale: isFeaturedLetterPop ? 1.2 : mode.bounceLetters ? 1.16 : mode.mega ? 1.14 : 1.08,
+          rotate: isFeaturedLetterPop ? (index - 2) * 3 : theme === "pop" ? (index - 2) * 4 : 0,
+          startScale: isFeaturedLetterPop ? 0.68 : 0.28,
           start: letter.start,
         })
       );
     });
     styles.push(
-      buildGroupKeyframes(`${prefix}finalburst`, 84, 96, 100),
+      buildGroupKeyframes(`${prefix}finalburst`, isFeaturedLetterPop ? 82 : 84, 96, 100),
       buildStageKeyframes(`${prefix}finalword`, {
-        start: 88,
-        peak: 92,
+        start: isFeaturedLetterPop ? 86 : 88,
+        peak: isFeaturedLetterPop ? 90 : 92,
         hold: 97,
         end: 100,
-        fromY: letterSize * 0.3,
-        startScale: 0.5,
-        peakScale: mode.mega ? 1.14 : 1.08,
+        fromY: isFeaturedLetterPop ? letterSize * 0.18 : letterSize * 0.3,
+        startScale: isFeaturedLetterPop ? 0.72 : 0.5,
+        peakScale: isFeaturedLetterPop ? 1.16 : mode.mega ? 1.14 : 1.08,
         outScale: 1.04,
       })
     );
@@ -2848,18 +2913,27 @@ function renderCountdownScene(ctx, definition) {
     <style>
       ${styles.join("\n")}
     </style>
-    ${glowCircle(ctx.centerX, centerY, digitSize * 1.14, palette.accent, 0.08)}
+    ${glowCircle(ctx.centerX, centerY, digitSize * (isFeaturedLetterPop ? 1.32 : 1.14), palette.accent, isFeaturedLetterPop ? 0.12 : 0.08)}
     ${twinkleGroup(ctx, {
       colors: [palette.soft, palette.accent, palette.extra],
-      points: [
-        [0.22, 0.2],
-        [0.36, 0.14],
-        [0.64, 0.15],
-        [0.78, 0.22],
-        [0.22, 0.78],
-        [0.78, 0.78],
-      ],
-      radius: sparkleRadius * 0.82,
+      points: isFeaturedLetterPop
+        ? [
+            [0.28, 0.18],
+            [0.4, 0.12],
+            [0.6, 0.12],
+            [0.72, 0.18],
+            [0.32, 0.72],
+            [0.68, 0.72],
+          ]
+        : [
+            [0.22, 0.2],
+            [0.36, 0.14],
+            [0.64, 0.15],
+            [0.78, 0.22],
+            [0.22, 0.78],
+            [0.78, 0.78],
+          ],
+      radius: sparkleRadius * (isFeaturedLetterPop ? 0.96 : 0.82),
     })}
     ${digitsMarkup}
     ${finalMarkup}
@@ -3004,11 +3078,27 @@ function birthdayRibbonTitleGroup(ctx, palette, prefix, options = {}) {
 }
 
 function renderBirthdayScene(ctx, definition) {
+  const birthdayMoodMap = {
+    "balloon-letter-title": "balloon-cake",
+    "cake-slices-assemble": "cake-pop",
+    "cupcake-parade-cake": "party-popper",
+    "firework-backdrop-cake": "confetti-cake",
+    "gold-elegant-birthday": "frosting-write",
+    "hat-drop-cake": "gift-cake",
+    "mega-party-finale": "mega-party",
+    "sparkle-trail-title": "bounce-title",
+    "spin-sparkle-cake": "sparkle-cake",
+    "wish-blow-title": "candle-light",
+  };
+  const mood = birthdayMoodMap[definition.mood] ?? definition.mood;
   const palette = scenePalette(definition.category, definition.mood);
-  const badgeSize = unit(ctx, ctx.kind === "effect" ? 0.16 : 0.19);
-  const cakeY = percentY(ctx, ctx.kind === "effect" ? 0.58 : 0.6);
-  const cakeWidth = badgeSize * (ctx.kind === "effect" ? 2.18 : 2.02);
-  const cakeHeight = badgeSize * (ctx.kind === "effect" ? 1.74 : 1.62);
+  const isFeaturedBalloon = definition.id === "happy-birthday-balloon-cake-effect-wink";
+  const isFeaturedCandles = definition.id === "happy-birthday-candle-light-effect-wink";
+  const isFeaturedBirthday = isFeaturedBalloon || isFeaturedCandles;
+  const badgeSize = unit(ctx, isFeaturedBirthday ? 0.188 : ctx.kind === "effect" ? 0.16 : 0.19);
+  const cakeY = percentY(ctx, isFeaturedBirthday ? 0.61 : ctx.kind === "effect" ? 0.58 : 0.6);
+  const cakeWidth = badgeSize * (isFeaturedBirthday ? 2.42 : ctx.kind === "effect" ? 2.18 : 2.02);
+  const cakeHeight = badgeSize * (isFeaturedBirthday ? 1.9 : ctx.kind === "effect" ? 1.74 : 1.62);
   const confettiColors = [palette.accent, palette.flash, palette.soft, palette.extra];
 
   const titleOptions = {
@@ -3041,7 +3131,22 @@ function renderBirthdayScene(ctx, definition) {
     },
   };
 
-  const titleMarkup = birthdayTitleGroup(ctx, palette, titleOptions[definition.mood] ?? {});
+  const titleMarkup = isFeaturedBalloon
+    ? birthdayBalloonTitleGroup(ctx, palette, {
+        balloonWidth: unit(ctx, 0.066),
+        rowGap: unit(ctx, 0.084),
+        startY: percentY(ctx, 0.17),
+      })
+    : birthdayTitleGroup(ctx, palette, {
+        ...(titleOptions[mood] ?? {}),
+        bannerWidth: isFeaturedCandles ? unit(ctx, 0.56) : undefined,
+        bannerY: isFeaturedCandles ? percentY(ctx, 0.18) : undefined,
+        fontSize: isFeaturedCandles ? unit(ctx, 0.056) : undefined,
+        lineOneAnimation: isFeaturedCandles ? "wink-featured-pop" : titleOptions[mood]?.lineOneAnimation,
+        lineTwoAnimation: isFeaturedCandles ? "wink-featured-pop" : titleOptions[mood]?.lineTwoAnimation,
+        lineOneFromY: isFeaturedCandles ? 18 : titleOptions[mood]?.lineOneFromY,
+        lineTwoFromY: isFeaturedCandles ? 22 : titleOptions[mood]?.lineTwoFromY,
+      });
   const sharedCake = cake(ctx.centerX, cakeY, cakeWidth, cakeHeight, {
     base: palette.accent,
     plate: palette.soft,
@@ -3062,11 +3167,11 @@ function renderBirthdayScene(ctx, definition) {
     "mega-party": "wink-enter-spin",
   };
   const cakeMotion =
-    definition.mood === "balloon-cake"
+    mood === "balloon-cake"
       ? "wink-hover-sway 1.7s ease-in-out infinite 0.6s"
       : "wink-hover-bob 1.45s ease-in-out infinite 0.72s";
   const cakeGroup = `<g style="transform-origin:${ctx.centerX}px ${cakeY}px; animation:${
-    cakeAnimations[definition.mood] ?? "wink-enter-rise"
+    isFeaturedBirthday ? "wink-featured-pop" : cakeAnimations[mood] ?? "wink-enter-rise"
   } ${ctx.loopSeconds}s cubic-bezier(0.2,0.9,0.24,1) infinite, ${cakeMotion};">${sharedCake}</g>`;
 
   const candleGlow = Array.from({ length: 3 }, (_, index) => {
@@ -3353,6 +3458,63 @@ function renderBirthdayScene(ctx, definition) {
       break;
   }
 
+  if (isFeaturedCandles) {
+    supportMarkup = `
+      ${candleGlow}
+      <g style="transform-origin:${ctx.centerX}px ${cakeY - cakeHeight * 0.42}px; animation:wink-featured-burst ${ctx.loopSeconds}s ease-out infinite;">
+        ${glowCircle(ctx.centerX, cakeY - cakeHeight * 0.42, cakeWidth * 0.26, palette.flash, 0.22)}
+      </g>
+    `;
+    confettiMarkup = burstGroup(ctx, {
+      centerX: ctx.centerX,
+      centerY: cakeY - cakeHeight * 0.46,
+      colors: [palette.flash, palette.soft, palette.extra],
+      count: 8,
+      distance: badgeSize * 0.98,
+      shape: "star",
+      size: badgeSize * 0.12,
+    });
+    twinkles = twinkleGroup(ctx, {
+      colors: [palette.soft, palette.flash, palette.extra],
+      points: [
+        [0.32, 0.18],
+        [0.44, 0.14],
+        [0.56, 0.14],
+        [0.68, 0.18],
+        [0.36, 0.66],
+        [0.64, 0.66],
+      ],
+      radius: badgeSize * 0.14,
+    });
+    ring = impactRing(ctx, palette.flash, badgeSize * 1.3, unit(ctx, 0.018));
+  }
+
+  if (isFeaturedBalloon) {
+    supportMarkup = balloonCluster;
+    confettiMarkup = burstGroup(ctx, {
+      centerX: ctx.centerX,
+      centerY: cakeY - cakeHeight * 0.72,
+      colors: confettiColors,
+      count: 8,
+      distance: badgeSize * 1.12,
+      shape: "circle",
+      size: badgeSize * 0.11,
+    });
+    twinkles = twinkleGroup(ctx, {
+      colors: [palette.soft, palette.accent, palette.flash],
+      points: [
+        [0.26, 0.16],
+        [0.38, 0.1],
+        [0.62, 0.1],
+        [0.74, 0.16],
+        [0.3, 0.66],
+        [0.7, 0.66],
+      ],
+      radius: badgeSize * 0.13,
+    });
+    ring = impactRing(ctx, palette.flash, badgeSize * 1.34, unit(ctx, 0.018));
+  }
+
   return `
     ${titleMarkup}
     ${supportMarkup}
@@ -3365,13 +3527,33 @@ function renderBirthdayScene(ctx, definition) {
 
 function renderThumbsScene(ctx, definition) {
   const palette = scenePalette(definition.category, definition.mood);
-  const size = unit(ctx, ctx.kind === "effect" ? 0.2 : 0.24);
+  const isFeaturedThumb =
+    definition.id === "thumbs-up-confetti" || definition.id === "thumbs-up-gold-burst";
+  const size = unit(ctx, isFeaturedThumb ? 0.236 : ctx.kind === "effect" ? 0.2 : 0.24);
   const titleY = percentY(ctx, ctx.kind === "effect" ? 0.2 : 0.18);
   const accentY = percentY(ctx, ctx.kind === "effect" ? 0.76 : 0.79);
 
   const motif = (() => {
     switch (definition.mood) {
       case "gold":
+        if (isFeaturedThumb) {
+          return `
+            <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-featured-pop ${ctx.loopSeconds}s cubic-bezier(0.22,1,0.36,1) infinite;">
+              ${glowCircle(ctx.centerX, ctx.centerY, size * 1.18, palette.flash, 0.16)}
+              <circle cx="${ctx.centerX}" cy="${ctx.centerY}" r="${size * 0.98}" fill="${palette.base}" stroke="${palette.flash}" stroke-width="${Math.max(
+                5,
+                size * 0.06
+              )}" />
+              <g style="animation:wink-hover-bob 1.18s ease-in-out infinite 0.68s;">${thumbIcon(
+                ctx.centerX,
+                ctx.centerY,
+                size * 1.5,
+                palette.accent,
+                palette.soft
+              )}</g>
+            </g>
+          `;
+        }
         return `
           <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-pop ${ctx.loopSeconds}s cubic-bezier(0.2,0.88,0.24,1) infinite;">
             <circle cx="${ctx.centerX}" cy="${ctx.centerY}" r="${size * 0.9}" fill="${palette.base}" stroke="${palette.accent}" stroke-width="${Math.max(4, size * 0.06)}" />
@@ -3393,10 +3575,83 @@ function renderThumbsScene(ctx, definition) {
           palette.soft
         )}</g>`;
       case "confetti":
+        if (isFeaturedThumb) {
+          return `
+            <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-featured-pop ${ctx.loopSeconds}s cubic-bezier(0.22,1,0.36,1) infinite;">
+              ${glowCircle(ctx.centerX, ctx.centerY, size * 1.16, palette.flash, 0.14)}
+              <circle cx="${ctx.centerX}" cy="${ctx.centerY}" r="${size * 0.94}" fill="${palette.base}" stroke="${palette.accent}" stroke-width="${Math.max(
+                5,
+                size * 0.055
+              )}" />
+              ${thumbIcon(ctx.centerX, ctx.centerY, size * 1.48, palette.accent, palette.soft)}
+              ${pillLabel(ctx.centerX, ctx.centerY + size * 0.98, size * 2.08, size * 0.38, palette.base, palette.accent, "CHEERS", palette.soft)}
+            </g>
+          `;
+        }
         return `
           <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-pop ${ctx.loopSeconds}s cubic-bezier(0.2,0.88,0.24,1) infinite;">
             ${thumbIcon(ctx.centerX, ctx.centerY, size * 1.24, palette.accent, palette.soft)}
             ${pillLabel(ctx.centerX, ctx.centerY + size * 0.92, size * 1.82, size * 0.36, palette.base, palette.accent, "CHEERS", palette.soft)}
+          </g>
+        `;
+      case "pulse":
+        return `
+          <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-pop ${ctx.loopSeconds}s cubic-bezier(0.2,0.88,0.24,1) infinite;">
+            <circle cx="${ctx.centerX}" cy="${ctx.centerY}" r="${size * 0.98}" fill="${palette.base}" opacity="0.42" />
+            <circle cx="${ctx.centerX}" cy="${ctx.centerY}" r="${size * 0.82}" fill="none" stroke="${palette.flash}" stroke-width="${Math.max(6, size * 0.07)}" opacity="0.9" />
+            <circle cx="${ctx.centerX}" cy="${ctx.centerY}" r="${size * 1.18}" fill="none" stroke="${palette.extra}" stroke-width="${Math.max(4, size * 0.05)}" opacity="0.65" />
+            ${thumbIcon(ctx.centerX, ctx.centerY, size * 1.3, palette.accent, palette.soft)}
+          </g>
+        `;
+      case "spotlight":
+        return `
+          <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-rise ${ctx.loopSeconds}s cubic-bezier(0.2,0.9,0.24,1) infinite;">
+            <path d="M ${ctx.centerX - size * 0.42} 0 L ${ctx.centerX + size * 0.42} 0 L ${ctx.centerX + size * 0.88} ${
+              ctx.centerY + size * 1.08
+            } L ${ctx.centerX - size * 0.88} ${ctx.centerY + size * 1.08} Z" fill="${palette.soft}" opacity="0.14" />
+            <ellipse cx="${ctx.centerX}" cy="${ctx.centerY + size * 0.82}" rx="${size * 0.98}" ry="${size * 0.24}" fill="${palette.flash}" opacity="0.2" />
+            <circle cx="${ctx.centerX}" cy="${ctx.centerY}" r="${size * 0.9}" fill="${palette.base}" stroke="${palette.accent}" stroke-width="${Math.max(5, size * 0.06)}" />
+            ${thumbIcon(ctx.centerX, ctx.centerY, size * 1.18, palette.accent, palette.soft)}
+          </g>
+        `;
+      case "seal":
+        return `
+          <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-pop ${ctx.loopSeconds}s cubic-bezier(0.2,0.88,0.24,1) infinite;">
+            <polygon points="${starPath(ctx.centerX, ctx.centerY - size * 0.04, size * 1.08, size * 0.78, 10)}" fill="${palette.base}" stroke="${palette.flash}" stroke-width="${Math.max(
+              5,
+              size * 0.05
+            )}" />
+            <path d="M ${ctx.centerX - size * 0.34} ${ctx.centerY + size * 0.62} L ${ctx.centerX - size * 0.08} ${ctx.centerY + size * 1.18} L ${ctx.centerX + size * 0.06} ${
+              ctx.centerY + size * 0.76
+            } Z" fill="${palette.accent}" opacity="0.86" />
+            <path d="M ${ctx.centerX + size * 0.34} ${ctx.centerY + size * 0.62} L ${ctx.centerX + size * 0.08} ${ctx.centerY + size * 1.18} L ${ctx.centerX - size * 0.06} ${
+              ctx.centerY + size * 0.76
+            } Z" fill="${palette.extra}" opacity="0.86" />
+            ${thumbIcon(ctx.centerX, ctx.centerY, size * 1.08, palette.accent, palette.soft)}
+          </g>
+        `;
+      case "ribbon":
+        return `
+          <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-rise ${ctx.loopSeconds}s cubic-bezier(0.2,0.9,0.24,1) infinite;">
+            <circle cx="${ctx.centerX}" cy="${ctx.centerY}" r="${size * 0.88}" fill="${palette.base}" stroke="${palette.flash}" stroke-width="${Math.max(5, size * 0.05)}" />
+            <path d="M ${ctx.centerX - size * 0.52} ${ctx.centerY + size * 0.48} L ${ctx.centerX - size * 0.2} ${ctx.centerY + size * 1.26} L ${ctx.centerX} ${
+              ctx.centerY + size * 0.72
+            } Z" fill="${palette.accent}" opacity="0.9" />
+            <path d="M ${ctx.centerX + size * 0.52} ${ctx.centerY + size * 0.48} L ${ctx.centerX + size * 0.2} ${ctx.centerY + size * 1.26} L ${ctx.centerX} ${
+              ctx.centerY + size * 0.72
+            } Z" fill="${palette.extra}" opacity="0.9" />
+            ${thumbIcon(ctx.centerX, ctx.centerY - size * 0.04, size * 1.14, palette.soft, palette.flash)}
+          </g>
+        `;
+      case "flare":
+        return `
+          <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-spin ${ctx.loopSeconds}s cubic-bezier(0.2,0.88,0.24,1) infinite;">
+            <polygon points="${starPath(ctx.centerX, ctx.centerY, size * 1.18, size * 0.5, 8)}" fill="${palette.base}" stroke="${palette.extra}" stroke-width="${Math.max(
+              4,
+              size * 0.04
+            )}" opacity="0.95" />
+            <circle cx="${ctx.centerX}" cy="${ctx.centerY}" r="${size * 0.64}" fill="${palette.flash}" opacity="0.22" />
+            ${thumbIcon(ctx.centerX, ctx.centerY, size * 1.12, palette.accent, palette.soft)}
           </g>
         `;
       case "ring":
@@ -3475,6 +3730,21 @@ function renderThumbsScene(ctx, definition) {
     }
   })();
 
+  const ring = impactRing(ctx, palette.flash, size * (isFeaturedThumb ? 1.18 : 1.06));
+  const twinkles = twinkleGroup(ctx, {
+    colors: [palette.soft, palette.accent, palette.flash],
+    points: isFeaturedThumb
+      ? [
+          [0.28, 0.22],
+          [0.4, 0.14],
+          [0.6, 0.14],
+          [0.72, 0.22],
+          [0.34, 0.68],
+          [0.66, 0.68],
+        ]
+      : undefined,
+    radius: isFeaturedThumb ? unit(ctx, 0.021) : unit(ctx, 0.018),
+  });
   const accents =
     definition.mood === "jackpot"
       ? burstGroup(ctx, {
@@ -3486,17 +3756,27 @@ function renderThumbsScene(ctx, definition) {
         })
       : burstGroup(ctx, {
           colors: [palette.flash, palette.accent, palette.extra, palette.soft],
-          count: 14,
-          distance: unit(ctx, 0.26),
-          shape: definition.mood === "sparkle" || definition.mood === "ring" ? "star" : "confetti",
-          size: unit(ctx, 0.016),
+          count: isFeaturedThumb ? 8 : 14,
+          distance: unit(ctx, isFeaturedThumb ? 0.22 : 0.26),
+          shape:
+            isFeaturedThumb && definition.mood === "gold"
+              ? "star"
+              : definition.mood === "sparkle" ||
+                  definition.mood === "ring" ||
+                  definition.mood === "pulse" ||
+                  definition.mood === "seal" ||
+                  definition.mood === "spotlight" ||
+                  definition.mood === "flare"
+                ? "star"
+                : "confetti",
+          size: unit(ctx, isFeaturedThumb ? 0.024 : 0.016),
         });
 
   return `
     ${outlineText(definition.title, ctx.centerX, titleY, size * 0.38, palette.soft, palette.base)}
     ${motif}
-    ${impactRing(ctx, palette.flash, size * 1.06)}
-    ${twinkleGroup(ctx, { colors: [palette.soft, palette.accent, palette.flash] })}
+    ${ring}
+    ${twinkles}
     ${accents}
     <g style="transform-origin:${ctx.centerX}px ${accentY}px; animation:wink-finale ${ctx.loopSeconds}s ease-out infinite;">
       ${pillLabel(ctx.centerX, accentY, size * 1.98, size * 0.34, palette.accent, palette.base, definition.accent, palette.base)}
@@ -3506,7 +3786,8 @@ function renderThumbsScene(ctx, definition) {
 
 function renderLeprechaunScene(ctx, definition) {
   const palette = scenePalette(definition.category, definition.mood);
-  const size = unit(ctx, ctx.kind === "effect" ? 0.18 : 0.22);
+  const isFeaturedCoins = definition.id === "leprechaun-gold-coins";
+  const size = unit(ctx, isFeaturedCoins ? 0.206 : ctx.kind === "effect" ? 0.18 : 0.22);
   const titleY = percentY(ctx, ctx.kind === "effect" ? 0.2 : 0.18);
   const accentY = percentY(ctx, ctx.kind === "effect" ? 0.76 : 0.8);
 
@@ -3523,6 +3804,36 @@ function renderLeprechaunScene(ctx, definition) {
         )}</g>`;
       case "coins":
       case "rain":
+        if (isFeaturedCoins && definition.mood === "coins") {
+          return `
+            <g style="transform-origin:${ctx.centerX}px ${ctx.centerY + size * 0.2}px; animation:wink-featured-pop ${ctx.loopSeconds}s cubic-bezier(0.22,1,0.36,1) infinite;">
+              ${glowCircle(ctx.centerX, ctx.centerY + size * 0.14, size * 1.18, palette.flash, 0.14)}
+              ${potOfGold(ctx.centerX, ctx.centerY + size * 0.62, size * 2.54, size * 1.94, {
+                coin: palette.accent,
+                pot: palette.base,
+                stroke: palette.soft,
+              })}
+              ${[
+                { x: ctx.centerX - size * 0.56, y: ctx.centerY + size * 0.02, scale: 0.3, delay: 0.1 },
+                { x: ctx.centerX, y: ctx.centerY - size * 0.28, scale: 0.36, delay: 0.18 },
+                { x: ctx.centerX + size * 0.56, y: ctx.centerY + size * 0.02, scale: 0.3, delay: 0.26 },
+              ]
+                .map(
+                  (coin) => `
+                    <g style="transform-origin:${coin.x}px ${coin.y}px; animation:wink-featured-pop ${ctx.loopSeconds}s cubic-bezier(0.22,1,0.36,1) infinite; animation-delay:${coin.delay}s;">
+                      ${renderParticleShape("coin", {
+                        color: palette.accent,
+                        cx: coin.x,
+                        cy: coin.y,
+                        size: size * coin.scale,
+                      })}
+                    </g>
+                  `
+                )
+                .join("")}
+            </g>
+          `;
+        }
         return `
           <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-rise ${ctx.loopSeconds}s cubic-bezier(0.2,0.9,0.24,1) infinite;">
             ${Array.from({ length: 5 }, (_, index) => {
@@ -3576,6 +3887,96 @@ function renderLeprechaunScene(ctx, definition) {
             stroke: palette.soft,
           }
         )}</g>`;
+      case "crown":
+        return `
+          <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-pop ${ctx.loopSeconds}s cubic-bezier(0.2,0.9,0.24,1) infinite;">
+            <circle cx="${ctx.centerX}" cy="${ctx.centerY + size * 0.04}" r="${size * 0.92}" fill="${palette.base}" stroke="${palette.flash}" stroke-width="${Math.max(
+              5,
+              size * 0.055
+            )}" />
+            ${clover(ctx.centerX, ctx.centerY + size * 0.08, size * 0.44, palette.accent, palette.soft)}
+            ${Array.from({ length: 5 }, (_, index) => {
+              const x = ctx.centerX + (index - 2) * size * 0.3;
+              const y = ctx.centerY - size * 0.74 + Math.abs(index - 2) * size * 0.08;
+              return sparkle(x, y, size * 0.14, index % 2 === 0 ? palette.flash : palette.extra, palette.soft);
+            }).join("")}
+          </g>
+        `;
+      case "fountain":
+        return `
+          <g style="transform-origin:${ctx.centerX}px ${ctx.centerY + size * 0.2}px; animation:wink-enter-rise ${ctx.loopSeconds}s cubic-bezier(0.2,0.9,0.24,1) infinite;">
+            ${potOfGold(ctx.centerX, ctx.centerY + size * 0.62, size * 2.34, size * 1.76, {
+              coin: palette.accent,
+              pot: palette.base,
+              stroke: palette.soft,
+            })}
+            ${[-0.7, -0.34, 0, 0.34, 0.7]
+              .map((offset, index) => {
+                const coinX = ctx.centerX + size * offset;
+                const coinY = ctx.centerY - size * (0.46 + Math.abs(offset) * 0.22);
+                return `<g style="transform-origin:${coinX}px ${coinY}px; animation:wink-enter-pop ${ctx.loopSeconds}s cubic-bezier(0.22,1,0.36,1) infinite; animation-delay:${round(
+                  index * 0.06
+                )}s;">${renderParticleShape("coin", {
+                  color: index % 2 === 0 ? palette.accent : palette.flash,
+                  cx: coinX,
+                  cy: coinY,
+                  size: size * 0.28,
+                })}</g>`;
+              })
+              .join("")}
+          </g>
+        `;
+      case "seal":
+        return `
+          <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-pop ${ctx.loopSeconds}s cubic-bezier(0.2,0.88,0.24,1) infinite;">
+            <circle cx="${ctx.centerX}" cy="${ctx.centerY}" r="${size * 0.92}" fill="${palette.base}" stroke="${palette.flash}" stroke-width="${Math.max(
+              5,
+              size * 0.055
+            )}" />
+            <circle cx="${ctx.centerX}" cy="${ctx.centerY}" r="${size * 0.68}" fill="none" stroke="${palette.extra}" stroke-width="${Math.max(
+              4,
+              size * 0.04
+            )}" />
+            ${clover(ctx.centerX, ctx.centerY, size * 0.38, palette.accent, palette.soft)}
+          </g>
+        `;
+      case "vault":
+        return `
+          <g style="transform-origin:${ctx.centerX}px ${ctx.centerY + size * 0.24}px; animation:wink-enter-rise ${ctx.loopSeconds}s cubic-bezier(0.2,0.9,0.24,1) infinite;">
+            ${["#ff6283", "#ffb04f", "#ffe062", "#7ae16d", "#62dfff"].map((color, index) => {
+              const radius = size * (1.14 - index * 0.12);
+              return `<path d="${rainbowArcPath(ctx.centerX, ctx.centerY + size * 0.5, radius)}" fill="none" stroke="${color}" stroke-width="${Math.max(
+                8,
+                size * 0.08
+              )}" stroke-linecap="round" />`;
+            }).join("")}
+            ${potOfGold(ctx.centerX, ctx.centerY + size * 0.78, size * 1.96, size * 1.48, {
+              coin: palette.flash,
+              pot: palette.base,
+              stroke: palette.soft,
+            })}
+            ${renderParticleShape("coin", {
+              color: palette.accent,
+              cx: ctx.centerX,
+              cy: ctx.centerY - size * 0.22,
+              size: size * 0.34,
+            })}
+          </g>
+        `;
+      case "treasure":
+        return `
+          <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-spin ${ctx.loopSeconds}s cubic-bezier(0.2,0.88,0.24,1) infinite;">
+            <circle cx="${ctx.centerX}" cy="${ctx.centerY}" r="${size * 0.9}" fill="${palette.accent}" stroke="#b27f00" stroke-width="${Math.max(
+              5,
+              size * 0.055
+            )}" />
+            ${clover(ctx.centerX, ctx.centerY, size * 0.3, palette.base, palette.soft)}
+            <circle cx="${ctx.centerX}" cy="${ctx.centerY}" r="${size * 1.14}" fill="none" stroke="${palette.extra}" stroke-width="${Math.max(
+              4,
+              size * 0.04
+            )}" opacity="0.5" />
+          </g>
+        `;
       case "spin":
         return `
           <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-spin ${ctx.loopSeconds}s cubic-bezier(0.2,0.88,0.24,1) infinite;">
@@ -3602,6 +4003,21 @@ function renderLeprechaunScene(ctx, definition) {
     }
   })();
 
+  const ring = impactRing(ctx, palette.flash, size * (isFeaturedCoins ? 1.22 : 1.08));
+  const twinkles = twinkleGroup(ctx, {
+    colors: [palette.soft, palette.accent, palette.flash],
+    points: isFeaturedCoins
+      ? [
+          [0.28, 0.18],
+          [0.42, 0.14],
+          [0.58, 0.14],
+          [0.72, 0.18],
+          [0.34, 0.68],
+          [0.66, 0.68],
+        ]
+      : undefined,
+    radius: isFeaturedCoins ? unit(ctx, 0.02) : unit(ctx, 0.018),
+  });
   const accents =
     definition.mood === "rain"
       ? fallGroup(ctx, {
@@ -3613,22 +4029,31 @@ function renderLeprechaunScene(ctx, definition) {
         })
       : burstGroup(ctx, {
           colors: [palette.accent, palette.flash, palette.soft, palette.extra],
-          count: 15,
-          distance: unit(ctx, 0.27),
+          count: isFeaturedCoins ? 8 : 15,
+          distance: unit(ctx, isFeaturedCoins ? 0.2 : 0.27),
           shape:
-            definition.mood === "clover" || definition.mood === "burst" || definition.mood === "spin"
+            definition.mood === "clover" ||
+            definition.mood === "burst" ||
+            definition.mood === "spin" ||
+            definition.mood === "crown" ||
+            definition.mood === "seal"
               ? "clover"
-              : definition.mood === "coins" || definition.mood === "pot" || definition.mood === "jackpot"
-              ? "coin"
-              : "star",
-          size: unit(ctx, 0.016),
+              : definition.mood === "coins" ||
+                  definition.mood === "pot" ||
+                  definition.mood === "jackpot" ||
+                  definition.mood === "fountain" ||
+                  definition.mood === "treasure" ||
+                  definition.mood === "vault"
+                ? "coin"
+                : "star",
+          size: unit(ctx, isFeaturedCoins ? 0.022 : 0.016),
         });
 
   return `
     ${outlineText(definition.title, ctx.centerX, titleY, size * 0.36, palette.soft, palette.base)}
     ${motif}
-    ${impactRing(ctx, palette.flash, size * 1.08)}
-    ${twinkleGroup(ctx, { colors: [palette.soft, palette.accent, palette.flash] })}
+    ${ring}
+    ${twinkles}
     ${accents}
     <g style="transform-origin:${ctx.centerX}px ${accentY}px; animation:wink-finale ${ctx.loopSeconds}s ease-out infinite;">
       ${pillLabel(ctx.centerX, accentY, size * 2.1, size * 0.34, palette.accent, palette.base, definition.accent, palette.base)}
@@ -3682,6 +4107,90 @@ function renderFlowersScene(ctx, definition) {
             yellow: "#ffe88f",
           }
         )}</g>`;
+      case "orchid":
+        return `
+          <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-pop ${ctx.loopSeconds}s cubic-bezier(0.2,0.9,0.24,1) infinite;">
+            ${glowCircle(ctx.centerX, ctx.centerY, size * 1.08, palette.extra, 0.18)}
+            ${flower(ctx.centerX, ctx.centerY, size * 0.78, {
+              center: palette.flash,
+              petal: palette.accent,
+              stroke: palette.base,
+            }, 5)}
+          </g>
+        `;
+      case "crown":
+        return `
+          <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-rise ${ctx.loopSeconds}s cubic-bezier(0.2,0.9,0.24,1) infinite;">
+            ${flower(ctx.centerX - size * 0.54, ctx.centerY + size * 0.18, size * 0.32, {
+              center: palette.flash,
+              petal: palette.accent,
+              stroke: palette.base,
+            }, 7)}
+            ${flower(ctx.centerX, ctx.centerY - size * 0.18, size * 0.46, {
+              center: palette.flash,
+              petal: palette.soft,
+              stroke: palette.base,
+            }, 8)}
+            ${flower(ctx.centerX + size * 0.54, ctx.centerY + size * 0.18, size * 0.32, {
+              center: palette.flash,
+              petal: palette.extra,
+              stroke: palette.base,
+            }, 7)}
+          </g>
+        `;
+      case "halo":
+        return `
+          <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-spin ${ctx.loopSeconds}s cubic-bezier(0.2,0.88,0.24,1) infinite;">
+            ${flower(ctx.centerX, ctx.centerY, size * 0.62, {
+              center: palette.flash,
+              petal: palette.accent,
+              stroke: palette.base,
+            }, 8)}
+            ${Array.from({ length: 8 }, (_, index) => {
+              const angle = index * 45;
+              const haloX = polarX(ctx.centerX, size * 0.98, angle);
+              const haloY = polarY(ctx.centerY, size * 0.98, angle);
+              return sparkle(haloX, haloY, size * 0.14, index % 2 === 0 ? palette.extra : palette.soft, palette.flash);
+            }).join("")}
+          </g>
+        `;
+      case "ribbon":
+        return `
+          <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-rise ${ctx.loopSeconds}s cubic-bezier(0.2,0.9,0.24,1) infinite;">
+            ${bouquet(ctx.centerX, ctx.centerY - size * 0.02, size * 1.94, {
+              blue: palette.extra,
+              pink: palette.accent,
+              ribbon: palette.flash,
+              stroke: palette.base,
+              sun: "#ffe17d",
+              wrap: palette.soft,
+              yellow: "#fff0a5",
+            })}
+            <path d="M ${ctx.centerX - size * 0.22} ${ctx.centerY + size * 0.44} Q ${ctx.centerX - size * 0.58} ${ctx.centerY + size * 0.88}, ${
+              ctx.centerX - size * 0.18
+            } ${ctx.centerY + size * 1.1}" fill="none" stroke="${palette.flash}" stroke-width="${Math.max(5, size * 0.05)}" stroke-linecap="round" />
+            <path d="M ${ctx.centerX + size * 0.22} ${ctx.centerY + size * 0.44} Q ${ctx.centerX + size * 0.58} ${ctx.centerY + size * 0.88}, ${
+              ctx.centerX + size * 0.18
+            } ${ctx.centerY + size * 1.1}" fill="none" stroke="${palette.extra}" stroke-width="${Math.max(5, size * 0.05)}" stroke-linecap="round" />
+          </g>
+        `;
+      case "fanfare":
+        return `
+          <g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-pop ${ctx.loopSeconds}s cubic-bezier(0.2,0.88,0.24,1) infinite;">
+            ${flower(ctx.centerX - size * 0.52, ctx.centerY + size * 0.12, size * 0.34, {
+              center: palette.flash,
+              petal: palette.accent,
+              stroke: palette.base,
+            }, 6)}
+            ${flower(ctx.centerX + size * 0.52, ctx.centerY + size * 0.12, size * 0.34, {
+              center: palette.flash,
+              petal: palette.extra,
+              stroke: palette.base,
+            }, 6)}
+            ${sparkle(ctx.centerX, ctx.centerY - size * 0.42, size * 0.32, palette.flash, palette.soft)}
+            ${pillLabel(ctx.centerX, ctx.centerY + size * 0.56, size * 1.84, size * 0.34, palette.base, palette.accent, "LUXE", palette.soft)}
+          </g>
+        `;
       case "rose":
         return `<g style="transform-origin:${ctx.centerX}px ${ctx.centerY}px; animation:wink-enter-spin ${ctx.loopSeconds}s cubic-bezier(0.2,0.88,0.24,1) infinite, wink-hover-bob 1.32s ease-in-out infinite 0.7s;">${rose(
           ctx.centerX,
@@ -3793,7 +4302,14 @@ function renderFlowersScene(ctx, definition) {
           colors: [palette.accent, palette.flash, palette.extra, palette.soft],
           count: 15,
           distance: unit(ctx, 0.27),
-          shape: definition.mood === "bouquet" || definition.mood === "spring" ? "petal" : "star",
+          shape:
+            definition.mood === "bouquet" ||
+            definition.mood === "spring" ||
+            definition.mood === "crown" ||
+            definition.mood === "ribbon" ||
+            definition.mood === "fanfare"
+              ? "petal"
+              : "star",
           size: unit(ctx, 0.016),
         });
 
@@ -3888,13 +4404,17 @@ async function main() {
 
   for (const [kind, variants] of grouped.entries()) {
     const paths = await ensureWinkStructure(kind);
+    const writtenSvgPaths = [];
 
     await Promise.all(
       variants.map(async (variant) => {
         const targetPath = path.join(paths.svgDir, `${variant.id}.svg`);
+        writtenSvgPaths.push(targetPath);
         await fs.writeFile(targetPath, renderSvg(variant), "utf8");
       })
     );
+
+    await normalizeWinkSvgFiles(kind, writtenSvgPaths);
   }
 
   await updateEffectMetadata(VARIANTS.filter((variant) => variant.kind === "effect"));

@@ -218,7 +218,7 @@ function PrimarySvgCard({
 
       <PreviewFrame bg={bg} height={wink.height} width={wink.width}>
         {svgPreview ? (
-          <div className="absolute inset-0">{svgPreview}</div>
+          <div className="h-full w-full">{svgPreview}</div>
         ) : svgFile ? (
           <img
             src={svgPath}
@@ -367,7 +367,7 @@ function ApngFallbackCard({
         <PreviewFrame bg={bg} height={wink.height} width={wink.width}>
           {previewMode === "svg" ? (
             svgPreview ? (
-              <div className="absolute inset-0">{svgPreview}</div>
+              <div className="h-full w-full">{svgPreview}</div>
             ) : (
               <PreviewPlaceholder
                 message={
@@ -446,15 +446,17 @@ function PreviewFrame({
       )}
       style={{ aspectRatio: `${width} / ${height}` }}
     >
-      {children}
-      <div className="pointer-events-none absolute inset-[10%] rounded-[18px] border border-dashed border-sky-300/55" />
+      <div className="absolute inset-[12%] flex items-center justify-center">
+        <div className="flex h-full w-full items-center justify-center">{children}</div>
+      </div>
+      <div className="pointer-events-none absolute inset-[12%] rounded-[18px] border border-dashed border-sky-300/55" />
     </div>
   );
 }
 
 function PreviewPlaceholder({ message }: { message: string }) {
   return (
-    <div className="flex h-full min-h-[240px] items-center justify-center px-6 text-center text-sm text-muted-foreground">
+    <div className="flex h-full w-full items-center justify-center px-6 text-center text-sm text-muted-foreground">
       <p className="max-w-xs whitespace-pre-line">{message}</p>
     </div>
   );

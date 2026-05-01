@@ -17,59 +17,59 @@
       50% { opacity: 0.5; transform: scale(1.06); }
     }
   </style>
-  <g style="transform-origin:384px 600px; animation:twinkle 3.1s ease-in-out infinite;">
-    <circle cx="384" cy="600" r="164" fill="none" stroke="#0278df" stroke-width="16" opacity="0.18" />
-    <circle cx="384" cy="600" r="118" fill="none" stroke="#9610b8" stroke-width="14" opacity="0.22" />
-    <circle cx="384" cy="600" r="72" fill="none" stroke="#f7c901" stroke-width="12" opacity="0.26" />
-  </g>
-  <g style="transform-origin:144px 564px; --fx:0px; --fy:-280px; --fr:-16deg; animation:dropIn 3.1s cubic-bezier(0.2,0.9,0.24,1) infinite;">
+  
+  
+  
+  
+  
+  
+<g id="content" transform="translate(384 512) scale(1.0433804821890276) translate(-383.94551849365234 -523.6795959472656)"><g style="transform-origin:384px 600px; animation:twinkle 3.1s ease-in-out infinite;">
+    <circle cx="384" cy="600" r="164" fill="none" stroke="#0278df" stroke-width="16" opacity="0.18"/>
+    <circle cx="384" cy="600" r="118" fill="none" stroke="#9610b8" stroke-width="14" opacity="0.22"/>
+    <circle cx="384" cy="600" r="72" fill="none" stroke="#f7c901" stroke-width="12" opacity="0.26"/>
+  </g><g style="transform-origin:144px 564px; --fx:0px; --fy:-280px; --fr:-16deg; animation:dropIn 3.1s cubic-bezier(0.2,0.9,0.24,1) infinite;">
     <g transform="translate(144 564)">
-      <ellipse cx="0" cy="42" rx="23" ry="7.2" fill="rgba(0,0,0,0.18)" />
-      <circle cx="0" cy="0" r="30" fill="#0278df" stroke="#015cab" stroke-width="3.6" />
-      <circle cx="0" cy="0" r="26.4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.3" />
-      <circle cx="0" cy="0" r="18.4" fill="#ffffff" stroke="#015cab" stroke-width="1.8" />
+      <ellipse cx="0" cy="42" rx="23" ry="7.2" fill="rgba(0,0,0,0.18)"/>
+      <circle cx="0" cy="0" r="30" fill="#0278df" stroke="#015cab" stroke-width="3.6"/>
+      <circle cx="0" cy="0" r="26.4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.3"/>
+      <circle cx="0" cy="0" r="18.4" fill="#ffffff" stroke="#015cab" stroke-width="1.8"/>
       <text x="0" y="1.2" text-anchor="middle" dominant-baseline="central" font-size="28" font-weight="900" fill="#0278df" stroke="#015cab" stroke-width="1.7" letter-spacing="0">B</text>
-      <ellipse cx="-11" cy="-15" rx="10" ry="5" fill="#ffffff" opacity="0.5" />
+      <ellipse cx="-11" cy="-15" rx="10" ry="5" fill="#ffffff" opacity="0.5"/>
     </g>
-  </g>
-  <g style="transform-origin:264px 564px; --fx:0px; --fy:-240px; --fr:-10deg; animation:dropIn 3.1s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.08s;">
+  </g><g style="transform-origin:264px 564px; --fx:0px; --fy:-240px; --fr:-10deg; animation:dropIn 3.1s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.08s;">
     <g transform="translate(264 564)">
-      <ellipse cx="0" cy="42" rx="23" ry="7.2" fill="rgba(0,0,0,0.18)" />
-      <circle cx="0" cy="0" r="30" fill="#f70900" stroke="#c10700" stroke-width="3.6" />
-      <circle cx="0" cy="0" r="26.4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.3" />
-      <circle cx="0" cy="0" r="18.4" fill="#ffffff" stroke="#c10700" stroke-width="1.8" />
+      <ellipse cx="0" cy="42" rx="23" ry="7.2" fill="rgba(0,0,0,0.18)"/>
+      <circle cx="0" cy="0" r="30" fill="#f70900" stroke="#c10700" stroke-width="3.6"/>
+      <circle cx="0" cy="0" r="26.4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.3"/>
+      <circle cx="0" cy="0" r="18.4" fill="#ffffff" stroke="#c10700" stroke-width="1.8"/>
       <text x="0" y="1.2" text-anchor="middle" dominant-baseline="central" font-size="28" font-weight="900" fill="#f70900" stroke="#c10700" stroke-width="1.7" letter-spacing="0">I</text>
-      <ellipse cx="-11" cy="-15" rx="10" ry="5" fill="#ffffff" opacity="0.5" />
+      <ellipse cx="-11" cy="-15" rx="10" ry="5" fill="#ffffff" opacity="0.5"/>
     </g>
-  </g>
-  <g style="transform-origin:384px 564px; --fx:0px; --fy:-300px; --fr:0deg; animation:dropIn 3.1s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.16s;">
+  </g><g style="transform-origin:384px 564px; --fx:0px; --fy:-300px; --fr:0deg; animation:dropIn 3.1s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.16s;">
     <g transform="translate(384 564)">
-      <ellipse cx="0" cy="42" rx="23" ry="7.2" fill="rgba(0,0,0,0.18)" />
-      <circle cx="0" cy="0" r="30" fill="#9610b8" stroke="#740c8f" stroke-width="3.6" />
-      <circle cx="0" cy="0" r="26.4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.3" />
-      <circle cx="0" cy="0" r="18.4" fill="#ffffff" stroke="#740c8f" stroke-width="1.8" />
+      <ellipse cx="0" cy="42" rx="23" ry="7.2" fill="rgba(0,0,0,0.18)"/>
+      <circle cx="0" cy="0" r="30" fill="#9610b8" stroke="#740c8f" stroke-width="3.6"/>
+      <circle cx="0" cy="0" r="26.4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.3"/>
+      <circle cx="0" cy="0" r="18.4" fill="#ffffff" stroke="#740c8f" stroke-width="1.8"/>
       <text x="0" y="1.2" text-anchor="middle" dominant-baseline="central" font-size="28" font-weight="900" fill="#9610b8" stroke="#740c8f" stroke-width="1.7" letter-spacing="0">N</text>
-      <ellipse cx="-11" cy="-15" rx="10" ry="5" fill="#ffffff" opacity="0.5" />
+      <ellipse cx="-11" cy="-15" rx="10" ry="5" fill="#ffffff" opacity="0.5"/>
     </g>
-  </g>
-  <g style="transform-origin:504px 564px; --fx:0px; --fy:-240px; --fr:10deg; animation:dropIn 3.1s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.24s;">
+  </g><g style="transform-origin:504px 564px; --fx:0px; --fy:-240px; --fr:10deg; animation:dropIn 3.1s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.24s;">
     <g transform="translate(504 564)">
-      <ellipse cx="0" cy="42" rx="23" ry="7.2" fill="rgba(0,0,0,0.18)" />
-      <circle cx="0" cy="0" r="30" fill="#36af0a" stroke="#288407" stroke-width="3.6" />
-      <circle cx="0" cy="0" r="26.4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.3" />
-      <circle cx="0" cy="0" r="18.4" fill="#ffffff" stroke="#288407" stroke-width="1.8" />
+      <ellipse cx="0" cy="42" rx="23" ry="7.2" fill="rgba(0,0,0,0.18)"/>
+      <circle cx="0" cy="0" r="30" fill="#36af0a" stroke="#288407" stroke-width="3.6"/>
+      <circle cx="0" cy="0" r="26.4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.3"/>
+      <circle cx="0" cy="0" r="18.4" fill="#ffffff" stroke="#288407" stroke-width="1.8"/>
       <text x="0" y="1.2" text-anchor="middle" dominant-baseline="central" font-size="28" font-weight="900" fill="#36af0a" stroke="#288407" stroke-width="1.7" letter-spacing="0">G</text>
-      <ellipse cx="-11" cy="-15" rx="10" ry="5" fill="#ffffff" opacity="0.5" />
+      <ellipse cx="-11" cy="-15" rx="10" ry="5" fill="#ffffff" opacity="0.5"/>
     </g>
-  </g>
-  <g style="transform-origin:624px 564px; --fx:0px; --fy:-280px; --fr:16deg; animation:dropIn 3.1s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.32s;">
+  </g><g style="transform-origin:624px 564px; --fx:0px; --fy:-280px; --fr:16deg; animation:dropIn 3.1s cubic-bezier(0.2,0.9,0.24,1) infinite; animation-delay:0.32s;">
     <g transform="translate(624 564)">
-      <ellipse cx="0" cy="42" rx="23" ry="7.2" fill="rgba(0,0,0,0.18)" />
-      <circle cx="0" cy="0" r="30" fill="#f7c901" stroke="#c89d01" stroke-width="3.6" />
-      <circle cx="0" cy="0" r="26.4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.3" />
-      <circle cx="0" cy="0" r="18.4" fill="#ffffff" stroke="#c89d01" stroke-width="1.8" />
+      <ellipse cx="0" cy="42" rx="23" ry="7.2" fill="rgba(0,0,0,0.18)"/>
+      <circle cx="0" cy="0" r="30" fill="#f7c901" stroke="#c89d01" stroke-width="3.6"/>
+      <circle cx="0" cy="0" r="26.4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.3"/>
+      <circle cx="0" cy="0" r="18.4" fill="#ffffff" stroke="#c89d01" stroke-width="1.8"/>
       <text x="0" y="1.2" text-anchor="middle" dominant-baseline="central" font-size="28" font-weight="900" fill="#f7c901" stroke="#c89d01" stroke-width="1.7" letter-spacing="0">O</text>
-      <ellipse cx="-11" cy="-15" rx="10" ry="5" fill="#ffffff" opacity="0.5" />
+      <ellipse cx="-11" cy="-15" rx="10" ry="5" fill="#ffffff" opacity="0.5"/>
     </g>
-  </g>
-</svg>
+  </g></g></svg>

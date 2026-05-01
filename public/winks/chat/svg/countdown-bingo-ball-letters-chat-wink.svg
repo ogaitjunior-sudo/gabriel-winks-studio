@@ -41,6 +41,21 @@
     50% { transform: rotate(3deg) translateY(-8px); }
   }
 
+  @keyframes wink-featured-pop {
+    0%, 100% { opacity: 1; transform: translateY(0px) scale(0.78) rotate(-6deg); }
+    12% { opacity: 1; transform: translateY(-26px) scale(1.3) rotate(4deg); }
+    22% { opacity: 1; transform: translateY(10px) scale(0.95) rotate(-2deg); }
+    34%, 76% { opacity: 1; transform: translateY(0px) scale(1) rotate(0deg); }
+    88% { opacity: 1; transform: translateY(-8px) scale(1.06) rotate(0deg); }
+  }
+
+  @keyframes wink-featured-burst {
+    0%, 40%, 100% { opacity: 0; transform: scale(0.38); }
+    48% { opacity: 0.95; transform: scale(0.92); }
+    60% { opacity: 0.42; transform: scale(1.18); }
+    72% { opacity: 0; transform: scale(1.34); }
+  }
+
   @keyframes wink-pulse {
     0%, 100% { transform: scale(0.96); opacity: 0.65; }
     50% { transform: scale(1.08); opacity: 1; }
@@ -1005,7 +1020,7 @@
         0%, 42%,
         100% {
           opacity: 0;
-          transform: translate(0px, 22.61px) scale(0.28) rotate(0deg);
+          transform: translate(0px, 22.61px) scale(0.22) rotate(0deg);
         }
         46% {
           opacity: 1;
@@ -1204,113 +1219,113 @@
       }
     
     </style>
-    <circle cx="384" cy="502.78" r="161.0934" fill="#ffd454" opacity="0.08" />
-    <g style="transform-origin:168.96px 204.8px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0s;"><polygon points="168.96,188.42 173.82,199.94 185.34,204.8 173.82,209.66 168.96,221.18 164.1,209.66 152.58,204.8 164.1,199.94" fill="#fff1d0" stroke="rgba(255,255,255,0.75)" stroke-width="1.3100319999999999" /></g><g style="transform-origin:276.48px 143.36px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.17s;"><polygon points="276.48,126.98 281.34,138.5 292.86,143.36 281.34,148.22 276.48,159.74 271.62,148.22 260.1,143.36 271.62,138.5" fill="#ffd454" stroke="rgba(255,255,255,0.75)" stroke-width="1.3100319999999999" /></g><g style="transform-origin:491.52px 153.6px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.34s;"><polygon points="491.52,137.22 496.38,148.74 507.9,153.6 496.38,158.46 491.52,169.98 486.66,158.46 475.14,153.6 486.66,148.74" fill="#5ad8ff" stroke="rgba(255,255,255,0.75)" stroke-width="1.3100319999999999" /></g><g style="transform-origin:599.04px 225.28px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.51s;"><polygon points="599.04,208.9 603.9,220.42 615.42,225.28 603.9,230.14 599.04,241.66 594.18,230.14 582.66,225.28 594.18,220.42" fill="#fff1d0" stroke="rgba(255,255,255,0.75)" stroke-width="1.3100319999999999" /></g><g style="transform-origin:168.96px 798.72px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.68s;"><polygon points="168.96,782.34 173.82,793.86 185.34,798.72 173.82,803.58 168.96,815.1 164.1,803.58 152.58,798.72 164.1,793.86" fill="#ffd454" stroke="rgba(255,255,255,0.75)" stroke-width="1.3100319999999999" /></g><g style="transform-origin:599.04px 798.72px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.85s;"><polygon points="599.04,782.34 603.9,793.86 615.42,798.72 603.9,803.58 599.04,815.1 594.18,803.58 582.66,798.72 594.18,793.86" fill="#5ad8ff" stroke="rgba(255,255,255,0.75)" stroke-width="1.3100319999999999" /></g>
-    <g style="transform-origin:384px 502.78px; animation:cdcountdownbingoballletterschatwinkdigit0 3.9s linear infinite;">
+    
+    
+    
+    
+      
+          
+        
+      
+      
+          
+        
+      
+          
+        
+    
+  
+<g id="content" transform="translate(384 512) scale(0.9490481066799085) translate(-383.9999771118164 -469.7632637023926)"><circle cx="384" cy="502.78" r="161.0934" fill="#ffd454" opacity="0.08"/><g style="transform-origin:168.96px 204.8px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0s;"><polygon points="168.96,188.42 173.82,199.94 185.34,204.8 173.82,209.66 168.96,221.18 164.1,209.66 152.58,204.8 164.1,199.94" fill="#fff1d0" stroke="rgba(255,255,255,0.75)" stroke-width="1.3100319999999999"/></g><g style="transform-origin:276.48px 143.36px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.17s;"><polygon points="276.48,126.98 281.34,138.5 292.86,143.36 281.34,148.22 276.48,159.74 271.62,148.22 260.1,143.36 271.62,138.5" fill="#ffd454" stroke="rgba(255,255,255,0.75)" stroke-width="1.3100319999999999"/></g><g style="transform-origin:491.52px 153.6px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.34s;"><polygon points="491.52,137.22 496.38,148.74 507.9,153.6 496.38,158.46 491.52,169.98 486.66,158.46 475.14,153.6 486.66,148.74" fill="#5ad8ff" stroke="rgba(255,255,255,0.75)" stroke-width="1.3100319999999999"/></g><g style="transform-origin:599.04px 225.28px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.51s;"><polygon points="599.04,208.9 603.9,220.42 615.42,225.28 603.9,230.14 599.04,241.66 594.18,230.14 582.66,225.28 594.18,220.42" fill="#fff1d0" stroke="rgba(255,255,255,0.75)" stroke-width="1.3100319999999999"/></g><g style="transform-origin:168.96px 798.72px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.68s;"><polygon points="168.96,782.34 173.82,793.86 185.34,798.72 173.82,803.58 168.96,815.1 164.1,803.58 152.58,798.72 164.1,793.86" fill="#ffd454" stroke="rgba(255,255,255,0.75)" stroke-width="1.3100319999999999"/></g><g style="transform-origin:599.04px 798.72px; animation:wink-twinkle 1.4s ease-in-out infinite; animation-delay:0.85s;"><polygon points="599.04,782.34 603.9,793.86 615.42,798.72 603.9,803.58 599.04,815.1 594.18,803.58 582.66,798.72 594.18,793.86" fill="#5ad8ff" stroke="rgba(255,255,255,0.75)" stroke-width="1.3100319999999999"/></g><g style="transform-origin:384px 502.78px; animation:cdcountdownbingoballletterschatwinkdigit0 3.9s linear infinite;">
     <g>
-      <ellipse cx="384" cy="583.60932" rx="57.315336" ry="12.609373920000001" fill="#000" opacity="0.16" />
-      <circle cx="384" cy="502.78" r="73.4812" fill="#ffd454" stroke="#102a52" stroke-width="5.878496" />
-      <circle cx="384" cy="502.78" r="64.663456" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.939248" />
-      <circle cx="384" cy="502.78" r="47.027968" fill="#ffffff" stroke="#102a52" stroke-width="3.6740600000000003" />
+      <ellipse cx="384" cy="583.60932" rx="57.315336" ry="12.609373920000001" fill="#000" opacity="0.16"/>
+      <circle cx="384" cy="502.78" r="73.4812" fill="#ffd454" stroke="#102a52" stroke-width="5.878496"/>
+      <circle cx="384" cy="502.78" r="64.663456" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.939248"/>
+      <circle cx="384" cy="502.78" r="47.027968" fill="#ffffff" stroke="#102a52" stroke-width="3.6740600000000003"/>
       <text x="384" y="504.249624" text-anchor="middle" dominant-baseline="central" font-size="69.072328" font-weight="900" fill="#ffd454" stroke="#102a52" stroke-width="4.408872" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">3</text>
-      <ellipse cx="357.546768" cy="467.50902399999995" rx="24.983608000000004" ry="12.491804000000002" fill="#fff" opacity="0.5" />
-      <path d="M 345.789776 495.43188 C 370.773384 485.14451199999996, 389.878496 491.02300799999995, 406.04436 505.719248" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="2.571842" />
+      <ellipse cx="357.546768" cy="467.50902399999995" rx="24.983608000000004" ry="12.491804000000002" fill="#fff" opacity="0.5"/>
+      <path d="M 345.789776 495.43188 C 370.773384 485.14451199999996, 389.878496 491.02300799999995, 406.04436 505.719248" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="2.571842"/>
     </g>
   </g><g style="transform-origin:384px 502.78px; animation:cdcountdownbingoballletterschatwinkdigit1 3.9s linear infinite;">
     <g>
-      <ellipse cx="384" cy="583.60932" rx="57.315336" ry="12.609373920000001" fill="#000" opacity="0.16" />
-      <circle cx="384" cy="502.78" r="73.4812" fill="#ffd454" stroke="#102a52" stroke-width="5.878496" />
-      <circle cx="384" cy="502.78" r="64.663456" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.939248" />
-      <circle cx="384" cy="502.78" r="47.027968" fill="#ffffff" stroke="#102a52" stroke-width="3.6740600000000003" />
+      <ellipse cx="384" cy="583.60932" rx="57.315336" ry="12.609373920000001" fill="#000" opacity="0.16"/>
+      <circle cx="384" cy="502.78" r="73.4812" fill="#ffd454" stroke="#102a52" stroke-width="5.878496"/>
+      <circle cx="384" cy="502.78" r="64.663456" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.939248"/>
+      <circle cx="384" cy="502.78" r="47.027968" fill="#ffffff" stroke="#102a52" stroke-width="3.6740600000000003"/>
       <text x="384" y="504.249624" text-anchor="middle" dominant-baseline="central" font-size="69.072328" font-weight="900" fill="#ffd454" stroke="#102a52" stroke-width="4.408872" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">2</text>
-      <ellipse cx="357.546768" cy="467.50902399999995" rx="24.983608000000004" ry="12.491804000000002" fill="#fff" opacity="0.5" />
-      <path d="M 345.789776 495.43188 C 370.773384 485.14451199999996, 389.878496 491.02300799999995, 406.04436 505.719248" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="2.571842" />
+      <ellipse cx="357.546768" cy="467.50902399999995" rx="24.983608000000004" ry="12.491804000000002" fill="#fff" opacity="0.5"/>
+      <path d="M 345.789776 495.43188 C 370.773384 485.14451199999996, 389.878496 491.02300799999995, 406.04436 505.719248" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="2.571842"/>
     </g>
   </g><g style="transform-origin:384px 502.78px; animation:cdcountdownbingoballletterschatwinkdigit2 3.9s linear infinite;">
     <g>
-      <ellipse cx="384" cy="583.60932" rx="57.315336" ry="12.609373920000001" fill="#000" opacity="0.16" />
-      <circle cx="384" cy="502.78" r="73.4812" fill="#ffd454" stroke="#102a52" stroke-width="5.878496" />
-      <circle cx="384" cy="502.78" r="64.663456" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.939248" />
-      <circle cx="384" cy="502.78" r="47.027968" fill="#ffffff" stroke="#102a52" stroke-width="3.6740600000000003" />
+      <ellipse cx="384" cy="583.60932" rx="57.315336" ry="12.609373920000001" fill="#000" opacity="0.16"/>
+      <circle cx="384" cy="502.78" r="73.4812" fill="#ffd454" stroke="#102a52" stroke-width="5.878496"/>
+      <circle cx="384" cy="502.78" r="64.663456" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.939248"/>
+      <circle cx="384" cy="502.78" r="47.027968" fill="#ffffff" stroke="#102a52" stroke-width="3.6740600000000003"/>
       <text x="384" y="504.249624" text-anchor="middle" dominant-baseline="central" font-size="69.072328" font-weight="900" fill="#ffd454" stroke="#102a52" stroke-width="4.408872" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">1</text>
-      <ellipse cx="357.546768" cy="467.50902399999995" rx="24.983608000000004" ry="12.491804000000002" fill="#fff" opacity="0.5" />
-      <path d="M 345.789776 495.43188 C 370.773384 485.14451199999996, 389.878496 491.02300799999995, 406.04436 505.719248" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="2.571842" />
+      <ellipse cx="357.546768" cy="467.50902399999995" rx="24.983608000000004" ry="12.491804000000002" fill="#fff" opacity="0.5"/>
+      <path d="M 345.789776 495.43188 C 370.773384 485.14451199999996, 389.878496 491.02300799999995, 406.04436 505.719248" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="2.571842"/>
     </g>
-  </g>
-    
-      
-          <g style="transform-origin:384px 516.91px; animation:cdcountdownbingoballletterschatwinkband 3.9s linear infinite;">
-            <ellipse cx="384" cy="558.35" rx="285.46" ry="21.94" fill="#000" opacity="0.12" />
-          </g>
-        
-      <g style="transform-origin:167.74px 516.91px; animation:cdcountdownbingoballletterschatwinkletter0 3.9s linear infinite;">
+  </g><g style="transform-origin:384px 516.91px; animation:cdcountdownbingoballletterschatwinkband 3.9s linear infinite;">
+            <ellipse cx="384" cy="558.35" rx="285.46" ry="21.94" fill="#000" opacity="0.12"/>
+          </g><g style="transform-origin:167.74px 516.91px; animation:cdcountdownbingoballletterschatwinkletter0 3.9s linear infinite;">
     <g>
-      <ellipse cx="167.74" cy="573.1376" rx="39.87048" ry="8.7715056" fill="#000" opacity="0.16" />
-      <circle cx="167.74" cy="516.91" r="51.116" fill="#0278df" stroke="#015cab" stroke-width="4.0892800000000005" />
-      <circle cx="167.74" cy="516.91" r="44.98208" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.0446400000000002" />
-      <circle cx="167.74" cy="516.91" r="32.714240000000004" fill="#ffffff" stroke="#015cab" stroke-width="2.5558" />
+      <ellipse cx="167.74" cy="573.1376" rx="39.87048" ry="8.7715056" fill="#000" opacity="0.16"/>
+      <circle cx="167.74" cy="516.91" r="51.116" fill="#0278df" stroke="#015cab" stroke-width="4.0892800000000005"/>
+      <circle cx="167.74" cy="516.91" r="44.98208" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.0446400000000002"/>
+      <circle cx="167.74" cy="516.91" r="32.714240000000004" fill="#ffffff" stroke="#015cab" stroke-width="2.5558"/>
       <text x="167.74" y="517.93232" text-anchor="middle" dominant-baseline="central" font-size="48.04904" font-weight="900" fill="#0278df" stroke="#015cab" stroke-width="3.06696" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">B</text>
-      <ellipse cx="149.33824" cy="492.37431999999995" rx="17.379440000000002" ry="8.689720000000001" fill="#fff" opacity="0.5" />
-      <path d="M 141.15968 511.79839999999996 C 158.53912 504.64216, 171.82928 508.73143999999996, 183.0748 518.9546399999999" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="1.78906" />
+      <ellipse cx="149.33824" cy="492.37431999999995" rx="17.379440000000002" ry="8.689720000000001" fill="#fff" opacity="0.5"/>
+      <path d="M 141.15968 511.79839999999996 C 158.53912 504.64216, 171.82928 508.73143999999996, 183.0748 518.9546399999999" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="1.78906"/>
     </g>
   </g><g style="transform-origin:275.87px 516.91px; animation:cdcountdownbingoballletterschatwinkletter1 3.9s linear infinite;">
     <g>
-      <ellipse cx="275.87" cy="573.1376" rx="39.87048" ry="8.7715056" fill="#000" opacity="0.16" />
-      <circle cx="275.87" cy="516.91" r="51.116" fill="#f70900" stroke="#c10700" stroke-width="4.0892800000000005" />
-      <circle cx="275.87" cy="516.91" r="44.98208" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.0446400000000002" />
-      <circle cx="275.87" cy="516.91" r="32.714240000000004" fill="#ffffff" stroke="#c10700" stroke-width="2.5558" />
+      <ellipse cx="275.87" cy="573.1376" rx="39.87048" ry="8.7715056" fill="#000" opacity="0.16"/>
+      <circle cx="275.87" cy="516.91" r="51.116" fill="#f70900" stroke="#c10700" stroke-width="4.0892800000000005"/>
+      <circle cx="275.87" cy="516.91" r="44.98208" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.0446400000000002"/>
+      <circle cx="275.87" cy="516.91" r="32.714240000000004" fill="#ffffff" stroke="#c10700" stroke-width="2.5558"/>
       <text x="275.87" y="517.93232" text-anchor="middle" dominant-baseline="central" font-size="48.04904" font-weight="900" fill="#f70900" stroke="#c10700" stroke-width="3.06696" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">I</text>
-      <ellipse cx="257.46824" cy="492.37431999999995" rx="17.379440000000002" ry="8.689720000000001" fill="#fff" opacity="0.5" />
-      <path d="M 249.28968 511.79839999999996 C 266.66912 504.64216, 279.95928 508.73143999999996, 291.2048 518.9546399999999" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="1.78906" />
+      <ellipse cx="257.46824" cy="492.37431999999995" rx="17.379440000000002" ry="8.689720000000001" fill="#fff" opacity="0.5"/>
+      <path d="M 249.28968 511.79839999999996 C 266.66912 504.64216, 279.95928 508.73143999999996, 291.2048 518.9546399999999" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="1.78906"/>
     </g>
   </g><g style="transform-origin:384px 516.91px; animation:cdcountdownbingoballletterschatwinkletter2 3.9s linear infinite;">
     <g>
-      <ellipse cx="384" cy="573.1376" rx="39.87048" ry="8.7715056" fill="#000" opacity="0.16" />
-      <circle cx="384" cy="516.91" r="51.116" fill="#9610b8" stroke="#740c8f" stroke-width="4.0892800000000005" />
-      <circle cx="384" cy="516.91" r="44.98208" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.0446400000000002" />
-      <circle cx="384" cy="516.91" r="32.714240000000004" fill="#ffffff" stroke="#740c8f" stroke-width="2.5558" />
+      <ellipse cx="384" cy="573.1376" rx="39.87048" ry="8.7715056" fill="#000" opacity="0.16"/>
+      <circle cx="384" cy="516.91" r="51.116" fill="#9610b8" stroke="#740c8f" stroke-width="4.0892800000000005"/>
+      <circle cx="384" cy="516.91" r="44.98208" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.0446400000000002"/>
+      <circle cx="384" cy="516.91" r="32.714240000000004" fill="#ffffff" stroke="#740c8f" stroke-width="2.5558"/>
       <text x="384" y="517.93232" text-anchor="middle" dominant-baseline="central" font-size="48.04904" font-weight="900" fill="#9610b8" stroke="#740c8f" stroke-width="3.06696" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">N</text>
-      <ellipse cx="365.59824" cy="492.37431999999995" rx="17.379440000000002" ry="8.689720000000001" fill="#fff" opacity="0.5" />
-      <path d="M 357.41967999999997 511.79839999999996 C 374.79912 504.64216, 388.08928 508.73143999999996, 399.3348 518.9546399999999" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="1.78906" />
+      <ellipse cx="365.59824" cy="492.37431999999995" rx="17.379440000000002" ry="8.689720000000001" fill="#fff" opacity="0.5"/>
+      <path d="M 357.41967999999997 511.79839999999996 C 374.79912 504.64216, 388.08928 508.73143999999996, 399.3348 518.9546399999999" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="1.78906"/>
     </g>
   </g><g style="transform-origin:492.13px 516.91px; animation:cdcountdownbingoballletterschatwinkletter3 3.9s linear infinite;">
     <g>
-      <ellipse cx="492.13" cy="573.1376" rx="39.87048" ry="8.7715056" fill="#000" opacity="0.16" />
-      <circle cx="492.13" cy="516.91" r="51.116" fill="#36af0a" stroke="#288407" stroke-width="4.0892800000000005" />
-      <circle cx="492.13" cy="516.91" r="44.98208" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.0446400000000002" />
-      <circle cx="492.13" cy="516.91" r="32.714240000000004" fill="#ffffff" stroke="#288407" stroke-width="2.5558" />
+      <ellipse cx="492.13" cy="573.1376" rx="39.87048" ry="8.7715056" fill="#000" opacity="0.16"/>
+      <circle cx="492.13" cy="516.91" r="51.116" fill="#36af0a" stroke="#288407" stroke-width="4.0892800000000005"/>
+      <circle cx="492.13" cy="516.91" r="44.98208" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.0446400000000002"/>
+      <circle cx="492.13" cy="516.91" r="32.714240000000004" fill="#ffffff" stroke="#288407" stroke-width="2.5558"/>
       <text x="492.13" y="517.93232" text-anchor="middle" dominant-baseline="central" font-size="48.04904" font-weight="900" fill="#36af0a" stroke="#288407" stroke-width="3.06696" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">G</text>
-      <ellipse cx="473.72823999999997" cy="492.37431999999995" rx="17.379440000000002" ry="8.689720000000001" fill="#fff" opacity="0.5" />
-      <path d="M 465.54967999999997 511.79839999999996 C 482.92912 504.64216, 496.21927999999997 508.73143999999996, 507.46479999999997 518.9546399999999" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="1.78906" />
+      <ellipse cx="473.72823999999997" cy="492.37431999999995" rx="17.379440000000002" ry="8.689720000000001" fill="#fff" opacity="0.5"/>
+      <path d="M 465.54967999999997 511.79839999999996 C 482.92912 504.64216, 496.21927999999997 508.73143999999996, 507.46479999999997 518.9546399999999" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="1.78906"/>
     </g>
   </g><g style="transform-origin:600.26px 516.91px; animation:cdcountdownbingoballletterschatwinkletter4 3.9s linear infinite;">
     <g>
-      <ellipse cx="600.26" cy="573.1376" rx="39.87048" ry="8.7715056" fill="#000" opacity="0.16" />
-      <circle cx="600.26" cy="516.91" r="51.116" fill="#f7c901" stroke="#c89d01" stroke-width="4.0892800000000005" />
-      <circle cx="600.26" cy="516.91" r="44.98208" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.0446400000000002" />
-      <circle cx="600.26" cy="516.91" r="32.714240000000004" fill="#ffffff" stroke="#c89d01" stroke-width="2.5558" />
+      <ellipse cx="600.26" cy="573.1376" rx="39.87048" ry="8.7715056" fill="#000" opacity="0.16"/>
+      <circle cx="600.26" cy="516.91" r="51.116" fill="#f7c901" stroke="#c89d01" stroke-width="4.0892800000000005"/>
+      <circle cx="600.26" cy="516.91" r="44.98208" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.0446400000000002"/>
+      <circle cx="600.26" cy="516.91" r="32.714240000000004" fill="#ffffff" stroke="#c89d01" stroke-width="2.5558"/>
       <text x="600.26" y="517.93232" text-anchor="middle" dominant-baseline="central" font-size="48.04904" font-weight="900" fill="#f7c901" stroke="#c89d01" stroke-width="3.06696" letter-spacing="0" font-family="'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif">O</text>
-      <ellipse cx="581.85824" cy="492.37431999999995" rx="17.379440000000002" ry="8.689720000000001" fill="#fff" opacity="0.5" />
-      <path d="M 573.67968 511.79839999999996 C 591.05912 504.64216, 604.34928 508.73143999999996, 615.5948 518.9546399999999" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="1.78906" />
+      <ellipse cx="581.85824" cy="492.37431999999995" rx="17.379440000000002" ry="8.689720000000001" fill="#fff" opacity="0.5"/>
+      <path d="M 573.67968 511.79839999999996 C 591.05912 504.64216, 604.34928 508.73143999999996, 615.5948 518.9546399999999" fill="none" stroke="rgba(255,255,255,0.22)" stroke-linecap="round" stroke-width="1.78906"/>
     </g>
-  </g>
-      
-          <g style="transform-origin:384px 502.78px; animation:cdcountdownbingoballletterschatwinkfinalburst 3.9s linear infinite;">
-            <circle cx="384" cy="502.78" r="101.62" fill="#ff9153" opacity="0.12" />
-            <rect x="360.38" y="396.34" width="14.98" height="29.96" rx="2.6964" fill="#ffd454" transform="rotate(0 367.87 411.32)" opacity="0.92" /><rect x="392.77" y="372.09999999999997" width="14.98" height="29.96" rx="2.6964" fill="#ff9153" transform="rotate(26 400.26 387.08)" opacity="0.92" /><rect x="438.23" y="361.25" width="14.98" height="29.96" rx="2.6964" fill="#5ad8ff" transform="rotate(52 445.72 376.23)" opacity="0.92" /><rect x="441.02" y="421" width="14.98" height="29.96" rx="2.6964" fill="#fff1d0" transform="rotate(78 448.51 435.98)" opacity="0.92" /><rect x="479.67" y="432.95" width="14.98" height="29.96" rx="2.6964" fill="#ffd454" transform="rotate(104 487.16 447.93)" opacity="0.92" /><rect x="515.17" y="463.34999999999997" width="14.98" height="29.96" rx="2.6964" fill="#ff9153" transform="rotate(130 522.66 478.33)" opacity="0.92" /><rect x="468.48" y="500.72" width="14.98" height="29.96" rx="2.6964" fill="#5ad8ff" transform="rotate(156 475.97 515.7)" opacity="0.92" /><rect x="481.52" y="539.02" width="14.98" height="29.96" rx="2.6964" fill="#fff1d0" transform="rotate(182 489.01 554)" opacity="0.92" /><rect x="477.78999999999996" y="585.61" width="14.98" height="29.96" rx="2.6964" fill="#ffd454" transform="rotate(208 485.28 600.59)" opacity="0.92" /><rect x="420.11" y="569.8" width="14.98" height="29.96" rx="2.6964" fill="#ff9153" transform="rotate(234 427.6 584.78)" opacity="0.92" /><rect x="396.8" y="602.86" width="14.98" height="29.96" rx="2.6964" fill="#5ad8ff" transform="rotate(260 404.29 617.84)" opacity="0.92" /><rect x="356.90999999999997" y="627.23" width="14.98" height="29.96" rx="2.6964" fill="#fff1d0" transform="rotate(286 364.4 642.21)" opacity="0.92" /><rect x="335.8" y="571.27" width="14.98" height="29.96" rx="2.6964" fill="#ffd454" transform="rotate(312 343.29 586.25)" opacity="0.92" /><rect x="295.34999999999997" y="571.84" width="14.98" height="29.96" rx="2.6964" fill="#ff9153" transform="rotate(338 302.84 586.82)" opacity="0.92" />
-            <g style="transform-origin:384px 356.7px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0s;"><polygon points="384,336.73 389.93,350.77 403.97,356.7 389.93,362.63 384,376.67 378.07,362.63 364.03,356.7 378.07,350.77" fill="#fff1d0" stroke="#ffd454" stroke-width="1.5976" /></g><g style="transform-origin:510.51px 429.74px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.08s;"><polygon points="510.51,413.36 515.37,424.88 526.89,429.74 515.37,434.6 510.51,446.12 505.65,434.6 494.13,429.74 505.65,424.88" fill="#fff1d0" stroke="#ffd454" stroke-width="1.3100319999999999" /></g><g style="transform-origin:510.51px 575.82px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.16s;"><polygon points="510.51,555.85 516.44,569.89 530.48,575.82 516.44,581.75 510.51,595.79 504.58,581.75 490.54,575.82 504.58,569.89" fill="#fff1d0" stroke="#ffd454" stroke-width="1.5976" /></g><g style="transform-origin:384px 648.86px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.24s;"><polygon points="384,632.48 388.86,644 400.38,648.86 388.86,653.72 384,665.24 379.14,653.72 367.62,648.86 379.14,644" fill="#fff1d0" stroke="#ffd454" stroke-width="1.3100319999999999" /></g><g style="transform-origin:257.49px 575.82px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.32s;"><polygon points="257.49,555.85 263.42,569.89 277.46,575.82 263.42,581.75 257.49,595.79 251.56,581.75 237.52,575.82 251.56,569.89" fill="#fff1d0" stroke="#ffd454" stroke-width="1.5976" /></g><g style="transform-origin:257.49px 429.74px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.4s;"><polygon points="257.49,413.36 262.35,424.88 273.87,429.74 262.35,434.6 257.49,446.12 252.63,434.6 241.11,429.74 252.63,424.88" fill="#fff1d0" stroke="#ffd454" stroke-width="1.3100319999999999" /></g>
-          </g>
-        
-      
-          <g style="transform-origin:384px 603.41px; animation:cdcountdownbingoballletterschatwinkfinalword 3.9s linear infinite;">
+  </g><g style="transform-origin:384px 502.78px; animation:cdcountdownbingoballletterschatwinkfinalburst 3.9s linear infinite;">
+            <circle cx="384" cy="502.78" r="101.62" fill="#ff9153" opacity="0.12"/>
+            <rect x="360.38" y="396.34" width="14.98" height="29.96" rx="2.6964" fill="#ffd454" transform="rotate(0 367.87 411.32)" opacity="0.92"/><rect x="392.77" y="372.09999999999997" width="14.98" height="29.96" rx="2.6964" fill="#ff9153" transform="rotate(26 400.26 387.08)" opacity="0.92"/><rect x="438.23" y="361.25" width="14.98" height="29.96" rx="2.6964" fill="#5ad8ff" transform="rotate(52 445.72 376.23)" opacity="0.92"/><rect x="441.02" y="421" width="14.98" height="29.96" rx="2.6964" fill="#fff1d0" transform="rotate(78 448.51 435.98)" opacity="0.92"/><rect x="479.67" y="432.95" width="14.98" height="29.96" rx="2.6964" fill="#ffd454" transform="rotate(104 487.16 447.93)" opacity="0.92"/><rect x="515.17" y="463.34999999999997" width="14.98" height="29.96" rx="2.6964" fill="#ff9153" transform="rotate(130 522.66 478.33)" opacity="0.92"/><rect x="468.48" y="500.72" width="14.98" height="29.96" rx="2.6964" fill="#5ad8ff" transform="rotate(156 475.97 515.7)" opacity="0.92"/><rect x="481.52" y="539.02" width="14.98" height="29.96" rx="2.6964" fill="#fff1d0" transform="rotate(182 489.01 554)" opacity="0.92"/><rect x="477.78999999999996" y="585.61" width="14.98" height="29.96" rx="2.6964" fill="#ffd454" transform="rotate(208 485.28 600.59)" opacity="0.92"/><rect x="420.11" y="569.8" width="14.98" height="29.96" rx="2.6964" fill="#ff9153" transform="rotate(234 427.6 584.78)" opacity="0.92"/><rect x="396.8" y="602.86" width="14.98" height="29.96" rx="2.6964" fill="#5ad8ff" transform="rotate(260 404.29 617.84)" opacity="0.92"/><rect x="356.90999999999997" y="627.23" width="14.98" height="29.96" rx="2.6964" fill="#fff1d0" transform="rotate(286 364.4 642.21)" opacity="0.92"/><rect x="335.8" y="571.27" width="14.98" height="29.96" rx="2.6964" fill="#ffd454" transform="rotate(312 343.29 586.25)" opacity="0.92"/><rect x="295.34999999999997" y="571.84" width="14.98" height="29.96" rx="2.6964" fill="#ff9153" transform="rotate(338 302.84 586.82)" opacity="0.92"/>
+            <g style="transform-origin:384px 356.7px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0s;"><polygon points="384,336.73 389.93,350.77 403.97,356.7 389.93,362.63 384,376.67 378.07,362.63 364.03,356.7 378.07,350.77" fill="#fff1d0" stroke="#ffd454" stroke-width="1.5976"/></g><g style="transform-origin:510.51px 429.74px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.08s;"><polygon points="510.51,413.36 515.37,424.88 526.89,429.74 515.37,434.6 510.51,446.12 505.65,434.6 494.13,429.74 505.65,424.88" fill="#fff1d0" stroke="#ffd454" stroke-width="1.3100319999999999"/></g><g style="transform-origin:510.51px 575.82px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.16s;"><polygon points="510.51,555.85 516.44,569.89 530.48,575.82 516.44,581.75 510.51,595.79 504.58,581.75 490.54,575.82 504.58,569.89" fill="#fff1d0" stroke="#ffd454" stroke-width="1.5976"/></g><g style="transform-origin:384px 648.86px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.24s;"><polygon points="384,632.48 388.86,644 400.38,648.86 388.86,653.72 384,665.24 379.14,653.72 367.62,648.86 379.14,644" fill="#fff1d0" stroke="#ffd454" stroke-width="1.3100319999999999"/></g><g style="transform-origin:257.49px 575.82px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.32s;"><polygon points="257.49,555.85 263.42,569.89 277.46,575.82 263.42,581.75 257.49,595.79 251.56,581.75 237.52,575.82 251.56,569.89" fill="#fff1d0" stroke="#ffd454" stroke-width="1.5976"/></g><g style="transform-origin:257.49px 429.74px; animation:wink-twinkle 1.2s ease-in-out infinite; animation-delay:0.4s;"><polygon points="257.49,413.36 262.35,424.88 273.87,429.74 262.35,434.6 257.49,446.12 252.63,434.6 241.11,429.74 252.63,424.88" fill="#fff1d0" stroke="#ffd454" stroke-width="1.3100319999999999"/></g>
+          </g><g style="transform-origin:384px 603.41px; animation:cdcountdownbingoballletterschatwinkfinalword 3.9s linear infinite;">
             
     <g>
-      <rect x="54.204999999999984" y="538.53" width="659.59" height="129.76" rx="64.88" fill="#fff1d0" stroke="#102a52" stroke-width="9.0832" />
-      <text x="384" y="607.3027999999999" text-anchor="middle" dominant-baseline="central" font-size="54.499199999999995" font-weight="900" fill="#102a52" stroke="#102a52" stroke-width="2.1799679999999997" letter-spacing="1.6349759999999998" >BINGO</text>
+      <rect x="54.204999999999984" y="538.53" width="659.59" height="129.76" rx="64.88" fill="#fff1d0" stroke="#102a52" stroke-width="9.0832"/>
+      <text x="384" y="607.3027999999999" text-anchor="middle" dominant-baseline="central" font-size="54.499199999999995" font-weight="900" fill="#102a52" stroke="#102a52" stroke-width="2.1799679999999997" letter-spacing="1.6349759999999998">BINGO</text>
     </g>
   
-          </g>
-        
-    
-  
-</svg>
+          </g></g></svg>

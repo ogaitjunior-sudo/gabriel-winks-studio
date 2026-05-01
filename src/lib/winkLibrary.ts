@@ -1,8 +1,9 @@
 import type { WinkManifestItem, WinksManifest } from "@/lib/winkManifest";
-import { resolveWinkAssetPath } from "@/lib/winkManifest";
+import { normalizePublicAssetPath, resolveWinkAssetPath } from "@/lib/winkManifest";
 
 export const WINK_LIBRARY_ALL_FILTER = "All";
 export const WINK_LIBRARY_CHAT_FILTER = "Chat Winks";
+export const WINK_LIBRARY_SOUND_FILTER = "Test Sound";
 export const WINK_LIBRARY_EFFECT_FILTER = "Effect Winks";
 export const WINK_LIBRARY_OVERVIEW_FILTER = "Bingo Wink Effects Library";
 
@@ -112,8 +113,8 @@ const CATEGORY_BASE_TAGS: Record<string, WinkLibraryTag[]> = {
 
 export interface WinkLibraryItem extends WinkManifestItem {
   apngPath: string | null;
-  featured: boolean;
-  featuredScore: number;
+  browseFeatured: boolean;
+  browseFeaturedScore: number;
   kindLabel: string;
   searchText: string;
   subgroup: string;
@@ -130,6 +131,22 @@ export interface WinkLibraryGroup {
   category: string;
   items: WinkLibraryItem[];
   subgroups: WinkLibrarySubgroup[];
+}
+
+export function getWinkLibraryLottiePath(
+  item: Pick<WinkManifestItem, "lottiePath" | "lottieQuality" | "lottieSupported">
+) {
+  if (!item.lottiePath || item.lottieQuality === "low" || item.lottieSupported === false) {
+    return undefined;
+  }
+
+  return normalizePublicAssetPath(item.lottiePath);
+}
+
+export function hasWinkLibrarySound(
+  item: Pick<WinkManifestItem, "soundCues" | "soundPath">
+) {
+  return Boolean(item.soundPath || item.soundCues?.length);
 }
 
 export function getWinkLibraryCategoryLabel(category?: string | null) {
@@ -167,12 +184,12 @@ function compareSubgroup(left: string, right: string) {
 }
 
 function compareLibraryItems(left: WinkLibraryItem, right: WinkLibraryItem) {
-  if (left.featured !== right.featured) {
-    return left.featured ? -1 : 1;
+  if (left.browseFeatured !== right.browseFeatured) {
+    return left.browseFeatured ? -1 : 1;
   }
 
-  if (left.featuredScore !== right.featuredScore) {
-    return right.featuredScore - left.featuredScore;
+  if (left.browseFeaturedScore !== right.browseFeaturedScore) {
+    return right.browseFeaturedScore - left.browseFeaturedScore;
   }
 
   if (left.kind !== right.kind) {
@@ -465,10 +482,18 @@ export function flattenWinkLibraryItems(manifest?: WinksManifest) {
         apngPath: item.apng
           ? resolveWinkAssetPath(item.kind, "apng", item.id, item.apng.path)
           : null,
-        featured: featuredScore >= 7,
-        featuredScore,
+        browseFeatured: featuredScore >= 7,
+        browseFeaturedScore: featuredScore,
         kindLabel: item.kind === "effect" ? "Effect Wink" : "Chat Wink",
+        lottiePath: getWinkLibraryLottiePath(item),
         searchText: buildSearchText(normalizedItem, tags, subgroup),
+        soundCues: item.soundCues?.map((cue) => ({
+          ...cue,
+          sound: normalizePublicAssetPath(cue.sound),
+        })),
+        soundPath: item.soundPath
+          ? normalizePublicAssetPath(item.soundPath)
+          : undefined,
         subgroup,
         svgPath: item.svg ? resolveWinkAssetPath(item.kind, "svg", item.id, item.svg.path) : null,
         tags,
@@ -538,6 +563,7 @@ export function filterWinkLibraryItems(
   const showFullLibrary =
     filter === WINK_LIBRARY_OVERVIEW_FILTER || filter === WINK_LIBRARY_ALL_FILTER;
   const showChatOnly = filter === WINK_LIBRARY_CHAT_FILTER;
+  const showSoundOnly = filter === WINK_LIBRARY_SOUND_FILTER;
   const showEffectOnly = filter === WINK_LIBRARY_EFFECT_FILTER;
 
   return items.filter((item) => {
@@ -545,6 +571,8 @@ export function filterWinkLibraryItems(
       showFullLibrary ||
       (showChatOnly
         ? item.kind === "chat"
+        : showSoundOnly
+          ? hasWinkLibrarySound(item)
         : showEffectOnly
           ? item.kind === "effect"
           : item.category === filter);
@@ -593,7 +621,7 @@ export function groupWinkLibraryItems(items: WinkLibraryItem[]) {
 export function pickFeaturedWinkLibraryItems(items: WinkLibraryItem[], limit = 8) {
   const buckets = new Map<string, WinkLibraryItem[]>();
 
-  for (const item of [...items].filter((entry) => entry.featured).sort(compareLibraryItems)) {
+  for (const item of [...items].filter((entry) => entry.browseFeatured).sort(compareLibraryItems)) {
     const category = item.category ?? "Uncategorized";
     const entries = buckets.get(category) ?? [];
     entries.push(item);
@@ -628,4 +656,16 @@ export function pickFeaturedWinkLibraryItems(items: WinkLibraryItem[], limit = 8
   }
 
   return picks;
+}
+
+export function getFeaturedLottieWinkLibraryItems(items: WinkLibraryItem[]) {
+  return [...items]
+    .filter(
+      (item) =>
+        item.kind === "effect" &&
+        item.lottiePath &&
+        item.lottieQuality === "high" &&
+        item.featured === true
+    )
+    .sort(compareLibraryItems);
 }

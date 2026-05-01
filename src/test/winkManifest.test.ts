@@ -40,6 +40,7 @@ const manifest: WinksManifest = {
           height: 1080,
           id: "fw-burst",
           kind: "effect",
+          lottieSupported: false,
           name: "Fireworks Burst",
           safeArea: "centered",
           safeAreaGuidance: "Keep the burst centered.",
@@ -89,6 +90,7 @@ const manifest: WinksManifest = {
 describe("wink manifest helpers", () => {
   it("finds an exported asset by kind and id", () => {
     expect(findWinkItem(manifest, "effect", "fw-burst")?.name).toBe("Fireworks Burst");
+    expect(findWinkItem(manifest, "effect", "fw-burst")?.lottieSupported).toBe(false);
     expect(findWinkItem(manifest, "chat", "missing")).toBeUndefined();
   });
 

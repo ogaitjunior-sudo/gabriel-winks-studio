@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T14:22:27.661Z",
+  "generatedAt": "2026-04-28T03:22:19.775Z",
   "groups": {
     "effect": {
       "edgeGuidance": null,
@@ -22,14 +22,16 @@
           "height": 1080,
           "id": "bb-bouncein",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/bb-bouncein.json",
+          "lottieQuality": "high",
           "name": "Bingo Balls Bounce In",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 23720,
+            "bytes": 24483,
             "fileName": "bb-bouncein.svg",
             "path": "/winks/effect/svg/bb-bouncein.svg",
-            "sizeLabel": "23.2 KB"
+            "sizeLabel": "23.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -52,14 +54,15 @@
           "height": 1080,
           "id": "bb-celebr",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Celebration",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 20776,
+            "bytes": 21539,
             "fileName": "bb-celebr.svg",
             "path": "/winks/effect/svg/bb-celebr.svg",
-            "sizeLabel": "20.3 KB"
+            "sizeLabel": "21.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -82,14 +85,16 @@
           "height": 1080,
           "id": "bb-classic",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/bb-classic.json",
+          "lottieQuality": "medium",
           "name": "Bouncing Bingo Balls Classic",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 18301,
+            "bytes": 19063,
             "fileName": "bb-classic.svg",
             "path": "/winks/effect/svg/bb-classic.svg",
-            "sizeLabel": "17.9 KB"
+            "sizeLabel": "18.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -112,14 +117,31 @@
           "height": 1080,
           "id": "bb-collision",
           "kind": "effect",
+          "lottiePath": "/lottie/bingo/bingo-balls-letter-collision.json",
+          "lottieQuality": "medium",
           "name": "Bingo Balls Collision Burst",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "soundCues": [
+            {
+              "sound": "/sounds/whoosh.mp3",
+              "time": 0
+            },
+            {
+              "sound": "/sounds/bounce.mp3",
+              "time": 0.95
+            },
+            {
+              "sound": "/sounds/cheer.mp3",
+              "time": 2.1
+            }
+          ],
+          "soundPath": "/sounds/bingo-pop.mp3",
           "svg": {
-            "bytes": 27232,
+            "bytes": 28008,
             "fileName": "bb-collision.svg",
             "path": "/winks/effect/svg/bb-collision.svg",
-            "sizeLabel": "26.6 KB"
+            "sizeLabel": "27.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -142,14 +164,15 @@
           "height": 1080,
           "id": "bb-confetti",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Confetti",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 27689,
+            "bytes": 28466,
             "fileName": "bb-confetti.svg",
             "path": "/winks/effect/svg/bb-confetti.svg",
-            "sizeLabel": "27.0 KB"
+            "sizeLabel": "27.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -169,17 +192,20 @@
           "category": "Bouncing Bingo Balls",
           "durationMs": 3000,
           "edgeGuidance": null,
+          "featured": true,
           "height": 1080,
           "id": "bb-crown",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/bb-crown.json",
+          "lottieQuality": "high",
           "name": "Bingo Balls Crown Arc",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 22068,
+            "bytes": 17551,
             "fileName": "bb-crown.svg",
             "path": "/winks/effect/svg/bb-crown.svg",
-            "sizeLabel": "21.6 KB"
+            "sizeLabel": "17.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -202,14 +228,16 @@
           "height": 1080,
           "id": "bb-drumroll",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/bb-drumroll.json",
+          "lottieQuality": "medium",
           "name": "Bingo Balls Drumroll",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 26801,
+            "bytes": 27577,
             "fileName": "bb-drumroll.svg",
             "path": "/winks/effect/svg/bb-drumroll.svg",
-            "sizeLabel": "26.2 KB"
+            "sizeLabel": "26.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -232,14 +260,15 @@
           "height": 1080,
           "id": "bb-explodeform",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Explosion to Formation",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 39152,
+            "bytes": 39929,
             "fileName": "bb-explodeform.svg",
             "path": "/winks/effect/svg/bb-explodeform.svg",
-            "sizeLabel": "38.2 KB"
+            "sizeLabel": "39.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -262,14 +291,15 @@
           "height": 1080,
           "id": "bb-grand",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Grand Celebration",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 46900,
+            "bytes": 47677,
             "fileName": "bb-grand.svg",
             "path": "/winks/effect/svg/bb-grand.svg",
-            "sizeLabel": "45.8 KB"
+            "sizeLabel": "46.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -292,14 +322,15 @@
           "height": 1080,
           "id": "bb-impact",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Orbit Impact",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 31682,
+            "bytes": 32459,
             "fileName": "bb-impact.svg",
             "path": "/winks/effect/svg/bb-impact.svg",
-            "sizeLabel": "30.9 KB"
+            "sizeLabel": "31.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -322,14 +353,15 @@
           "height": 1080,
           "id": "bb-jackpot",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Jackpot",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 18480,
+            "bytes": 19257,
             "fileName": "bb-jackpot.svg",
             "path": "/winks/effect/svg/bb-jackpot.svg",
-            "sizeLabel": "18.0 KB"
+            "sizeLabel": "18.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -352,14 +384,16 @@
           "height": 1080,
           "id": "bb-orbit",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/bb-orbit.json",
+          "lottieQuality": "medium",
           "name": "Bingo Balls Orbit",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15326,
+            "bytes": 16103,
             "fileName": "bb-orbit.svg",
             "path": "/winks/effect/svg/bb-orbit.svg",
-            "sizeLabel": "15.0 KB"
+            "sizeLabel": "15.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -382,14 +416,15 @@
           "height": 1080,
           "id": "bb-parade",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Parade",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 23200,
+            "bytes": 23964,
             "fileName": "bb-parade.svg",
             "path": "/winks/effect/svg/bb-parade.svg",
-            "sizeLabel": "22.7 KB"
+            "sizeLabel": "23.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -412,14 +447,15 @@
           "height": 1080,
           "id": "bb-pinball",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Pinball Chaos",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 22461,
+            "bytes": 23238,
             "fileName": "bb-pinball.svg",
             "path": "/winks/effect/svg/bb-pinball.svg",
-            "sizeLabel": "21.9 KB"
+            "sizeLabel": "22.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -442,14 +478,16 @@
           "height": 1080,
           "id": "bb-popchain",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/bb-popchain.json",
+          "lottieQuality": "medium",
           "name": "Bingo Balls Pop Chain",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 22867,
+            "bytes": 23629,
             "fileName": "bb-popchain.svg",
             "path": "/winks/effect/svg/bb-popchain.svg",
-            "sizeLabel": "22.3 KB"
+            "sizeLabel": "23.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -472,14 +510,16 @@
           "height": 1080,
           "id": "bb-popup",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/bb-popup.json",
+          "lottieQuality": "medium",
           "name": "Bingo Balls Pop Up",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 19527,
+            "bytes": 20290,
             "fileName": "bb-popup.svg",
             "path": "/winks/effect/svg/bb-popup.svg",
-            "sizeLabel": "19.1 KB"
+            "sizeLabel": "19.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -502,14 +542,15 @@
           "height": 1080,
           "id": "bb-rain",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Rain",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 25770,
+            "bytes": 26547,
             "fileName": "bb-rain.svg",
             "path": "/winks/effect/svg/bb-rain.svg",
-            "sizeLabel": "25.2 KB"
+            "sizeLabel": "25.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -532,14 +573,15 @@
           "height": 1080,
           "id": "bb-ring",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Scatter Ring",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 46919,
+            "bytes": 47696,
             "fileName": "bb-ring.svg",
             "path": "/winks/effect/svg/bb-ring.svg",
-            "sizeLabel": "45.8 KB"
+            "sizeLabel": "46.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -562,14 +604,15 @@
           "height": 1080,
           "id": "bb-rocket",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Rocket Drop",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 32300,
+            "bytes": 33078,
             "fileName": "bb-rocket.svg",
             "path": "/winks/effect/svg/bb-rocket.svg",
-            "sizeLabel": "31.5 KB"
+            "sizeLabel": "32.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -592,14 +635,15 @@
           "height": 1080,
           "id": "bb-roulette",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Roulette",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 20333,
+            "bytes": 21111,
             "fileName": "bb-roulette.svg",
             "path": "/winks/effect/svg/bb-roulette.svg",
-            "sizeLabel": "19.9 KB"
+            "sizeLabel": "20.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -622,14 +666,16 @@
           "height": 1080,
           "id": "bb-scatter",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/bb-scatter.json",
+          "lottieQuality": "medium",
           "name": "Bingo Balls Scatter",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 18676,
+            "bytes": 19453,
             "fileName": "bb-scatter.svg",
             "path": "/winks/effect/svg/bb-scatter.svg",
-            "sizeLabel": "18.2 KB"
+            "sizeLabel": "19.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -652,14 +698,16 @@
           "height": 1080,
           "id": "bb-slot",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/bb-slot.json",
+          "lottieQuality": "medium",
           "name": "Bingo Balls Slot",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 24793,
+            "bytes": 25556,
             "fileName": "bb-slot.svg",
             "path": "/winks/effect/svg/bb-slot.svg",
-            "sizeLabel": "24.2 KB"
+            "sizeLabel": "25.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -682,14 +730,16 @@
           "height": 1080,
           "id": "bb-spin",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/bb-spin.json",
+          "lottieQuality": "medium",
           "name": "Bingo Balls Spin",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 17581,
+            "bytes": 18344,
             "fileName": "bb-spin.svg",
             "path": "/winks/effect/svg/bb-spin.svg",
-            "sizeLabel": "17.2 KB"
+            "sizeLabel": "17.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -712,14 +762,15 @@
           "height": 1080,
           "id": "bb-spiral",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Spiral Collapse",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 31446,
+            "bytes": 32224,
             "fileName": "bb-spiral.svg",
             "path": "/winks/effect/svg/bb-spiral.svg",
-            "sizeLabel": "30.7 KB"
+            "sizeLabel": "31.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -742,14 +793,15 @@
           "height": 1080,
           "id": "bb-spot",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Spotlight",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 18539,
+            "bytes": 19315,
             "fileName": "bb-spot.svg",
             "path": "/winks/effect/svg/bb-spot.svg",
-            "sizeLabel": "18.1 KB"
+            "sizeLabel": "18.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -772,14 +824,15 @@
           "height": 1080,
           "id": "bb-storm",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Bounce Storm",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 28160,
+            "bytes": 28921,
             "fileName": "bb-storm.svg",
             "path": "/winks/effect/svg/bb-storm.svg",
-            "sizeLabel": "27.5 KB"
+            "sizeLabel": "28.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -802,14 +855,15 @@
           "height": 1080,
           "id": "bb-tilt",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Tilt",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 18966,
+            "bytes": 19729,
             "fileName": "bb-tilt.svg",
             "path": "/winks/effect/svg/bb-tilt.svg",
-            "sizeLabel": "18.5 KB"
+            "sizeLabel": "19.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -832,14 +886,15 @@
           "height": 1080,
           "id": "bb-wave",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Bingo Balls Wave",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15713,
+            "bytes": 16475,
             "fileName": "bb-wave.svg",
             "path": "/winks/effect/svg/bb-wave.svg",
-            "sizeLabel": "15.3 KB"
+            "sizeLabel": "16.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -862,14 +917,15 @@
           "height": 1080,
           "id": "bouncing-bingo-collision",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Collision Explosion Bingo",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 39663,
+            "bytes": 40439,
             "fileName": "bouncing-bingo-collision.svg",
             "path": "/winks/effect/svg/bouncing-bingo-collision.svg",
-            "sizeLabel": "38.7 KB"
+            "sizeLabel": "39.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -892,14 +948,16 @@
           "height": 1080,
           "id": "bouncing-bingo-countdown",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/bouncing-bingo-countdown.json",
+          "lottieQuality": "medium",
           "name": "Countdown Bounce Bingo",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 29932,
+            "bytes": 30697,
             "fileName": "bouncing-bingo-countdown.svg",
             "path": "/winks/effect/svg/bouncing-bingo-countdown.svg",
-            "sizeLabel": "29.2 KB"
+            "sizeLabel": "30.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -922,14 +980,31 @@
           "height": 1080,
           "id": "bouncing-bingo-jackpot",
           "kind": "effect",
+          "lottiePath": "/lottie/bingo/bingo-balls-jackpot-spin.json",
+          "lottieQuality": "medium",
           "name": "Jackpot Bingo Balls",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "soundCues": [
+            {
+              "sound": "/sounds/whoosh.mp3",
+              "time": 0
+            },
+            {
+              "sound": "/sounds/click.mp3",
+              "time": 1.1
+            },
+            {
+              "sound": "/sounds/cheer.mp3",
+              "time": 2.2
+            }
+          ],
+          "soundPath": "/sounds/jackpot-spin.mp3",
           "svg": {
-            "bytes": 35517,
+            "bytes": 36294,
             "fileName": "bouncing-bingo-jackpot.svg",
             "path": "/winks/effect/svg/bouncing-bingo-jackpot.svg",
-            "sizeLabel": "34.7 KB"
+            "sizeLabel": "35.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -952,14 +1027,15 @@
           "height": 1080,
           "id": "bouncing-bingo-spiral",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Spiral Bingo Balls",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 34677,
+            "bytes": 35454,
             "fileName": "bouncing-bingo-spiral.svg",
             "path": "/winks/effect/svg/bouncing-bingo-spiral.svg",
-            "sizeLabel": "33.9 KB"
+            "sizeLabel": "34.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -982,14 +1058,16 @@
           "height": 1080,
           "id": "bouncing-bingo-wave",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/bouncing-bingo-wave.json",
+          "lottieQuality": "medium",
           "name": "Wave Bounce Bingo",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 27686,
+            "bytes": 28463,
             "fileName": "bouncing-bingo-wave.svg",
             "path": "/winks/effect/svg/bouncing-bingo-wave.svg",
-            "sizeLabel": "27.0 KB"
+            "sizeLabel": "27.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1012,14 +1090,15 @@
           "height": 1080,
           "id": "cf-bloom",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Color Bloom",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 32045,
+            "bytes": 32822,
             "fileName": "cf-bloom.svg",
             "path": "/winks/effect/svg/cf-bloom.svg",
-            "sizeLabel": "31.3 KB"
+            "sizeLabel": "32.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1042,14 +1121,31 @@
           "height": 1080,
           "id": "cf-cannon",
           "kind": "effect",
+          "lottiePath": "/lottie/confetti/confetti-cannon-party.json",
+          "lottieQuality": "medium",
           "name": "Confetti Cannon Left Right",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "soundCues": [
+            {
+              "sound": "/sounds/pop.mp3",
+              "time": 0
+            },
+            {
+              "sound": "/sounds/cheer.mp3",
+              "time": 0.55
+            },
+            {
+              "sound": "/sounds/sparkle.mp3",
+              "time": 1.45
+            }
+          ],
+          "soundPath": "/sounds/confetti-burst.mp3",
           "svg": {
-            "bytes": 30611,
+            "bytes": 31389,
             "fileName": "cf-cannon.svg",
             "path": "/winks/effect/svg/cf-cannon.svg",
-            "sizeLabel": "29.9 KB"
+            "sizeLabel": "30.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1072,14 +1168,15 @@
           "height": 1080,
           "id": "cf-carnival",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Carnival Blast",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 41661,
+            "bytes": 42438,
             "fileName": "cf-carnival.svg",
             "path": "/winks/effect/svg/cf-carnival.svg",
-            "sizeLabel": "40.7 KB"
+            "sizeLabel": "41.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1102,14 +1199,15 @@
           "height": 1080,
           "id": "cf-double",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Double Cannon Blast",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 39055,
+            "bytes": 39832,
             "fileName": "cf-double.svg",
             "path": "/winks/effect/svg/cf-double.svg",
-            "sizeLabel": "38.1 KB"
+            "sizeLabel": "38.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1132,14 +1230,15 @@
           "height": 1080,
           "id": "cf-explosion",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Explosion Burst",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 25889,
+            "bytes": 26665,
             "fileName": "cf-explosion.svg",
             "path": "/winks/effect/svg/cf-explosion.svg",
-            "sizeLabel": "25.3 KB"
+            "sizeLabel": "26.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1162,14 +1261,15 @@
           "height": 1080,
           "id": "cf-finale",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Grand Finale",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 39945,
+            "bytes": 40722,
             "fileName": "cf-finale.svg",
             "path": "/winks/effect/svg/cf-finale.svg",
-            "sizeLabel": "39.0 KB"
+            "sizeLabel": "39.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1192,14 +1292,15 @@
           "height": 1080,
           "id": "cf-firechain",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Firecracker Chain",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 36872,
+            "bytes": 37645,
             "fileName": "cf-firechain.svg",
             "path": "/winks/effect/svg/cf-firechain.svg",
-            "sizeLabel": "36.0 KB"
+            "sizeLabel": "36.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1222,14 +1323,15 @@
           "height": 1080,
           "id": "cf-firework",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Firework Burst",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30281,
+            "bytes": 31055,
             "fileName": "cf-firework.svg",
             "path": "/winks/effect/svg/cf-firework.svg",
-            "sizeLabel": "29.6 KB"
+            "sizeLabel": "30.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1252,14 +1354,15 @@
           "height": 1080,
           "id": "cf-galaxy",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Galaxy Swirl",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 33148,
+            "bytes": 33925,
             "fileName": "cf-galaxy.svg",
             "path": "/winks/effect/svg/cf-galaxy.svg",
-            "sizeLabel": "32.4 KB"
+            "sizeLabel": "33.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1282,14 +1385,15 @@
           "height": 1080,
           "id": "cf-heart",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Heart Burst",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 26937,
+            "bytes": 27714,
             "fileName": "cf-heart.svg",
             "path": "/winks/effect/svg/cf-heart.svg",
-            "sizeLabel": "26.3 KB"
+            "sizeLabel": "27.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1312,14 +1416,15 @@
           "height": 1080,
           "id": "cf-heartfest",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Heart Festival",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 32483,
+            "bytes": 33261,
             "fileName": "cf-heartfest.svg",
             "path": "/winks/effect/svg/cf-heartfest.svg",
-            "sizeLabel": "31.7 KB"
+            "sizeLabel": "32.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1342,14 +1447,15 @@
           "height": 1080,
           "id": "cf-mega",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Mega Explosion",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 38236,
+            "bytes": 39014,
             "fileName": "cf-mega.svg",
             "path": "/winks/effect/svg/cf-mega.svg",
-            "sizeLabel": "37.3 KB"
+            "sizeLabel": "38.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1372,14 +1478,15 @@
           "height": 1080,
           "id": "cf-pop",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Pop Party",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 31233,
+            "bytes": 32010,
             "fileName": "cf-pop.svg",
             "path": "/winks/effect/svg/cf-pop.svg",
-            "sizeLabel": "30.5 KB"
+            "sizeLabel": "31.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1402,14 +1509,15 @@
           "height": 1080,
           "id": "cf-rain",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Rain Celebration",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 38079,
+            "bytes": 38857,
             "fileName": "cf-rain.svg",
             "path": "/winks/effect/svg/cf-rain.svg",
-            "sizeLabel": "37.2 KB"
+            "sizeLabel": "37.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1432,14 +1540,15 @@
           "height": 1080,
           "id": "cf-rainx",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Rain Explosion",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 33916,
+            "bytes": 34694,
             "fileName": "cf-rainx.svg",
             "path": "/winks/effect/svg/cf-rainx.svg",
-            "sizeLabel": "33.1 KB"
+            "sizeLabel": "33.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1462,14 +1571,15 @@
           "height": 1080,
           "id": "cf-ribbon",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Ribbon Storm",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 26699,
+            "bytes": 27476,
             "fileName": "cf-ribbon.svg",
             "path": "/winks/effect/svg/cf-ribbon.svg",
-            "sizeLabel": "26.1 KB"
+            "sizeLabel": "26.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1492,14 +1602,15 @@
           "height": 1080,
           "id": "cf-shockring",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Shockwave Ring",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 25185,
+            "bytes": 25960,
             "fileName": "cf-shockring.svg",
             "path": "/winks/effect/svg/cf-shockring.svg",
-            "sizeLabel": "24.6 KB"
+            "sizeLabel": "25.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1522,14 +1633,15 @@
           "height": 1080,
           "id": "cf-spiral",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Spiral Blast",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 20510,
+            "bytes": 21289,
             "fileName": "cf-spiral.svg",
             "path": "/winks/effect/svg/cf-spiral.svg",
-            "sizeLabel": "20.0 KB"
+            "sizeLabel": "20.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1552,14 +1664,15 @@
           "height": 1080,
           "id": "cf-spiralfw",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Spiral Firework",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 21967,
+            "bytes": 22743,
             "fileName": "cf-spiralfw.svg",
             "path": "/winks/effect/svg/cf-spiralfw.svg",
-            "sizeLabel": "21.5 KB"
+            "sizeLabel": "22.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1582,14 +1695,15 @@
           "height": 1080,
           "id": "cf-star",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Star Mix",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 28815,
+            "bytes": 29592,
             "fileName": "cf-star.svg",
             "path": "/winks/effect/svg/cf-star.svg",
-            "sizeLabel": "28.1 KB"
+            "sizeLabel": "28.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1612,14 +1726,15 @@
           "height": 1080,
           "id": "cf-starcel",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Star Celebration",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 25865,
+            "bytes": 26642,
             "fileName": "cf-starcel.svg",
             "path": "/winks/effect/svg/cf-starcel.svg",
-            "sizeLabel": "25.3 KB"
+            "sizeLabel": "26.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1642,14 +1757,15 @@
           "height": 1080,
           "id": "cf-storm",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Grand Finale Storm",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 47498,
+            "bytes": 48274,
             "fileName": "cf-storm.svg",
             "path": "/winks/effect/svg/cf-storm.svg",
-            "sizeLabel": "46.4 KB"
+            "sizeLabel": "47.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1672,14 +1788,15 @@
           "height": 1080,
           "id": "cf-triple",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Triple Pop Celebration",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 32498,
+            "bytes": 33275,
             "fileName": "cf-triple.svg",
             "path": "/winks/effect/svg/cf-triple.svg",
-            "sizeLabel": "31.7 KB"
+            "sizeLabel": "32.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1702,14 +1819,15 @@
           "height": 1080,
           "id": "cf-tunnel",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Celebration Tunnel",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 31446,
+            "bytes": 32223,
             "fileName": "cf-tunnel.svg",
             "path": "/winks/effect/svg/cf-tunnel.svg",
-            "sizeLabel": "30.7 KB"
+            "sizeLabel": "31.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1732,14 +1850,15 @@
           "height": 1080,
           "id": "cf-ultimatep",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Ultimate Party Finale",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 62240,
+            "bytes": 63017,
             "fileName": "cf-ultimatep.svg",
             "path": "/winks/effect/svg/cf-ultimatep.svg",
-            "sizeLabel": "60.8 KB"
+            "sizeLabel": "61.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1762,14 +1881,15 @@
           "height": 1080,
           "id": "cf-victory",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Victory Shower",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 32558,
+            "bytes": 33335,
             "fileName": "cf-victory.svg",
             "path": "/winks/effect/svg/cf-victory.svg",
-            "sizeLabel": "31.8 KB"
+            "sizeLabel": "32.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1792,14 +1912,15 @@
           "height": 1080,
           "id": "cf-victoryb",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Victory Blast",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 34955,
+            "bytes": 35732,
             "fileName": "cf-victoryb.svg",
             "path": "/winks/effect/svg/cf-victoryb.svg",
-            "sizeLabel": "34.1 KB"
+            "sizeLabel": "34.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1822,14 +1943,15 @@
           "height": 1080,
           "id": "cf-volcano",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Volcano Burst",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 26495,
+            "bytes": 27272,
             "fileName": "cf-volcano.svg",
             "path": "/winks/effect/svg/cf-volcano.svg",
-            "sizeLabel": "25.9 KB"
+            "sizeLabel": "26.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1852,14 +1974,15 @@
           "height": 1080,
           "id": "cf-wave",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Wave Sweep",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 24493,
+            "bytes": 25270,
             "fileName": "cf-wave.svg",
             "path": "/winks/effect/svg/cf-wave.svg",
-            "sizeLabel": "23.9 KB"
+            "sizeLabel": "24.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1882,14 +2005,15 @@
           "height": 1080,
           "id": "cf-waveblast",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Confetti Wave Blast",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 29866,
+            "bytes": 30644,
             "fileName": "cf-waveblast.svg",
             "path": "/winks/effect/svg/cf-waveblast.svg",
-            "sizeLabel": "29.2 KB"
+            "sizeLabel": "29.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1912,14 +2036,35 @@
           "height": 1080,
           "id": "countdown-bingo-ball-letters-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/countdown/countdown-3-2-1-bingo.json",
+          "lottieQuality": "medium",
           "name": "Countdown Bingo Ball Letters",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "soundCues": [
+            {
+              "sound": "/sounds/pop.mp3",
+              "time": 0
+            },
+            {
+              "sound": "/sounds/pop.mp3",
+              "time": 0.62
+            },
+            {
+              "sound": "/sounds/pop.mp3",
+              "time": 1.24
+            },
+            {
+              "sound": "/sounds/cheer.mp3",
+              "time": 2.05
+            }
+          ],
+          "soundPath": "/sounds/countdown-pop.mp3",
           "svg": {
-            "bytes": 42954,
+            "bytes": 43684,
             "fileName": "countdown-bingo-ball-letters-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-bingo-ball-letters-effect-wink.svg",
-            "sizeLabel": "41.9 KB"
+            "sizeLabel": "42.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1942,14 +2087,15 @@
           "height": 1080,
           "id": "countdown-bingo-confetti-reveal-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Countdown Bingo Confetti Reveal",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 38855,
+            "bytes": 39609,
             "fileName": "countdown-bingo-confetti-reveal-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-bingo-confetti-reveal-effect-wink.svg",
-            "sizeLabel": "37.9 KB"
+            "sizeLabel": "38.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1972,14 +2118,15 @@
           "height": 1080,
           "id": "countdown-bingo-firework-reveal-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Countdown Bingo Firework Reveal",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 47200,
+            "bytes": 47889,
             "fileName": "countdown-bingo-firework-reveal-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-bingo-firework-reveal-effect-wink.svg",
-            "sizeLabel": "46.1 KB"
+            "sizeLabel": "46.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1999,17 +2146,20 @@
           "category": "Countdown",
           "durationMs": 3800,
           "edgeGuidance": null,
+          "featured": true,
           "height": 1080,
           "id": "countdown-bingo-letter-pop-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/countdown-bingo-letter-pop-effect-wink.json",
+          "lottieQuality": "high",
           "name": "Countdown Bingo Letter Pop",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 38785,
+            "bytes": 39569,
             "fileName": "countdown-bingo-letter-pop-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-bingo-letter-pop-effect-wink.svg",
-            "sizeLabel": "37.9 KB"
+            "sizeLabel": "38.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2032,14 +2182,15 @@
           "height": 1080,
           "id": "countdown-bingo-mega-reveal-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Countdown Bingo Mega Reveal",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 43735,
+            "bytes": 44419,
             "fileName": "countdown-bingo-mega-reveal-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-bingo-mega-reveal-effect-wink.svg",
-            "sizeLabel": "42.7 KB"
+            "sizeLabel": "43.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2062,14 +2213,16 @@
           "height": 1080,
           "id": "countdown-simple-confetti-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/countdown-simple-confetti-effect-wink.json",
+          "lottieQuality": "medium",
           "name": "Countdown Simple Confetti",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 29541,
+            "bytes": 30313,
             "fileName": "countdown-simple-confetti-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-simple-confetti-effect-wink.svg",
-            "sizeLabel": "28.8 KB"
+            "sizeLabel": "29.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2092,14 +2245,15 @@
           "height": 1080,
           "id": "countdown-simple-firework-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Countdown Simple Firework",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 32598,
+            "bytes": 33346,
             "fileName": "countdown-simple-firework-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-simple-firework-effect-wink.svg",
-            "sizeLabel": "31.8 KB"
+            "sizeLabel": "32.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2122,14 +2276,16 @@
           "height": 1080,
           "id": "countdown-simple-gold-burst-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/countdown-simple-gold-burst-effect-wink.json",
+          "lottieQuality": "high",
           "name": "Countdown Simple Gold Burst",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 27787,
+            "bytes": 28569,
             "fileName": "countdown-simple-gold-burst-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-simple-gold-burst-effect-wink.svg",
-            "sizeLabel": "27.1 KB"
+            "sizeLabel": "27.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2152,14 +2308,35 @@
           "height": 1080,
           "id": "countdown-simple-party-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/countdown/countdown-simple-3-2-1.json",
+          "lottieQuality": "medium",
           "name": "Countdown Simple Party",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "soundCues": [
+            {
+              "sound": "/sounds/click.mp3",
+              "time": 0
+            },
+            {
+              "sound": "/sounds/click.mp3",
+              "time": 0.58
+            },
+            {
+              "sound": "/sounds/click.mp3",
+              "time": 1.16
+            },
+            {
+              "sound": "/sounds/cheer.mp3",
+              "time": 1.9
+            }
+          ],
+          "soundPath": "/sounds/countdown-beep.mp3",
           "svg": {
-            "bytes": 29760,
+            "bytes": 30529,
             "fileName": "countdown-simple-party-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-simple-party-effect-wink.svg",
-            "sizeLabel": "29.1 KB"
+            "sizeLabel": "29.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2182,14 +2359,16 @@
           "height": 1080,
           "id": "countdown-simple-pop-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/countdown-simple-pop-effect-wink.json",
+          "lottieQuality": "high",
           "name": "Countdown Simple Pop",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 29504,
+            "bytes": 30273,
             "fileName": "countdown-simple-pop-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-simple-pop-effect-wink.svg",
-            "sizeLabel": "28.8 KB"
+            "sizeLabel": "29.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2212,14 +2391,15 @@
           "height": 1080,
           "id": "fireworks-bingo-text-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Bingo Text Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 50367,
+            "bytes": 51019,
             "fileName": "fireworks-bingo-text-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-bingo-text-effect-wink.svg",
-            "sizeLabel": "49.2 KB"
+            "sizeLabel": "49.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2242,14 +2422,15 @@
           "height": 1080,
           "id": "fireworks-cake-shape-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Cake Shape Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 45947,
+            "bytes": 46609,
             "fileName": "fireworks-cake-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-cake-shape-effect-wink.svg",
-            "sizeLabel": "44.9 KB"
+            "sizeLabel": "45.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2272,14 +2453,15 @@
           "height": 1080,
           "id": "fireworks-clover-shape-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Clover Shape Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 35930,
+            "bytes": 36641,
             "fileName": "fireworks-clover-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-clover-shape-effect-wink.svg",
-            "sizeLabel": "35.1 KB"
+            "sizeLabel": "35.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2302,14 +2484,15 @@
           "height": 1080,
           "id": "fireworks-crown-shape-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Crown Shape Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 40195,
+            "bytes": 40891,
             "fileName": "fireworks-crown-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-crown-shape-effect-wink.svg",
-            "sizeLabel": "39.3 KB"
+            "sizeLabel": "39.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2332,14 +2515,31 @@
           "height": 1080,
           "id": "fireworks-final-bingo-countdown-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/fireworks/fireworks-bingo-burst.json",
+          "lottieQuality": "medium",
           "name": "Fireworks Final Bingo Countdown Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "soundCues": [
+            {
+              "sound": "/sounds/whoosh.mp3",
+              "time": 0
+            },
+            {
+              "sound": "/sounds/boom.mp3",
+              "time": 1.1
+            },
+            {
+              "sound": "/sounds/sparkle.mp3",
+              "time": 2.05
+            }
+          ],
+          "soundPath": "/sounds/fireworks-boom.mp3",
           "svg": {
-            "bytes": 81737,
+            "bytes": 82219,
             "fileName": "fireworks-final-bingo-countdown-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-final-bingo-countdown-effect-wink.svg",
-            "sizeLabel": "79.8 KB"
+            "sizeLabel": "80.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2362,14 +2562,15 @@
           "height": 1080,
           "id": "fireworks-flower-shape-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Flower Shape Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 52258,
+            "bytes": 52897,
             "fileName": "fireworks-flower-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-flower-shape-effect-wink.svg",
-            "sizeLabel": "51.0 KB"
+            "sizeLabel": "51.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2392,14 +2593,15 @@
           "height": 1080,
           "id": "fireworks-gift-shape-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Gift Shape Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 46637,
+            "bytes": 47297,
             "fileName": "fireworks-gift-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-gift-shape-effect-wink.svg",
-            "sizeLabel": "45.5 KB"
+            "sizeLabel": "46.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2422,14 +2624,15 @@
           "height": 1080,
           "id": "fireworks-gold-burst-frame-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Gold Burst Frame Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 94939,
+            "bytes": 95395,
             "fileName": "fireworks-gold-burst-frame-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-gold-burst-frame-effect-wink.svg",
-            "sizeLabel": "92.7 KB"
+            "sizeLabel": "93.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2452,14 +2655,15 @@
           "height": 1080,
           "id": "fireworks-heart-shape-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Heart Shape Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 43646,
+            "bytes": 44330,
             "fileName": "fireworks-heart-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-heart-shape-effect-wink.svg",
-            "sizeLabel": "42.6 KB"
+            "sizeLabel": "43.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2482,14 +2686,15 @@
           "height": 1080,
           "id": "fireworks-jackpot-text-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Jackpot Text Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 46622,
+            "bytes": 47288,
             "fileName": "fireworks-jackpot-text-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-jackpot-text-effect-wink.svg",
-            "sizeLabel": "45.5 KB"
+            "sizeLabel": "46.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2512,14 +2717,15 @@
           "height": 1080,
           "id": "fireworks-mega-finale-symbols-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Mega Finale Symbols Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 82606,
+            "bytes": 83067,
             "fileName": "fireworks-mega-finale-symbols-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-mega-finale-symbols-effect-wink.svg",
-            "sizeLabel": "80.7 KB"
+            "sizeLabel": "81.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2542,14 +2748,16 @@
           "height": 1080,
           "id": "fireworks-number-1-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/fireworks-number-1-effect-wink.json",
+          "lottieQuality": "medium",
           "name": "Fireworks Number One Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 33335,
+            "bytes": 34066,
             "fileName": "fireworks-number-1-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-number-1-effect-wink.svg",
-            "sizeLabel": "32.6 KB"
+            "sizeLabel": "33.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2572,14 +2780,16 @@
           "height": 1080,
           "id": "fireworks-number-2-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/fireworks-number-2-effect-wink.json",
+          "lottieQuality": "medium",
           "name": "Fireworks Number Two Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 35380,
+            "bytes": 36100,
             "fileName": "fireworks-number-2-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-number-2-effect-wink.svg",
-            "sizeLabel": "34.6 KB"
+            "sizeLabel": "35.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2602,14 +2812,15 @@
           "height": 1080,
           "id": "fireworks-number-3-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Number Three Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 35384,
+            "bytes": 36104,
             "fileName": "fireworks-number-3-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-number-3-effect-wink.svg",
-            "sizeLabel": "34.6 KB"
+            "sizeLabel": "35.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2632,14 +2843,15 @@
           "height": 1080,
           "id": "fireworks-rainbow-arc-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Rainbow Arc Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 52119,
+            "bytes": 52763,
             "fileName": "fireworks-rainbow-arc-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-rainbow-arc-effect-wink.svg",
-            "sizeLabel": "50.9 KB"
+            "sizeLabel": "51.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2662,14 +2874,15 @@
           "height": 1080,
           "id": "fireworks-smiley-shape-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Smiley Shape Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 45006,
+            "bytes": 45680,
             "fileName": "fireworks-smiley-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-smiley-shape-effect-wink.svg",
-            "sizeLabel": "44.0 KB"
+            "sizeLabel": "44.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2692,14 +2905,15 @@
           "height": 1080,
           "id": "fireworks-star-shape-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Star Shape Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 45944,
+            "bytes": 46615,
             "fileName": "fireworks-star-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-star-shape-effect-wink.svg",
-            "sizeLabel": "44.9 KB"
+            "sizeLabel": "45.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2722,14 +2936,15 @@
           "height": 1080,
           "id": "fireworks-thumbs-up-shape-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Thumbs Up Shape Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 42764,
+            "bytes": 43453,
             "fileName": "fireworks-thumbs-up-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-thumbs-up-shape-effect-wink.svg",
-            "sizeLabel": "41.8 KB"
+            "sizeLabel": "42.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2752,14 +2967,15 @@
           "height": 1080,
           "id": "fireworks-trophy-shape-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Trophy Shape Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 48767,
+            "bytes": 49427,
             "fileName": "fireworks-trophy-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-trophy-shape-effect-wink.svg",
-            "sizeLabel": "47.6 KB"
+            "sizeLabel": "48.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2782,14 +2998,15 @@
           "height": 1080,
           "id": "fireworks-win-text-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Win Text Showcase",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 42934,
+            "bytes": 43623,
             "fileName": "fireworks-win-text-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-win-text-effect-wink.svg",
-            "sizeLabel": "41.9 KB"
+            "sizeLabel": "42.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2812,14 +3029,62 @@
           "height": 1080,
           "id": "flowers-bloom-pop",
           "kind": "effect",
-          "name": "Flowers Bloom Pop",
+          "lottiePath": "/lottie/flowers/flowers-bloom-pop.json",
+          "lottieQuality": "medium",
+          "name": "Flowers Velvet Bloom",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "soundCues": [
+            {
+              "sound": "/sounds/pop.mp3",
+              "time": 0
+            },
+            {
+              "sound": "/sounds/flutter.mp3",
+              "time": 0.95
+            },
+            {
+              "sound": "/sounds/chime.mp3",
+              "time": 1.8
+            }
+          ],
+          "soundPath": "/sounds/soft-bloom.mp3",
+          "svg": {
+            "bytes": 30404,
+            "fileName": "flowers-bloom-pop.svg",
+            "path": "/winks/effect/svg/flowers-bloom-pop.svg",
+            "sizeLabel": "29.7 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4188765,
+            "fileName": "flowers-blossom-halo.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/flowers-blossom-halo.apng",
+            "sizeLabel": "3.99 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Flowers",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "flowers-blossom-halo",
+          "kind": "effect",
+          "lottieSupported": false,
+          "name": "Flowers Blossom Halo",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 29623,
-            "fileName": "flowers-bloom-pop.svg",
-            "path": "/winks/effect/svg/flowers-bloom-pop.svg",
-            "sizeLabel": "28.9 KB"
+            "bytes": 32147,
+            "fileName": "flowers-blossom-halo.svg",
+            "path": "/winks/effect/svg/flowers-blossom-halo.svg",
+            "sizeLabel": "31.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2842,14 +3107,140 @@
           "height": 1080,
           "id": "flowers-bouquet-burst",
           "kind": "effect",
-          "name": "Flowers Bouquet Burst",
+          "lottiePath": "/lottie/effect-winks/flowers-bouquet-burst.json",
+          "lottieQuality": "low",
+          "name": "Flowers Bouquet Gala",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 32167,
+            "bytes": 32908,
             "fileName": "flowers-bouquet-burst.svg",
             "path": "/winks/effect/svg/flowers-bouquet-burst.svg",
-            "sizeLabel": "31.4 KB"
+            "sizeLabel": "32.1 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4648960,
+            "fileName": "flowers-garden-ribbon.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/flowers-garden-ribbon.apng",
+            "sizeLabel": "4.43 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Flowers",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "flowers-garden-ribbon",
+          "kind": "effect",
+          "lottieSupported": false,
+          "name": "Flowers Garden Ribbon Gala",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 33506,
+            "fileName": "flowers-garden-ribbon.svg",
+            "path": "/winks/effect/svg/flowers-garden-ribbon.svg",
+            "sizeLabel": "32.7 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3698361,
+            "fileName": "flowers-orchid-glow.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/flowers-orchid-glow.apng",
+            "sizeLabel": "3.53 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Flowers",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "flowers-orchid-glow",
+          "kind": "effect",
+          "lottieSupported": false,
+          "name": "Flowers Orchid Glow Premiere",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 30157,
+            "fileName": "flowers-orchid-glow.svg",
+            "path": "/winks/effect/svg/flowers-orchid-glow.svg",
+            "sizeLabel": "29.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3964653,
+            "fileName": "flowers-peony-crown.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/flowers-peony-crown.apng",
+            "sizeLabel": "3.78 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Flowers",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "flowers-peony-crown",
+          "kind": "effect",
+          "lottieSupported": false,
+          "name": "Flowers Peony Crown",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 33335,
+            "fileName": "flowers-peony-crown.svg",
+            "path": "/winks/effect/svg/flowers-peony-crown.svg",
+            "sizeLabel": "32.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3246775,
+            "fileName": "flowers-petal-fanfare.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/flowers-petal-fanfare.apng",
+            "sizeLabel": "3.10 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Flowers",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "flowers-petal-fanfare",
+          "kind": "effect",
+          "lottieSupported": false,
+          "name": "Flowers Petal Fanfare",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 31696,
+            "fileName": "flowers-petal-fanfare.svg",
+            "path": "/winks/effect/svg/flowers-petal-fanfare.svg",
+            "sizeLabel": "31.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2872,14 +3263,16 @@
           "height": 1080,
           "id": "flowers-petal-rain",
           "kind": "effect",
-          "name": "Flowers Petal Rain",
+          "lottiePath": "/lottie/effect-winks/flowers-petal-rain.json",
+          "lottieQuality": "medium",
+          "name": "Flowers Petal Rain Reverie",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 26938,
+            "bytes": 27724,
             "fileName": "flowers-petal-rain.svg",
             "path": "/winks/effect/svg/flowers-petal-rain.svg",
-            "sizeLabel": "26.3 KB"
+            "sizeLabel": "27.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2902,14 +3295,16 @@
           "height": 1080,
           "id": "flowers-rose-spin",
           "kind": "effect",
-          "name": "Flowers Rose Spin",
+          "lottiePath": "/lottie/effect-winks/flowers-rose-spin.json",
+          "lottieQuality": "low",
+          "name": "Flowers Rose Luxe Spin",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 28824,
+            "bytes": 29615,
             "fileName": "flowers-rose-spin.svg",
             "path": "/winks/effect/svg/flowers-rose-spin.svg",
-            "sizeLabel": "28.1 KB"
+            "sizeLabel": "28.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2932,14 +3327,16 @@
           "height": 1080,
           "id": "flowers-spring-wave",
           "kind": "effect",
-          "name": "Flowers Spring Wave",
+          "lottiePath": "/lottie/effect-winks/flowers-spring-wave.json",
+          "lottieQuality": "low",
+          "name": "Flowers Spring Garden Overture",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 31565,
+            "bytes": 32334,
             "fileName": "flowers-spring-wave.svg",
             "path": "/winks/effect/svg/flowers-spring-wave.svg",
-            "sizeLabel": "30.8 KB"
+            "sizeLabel": "31.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2962,14 +3359,15 @@
           "height": 1080,
           "id": "fw-burst",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Burst",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 11389,
+            "bytes": 12166,
             "fileName": "fw-burst.svg",
             "path": "/winks/effect/svg/fw-burst.svg",
-            "sizeLabel": "11.1 KB"
+            "sizeLabel": "11.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2992,14 +3390,15 @@
           "height": 1080,
           "id": "fw-cascade",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Cascade",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 22806,
+            "bytes": 23583,
             "fileName": "fw-cascade.svg",
             "path": "/winks/effect/svg/fw-cascade.svg",
-            "sizeLabel": "22.3 KB"
+            "sizeLabel": "23.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3022,14 +3421,15 @@
           "height": 1080,
           "id": "fw-cascadef",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Cascade Finale",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 26427,
+            "bytes": 27204,
             "fileName": "fw-cascadef.svg",
             "path": "/winks/effect/svg/fw-cascadef.svg",
-            "sizeLabel": "25.8 KB"
+            "sizeLabel": "26.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3052,14 +3452,15 @@
           "height": 1080,
           "id": "fw-center",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Center Blast",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 14191,
+            "bytes": 14954,
             "fileName": "fw-center.svg",
             "path": "/winks/effect/svg/fw-center.svg",
-            "sizeLabel": "13.9 KB"
+            "sizeLabel": "14.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3082,14 +3483,15 @@
           "height": 1080,
           "id": "fw-chrys",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Chrysanthemum",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 11851,
+            "bytes": 12628,
             "fileName": "fw-chrys.svg",
             "path": "/winks/effect/svg/fw-chrys.svg",
-            "sizeLabel": "11.6 KB"
+            "sizeLabel": "12.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3112,14 +3514,15 @@
           "height": 1080,
           "id": "fw-comets",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Comets",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30924,
+            "bytes": 31701,
             "fileName": "fw-comets.svg",
             "path": "/winks/effect/svg/fw-comets.svg",
-            "sizeLabel": "30.2 KB"
+            "sizeLabel": "31.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3142,14 +3545,15 @@
           "height": 1080,
           "id": "fw-crownf",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Golden Crown Finale",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 18638,
+            "bytes": 19413,
             "fileName": "fw-crownf.svg",
             "path": "/winks/effect/svg/fw-crownf.svg",
-            "sizeLabel": "18.2 KB"
+            "sizeLabel": "19.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3172,14 +3576,15 @@
           "height": 1080,
           "id": "fw-diamond",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Diamond",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 11650,
+            "bytes": 12399,
             "fileName": "fw-diamond.svg",
             "path": "/winks/effect/svg/fw-diamond.svg",
-            "sizeLabel": "11.4 KB"
+            "sizeLabel": "12.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3202,14 +3607,15 @@
           "height": 1080,
           "id": "fw-double",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Double Bloom",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 14741,
+            "bytes": 15519,
             "fileName": "fw-double.svg",
             "path": "/winks/effect/svg/fw-double.svg",
-            "sizeLabel": "14.4 KB"
+            "sizeLabel": "15.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3232,14 +3638,15 @@
           "height": 1080,
           "id": "fw-dring",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Double Ring",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 18393,
+            "bytes": 19169,
             "fileName": "fw-dring.svg",
             "path": "/winks/effect/svg/fw-dring.svg",
-            "sizeLabel": "18.0 KB"
+            "sizeLabel": "18.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3262,14 +3669,15 @@
           "height": 1080,
           "id": "fw-epic",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Epic Grand Finale",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 17368,
+            "bytes": 18132,
             "fileName": "fw-epic.svg",
             "path": "/winks/effect/svg/fw-epic.svg",
-            "sizeLabel": "17.0 KB"
+            "sizeLabel": "17.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3292,14 +3700,15 @@
           "height": 1080,
           "id": "fw-fansweep",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Fan Sweep",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 27402,
+            "bytes": 28179,
             "fileName": "fw-fansweep.svg",
             "path": "/winks/effect/svg/fw-fansweep.svg",
-            "sizeLabel": "26.8 KB"
+            "sizeLabel": "27.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3322,14 +3731,15 @@
           "height": 1080,
           "id": "fw-finale",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Grand Finale",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15273,
+            "bytes": 16050,
             "fileName": "fw-finale.svg",
             "path": "/winks/effect/svg/fw-finale.svg",
-            "sizeLabel": "14.9 KB"
+            "sizeLabel": "15.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3352,14 +3762,15 @@
           "height": 1080,
           "id": "fw-halo",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Halo Pulse",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 12454,
+            "bytes": 13203,
             "fileName": "fw-halo.svg",
             "path": "/winks/effect/svg/fw-halo.svg",
-            "sizeLabel": "12.2 KB"
+            "sizeLabel": "12.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3382,14 +3793,15 @@
           "height": 1080,
           "id": "fw-heart",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Heart",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 21021,
+            "bytes": 21784,
             "fileName": "fw-heart.svg",
             "path": "/winks/effect/svg/fw-heart.svg",
-            "sizeLabel": "20.5 KB"
+            "sizeLabel": "21.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3412,14 +3824,15 @@
           "height": 1080,
           "id": "fw-meteor",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Meteor Impact",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 17741,
+            "bytes": 18518,
             "fileName": "fw-meteor.svg",
             "path": "/winks/effect/svg/fw-meteor.svg",
-            "sizeLabel": "17.3 KB"
+            "sizeLabel": "18.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3442,14 +3855,15 @@
           "height": 1080,
           "id": "fw-palm",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Palm Tree",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 14961,
+            "bytes": 15730,
             "fileName": "fw-palm.svg",
             "path": "/winks/effect/svg/fw-palm.svg",
-            "sizeLabel": "14.6 KB"
+            "sizeLabel": "15.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3472,14 +3886,15 @@
           "height": 1080,
           "id": "fw-prism",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Prism Burst",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 24115,
+            "bytes": 24892,
             "fileName": "fw-prism.svg",
             "path": "/winks/effect/svg/fw-prism.svg",
-            "sizeLabel": "23.5 KB"
+            "sizeLabel": "24.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3502,14 +3917,15 @@
           "height": 1080,
           "id": "fw-ring",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Ring",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 10168,
+            "bytes": 10931,
             "fileName": "fw-ring.svg",
             "path": "/winks/effect/svg/fw-ring.svg",
-            "sizeLabel": "9.9 KB"
+            "sizeLabel": "10.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3532,14 +3948,15 @@
           "height": 1080,
           "id": "fw-risingc",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Rising Comet Finale",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 16697,
+            "bytes": 17475,
             "fileName": "fw-risingc.svg",
             "path": "/winks/effect/svg/fw-risingc.svg",
-            "sizeLabel": "16.3 KB"
+            "sizeLabel": "17.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3562,14 +3979,15 @@
           "height": 1080,
           "id": "fw-shock",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Ring Shockwave",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15854,
+            "bytes": 16618,
             "fileName": "fw-shock.svg",
             "path": "/winks/effect/svg/fw-shock.svg",
-            "sizeLabel": "15.5 KB"
+            "sizeLabel": "16.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3592,14 +4010,15 @@
           "height": 1080,
           "id": "fw-sky",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Sky Show",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 12899,
+            "bytes": 13661,
             "fileName": "fw-sky.svg",
             "path": "/winks/effect/svg/fw-sky.svg",
-            "sizeLabel": "12.6 KB"
+            "sizeLabel": "13.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3622,14 +4041,15 @@
           "height": 1080,
           "id": "fw-sparkle",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Sparkle Rain",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 13930,
+            "bytes": 14693,
             "fileName": "fw-sparkle.svg",
             "path": "/winks/effect/svg/fw-sparkle.svg",
-            "sizeLabel": "13.6 KB"
+            "sizeLabel": "14.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3652,14 +4072,15 @@
           "height": 1080,
           "id": "fw-spiralc",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Spiral Charge Explosion",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 18643,
+            "bytes": 19391,
             "fileName": "fw-spiralc.svg",
             "path": "/winks/effect/svg/fw-spiralc.svg",
-            "sizeLabel": "18.2 KB"
+            "sizeLabel": "18.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3682,14 +4103,15 @@
           "height": 1080,
           "id": "fw-starover",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Starburst Overload",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 17832,
+            "bytes": 18609,
             "fileName": "fw-starover.svg",
             "path": "/winks/effect/svg/fw-starover.svg",
-            "sizeLabel": "17.4 KB"
+            "sizeLabel": "18.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3712,14 +4134,15 @@
           "height": 1080,
           "id": "fw-triple",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Triple Build-Up Blast",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 19062,
+            "bytes": 19840,
             "fileName": "fw-triple.svg",
             "path": "/winks/effect/svg/fw-triple.svg",
-            "sizeLabel": "18.6 KB"
+            "sizeLabel": "19.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3742,14 +4165,15 @@
           "height": 1080,
           "id": "fw-ultimate",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Ultimate Celebration Blast",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 23710,
+            "bytes": 24473,
             "fileName": "fw-ultimate.svg",
             "path": "/winks/effect/svg/fw-ultimate.svg",
-            "sizeLabel": "23.2 KB"
+            "sizeLabel": "23.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3772,14 +4196,15 @@
           "height": 1080,
           "id": "fw-willow",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Fireworks Willow",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 25984,
+            "bytes": 26761,
             "fileName": "fw-willow.svg",
             "path": "/winks/effect/svg/fw-willow.svg",
-            "sizeLabel": "25.4 KB"
+            "sizeLabel": "26.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3802,14 +4227,15 @@
           "height": 1080,
           "id": "gs-aurora",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Aurora",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 25845,
+            "bytes": 26621,
             "fileName": "gs-aurora.svg",
             "path": "/winks/effect/svg/gs-aurora.svg",
-            "sizeLabel": "25.2 KB"
+            "sizeLabel": "26.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3832,14 +4258,16 @@
           "height": 1080,
           "id": "gs-big",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/gs-big.json",
+          "lottieQuality": "high",
           "name": "Gold Stars Big Star",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 11404,
+            "bytes": 12166,
             "fileName": "gs-big.svg",
             "path": "/winks/effect/svg/gs-big.svg",
-            "sizeLabel": "11.1 KB"
+            "sizeLabel": "11.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3862,14 +4290,15 @@
           "height": 1080,
           "id": "gs-bloom",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Explosion Bloom",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 12536,
+            "bytes": 13299,
             "fileName": "gs-bloom.svg",
             "path": "/winks/effect/svg/gs-bloom.svg",
-            "sizeLabel": "12.2 KB"
+            "sizeLabel": "13.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3892,14 +4321,31 @@
           "height": 1080,
           "id": "gs-burst",
           "kind": "effect",
+          "lottiePath": "/lottie/gold-stars/gold-stars-burst.json",
+          "lottieQuality": "medium",
           "name": "Gold Stars Burst",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "soundCues": [
+            {
+              "sound": "/sounds/chime.mp3",
+              "time": 0
+            },
+            {
+              "sound": "/sounds/sparkle.mp3",
+              "time": 0.8
+            },
+            {
+              "sound": "/sounds/chime.mp3",
+              "time": 1.7
+            }
+          ],
+          "soundPath": "/sounds/sparkle-chime.mp3",
           "svg": {
-            "bytes": 12469,
+            "bytes": 13245,
             "fileName": "gs-burst.svg",
             "path": "/winks/effect/svg/gs-burst.svg",
-            "sizeLabel": "12.2 KB"
+            "sizeLabel": "12.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3919,17 +4365,20 @@
           "category": "Gold Stars",
           "durationMs": 3500,
           "edgeGuidance": null,
+          "featured": true,
           "height": 1080,
           "id": "gs-cascade",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/gs-cascade.json",
+          "lottieQuality": "high",
           "name": "Gold Stars Celebration Cascade",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 23085,
+            "bytes": 17000,
             "fileName": "gs-cascade.svg",
             "path": "/winks/effect/svg/gs-cascade.svg",
-            "sizeLabel": "22.5 KB"
+            "sizeLabel": "16.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3952,14 +4401,16 @@
           "height": 1080,
           "id": "gs-cometarc",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/gs-cometarc.json",
+          "lottieQuality": "medium",
           "name": "Gold Stars Comet Arc",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 11572,
+            "bytes": 12349,
             "fileName": "gs-cometarc.svg",
             "path": "/winks/effect/svg/gs-cometarc.svg",
-            "sizeLabel": "11.3 KB"
+            "sizeLabel": "12.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3982,14 +4433,16 @@
           "height": 1080,
           "id": "gs-const",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/gs-const.json",
+          "lottieQuality": "medium",
           "name": "Gold Stars Constellation",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 10580,
+            "bytes": 11343,
             "fileName": "gs-const.svg",
             "path": "/winks/effect/svg/gs-const.svg",
-            "sizeLabel": "10.3 KB"
+            "sizeLabel": "11.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4012,14 +4465,16 @@
           "height": 1080,
           "id": "gs-crossspark",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/gs-crossspark.json",
+          "lottieQuality": "medium",
           "name": "Gold Stars Magic Cross Spark",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15652,
+            "bytes": 16428,
             "fileName": "gs-crossspark.svg",
             "path": "/winks/effect/svg/gs-crossspark.svg",
-            "sizeLabel": "15.3 KB"
+            "sizeLabel": "16.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4042,14 +4497,16 @@
           "height": 1080,
           "id": "gs-crown",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/gs-crown.json",
+          "lottieQuality": "medium",
           "name": "Gold Stars Crown",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 9720,
+            "bytes": 10497,
             "fileName": "gs-crown.svg",
             "path": "/winks/effect/svg/gs-crown.svg",
-            "sizeLabel": "9.5 KB"
+            "sizeLabel": "10.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4072,14 +4529,15 @@
           "height": 1080,
           "id": "gs-dust",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Floating Dust",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 16413,
+            "bytes": 17190,
             "fileName": "gs-dust.svg",
             "path": "/winks/effect/svg/gs-dust.svg",
-            "sizeLabel": "16.0 KB"
+            "sizeLabel": "16.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4102,14 +4560,15 @@
           "height": 1080,
           "id": "gs-eternal",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Eternal Glow",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15554,
+            "bytes": 16330,
             "fileName": "gs-eternal.svg",
             "path": "/winks/effect/svg/gs-eternal.svg",
-            "sizeLabel": "15.2 KB"
+            "sizeLabel": "15.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4132,14 +4591,16 @@
           "height": 1080,
           "id": "gs-explode",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/gs-explode.json",
+          "lottieQuality": "medium",
           "name": "Gold Stars Explode",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 13116,
+            "bytes": 13892,
             "fileName": "gs-explode.svg",
             "path": "/winks/effect/svg/gs-explode.svg",
-            "sizeLabel": "12.8 KB"
+            "sizeLabel": "13.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4162,14 +4623,15 @@
           "height": 1080,
           "id": "gs-field",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Twinkle Field",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 20440,
+            "bytes": 21217,
             "fileName": "gs-field.svg",
             "path": "/winks/effect/svg/gs-field.svg",
-            "sizeLabel": "20.0 KB"
+            "sizeLabel": "20.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4192,14 +4654,15 @@
           "height": 1080,
           "id": "gs-fountain",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Fountain",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 12313,
+            "bytes": 13089,
             "fileName": "gs-fountain.svg",
             "path": "/winks/effect/svg/gs-fountain.svg",
-            "sizeLabel": "12.0 KB"
+            "sizeLabel": "12.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4222,14 +4685,15 @@
           "height": 1080,
           "id": "gs-galaxy",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Galaxy",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 19304,
+            "bytes": 20066,
             "fileName": "gs-galaxy.svg",
             "path": "/winks/effect/svg/gs-galaxy.svg",
-            "sizeLabel": "18.9 KB"
+            "sizeLabel": "19.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4252,14 +4716,15 @@
           "height": 1080,
           "id": "gs-grandfinale",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Grand Finale",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 22906,
+            "bytes": 23684,
             "fileName": "gs-grandfinale.svg",
             "path": "/winks/effect/svg/gs-grandfinale.svg",
-            "sizeLabel": "22.4 KB"
+            "sizeLabel": "23.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4282,14 +4747,15 @@
           "height": 1080,
           "id": "gs-halo",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Halo",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 16502,
+            "bytes": 17279,
             "fileName": "gs-halo.svg",
             "path": "/winks/effect/svg/gs-halo.svg",
-            "sizeLabel": "16.1 KB"
+            "sizeLabel": "16.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4312,14 +4778,15 @@
           "height": 1080,
           "id": "gs-halo-ring",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Halo Ring",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 14228,
+            "bytes": 15000,
             "fileName": "gs-halo-ring.svg",
             "path": "/winks/effect/svg/gs-halo-ring.svg",
-            "sizeLabel": "13.9 KB"
+            "sizeLabel": "14.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4342,14 +4809,15 @@
           "height": 1080,
           "id": "gs-heartlight",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Heart of Light",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 16512,
+            "bytes": 17289,
             "fileName": "gs-heartlight.svg",
             "path": "/winks/effect/svg/gs-heartlight.svg",
-            "sizeLabel": "16.1 KB"
+            "sizeLabel": "16.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4372,14 +4840,16 @@
           "height": 1080,
           "id": "gs-mirror",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/gs-mirror.json",
+          "lottieQuality": "medium",
           "name": "Gold Stars Mirror Burst",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15161,
+            "bytes": 15934,
             "fileName": "gs-mirror.svg",
             "path": "/winks/effect/svg/gs-mirror.svg",
-            "sizeLabel": "14.8 KB"
+            "sizeLabel": "15.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4402,14 +4872,15 @@
           "height": 1080,
           "id": "gs-orbitshine",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Orbit Shine",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 9247,
+            "bytes": 10010,
             "fileName": "gs-orbitshine.svg",
             "path": "/winks/effect/svg/gs-orbitshine.svg",
-            "sizeLabel": "9.0 KB"
+            "sizeLabel": "9.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4432,14 +4903,16 @@
           "height": 1080,
           "id": "gs-pinwheel",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/gs-pinwheel.json",
+          "lottieQuality": "medium",
           "name": "Gold Stars Pinwheel",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 13190,
+            "bytes": 13966,
             "fileName": "gs-pinwheel.svg",
             "path": "/winks/effect/svg/gs-pinwheel.svg",
-            "sizeLabel": "12.9 KB"
+            "sizeLabel": "13.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4462,14 +4935,15 @@
           "height": 1080,
           "id": "gs-pop",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Pop",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 18154,
+            "bytes": 18916,
             "fileName": "gs-pop.svg",
             "path": "/winks/effect/svg/gs-pop.svg",
-            "sizeLabel": "17.7 KB"
+            "sizeLabel": "18.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4492,14 +4966,16 @@
           "height": 1080,
           "id": "gs-popdeluxe",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/gs-popdeluxe.json",
+          "lottieQuality": "medium",
           "name": "Gold Stars Pop Deluxe",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 19515,
+            "bytes": 20292,
             "fileName": "gs-popdeluxe.svg",
             "path": "/winks/effect/svg/gs-popdeluxe.svg",
-            "sizeLabel": "19.1 KB"
+            "sizeLabel": "19.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4522,14 +4998,15 @@
           "height": 1080,
           "id": "gs-radiant",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Radiant Burst",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 16683,
+            "bytes": 17443,
             "fileName": "gs-radiant.svg",
             "path": "/winks/effect/svg/gs-radiant.svg",
-            "sizeLabel": "16.3 KB"
+            "sizeLabel": "17.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4552,14 +5029,15 @@
           "height": 1080,
           "id": "gs-rain",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Rain",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15175,
+            "bytes": 15952,
             "fileName": "gs-rain.svg",
             "path": "/winks/effect/svg/gs-rain.svg",
-            "sizeLabel": "14.8 KB"
+            "sizeLabel": "15.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4582,14 +5060,16 @@
           "height": 1080,
           "id": "gs-ribbon",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/gs-ribbon.json",
+          "lottieQuality": "medium",
           "name": "Gold Stars Ribbon",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 12559,
+            "bytes": 13336,
             "fileName": "gs-ribbon.svg",
             "path": "/winks/effect/svg/gs-ribbon.svg",
-            "sizeLabel": "12.3 KB"
+            "sizeLabel": "13.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4612,14 +5092,15 @@
           "height": 1080,
           "id": "gs-ribbontrail",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Ribbon Trail",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 14796,
+            "bytes": 15573,
             "fileName": "gs-ribbontrail.svg",
             "path": "/winks/effect/svg/gs-ribbontrail.svg",
-            "sizeLabel": "14.4 KB"
+            "sizeLabel": "15.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4642,14 +5123,15 @@
           "height": 1080,
           "id": "gs-scrown",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Swirl Crown",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 19974,
+            "bytes": 20749,
             "fileName": "gs-scrown.svg",
             "path": "/winks/effect/svg/gs-scrown.svg",
-            "sizeLabel": "19.5 KB"
+            "sizeLabel": "20.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4672,14 +5154,15 @@
           "height": 1080,
           "id": "gs-shower",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Shower",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 14059,
+            "bytes": 14837,
             "fileName": "gs-shower.svg",
             "path": "/winks/effect/svg/gs-shower.svg",
-            "sizeLabel": "13.7 KB"
+            "sizeLabel": "14.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4702,14 +5185,15 @@
           "height": 1080,
           "id": "gs-showerp",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Shower Premium",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 16518,
+            "bytes": 17295,
             "fileName": "gs-showerp.svg",
             "path": "/winks/effect/svg/gs-showerp.svg",
-            "sizeLabel": "16.1 KB"
+            "sizeLabel": "16.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4732,14 +5216,15 @@
           "height": 1080,
           "id": "gs-spiralrain",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Spiral Rain",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15471,
+            "bytes": 16248,
             "fileName": "gs-spiralrain.svg",
             "path": "/winks/effect/svg/gs-spiralrain.svg",
-            "sizeLabel": "15.1 KB"
+            "sizeLabel": "15.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4762,14 +5247,15 @@
           "height": 1080,
           "id": "gs-sunflare",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Sunflare Pulse",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 19700,
+            "bytes": 20463,
             "fileName": "gs-sunflare.svg",
             "path": "/winks/effect/svg/gs-sunflare.svg",
-            "sizeLabel": "19.2 KB"
+            "sizeLabel": "20.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4792,14 +5278,15 @@
           "height": 1080,
           "id": "gs-swirl",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Swirl",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 12850,
+            "bytes": 13612,
             "fileName": "gs-swirl.svg",
             "path": "/winks/effect/svg/gs-swirl.svg",
-            "sizeLabel": "12.5 KB"
+            "sizeLabel": "13.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4822,14 +5309,15 @@
           "height": 1080,
           "id": "gs-trail",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Trail",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 11519,
+            "bytes": 12297,
             "fileName": "gs-trail.svg",
             "path": "/winks/effect/svg/gs-trail.svg",
-            "sizeLabel": "11.2 KB"
+            "sizeLabel": "12.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4852,14 +5340,16 @@
           "height": 1080,
           "id": "gs-trailarc",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/gs-trailarc.json",
+          "lottieQuality": "medium",
           "name": "Gold Stars Trail Arc",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 14630,
+            "bytes": 15407,
             "fileName": "gs-trailarc.svg",
             "path": "/winks/effect/svg/gs-trailarc.svg",
-            "sizeLabel": "14.3 KB"
+            "sizeLabel": "15.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4882,14 +5372,15 @@
           "height": 1080,
           "id": "gs-twinkle",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Twinkle",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 20335,
+            "bytes": 21112,
             "fileName": "gs-twinkle.svg",
             "path": "/winks/effect/svg/gs-twinkle.svg",
-            "sizeLabel": "19.9 KB"
+            "sizeLabel": "20.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4912,14 +5403,15 @@
           "height": 1080,
           "id": "gs-wavesweep",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Gold Stars Wave Sweep",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15196,
+            "bytes": 15973,
             "fileName": "gs-wavesweep.svg",
             "path": "/winks/effect/svg/gs-wavesweep.svg",
-            "sizeLabel": "14.8 KB"
+            "sizeLabel": "15.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4939,17 +5431,20 @@
           "category": "Happy Birthday",
           "durationMs": 3500,
           "edgeGuidance": null,
+          "featured": true,
           "height": 1080,
           "id": "happy-birthday-balloon-cake-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/happy-birthday-balloon-cake-effect-wink.json",
+          "lottieQuality": "high",
           "name": "Happy Birthday Balloon Letters",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 35899,
+            "bytes": 43118,
             "fileName": "happy-birthday-balloon-cake-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-balloon-cake-effect-wink.svg",
-            "sizeLabel": "35.1 KB"
+            "sizeLabel": "42.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4972,14 +5467,16 @@
           "height": 1080,
           "id": "happy-birthday-bounce-title-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/happy-birthday-bounce-title-effect-wink.json",
+          "lottieQuality": "medium",
           "name": "Happy Birthday Sparkle Trail",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 35895,
+            "bytes": 36648,
             "fileName": "happy-birthday-bounce-title-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-bounce-title-effect-wink.svg",
-            "sizeLabel": "35.1 KB"
+            "sizeLabel": "35.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5002,14 +5499,31 @@
           "height": 1080,
           "id": "happy-birthday-cake-pop-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/happy-birthday/happy-birthday-cake-pop.json",
+          "lottieQuality": "medium",
           "name": "Happy Birthday Cake Slice Build",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "soundCues": [
+            {
+              "sound": "/sounds/pop.mp3",
+              "time": 0
+            },
+            {
+              "sound": "/sounds/sparkle.mp3",
+              "time": 0.95
+            },
+            {
+              "sound": "/sounds/chime.mp3",
+              "time": 1.85
+            }
+          ],
+          "soundPath": "/sounds/birthday-pop.mp3",
           "svg": {
-            "bytes": 35843,
+            "bytes": 36591,
             "fileName": "happy-birthday-cake-pop-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-cake-pop-effect-wink.svg",
-            "sizeLabel": "35.0 KB"
+            "sizeLabel": "35.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5029,17 +5543,20 @@
           "category": "Happy Birthday",
           "durationMs": 3200,
           "edgeGuidance": null,
+          "featured": true,
           "height": 1080,
           "id": "happy-birthday-candle-light-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/happy-birthday-candle-light-effect-wink.json",
+          "lottieQuality": "high",
           "name": "Happy Birthday Candle Wish",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 35891,
+            "bytes": 35132,
             "fileName": "happy-birthday-candle-light-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-candle-light-effect-wink.svg",
-            "sizeLabel": "35.0 KB"
+            "sizeLabel": "34.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5062,14 +5579,15 @@
           "height": 1080,
           "id": "happy-birthday-confetti-cake-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Happy Birthday Firework Backdrop",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 35903,
+            "bytes": 36660,
             "fileName": "happy-birthday-confetti-cake-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-confetti-cake-effect-wink.svg",
-            "sizeLabel": "35.1 KB"
+            "sizeLabel": "35.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5092,14 +5610,16 @@
           "height": 1080,
           "id": "happy-birthday-frosting-write-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/happy-birthday-frosting-write-effect-wink.json",
+          "lottieQuality": "medium",
           "name": "Happy Birthday Elegant Gold",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 35893,
+            "bytes": 36650,
             "fileName": "happy-birthday-frosting-write-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-frosting-write-effect-wink.svg",
-            "sizeLabel": "35.1 KB"
+            "sizeLabel": "35.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5122,14 +5642,16 @@
           "height": 1080,
           "id": "happy-birthday-gift-cake-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/happy-birthday-gift-cake-effect-wink.json",
+          "lottieQuality": "medium",
           "name": "Happy Birthday Hat Drop",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 35885,
+            "bytes": 36638,
             "fileName": "happy-birthday-gift-cake-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-gift-cake-effect-wink.svg",
-            "sizeLabel": "35.0 KB"
+            "sizeLabel": "35.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5152,14 +5674,15 @@
           "height": 1080,
           "id": "happy-birthday-mega-party-effect-wink",
           "kind": "effect",
+          "lottieSupported": false,
           "name": "Happy Birthday Mega Party Finale",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 35903,
+            "bytes": 36664,
             "fileName": "happy-birthday-mega-party-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-mega-party-effect-wink.svg",
-            "sizeLabel": "35.1 KB"
+            "sizeLabel": "35.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5182,14 +5705,16 @@
           "height": 1080,
           "id": "happy-birthday-party-popper-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/happy-birthday-party-popper-effect-wink.json",
+          "lottieQuality": "medium",
           "name": "Happy Birthday Cupcake Parade",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 35897,
+            "bytes": 36650,
             "fileName": "happy-birthday-party-popper-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-party-popper-effect-wink.svg",
-            "sizeLabel": "35.1 KB"
+            "sizeLabel": "35.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5212,14 +5737,78 @@
           "height": 1080,
           "id": "happy-birthday-sparkle-cake-effect-wink",
           "kind": "effect",
+          "lottiePath": "/lottie/effect-winks/happy-birthday-sparkle-cake-effect-wink.json",
+          "lottieQuality": "medium",
           "name": "Happy Birthday Spin Sparkle Cake",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 35903,
+            "bytes": 36655,
             "fileName": "happy-birthday-sparkle-cake-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-sparkle-cake-effect-wink.svg",
-            "sizeLabel": "35.1 KB"
+            "sizeLabel": "35.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4742184,
+            "fileName": "leprechaun-coin-fountain.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/leprechaun-coin-fountain.apng",
+            "sizeLabel": "4.52 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Leprechaun",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "leprechaun-coin-fountain",
+          "kind": "effect",
+          "lottieSupported": false,
+          "name": "Leprechaun Coin Fountain",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 33058,
+            "fileName": "leprechaun-coin-fountain.svg",
+            "path": "/winks/effect/svg/leprechaun-coin-fountain.svg",
+            "sizeLabel": "32.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4746379,
+            "fileName": "leprechaun-emerald-crown.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/leprechaun-emerald-crown.apng",
+            "sizeLabel": "4.53 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Leprechaun",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "leprechaun-emerald-crown",
+          "kind": "effect",
+          "lottieSupported": false,
+          "name": "Leprechaun Emerald Crown",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 37130,
+            "fileName": "leprechaun-emerald-crown.svg",
+            "path": "/winks/effect/svg/leprechaun-emerald-crown.svg",
+            "sizeLabel": "36.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5239,17 +5828,20 @@
           "category": "Leprechaun",
           "durationMs": 3200,
           "edgeGuidance": null,
+          "featured": true,
           "height": 1080,
           "id": "leprechaun-gold-coins",
           "kind": "effect",
-          "name": "Leprechaun Gold Coins",
+          "lottiePath": "/lottie/effect-winks/leprechaun-gold-coins.json",
+          "lottieQuality": "high",
+          "name": "Leprechaun Golden Coin Shower",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30129,
+            "bytes": 29125,
             "fileName": "leprechaun-gold-coins.svg",
             "path": "/winks/effect/svg/leprechaun-gold-coins.svg",
-            "sizeLabel": "29.4 KB"
+            "sizeLabel": "28.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5272,14 +5864,16 @@
           "height": 1080,
           "id": "leprechaun-hat-bounce",
           "kind": "effect",
-          "name": "Leprechaun Hat Bounce",
+          "lottiePath": "/lottie/effect-winks/leprechaun-hat-bounce.json",
+          "lottieQuality": "low",
+          "name": "Leprechaun Emerald Hat Bounce",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 29067,
+            "bytes": 29862,
             "fileName": "leprechaun-hat-bounce.svg",
             "path": "/winks/effect/svg/leprechaun-hat-bounce.svg",
-            "sizeLabel": "28.4 KB"
+            "sizeLabel": "29.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5302,14 +5896,47 @@
           "height": 1080,
           "id": "leprechaun-lucky-clover",
           "kind": "effect",
-          "name": "Leprechaun Lucky Clover",
+          "lottiePath": "/lottie/effect-winks/leprechaun-lucky-clover.json",
+          "lottieQuality": "medium",
+          "name": "Leprechaun Clover Royale",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 35329,
+            "bytes": 36049,
             "fileName": "leprechaun-lucky-clover.svg",
             "path": "/winks/effect/svg/leprechaun-lucky-clover.svg",
-            "sizeLabel": "34.5 KB"
+            "sizeLabel": "35.2 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4723464,
+            "fileName": "leprechaun-lucky-seal.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/leprechaun-lucky-seal.apng",
+            "sizeLabel": "4.50 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Leprechaun",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "leprechaun-lucky-seal",
+          "kind": "effect",
+          "lottieSupported": false,
+          "name": "Leprechaun Lucky Seal",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 36204,
+            "fileName": "leprechaun-lucky-seal.svg",
+            "path": "/winks/effect/svg/leprechaun-lucky-seal.svg",
+            "sizeLabel": "35.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5332,14 +5959,16 @@
           "height": 1080,
           "id": "leprechaun-pot-of-gold",
           "kind": "effect",
-          "name": "Leprechaun Pot Of Gold",
+          "lottiePath": "/lottie/effect-winks/leprechaun-pot-of-gold.json",
+          "lottieQuality": "medium",
+          "name": "Leprechaun Pot Of Gold Premiere",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30038,
+            "bytes": 30815,
             "fileName": "leprechaun-pot-of-gold.svg",
             "path": "/winks/effect/svg/leprechaun-pot-of-gold.svg",
-            "sizeLabel": "29.3 KB"
+            "sizeLabel": "30.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5362,14 +5991,78 @@
           "height": 1080,
           "id": "leprechaun-rainbow-pop",
           "kind": "effect",
-          "name": "Leprechaun Rainbow Pop",
+          "lottiePath": "/lottie/effect-winks/leprechaun-rainbow-pop.json",
+          "lottieQuality": "medium",
+          "name": "Leprechaun Rainbow Luxe",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 29875,
+            "bytes": 30651,
             "fileName": "leprechaun-rainbow-pop.svg",
             "path": "/winks/effect/svg/leprechaun-rainbow-pop.svg",
-            "sizeLabel": "29.2 KB"
+            "sizeLabel": "29.9 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 6078773,
+            "fileName": "leprechaun-rainbow-vault.apng",
+            "fps": 15,
+            "frameCount": 51,
+            "path": "/winks/effect/apng/leprechaun-rainbow-vault.apng",
+            "sizeLabel": "5.80 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Leprechaun",
+          "durationMs": 3400,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "leprechaun-rainbow-vault",
+          "kind": "effect",
+          "lottieSupported": false,
+          "name": "Leprechaun Rainbow Vault",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 32014,
+            "fileName": "leprechaun-rainbow-vault.svg",
+            "path": "/winks/effect/svg/leprechaun-rainbow-vault.svg",
+            "sizeLabel": "31.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 5058295,
+            "fileName": "leprechaun-treasure-burst.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/leprechaun-treasure-burst.apng",
+            "sizeLabel": "4.82 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Leprechaun",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "leprechaun-treasure-burst",
+          "kind": "effect",
+          "lottieSupported": false,
+          "name": "Leprechaun Treasure Burst",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 30511,
+            "fileName": "leprechaun-treasure-burst.svg",
+            "path": "/winks/effect/svg/leprechaun-treasure-burst.svg",
+            "sizeLabel": "29.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5392,14 +6085,16 @@
           "height": 1080,
           "id": "thumbs-up-bounce",
           "kind": "effect",
-          "name": "Thumbs Up Bounce",
+          "lottiePath": "/lottie/effect-winks/thumbs-up-bounce.json",
+          "lottieQuality": "low",
+          "name": "Thumbs Up Bounce Royale",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 28066,
+            "bytes": 28862,
             "fileName": "thumbs-up-bounce.svg",
             "path": "/winks/effect/svg/thumbs-up-bounce.svg",
-            "sizeLabel": "27.4 KB"
+            "sizeLabel": "28.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5419,17 +6114,20 @@
           "category": "Thumbs Up",
           "durationMs": 3200,
           "edgeGuidance": null,
+          "featured": true,
           "height": 1080,
           "id": "thumbs-up-confetti",
           "kind": "effect",
-          "name": "Thumbs Up Confetti",
+          "lottiePath": "/lottie/effect-winks/thumbs-up-confetti.json",
+          "lottieQuality": "high",
+          "name": "Thumbs Up Celebration Luxe",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 28570,
+            "bytes": 26867,
             "fileName": "thumbs-up-confetti.svg",
             "path": "/winks/effect/svg/thumbs-up-confetti.svg",
-            "sizeLabel": "27.9 KB"
+            "sizeLabel": "26.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5449,17 +6147,51 @@
           "category": "Thumbs Up",
           "durationMs": 3000,
           "edgeGuidance": null,
+          "featured": true,
           "height": 1080,
           "id": "thumbs-up-gold-burst",
           "kind": "effect",
-          "name": "Thumbs Up Gold Burst",
+          "lottiePath": "/lottie/effect-winks/thumbs-up-gold-burst.json",
+          "lottieQuality": "high",
+          "name": "Thumbs Up Gilded Victory",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 28149,
+            "bytes": 27271,
             "fileName": "thumbs-up-gold-burst.svg",
             "path": "/winks/effect/svg/thumbs-up-gold-burst.svg",
-            "sizeLabel": "27.5 KB"
+            "sizeLabel": "26.6 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4320460,
+            "fileName": "thumbs-up-neon-flare.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/thumbs-up-neon-flare.apng",
+            "sizeLabel": "4.12 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Thumbs Up",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "thumbs-up-neon-flare",
+          "kind": "effect",
+          "lottieSupported": false,
+          "name": "Thumbs Up Neon Flare",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 30408,
+            "fileName": "thumbs-up-neon-flare.svg",
+            "path": "/winks/effect/svg/thumbs-up-neon-flare.svg",
+            "sizeLabel": "29.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5482,14 +6214,93 @@
           "height": 1080,
           "id": "thumbs-up-pop",
           "kind": "effect",
-          "name": "Thumbs Up Pop",
+          "lottiePath": "/lottie/thumbs-up/thumbs-up-reaction-pop.json",
+          "lottieQuality": "medium",
+          "name": "Thumbs Up Signature Pop",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "soundCues": [
+            {
+              "sound": "/sounds/pop.mp3",
+              "time": 0
+            },
+            {
+              "sound": "/sounds/chime.mp3",
+              "time": 0.55
+            },
+            {
+              "sound": "/sounds/click.mp3",
+              "time": 1.25
+            }
+          ],
+          "soundPath": "/sounds/thumbs-up-pop.mp3",
+          "svg": {
+            "bytes": 28941,
+            "fileName": "thumbs-up-pop.svg",
+            "path": "/winks/effect/svg/thumbs-up-pop.svg",
+            "sizeLabel": "28.3 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 4368132,
+            "fileName": "thumbs-up-premium-pulse.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/thumbs-up-premium-pulse.apng",
+            "sizeLabel": "4.17 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Thumbs Up",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "thumbs-up-premium-pulse",
+          "kind": "effect",
+          "lottieSupported": false,
+          "name": "Thumbs Up Premium Pulse",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 28139,
-            "fileName": "thumbs-up-pop.svg",
-            "path": "/winks/effect/svg/thumbs-up-pop.svg",
-            "sizeLabel": "27.5 KB"
+            "bytes": 30485,
+            "fileName": "thumbs-up-premium-pulse.svg",
+            "path": "/winks/effect/svg/thumbs-up-premium-pulse.svg",
+            "sizeLabel": "29.8 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2877579,
+            "fileName": "thumbs-up-royal-ribbon.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/thumbs-up-royal-ribbon.apng",
+            "sizeLabel": "2.74 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Thumbs Up",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "thumbs-up-royal-ribbon",
+          "kind": "effect",
+          "lottieSupported": false,
+          "name": "Thumbs Up Royal Ribbon",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 29120,
+            "fileName": "thumbs-up-royal-ribbon.svg",
+            "path": "/winks/effect/svg/thumbs-up-royal-ribbon.svg",
+            "sizeLabel": "28.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5512,14 +6323,78 @@
           "height": 1080,
           "id": "thumbs-up-sparkle",
           "kind": "effect",
-          "name": "Thumbs Up Sparkle",
+          "lottiePath": "/lottie/effect-winks/thumbs-up-sparkle.json",
+          "lottieQuality": "medium",
+          "name": "Thumbs Up Starlight Approval",
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 29398,
+            "bytes": 30202,
             "fileName": "thumbs-up-sparkle.svg",
             "path": "/winks/effect/svg/thumbs-up-sparkle.svg",
-            "sizeLabel": "28.7 KB"
+            "sizeLabel": "29.5 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 2519666,
+            "fileName": "thumbs-up-spotlight-salute.apng",
+            "fps": 15,
+            "frameCount": 48,
+            "path": "/winks/effect/apng/thumbs-up-spotlight-salute.apng",
+            "sizeLabel": "2.40 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Thumbs Up",
+          "durationMs": 3200,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "thumbs-up-spotlight-salute",
+          "kind": "effect",
+          "lottieSupported": false,
+          "name": "Thumbs Up Spotlight Salute",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 30444,
+            "fileName": "thumbs-up-spotlight-salute.svg",
+            "path": "/winks/effect/svg/thumbs-up-spotlight-salute.svg",
+            "sizeLabel": "29.7 KB"
+          },
+          "typeLabel": "Overlay / Full Screen",
+          "viewBox": "0 0 1920 1080",
+          "width": 1920
+        },
+        {
+          "apng": {
+            "bytes": 3332674,
+            "fileName": "thumbs-up-victory-seal.apng",
+            "fps": 15,
+            "frameCount": 45,
+            "path": "/winks/effect/apng/thumbs-up-victory-seal.apng",
+            "sizeLabel": "3.18 MB",
+            "transparent": true
+          },
+          "aspectRatio": "16:9",
+          "category": "Thumbs Up",
+          "durationMs": 3000,
+          "edgeGuidance": null,
+          "height": 1080,
+          "id": "thumbs-up-victory-seal",
+          "kind": "effect",
+          "lottieSupported": false,
+          "name": "Thumbs Up Victory Seal",
+          "safeArea": "centered",
+          "safeAreaGuidance": "Keep key action inside a centered safe area.",
+          "svg": {
+            "bytes": 30657,
+            "fileName": "thumbs-up-victory-seal.svg",
+            "path": "/winks/effect/svg/thumbs-up-victory-seal.svg",
+            "sizeLabel": "29.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5557,10 +6432,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 5644,
+            "bytes": 5743,
             "fileName": "bb-chat-bullseye-drop.svg",
             "path": "/winks/chat/svg/bb-chat-bullseye-drop.svg",
-            "sizeLabel": "5.5 KB"
+            "sizeLabel": "5.6 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -5587,10 +6462,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 5683,
+            "bytes": 5780,
             "fileName": "bb-chat-orbit-juggle.svg",
             "path": "/winks/chat/svg/bb-chat-orbit-juggle.svg",
-            "sizeLabel": "5.5 KB"
+            "sizeLabel": "5.6 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -5617,10 +6492,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 5846,
+            "bytes": 5926,
             "fileName": "bb-chat-pinball-pop.svg",
             "path": "/winks/chat/svg/bb-chat-pinball-pop.svg",
-            "sizeLabel": "5.7 KB"
+            "sizeLabel": "5.8 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -5647,10 +6522,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 5507,
+            "bytes": 5606,
             "fileName": "bb-chat-zigzag-jackpot.svg",
             "path": "/winks/chat/svg/bb-chat-zigzag-jackpot.svg",
-            "sizeLabel": "5.4 KB"
+            "sizeLabel": "5.5 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -5677,7 +6552,7 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 12866,
+            "bytes": 12929,
             "fileName": "confetti-chat-burst-frame.svg",
             "path": "/winks/chat/svg/confetti-chat-burst-frame.svg",
             "sizeLabel": "12.6 KB"
@@ -5707,10 +6582,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 13446,
+            "bytes": 13532,
             "fileName": "confetti-chat-cannon-crossfire.svg",
             "path": "/winks/chat/svg/confetti-chat-cannon-crossfire.svg",
-            "sizeLabel": "13.1 KB"
+            "sizeLabel": "13.2 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -5737,10 +6612,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 4025,
+            "bytes": 4131,
             "fileName": "confetti-chat-ribbon-vortex.svg",
             "path": "/winks/chat/svg/confetti-chat-ribbon-vortex.svg",
-            "sizeLabel": "3.9 KB"
+            "sizeLabel": "4.0 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -5767,10 +6642,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 8217,
+            "bytes": 8322,
             "fileName": "confetti-chat-spiral-fall.svg",
             "path": "/winks/chat/svg/confetti-chat-spiral-fall.svg",
-            "sizeLabel": "8.0 KB"
+            "sizeLabel": "8.1 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -5797,10 +6672,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 42972,
+            "bytes": 43702,
             "fileName": "countdown-bingo-ball-letters-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-bingo-ball-letters-chat-wink.svg",
-            "sizeLabel": "42.0 KB"
+            "sizeLabel": "42.7 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -5827,10 +6702,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 39779,
+            "bytes": 40523,
             "fileName": "countdown-bingo-bounce-letters-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-bingo-bounce-letters-chat-wink.svg",
-            "sizeLabel": "38.8 KB"
+            "sizeLabel": "39.6 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -5857,10 +6732,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 38458,
+            "bytes": 39212,
             "fileName": "countdown-bingo-confetti-reveal-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-bingo-confetti-reveal-chat-wink.svg",
-            "sizeLabel": "37.6 KB"
+            "sizeLabel": "38.3 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -5887,10 +6762,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 37073,
+            "bytes": 37831,
             "fileName": "countdown-bingo-gold-flash-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-bingo-gold-flash-chat-wink.svg",
-            "sizeLabel": "36.2 KB"
+            "sizeLabel": "36.9 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -5917,10 +6792,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 38472,
+            "bytes": 39218,
             "fileName": "countdown-bingo-letter-pop-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-bingo-letter-pop-chat-wink.svg",
-            "sizeLabel": "37.6 KB"
+            "sizeLabel": "38.3 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -5947,10 +6822,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 29444,
+            "bytes": 30217,
             "fileName": "countdown-simple-confetti-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-simple-confetti-chat-wink.svg",
-            "sizeLabel": "28.8 KB"
+            "sizeLabel": "29.5 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -5977,10 +6852,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 32500,
+            "bytes": 33249,
             "fileName": "countdown-simple-firework-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-simple-firework-chat-wink.svg",
-            "sizeLabel": "31.7 KB"
+            "sizeLabel": "32.5 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6007,10 +6882,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 27681,
+            "bytes": 28464,
             "fileName": "countdown-simple-gold-burst-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-simple-gold-burst-chat-wink.svg",
-            "sizeLabel": "27.0 KB"
+            "sizeLabel": "27.8 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6037,10 +6912,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 29545,
+            "bytes": 30315,
             "fileName": "countdown-simple-party-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-simple-party-chat-wink.svg",
-            "sizeLabel": "28.9 KB"
+            "sizeLabel": "29.6 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6067,10 +6942,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 29378,
+            "bytes": 30148,
             "fileName": "countdown-simple-pop-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-simple-pop-chat-wink.svg",
-            "sizeLabel": "28.7 KB"
+            "sizeLabel": "29.4 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6097,10 +6972,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 4137,
+            "bytes": 4244,
             "fileName": "fireworks-chat-bingo-script.svg",
             "path": "/winks/chat/svg/fireworks-chat-bingo-script.svg",
-            "sizeLabel": "4.0 KB"
+            "sizeLabel": "4.1 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6127,10 +7002,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 3926,
+            "bytes": 4020,
             "fileName": "fireworks-chat-heart-trace.svg",
             "path": "/winks/chat/svg/fireworks-chat-heart-trace.svg",
-            "sizeLabel": "3.8 KB"
+            "sizeLabel": "3.9 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6157,10 +7032,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 3557,
+            "bytes": 3678,
             "fileName": "fireworks-chat-smiley-pop.svg",
             "path": "/winks/chat/svg/fireworks-chat-smiley-pop.svg",
-            "sizeLabel": "3.5 KB"
+            "sizeLabel": "3.6 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6187,10 +7062,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 11264,
+            "bytes": 11365,
             "fileName": "fireworks-chat-star-crown.svg",
             "path": "/winks/chat/svg/fireworks-chat-star-crown.svg",
-            "sizeLabel": "11.0 KB"
+            "sizeLabel": "11.1 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6217,10 +7092,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 29869,
+            "bytes": 30645,
             "fileName": "flowers-floral-confetti.svg",
             "path": "/winks/chat/svg/flowers-floral-confetti.svg",
-            "sizeLabel": "29.2 KB"
+            "sizeLabel": "29.9 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6247,10 +7122,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 29536,
+            "bytes": 30313,
             "fileName": "flowers-garden-sparkle.svg",
             "path": "/winks/chat/svg/flowers-garden-sparkle.svg",
-            "sizeLabel": "28.8 KB"
+            "sizeLabel": "29.6 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6277,10 +7152,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 29488,
+            "bytes": 30265,
             "fileName": "flowers-heart-petals.svg",
             "path": "/winks/chat/svg/flowers-heart-petals.svg",
-            "sizeLabel": "28.8 KB"
+            "sizeLabel": "29.6 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6307,10 +7182,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 32016,
+            "bytes": 32780,
             "fileName": "flowers-mega-bloom.svg",
             "path": "/winks/chat/svg/flowers-mega-bloom.svg",
-            "sizeLabel": "31.3 KB"
+            "sizeLabel": "32.0 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6337,10 +7212,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 29559,
+            "bytes": 30335,
             "fileName": "flowers-soft-bloom.svg",
             "path": "/winks/chat/svg/flowers-soft-bloom.svg",
-            "sizeLabel": "28.9 KB"
+            "sizeLabel": "29.6 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6367,10 +7242,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 5529,
+            "bytes": 5646,
             "fileName": "gold-stars-chat-constellation.svg",
             "path": "/winks/chat/svg/gold-stars-chat-constellation.svg",
-            "sizeLabel": "5.4 KB"
+            "sizeLabel": "5.5 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6397,10 +7272,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 5563,
+            "bytes": 5679,
             "fileName": "gold-stars-chat-shooting-ring.svg",
             "path": "/winks/chat/svg/gold-stars-chat-shooting-ring.svg",
-            "sizeLabel": "5.4 KB"
+            "sizeLabel": "5.5 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6427,10 +7302,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 5640,
+            "bytes": 5754,
             "fileName": "gold-stars-chat-trophy-rise.svg",
             "path": "/winks/chat/svg/gold-stars-chat-trophy-rise.svg",
-            "sizeLabel": "5.5 KB"
+            "sizeLabel": "5.6 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6457,10 +7332,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 35465,
+            "bytes": 36223,
             "fileName": "happy-birthday-balloon-cake-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-balloon-cake-chat-wink.svg",
-            "sizeLabel": "34.6 KB"
+            "sizeLabel": "35.4 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6487,10 +7362,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 35417,
+            "bytes": 36175,
             "fileName": "happy-birthday-bounce-title-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-bounce-title-chat-wink.svg",
-            "sizeLabel": "34.6 KB"
+            "sizeLabel": "35.3 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6517,10 +7392,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 35413,
+            "bytes": 36171,
             "fileName": "happy-birthday-cake-pop-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-cake-pop-chat-wink.svg",
-            "sizeLabel": "34.6 KB"
+            "sizeLabel": "35.3 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6547,10 +7422,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 35469,
+            "bytes": 36225,
             "fileName": "happy-birthday-candle-light-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-candle-light-chat-wink.svg",
-            "sizeLabel": "34.6 KB"
+            "sizeLabel": "35.4 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6577,10 +7452,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 35471,
+            "bytes": 36229,
             "fileName": "happy-birthday-confetti-cake-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-confetti-cake-chat-wink.svg",
-            "sizeLabel": "34.6 KB"
+            "sizeLabel": "35.4 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6607,10 +7482,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 35471,
+            "bytes": 36229,
             "fileName": "happy-birthday-frosting-write-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-frosting-write-chat-wink.svg",
-            "sizeLabel": "34.6 KB"
+            "sizeLabel": "35.4 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6637,10 +7512,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 35471,
+            "bytes": 36227,
             "fileName": "happy-birthday-gift-cake-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-gift-cake-chat-wink.svg",
-            "sizeLabel": "34.6 KB"
+            "sizeLabel": "35.4 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6667,10 +7542,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 35467,
+            "bytes": 36224,
             "fileName": "happy-birthday-mega-party-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-mega-party-chat-wink.svg",
-            "sizeLabel": "34.6 KB"
+            "sizeLabel": "35.4 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6697,10 +7572,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 35467,
+            "bytes": 36225,
             "fileName": "happy-birthday-party-popper-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-party-popper-chat-wink.svg",
-            "sizeLabel": "34.6 KB"
+            "sizeLabel": "35.4 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6727,10 +7602,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 35465,
+            "bytes": 36221,
             "fileName": "happy-birthday-sparkle-cake-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-sparkle-cake-chat-wink.svg",
-            "sizeLabel": "34.6 KB"
+            "sizeLabel": "35.4 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6757,10 +7632,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 34808,
+            "bytes": 35528,
             "fileName": "leprechaun-clover-burst.svg",
             "path": "/winks/chat/svg/leprechaun-clover-burst.svg",
-            "sizeLabel": "34.0 KB"
+            "sizeLabel": "34.7 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6787,10 +7662,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 27226,
+            "bytes": 27997,
             "fileName": "leprechaun-gold-rain.svg",
             "path": "/winks/chat/svg/leprechaun-gold-rain.svg",
-            "sizeLabel": "26.6 KB"
+            "sizeLabel": "27.3 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6817,10 +7692,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 29599,
+            "bytes": 30362,
             "fileName": "leprechaun-jackpot-luck.svg",
             "path": "/winks/chat/svg/leprechaun-jackpot-luck.svg",
-            "sizeLabel": "28.9 KB"
+            "sizeLabel": "29.7 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6847,10 +7722,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 34909,
+            "bytes": 35628,
             "fileName": "leprechaun-lucky-spin.svg",
             "path": "/winks/chat/svg/leprechaun-lucky-spin.svg",
-            "sizeLabel": "34.1 KB"
+            "sizeLabel": "34.8 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6877,10 +7752,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 28842,
+            "bytes": 29624,
             "fileName": "leprechaun-magic-spark.svg",
             "path": "/winks/chat/svg/leprechaun-magic-spark.svg",
-            "sizeLabel": "28.2 KB"
+            "sizeLabel": "28.9 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6907,10 +7782,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 27906,
+            "bytes": 28688,
             "fileName": "thumbs-up-chat-reaction.svg",
             "path": "/winks/chat/svg/thumbs-up-chat-reaction.svg",
-            "sizeLabel": "27.3 KB"
+            "sizeLabel": "28.0 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6937,10 +7812,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 28091,
+            "bytes": 28872,
             "fileName": "thumbs-up-fast-reaction.svg",
             "path": "/winks/chat/svg/thumbs-up-fast-reaction.svg",
-            "sizeLabel": "27.4 KB"
+            "sizeLabel": "28.2 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6967,10 +7842,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 30616,
+            "bytes": 31379,
             "fileName": "thumbs-up-jackpot.svg",
             "path": "/winks/chat/svg/thumbs-up-jackpot.svg",
-            "sizeLabel": "29.9 KB"
+            "sizeLabel": "30.6 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6997,10 +7872,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 30657,
+            "bytes": 31432,
             "fileName": "thumbs-up-star-ring.svg",
             "path": "/winks/chat/svg/thumbs-up-star-ring.svg",
-            "sizeLabel": "29.9 KB"
+            "sizeLabel": "30.7 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7027,10 +7902,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 27738,
+            "bytes": 28520,
             "fileName": "thumbs-up-win-badge.svg",
             "path": "/winks/chat/svg/thumbs-up-win-badge.svg",
-            "sizeLabel": "27.1 KB"
+            "sizeLabel": "27.9 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",

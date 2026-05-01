@@ -98,6 +98,19 @@ export const EFFECT_KEYFRAMES_CSS = `
   60% { transform: translateY(-15px); opacity: 1; }
   100% { transform: translateY(0); opacity: 1; }
 }
+@keyframes wink-featured-pop {
+  0%, 100% { transform: translateY(0) scale(0.78) rotate(-6deg); opacity: 1; }
+  12% { transform: translateY(-26px) scale(1.3) rotate(4deg); opacity: 1; }
+  22% { transform: translateY(10px) scale(0.95) rotate(-2deg); opacity: 1; }
+  34%, 76% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
+  88% { transform: translateY(-8px) scale(1.06) rotate(0deg); opacity: 1; }
+}
+@keyframes wink-featured-burst {
+  0%, 40%, 100% { transform: scale(0.38); opacity: 0; }
+  48% { transform: scale(0.92); opacity: 0.95; }
+  60% { transform: scale(1.18); opacity: 0.42; }
+  72% { transform: scale(1.34); opacity: 0; }
+}
 @keyframes wink-orbit {
   from { transform: rotate(0deg) translateX(var(--orbit-r,160px)) rotate(0deg); }
   to { transform: rotate(360deg) translateX(var(--orbit-r,160px)) rotate(-360deg); }

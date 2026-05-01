@@ -135,4 +135,36 @@ describe("WinkFormatPreviewPanel", () => {
     expect(screen.getAllByText("APNG preview failed").length).toBeGreaterThan(0);
     expect(screen.queryByAltText("Fireworks Grand Finale APNG Fallback")).not.toBeInTheDocument();
   });
+
+  it("pads and centers the SVG production preview inside the frame", () => {
+    const asset: WinkManifestItem = {
+      apng: null,
+      aspectRatio: "16:9",
+      category: "Fireworks",
+      durationMs: 3600,
+      edgeGuidance: null,
+      height: 1080,
+      id: "fw-grand-finale",
+      kind: "effect",
+      name: "Fireworks Grand Finale",
+      safeArea: "centered",
+      safeAreaGuidance: "Keep key action centered.",
+      svg: {
+        bytes: 12000,
+        fileName: "fw-grand-finale.svg",
+        path: "/winks/effect/svg/fw-grand-finale.svg",
+        sizeLabel: "12 KB",
+      },
+      typeLabel: "Overlay / Full Screen",
+      viewBox: "0 0 1920 1080",
+      width: 1920,
+    };
+
+    renderPanel({ asset, svgPreview: undefined });
+
+    const svgImage = screen.getByAltText("Fireworks Grand Finale SVG Animation");
+    expect(svgImage).toHaveClass("h-full", "w-full", "object-contain");
+    expect(svgImage.parentElement).toHaveClass("flex", "h-full", "w-full", "items-center", "justify-center");
+    expect(svgImage.parentElement?.parentElement).toHaveClass("inset-[12%]");
+  });
 });

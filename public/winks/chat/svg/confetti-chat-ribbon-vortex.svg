@@ -62,8 +62,8 @@
   }
 </style>
   
-      <path d="M 138 760 C 204 548, 220 328, 380 214 S 624 316, 628 562" fill="none" stroke="#ff8d86" stroke-width="20" stroke-linecap="round" stroke-dasharray="980" style="--dash:980; animation:drawLine 3.4s ease-in-out infinite;" />
-      <path d="M 630 794 C 560 592, 536 398, 390 306 S 174 372, 138 560" fill="none" stroke="#74d9ff" stroke-width="18" stroke-linecap="round" stroke-dasharray="920" style="--dash:920; animation:drawLine 3.4s ease-in-out infinite 0.14s;" />
-      <g style="transform-origin:384px 512px; animation:revealFinal 3.4s ease-out infinite;"><polygon points="384,524 394.1,547.9 418,558 394.1,568.1 384,592 373.9,568.1 350,558 373.9,547.9" fill="#ffe36a" stroke="rgba(255,255,255,0.72)" stroke-width="2.72" /><polygon points="298,466 303.94,480.06 318,486 303.94,491.94 298,506 292.06,491.94 278,486 292.06,480.06" fill="#8ef0c9" stroke="rgba(255,255,255,0.72)" stroke-width="1.6" /><polygon points="470,466 475.94,480.06 490,486 475.94,491.94 470,506 464.06,491.94 450,486 464.06,480.06" fill="#ff8d86" stroke="rgba(255,255,255,0.72)" stroke-width="1.6" /></g>
+      
+      
+      
     
-</svg>
+<g id="content" transform="translate(384 512) scale(1.155121951219512) translate(-384 -488.3501892089844)"><path d="M 138 760 C 204 548, 220 328, 380 214 S 624 316, 628 562" fill="none" stroke="#ff8d86" stroke-width="20" stroke-linecap="round" stroke-dasharray="980" style="--dash:980; animation:drawLine 3.4s ease-in-out infinite;"/><path d="M 630 794 C 560 592, 536 398, 390 306 S 174 372, 138 560" fill="none" stroke="#74d9ff" stroke-width="18" stroke-linecap="round" stroke-dasharray="920" style="--dash:920; animation:drawLine 3.4s ease-in-out infinite 0.14s;"/><g style="transform-origin:384px 512px; animation:revealFinal 3.4s ease-out infinite;"><polygon points="384,524 394.1,547.9 418,558 394.1,568.1 384,592 373.9,568.1 350,558 373.9,547.9" fill="#ffe36a" stroke="rgba(255,255,255,0.72)" stroke-width="2.72"/><polygon points="298,466 303.94,480.06 318,486 303.94,491.94 298,506 292.06,491.94 278,486 292.06,480.06" fill="#8ef0c9" stroke="rgba(255,255,255,0.72)" stroke-width="1.6"/><polygon points="470,466 475.94,480.06 490,486 475.94,491.94 470,506 464.06,491.94 450,486 464.06,480.06" fill="#ff8d86" stroke="rgba(255,255,255,0.72)" stroke-width="1.6"/></g></g></svg>
