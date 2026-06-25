@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { withEdgeFadeOpacity } from "./lottie-edge-fade.mjs";
 import { PROJECT_ROOT } from "./wink-config.mjs";
 
 const FRAMES_PER_SECOND = 30;
@@ -280,6 +281,8 @@ function makeShapeLayer({
   inPoint = 0,
   outPoint = totalFrames,
 }) {
+  const edgeAwareOpacity = withEdgeFadeOpacity({ opacity, position, totalFrames });
+
   return {
     ao: 0,
     bm: 0,
@@ -288,7 +291,7 @@ function makeShapeLayer({
     ip: inPoint,
     ks: {
       a: staticProp([0, 0, 0]),
-      o: Array.isArray(opacity) ? animatedProp(opacity) : staticProp(opacity),
+      o: Array.isArray(edgeAwareOpacity) ? animatedProp(edgeAwareOpacity) : staticProp(edgeAwareOpacity),
       p:
         Array.isArray(position) && position.length > 0 && typeof position[0] === "object"
           ? animatedProp(position)

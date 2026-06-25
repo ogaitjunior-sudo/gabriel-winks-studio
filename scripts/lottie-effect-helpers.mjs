@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
+import { withEdgeFadeOpacity } from "./lottie-edge-fade.mjs";
 import { PROJECT_ROOT } from "./wink-config.mjs";
 
 export const FPS = 30;
@@ -170,6 +171,8 @@ export function group(name, items, transform = {}) {
 }
 
 export function layer({ index, name, shapes, totalFrames, position = [960, 540, 0], scale = [100, 100, 100], rotation = 0, opacity = 100, inPoint = 0, outPoint = totalFrames }) {
+  const edgeAwareOpacity = withEdgeFadeOpacity({ opacity, position, totalFrames });
+
   return {
     ao: 0,
     bm: 0,
@@ -178,7 +181,7 @@ export function layer({ index, name, shapes, totalFrames, position = [960, 540, 
     ip: inPoint,
     ks: {
       a: sp([0, 0, 0]),
-      o: Array.isArray(opacity) ? ap(opacity) : sp(opacity),
+      o: Array.isArray(edgeAwareOpacity) ? ap(edgeAwareOpacity) : sp(edgeAwareOpacity),
       p: Array.isArray(position) && typeof position[0] === "object" ? ap(position) : sp(position),
       r: Array.isArray(rotation) ? ap(rotation) : sp(rotation),
       s: Array.isArray(scale) && typeof scale[0] === "object" ? ap(scale) : sp(scale),

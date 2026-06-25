@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T03:22:19.775Z",
+  "generatedAt": "2026-06-25T19:16:50.604Z",
   "groups": {
     "effect": {
       "edgeGuidance": null,
@@ -28,10 +28,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 24483,
+            "bytes": 27112,
             "fileName": "bb-bouncein.svg",
             "path": "/winks/effect/svg/bb-bouncein.svg",
-            "sizeLabel": "23.9 KB"
+            "sizeLabel": "26.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -59,10 +59,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 21539,
+            "bytes": 24168,
             "fileName": "bb-celebr.svg",
             "path": "/winks/effect/svg/bb-celebr.svg",
-            "sizeLabel": "21.0 KB"
+            "sizeLabel": "23.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -91,10 +91,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 19063,
+            "bytes": 21692,
             "fileName": "bb-classic.svg",
             "path": "/winks/effect/svg/bb-classic.svg",
-            "sizeLabel": "18.6 KB"
+            "sizeLabel": "21.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -138,10 +138,10 @@
           ],
           "soundPath": "/sounds/bingo-pop.mp3",
           "svg": {
-            "bytes": 28008,
+            "bytes": 30637,
             "fileName": "bb-collision.svg",
             "path": "/winks/effect/svg/bb-collision.svg",
-            "sizeLabel": "27.4 KB"
+            "sizeLabel": "29.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -169,10 +169,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 28466,
+            "bytes": 31095,
             "fileName": "bb-confetti.svg",
             "path": "/winks/effect/svg/bb-confetti.svg",
-            "sizeLabel": "27.8 KB"
+            "sizeLabel": "30.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -202,10 +202,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 17551,
+            "bytes": 20180,
             "fileName": "bb-crown.svg",
             "path": "/winks/effect/svg/bb-crown.svg",
-            "sizeLabel": "17.1 KB"
+            "sizeLabel": "19.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -234,10 +234,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 27577,
+            "bytes": 30206,
             "fileName": "bb-drumroll.svg",
             "path": "/winks/effect/svg/bb-drumroll.svg",
-            "sizeLabel": "26.9 KB"
+            "sizeLabel": "29.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -265,10 +265,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 39929,
+            "bytes": 42558,
             "fileName": "bb-explodeform.svg",
             "path": "/winks/effect/svg/bb-explodeform.svg",
-            "sizeLabel": "39.0 KB"
+            "sizeLabel": "41.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -296,10 +296,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 47677,
+            "bytes": 50306,
             "fileName": "bb-grand.svg",
             "path": "/winks/effect/svg/bb-grand.svg",
-            "sizeLabel": "46.6 KB"
+            "sizeLabel": "49.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -327,10 +327,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 32459,
+            "bytes": 35088,
             "fileName": "bb-impact.svg",
             "path": "/winks/effect/svg/bb-impact.svg",
-            "sizeLabel": "31.7 KB"
+            "sizeLabel": "34.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -358,10 +358,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 19257,
+            "bytes": 21886,
             "fileName": "bb-jackpot.svg",
             "path": "/winks/effect/svg/bb-jackpot.svg",
-            "sizeLabel": "18.8 KB"
+            "sizeLabel": "21.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -390,10 +390,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 16103,
+            "bytes": 18732,
             "fileName": "bb-orbit.svg",
             "path": "/winks/effect/svg/bb-orbit.svg",
-            "sizeLabel": "15.7 KB"
+            "sizeLabel": "18.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -421,10 +421,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 23964,
+            "bytes": 26593,
             "fileName": "bb-parade.svg",
             "path": "/winks/effect/svg/bb-parade.svg",
-            "sizeLabel": "23.4 KB"
+            "sizeLabel": "26.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -452,10 +452,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 23238,
+            "bytes": 25867,
             "fileName": "bb-pinball.svg",
             "path": "/winks/effect/svg/bb-pinball.svg",
-            "sizeLabel": "22.7 KB"
+            "sizeLabel": "25.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -484,10 +484,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 23629,
+            "bytes": 26258,
             "fileName": "bb-popchain.svg",
             "path": "/winks/effect/svg/bb-popchain.svg",
-            "sizeLabel": "23.1 KB"
+            "sizeLabel": "25.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -516,10 +516,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 20290,
+            "bytes": 22919,
             "fileName": "bb-popup.svg",
             "path": "/winks/effect/svg/bb-popup.svg",
-            "sizeLabel": "19.8 KB"
+            "sizeLabel": "22.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -547,10 +547,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 26547,
+            "bytes": 29176,
             "fileName": "bb-rain.svg",
             "path": "/winks/effect/svg/bb-rain.svg",
-            "sizeLabel": "25.9 KB"
+            "sizeLabel": "28.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -578,10 +578,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 47696,
+            "bytes": 50325,
             "fileName": "bb-ring.svg",
             "path": "/winks/effect/svg/bb-ring.svg",
-            "sizeLabel": "46.6 KB"
+            "sizeLabel": "49.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -609,10 +609,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 33078,
+            "bytes": 35707,
             "fileName": "bb-rocket.svg",
             "path": "/winks/effect/svg/bb-rocket.svg",
-            "sizeLabel": "32.3 KB"
+            "sizeLabel": "34.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -640,10 +640,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 21111,
+            "bytes": 23740,
             "fileName": "bb-roulette.svg",
             "path": "/winks/effect/svg/bb-roulette.svg",
-            "sizeLabel": "20.6 KB"
+            "sizeLabel": "23.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -672,10 +672,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 19453,
+            "bytes": 22082,
             "fileName": "bb-scatter.svg",
             "path": "/winks/effect/svg/bb-scatter.svg",
-            "sizeLabel": "19.0 KB"
+            "sizeLabel": "21.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -704,10 +704,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 25556,
+            "bytes": 28185,
             "fileName": "bb-slot.svg",
             "path": "/winks/effect/svg/bb-slot.svg",
-            "sizeLabel": "25.0 KB"
+            "sizeLabel": "27.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -736,10 +736,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 18344,
+            "bytes": 20973,
             "fileName": "bb-spin.svg",
             "path": "/winks/effect/svg/bb-spin.svg",
-            "sizeLabel": "17.9 KB"
+            "sizeLabel": "20.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -767,10 +767,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 32224,
+            "bytes": 34853,
             "fileName": "bb-spiral.svg",
             "path": "/winks/effect/svg/bb-spiral.svg",
-            "sizeLabel": "31.5 KB"
+            "sizeLabel": "34.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -798,10 +798,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 19315,
+            "bytes": 21944,
             "fileName": "bb-spot.svg",
             "path": "/winks/effect/svg/bb-spot.svg",
-            "sizeLabel": "18.9 KB"
+            "sizeLabel": "21.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -829,10 +829,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 28921,
+            "bytes": 31550,
             "fileName": "bb-storm.svg",
             "path": "/winks/effect/svg/bb-storm.svg",
-            "sizeLabel": "28.2 KB"
+            "sizeLabel": "30.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -860,10 +860,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 19729,
+            "bytes": 22358,
             "fileName": "bb-tilt.svg",
             "path": "/winks/effect/svg/bb-tilt.svg",
-            "sizeLabel": "19.3 KB"
+            "sizeLabel": "21.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -891,10 +891,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 16475,
+            "bytes": 19104,
             "fileName": "bb-wave.svg",
             "path": "/winks/effect/svg/bb-wave.svg",
-            "sizeLabel": "16.1 KB"
+            "sizeLabel": "18.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -922,10 +922,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 40439,
+            "bytes": 43068,
             "fileName": "bouncing-bingo-collision.svg",
             "path": "/winks/effect/svg/bouncing-bingo-collision.svg",
-            "sizeLabel": "39.5 KB"
+            "sizeLabel": "42.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -954,10 +954,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30697,
+            "bytes": 33326,
             "fileName": "bouncing-bingo-countdown.svg",
             "path": "/winks/effect/svg/bouncing-bingo-countdown.svg",
-            "sizeLabel": "30.0 KB"
+            "sizeLabel": "32.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1001,10 +1001,10 @@
           ],
           "soundPath": "/sounds/jackpot-spin.mp3",
           "svg": {
-            "bytes": 36294,
+            "bytes": 38923,
             "fileName": "bouncing-bingo-jackpot.svg",
             "path": "/winks/effect/svg/bouncing-bingo-jackpot.svg",
-            "sizeLabel": "35.4 KB"
+            "sizeLabel": "38.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1032,10 +1032,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 35454,
+            "bytes": 38083,
             "fileName": "bouncing-bingo-spiral.svg",
             "path": "/winks/effect/svg/bouncing-bingo-spiral.svg",
-            "sizeLabel": "34.6 KB"
+            "sizeLabel": "37.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1064,10 +1064,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 28463,
+            "bytes": 31092,
             "fileName": "bouncing-bingo-wave.svg",
             "path": "/winks/effect/svg/bouncing-bingo-wave.svg",
-            "sizeLabel": "27.8 KB"
+            "sizeLabel": "30.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1095,10 +1095,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 32822,
+            "bytes": 35438,
             "fileName": "cf-bloom.svg",
             "path": "/winks/effect/svg/cf-bloom.svg",
-            "sizeLabel": "32.1 KB"
+            "sizeLabel": "34.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1142,10 +1142,10 @@
           ],
           "soundPath": "/sounds/confetti-burst.mp3",
           "svg": {
-            "bytes": 31389,
+            "bytes": 34005,
             "fileName": "cf-cannon.svg",
             "path": "/winks/effect/svg/cf-cannon.svg",
-            "sizeLabel": "30.7 KB"
+            "sizeLabel": "33.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1173,10 +1173,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 42438,
+            "bytes": 45054,
             "fileName": "cf-carnival.svg",
             "path": "/winks/effect/svg/cf-carnival.svg",
-            "sizeLabel": "41.4 KB"
+            "sizeLabel": "44.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1204,10 +1204,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 39832,
+            "bytes": 42448,
             "fileName": "cf-double.svg",
             "path": "/winks/effect/svg/cf-double.svg",
-            "sizeLabel": "38.9 KB"
+            "sizeLabel": "41.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1235,10 +1235,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 26665,
+            "bytes": 29281,
             "fileName": "cf-explosion.svg",
             "path": "/winks/effect/svg/cf-explosion.svg",
-            "sizeLabel": "26.0 KB"
+            "sizeLabel": "28.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1266,10 +1266,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 40722,
+            "bytes": 43338,
             "fileName": "cf-finale.svg",
             "path": "/winks/effect/svg/cf-finale.svg",
-            "sizeLabel": "39.8 KB"
+            "sizeLabel": "42.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1297,10 +1297,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 37645,
+            "bytes": 40261,
             "fileName": "cf-firechain.svg",
             "path": "/winks/effect/svg/cf-firechain.svg",
-            "sizeLabel": "36.8 KB"
+            "sizeLabel": "39.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1328,10 +1328,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 31055,
+            "bytes": 33671,
             "fileName": "cf-firework.svg",
             "path": "/winks/effect/svg/cf-firework.svg",
-            "sizeLabel": "30.3 KB"
+            "sizeLabel": "32.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1359,10 +1359,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 33925,
+            "bytes": 36541,
             "fileName": "cf-galaxy.svg",
             "path": "/winks/effect/svg/cf-galaxy.svg",
-            "sizeLabel": "33.1 KB"
+            "sizeLabel": "35.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1390,10 +1390,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 27714,
+            "bytes": 30330,
             "fileName": "cf-heart.svg",
             "path": "/winks/effect/svg/cf-heart.svg",
-            "sizeLabel": "27.1 KB"
+            "sizeLabel": "29.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1421,10 +1421,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 33261,
+            "bytes": 35877,
             "fileName": "cf-heartfest.svg",
             "path": "/winks/effect/svg/cf-heartfest.svg",
-            "sizeLabel": "32.5 KB"
+            "sizeLabel": "35.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1452,10 +1452,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 39014,
+            "bytes": 41630,
             "fileName": "cf-mega.svg",
             "path": "/winks/effect/svg/cf-mega.svg",
-            "sizeLabel": "38.1 KB"
+            "sizeLabel": "40.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1483,10 +1483,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 32010,
+            "bytes": 34626,
             "fileName": "cf-pop.svg",
             "path": "/winks/effect/svg/cf-pop.svg",
-            "sizeLabel": "31.3 KB"
+            "sizeLabel": "33.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1514,10 +1514,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 38857,
+            "bytes": 41473,
             "fileName": "cf-rain.svg",
             "path": "/winks/effect/svg/cf-rain.svg",
-            "sizeLabel": "37.9 KB"
+            "sizeLabel": "40.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1545,10 +1545,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 34694,
+            "bytes": 37310,
             "fileName": "cf-rainx.svg",
             "path": "/winks/effect/svg/cf-rainx.svg",
-            "sizeLabel": "33.9 KB"
+            "sizeLabel": "36.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1576,10 +1576,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 27476,
+            "bytes": 30092,
             "fileName": "cf-ribbon.svg",
             "path": "/winks/effect/svg/cf-ribbon.svg",
-            "sizeLabel": "26.8 KB"
+            "sizeLabel": "29.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1607,10 +1607,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 25960,
+            "bytes": 28576,
             "fileName": "cf-shockring.svg",
             "path": "/winks/effect/svg/cf-shockring.svg",
-            "sizeLabel": "25.4 KB"
+            "sizeLabel": "27.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1638,10 +1638,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 21289,
+            "bytes": 23905,
             "fileName": "cf-spiral.svg",
             "path": "/winks/effect/svg/cf-spiral.svg",
-            "sizeLabel": "20.8 KB"
+            "sizeLabel": "23.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1669,10 +1669,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 22743,
+            "bytes": 25359,
             "fileName": "cf-spiralfw.svg",
             "path": "/winks/effect/svg/cf-spiralfw.svg",
-            "sizeLabel": "22.2 KB"
+            "sizeLabel": "24.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1700,10 +1700,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 29592,
+            "bytes": 32208,
             "fileName": "cf-star.svg",
             "path": "/winks/effect/svg/cf-star.svg",
-            "sizeLabel": "28.9 KB"
+            "sizeLabel": "31.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1731,10 +1731,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 26642,
+            "bytes": 29258,
             "fileName": "cf-starcel.svg",
             "path": "/winks/effect/svg/cf-starcel.svg",
-            "sizeLabel": "26.0 KB"
+            "sizeLabel": "28.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1762,10 +1762,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 48274,
+            "bytes": 50890,
             "fileName": "cf-storm.svg",
             "path": "/winks/effect/svg/cf-storm.svg",
-            "sizeLabel": "47.1 KB"
+            "sizeLabel": "49.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1793,10 +1793,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 33275,
+            "bytes": 35891,
             "fileName": "cf-triple.svg",
             "path": "/winks/effect/svg/cf-triple.svg",
-            "sizeLabel": "32.5 KB"
+            "sizeLabel": "35.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1824,10 +1824,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 32223,
+            "bytes": 34839,
             "fileName": "cf-tunnel.svg",
             "path": "/winks/effect/svg/cf-tunnel.svg",
-            "sizeLabel": "31.5 KB"
+            "sizeLabel": "34.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1855,10 +1855,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 63017,
+            "bytes": 65633,
             "fileName": "cf-ultimatep.svg",
             "path": "/winks/effect/svg/cf-ultimatep.svg",
-            "sizeLabel": "61.5 KB"
+            "sizeLabel": "64.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1886,10 +1886,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 33335,
+            "bytes": 35951,
             "fileName": "cf-victory.svg",
             "path": "/winks/effect/svg/cf-victory.svg",
-            "sizeLabel": "32.6 KB"
+            "sizeLabel": "35.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1917,10 +1917,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 35732,
+            "bytes": 38348,
             "fileName": "cf-victoryb.svg",
             "path": "/winks/effect/svg/cf-victoryb.svg",
-            "sizeLabel": "34.9 KB"
+            "sizeLabel": "37.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1948,10 +1948,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 27272,
+            "bytes": 29888,
             "fileName": "cf-volcano.svg",
             "path": "/winks/effect/svg/cf-volcano.svg",
-            "sizeLabel": "26.6 KB"
+            "sizeLabel": "29.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -1979,10 +1979,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 25270,
+            "bytes": 27886,
             "fileName": "cf-wave.svg",
             "path": "/winks/effect/svg/cf-wave.svg",
-            "sizeLabel": "24.7 KB"
+            "sizeLabel": "27.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2010,10 +2010,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30644,
+            "bytes": 33260,
             "fileName": "cf-waveblast.svg",
             "path": "/winks/effect/svg/cf-waveblast.svg",
-            "sizeLabel": "29.9 KB"
+            "sizeLabel": "32.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2061,10 +2061,10 @@
           ],
           "soundPath": "/sounds/countdown-pop.mp3",
           "svg": {
-            "bytes": 43684,
+            "bytes": 46313,
             "fileName": "countdown-bingo-ball-letters-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-bingo-ball-letters-effect-wink.svg",
-            "sizeLabel": "42.7 KB"
+            "sizeLabel": "45.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2092,10 +2092,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 39609,
+            "bytes": 42238,
             "fileName": "countdown-bingo-confetti-reveal-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-bingo-confetti-reveal-effect-wink.svg",
-            "sizeLabel": "38.7 KB"
+            "sizeLabel": "41.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2123,10 +2123,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 47889,
+            "bytes": 50518,
             "fileName": "countdown-bingo-firework-reveal-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-bingo-firework-reveal-effect-wink.svg",
-            "sizeLabel": "46.8 KB"
+            "sizeLabel": "49.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2156,10 +2156,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 39569,
+            "bytes": 42198,
             "fileName": "countdown-bingo-letter-pop-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-bingo-letter-pop-effect-wink.svg",
-            "sizeLabel": "38.6 KB"
+            "sizeLabel": "41.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2187,10 +2187,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 44419,
+            "bytes": 47048,
             "fileName": "countdown-bingo-mega-reveal-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-bingo-mega-reveal-effect-wink.svg",
-            "sizeLabel": "43.4 KB"
+            "sizeLabel": "45.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2219,10 +2219,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30313,
+            "bytes": 32942,
             "fileName": "countdown-simple-confetti-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-simple-confetti-effect-wink.svg",
-            "sizeLabel": "29.6 KB"
+            "sizeLabel": "32.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2250,10 +2250,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 33346,
+            "bytes": 35975,
             "fileName": "countdown-simple-firework-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-simple-firework-effect-wink.svg",
-            "sizeLabel": "32.6 KB"
+            "sizeLabel": "35.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2282,10 +2282,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 28569,
+            "bytes": 31198,
             "fileName": "countdown-simple-gold-burst-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-simple-gold-burst-effect-wink.svg",
-            "sizeLabel": "27.9 KB"
+            "sizeLabel": "30.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2333,10 +2333,10 @@
           ],
           "soundPath": "/sounds/countdown-beep.mp3",
           "svg": {
-            "bytes": 30529,
+            "bytes": 33158,
             "fileName": "countdown-simple-party-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-simple-party-effect-wink.svg",
-            "sizeLabel": "29.8 KB"
+            "sizeLabel": "32.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2365,10 +2365,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30273,
+            "bytes": 32902,
             "fileName": "countdown-simple-pop-effect-wink.svg",
             "path": "/winks/effect/svg/countdown-simple-pop-effect-wink.svg",
-            "sizeLabel": "29.6 KB"
+            "sizeLabel": "32.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2396,10 +2396,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 51019,
+            "bytes": 53635,
             "fileName": "fireworks-bingo-text-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-bingo-text-effect-wink.svg",
-            "sizeLabel": "49.8 KB"
+            "sizeLabel": "52.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2427,10 +2427,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 46609,
+            "bytes": 49225,
             "fileName": "fireworks-cake-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-cake-shape-effect-wink.svg",
-            "sizeLabel": "45.5 KB"
+            "sizeLabel": "48.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2458,10 +2458,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 36641,
+            "bytes": 39257,
             "fileName": "fireworks-clover-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-clover-shape-effect-wink.svg",
-            "sizeLabel": "35.8 KB"
+            "sizeLabel": "38.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2489,10 +2489,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 40891,
+            "bytes": 43507,
             "fileName": "fireworks-crown-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-crown-shape-effect-wink.svg",
-            "sizeLabel": "39.9 KB"
+            "sizeLabel": "42.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2536,10 +2536,10 @@
           ],
           "soundPath": "/sounds/fireworks-boom.mp3",
           "svg": {
-            "bytes": 82219,
+            "bytes": 84835,
             "fileName": "fireworks-final-bingo-countdown-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-final-bingo-countdown-effect-wink.svg",
-            "sizeLabel": "80.3 KB"
+            "sizeLabel": "82.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2567,10 +2567,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 52897,
+            "bytes": 55513,
             "fileName": "fireworks-flower-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-flower-shape-effect-wink.svg",
-            "sizeLabel": "51.7 KB"
+            "sizeLabel": "54.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2598,10 +2598,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 47297,
+            "bytes": 49913,
             "fileName": "fireworks-gift-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-gift-shape-effect-wink.svg",
-            "sizeLabel": "46.2 KB"
+            "sizeLabel": "48.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2629,10 +2629,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 95395,
+            "bytes": 98011,
             "fileName": "fireworks-gold-burst-frame-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-gold-burst-frame-effect-wink.svg",
-            "sizeLabel": "93.2 KB"
+            "sizeLabel": "95.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2660,10 +2660,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 44330,
+            "bytes": 46946,
             "fileName": "fireworks-heart-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-heart-shape-effect-wink.svg",
-            "sizeLabel": "43.3 KB"
+            "sizeLabel": "45.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2691,10 +2691,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 47288,
+            "bytes": 49904,
             "fileName": "fireworks-jackpot-text-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-jackpot-text-effect-wink.svg",
-            "sizeLabel": "46.2 KB"
+            "sizeLabel": "48.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2722,10 +2722,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 83067,
+            "bytes": 85683,
             "fileName": "fireworks-mega-finale-symbols-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-mega-finale-symbols-effect-wink.svg",
-            "sizeLabel": "81.1 KB"
+            "sizeLabel": "83.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2754,10 +2754,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 34066,
+            "bytes": 36682,
             "fileName": "fireworks-number-1-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-number-1-effect-wink.svg",
-            "sizeLabel": "33.3 KB"
+            "sizeLabel": "35.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2786,10 +2786,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 36100,
+            "bytes": 38716,
             "fileName": "fireworks-number-2-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-number-2-effect-wink.svg",
-            "sizeLabel": "35.3 KB"
+            "sizeLabel": "37.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2817,10 +2817,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 36104,
+            "bytes": 38720,
             "fileName": "fireworks-number-3-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-number-3-effect-wink.svg",
-            "sizeLabel": "35.3 KB"
+            "sizeLabel": "37.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2848,10 +2848,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 52763,
+            "bytes": 55379,
             "fileName": "fireworks-rainbow-arc-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-rainbow-arc-effect-wink.svg",
-            "sizeLabel": "51.5 KB"
+            "sizeLabel": "54.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2879,10 +2879,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 45680,
+            "bytes": 48296,
             "fileName": "fireworks-smiley-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-smiley-shape-effect-wink.svg",
-            "sizeLabel": "44.6 KB"
+            "sizeLabel": "47.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2910,10 +2910,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 46615,
+            "bytes": 49231,
             "fileName": "fireworks-star-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-star-shape-effect-wink.svg",
-            "sizeLabel": "45.5 KB"
+            "sizeLabel": "48.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2941,10 +2941,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 43453,
+            "bytes": 46069,
             "fileName": "fireworks-thumbs-up-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-thumbs-up-shape-effect-wink.svg",
-            "sizeLabel": "42.4 KB"
+            "sizeLabel": "45.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -2972,10 +2972,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 49427,
+            "bytes": 52043,
             "fileName": "fireworks-trophy-shape-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-trophy-shape-effect-wink.svg",
-            "sizeLabel": "48.3 KB"
+            "sizeLabel": "50.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3003,10 +3003,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 43623,
+            "bytes": 46239,
             "fileName": "fireworks-win-text-effect-wink.svg",
             "path": "/winks/effect/svg/fireworks-win-text-effect-wink.svg",
-            "sizeLabel": "42.6 KB"
+            "sizeLabel": "45.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3050,10 +3050,10 @@
           ],
           "soundPath": "/sounds/soft-bloom.mp3",
           "svg": {
-            "bytes": 30404,
+            "bytes": 33033,
             "fileName": "flowers-bloom-pop.svg",
             "path": "/winks/effect/svg/flowers-bloom-pop.svg",
-            "sizeLabel": "29.7 KB"
+            "sizeLabel": "32.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3081,10 +3081,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 32147,
+            "bytes": 34776,
             "fileName": "flowers-blossom-halo.svg",
             "path": "/winks/effect/svg/flowers-blossom-halo.svg",
-            "sizeLabel": "31.4 KB"
+            "sizeLabel": "34.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3113,10 +3113,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 32908,
+            "bytes": 35537,
             "fileName": "flowers-bouquet-burst.svg",
             "path": "/winks/effect/svg/flowers-bouquet-burst.svg",
-            "sizeLabel": "32.1 KB"
+            "sizeLabel": "34.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3144,10 +3144,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 33506,
+            "bytes": 36135,
             "fileName": "flowers-garden-ribbon.svg",
             "path": "/winks/effect/svg/flowers-garden-ribbon.svg",
-            "sizeLabel": "32.7 KB"
+            "sizeLabel": "35.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3175,10 +3175,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30157,
+            "bytes": 32786,
             "fileName": "flowers-orchid-glow.svg",
             "path": "/winks/effect/svg/flowers-orchid-glow.svg",
-            "sizeLabel": "29.5 KB"
+            "sizeLabel": "32.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3206,10 +3206,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 33335,
+            "bytes": 35964,
             "fileName": "flowers-peony-crown.svg",
             "path": "/winks/effect/svg/flowers-peony-crown.svg",
-            "sizeLabel": "32.6 KB"
+            "sizeLabel": "35.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3237,10 +3237,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 31696,
+            "bytes": 34325,
             "fileName": "flowers-petal-fanfare.svg",
             "path": "/winks/effect/svg/flowers-petal-fanfare.svg",
-            "sizeLabel": "31.0 KB"
+            "sizeLabel": "33.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3269,10 +3269,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 27724,
+            "bytes": 30353,
             "fileName": "flowers-petal-rain.svg",
             "path": "/winks/effect/svg/flowers-petal-rain.svg",
-            "sizeLabel": "27.1 KB"
+            "sizeLabel": "29.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3301,10 +3301,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 29615,
+            "bytes": 32244,
             "fileName": "flowers-rose-spin.svg",
             "path": "/winks/effect/svg/flowers-rose-spin.svg",
-            "sizeLabel": "28.9 KB"
+            "sizeLabel": "31.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3333,10 +3333,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 32334,
+            "bytes": 34963,
             "fileName": "flowers-spring-wave.svg",
             "path": "/winks/effect/svg/flowers-spring-wave.svg",
-            "sizeLabel": "31.6 KB"
+            "sizeLabel": "34.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3364,10 +3364,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 12166,
+            "bytes": 14782,
             "fileName": "fw-burst.svg",
             "path": "/winks/effect/svg/fw-burst.svg",
-            "sizeLabel": "11.9 KB"
+            "sizeLabel": "14.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3395,10 +3395,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 23583,
+            "bytes": 26199,
             "fileName": "fw-cascade.svg",
             "path": "/winks/effect/svg/fw-cascade.svg",
-            "sizeLabel": "23.0 KB"
+            "sizeLabel": "25.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3426,10 +3426,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 27204,
+            "bytes": 29820,
             "fileName": "fw-cascadef.svg",
             "path": "/winks/effect/svg/fw-cascadef.svg",
-            "sizeLabel": "26.6 KB"
+            "sizeLabel": "29.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3457,10 +3457,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 14954,
+            "bytes": 17570,
             "fileName": "fw-center.svg",
             "path": "/winks/effect/svg/fw-center.svg",
-            "sizeLabel": "14.6 KB"
+            "sizeLabel": "17.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3488,10 +3488,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 12628,
+            "bytes": 15244,
             "fileName": "fw-chrys.svg",
             "path": "/winks/effect/svg/fw-chrys.svg",
-            "sizeLabel": "12.3 KB"
+            "sizeLabel": "14.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3519,10 +3519,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 31701,
+            "bytes": 34317,
             "fileName": "fw-comets.svg",
             "path": "/winks/effect/svg/fw-comets.svg",
-            "sizeLabel": "31.0 KB"
+            "sizeLabel": "33.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3550,10 +3550,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 19413,
+            "bytes": 22029,
             "fileName": "fw-crownf.svg",
             "path": "/winks/effect/svg/fw-crownf.svg",
-            "sizeLabel": "19.0 KB"
+            "sizeLabel": "21.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3581,10 +3581,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 12399,
+            "bytes": 15028,
             "fileName": "fw-diamond.svg",
             "path": "/winks/effect/svg/fw-diamond.svg",
-            "sizeLabel": "12.1 KB"
+            "sizeLabel": "14.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3612,10 +3612,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15519,
+            "bytes": 18148,
             "fileName": "fw-double.svg",
             "path": "/winks/effect/svg/fw-double.svg",
-            "sizeLabel": "15.2 KB"
+            "sizeLabel": "17.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3643,10 +3643,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 19169,
+            "bytes": 21785,
             "fileName": "fw-dring.svg",
             "path": "/winks/effect/svg/fw-dring.svg",
-            "sizeLabel": "18.7 KB"
+            "sizeLabel": "21.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3674,10 +3674,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 18132,
+            "bytes": 20748,
             "fileName": "fw-epic.svg",
             "path": "/winks/effect/svg/fw-epic.svg",
-            "sizeLabel": "17.7 KB"
+            "sizeLabel": "20.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3705,10 +3705,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 28179,
+            "bytes": 30808,
             "fileName": "fw-fansweep.svg",
             "path": "/winks/effect/svg/fw-fansweep.svg",
-            "sizeLabel": "27.5 KB"
+            "sizeLabel": "30.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3736,10 +3736,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 16050,
+            "bytes": 18679,
             "fileName": "fw-finale.svg",
             "path": "/winks/effect/svg/fw-finale.svg",
-            "sizeLabel": "15.7 KB"
+            "sizeLabel": "18.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3767,10 +3767,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 13203,
+            "bytes": 15832,
             "fileName": "fw-halo.svg",
             "path": "/winks/effect/svg/fw-halo.svg",
-            "sizeLabel": "12.9 KB"
+            "sizeLabel": "15.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3798,10 +3798,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 21784,
+            "bytes": 24400,
             "fileName": "fw-heart.svg",
             "path": "/winks/effect/svg/fw-heart.svg",
-            "sizeLabel": "21.3 KB"
+            "sizeLabel": "23.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3829,10 +3829,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 18518,
+            "bytes": 21134,
             "fileName": "fw-meteor.svg",
             "path": "/winks/effect/svg/fw-meteor.svg",
-            "sizeLabel": "18.1 KB"
+            "sizeLabel": "20.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3860,10 +3860,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15730,
+            "bytes": 18346,
             "fileName": "fw-palm.svg",
             "path": "/winks/effect/svg/fw-palm.svg",
-            "sizeLabel": "15.4 KB"
+            "sizeLabel": "17.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3891,10 +3891,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 24892,
+            "bytes": 27521,
             "fileName": "fw-prism.svg",
             "path": "/winks/effect/svg/fw-prism.svg",
-            "sizeLabel": "24.3 KB"
+            "sizeLabel": "26.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3922,10 +3922,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 10931,
+            "bytes": 13547,
             "fileName": "fw-ring.svg",
             "path": "/winks/effect/svg/fw-ring.svg",
-            "sizeLabel": "10.7 KB"
+            "sizeLabel": "13.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3953,10 +3953,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 17475,
+            "bytes": 20091,
             "fileName": "fw-risingc.svg",
             "path": "/winks/effect/svg/fw-risingc.svg",
-            "sizeLabel": "17.1 KB"
+            "sizeLabel": "19.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -3984,10 +3984,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 16618,
+            "bytes": 19234,
             "fileName": "fw-shock.svg",
             "path": "/winks/effect/svg/fw-shock.svg",
-            "sizeLabel": "16.2 KB"
+            "sizeLabel": "18.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4015,10 +4015,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 13661,
+            "bytes": 16290,
             "fileName": "fw-sky.svg",
             "path": "/winks/effect/svg/fw-sky.svg",
-            "sizeLabel": "13.3 KB"
+            "sizeLabel": "15.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4046,10 +4046,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 14693,
+            "bytes": 17322,
             "fileName": "fw-sparkle.svg",
             "path": "/winks/effect/svg/fw-sparkle.svg",
-            "sizeLabel": "14.3 KB"
+            "sizeLabel": "16.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4077,10 +4077,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 19391,
+            "bytes": 22007,
             "fileName": "fw-spiralc.svg",
             "path": "/winks/effect/svg/fw-spiralc.svg",
-            "sizeLabel": "18.9 KB"
+            "sizeLabel": "21.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4108,10 +4108,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 18609,
+            "bytes": 21225,
             "fileName": "fw-starover.svg",
             "path": "/winks/effect/svg/fw-starover.svg",
-            "sizeLabel": "18.2 KB"
+            "sizeLabel": "20.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4139,10 +4139,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 19840,
+            "bytes": 22456,
             "fileName": "fw-triple.svg",
             "path": "/winks/effect/svg/fw-triple.svg",
-            "sizeLabel": "19.4 KB"
+            "sizeLabel": "21.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4170,10 +4170,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 24473,
+            "bytes": 27089,
             "fileName": "fw-ultimate.svg",
             "path": "/winks/effect/svg/fw-ultimate.svg",
-            "sizeLabel": "23.9 KB"
+            "sizeLabel": "26.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4201,10 +4201,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 26761,
+            "bytes": 29377,
             "fileName": "fw-willow.svg",
             "path": "/winks/effect/svg/fw-willow.svg",
-            "sizeLabel": "26.1 KB"
+            "sizeLabel": "28.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4232,10 +4232,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 26621,
+            "bytes": 29250,
             "fileName": "gs-aurora.svg",
             "path": "/winks/effect/svg/gs-aurora.svg",
-            "sizeLabel": "26.0 KB"
+            "sizeLabel": "28.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4264,10 +4264,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 12166,
+            "bytes": 14782,
             "fileName": "gs-big.svg",
             "path": "/winks/effect/svg/gs-big.svg",
-            "sizeLabel": "11.9 KB"
+            "sizeLabel": "14.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4295,10 +4295,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 13299,
+            "bytes": 15915,
             "fileName": "gs-bloom.svg",
             "path": "/winks/effect/svg/gs-bloom.svg",
-            "sizeLabel": "13.0 KB"
+            "sizeLabel": "15.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4342,10 +4342,10 @@
           ],
           "soundPath": "/sounds/sparkle-chime.mp3",
           "svg": {
-            "bytes": 13245,
+            "bytes": 15861,
             "fileName": "gs-burst.svg",
             "path": "/winks/effect/svg/gs-burst.svg",
-            "sizeLabel": "12.9 KB"
+            "sizeLabel": "15.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4375,10 +4375,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 17000,
+            "bytes": 19616,
             "fileName": "gs-cascade.svg",
             "path": "/winks/effect/svg/gs-cascade.svg",
-            "sizeLabel": "16.6 KB"
+            "sizeLabel": "19.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4407,10 +4407,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 12349,
+            "bytes": 14978,
             "fileName": "gs-cometarc.svg",
             "path": "/winks/effect/svg/gs-cometarc.svg",
-            "sizeLabel": "12.1 KB"
+            "sizeLabel": "14.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4439,10 +4439,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 11343,
+            "bytes": 13972,
             "fileName": "gs-const.svg",
             "path": "/winks/effect/svg/gs-const.svg",
-            "sizeLabel": "11.1 KB"
+            "sizeLabel": "13.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4471,10 +4471,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 16428,
+            "bytes": 19057,
             "fileName": "gs-crossspark.svg",
             "path": "/winks/effect/svg/gs-crossspark.svg",
-            "sizeLabel": "16.0 KB"
+            "sizeLabel": "18.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4503,10 +4503,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 10497,
+            "bytes": 13126,
             "fileName": "gs-crown.svg",
             "path": "/winks/effect/svg/gs-crown.svg",
-            "sizeLabel": "10.3 KB"
+            "sizeLabel": "12.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4534,10 +4534,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 17190,
+            "bytes": 19819,
             "fileName": "gs-dust.svg",
             "path": "/winks/effect/svg/gs-dust.svg",
-            "sizeLabel": "16.8 KB"
+            "sizeLabel": "19.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4565,10 +4565,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 16330,
+            "bytes": 18946,
             "fileName": "gs-eternal.svg",
             "path": "/winks/effect/svg/gs-eternal.svg",
-            "sizeLabel": "15.9 KB"
+            "sizeLabel": "18.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4597,10 +4597,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 13892,
+            "bytes": 16508,
             "fileName": "gs-explode.svg",
             "path": "/winks/effect/svg/gs-explode.svg",
-            "sizeLabel": "13.6 KB"
+            "sizeLabel": "16.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4628,10 +4628,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 21217,
+            "bytes": 23846,
             "fileName": "gs-field.svg",
             "path": "/winks/effect/svg/gs-field.svg",
-            "sizeLabel": "20.7 KB"
+            "sizeLabel": "23.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4659,10 +4659,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 13089,
+            "bytes": 15705,
             "fileName": "gs-fountain.svg",
             "path": "/winks/effect/svg/gs-fountain.svg",
-            "sizeLabel": "12.8 KB"
+            "sizeLabel": "15.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4690,10 +4690,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 20066,
+            "bytes": 22682,
             "fileName": "gs-galaxy.svg",
             "path": "/winks/effect/svg/gs-galaxy.svg",
-            "sizeLabel": "19.6 KB"
+            "sizeLabel": "22.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4721,10 +4721,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 23684,
+            "bytes": 26300,
             "fileName": "gs-grandfinale.svg",
             "path": "/winks/effect/svg/gs-grandfinale.svg",
-            "sizeLabel": "23.1 KB"
+            "sizeLabel": "25.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4752,10 +4752,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 17279,
+            "bytes": 19895,
             "fileName": "gs-halo.svg",
             "path": "/winks/effect/svg/gs-halo.svg",
-            "sizeLabel": "16.9 KB"
+            "sizeLabel": "19.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4783,10 +4783,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15000,
+            "bytes": 17629,
             "fileName": "gs-halo-ring.svg",
             "path": "/winks/effect/svg/gs-halo-ring.svg",
-            "sizeLabel": "14.6 KB"
+            "sizeLabel": "17.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4814,10 +4814,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 17289,
+            "bytes": 19905,
             "fileName": "gs-heartlight.svg",
             "path": "/winks/effect/svg/gs-heartlight.svg",
-            "sizeLabel": "16.9 KB"
+            "sizeLabel": "19.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4846,10 +4846,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15934,
+            "bytes": 18550,
             "fileName": "gs-mirror.svg",
             "path": "/winks/effect/svg/gs-mirror.svg",
-            "sizeLabel": "15.6 KB"
+            "sizeLabel": "18.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4877,10 +4877,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 10010,
+            "bytes": 12626,
             "fileName": "gs-orbitshine.svg",
             "path": "/winks/effect/svg/gs-orbitshine.svg",
-            "sizeLabel": "9.8 KB"
+            "sizeLabel": "12.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4909,10 +4909,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 13966,
+            "bytes": 16595,
             "fileName": "gs-pinwheel.svg",
             "path": "/winks/effect/svg/gs-pinwheel.svg",
-            "sizeLabel": "13.6 KB"
+            "sizeLabel": "16.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4940,10 +4940,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 18916,
+            "bytes": 21532,
             "fileName": "gs-pop.svg",
             "path": "/winks/effect/svg/gs-pop.svg",
-            "sizeLabel": "18.5 KB"
+            "sizeLabel": "21.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -4972,10 +4972,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 20292,
+            "bytes": 22908,
             "fileName": "gs-popdeluxe.svg",
             "path": "/winks/effect/svg/gs-popdeluxe.svg",
-            "sizeLabel": "19.8 KB"
+            "sizeLabel": "22.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5003,10 +5003,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 17443,
+            "bytes": 20059,
             "fileName": "gs-radiant.svg",
             "path": "/winks/effect/svg/gs-radiant.svg",
-            "sizeLabel": "17.0 KB"
+            "sizeLabel": "19.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5034,10 +5034,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15952,
+            "bytes": 18581,
             "fileName": "gs-rain.svg",
             "path": "/winks/effect/svg/gs-rain.svg",
-            "sizeLabel": "15.6 KB"
+            "sizeLabel": "18.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5066,10 +5066,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 13336,
+            "bytes": 15965,
             "fileName": "gs-ribbon.svg",
             "path": "/winks/effect/svg/gs-ribbon.svg",
-            "sizeLabel": "13.0 KB"
+            "sizeLabel": "15.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5097,10 +5097,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15573,
+            "bytes": 18202,
             "fileName": "gs-ribbontrail.svg",
             "path": "/winks/effect/svg/gs-ribbontrail.svg",
-            "sizeLabel": "15.2 KB"
+            "sizeLabel": "17.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5128,10 +5128,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 20749,
+            "bytes": 23378,
             "fileName": "gs-scrown.svg",
             "path": "/winks/effect/svg/gs-scrown.svg",
-            "sizeLabel": "20.3 KB"
+            "sizeLabel": "22.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5159,10 +5159,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 14837,
+            "bytes": 17466,
             "fileName": "gs-shower.svg",
             "path": "/winks/effect/svg/gs-shower.svg",
-            "sizeLabel": "14.5 KB"
+            "sizeLabel": "17.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5190,10 +5190,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 17295,
+            "bytes": 19924,
             "fileName": "gs-showerp.svg",
             "path": "/winks/effect/svg/gs-showerp.svg",
-            "sizeLabel": "16.9 KB"
+            "sizeLabel": "19.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5221,10 +5221,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 16248,
+            "bytes": 18877,
             "fileName": "gs-spiralrain.svg",
             "path": "/winks/effect/svg/gs-spiralrain.svg",
-            "sizeLabel": "15.9 KB"
+            "sizeLabel": "18.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5252,10 +5252,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 20463,
+            "bytes": 23079,
             "fileName": "gs-sunflare.svg",
             "path": "/winks/effect/svg/gs-sunflare.svg",
-            "sizeLabel": "20.0 KB"
+            "sizeLabel": "22.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5283,10 +5283,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 13612,
+            "bytes": 16228,
             "fileName": "gs-swirl.svg",
             "path": "/winks/effect/svg/gs-swirl.svg",
-            "sizeLabel": "13.3 KB"
+            "sizeLabel": "15.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5314,10 +5314,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 12297,
+            "bytes": 14926,
             "fileName": "gs-trail.svg",
             "path": "/winks/effect/svg/gs-trail.svg",
-            "sizeLabel": "12.0 KB"
+            "sizeLabel": "14.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5346,10 +5346,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15407,
+            "bytes": 18036,
             "fileName": "gs-trailarc.svg",
             "path": "/winks/effect/svg/gs-trailarc.svg",
-            "sizeLabel": "15.0 KB"
+            "sizeLabel": "17.6 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5377,10 +5377,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 21112,
+            "bytes": 23741,
             "fileName": "gs-twinkle.svg",
             "path": "/winks/effect/svg/gs-twinkle.svg",
-            "sizeLabel": "20.6 KB"
+            "sizeLabel": "23.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5408,10 +5408,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 15973,
+            "bytes": 18602,
             "fileName": "gs-wavesweep.svg",
             "path": "/winks/effect/svg/gs-wavesweep.svg",
-            "sizeLabel": "15.6 KB"
+            "sizeLabel": "18.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5441,10 +5441,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 43118,
+            "bytes": 45747,
             "fileName": "happy-birthday-balloon-cake-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-balloon-cake-effect-wink.svg",
-            "sizeLabel": "42.1 KB"
+            "sizeLabel": "44.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5473,10 +5473,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 36648,
+            "bytes": 39277,
             "fileName": "happy-birthday-bounce-title-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-bounce-title-effect-wink.svg",
-            "sizeLabel": "35.8 KB"
+            "sizeLabel": "38.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5520,10 +5520,10 @@
           ],
           "soundPath": "/sounds/birthday-pop.mp3",
           "svg": {
-            "bytes": 36591,
+            "bytes": 39220,
             "fileName": "happy-birthday-cake-pop-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-cake-pop-effect-wink.svg",
-            "sizeLabel": "35.7 KB"
+            "sizeLabel": "38.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5553,10 +5553,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 35132,
+            "bytes": 37761,
             "fileName": "happy-birthday-candle-light-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-candle-light-effect-wink.svg",
-            "sizeLabel": "34.3 KB"
+            "sizeLabel": "36.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5584,10 +5584,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 36660,
+            "bytes": 39289,
             "fileName": "happy-birthday-confetti-cake-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-confetti-cake-effect-wink.svg",
-            "sizeLabel": "35.8 KB"
+            "sizeLabel": "38.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5616,10 +5616,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 36650,
+            "bytes": 39279,
             "fileName": "happy-birthday-frosting-write-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-frosting-write-effect-wink.svg",
-            "sizeLabel": "35.8 KB"
+            "sizeLabel": "38.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5648,10 +5648,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 36638,
+            "bytes": 39267,
             "fileName": "happy-birthday-gift-cake-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-gift-cake-effect-wink.svg",
-            "sizeLabel": "35.8 KB"
+            "sizeLabel": "38.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5679,10 +5679,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 36664,
+            "bytes": 39293,
             "fileName": "happy-birthday-mega-party-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-mega-party-effect-wink.svg",
-            "sizeLabel": "35.8 KB"
+            "sizeLabel": "38.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5711,10 +5711,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 36650,
+            "bytes": 39279,
             "fileName": "happy-birthday-party-popper-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-party-popper-effect-wink.svg",
-            "sizeLabel": "35.8 KB"
+            "sizeLabel": "38.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5743,10 +5743,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 36655,
+            "bytes": 39284,
             "fileName": "happy-birthday-sparkle-cake-effect-wink.svg",
             "path": "/winks/effect/svg/happy-birthday-sparkle-cake-effect-wink.svg",
-            "sizeLabel": "35.8 KB"
+            "sizeLabel": "38.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5774,10 +5774,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 33058,
+            "bytes": 35687,
             "fileName": "leprechaun-coin-fountain.svg",
             "path": "/winks/effect/svg/leprechaun-coin-fountain.svg",
-            "sizeLabel": "32.3 KB"
+            "sizeLabel": "34.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5805,10 +5805,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 37130,
+            "bytes": 39759,
             "fileName": "leprechaun-emerald-crown.svg",
             "path": "/winks/effect/svg/leprechaun-emerald-crown.svg",
-            "sizeLabel": "36.3 KB"
+            "sizeLabel": "38.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5838,10 +5838,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 29125,
+            "bytes": 31754,
             "fileName": "leprechaun-gold-coins.svg",
             "path": "/winks/effect/svg/leprechaun-gold-coins.svg",
-            "sizeLabel": "28.4 KB"
+            "sizeLabel": "31.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5870,10 +5870,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 29862,
+            "bytes": 32491,
             "fileName": "leprechaun-hat-bounce.svg",
             "path": "/winks/effect/svg/leprechaun-hat-bounce.svg",
-            "sizeLabel": "29.2 KB"
+            "sizeLabel": "31.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5902,10 +5902,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 36049,
+            "bytes": 38678,
             "fileName": "leprechaun-lucky-clover.svg",
             "path": "/winks/effect/svg/leprechaun-lucky-clover.svg",
-            "sizeLabel": "35.2 KB"
+            "sizeLabel": "37.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5933,10 +5933,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 36204,
+            "bytes": 38833,
             "fileName": "leprechaun-lucky-seal.svg",
             "path": "/winks/effect/svg/leprechaun-lucky-seal.svg",
-            "sizeLabel": "35.4 KB"
+            "sizeLabel": "37.9 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5965,10 +5965,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30815,
+            "bytes": 33444,
             "fileName": "leprechaun-pot-of-gold.svg",
             "path": "/winks/effect/svg/leprechaun-pot-of-gold.svg",
-            "sizeLabel": "30.1 KB"
+            "sizeLabel": "32.7 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -5997,10 +5997,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30651,
+            "bytes": 33280,
             "fileName": "leprechaun-rainbow-pop.svg",
             "path": "/winks/effect/svg/leprechaun-rainbow-pop.svg",
-            "sizeLabel": "29.9 KB"
+            "sizeLabel": "32.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -6028,10 +6028,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 32014,
+            "bytes": 34643,
             "fileName": "leprechaun-rainbow-vault.svg",
             "path": "/winks/effect/svg/leprechaun-rainbow-vault.svg",
-            "sizeLabel": "31.3 KB"
+            "sizeLabel": "33.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -6059,10 +6059,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30511,
+            "bytes": 33140,
             "fileName": "leprechaun-treasure-burst.svg",
             "path": "/winks/effect/svg/leprechaun-treasure-burst.svg",
-            "sizeLabel": "29.8 KB"
+            "sizeLabel": "32.4 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -6091,10 +6091,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 28862,
+            "bytes": 31491,
             "fileName": "thumbs-up-bounce.svg",
             "path": "/winks/effect/svg/thumbs-up-bounce.svg",
-            "sizeLabel": "28.2 KB"
+            "sizeLabel": "30.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -6124,10 +6124,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 26867,
+            "bytes": 29496,
             "fileName": "thumbs-up-confetti.svg",
             "path": "/winks/effect/svg/thumbs-up-confetti.svg",
-            "sizeLabel": "26.2 KB"
+            "sizeLabel": "28.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -6157,10 +6157,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 27271,
+            "bytes": 29900,
             "fileName": "thumbs-up-gold-burst.svg",
             "path": "/winks/effect/svg/thumbs-up-gold-burst.svg",
-            "sizeLabel": "26.6 KB"
+            "sizeLabel": "29.2 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -6188,10 +6188,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30408,
+            "bytes": 33037,
             "fileName": "thumbs-up-neon-flare.svg",
             "path": "/winks/effect/svg/thumbs-up-neon-flare.svg",
-            "sizeLabel": "29.7 KB"
+            "sizeLabel": "32.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -6235,10 +6235,10 @@
           ],
           "soundPath": "/sounds/thumbs-up-pop.mp3",
           "svg": {
-            "bytes": 28941,
+            "bytes": 31570,
             "fileName": "thumbs-up-pop.svg",
             "path": "/winks/effect/svg/thumbs-up-pop.svg",
-            "sizeLabel": "28.3 KB"
+            "sizeLabel": "30.8 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -6266,10 +6266,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30485,
+            "bytes": 33114,
             "fileName": "thumbs-up-premium-pulse.svg",
             "path": "/winks/effect/svg/thumbs-up-premium-pulse.svg",
-            "sizeLabel": "29.8 KB"
+            "sizeLabel": "32.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -6297,10 +6297,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 29120,
+            "bytes": 31749,
             "fileName": "thumbs-up-royal-ribbon.svg",
             "path": "/winks/effect/svg/thumbs-up-royal-ribbon.svg",
-            "sizeLabel": "28.4 KB"
+            "sizeLabel": "31.0 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -6329,10 +6329,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30202,
+            "bytes": 32831,
             "fileName": "thumbs-up-sparkle.svg",
             "path": "/winks/effect/svg/thumbs-up-sparkle.svg",
-            "sizeLabel": "29.5 KB"
+            "sizeLabel": "32.1 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -6360,10 +6360,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30444,
+            "bytes": 33073,
             "fileName": "thumbs-up-spotlight-salute.svg",
             "path": "/winks/effect/svg/thumbs-up-spotlight-salute.svg",
-            "sizeLabel": "29.7 KB"
+            "sizeLabel": "32.3 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -6391,10 +6391,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area.",
           "svg": {
-            "bytes": 30657,
+            "bytes": 33286,
             "fileName": "thumbs-up-victory-seal.svg",
             "path": "/winks/effect/svg/thumbs-up-victory-seal.svg",
-            "sizeLabel": "29.9 KB"
+            "sizeLabel": "32.5 KB"
           },
           "typeLabel": "Overlay / Full Screen",
           "viewBox": "0 0 1920 1080",
@@ -6413,12 +6413,12 @@
       "items": [
         {
           "apng": {
-            "bytes": 1816981,
+            "bytes": 1942784,
             "fileName": "bb-chat-bullseye-drop.apng",
             "fps": 15,
             "frameCount": 47,
             "path": "/winks/chat/apng/bb-chat-bullseye-drop.apng",
-            "sizeLabel": "1.73 MB",
+            "sizeLabel": "1.85 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6432,10 +6432,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 5743,
+            "bytes": 8532,
             "fileName": "bb-chat-bullseye-drop.svg",
             "path": "/winks/chat/svg/bb-chat-bullseye-drop.svg",
-            "sizeLabel": "5.6 KB"
+            "sizeLabel": "8.3 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6443,12 +6443,12 @@
         },
         {
           "apng": {
-            "bytes": 1805488,
+            "bytes": 1419431,
             "fileName": "bb-chat-orbit-juggle.apng",
             "fps": 15,
             "frameCount": 51,
             "path": "/winks/chat/apng/bb-chat-orbit-juggle.apng",
-            "sizeLabel": "1.72 MB",
+            "sizeLabel": "1.35 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6462,10 +6462,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 5780,
+            "bytes": 8569,
             "fileName": "bb-chat-orbit-juggle.svg",
             "path": "/winks/chat/svg/bb-chat-orbit-juggle.svg",
-            "sizeLabel": "5.6 KB"
+            "sizeLabel": "8.4 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6473,12 +6473,12 @@
         },
         {
           "apng": {
-            "bytes": 1681070,
+            "bytes": 1228096,
             "fileName": "bb-chat-pinball-pop.apng",
             "fps": 15,
             "frameCount": 48,
             "path": "/winks/chat/apng/bb-chat-pinball-pop.apng",
-            "sizeLabel": "1.60 MB",
+            "sizeLabel": "1.17 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6492,10 +6492,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 5926,
+            "bytes": 8715,
             "fileName": "bb-chat-pinball-pop.svg",
             "path": "/winks/chat/svg/bb-chat-pinball-pop.svg",
-            "sizeLabel": "5.8 KB"
+            "sizeLabel": "8.5 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6503,12 +6503,12 @@
         },
         {
           "apng": {
-            "bytes": 1110957,
+            "bytes": 912826,
             "fileName": "bb-chat-zigzag-jackpot.apng",
             "fps": 15,
             "frameCount": 50,
             "path": "/winks/chat/apng/bb-chat-zigzag-jackpot.apng",
-            "sizeLabel": "1.06 MB",
+            "sizeLabel": "891.4 KB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6522,10 +6522,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 5606,
+            "bytes": 8395,
             "fileName": "bb-chat-zigzag-jackpot.svg",
             "path": "/winks/chat/svg/bb-chat-zigzag-jackpot.svg",
-            "sizeLabel": "5.5 KB"
+            "sizeLabel": "8.2 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6533,12 +6533,12 @@
         },
         {
           "apng": {
-            "bytes": 607764,
+            "bytes": 636230,
             "fileName": "confetti-chat-burst-frame.apng",
             "fps": 15,
             "frameCount": 47,
             "path": "/winks/chat/apng/confetti-chat-burst-frame.apng",
-            "sizeLabel": "593.5 KB",
+            "sizeLabel": "621.3 KB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6552,10 +6552,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 12929,
+            "bytes": 15718,
             "fileName": "confetti-chat-burst-frame.svg",
             "path": "/winks/chat/svg/confetti-chat-burst-frame.svg",
-            "sizeLabel": "12.6 KB"
+            "sizeLabel": "15.3 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6563,12 +6563,12 @@
         },
         {
           "apng": {
-            "bytes": 787739,
+            "bytes": 781037,
             "fileName": "confetti-chat-cannon-crossfire.apng",
             "fps": 15,
             "frameCount": 45,
             "path": "/winks/chat/apng/confetti-chat-cannon-crossfire.apng",
-            "sizeLabel": "769.3 KB",
+            "sizeLabel": "762.7 KB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6582,10 +6582,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 13532,
+            "bytes": 16321,
             "fileName": "confetti-chat-cannon-crossfire.svg",
             "path": "/winks/chat/svg/confetti-chat-cannon-crossfire.svg",
-            "sizeLabel": "13.2 KB"
+            "sizeLabel": "15.9 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6593,12 +6593,12 @@
         },
         {
           "apng": {
-            "bytes": 418315,
+            "bytes": 684637,
             "fileName": "confetti-chat-ribbon-vortex.apng",
             "fps": 15,
             "frameCount": 51,
             "path": "/winks/chat/apng/confetti-chat-ribbon-vortex.apng",
-            "sizeLabel": "408.5 KB",
+            "sizeLabel": "668.6 KB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6612,10 +6612,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 4131,
+            "bytes": 6920,
             "fileName": "confetti-chat-ribbon-vortex.svg",
             "path": "/winks/chat/svg/confetti-chat-ribbon-vortex.svg",
-            "sizeLabel": "4.0 KB"
+            "sizeLabel": "6.8 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6623,12 +6623,12 @@
         },
         {
           "apng": {
-            "bytes": 598661,
+            "bytes": 637411,
             "fileName": "confetti-chat-spiral-fall.apng",
             "fps": 15,
             "frameCount": 50,
             "path": "/winks/chat/apng/confetti-chat-spiral-fall.apng",
-            "sizeLabel": "584.6 KB",
+            "sizeLabel": "622.5 KB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6642,10 +6642,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 8322,
+            "bytes": 11111,
             "fileName": "confetti-chat-spiral-fall.svg",
             "path": "/winks/chat/svg/confetti-chat-spiral-fall.svg",
-            "sizeLabel": "8.1 KB"
+            "sizeLabel": "10.9 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6653,12 +6653,12 @@
         },
         {
           "apng": {
-            "bytes": 1787940,
+            "bytes": 1722733,
             "fileName": "countdown-bingo-ball-letters-chat-wink.apng",
             "fps": 15,
             "frameCount": 59,
             "path": "/winks/chat/apng/countdown-bingo-ball-letters-chat-wink.apng",
-            "sizeLabel": "1.71 MB",
+            "sizeLabel": "1.64 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6672,10 +6672,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 43702,
+            "bytes": 46491,
             "fileName": "countdown-bingo-ball-letters-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-bingo-ball-letters-chat-wink.svg",
-            "sizeLabel": "42.7 KB"
+            "sizeLabel": "45.4 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6683,12 +6683,12 @@
         },
         {
           "apng": {
-            "bytes": 1398955,
+            "bytes": 1307557,
             "fileName": "countdown-bingo-bounce-letters-chat-wink.apng",
             "fps": 15,
             "frameCount": 54,
             "path": "/winks/chat/apng/countdown-bingo-bounce-letters-chat-wink.apng",
-            "sizeLabel": "1.33 MB",
+            "sizeLabel": "1.25 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6702,10 +6702,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 40523,
+            "bytes": 43312,
             "fileName": "countdown-bingo-bounce-letters-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-bingo-bounce-letters-chat-wink.svg",
-            "sizeLabel": "39.6 KB"
+            "sizeLabel": "42.3 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6713,12 +6713,12 @@
         },
         {
           "apng": {
-            "bytes": 882698,
+            "bytes": 845905,
             "fileName": "countdown-bingo-confetti-reveal-chat-wink.apng",
             "fps": 15,
             "frameCount": 59,
             "path": "/winks/chat/apng/countdown-bingo-confetti-reveal-chat-wink.apng",
-            "sizeLabel": "862.0 KB",
+            "sizeLabel": "826.1 KB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6732,10 +6732,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 39212,
+            "bytes": 42001,
             "fileName": "countdown-bingo-confetti-reveal-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-bingo-confetti-reveal-chat-wink.svg",
-            "sizeLabel": "38.3 KB"
+            "sizeLabel": "41.0 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6743,12 +6743,12 @@
         },
         {
           "apng": {
-            "bytes": 1809829,
+            "bytes": 1665459,
             "fileName": "countdown-bingo-gold-flash-chat-wink.apng",
             "fps": 15,
             "frameCount": 57,
             "path": "/winks/chat/apng/countdown-bingo-gold-flash-chat-wink.apng",
-            "sizeLabel": "1.73 MB",
+            "sizeLabel": "1.59 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6762,10 +6762,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 37831,
+            "bytes": 40620,
             "fileName": "countdown-bingo-gold-flash-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-bingo-gold-flash-chat-wink.svg",
-            "sizeLabel": "36.9 KB"
+            "sizeLabel": "39.7 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6773,12 +6773,12 @@
         },
         {
           "apng": {
-            "bytes": 1609955,
+            "bytes": 1488842,
             "fileName": "countdown-bingo-letter-pop-chat-wink.apng",
             "fps": 15,
             "frameCount": 57,
             "path": "/winks/chat/apng/countdown-bingo-letter-pop-chat-wink.apng",
-            "sizeLabel": "1.54 MB",
+            "sizeLabel": "1.42 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6792,10 +6792,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 39218,
+            "bytes": 42007,
             "fileName": "countdown-bingo-letter-pop-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-bingo-letter-pop-chat-wink.svg",
-            "sizeLabel": "38.3 KB"
+            "sizeLabel": "41.0 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6803,12 +6803,12 @@
         },
         {
           "apng": {
-            "bytes": 642479,
+            "bytes": 772893,
             "fileName": "countdown-simple-confetti-chat-wink.apng",
             "fps": 15,
             "frameCount": 45,
             "path": "/winks/chat/apng/countdown-simple-confetti-chat-wink.apng",
-            "sizeLabel": "627.4 KB",
+            "sizeLabel": "754.8 KB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6822,10 +6822,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 30217,
+            "bytes": 33006,
             "fileName": "countdown-simple-confetti-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-simple-confetti-chat-wink.svg",
-            "sizeLabel": "29.5 KB"
+            "sizeLabel": "32.2 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6833,12 +6833,12 @@
         },
         {
           "apng": {
-            "bytes": 1141071,
+            "bytes": 1340117,
             "fileName": "countdown-simple-firework-chat-wink.apng",
             "fps": 15,
             "frameCount": 48,
             "path": "/winks/chat/apng/countdown-simple-firework-chat-wink.apng",
-            "sizeLabel": "1.09 MB",
+            "sizeLabel": "1.28 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6852,10 +6852,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 33249,
+            "bytes": 36038,
             "fileName": "countdown-simple-firework-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-simple-firework-chat-wink.svg",
-            "sizeLabel": "32.5 KB"
+            "sizeLabel": "35.2 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6863,12 +6863,12 @@
         },
         {
           "apng": {
-            "bytes": 1028482,
+            "bytes": 1216661,
             "fileName": "countdown-simple-gold-burst-chat-wink.apng",
             "fps": 15,
             "frameCount": 45,
             "path": "/winks/chat/apng/countdown-simple-gold-burst-chat-wink.apng",
-            "sizeLabel": "1004.4 KB",
+            "sizeLabel": "1.16 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6882,10 +6882,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 28464,
+            "bytes": 31253,
             "fileName": "countdown-simple-gold-burst-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-simple-gold-burst-chat-wink.svg",
-            "sizeLabel": "27.8 KB"
+            "sizeLabel": "30.5 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6893,12 +6893,12 @@
         },
         {
           "apng": {
-            "bytes": 812596,
+            "bytes": 966546,
             "fileName": "countdown-simple-party-chat-wink.apng",
             "fps": 15,
             "frameCount": 48,
             "path": "/winks/chat/apng/countdown-simple-party-chat-wink.apng",
-            "sizeLabel": "793.6 KB",
+            "sizeLabel": "943.9 KB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6912,10 +6912,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 30315,
+            "bytes": 33104,
             "fileName": "countdown-simple-party-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-simple-party-chat-wink.svg",
-            "sizeLabel": "29.6 KB"
+            "sizeLabel": "32.3 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6923,12 +6923,12 @@
         },
         {
           "apng": {
-            "bytes": 841470,
+            "bytes": 992158,
             "fileName": "countdown-simple-pop-chat-wink.apng",
             "fps": 15,
             "frameCount": 44,
             "path": "/winks/chat/apng/countdown-simple-pop-chat-wink.apng",
-            "sizeLabel": "821.7 KB",
+            "sizeLabel": "968.9 KB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6942,10 +6942,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 30148,
+            "bytes": 32937,
             "fileName": "countdown-simple-pop-chat-wink.svg",
             "path": "/winks/chat/svg/countdown-simple-pop-chat-wink.svg",
-            "sizeLabel": "29.4 KB"
+            "sizeLabel": "32.2 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6953,12 +6953,12 @@
         },
         {
           "apng": {
-            "bytes": 193581,
+            "bytes": 381124,
             "fileName": "fireworks-chat-bingo-script.apng",
             "fps": 15,
             "frameCount": 54,
             "path": "/winks/chat/apng/fireworks-chat-bingo-script.apng",
-            "sizeLabel": "189.0 KB",
+            "sizeLabel": "372.2 KB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -6972,10 +6972,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 4244,
+            "bytes": 7033,
             "fileName": "fireworks-chat-bingo-script.svg",
             "path": "/winks/chat/svg/fireworks-chat-bingo-script.svg",
-            "sizeLabel": "4.1 KB"
+            "sizeLabel": "6.9 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -6983,12 +6983,12 @@
         },
         {
           "apng": {
-            "bytes": 256195,
+            "bytes": 532631,
             "fileName": "fireworks-chat-heart-trace.apng",
             "fps": 15,
             "frameCount": 51,
             "path": "/winks/chat/apng/fireworks-chat-heart-trace.apng",
-            "sizeLabel": "250.2 KB",
+            "sizeLabel": "520.1 KB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7002,10 +7002,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 4020,
+            "bytes": 6809,
             "fileName": "fireworks-chat-heart-trace.svg",
             "path": "/winks/chat/svg/fireworks-chat-heart-trace.svg",
-            "sizeLabel": "3.9 KB"
+            "sizeLabel": "6.6 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7013,12 +7013,12 @@
         },
         {
           "apng": {
-            "bytes": 320227,
+            "bytes": 601687,
             "fileName": "fireworks-chat-smiley-pop.apng",
             "fps": 15,
             "frameCount": 45,
             "path": "/winks/chat/apng/fireworks-chat-smiley-pop.apng",
-            "sizeLabel": "312.7 KB",
+            "sizeLabel": "587.6 KB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7032,10 +7032,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 3678,
+            "bytes": 6467,
             "fileName": "fireworks-chat-smiley-pop.svg",
             "path": "/winks/chat/svg/fireworks-chat-smiley-pop.svg",
-            "sizeLabel": "3.6 KB"
+            "sizeLabel": "6.3 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7043,12 +7043,12 @@
         },
         {
           "apng": {
-            "bytes": 622378,
+            "bytes": 1062623,
             "fileName": "fireworks-chat-star-crown.apng",
             "fps": 15,
             "frameCount": 53,
             "path": "/winks/chat/apng/fireworks-chat-star-crown.apng",
-            "sizeLabel": "607.8 KB",
+            "sizeLabel": "1.01 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7062,10 +7062,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 11365,
+            "bytes": 14154,
             "fileName": "fireworks-chat-star-crown.svg",
             "path": "/winks/chat/svg/fireworks-chat-star-crown.svg",
-            "sizeLabel": "11.1 KB"
+            "sizeLabel": "13.8 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7073,12 +7073,12 @@
         },
         {
           "apng": {
-            "bytes": 1716932,
+            "bytes": 1897231,
             "fileName": "flowers-floral-confetti.apng",
             "fps": 15,
             "frameCount": 48,
             "path": "/winks/chat/apng/flowers-floral-confetti.apng",
-            "sizeLabel": "1.64 MB",
+            "sizeLabel": "1.81 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7092,10 +7092,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 30645,
+            "bytes": 33434,
             "fileName": "flowers-floral-confetti.svg",
             "path": "/winks/chat/svg/flowers-floral-confetti.svg",
-            "sizeLabel": "29.9 KB"
+            "sizeLabel": "32.7 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7103,12 +7103,12 @@
         },
         {
           "apng": {
-            "bytes": 1796851,
+            "bytes": 2198390,
             "fileName": "flowers-garden-sparkle.apng",
             "fps": 15,
             "frameCount": 45,
             "path": "/winks/chat/apng/flowers-garden-sparkle.apng",
-            "sizeLabel": "1.71 MB",
+            "sizeLabel": "2.10 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7122,10 +7122,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 30313,
+            "bytes": 33102,
             "fileName": "flowers-garden-sparkle.svg",
             "path": "/winks/chat/svg/flowers-garden-sparkle.svg",
-            "sizeLabel": "29.6 KB"
+            "sizeLabel": "32.3 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7133,12 +7133,12 @@
         },
         {
           "apng": {
-            "bytes": 1421868,
+            "bytes": 1592007,
             "fileName": "flowers-heart-petals.apng",
             "fps": 15,
             "frameCount": 44,
             "path": "/winks/chat/apng/flowers-heart-petals.apng",
-            "sizeLabel": "1.36 MB",
+            "sizeLabel": "1.52 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7152,10 +7152,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 30265,
+            "bytes": 33054,
             "fileName": "flowers-heart-petals.svg",
             "path": "/winks/chat/svg/flowers-heart-petals.svg",
-            "sizeLabel": "29.6 KB"
+            "sizeLabel": "32.3 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7163,12 +7163,12 @@
         },
         {
           "apng": {
-            "bytes": 2178064,
+            "bytes": 2516180,
             "fileName": "flowers-mega-bloom.apng",
             "fps": 15,
             "frameCount": 54,
             "path": "/winks/chat/apng/flowers-mega-bloom.apng",
-            "sizeLabel": "2.08 MB",
+            "sizeLabel": "2.40 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7182,10 +7182,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 32780,
+            "bytes": 35569,
             "fileName": "flowers-mega-bloom.svg",
             "path": "/winks/chat/svg/flowers-mega-bloom.svg",
-            "sizeLabel": "32.0 KB"
+            "sizeLabel": "34.7 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7193,12 +7193,12 @@
         },
         {
           "apng": {
-            "bytes": 2093168,
+            "bytes": 2304706,
             "fileName": "flowers-soft-bloom.apng",
             "fps": 15,
             "frameCount": 45,
             "path": "/winks/chat/apng/flowers-soft-bloom.apng",
-            "sizeLabel": "2.00 MB",
+            "sizeLabel": "2.20 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7212,10 +7212,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 30335,
+            "bytes": 33124,
             "fileName": "flowers-soft-bloom.svg",
             "path": "/winks/chat/svg/flowers-soft-bloom.svg",
-            "sizeLabel": "29.6 KB"
+            "sizeLabel": "32.3 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7223,12 +7223,12 @@
         },
         {
           "apng": {
-            "bytes": 570194,
+            "bytes": 1361162,
             "fileName": "gold-stars-chat-constellation.apng",
             "fps": 15,
             "frameCount": 48,
             "path": "/winks/chat/apng/gold-stars-chat-constellation.apng",
-            "sizeLabel": "556.8 KB",
+            "sizeLabel": "1.30 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7242,10 +7242,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 5646,
+            "bytes": 8435,
             "fileName": "gold-stars-chat-constellation.svg",
             "path": "/winks/chat/svg/gold-stars-chat-constellation.svg",
-            "sizeLabel": "5.5 KB"
+            "sizeLabel": "8.2 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7253,12 +7253,12 @@
         },
         {
           "apng": {
-            "bytes": 697669,
+            "bytes": 1413842,
             "fileName": "gold-stars-chat-shooting-ring.apng",
             "fps": 15,
             "frameCount": 50,
             "path": "/winks/chat/apng/gold-stars-chat-shooting-ring.apng",
-            "sizeLabel": "681.3 KB",
+            "sizeLabel": "1.35 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7272,10 +7272,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 5679,
+            "bytes": 8468,
             "fileName": "gold-stars-chat-shooting-ring.svg",
             "path": "/winks/chat/svg/gold-stars-chat-shooting-ring.svg",
-            "sizeLabel": "5.5 KB"
+            "sizeLabel": "8.3 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7283,12 +7283,12 @@
         },
         {
           "apng": {
-            "bytes": 536591,
+            "bytes": 1422378,
             "fileName": "gold-stars-chat-trophy-rise.apng",
             "fps": 15,
             "frameCount": 51,
             "path": "/winks/chat/apng/gold-stars-chat-trophy-rise.apng",
-            "sizeLabel": "524.0 KB",
+            "sizeLabel": "1.36 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7302,10 +7302,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 5754,
+            "bytes": 8543,
             "fileName": "gold-stars-chat-trophy-rise.svg",
             "path": "/winks/chat/svg/gold-stars-chat-trophy-rise.svg",
-            "sizeLabel": "5.6 KB"
+            "sizeLabel": "8.3 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7313,12 +7313,12 @@
         },
         {
           "apng": {
-            "bytes": 3228400,
+            "bytes": 2268841,
             "fileName": "happy-birthday-balloon-cake-chat-wink.apng",
             "fps": 15,
             "frameCount": 51,
             "path": "/winks/chat/apng/happy-birthday-balloon-cake-chat-wink.apng",
-            "sizeLabel": "3.08 MB",
+            "sizeLabel": "2.16 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7332,10 +7332,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 36223,
+            "bytes": 39012,
             "fileName": "happy-birthday-balloon-cake-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-balloon-cake-chat-wink.svg",
-            "sizeLabel": "35.4 KB"
+            "sizeLabel": "38.1 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7343,7 +7343,7 @@
         },
         {
           "apng": {
-            "bytes": 2013046,
+            "bytes": 2018048,
             "fileName": "happy-birthday-bounce-title-chat-wink.apng",
             "fps": 15,
             "frameCount": 45,
@@ -7362,10 +7362,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 36175,
+            "bytes": 38964,
             "fileName": "happy-birthday-bounce-title-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-bounce-title-chat-wink.svg",
-            "sizeLabel": "35.3 KB"
+            "sizeLabel": "38.1 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7373,12 +7373,12 @@
         },
         {
           "apng": {
-            "bytes": 2146494,
+            "bytes": 2022963,
             "fileName": "happy-birthday-cake-pop-chat-wink.apng",
             "fps": 15,
             "frameCount": 45,
             "path": "/winks/chat/apng/happy-birthday-cake-pop-chat-wink.apng",
-            "sizeLabel": "2.05 MB",
+            "sizeLabel": "1.93 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7392,10 +7392,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 36171,
+            "bytes": 38960,
             "fileName": "happy-birthday-cake-pop-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-cake-pop-chat-wink.svg",
-            "sizeLabel": "35.3 KB"
+            "sizeLabel": "38.0 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7403,12 +7403,12 @@
         },
         {
           "apng": {
-            "bytes": 1963969,
+            "bytes": 2137487,
             "fileName": "happy-birthday-candle-light-chat-wink.apng",
             "fps": 15,
             "frameCount": 48,
             "path": "/winks/chat/apng/happy-birthday-candle-light-chat-wink.apng",
-            "sizeLabel": "1.87 MB",
+            "sizeLabel": "2.04 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7422,10 +7422,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 36225,
+            "bytes": 39014,
             "fileName": "happy-birthday-candle-light-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-candle-light-chat-wink.svg",
-            "sizeLabel": "35.4 KB"
+            "sizeLabel": "38.1 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7433,12 +7433,12 @@
         },
         {
           "apng": {
-            "bytes": 2553335,
+            "bytes": 2204609,
             "fileName": "happy-birthday-confetti-cake-chat-wink.apng",
             "fps": 15,
             "frameCount": 50,
             "path": "/winks/chat/apng/happy-birthday-confetti-cake-chat-wink.apng",
-            "sizeLabel": "2.44 MB",
+            "sizeLabel": "2.10 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7452,10 +7452,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 36229,
+            "bytes": 39018,
             "fileName": "happy-birthday-confetti-cake-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-confetti-cake-chat-wink.svg",
-            "sizeLabel": "35.4 KB"
+            "sizeLabel": "38.1 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7463,12 +7463,12 @@
         },
         {
           "apng": {
-            "bytes": 2196539,
+            "bytes": 2265190,
             "fileName": "happy-birthday-frosting-write-chat-wink.apng",
             "fps": 15,
             "frameCount": 51,
             "path": "/winks/chat/apng/happy-birthday-frosting-write-chat-wink.apng",
-            "sizeLabel": "2.09 MB",
+            "sizeLabel": "2.16 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7482,10 +7482,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 36229,
+            "bytes": 39018,
             "fileName": "happy-birthday-frosting-write-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-frosting-write-chat-wink.svg",
-            "sizeLabel": "35.4 KB"
+            "sizeLabel": "38.1 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7493,12 +7493,12 @@
         },
         {
           "apng": {
-            "bytes": 2592748,
+            "bytes": 2122903,
             "fileName": "happy-birthday-gift-cake-chat-wink.apng",
             "fps": 15,
             "frameCount": 48,
             "path": "/winks/chat/apng/happy-birthday-gift-cake-chat-wink.apng",
-            "sizeLabel": "2.47 MB",
+            "sizeLabel": "2.02 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7512,10 +7512,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 36227,
+            "bytes": 39016,
             "fileName": "happy-birthday-gift-cake-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-gift-cake-chat-wink.svg",
-            "sizeLabel": "35.4 KB"
+            "sizeLabel": "38.1 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7523,12 +7523,12 @@
         },
         {
           "apng": {
-            "bytes": 6710090,
+            "bytes": 2456222,
             "fileName": "happy-birthday-mega-party-chat-wink.apng",
             "fps": 15,
             "frameCount": 56,
             "path": "/winks/chat/apng/happy-birthday-mega-party-chat-wink.apng",
-            "sizeLabel": "6.40 MB",
+            "sizeLabel": "2.34 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7542,10 +7542,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 36224,
+            "bytes": 39013,
             "fileName": "happy-birthday-mega-party-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-mega-party-chat-wink.svg",
-            "sizeLabel": "35.4 KB"
+            "sizeLabel": "38.1 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7553,12 +7553,12 @@
         },
         {
           "apng": {
-            "bytes": 3316754,
+            "bytes": 2192449,
             "fileName": "happy-birthday-party-popper-chat-wink.apng",
             "fps": 15,
             "frameCount": 50,
             "path": "/winks/chat/apng/happy-birthday-party-popper-chat-wink.apng",
-            "sizeLabel": "3.16 MB",
+            "sizeLabel": "2.09 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7572,10 +7572,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 36225,
+            "bytes": 39014,
             "fileName": "happy-birthday-party-popper-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-party-popper-chat-wink.svg",
-            "sizeLabel": "35.4 KB"
+            "sizeLabel": "38.1 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7583,12 +7583,12 @@
         },
         {
           "apng": {
-            "bytes": 2573877,
+            "bytes": 2142641,
             "fileName": "happy-birthday-sparkle-cake-chat-wink.apng",
             "fps": 15,
             "frameCount": 48,
             "path": "/winks/chat/apng/happy-birthday-sparkle-cake-chat-wink.apng",
-            "sizeLabel": "2.45 MB",
+            "sizeLabel": "2.04 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7602,10 +7602,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 36221,
+            "bytes": 39010,
             "fileName": "happy-birthday-sparkle-cake-chat-wink.svg",
             "path": "/winks/chat/svg/happy-birthday-sparkle-cake-chat-wink.svg",
-            "sizeLabel": "35.4 KB"
+            "sizeLabel": "38.1 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7613,12 +7613,12 @@
         },
         {
           "apng": {
-            "bytes": 2411260,
+            "bytes": 2641311,
             "fileName": "leprechaun-clover-burst.apng",
             "fps": 15,
             "frameCount": 44,
             "path": "/winks/chat/apng/leprechaun-clover-burst.apng",
-            "sizeLabel": "2.30 MB",
+            "sizeLabel": "2.52 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7632,10 +7632,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 35528,
+            "bytes": 38317,
             "fileName": "leprechaun-clover-burst.svg",
             "path": "/winks/chat/svg/leprechaun-clover-burst.svg",
-            "sizeLabel": "34.7 KB"
+            "sizeLabel": "37.4 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7643,12 +7643,12 @@
         },
         {
           "apng": {
-            "bytes": 1845079,
+            "bytes": 1782353,
             "fileName": "leprechaun-gold-rain.apng",
             "fps": 15,
             "frameCount": 48,
             "path": "/winks/chat/apng/leprechaun-gold-rain.apng",
-            "sizeLabel": "1.76 MB",
+            "sizeLabel": "1.70 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7662,10 +7662,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 27997,
+            "bytes": 30786,
             "fileName": "leprechaun-gold-rain.svg",
             "path": "/winks/chat/svg/leprechaun-gold-rain.svg",
-            "sizeLabel": "27.3 KB"
+            "sizeLabel": "30.1 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7673,12 +7673,12 @@
         },
         {
           "apng": {
-            "bytes": 2110124,
+            "bytes": 2322772,
             "fileName": "leprechaun-jackpot-luck.apng",
             "fps": 15,
             "frameCount": 51,
             "path": "/winks/chat/apng/leprechaun-jackpot-luck.apng",
-            "sizeLabel": "2.01 MB",
+            "sizeLabel": "2.22 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7692,10 +7692,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 30362,
+            "bytes": 33151,
             "fileName": "leprechaun-jackpot-luck.svg",
             "path": "/winks/chat/svg/leprechaun-jackpot-luck.svg",
-            "sizeLabel": "29.7 KB"
+            "sizeLabel": "32.4 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7703,12 +7703,12 @@
         },
         {
           "apng": {
-            "bytes": 2308441,
+            "bytes": 2719176,
             "fileName": "leprechaun-lucky-spin.apng",
             "fps": 15,
             "frameCount": 42,
             "path": "/winks/chat/apng/leprechaun-lucky-spin.apng",
-            "sizeLabel": "2.20 MB",
+            "sizeLabel": "2.59 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7722,10 +7722,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 35628,
+            "bytes": 38417,
             "fileName": "leprechaun-lucky-spin.svg",
             "path": "/winks/chat/svg/leprechaun-lucky-spin.svg",
-            "sizeLabel": "34.8 KB"
+            "sizeLabel": "37.5 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7733,12 +7733,12 @@
         },
         {
           "apng": {
-            "bytes": 1405903,
+            "bytes": 1557152,
             "fileName": "leprechaun-magic-spark.apng",
             "fps": 15,
             "frameCount": 42,
             "path": "/winks/chat/apng/leprechaun-magic-spark.apng",
-            "sizeLabel": "1.34 MB",
+            "sizeLabel": "1.49 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7752,10 +7752,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 29624,
+            "bytes": 32413,
             "fileName": "leprechaun-magic-spark.svg",
             "path": "/winks/chat/svg/leprechaun-magic-spark.svg",
-            "sizeLabel": "28.9 KB"
+            "sizeLabel": "31.7 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7763,12 +7763,12 @@
         },
         {
           "apng": {
-            "bytes": 948893,
+            "bytes": 1046538,
             "fileName": "thumbs-up-chat-reaction.apng",
             "fps": 15,
             "frameCount": 42,
             "path": "/winks/chat/apng/thumbs-up-chat-reaction.apng",
-            "sizeLabel": "926.7 KB",
+            "sizeLabel": "1022.0 KB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7782,10 +7782,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 28688,
+            "bytes": 31477,
             "fileName": "thumbs-up-chat-reaction.svg",
             "path": "/winks/chat/svg/thumbs-up-chat-reaction.svg",
-            "sizeLabel": "28.0 KB"
+            "sizeLabel": "30.7 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7793,12 +7793,12 @@
         },
         {
           "apng": {
-            "bytes": 954742,
+            "bytes": 1023696,
             "fileName": "thumbs-up-fast-reaction.apng",
             "fps": 15,
             "frameCount": 39,
             "path": "/winks/chat/apng/thumbs-up-fast-reaction.apng",
-            "sizeLabel": "932.4 KB",
+            "sizeLabel": "999.7 KB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7812,10 +7812,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 28872,
+            "bytes": 31661,
             "fileName": "thumbs-up-fast-reaction.svg",
             "path": "/winks/chat/svg/thumbs-up-fast-reaction.svg",
-            "sizeLabel": "28.2 KB"
+            "sizeLabel": "30.9 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7823,12 +7823,12 @@
         },
         {
           "apng": {
-            "bytes": 2036804,
+            "bytes": 2188388,
             "fileName": "thumbs-up-jackpot.apng",
             "fps": 15,
             "frameCount": 48,
             "path": "/winks/chat/apng/thumbs-up-jackpot.apng",
-            "sizeLabel": "1.94 MB",
+            "sizeLabel": "2.09 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7842,10 +7842,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 31379,
+            "bytes": 34168,
             "fileName": "thumbs-up-jackpot.svg",
             "path": "/winks/chat/svg/thumbs-up-jackpot.svg",
-            "sizeLabel": "30.6 KB"
+            "sizeLabel": "33.4 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7853,12 +7853,12 @@
         },
         {
           "apng": {
-            "bytes": 1431484,
+            "bytes": 1661101,
             "fileName": "thumbs-up-star-ring.apng",
             "fps": 15,
             "frameCount": 42,
             "path": "/winks/chat/apng/thumbs-up-star-ring.apng",
-            "sizeLabel": "1.37 MB",
+            "sizeLabel": "1.58 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7872,10 +7872,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 31432,
+            "bytes": 34221,
             "fileName": "thumbs-up-star-ring.svg",
             "path": "/winks/chat/svg/thumbs-up-star-ring.svg",
-            "sizeLabel": "30.7 KB"
+            "sizeLabel": "33.4 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",
@@ -7883,12 +7883,12 @@
         },
         {
           "apng": {
-            "bytes": 1402808,
+            "bytes": 1538987,
             "fileName": "thumbs-up-win-badge.apng",
             "fps": 15,
             "frameCount": 44,
             "path": "/winks/chat/apng/thumbs-up-win-badge.apng",
-            "sizeLabel": "1.34 MB",
+            "sizeLabel": "1.47 MB",
             "transparent": true
           },
           "aspectRatio": "3:4",
@@ -7902,10 +7902,10 @@
           "safeArea": "centered",
           "safeAreaGuidance": "Keep key action inside a centered safe area and leave breathing room near the top and bottom edges.",
           "svg": {
-            "bytes": 28520,
+            "bytes": 31309,
             "fileName": "thumbs-up-win-badge.svg",
             "path": "/winks/chat/svg/thumbs-up-win-badge.svg",
-            "sizeLabel": "27.9 KB"
+            "sizeLabel": "30.6 KB"
           },
           "typeLabel": "Portrait / Chat Overlay",
           "viewBox": "0 0 768 1024",

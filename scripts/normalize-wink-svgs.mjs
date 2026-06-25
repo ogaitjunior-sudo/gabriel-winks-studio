@@ -13,6 +13,9 @@ const LEGACY_NORMALIZED_WRAPPER_ATTR = "data-preview-normalized";
 const LEGACY_NORMALIZED_WRAPPER_VALUES = new Set(["effect-safe-area", "chat-safe-area"]);
 const LEGACY_NORMALIZED_CONTENT_ATTR = "data-preview-content";
 const NON_SCENE_TAGS = new Set(["defs", "desc", "metadata", "style", "title"]);
+const EDGE_FADE_ATTR = "data-wink-edge-fade";
+const EDGE_FADE_MASK_ID = "wink-edge-fade-mask";
+const EDGE_FADE_RATIO = 0.1;
 const SAMPLE_FRACTIONS = [0, 0.12, 0.24, 0.38, 0.52, 0.68, 0.82];
 const TARGET_FRAME_SCALE = {
   chat: 0.74,
@@ -117,6 +120,9 @@ async function normalizeSvgMarkup(page, kind, source, filePath) {
   const result = await page.evaluate(
     async ({
       contentGroupId,
+      edgeFadeAttr,
+      edgeFadeMaskId,
+      edgeFadeRatio,
       legacyContentAttr,
       legacyWrapperAttr,
       legacyWrapperValues,
@@ -179,6 +185,125 @@ async function normalizeSvgMarkup(page, kind, source, filePath) {
         }
       }
 
+      function removeExistingEdgeFade() {
+        for (const node of Array.from(svg.querySelectorAll(`[${edgeFadeAttr}]`))) {
+          node.remove();
+        }
+
+        for (const node of Array.from(svg.querySelectorAll("[mask]"))) {
+          if (node.getAttribute("mask") === `url(#${edgeFadeMaskId})`) {
+            node.removeAttribute("mask");
+          }
+        }
+      }
+
+      function createSvgElement(name, attributes = {}) {
+        const element = document.createElementNS(svgNs, name);
+
+        for (const [attribute, value] of Object.entries(attributes)) {
+          element.setAttribute(attribute, `${value}`);
+        }
+
+        return element;
+      }
+
+      function appendStop(gradient, offset, color) {
+        gradient.appendChild(createSvgElement("stop", { offset, "stop-color": color }));
+      }
+
+      function appendLinearGradient(defs, id, attributes, firstColor, secondColor) {
+        const gradient = createSvgElement("linearGradient", {
+          ...attributes,
+          [edgeFadeAttr]: "true",
+          id,
+        });
+        appendStop(gradient, "0%", firstColor);
+        appendStop(gradient, "100%", secondColor);
+        defs.appendChild(gradient);
+      }
+
+      function appendRadialGradient(defs, id, attributes) {
+        const gradient = createSvgElement("radialGradient", {
+          ...attributes,
+          [edgeFadeAttr]: "true",
+          id,
+        });
+        appendStop(gradient, "0%", "#fff");
+        appendStop(gradient, "100%", "#000");
+        defs.appendChild(gradient);
+      }
+
+      function appendMaskRect(mask, x, y, width, height, fill) {
+        mask.appendChild(
+          createSvgElement("rect", {
+            fill,
+            height,
+            width,
+            x,
+            y,
+          })
+        );
+      }
+
+      function applyEdgeFadeMask(contentGroup) {
+        const fadeX = targetWidth * edgeFadeRatio;
+        const fadeY = targetHeight * edgeFadeRatio;
+        const centerWidth = Math.max(targetWidth - fadeX * 2, 1);
+        const centerHeight = Math.max(targetHeight - fadeY * 2, 1);
+        let defs = Array.from(svg.children).find((child) => child.localName === "defs");
+
+        if (!defs) {
+          defs = createSvgElement("defs");
+          svg.insertBefore(defs, svg.firstChild);
+        }
+
+        const ids = {
+          bottom: `${edgeFadeMaskId}-bottom`,
+          bottomLeft: `${edgeFadeMaskId}-bottom-left`,
+          bottomRight: `${edgeFadeMaskId}-bottom-right`,
+          left: `${edgeFadeMaskId}-left`,
+          right: `${edgeFadeMaskId}-right`,
+          top: `${edgeFadeMaskId}-top`,
+          topLeft: `${edgeFadeMaskId}-top-left`,
+          topRight: `${edgeFadeMaskId}-top-right`,
+        };
+
+        appendLinearGradient(defs, ids.top, { x1: 0, x2: 0, y1: 0, y2: 1 }, "#000", "#fff");
+        appendLinearGradient(defs, ids.bottom, { x1: 0, x2: 0, y1: 0, y2: 1 }, "#fff", "#000");
+        appendLinearGradient(defs, ids.left, { x1: 0, x2: 1, y1: 0, y2: 0 }, "#000", "#fff");
+        appendLinearGradient(defs, ids.right, { x1: 0, x2: 1, y1: 0, y2: 0 }, "#fff", "#000");
+        appendRadialGradient(defs, ids.topLeft, { cx: "100%", cy: "100%", r: "100%" });
+        appendRadialGradient(defs, ids.topRight, { cx: "0%", cy: "100%", r: "100%" });
+        appendRadialGradient(defs, ids.bottomLeft, { cx: "100%", cy: "0%", r: "100%" });
+        appendRadialGradient(defs, ids.bottomRight, { cx: "0%", cy: "0%", r: "100%" });
+
+        const mask = createSvgElement("mask", {
+          [edgeFadeAttr]: "true",
+          height: targetHeight,
+          id: edgeFadeMaskId,
+          maskContentUnits: "userSpaceOnUse",
+          maskUnits: "userSpaceOnUse",
+          "mask-type": "alpha",
+          width: targetWidth,
+          x: 0,
+          y: 0,
+        });
+
+        appendMaskRect(mask, 0, 0, targetWidth, targetHeight, "#000");
+        appendMaskRect(mask, fadeX, fadeY, centerWidth, centerHeight, "#fff");
+        appendMaskRect(mask, fadeX, 0, centerWidth, fadeY, `url(#${ids.top})`);
+        appendMaskRect(mask, fadeX, targetHeight - fadeY, centerWidth, fadeY, `url(#${ids.bottom})`);
+        appendMaskRect(mask, 0, fadeY, fadeX, centerHeight, `url(#${ids.left})`);
+        appendMaskRect(mask, targetWidth - fadeX, fadeY, fadeX, centerHeight, `url(#${ids.right})`);
+        appendMaskRect(mask, 0, 0, fadeX, fadeY, `url(#${ids.topLeft})`);
+        appendMaskRect(mask, targetWidth - fadeX, 0, fadeX, fadeY, `url(#${ids.topRight})`);
+        appendMaskRect(mask, 0, targetHeight - fadeY, fadeX, fadeY, `url(#${ids.bottomLeft})`);
+        appendMaskRect(mask, targetWidth - fadeX, targetHeight - fadeY, fadeX, fadeY, `url(#${ids.bottomRight})`);
+
+        defs.appendChild(mask);
+        contentGroup.setAttribute("mask", `url(#${edgeFadeMaskId})`);
+      }
+
       function getSceneNodes() {
         return Array.from(svg.childNodes).filter((node) => {
           if (node.nodeType === Node.TEXT_NODE) {
@@ -234,6 +359,7 @@ async function normalizeSvgMarkup(page, kind, source, filePath) {
       }
 
       unwrapNormalizedGroups();
+      removeExistingEdgeFade();
 
       const sceneNodes = getSceneNodes();
 
@@ -316,6 +442,7 @@ async function normalizeSvgMarkup(page, kind, source, filePath) {
 
       measureGroup.remove();
       svg.appendChild(contentGroup);
+      applyEdgeFadeMask(contentGroup);
 
       svg.setAttribute("viewBox", targetViewBox);
       svg.setAttribute("width", `${targetWidth}`);
@@ -330,6 +457,9 @@ async function normalizeSvgMarkup(page, kind, source, filePath) {
     },
     {
       contentGroupId: CONTENT_GROUP_ID,
+      edgeFadeAttr: EDGE_FADE_ATTR,
+      edgeFadeMaskId: EDGE_FADE_MASK_ID,
+      edgeFadeRatio: EDGE_FADE_RATIO,
       legacyContentAttr: LEGACY_NORMALIZED_CONTENT_ATTR,
       legacyWrapperAttr: LEGACY_NORMALIZED_WRAPPER_ATTR,
       legacyWrapperValues: [...LEGACY_NORMALIZED_WRAPPER_VALUES],
@@ -369,10 +499,14 @@ export async function normalizeWinkSvgFiles(kind, filePaths) {
     args: ["--allow-file-access-from-files", "--disable-gpu"],
     executablePath: chromeExecutable,
     headless: "new",
+    protocolTimeout: 120000,
+    timeout: 120000,
   });
 
   try {
     const page = await browser.newPage();
+    page.setDefaultNavigationTimeout(120000);
+    page.setDefaultTimeout(120000);
     const stats = [];
 
     for (const filePath of filePaths) {
