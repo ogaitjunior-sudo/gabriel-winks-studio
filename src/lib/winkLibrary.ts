@@ -3,7 +3,7 @@ import { normalizePublicAssetPath, resolveWinkAssetPath } from "@/lib/winkManife
 
 export const WINK_LIBRARY_ALL_FILTER = "All";
 export const WINK_LIBRARY_CHAT_FILTER = "Chat Winks";
-export const WINK_LIBRARY_SOUND_FILTER = "Test Sound";
+export const WINK_LIBRARY_SOUND_FILTER = "Sound";
 export const WINK_LIBRARY_EFFECT_FILTER = "Effect Winks";
 export const WINK_LIBRARY_OVERVIEW_FILTER = "Bingo Wink Effects Library";
 

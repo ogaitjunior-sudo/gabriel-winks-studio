@@ -25,7 +25,7 @@ import {
 import { PILOT_LOTTIE_REGISTRY } from "./lottie-pilot-pack.mjs";
 import { LOTTIE_FEATURED_REGISTRY } from "./lottie-featured-registry.mjs";
 import { LOTTIE_QUALITY_REGISTRY } from "./lottie-quality-registry.mjs";
-import { PILOT_SOUND_CUE_REGISTRY, PILOT_SOUND_REGISTRY } from "./sound-pilot-pack.mjs";
+import { PILOT_SOUND_CUE_REGISTRY, resolvePilotSoundPath } from "./sound-pilot-pack.mjs";
 
 export const WINKS_MANIFEST_PATH = path.join(WINKS_ROOT, "manifest.json");
 const LOTTIE_ROOT = path.join(PROJECT_ROOT, "public", "lottie");
@@ -164,8 +164,8 @@ function resolveLottieSupported(kind, lottiePath) {
   return lottiePath ? undefined : false;
 }
 
-async function resolveSoundPath(id) {
-  const registeredPath = PILOT_SOUND_REGISTRY[id];
+async function resolveSoundPath({ category, id, name }) {
+  const registeredPath = resolvePilotSoundPath({ category, id, name });
   if (!registeredPath) {
     return undefined;
   }
@@ -309,6 +309,7 @@ async function buildItem(kind, id, spec, paths, metadataMap) {
   const metadata = metadataMap.get(id) ?? null;
   const durationMs = metadata?.durationMs ?? svgMetrics?.durationMs ?? null;
   const category = metadata?.category ?? svgMetrics?.category ?? null;
+  const name = metadata?.name ?? svgMetrics?.name ?? titleFromId(id);
   const calculatedFrameCount = durationMs
     ? durationToFrameCount(durationMs, spec.apngFrameRate)
     : null;
@@ -317,7 +318,7 @@ async function buildItem(kind, id, spec, paths, metadataMap) {
   const lottieSupported = resolveLottieSupported(kind, lottiePath);
   const featured = resolveFeaturedFlag(id, lottieQuality);
   const soundCues = await resolveSoundCues(id);
-  const soundPath = await resolveSoundPath(id);
+  const soundPath = await resolveSoundPath({ category, id, name });
 
   return {
     apng: apngStat
@@ -342,7 +343,7 @@ async function buildItem(kind, id, spec, paths, metadataMap) {
     lottiePath,
     lottieQuality,
     lottieSupported,
-    name: metadata?.name ?? svgMetrics?.name ?? titleFromId(id),
+    name,
     safeArea: spec.safeArea,
     safeAreaGuidance: spec.safeAreaGuidance,
     soundCues,

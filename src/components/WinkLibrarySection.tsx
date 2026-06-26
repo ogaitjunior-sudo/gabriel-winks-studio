@@ -593,6 +593,11 @@ function WinkLibraryCard({
   function startSynchronizedSoundPlayback() {
     pendingPlaybackRef.current = false;
 
+    if (item.soundPath) {
+      playSoundSource(item.soundPath);
+      return;
+    }
+
     if (soundCues.length > 0) {
       cueTimerIdsRef.current = soundCues
         .filter((cue) => cue.time > 0)
@@ -605,10 +610,6 @@ function WinkLibraryCard({
         playSoundSource(cue.sound);
       });
       return;
-    }
-
-    if (item.soundPath) {
-      playSoundSource(item.soundPath);
     }
   }
 

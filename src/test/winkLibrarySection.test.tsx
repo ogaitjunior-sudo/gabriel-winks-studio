@@ -329,10 +329,10 @@ describe("WinkLibrarySection", () => {
     expect(screen.queryByText("Birthday Mega Party")).not.toBeInTheDocument();
   });
 
-  it("filters cards by the Test Sound tab", () => {
+  it("filters cards by the Sound tab", () => {
     render(<WinkLibrarySection manifest={manifest} />);
 
-    fireEvent.click(screen.getByRole("button", { name: "Test Sound (1)" }));
+    fireEvent.click(screen.getByRole("button", { name: "Sound (1)" }));
     expect(screen.getByText("Countdown Pop Bingo")).toBeInTheDocument();
     expect(screen.queryByText("Birthday Mega Party")).not.toBeInTheDocument();
   });
@@ -425,8 +425,8 @@ describe("WinkLibrarySection", () => {
       .filter((text): text is string => Boolean(text));
 
     expect(buttons.indexOf("All")).toBeLessThan(buttons.indexOf("Chat Winks"));
-    expect(buttons.indexOf("Chat Winks")).toBeLessThan(buttons.indexOf("Test Sound (1)"));
-    expect(buttons.indexOf("Test Sound (1)")).toBeLessThan(buttons.indexOf("Effect Winks"));
+    expect(buttons.indexOf("Chat Winks")).toBeLessThan(buttons.indexOf("Sound (1)"));
+    expect(buttons.indexOf("Sound (1)")).toBeLessThan(buttons.indexOf("Effect Winks"));
     expect(buttons.indexOf("Effect Winks")).toBeLessThan(buttons.indexOf("Countdown"));
     expect(buttons.indexOf("Countdown")).toBeLessThan(buttons.indexOf("Happy Birthday"));
     expect(screen.getAllByText("Bingo Reveal").length).toBeGreaterThan(0);
